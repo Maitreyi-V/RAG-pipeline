@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# =========================
+# RAG pipeline data (BIG)
+# =========================
+
+# Raw inputs
+backend/data/audio/
+backend/data/videos/
+
+# Generated text
+backend/data/transcripts/
+
+# Chunked documents
+backend/data/chunks/
+
+# Vector database (Chroma)
+backend/data/chroma_db/
