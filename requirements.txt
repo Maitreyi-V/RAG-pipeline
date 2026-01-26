@@ -2,6 +2,7 @@ streamlit
 chromadb
 sentence-transformers
 faster-whisper
-yt-dlp
 python-dotenv
 requests
+numpy
+tqdm
