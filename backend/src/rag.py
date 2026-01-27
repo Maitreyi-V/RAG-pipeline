@@ -128,7 +128,7 @@ def query_index(query: str, top_k: int | None = None) -> Dict[str, Any]:
     res = col.query(
         query_embeddings=[q_emb],
         n_results=int(top_k),
-        include=["documents", "metadatas", "distances", "ids"],
+        include=["documents", "metadatas", "distances"],
     )
 
     hits = []
