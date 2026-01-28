@@ -12,7 +12,7 @@ def _clean_text(t: str) -> str:
     t = re.sub(r"\n{3,}", "\n\n", t)
     return t.strip()
 
-def _chunk_by_chars(text: str, chunk_size: int = 1200, overlap: int = 200) -> List[str]:
+def _chunk_by_chars(text: str, chunk_size: int = 500, overlap: int = 100) -> List[str]:
     # simple and robust chunking for Kannada text
     chunks = []
     i = 0

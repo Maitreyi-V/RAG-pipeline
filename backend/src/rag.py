@@ -43,13 +43,32 @@ def _embed_texts_sentence(texts: List[str]) -> List[List[float]]:
     emb = model.encode(texts, batch_size=32, normalize_embeddings=True, show_progress_bar=True)
     return emb.tolist()
 
+def _embed_texts_ollama(texts: List[str]) -> List[List[float]]:
+    import requests
+
+    embeddings = []
+    for t in texts:
+        r = requests.post(
+            "http://localhost:11434/api/embeddings",
+            json={
+                "model": "bge-m3",
+                "prompt": t
+            },
+            timeout=60,
+        )
+        r.raise_for_status()
+        embeddings.append(r.json()["embedding"])
+    return embeddings
+
 def _embed_texts(texts: List[str]) -> List[List[float]]:
     s = get_settings()
-    if s.embed_provider == "openai":
-        return _embed_texts_openai(texts)
+    if s.embed_provider == "ollama":
+        return _embed_texts_ollama(texts)
     if s.embed_provider == "sentence":
         return _embed_texts_sentence(texts)
-    raise ValueError("EMBED_PROVIDER must be 'openai' or 'sentence'")
+    if s.embed_provider == "openai":
+        return _embed_texts_openai(texts)
+    raise ValueError("EMBED_PROVIDER must be 'ollama', 'sentence', or 'openai'")
 
 def build_index(reset: bool | None = None) -> Dict[str, Any]:
     s = get_settings()
@@ -128,7 +147,7 @@ def query_index(query: str, top_k: int | None = None) -> Dict[str, Any]:
     res = col.query(
         query_embeddings=[q_emb],
         n_results=int(top_k),
-        include=["documents", "metadatas", "distances", "ids"],
+        include=["documents", "metadatas", "distances"],
     )
 
     hits = []

@@ -55,9 +55,23 @@ if st.button("Search") and q.strip():
     st.markdown("### 🔎 Top Retrieved Segments")
     for h in hits:
         meta = h["meta"]
-        vid = meta.get("video_id", "video")
-        stt = ms_to_mmss(meta.get("start", 0.0))
-        ent = ms_to_mmss(meta.get("end", 0.0))
-        st.markdown(f"**{vid} @ {stt}–{ent}**  _(distance: {h['distance']:.4f})_")
+        source_type = meta.get("source_type", "doc")
+
+        # 🎥 Video source → show timestamps
+        if source_type == "video":
+            vid = meta.get("video_id", "video")
+            stt = ms_to_mmss(meta.get("start", 0.0))
+            ent = ms_to_mmss(meta.get("end", 0.0))
+            st.markdown(
+                f"**🎥 {vid} @ {stt}–{ent}**  _(distance: {h['distance']:.4f})_"
+            )
+
+        # 📘 Document / Book source → no timestamps
+        else:
+            doc = meta.get("doc_name", "document")
+            st.markdown(
+                f"**📘 {doc}**  _(distance: {h['distance']:.4f})_"
+            )
+
         st.write(h["text"])
         st.divider()
