@@ -47,10 +47,13 @@ def _transcribe_openai(mp3_path: Path) -> Dict[str, Any]:
     # We try verbose_json; if segments aren't present, we still store text.
     with mp3_path.open("rb") as f:
         resp = client.audio.transcriptions.create(
-            model=s.openai_asr_model,
-            file=f,
-            response_format="verbose_json",
-        )
+          model=s.openai_asr_model,
+          file=f,
+          response_format="verbose_json",
+          language="kn",  # FORCE Kannada
+         prompt="Transcribe this audio in Kannada only."
+)
+
 
     data = resp.model_dump() if hasattr(resp, "model_dump") else dict(resp)
 

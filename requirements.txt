@@ -6,3 +6,8 @@ python-dotenv
 requests
 numpy
 tqdm
+openai
+soundfile
+openai>=1.0.0
+ffmpeg-python
+
