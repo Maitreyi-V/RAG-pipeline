@@ -1,0 +1,8 @@
+streamlit
+chromadb
+sentence-transformers
+faster-whisper
+python-dotenv
+requests
+numpy
+tqdm
