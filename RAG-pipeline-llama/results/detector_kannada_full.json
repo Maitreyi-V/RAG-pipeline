@@ -1,0 +1,449 @@
+{
+  "config": {
+    "transcript_dir": "data\\transcripts",
+    "annotations_csv": "data/annotations.csv",
+    "pilot_count": 6
+  },
+  "per_video": [
+    {
+      "video_id": 1,
+      "filename": "gita-1st video.txt",
+      "set": "pilot",
+      "expected_verses": [
+        "BG 2.1",
+        "BG 2.2",
+        "BG 2.3"
+      ],
+      "detected_verses": [
+        "BG 2.1",
+        "BG 2.2",
+        "BG 2.3"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 2,
+      "filename": "gita-2nd video.txt",
+      "set": "pilot",
+      "expected_verses": [
+        "BG 2.4",
+        "BG 2.5",
+        "BG 2.6"
+      ],
+      "detected_verses": [
+        "BG 2.3",
+        "BG 2.4",
+        "BG 2.5",
+        "BG 2.6"
+      ],
+      "tp": 3,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571
+    },
+    {
+      "video_id": 3,
+      "filename": "gita-3rd video.txt",
+      "set": "pilot",
+      "expected_verses": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.9"
+      ],
+      "detected_verses": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.9"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 4,
+      "filename": "gita-4th video.txt",
+      "set": "pilot",
+      "expected_verses": [
+        "BG 2.10",
+        "BG 2.11"
+      ],
+      "detected_verses": [
+        "BG 2.10",
+        "BG 2.11"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 5,
+      "filename": "gita-5th video.txt",
+      "set": "pilot",
+      "expected_verses": [
+        "BG 2.12",
+        "BG 2.13"
+      ],
+      "detected_verses": [
+        "BG 2.12",
+        "BG 2.13"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 6,
+      "filename": "gita-6th video.txt",
+      "set": "pilot",
+      "expected_verses": [
+        "BG 2.14"
+      ],
+      "detected_verses": [
+        "BG 2.14"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 7,
+      "filename": "kannada_07.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.15",
+        "BG 2.16"
+      ],
+      "detected_verses": [
+        "BG 2.15",
+        "BG 2.16"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 8,
+      "filename": "kannada_08.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.17",
+        "BG 2.18"
+      ],
+      "detected_verses": [
+        "BG 2.17",
+        "BG 2.18"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 9,
+      "filename": "kannada_09.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.19",
+        "BG 2.20",
+        "BG 2.21",
+        "BG 2.22"
+      ],
+      "detected_verses": [
+        "BG 2.19",
+        "BG 2.20",
+        "BG 2.21",
+        "BG 2.22"
+      ],
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 10,
+      "filename": "kannada_10.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.23",
+        "BG 2.24",
+        "BG 2.25"
+      ],
+      "detected_verses": [
+        "BG 2.23",
+        "BG 2.24",
+        "BG 2.25"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 11,
+      "filename": "kannada_11.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.26",
+        "BG 2.27",
+        "BG 2.28"
+      ],
+      "detected_verses": [
+        "BG 2.26",
+        "BG 2.27",
+        "BG 2.28"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 12,
+      "filename": "kannada_12.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.29",
+        "BG 2.30",
+        "BG 2.31"
+      ],
+      "detected_verses": [
+        "BG 2.29",
+        "BG 2.30",
+        "BG 2.31"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 13,
+      "filename": "kannada_13.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.32",
+        "BG 2.33",
+        "BG 2.34"
+      ],
+      "detected_verses": [
+        "BG 2.32",
+        "BG 2.33",
+        "BG 2.34"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 14,
+      "filename": "kannada_14.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.35",
+        "BG 2.36",
+        "BG 2.37"
+      ],
+      "detected_verses": [
+        "BG 2.34",
+        "BG 2.35",
+        "BG 2.36",
+        "BG 2.6",
+        "BG 2.37"
+      ],
+      "tp": 3,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75
+    },
+    {
+      "video_id": 15,
+      "filename": "kannada_15.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.38",
+        "BG 2.39"
+      ],
+      "detected_verses": [
+        "BG 2.38",
+        "BG 2.39",
+        "BG 2.48"
+      ],
+      "tp": 2,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1": 0.8
+    },
+    {
+      "video_id": 16,
+      "filename": "kannada_16.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.40",
+        "BG 2.41"
+      ],
+      "detected_verses": [
+        "BG 2.40",
+        "BG 2.41"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "video_id": 17,
+      "filename": "kannada_17.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.42",
+        "BG 2.43",
+        "BG 2.44",
+        "BG 2.45"
+      ],
+      "detected_verses": [
+        "BG 2.42",
+        "BG 2.43",
+        "BG 2.44"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571
+    },
+    {
+      "video_id": 18,
+      "filename": "kannada_18.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.46"
+      ],
+      "detected_verses": [
+        "BG 2.45"
+      ],
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "video_id": 19,
+      "filename": "kannada_19.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.47"
+      ],
+      "detected_verses": [
+        "BG 2.46",
+        "BG 2.47"
+      ],
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6667
+    },
+    {
+      "video_id": 20,
+      "filename": "kannada_20.txt",
+      "set": "new",
+      "expected_verses": [
+        "BG 2.48",
+        "BG 2.49"
+      ],
+      "detected_verses": [
+        "BG 2.48",
+        "BG 2.49"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  ],
+  "aggregate": {
+    "pilot": {
+      "total_tp": 14,
+      "total_fp": 1,
+      "total_fn": 0,
+      "micro_precision": 0.9333,
+      "micro_recall": 1.0,
+      "micro_f1": 0.9655,
+      "macro_precision": 0.9583,
+      "macro_recall": 1.0,
+      "macro_f1": 0.9762,
+      "n_videos": 6
+    },
+    "new": {
+      "total_tp": 33,
+      "total_fp": 5,
+      "total_fn": 2,
+      "micro_precision": 0.8684,
+      "micro_recall": 0.9429,
+      "micro_f1": 0.9041,
+      "macro_precision": 0.8405,
+      "macro_recall": 0.9107,
+      "macro_f1": 0.8624,
+      "n_videos": 14
+    },
+    "full": {
+      "total_tp": 47,
+      "total_fp": 6,
+      "total_fn": 2,
+      "micro_precision": 0.8868,
+      "micro_recall": 0.9592,
+      "micro_f1": 0.9216,
+      "macro_precision": 0.8758,
+      "macro_recall": 0.9375,
+      "macro_f1": 0.8965,
+      "n_videos": 20
+    }
+  }
+}
