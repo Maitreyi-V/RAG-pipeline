@@ -1,0 +1,40 @@
+{
+  "query": "What does Krishna call Arjuna's weakness in BG 2.3?",
+  "query_language": "en",
+  "answer": "Error generating answer: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)",
+  "retrieved_verses": [
+    "BG 2.10",
+    "BG 2.3",
+    "BG 2.1",
+    "BG 2.2"
+  ],
+  "num_retrieved": 5,
+  "top_similarity": 0.7278,
+  "retrieved_chunks": [
+    {
+      "chunk_id": "chunk_004",
+      "verse_ref": "BG 2.3",
+      "similarity": 0.7278
+    },
+    {
+      "chunk_id": "chunk_003",
+      "verse_ref": "BG 2.2",
+      "similarity": 0.6458
+    },
+    {
+      "chunk_id": "chunk_017",
+      "verse_ref": "BG 2.10",
+      "similarity": 0.6292
+    },
+    {
+      "chunk_id": "chunk_006",
+      "verse_ref": "",
+      "similarity": 0.615
+    },
+    {
+      "chunk_id": "chunk_002",
+      "verse_ref": "BG 2.1",
+      "similarity": 0.6084
+    }
+  ]
+}

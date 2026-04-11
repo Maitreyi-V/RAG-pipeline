@@ -1,0 +1,1304 @@
+{
+  "summary": {
+    "total_questions": 74,
+    "evaluated": 74,
+    "precision_at_1": 0.5946,
+    "precision_at_3": 0.7973,
+    "precision_at_5": 0.8514,
+    "shloka_identification_accuracy": 0.8514,
+    "by_question_type": {
+      "Factual": {
+        "precision_1": 0.6087,
+        "precision_3": 0.913,
+        "precision_5": 0.913,
+        "shloka_acc": 0.913,
+        "count": 23
+      },
+      "Interpretive": {
+        "precision_1": 0.5556,
+        "precision_3": 0.7222,
+        "precision_5": 0.7222,
+        "shloka_acc": 0.7222,
+        "count": 18
+      },
+      "Cross-verse": {
+        "precision_1": 0.4444,
+        "precision_3": 0.7778,
+        "precision_5": 0.8889,
+        "shloka_acc": 0.8889,
+        "count": 9
+      },
+      "General": {
+        "precision_1": 0.75,
+        "precision_3": 0.9167,
+        "precision_5": 0.9167,
+        "shloka_acc": 0.9167,
+        "count": 12
+      },
+      "Applied": {
+        "precision_1": 0.5833,
+        "precision_3": 0.5833,
+        "precision_5": 0.8333,
+        "shloka_acc": 0.8333,
+        "count": 12
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "question_id": "V1_Q01",
+      "question": "What two qualities does Sanjaya use to describe Arjuna's eyes?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.1",
+      "retrieved_verses": [
+        "BG 2.1",
+        "BG 2.10",
+        "BG 2.14",
+        "BG 2.4",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.1\n**Answer:** Sanjaya describes Arjuna's eyes as being filled with tears (ಅಶ್ರುಪೂರ್ಣ) and being overwhelmed by compassion (ಕೃಪಯಾವಿಷ್ಟ).\n**Dvaita Perspective:** In the Dvaita tradition, this description of Arjuna's eyes highlights his emotional turmoil and attachment to his relatives, which is a key aspect of his struggle. Krishna's guidance is necessary to help Arjuna overcome this attachment and perform his duty.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q02",
+      "question": "What does the term 'kṛpayāviṣṭam' reveal about the cause of Arjuna's breakdown?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.1",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.7",
+        "BG 2.2",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.2\n**Answer:** The term 'kṛpayāviṣṭam' (ಕ್ರಪಯಾವಿಷ್ಟಂ) reveals that the cause of Arjuna's breakdown is his attachment and emotional weakness (kārpaṇya). This attachment and weakness have led to his mental confusion and inability to perform his duty as a Kshatriya.\n**Dvaita Perspective:** In the Dvaita tradition, this term highlights the importance of recognizing and overcoming one's attachment and emotional weakness. This is crucial for a Kshatriya like Arjuna to perform his duty and fulfill his responsibilities.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V1_Q03",
+      "question": "Why does Sanjaya refer to Krishna as 'Madhusūdana'?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.1",
+      "retrieved_verses": [
+        "BG 2.1",
+        "BG 2.4",
+        "BG 2.3",
+        "BG 2.9",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.1\n**Answer:** Sanjaya refers to Krishna as 'Madhusūdana' to show that Krishna is fully qualified to guide Arjuna, who is overwhelmed by compassion and blinded by tears. This epithet emphasizes Krishna's role as the destroyer of evil, indicating his ability to guide Arjuna through the turmoil and confusion he is experiencing.\n**Dvaita Perspective:** In the Dvaita tradition, Krishna's role as the destroyer of evil is seen as a manifestation of his divine nature, emphasizing his ability to guide Arjuna and others towards the path of righteousness. This perspective highlights the importance of recognizing Krishna's divine authority and guidance in the Bhagavad Gita.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q04",
+      "question": "What word does Krishna use to describe Arjuna's mental state, and what does it literally mean?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.2",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.2",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** Krishna uses the word \"ದೌರ್ಬಲ್ಯಂ\" (dourbalyam) to describe Arjuna's mental state, which literally means \"weakness of the heart\" or \"cowardice\".\n**Dvaita Perspective:** In the Dvaita tradition, this weakness is seen as a form of mental confusion that arises from a lack of self-control and a failure to recognize one's true nature as a servant of the Lord.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q05",
+      "question": "What are the three negative consequences Krishna attributes to Arjuna's kaśmala?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.2",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.2",
+        "BG 2.14",
+        "BG 2.11"
+      ],
+      "answer": "**Verse Reference:** BG 2.2\n**Answer:** Krishna attributes the following three negative consequences to Arjuna's kaśmala (weakness):\n1. **Unworthy attitude**: It is unfit for noble people (ಅನಾರ್ಯಜುಷ್ಟಂ).\n2. **Suffering and disgrace**: It will only bring suffering and disgrace (ಅಕೀರ್ತಿಕರಮರ್ಜುನಾ).\n3. **Mental confusion**: It is a form of mental weakness that must be thrown away (ಹೃದಯ ದೌರ್ಬಲ್ಯಂ ತ್ಯಕ್ತೋತ್ತಿಷ್ಠ).\n\n**Dvaita Perspective:** In the Dvaita tradition, Krishna's words emphasize the importance of recognizing and overcoming one's internal weaknesses, such as attachment and ego, to achieve spiritual growth and self-realization.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q06",
+      "question": "Why does Krishna emphasize 'viṣame' (at this critical juncture) when rebuking Arjuna?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.2",
+      "retrieved_verses": [
+        "BG 2.2",
+        "BG 2.3",
+        "BG 2.10",
+        "BG 2.11"
+      ],
+      "answer": "**Verse Reference:** BG 2.2\n**Answer:** Krishna emphasizes \"viṣame\" (at this critical juncture) to highlight the gravity of the situation and the importance of Arjuna's decision. As the Dvaita tradition perspective notes, this emphasis underscores the urgency of the moment and the need for Arjuna to overcome his weakness and awaken to his true nature.\n**Dvaita Perspective:** In the Dvaita tradition, this emphasis on \"viṣame\" is seen as a call to action, urging Arjuna to recognize the critical nature of the situation and to take decisive action. This emphasis also underscores the importance of Arjuna's role as a Kshatriya and his duty to fulfill his responsibilities as a warrior.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q07",
+      "question": "What does the Sanskrit word 'klaibyam' mean, and why is it such a strong word?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.3",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.14",
+        "BG 2.2",
+        "BG 2.12",
+        "BG 2.13"
+      ],
+      "answer": "**Verse Reference:** BG 2.3\n**Answer:** The Sanskrit word 'klaibyam' (ಕ್ಲೈಭ್ಯಂ) is a strong word that means \"cowardice\" or \"weakness of heart.\" Krishna uses this term to scold Arjuna for his emotional weakness and lack of courage in the face of war.\n**Dvaita Perspective:** In the Dvaita tradition, this word is seen as a stark reminder of the importance of courage and strength in the face of adversity. Krishna's use of this term is meant to shock Arjuna out of his emotional turmoil and encourage him to take action, rather than succumb to fear and weakness.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q08",
+      "question": "Why does Krishna address Arjuna as 'Pārtha' (son of Kuntī)?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.3",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.11",
+        "BG 2.10",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.3\n**Answer:** Krishna addresses Arjuna as 'Pārtha' (son of Kuntī) because Arjuna is the son of Kuntī, and Krishna is reminding him of his noble lineage and the bravery expected of a Kshatriya. This address is meant to awaken Arjuna's true nature and encourage him to perform his duty as a warrior.\n**Dvaita Perspective:** In the Dvaita tradition, this address is seen as a way for Krishna to emphasize the importance of Arjuna's duty as a Kshatriya and to remind him of his responsibility to uphold the principles of dharma.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q09",
+      "question": "What does Krishna call Arjuna's weakness — is it great wisdom or something else?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.3",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.2",
+        "BG 2.10",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.3\n**Answer:** Krishna calls Arjuna's weakness a \"small and unworthy weakness of heart\" (ಕ್ಷುದ್ರಂ ಹೃದಯ ದೌರ್ಬಲ್ಯಂ) that must be thrown away.\n**Dvaita Perspective:** In the Dvaita tradition, this weakness is seen as a manifestation of Arjuna's attachment to his relatives and emotional weakness, which is contrary to the noble and courageous nature of a Kshatriya.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q10",
+      "question": "How does Krishna's tone and language escalate across his first rebukes to Arjuna?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.2, BG 2.3",
+      "retrieved_verses": [
+        "BG 2.2",
+        "BG 2.3",
+        "BG 2.1",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.2\n**Answer:** Krishna's tone and language escalate across his first rebukes to Arjuna as he sharply scolds Arjuna to remove his weakness, awaken his courage, and make him face his true inner confusion. Initially, Krishna's words are stern and direct, as seen in BG 2.2, where he says, \"This is not the time for grief or weakness, especially after coming fully prepared for war.\" Krishna's language becomes more forceful and critical, as he describes Arjuna's sorrow as a \"small and unworthy weakness of heart\" (BG 2.3). Krishna's words are designed to break Arjuna's stubbornness and expose his inner confusion, indicating a growing sense of urgency and concern.\n\n**Dvaita Perspective:** In the Dvaita tradition, Krishna's words are seen as a manifestation of his divine authority and compassion. His tone and language are meant to shock Arjuna out of his mental confusion and awaken him to his true nature. Krishna's escalation of tone and language serves as a reminder that the Gita is not just a philosophical text but a spiritual guide that requires a deep transformation of the individual.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q11",
+      "question": "How does Arjuna's position change from the start of Chapter 2 to after hearing Krishna's rebukes?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.1, BG 2.3",
+      "retrieved_verses": [
+        "BG 2.2",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.4\n**Answer:** Arjuna's position changes from being enthusiastic to fight, to being hesitant and refusing to fight, and then finally to surrendering as a disciple to Krishna.\n**Dvaita Perspective:** In the Dvaita tradition, Arjuna's initial enthusiasm and subsequent hesitation are seen as a manifestation of his inner confusion and lack of self-awareness. Krishna's rebukes serve to shake Arjuna out of this state, allowing him to surrender and become receptive to the Gita's teaching. This transformation marks a crucial turning point in Arjuna's spiritual journey, as he begins to awaken to his true nature and prepare himself for the deeper teachings of the Gita.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q12",
+      "question": "What is the opening verse of Chapter 2 about?",
+      "question_type": "General",
+      "expected_verse": "BG 2.1",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.2\n**Answer:** This verse is about Krishna's strong rebuke to Arjuna's grief and weakness, urging him to shake off his unworthy attitude and prepare himself for the war ahead.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the importance of spiritual strength and courage in the face of adversity, emphasizing that one must not let external circumstances dictate their actions.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V1_Q13",
+      "question": "Can you summarize what Krishna says when he first rebukes Arjuna for his weakness?",
+      "question_type": "General",
+      "expected_verse": "BG 2.2",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.2",
+        "BG 2.10",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.3\n**Answer:** Krishna tells Arjuna that his weakness is not true wisdom, but a form of cowardice and mental weakness. He reminds him that such behavior does not suit a brave warrior and the son of Kunti. Arjuna's sorrow is described as a small and unworthy weakness of heart that must be thrown away.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the importance of distinguishing between true wisdom and mental weakness. Krishna's words serve as a wake-up call for Arjuna to recognize his inner confusion and surrender to the divine guidance.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q14",
+      "question": "What is the main message of Krishna's strongest rebuke to Arjuna about cowardice?",
+      "question_type": "General",
+      "expected_verse": "BG 2.3",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.2",
+        "BG 2.11",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.3\n**Answer:** Krishna's strongest rebuke to Arjuna about cowardice is that his weakness is not true wisdom, but a form of mental weakness and cowardice. Krishna reminds Arjuna that such behavior does not suit a brave warrior and the son of Kunti. He describes Arjuna's sorrow as a small and unworthy weakness of heart that must be thrown away.\n\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as a strong rebuke to Arjuna's attachment to his relatives and emotional weakness. Krishna's words are meant to awaken Arjuna from his mental confusion and prepare him to perform his duty as a Kshatriya. This rebuke is not meant to shame or humiliate Arjuna, but to guide him towards his true nature and purpose.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q15",
+      "question": "I'm unable to take a tough decision because I'm too emotionally attached to the people involved. What does the Gita say about this?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.1, BG 2.2",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.11",
+        "BG 2.8",
+        "BG 2.7",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** Krishna tells Arjuna that he is grieving for people who are not worthy of sorrow and speaking words that only appear wise. Arjuna's arguments about dharma are actually due to attachment to his relatives and not true understanding. As a Kshatriya, it is his duty to punish wrongdoing, even if the wrongdoers are his elders or relatives. Krishna explains that wise people do not grieve for the living or those who are near death. Therefore, Arjuna's sorrow and reasoning are both incorrect.\n\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the importance of detachment (vairāgya) in decision-making. Krishna is emphasizing that Arjuna's attachment to his relatives is clouding his judgment and leading to emotional turmoil. This attachment is not only unwarranted but also prevents Arjuna from fulfilling his duty as a Kshatriya. The Gita suggests that one must cultivate detachment and focus on one's duty (svadharma) rather than getting bogged down by emotional attachments. This perspective encourages the individual to prioritize their spiritual growth and fulfillment of their duties over personal emotional attachments.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V1_Q16",
+      "question": "I know what I should do but I keep hesitating and overthinking. Does the Gita address this?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.2, BG 2.3",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.13",
+        "BG 2.6",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.7\n**Answer:** Yes, the Bhagavad Gita addresses this issue. In BG 2.7, Arjuna says that due to kārpaṇya (weakness caused by attachment and sorrow) he has lost his natural courage as a Kshatriya. He is confused about what is right (dharma) and asks Krishna whether he should fight as a Kshatriya or give up war and live by begging. This verse highlights the importance of self-reflection and seeking guidance when faced with uncertainty and hesitation.\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as a call to surrender to Krishna, the ultimate guide. Arjuna's hesitation and overthinking are seen as a manifestation of his attachment to worldly desires and his failure to understand his true nature as a servant of Krishna. By seeking guidance from Krishna, Arjuna is able to overcome his doubts and find the path that is truly good (śreyas) for him.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V2_Q01",
+      "question": "Who are the two specific people Arjuna names as those he cannot fight, and why?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.4",
+      "retrieved_verses": [
+        "BG 2.10",
+        "BG 2.9",
+        "BG 2.4",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.4\n**Answer:** Arjuna names Bhishma and Drona as the two specific people he cannot fight. He sees Bhishma as his revered grandsire and Drona as his worship-worthy teacher, both deserving honor, not attack. He feels that instead of raising weapons against them, he should bow to them and show reverence.\n**Dvaita Perspective:** In the Dvaita tradition, Bhishma and Drona are considered jīva-atma, individual souls, whereas Arjuna is considered a jīva, a living being. This distinction highlights the difference between the individual soul and the Supreme Being, emphasizing the importance of recognizing and honoring the individual souls, even if they are enemies in a war.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q02",
+      "question": "What is the significance of Arjuna calling Krishna both 'Madhusūdana' and 'Arisūdana'?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.4",
+      "retrieved_verses": [
+        "BG 2.4",
+        "BG 2.1",
+        "BG 2.3",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.4\n**Answer:** Arjuna's address to Krishna as \"Madhusūdana\" and \"Arisūdana\" is significant because it reveals Arjuna's deep reverence and respect for Krishna. \"Madhusūdana\" is a name that means \"the destroyer of Madhu\" and is often used to describe Krishna's role as the savior and protector. By calling Krishna this name, Arjuna acknowledges Krishna's divine nature and seeks his guidance and protection. Similarly, \"Arisūdana\" is a name that means \"the one who is worthy of worship\" and is often used to describe a guru or a revered teacher. By calling Krishna this name, Arjuna acknowledges Krishna's authority and wisdom, and seeks his guidance and teaching.\n\n**Dvaita Perspective:** In the Dvaita tradition, this address is seen as a demonstration of Arjuna's devotion and surrender to Krishna. Arjuna's use of these names highlights his recognition of Krishna's divine nature and his willingness to submit to Krishna's guidance and teaching. This perspective emphasizes the importance of devotion and surrender in the spiritual path, and sees Arjuna's address as a model for spiritual seekers to follow.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q03",
+      "question": "What does Arjuna say is better than killing his teachers — and why is this ironic for a Kṣatriya?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.5",
+      "retrieved_verses": [
+        "BG 2.5",
+        "BG 2.6",
+        "BG 2.11",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.5\n**Answer:** Arjuna says that it is better to live by begging than to kill noble elders and teachers in war. He knows begging is not proper for a Kshatriya, yet he sees it as the lesser wrong compared to slaying revered gurus.\n**Dvaita Perspective:** This perspective highlights the importance of non-violence and compassion, even in the face of adversity. As a Kshatriya, Arjuna is expected to uphold the values of courage and strength, but he chooses to prioritize the welfare of his teachers and elders over his own duty. This decision is seen as a reflection of the higher values of dharma, which prioritize the well-being of all beings over individual interests.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q04",
+      "question": "What does 'rudhira-pradigdhān' mean?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.5",
+      "retrieved_verses": [
+        "BG 2.1",
+        "BG 2.4",
+        "BG 2.7",
+        "BG 2.3",
+        "BG 2.9"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** 'Rudhira-pradigdhān' is a Sanskrit phrase that means \"overwhelmed by compassion\" or \"blinded by tears\". In this context, it describes Arjuna's emotional state, where he is overcome with grief and sorrow, unable to think clearly or judge what is right.\n**Dvaita Perspective:** This phrase highlights the depth of Arjuna's attachment and emotional turmoil, which is a key aspect of the Dvaita tradition's understanding of the Bhagavad Gita.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V2_Q05",
+      "question": "What is Arjuna's argument about victory being uncertain?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.6",
+      "retrieved_verses": [
+        "BG 2.6",
+        "BG 2.10",
+        "BG 2.8"
+      ],
+      "answer": "**Verse Reference:** BG 2.6\n**Answer:** Arjuna argues that even if one ignores the sin of killing elders and teachers, victory in war is still uncertain. He admits that they do not know whether the Pandavas will win or be defeated by the Kauravas.\n**Dvaita Perspective:** This uncertainty highlights the futility of war and the importance of considering the consequences of one's actions. The Dvaita tradition emphasizes the need to prioritize spiritual growth and self-realization over worldly gains, which can be fleeting and uncertain.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q06",
+      "question": "What does 'na jijīviṣāmaḥ' reveal about Arjuna's state of mind?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.6",
+      "retrieved_verses": [
+        "BG 2.2",
+        "BG 2.3",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** The phrase \"na jijīviṣāmaḥ\" reveals that Arjuna's state of mind is one of mental weakness and cowardice. He is unable to muster the courage to fight and is instead overcome by grief and sorrow.\n**Dvaita Perspective:** In the Dvaita tradition, this phrase is seen as a manifestation of Arjuna's lack of spiritual strength and his inability to distinguish between his true self and his ego. This weakness is seen as a result of his attachment to worldly relationships and his failure to recognize his true nature as a warrior and a devotee of God.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V2_Q07",
+      "question": "How does Arjuna's argument develop as he explains why he cannot fight his elders?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.4, BG 2.5, BG 2.6",
+      "retrieved_verses": [
+        "BG 2.10",
+        "BG 2.6"
+      ],
+      "answer": "**Verse Reference:** BG 2.6\n**Answer:** Arjuna's argument develops by highlighting the uncertainty of victory in war, even if one ignores the sin of killing elders and teachers. He admits that the outcome of the war is uncertain, and even if the Pandavas win, the victory would not bring him happiness due to the emptiness of life after killing gurus, elders, and relatives.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the importance of understanding the true nature of Arjuna's dilemma. His attachment to his relatives and emotional weakness are revealed, and Krishna begins his teaching to guide Arjuna towards his duty. This perspective emphasizes the need to distinguish between the individual's personal feelings and the universal principles of dharma.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q08",
+      "question": "What does Arjuna say about fighting Bhīṣma and Droṇa?",
+      "question_type": "General",
+      "expected_verse": "BG 2.4",
+      "retrieved_verses": [
+        "BG 2.4",
+        "BG 2.10",
+        "BG 2.11",
+        "BG 2.6"
+      ],
+      "answer": "**Verse Reference:** BG 2.4\n**Answer:** Arjuna says that he cannot understand how to fight Bhīṣma and Droṇa in battle with arrows. He sees Bhīṣma as his revered grandsire and Droṇa as his worship-worthy teacher, both deserving honor, not attack. Instead of raising weapons against them, Arjuna feels he should bow to them and show reverence. He tells Krishna that destroying enemies is different, because these two are not enemies but beloved elders.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the deep attachment and reverence that Arjuna has for his elders and teachers. This attachment is seen as a major obstacle to his understanding of his duty as a Kshatriya. Krishna's response in this chapter will help Arjuna to overcome this attachment and understand his true duty.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q09",
+      "question": "What is Arjuna saying about living by begging versus enjoying a blood-stained kingdom?",
+      "question_type": "General",
+      "expected_verse": "BG 2.5, BG 2.6",
+      "retrieved_verses": [
+        "BG 2.5",
+        "BG 2.8",
+        "BG 2.7",
+        "BG 2.11"
+      ],
+      "answer": "**Verse Reference:** BG 2.5\n**Answer:** Arjuna says that it is better to live by begging than to kill noble elders and teachers in war. He knows begging is not proper for a Kshatriya, yet he sees it as the lesser wrong compared to slaying revered gurus. His heart recoils from a duty that demands violence against those worthy of honor. He also says that any kingdom or pleasure gained after killing them would feel stained with their blood. So Arjuna feels that a humble life is better than a victory filled with guilt and sorrow.\n**Dvaita Perspective:** This verse highlights the Dvaita Vedānta perspective on the importance of non-violence and the avoidance of harming others, even if it means giving up material gains.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q10",
+      "question": "I got a promotion but it came at the cost of my mentor being let go. I feel guilty. What does the Gita say?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.5",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.6",
+        "BG 2.3",
+        "BG 2.5"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** Arjuna's situation is not exactly the same as yours, but the Gita's teachings can still be applied. In BG 2.11, Krishna says, \"You have a right to perform your prescribed duties, but for the sake of purification of the heart and the satisfaction of the Self, you should act for the welfare of all beings.\" In this context, your duty is to excel in your new role, but you should also consider the welfare of your former mentor and the impact of their departure on your personal and professional relationships. It's essential to find a balance between your responsibilities and your conscience.\n**Dvaita Perspective:** In the Dvaita tradition, the emphasis is on the individual's spiritual growth and self-realization. When faced with a situation like yours, it's crucial to prioritize your inner development and seek guidance from a higher authority (Krishna). By doing so, you can find a path that aligns with your values and principles, even in the face of adversity.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V2_Q11",
+      "question": "I'm stuck between two bad options and can't decide. Does the Gita talk about this?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.5, BG 2.6",
+      "retrieved_verses": [
+        "BG 2.6",
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.2",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.8\n**Answer:** Yes, the Bhagavad Gita addresses this issue. In BG 2.8, Arjuna says that even if he gains a prosperous kingdom on earth or even the lordship of heaven, it will not remove his deep sorrow. He is torn between two options, both of which seem undesirable to him. He is unable to see any righteous solution that can remove his grief. This verse highlights the dilemma that Arjuna is facing, where he is stuck between two bad options and cannot decide.\n\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as a reflection of the human predicament, where one is torn between two options, both of which seem to lead to suffering. This verse is an invitation to surrender to Krishna and seek guidance, rather than trying to navigate the situation on one's own. It emphasizes the importance of seeking guidance from a higher authority, rather than relying on one's own limited understanding.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q01",
+      "question": "What does 'kārpaṇya-doṣa-upahata-svabhāvaḥ' mean?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.7",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.14",
+        "BG 2.13",
+        "BG 2.3",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.7\n**Answer:** \"Kārpaṇya-doṣa-upahata-svabhāvaḥ\" means that Arjuna's natural courage and character as a Kshatriya have been weakened or destroyed due to the sorrow and attachment he feels for his relatives and teachers. This phrase suggests that Arjuna's usual bravery and confidence have been compromised by his emotional state.\n**Dvaita Perspective:** In the Dvaita tradition, this phrase highlights the importance of recognizing the distinction between the individual's true nature (svabhāvaḥ) and the effects of attachment and sorrow (kārpaṇya-doṣa). The Dvaita tradition emphasizes the need to transcend this attachment and sorrow to reveal one's true nature, which is eternal and unchanging.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q02",
+      "question": "What does 'dharma-sammūḍha-cetāḥ' tell us about Arjuna's confusion?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.7",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.11",
+        "BG 2.1",
+        "BG 2.3",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.7\n**Answer:** According to BG 2.7, 'dharma-sammūḍha-cetāḥ' indicates that Arjuna's confusion is due to his attachment to his relatives and teachers, causing him to lose his natural courage as a Kshatriya. This verse suggests that Arjuna's arguments about dharma are actually rooted in attachment, rather than a true understanding of what is right.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the importance of distinguishing between one's duty (dharma) and personal attachment. Arjuna's confusion arises from his failure to make this distinction, leading him to question whether he should fight or abandon war. This verse sets the stage for Krishna's subsequent teachings, which will help Arjuna to understand his duty and overcome his attachment.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q03",
+      "question": "What is the significance of 'śiṣyas te'haṃ śādhi māṃ tvāṃ prapannam'?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.7",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.11",
+        "BG 2.2",
+        "BG 2.10",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.7\n**Answer:** The significance of 'śiṣyas te'haṃ śādhi māṃ tvāṃ prapannam' is that Krishna is saying, \"You are my disciple, and I will teach you. You have surrendered to me, and I will guide you.\" This verse marks the beginning of Krishna's teaching of the Bhagavad Gita to Arjuna. Krishna is acknowledging Arjuna's surrender and willingness to learn, and is offering to impart his wisdom and guidance to him.\n\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as a turning point in the Gita. Krishna is not just teaching Arjuna about dharma, but is also guiding him towards spiritual growth and self-realization. This verse sets the stage for the rest of the Gita, which is a dialogue between Krishna and Arjuna on the nature of reality, the self, and the path to spiritual liberation.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V3_Q04",
+      "question": "What does Arjuna say about gaining a kingdom or lordship of heaven removing his grief?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.8",
+      "retrieved_verses": [
+        "BG 2.8",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.8\n**Answer:** Arjuna says that even if he gains a prosperous kingdom on earth or even the lordship of heaven, it will not remove his deep sorrow. The thought of killing his own relatives in the war has dried up his senses and made him mentally weak.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the futility of worldly gains in alleviating spiritual sorrow. Arjuna's grief is not just a physical or emotional response but a deep spiritual crisis that requires a spiritual solution, which Krishna will provide in the subsequent verses.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q05",
+      "question": "What does 'indriyāṇām ucchoṣaṇam' describe?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.8",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.9",
+        "BG 2.11"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** 'Indriyāṇām ucchoṣaṇam' describes the experience of pleasure or pain caused by sensory contact with objects. This experience is not the direct result of the sensory contact itself, but rather due to the attachment or sense of 'mine-ness' (abhimana) that one has towards a particular person, object, or situation.\n**Dvaita Perspective:** According to the Dvaita Vedānta tradition, this verse highlights the distinction between the self (jīva) and the external world (maatra). The self experiences pleasure or pain due to its attachment to the external world, rather than the external world itself causing the experience. This understanding is crucial for renouncing the sense of 'mine-ness' and achieving liberation.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V3_Q06",
+      "question": "What does Arjuna finally declare to Krishna about fighting, and what does he do after?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.9",
+      "retrieved_verses": [
+        "BG 2.10",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.4\n**Answer:** Arjuna finally declares to Krishna that he will not fight, saying \"I will not fight, my lord Krishna. I will not fight, even if I am offered the kingdom on earth and the kingdom of heaven. I will not fight, even if I am offered the entire earth and all that is in it.\" (BG 2.4)\n**Dvaita Perspective:** In the Dvaita tradition, this declaration of Arjuna's is seen as a manifestation of his attachment to his relatives and his emotional weakness, which has clouded his judgment and led him to question his duty as a Kshatriya. Krishna's response to Arjuna's declaration sets the stage for the philosophical discussion that follows in the Bhagavad Gita.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V3_Q07",
+      "question": "Why does Vyāsa use the names 'Hṛṣīkeśa' and 'Govinda' for Krishna?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.9",
+      "retrieved_verses": [
+        "BG 2.9",
+        "BG 2.10",
+        "BG 2.14",
+        "BG 2.1",
+        "BG 2.4"
+      ],
+      "answer": "**Verse Reference:** BG 2.9\n**Answer:** Vyāsa uses the names 'Hṛṣīkeśa' and 'Govinda' for Krishna to show that He is the supreme being described in the Vedas and scriptures.\n**Dvaita Perspective:** This usage of names highlights Krishna's divine nature, emphasizing His role as the controller of the senses (Hṛṣīkeśa) and the ultimate reality (Govinda). This perspective is in line with the Dvaita Vedānta tradition, which emphasizes the distinction between the absolute Brahman (Krishna) and the relative jīva (Arjuna).",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q08",
+      "question": "Trace Arjuna's journey from stubborn refusal to surrender to silence in Chapter 2's opening.",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.1, BG 2.7, BG 2.9",
+      "retrieved_verses": [
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.4\n**Answer:** Arjuna's journey in Chapter 2 begins with his stubborn refusal to fight, as he drops his weapons and refuses to engage in battle. This is evident in Verse 2.4, where Arjuna openly expresses his resistance to fighting.\n\n**Dvaita Perspective:** According to the Dvaita tradition, Arjuna's initial refusal to fight stems from his emotional attachment to his relatives and his failure to distinguish between the body and the eternal soul. Krishna's subsequent guidance helps Arjuna to overcome this weakness and surrender to his duty.\n\nNote: The retrieved discourse segments suggest that Arjuna's journey begins with his initial refusal to fight, followed by his surrender to Krishna as his disciple.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V3_Q09",
+      "question": "What happens when Arjuna surrenders to Krishna as a disciple?",
+      "question_type": "General",
+      "expected_verse": "BG 2.7",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.7",
+        "BG 2.8"
+      ],
+      "answer": "**Verse Reference:** BG 2.7\n**Answer:** After surrendering to Krishna as his disciple, Arjuna asks for clear guidance, seeking to know what is truly good (śreyas) for him in this world and the next. This marks the beginning of Krishna's teaching in Chapter 2 of the Bhagavad Gita.\n**Dvaita Perspective:** In the Dvaita tradition, Arjuna's surrender to Krishna as his disciple is seen as a crucial step in his spiritual journey. By acknowledging Krishna as his guru, Arjuna is able to transcend his ego and mental confusion, creating space for Krishna's teachings to guide him towards spiritual growth and self-realization.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q10",
+      "question": "What is the verse about where Arjuna says he will not fight and becomes silent?",
+      "question_type": "General",
+      "expected_verse": "BG 2.9",
+      "retrieved_verses": [
+        "BG 2.9",
+        "BG 2.10",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.9\n**Answer:** According to Sanjaya's narration, Arjuna tells Krishna that he will not fight (ಏವಮುಕ್ತ್ವಾ ಹೃಷಿಕೇಶಂ ಗುಡಾಕೇಶಃ ಪರಂತಪಃ ನಯೋತ್ಸ್ಯ ಇತಿ ಗೋವಿಂದಂ ಉಕ್ತ್ವಾ ತೂಷ್ಣೀಂ ಬಭೂವಃ) and then becomes silent.\n**Dvaita Perspective:** This verse highlights the surrender of Arjuna to Krishna, marking the beginning of the Bhagavad Gita's teaching. The Dvaita tradition emphasizes the importance of this surrender, as it allows Arjuna to transcend his ego and attachment, ultimately leading to spiritual growth.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q11",
+      "question": "I've been struggling with a problem for a long time and nothing works. I feel completely stuck. What does the Gita suggest?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.7, BG 2.8",
+      "retrieved_verses": [
+        "BG 2.8",
+        "BG 2.7",
+        "BG 2.3",
+        "BG 2.2",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** Arjuna's situation is similar to yours. He feels stuck and unable to find a solution to his problem. He is overwhelmed by sorrow and mental weakness. In this state, he asks Krishna to show him a path or teaching that can destroy his sorrow. Krishna's response is that this weakness is not true wisdom, but a form of cowardice and mental weakness. He reminds Arjuna that such behavior does not suit a brave warrior and the son of Kunti. Arjuna's sorrow is described as a small and unworthy weakness of heart that must be thrown away.\n\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as an invitation to surrender to Krishna, the Supreme Lord. It is a call to let go of our ego and our attachment to the outcome, and to trust in Krishna's guidance. This surrender is not just a intellectual understanding, but a deep emotional and spiritual surrender. It is a recognition that our strength and wisdom are limited, and that we need the guidance of the Supreme Lord to overcome our struggles.\n\nIn this context, the Gita suggests that the first step to overcoming our struggles is to recognize our limitations and surrender to the guidance of the Supreme Lord. This surrender is not a sign of weakness, but rather a sign of strength and wisdom. It is a recognition that we are not alone in our struggles, and that we have a higher power that can guide us and give us the strength we need to overcome our challenges.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V3_Q12",
+      "question": "How should I approach a guru or mentor for guidance, according to the Gita?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.7",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.3",
+        "BG 2.5",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.7\n**Answer:** Arjuna's approach to Krishna as his guru is a model for seeking guidance. He surrenders to Krishna, acknowledging his own limitations and confusion, and asks for clear guidance. This surrender is essential for receiving the Gita's teaching. In the Dvaita tradition, this surrender is seen as a necessary step for receiving the divine guidance and wisdom that Krishna has to offer.\n**Dvaita Perspective:** In the Dvaita tradition, the guru is seen as a representative of the divine, and seeking guidance from them is a way of seeking guidance from the divine itself. Arjuna's approach to Krishna as his guru is a model for seeking guidance, and it is essential to approach the guru with a humble and surrendered heart.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q01",
+      "question": "What does 'prahasan iva' mean, and why did Krishna smile this way?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.10",
+      "retrieved_verses": [
+        "BG 2.10",
+        "BG 2.14",
+        "BG 2.13",
+        "BG 2.1",
+        "BG 2.9"
+      ],
+      "answer": "**Verse Reference:** BG 2.10\n**Answer:** 'Prahasan iva' means \"with a smile\" or \"with a laugh\". Krishna smiled this way to reveal Arjuna's true weakness and expose that his arguments about dharma were only excuses. Arjuna's true reason for refusing to fight was his attachment to his relatives and emotional weakness. Krishna's smile brought out this truth and began his teaching of the Bhagavad Gita.\n\n**Dvaita Perspective:** In the Dvaita tradition, Krishna's smile is seen as a manifestation of his divine nature, which is beyond human comprehension. His smile reveals the true nature of Arjuna's attachment and emotional weakness, and it sets the stage for Krishna's teaching of the Bhagavad Gita.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q02",
+      "question": "Why does the verse mention 'senayorubhayormadhye' (between the two armies)?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.10",
+      "retrieved_verses": [
+        "BG 2.10",
+        "BG 2.2",
+        "BG 2.6",
+        "BG 2.4",
+        "BG 2.8"
+      ],
+      "answer": "**Verse Reference:** BG 2.10\n**Answer:** The verse mentions 'senayorubhayormadhye' (between the two armies) to highlight the context in which Krishna is speaking to Arjuna. The battlefield is a crucial setting for the conversation, as it represents the stark reality of war and the moral dilemma that Arjuna faces. Krishna's words are meant to guide Arjuna through this crisis, and the mention of the two armies serves as a reminder of the gravity of the situation.\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as a turning point in the Bhagavad Gita, marking the beginning of Krishna's teachings to Arjuna. The emphasis on the battlefield serves to underscore the importance of understanding one's duty (swadharma) in the face of adversity, as well as the need to transcend attachment and ego.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q03",
+      "question": "What does 'aśocyān anvaśocaḥ tvam' mean?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.11",
+      "retrieved_verses": [
+        "BG 2.2",
+        "BG 2.11",
+        "BG 2.8",
+        "BG 2.6",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** \"aśocyān anvaśocaḥ tvam\" means \"You are grieving for people who are not worthy of sorrow and speaking words that only appear wise.\" This verse suggests that Arjuna's arguments about dharma are actually due to attachment to his relatives and not true understanding.\n**Dvaita Perspective:** From the Dvaita perspective, this verse highlights the importance of understanding the nature of the jīva (individual soul) and its relationship with the Lord. Arjuna's attachment to his relatives is seen as a manifestation of his egoistic identification with the material world, which is not worthy of sorrow.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q04",
+      "question": "What does 'prajñāvādāṃś ca bhāṣase' really mean — is Krishna praising Arjuna's wisdom?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.11",
+      "retrieved_verses": [
+        "BG 2.10",
+        "BG 2.11",
+        "BG 2.3",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** No, Krishna is not praising Arjuna's wisdom. In fact, Krishna is highlighting the opposite. He says, \"prajñāvādāṃś ca bhāṣase\" which means \"and your words are only wise-sounding.\" This phrase suggests that Arjuna's arguments about dharma are not based on true understanding, but rather on attachment to his relatives and emotional weakness. Krishna is pointing out that Arjuna's words may appear wise, but they are actually rooted in his own personal biases and emotions, rather than a genuine understanding of dharma.\n\n**Dvaita Perspective:** From the Dvaita Vedānta perspective, this verse highlights the importance of distinguishing between true wisdom and mere intellectual understanding. Krishna is emphasizing that Arjuna's words, though they may appear wise, are actually driven by his emotional attachment and lack of true understanding. This serves as a reminder to the seeker to look beyond mere intellectual understanding and to cultivate a deeper understanding of the Self and the nature of reality.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q05",
+      "question": "What does 'gatāsūn agatāsūṃś ca nānuśocanti paṇḍitāḥ' mean?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.11",
+      "retrieved_verses": [
+        "BG 2.2",
+        "BG 2.11",
+        "BG 2.1",
+        "BG 2.6",
+        "BG 2.8"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** This verse means that wise people do not grieve for the living or those who are near death. The phrase \"gatāsūn agatāsūṃś ca\" refers to those who are already gone or those who are about to depart. The phrase \"nānuśocanti\" means that they do not grieve. The phrase \"paṇḍitāḥ\" refers to wise people. Therefore, the verse is saying that wise people do not grieve for those who are already gone or those who are about to depart.\n\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as emphasizing the importance of accepting the natural order of life and death. Wise people understand that death is a natural part of life and do not grieve for those who have passed away. This verse is also seen as highlighting the difference between wise people and those who are overcome by attachment and grief.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q06",
+      "question": "According to the discourse, what is the core of Krishna's Gita teaching as introduced when he first begins to teach?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.11",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.3",
+        "BG 2.10",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.1\n**Answer:** Krishna's teaching begins by acknowledging Arjuna's emotional state, describing him as a man overwhelmed by compassion and blinded by tears, unable to think clearly or judge what is right. Krishna addresses Arjuna's disturbed mind, showing that he is fully qualified to guide him, and begins his teaching by speaking a few words to prepare Arjuna's mind.\n**Dvaita Perspective:** In the Dvaita tradition, Krishna's teaching is seen as a revelation of the absolute truth, which is beyond the limitations of human understanding. Krishna's words are not just a philosophical discourse but a spiritual guidance that aims to awaken the individual to their true nature and purpose.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "V4_Q07",
+      "question": "How does Krishna's approach shift from rebuking Arjuna to actually teaching him?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.2, BG 2.3, BG 2.10, BG 2.11",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** Krishna's approach shifts from rebuking Arjuna to actually teaching him by exposing Arjuna's true weakness and attachment to his relatives. Krishna's initial sharp words (BG 2.11) were meant to break Arjuna's stubbornness and awaken his courage. Once Arjuna surrenders and becomes receptive, Krishna begins his teaching, guiding Arjuna to perform his duty.\n**Dvaita Perspective:** In the Dvaita tradition, Krishna's approach is seen as a manifestation of his divine nature, where he uses his divine wisdom to guide Arjuna towards his true self. Krishna's teaching is not just a philosophical discourse but a transformative process that awakens Arjuna to his true nature and duty.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q08",
+      "question": "What happens when Krishna smiles and begins to speak to Arjuna between the two armies?",
+      "question_type": "General",
+      "expected_verse": "BG 2.10",
+      "retrieved_verses": [
+        "BG 2.10",
+        "BG 2.4"
+      ],
+      "answer": "**Verse Reference:** BG 2.10\n**Answer:** Krishna smiles and begins to speak to Arjuna, revealing Arjuna's true weakness and exposing that his arguments about dharma were only excuses. Arjuna's true reason for refusing to fight is his attachment to his relatives and emotional weakness.\n**Dvaita Perspective:** According to the Dvaita tradition, Krishna's smile (prahasa) in this context is a manifestation of His divine nature, revealing the true state of Arjuna's mind. This smile is not just a physical expression but also a spiritual one, indicating that Krishna is aware of Arjuna's inner turmoil and is about to guide him towards the path of self-realization.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q09",
+      "question": "What is Krishna saying when he tells Arjuna that wise people do not grieve?",
+      "question_type": "General",
+      "expected_verse": "BG 2.11",
+      "retrieved_verses": [
+        "BG 2.11",
+        "BG 2.2",
+        "BG 2.3",
+        "BG 2.9"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** Krishna is saying that wise people do not grieve for the living or those who are near death. This is because they understand that it is the natural cycle of life and death, and that the soul is eternal and indestructible.\n**Dvaita Perspective:** From the Dvaita Vedānta perspective, this verse highlights the distinction between the individual self (jiva) and the ultimate reality (Brahman). Wise people, who have realized their true nature as separate from the material world, do not grieve for the material body, which is subject to birth and death. Instead, they focus on the eternal and indestructible soul, which is the true self.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q10",
+      "question": "I feel like I'm being wise by avoiding conflict, but others say I'm just being weak. What does the Gita say?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.11",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.9",
+        "BG 2.7",
+        "BG 2.2",
+        "BG 2.11"
+      ],
+      "answer": "**Verse Reference:** BG 2.3\n**Answer:** Krishna tells Arjuna that his weakness is not true wisdom, but a form of cowardice and mental weakness. He reminds Arjuna that such behavior does not suit a brave warrior and the son of Kunti. Arjuna's sorrow is described as a small and unworthy weakness of heart that must be thrown away. Krishna uses these harsh words to break Arjuna's stubbornness and expose his inner confusion.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the importance of distinguishing between true wisdom and mere mental weakness. Krishna's words are meant to awaken Arjuna from his mental confusion and encourage him to take bold action as a Kshatriya. This verse also emphasizes the need to overcome one's own doubts and fears in order to fulfill one's duties and achieve spiritual growth.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V4_Q11",
+      "question": "Should I treat wrongdoing by family members differently from wrongdoing by strangers?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.11",
+      "retrieved_verses": [
+        "BG 2.11",
+        "BG 2.5",
+        "BG 2.6",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** According to Krishna, Arjuna should not grieve for people who are not worthy of sorrow and should not speak words that only appear wise. Arjuna's arguments about dharma are actually due to attachment to his relatives and not true understanding. As a Kshatriya, it is Arjuna's duty to punish wrongdoing, even if the wrongdoers are his elders or relatives. Krishna explains that wise people do not grieve for the living or those who are near death. Therefore, Arjuna's sorrow and reasoning are both incorrect.\n**Dvaita Perspective:** In the Dvaita tradition, the concept of \"family\" is not limited to biological ties. It also includes those who are spiritually connected to us. Therefore, the Dvaita perspective would emphasize that one should treat wrongdoing by those who are spiritually connected to us with the same level of severity as wrongdoing by strangers. The emphasis is on upholding dharma and justice, regardless of the perpetrator's relationship to us.\n\nNote: The question is not explicitly addressed in the provided discourse segments. However, based on the context of BG 2.11, it can be inferred that the Dvaita perspective would emphasize the importance of upholding dharma and justice, regardless of the perpetrator's relationship to us.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q01",
+      "question": "What does Krishna establish about the soul using three grammatical persons (I/you/they)?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.12",
+      "retrieved_verses": [
+        "BG 2.12",
+        "BG 2.13",
+        "BG 2.14",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.12\n**Answer:** Krishna establishes that the soul (atma) is unborn and therefore undying. He uses all three grammatical persons (I, you, and they) to declare that neither He, Arjuna, nor any of the assembled kings has ever not existed — all souls are beginningless and eternal.\n**Dvaita Perspective:** This verse highlights the eternal and unchanging nature of the soul, which is a central tenet of the Dvaita Vedānta tradition. According to Madhva's commentary, the soul's eternal existence is a fundamental truth that transcends the fleeting nature of the body and the world.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q02",
+      "question": "What is the logical argument Krishna makes about birth and death?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.12",
+      "retrieved_verses": [
+        "BG 2.11",
+        "BG 2.13",
+        "BG 2.12",
+        "BG 2.14"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** Krishna presents a logical argument about birth and death by drawing an analogy between the natural stages of life (childhood, youth, and old age) and the transition from one body to another at death. He asks Arjuna why he does not grieve when his child-body becomes a youth-body, and similarly, why he should grieve when the old body gives way to a new one? This analogy illustrates the natural and inevitable process of change, making it clear that the soul within the body is not affected by these transitions.\n**Dvaita Perspective:** In the Dvaita Vedānta tradition, this verse is seen as a key passage that highlights the distinction between the eternal, unchanging soul (jīva) and the temporary, changing body (deha). Krishna's argument emphasizes the soul's transcendence of birth and death, and the futility of grieving over the body's changes. This perspective underscores the importance of understanding the true nature of the self and its relationship with the body.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q03",
+      "question": "What analogy does Krishna use to explain death, and how does it work?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.13",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.11",
+        "BG 2.13",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** Krishna uses the analogy of the soul passing through childhood, youth, and old age within one body, without grief, and then passing into a new body at death (dehaantara praapti). He asks Arjuna: you do not weep when your child-body becomes a youth-body; why then weep when the old body gives way to a new one? This analogy illustrates the natural transition of the soul from one body to another, without any emotional attachment or grief.\n**Dvaita Perspective:** This analogy highlights the Dvaita Vedānta perspective that the soul (jiva) is eternal and immutable, and the physical body is temporary and subject to change. The soul's passage from one body to another is a natural process, unaffected by the physical body's aging or death.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q04",
+      "question": "What does 'dhīras tatra na muhyati' mean?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.13",
+      "retrieved_verses": [
+        "BG 2.13",
+        "BG 2.3",
+        "BG 2.14",
+        "BG 2.11",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** \"dhīras tatra na muhyati\" means that a wise person (dhīra) does not grieve over the natural transition of the soul from one body to another. The phrase is used to emphasize that the soul's passage from childhood to youth and from youth to old age is a natural process, and one should not grieve over it. Similarly, the soul's passage from one body to another at death is also a natural process, and a wise person does not grieve over it.\n\n**Dvaita Perspective:** In the Dvaita Vedānta tradition, this verse highlights the distinction between the individual self (jīva) and the Supreme Self (Brahman). The jīva, being a part of the larger cosmic process, undergoes various transformations, including birth, growth, decay, and death. A wise person, having understood this process, does not grieve over the natural transition of the jīva from one body to another. This perspective emphasizes the importance of understanding the nature of the self and the world, and accepting the natural processes that govern them.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q05",
+      "question": "How does the childhood-youth-old age analogy address Arjuna's grief about the body being destroyed?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.13",
+      "retrieved_verses": [
+        "BG 2.13",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** Krishna's analogy of the childhood-youth-old age transition within one body addresses Arjuna's grief by highlighting the natural and inevitable process of physical transformation. Krishna asks Arjuna to consider that the soul within the body does not grieve over these changes, as they are accepted as a natural part of life. Similarly, the soul does not grieve over the transition from one physical body to another at death. This analogy aims to help Arjuna understand that the physical body is not the true self, and that the soul's true nature is eternal and unchanged.\n**Dvaita Perspective:** In the Dvaita tradition, this analogy emphasizes the distinction between the eternal, unchanging soul (jiva) and the temporary, changing physical body (deha). This understanding is crucial for Arjuna, as it helps him to let go of his attachment to the physical body and focus on the eternal, spiritual self.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q06",
+      "question": "How do the teachings about the eternal soul and the body-change analogy together build the case for why Arjuna should not grieve?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.12, BG 2.13",
+      "retrieved_verses": [
+        "BG 2.13",
+        "BG 2.12",
+        "BG 2.11",
+        "BG 2.8"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** According to Krishna, the eternal soul (atma) does not undergo grief or sorrow, as it is unborn and undying. The body (deha) is subject to change, and the soul's transition from one body to another is a natural process. Therefore, Arjuna should not grieve over the death of his relatives, as the soul within them is eternal and unaffected by the physical body's demise.\n**Dvaita Perspective:** In the Dvaita tradition, the eternal soul (jīva) is seen as a separate entity from the body (deha). The soul's existence is not tied to the physical body, and its transition from one body to another is a natural process. This understanding of the soul's eternal nature helps to alleviate grief and sorrow, as it is not affected by the body's change or death.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q07",
+      "question": "What is the verse about where Krishna says the soul has always existed and always will?",
+      "question_type": "General",
+      "expected_verse": "BG 2.12",
+      "retrieved_verses": [
+        "BG 2.12",
+        "BG 2.13",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.12\n**Answer:** Krishna declares that neither He, Arjuna, nor any of the assembled kings has ever not existed — all souls are beginningless and eternal. Using all three grammatical persons (I / you / they), He establishes that the soul (atma) is unborn and therefore undying. Since it was never born, it cannot be killed, and grief over its destruction is unwarranted.\n**Dvaita Perspective:** This verse is a key tenet of the Dvaita Vedānta tradition, emphasizing the eternal and beginningless nature of the individual soul (jiva). This perspective posits that the soul is distinct from the material body and is not subject to the cycle of birth and death.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q08",
+      "question": "What is the teaching about the soul passing through different stages like childhood, youth, and old age?",
+      "question_type": "General",
+      "expected_verse": "BG 2.13",
+      "retrieved_verses": [
+        "BG 2.13",
+        "BG 2.12",
+        "BG 2.7",
+        "BG 2.3",
+        "BG 2.14"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** According to Krishna, the soul within one body passes through different stages like childhood, youth, and old age without grief, just as we accept each stage as natural. This is because we do not grieve when our child-body becomes a youth-body; similarly, we should not grieve when the old body gives way to a new one. A wise person (dhira) does not grieve over this natural transition.\n**Dvaita Perspective:** This teaching emphasizes the concept of the soul's eternal existence and its passage through various bodies, free from the cycle of birth and death. The Dvaita tradition, as represented by Madhva, views the soul as a separate entity from the body and emphasizes the importance of renouncing attachment to the body and its stages.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q09",
+      "question": "I recently lost a loved one and I'm struggling to cope. What does the Gita say about death and grief?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.12, BG 2.13",
+      "retrieved_verses": [
+        "BG 2.13",
+        "BG 2.11",
+        "BG 2.8",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** According to the Bhagavad Gita, death is a natural transition, just like childhood, youth, and old age. Krishna asks Arjuna, \"You do not grieve when your child-body becomes a youth-body; why then grieve when the old body gives way to a new one?\" (BG 2.13). This verse suggests that we should accept death as a natural part of life, just like we accept the different stages of life. Grieving over death is unnecessary because the soul within us passes through these stages without grief. This perspective can help us cope with the loss of a loved one, recognizing that death is a natural part of life.\n**Dvaita Perspective:** In the Dvaita tradition, this verse is seen as a reminder that the individual self (jiva) is eternal and indestructible, while the physical body is temporary and subject to change. This understanding can help alleviate grief and sorrow, as we recognize that the loved one's true self is not affected by death.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V5_Q10",
+      "question": "I'm afraid of getting old and eventually dying. Does the Gita address fear of death?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.13",
+      "retrieved_verses": [
+        "BG 2.13",
+        "BG 2.8",
+        "BG 2.7",
+        "BG 2.5"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** According to BG 2.13, the soul within one body passes through childhood, youth, and old age without grief, and similarly, it passes into a new body at death (dehaantara praapti). Krishna asks: you do not weep when your child-body becomes a youth-body; why then weep when the old body gives way to a new one? A wise person (dhira — one established in viveka/discernment) does not grieve over this natural transition.\n\n**Dvaita Perspective:** In the Dvaita tradition, the concept of the soul's transmigration (dehaantara praapti) is seen as a natural process, and the fear of death is viewed as a result of ignorance about the true nature of the self. The Gita's teaching is to recognize the soul's eternal and indestructible nature, which is beyond the physical body and its limitations. By understanding this, one can overcome the fear of death and view the process of birth, growth, and death as a natural cycle, rather than a cause for grief.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q01",
+      "question": "What does the technical term 'mātrā-sparśa' mean?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.9",
+        "BG 2.11",
+        "BG 2.7",
+        "BG 2.13"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** The technical term 'mātrā-sparśa' refers to the sensory contact between the five senses (jñānendriyas) and their objects (maatra). This contact produces pleasure or pain depending on the season, as illustrated by Krishna's example of the skin's experience of hot and cold.\n**Dvaita Perspective:** In the Dvaita tradition, mātrā-sparśa is seen as a fundamental aspect of the material world, where the senses and their objects interact to produce various experiences. This understanding is crucial in the Bhagavad Gita, as it highlights the impermanent and fleeting nature of sensory pleasures and pains, which are ultimately rooted in the attachment to 'mine-ness' (abhimana).",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q02",
+      "question": "What example does Krishna use to explain how sensory contact produces pleasure and pain?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.13",
+        "BG 2.3",
+        "BG 2.11"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** Krishna uses the example of the skin's experience of hot and cold to explain how sensory contact produces pleasure and pain. He explains that the same cold object gives joy in summer and misery in winter, depending on the season.\n**Dvaita Perspective:** According to the Dvaita Vedānta tradition, Krishna's example highlights the role of 'abhimana' or personal ownership in determining our experience of pleasure and pain. The same sensory contact can produce different effects depending on whether we have a sense of ownership or attachment to the object or situation.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q03",
+      "question": "What do 'āgamāpāyinaḥ' and 'anityāḥ' mean?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.7",
+        "BG 2.12",
+        "BG 2.8",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** In this context, 'āgamāpāyinaḥ' (coming and going) refers to the temporary and fleeting nature of sensory experiences, which are constantly changing and arising. 'anityāḥ' (impermanent) emphasizes the transitory and ephemeral nature of these experiences. Together, they highlight that the pleasures and pains we experience through sensory contact are temporary and fleeting, and therefore, it is irrational to cling to them.\n\n**Dvaita Perspective:** This understanding is crucial in the Dvaita tradition, as it emphasizes the distinction between the eternal and immutable Self (Atman) and the temporary and changing world of sensory experiences. By recognizing the impermanent nature of sensory experiences, one can cultivate a sense of detachment and renounce attachment to worldly pleasures and pains, ultimately leading to spiritual growth and self-realization.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q04",
+      "question": "According to Madhvācārya's commentary, what is the real cause of pleasure and pain — is it sensory contact alone?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.11",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** According to Madhvacharya's commentary, the real cause of pleasure and pain is not sensory contact alone, but rather 'abhimana' or the sense of 'mine-ness' or personal ownership attached to a person or object. Krishna explains that the same wound on a stranger's body leaves Arjuna unmoved, but the same wound on his teacher causes him to weep because one has abhimana and the other does not.\n**Dvaita Perspective:** In the Dvaita tradition, this understanding of pleasure and pain as caused by abhimana highlights the importance of renouncing one's attachment to worldly objects and relationships. By dropping the abhimana of 'my guru, my grandfather,' one can render sensory contact incapable of causing pain. This perspective emphasizes the need to cultivate a sense of detachment and equanimity in the face of pleasure and pain.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q05",
+      "question": "What does 'titikṣasva' mean according to Madhvācārya, and how is it different from other commentators' interpretation?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.1",
+        "BG 2.4",
+        "BG 2.9",
+        "BG 2.11"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** According to Madhva's commentary, 'titikṣasva' (BG 2.14) means not merely 'endure' but 'make them ineffective' (viphaleeKuru) by dropping the abhimana of 'my guru, my grandfather.' This means that when one renounces the sense of 'mine-ness' or personal ownership, the sensory contact with objects becomes incapable of causing pain or pleasure.\n**Dvaita Perspective:** In the Dvaita tradition, Madhva emphasizes the importance of renouncing abhimana, which is the root cause of pleasure and pain. By dropping this sense of 'mine-ness', one can transcend the limitations of the senses and achieve a state of equanimity, unaffected by the fluctuations of pleasure and pain. This perspective highlights the need to go beyond mere endurance and instead, cultivate a sense of detachment and non-attachment.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q06",
+      "question": "How does the teaching about sensory contact and abhimāna directly solve Arjuna's specific problem about fighting his elders?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.4",
+        "BG 2.8",
+        "BG 2.1"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** Krishna explains that sensory contact alone is not the cause of pleasure and pain, but rather the sense of 'mine-ness' or personal ownership (abhimāna) attached to a person or object. This understanding directly solves Arjuna's problem about fighting his elders because it reveals that his attachment to them is the root cause of his sorrow and mental weakness. By recognizing that his sense of 'mine-ness' is the true obstacle, Arjuna can begin to let go of his attachment and see the elders as mere objects, not as his own relatives. This perspective allows him to re-evaluate his situation and consider the war in a more detached manner.\n**Dvaita Perspective:** In the Dvaita tradition, this teaching highlights the importance of recognizing the distinction between the self (jīva) and the external world (prākṛti). Arjuna's problem is not just about fighting his elders, but about his own attachment to them, which is rooted in his sense of 'mine-ness'. By understanding the true nature of sensory contact and abhimāna, Arjuna can begin to transcend his attachment and see the world in its true, detached nature.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q07",
+      "question": "How does the teaching on mātrā-sparśa complete the three-part answer Krishna gives about why Arjuna should not grieve?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.12, BG 2.13, BG 2.14",
+      "retrieved_verses": [
+        "BG 2.11",
+        "BG 2.3",
+        "BG 2.10",
+        "BG 2.14",
+        "BG 2.8"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** The teaching on mātrā-sparśa (BG 2.14) completes the three-part answer Krishna gives about why Arjuna should not grieve by revealing the true cause of pleasure and pain. Krishna explains that sensory contact (sparśa) alone is not the cause of pleasure and pain, but rather the sense of 'mine-ness' or personal ownership (abhimana) attached to a person or object. This understanding shows that Arjuna's grief is due to his attachment to his relatives and not the act of killing them, which is his duty as a Kshatriya. By renouncing 'mine-ness', Arjuna can render sensory contact incapable of causing pain, and thus, he should not grieve.\n**Dvaita Perspective:** In the Dvaita tradition, this teaching on mātrā-sparśa highlights the distinction between the individual self (jīva) and the Supreme Self (Brahman). The sense of 'mine-ness' is a characteristic of the individual self, which is separate from the Supreme Self. By recognizing this distinction, one can transcend the limitations of the individual self and attain liberation.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q08",
+      "question": "What is the verse about sensory contact, pleasure, pain, and endurance (titikṣā)?",
+      "question_type": "General",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.9",
+        "BG 2.3",
+        "BG 2.7",
+        "BG 2.13"
+      ],
+      "answer": "**Verse Reference:** BG 2.14\n**Answer:** Krishna explains that sensory contact (sparsha) with objects produces pleasure or pain depending on the season or circumstances. He uses the example of a cold object giving joy in summer and misery in winter. However, He reveals that the true cause of pleasure and pain is not the sensory contact itself, but the sense of 'mine-ness' or personal ownership (abhimana) attached to a person or object. The same wound on a stranger's body leaves Arjuna unmoved, while the same wound on his teacher causes him to weep, because one has abhimana and the other does not. Renouncing 'mine-ness' renders sensory contact incapable of causing pain.\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the distinction between the self (jiva) and the external world (maatra). The sense of 'mine-ness' is seen as a fundamental obstacle to spiritual growth, as it creates attachment and aversion to the world. By renouncing this sense of ownership, one can transcend the cycle of pleasure and pain and attain spiritual freedom.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q09",
+      "question": "The same situation makes me emotional but doesn't affect my colleague at all. Why do I react so strongly to things others shrug off?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.11",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** The reason you react strongly to a situation is because of the sense of 'mine-ness' or personal ownership (abhimana) attached to a person or object. This abhimana is what truly causes pleasure and pain, not the sensory contact itself. The same wound on a stranger's body leaves you unmoved, but the same wound on your colleague's body doesn't affect them because they don't have the same level of abhimana. This is why you react strongly to a situation that doesn't affect your colleague in the same way.\n**Dvaita Perspective:** According to the Dvaita tradition, the sense of 'mine-ness' or abhimana is a fundamental aspect of the jiva's (individual soul's) nature. It is this sense of ownership that creates the illusion of a personal connection to the world, leading to attachment, aversion, and ultimately, suffering. By recognizing and renouncing this sense of 'mine-ness', one can transcend the limitations of the ego and achieve spiritual liberation.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "V6_Q10",
+      "question": "How can I do difficult things at work without getting emotionally overwhelmed?",
+      "question_type": "Applied",
+      "expected_verse": "BG 2.14",
+      "retrieved_verses": [
+        "BG 2.13",
+        "BG 2.8",
+        "BG 2.3"
+      ],
+      "answer": "**Verse Reference:** BG 2.13\n**Answer:** Just as the soul within one body passes through childhood, youth, and old age without grief — because we accept each stage as natural — so too does it pass into a new body at death (dehaantara praapti). Krishna asks: you do not weep when your child-body becomes a youth-body; why then weep when the old body gives way to a new one? A wise person (dhira — one established in viveka/discernment) does not grieve over this natural transition.\n\n**Dvaita Perspective:** In the Dvaita tradition, this verse highlights the importance of accepting the natural order of things. Just as the soul passes through different stages of life without emotional attachment, we too can learn to accept the challenges at work without getting emotionally overwhelmed. By recognizing the impermanence of all things, we can cultivate a sense of detachment and equanimity, allowing us to navigate difficult situations with greater ease and wisdom.\n\nIn this context, the verse encourages us to view challenges at work as a natural part of our journey, rather than as a source of emotional distress. By adopting this mindset, we can develop the mental strength and resilience needed to tackle difficult tasks without getting overwhelmed.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "precision_at_5": 0.0,
+      "shloka_accuracy": 0.0
+    },
+    {
+      "question_id": "S_Q01",
+      "question": "What does the word 'viṣāda' mean according to Ṭīkākṛtpādaru (Madhvācārya's commentary)?",
+      "question_type": "Factual",
+      "expected_verse": "BG 2.1",
+      "retrieved_verses": [
+        "BG 2.14",
+        "BG 2.1",
+        "BG 2.9",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.1\n**Answer:** According to Ṭīkākṛtpādaru (Madhvācārya's commentary), viṣāda refers to the deep sorrow and mental weakness that Arjuna experiences due to his attachment to his teachers, elders, and relatives. It is a state of being overwhelmed by compassion and blinded by tears, making it difficult for Arjuna to think clearly or judge what is right.\n**Dvaita Perspective:** In the Dvaita tradition, viṣāda is seen as a natural consequence of attachment to worldly relationships, which are ultimately fleeting and impermanent. The only way to overcome this state is to renounce attachment and seek guidance from the supreme being, as Arjuna is about to do under the guidance of Krishna.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "S_Q02",
+      "question": "What does the word 'ārya' mean in Krishna's rebuke, and how is it different from the racial interpretation?",
+      "question_type": "Interpretive",
+      "expected_verse": "BG 2.2",
+      "retrieved_verses": [
+        "BG 2.3",
+        "BG 2.14",
+        "BG 2.2",
+        "BG 2.7"
+      ],
+      "answer": "**Verse Reference:** BG 2.2\n**Answer:** In Krishna's rebuke, the word 'ārya' (ಅನಾರ್ಯ) means 'noble' or 'worthy'. It is used to describe a person who is fit for a noble or noble-like behavior. In this context, Krishna is saying that Arjuna's attitude is unworthy of a noble person, implying that it is unbecoming of someone with a noble character.\n**Dvaita Perspective:** In the Dvaita tradition, 'ārya' is not just a racial or ethnic term, but a term that describes a person's character and behavior. It is a quality that is expected of a noble or virtuous person, and Krishna is scolding Arjuna for not living up to this standard. This interpretation emphasizes the importance of moral character and behavior, rather than just racial or ethnic identity.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "S_Q03",
+      "question": "What is the overall structure of Chapter 2's opening — how does the conversation shift from Arjuna's despair to Krishna's teaching?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.1, BG 2.14",
+      "retrieved_verses": [
+        "BG 2.7",
+        "BG 2.1",
+        "BG 2.10"
+      ],
+      "answer": "**Verse Reference:** BG 2.1\n**Answer:** The overall structure of Chapter 2's opening is a gradual shift from Arjuna's despair and confusion to Krishna's guidance and teaching. The conversation begins with Arjuna's emotional state, described as being overwhelmed by compassion and blinded by tears (BG 2.1). This sets the tone for his subsequent questions and concerns about his duty as a Kshatriya and his attachment to his relatives. Krishna, as Madhusudana, the destroyer of evil, is addressed and begins to speak, initially with a few words to prepare Arjuna's disturbed mind (BG 2.1). This gentle approach allows Krishna to gradually bring out the truth of Arjuna's attachment and emotional weakness, as seen in his smile (prahasa) in BG 2.10. This revelation paves the way for Krishna's teaching and guidance, which begins in earnest from BG 2.11 onwards.\n\n**Dvaita Perspective:** In the Dvaita tradition, this opening section of Chapter 2 highlights the importance of self-realization and the need for spiritual guidance. Krishna's gentle approach and Arjuna's emotional vulnerability serve as a reminder that spiritual growth is not a sudden or dramatic event, but rather a gradual process that requires patience, self-awareness, and the guidance of a qualified teacher.",
+      "precision_at_1": 0.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    },
+    {
+      "question_id": "S_Q04",
+      "question": "What is the Dvaita (Madhva) perspective on why Arjuna should not grieve, as explained across Krishna's initial teaching verses?",
+      "question_type": "Cross-verse",
+      "expected_verse": "BG 2.11, BG 2.12, BG 2.13, BG 2.14",
+      "retrieved_verses": [
+        "BG 2.11",
+        "BG 2.10",
+        "BG 2.3",
+        "BG 2.8",
+        "BG 2.2"
+      ],
+      "answer": "**Verse Reference:** BG 2.11\n**Answer:** According to the Dvaita perspective, Arjuna should not grieve because he is mourning for people who are not worthy of sorrow. Krishna explains that wise people do not grieve for the living or those who are near death. Therefore, Arjuna's sorrow and reasoning are both incorrect. This perspective emphasizes that Arjuna's attachment to his relatives and emotional weakness are the true causes of his grief, rather than any genuine concern for their well-being.\n**Dvaita Perspective:** In the Dvaita tradition, it is believed that Arjuna's grief is a manifestation of his attachment to the world and his failure to recognize the true nature of reality. Krishna's teaching aims to awaken Arjuna to his true self and guide him towards his divine duty, which is to perform his kshatriya duty without attachment or emotional weakness.",
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "precision_at_5": 1.0,
+      "shloka_accuracy": 1.0
+    }
+  ]
+}
