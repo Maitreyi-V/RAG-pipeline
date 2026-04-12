@@ -7,22 +7,14 @@ This script:
   1. Builds the verse embedding index (or loads from cache)
   2. Splits each English transcript into segments
   3. Runs Layer 3 detection on each segment
-  4. Compares detected verse against ground truth from video title
+  4. Compares detected verse against ground truth from advaita_ground_truth.py
   5. Reports Precision, Recall, F1 across all videos
-
-GROUND TRUTH FORMAT:
-  A simple CSV file: video_filename, verse_refs_covered
-  e.g.:
-    video_01.txt, BG 2.1, BG 2.2, BG 2.3
-    video_02.txt, BG 2.4, BG 2.5
-  
-  OR: pass ground truth from video titles directly (see GROUND_TRUTH dict below)
 
 USAGE:
   python test_layer3.py
-  python test_layer3.py --transcripts path/to/english_transcripts/
-  python test_layer3.py --threshold 0.5   # tune threshold
-  python test_layer3.py --segment-words 300  # tune segment size
+  python test_layer3.py --transcripts data/transcripts/
+  python test_layer3.py --threshold 0.5
+  python test_layer3.py --segment-words 300
   python test_layer3.py --rebuild          # force re-embed (ignore cache)
   python test_layer3.py --debug            # show top-3 matches per segment
 """
@@ -31,25 +23,20 @@ import os
 import sys
 import json
 import argparse
-from collections import defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from layer3_semantic import Layer3SemanticMatcher
-
+from advaita_ground_truth import GROUND_TRUTH as _GT
 
 # ─────────────────────────────────────────────
-# GROUND TRUTH
-# Edit this dict to match your actual English video files and their verse coverage.
-# Key = transcript filename (just the filename, not full path)
-# Value = list of verse refs covered in that video (from the video title)
+# GROUND TRUTH — loaded from advaita_ground_truth.py
+# Keys are filenames like "video_01.json"
+# Values are lists of verse refs like ["BG 2.1", "BG 2.2"]
 # ─────────────────────────────────────────────
 
 GROUND_TRUTH = {
-    # Example — replace with your actual filenames and verse refs
-    # "video_01.txt": ["BG 2.1", "BG 2.2", "BG 2.3"],
-    # "video_02.txt": ["BG 2.4", "BG 2.5"],
-    # "video_03.txt": ["BG 2.11", "BG 2.12", "BG 2.13"],
-    # ...add all your videos here
+    f"{vid}.json": entry["verses"]
+    for vid, entry in _GT.items()
 }
 
 
@@ -62,14 +49,6 @@ def split_into_segments(text: str, words_per_segment: int = 300,
     """
     Split transcript into overlapping segments of ~N words.
     Overlap ensures verse boundary content isn't missed.
-    
-    Args:
-        text: full transcript text
-        words_per_segment: target segment size in words
-        overlap_words: overlap between consecutive segments
-    
-    Returns:
-        list of text segments
     """
     words = text.split()
     if not words:
@@ -96,6 +75,10 @@ def split_into_segments(text: str, words_per_segment: int = 300,
 def evaluate_video(transcript_path: str, expected_verses: list[str],
                    matcher: Layer3SemanticMatcher,
                    words_per_segment: int, debug: bool) -> dict:
+    """
+    Run Layer 3 on one transcript and evaluate against expected verses.
+    Reads Whisper JSON format (has a "text" key with full transcript).
+    """
     import json as _json
     with open(transcript_path, "r", encoding="utf-8") as f:
         data = _json.load(f)
@@ -158,8 +141,8 @@ def compute_prf1(tp: int, fp: int, fn: int) -> tuple[float, float, float]:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--transcripts", default="english_transcripts",
-                        help="Folder containing English transcript .txt files")
+    parser.add_argument("--transcripts", default="data/transcripts",
+                        help="Folder containing English transcript .json files")
     parser.add_argument("--threshold", type=float, default=0.45,
                         help="Cosine similarity threshold (default: 0.45)")
     parser.add_argument("--segment-words", type=int, default=300,
@@ -173,17 +156,6 @@ def main():
     parser.add_argument("--output", default="layer3_results.json",
                         help="Where to save results JSON")
     args = parser.parse_args()
-
-    # ── Check ground truth ──────────────────────────────────────────────
-    if not GROUND_TRUTH:
-        print("ERROR: GROUND_TRUTH dict is empty.")
-        print("Edit test_layer3.py and fill in your video filenames and verse refs.")
-        print("\nExample:")
-        print('  GROUND_TRUTH = {')
-        print('      "video_01.txt": ["BG 2.1", "BG 2.2"],')
-        print('      "video_02.txt": ["BG 2.11", "BG 2.12", "BG 2.13"],')
-        print('  }')
-        sys.exit(1)
 
     # ── Check transcripts folder ────────────────────────────────────────
     if not os.path.isdir(args.transcripts):
@@ -199,6 +171,7 @@ def main():
     print(f"Segment size  : {args.segment_words} words")
     print(f"Overlap       : {args.overlap_words} words")
     print(f"Videos        : {len(GROUND_TRUTH)}")
+    print(f"Transcripts   : {args.transcripts}")
 
     matcher = Layer3SemanticMatcher(
         threshold=args.threshold,
@@ -237,7 +210,7 @@ def main():
     precision, recall, f1 = compute_prf1(total_tp, total_fp, total_fn)
 
     print(f"\n{'='*60}")
-    print("AGGREGATE RESULTS (Layer 3 — English corpus)")
+    print("AGGREGATE RESULTS (Layer 3 — English Advaita corpus)")
     print(f"{'='*60}")
     print(f"Videos evaluated  : {len(all_results)}")
     print(f"Total Expected     : {total_tp + total_fn}")
@@ -253,7 +226,7 @@ def main():
 
     # ── Paper table row ─────────────────────────────────────────────────
     print(f"\nPAPER TABLE ROW:")
-    print(f"| Layer 3 | English (paraphrase) | {precision} | {recall} | {f1} |")
+    print(f"| Layer 3 | English (paraphrase only) | {precision} | {recall} | {f1} |")
 
     # ── Save results ────────────────────────────────────────────────────
     output = {
@@ -277,14 +250,14 @@ def main():
         json.dump(output, f, indent=2)
     print(f"\nResults saved to: {args.output}")
 
-    # ── Threshold tuning hint ───────────────────────────────────────────
+    # ── Threshold tuning hints ──────────────────────────────────────────
     if f1 < 0.7:
         print(f"\nHINT: F1={f1} is below 0.7. Try tuning:")
         print(f"  Lower threshold (currently {args.threshold}):")
         print(f"    python test_layer3.py --threshold 0.35")
         print(f"  Larger segments (currently {args.segment_words} words):")
         print(f"    python test_layer3.py --segment-words 400")
-        print(f"  Debug mode to see what's happening:")
+        print(f"  Debug mode to see what's being matched:")
         print(f"    python test_layer3.py --debug")
 
 
