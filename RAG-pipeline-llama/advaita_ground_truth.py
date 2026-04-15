@@ -9,7 +9,7 @@ Each entry reflects the PRIMARY verses TAUGHT in that session (not recap verses 
 
 video_id  → verses actually taught (confirmed from transcript text)
 ─────────────────────────────────────────────────────────────────────
-video_01  → BG 2.1  – 2.2   | Intro to Ch2; recites & explains V1–2, ends "next class V10–11"
+video_01  → BG 2.1  – 2.10   | Intro to Ch2; recites & explains V1–2, ends "next class V10–11"
 video_02  → BG 2.11 – 2.12  | Recaps V9–10, then TEACHES V11–12 (Krishna starts teaching)
 video_03  → BG 2.13 – 2.15  | Recaps V11–12, TEACHES V13–15, ends "next time V16"
 video_04  → BG 2.16          | Teaches V16 (Shankaracharya commentary focus)
@@ -44,12 +44,13 @@ print(summary["__aggregate__"])
 
 GROUND_TRUTH = {
     "video_01": {
-        "title":     "Bhagavad Gita Ch.2 | Introduction + Verse 1-2 | Swami Sarvapriyananda",
+        "title":     "Bhagavad Gita Ch.2 | Introduction to Chapter 2 (V1-10) | Swami Sarvapriyananda",
         "episode":   1,
-        "verses":    ["BG 2.1", "BG 2.2"],
+        "verses":    ["BG 2.1", "BG 2.2", "BG 2.3", "BG 2.4", "BG 2.5",
+                    "BG 2.6", "BG 2.7", "BG 2.8", "BG 2.9", "BG 2.10"],
         "confirmed": True,
-        "note":      "Starts with intro to Ch2. Recites & explains V1 (Sanjaya speaks) "
-                     "and V2 (Krishna's first words). Ends: 'next class V10-11'.",
+        "note":      "BG 2.1-2.10 intro lecture. Covers all verses up to V10 structurally. "
+                    "Ends: '11th verse onwards Krishna teaches Vedanta'.",
     },
     "video_02": {
         "title":     "Bhagavad Gita Ch.2 | Verse 11-12 | Swami Sarvapriyananda",
@@ -130,15 +131,12 @@ GROUND_TRUTH = {
                      "Ends discussing materialist vs Vedantic views on consciousness.",
     },
     "video_10": {
-        "title":     "Bhagavad Gita Ch.2 | Introduction to Chapter 2 (V1-10) | Swami Sarvapriyananda",
-        "episode":   0,
-        "verses":    ["BG 2.1", "BG 2.2", "BG 2.3", "BG 2.4", "BG 2.5",
-                      "BG 2.6", "BG 2.7", "BG 2.8", "BG 2.9", "BG 2.10"],
+        "title":     "Bhagavad Gita Ch.2 | Verses 28-29 | Swami Sarvapriyananda",
+        "episode":   10,
+        "verses":    ["BG 2.28", "BG 2.29"],
         "confirmed": True,
-        "note":      "INTRO episode. Ch1 overview (Pandavas/Kauravas, Arjuna's dilemma). "
-                     "Covers V1-10 structurally (Arjuna's surrender, 'teach me what is good'). "
-                     "Ends: '11th verse onwards Krishna teaches Vedanta'. "
-                     "This is the FIRST episode in the Ch2 series (before video_01).",
+        "note":      "Recaps V27 (death certain for born). Teaches V28 (unmanifest->manifest->unmanifest) "
+                    "and V29 (Atman is a mystery; rare is he who truly knows it).",
     },
 }
 

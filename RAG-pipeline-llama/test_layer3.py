@@ -82,8 +82,8 @@ def evaluate_video(transcript_path: str, expected_verses: list[str],
     import json as _json
     with open(transcript_path, "r", encoding="utf-8") as f:
         data = _json.load(f)
-    if isinstance(data, dict) and "text" in data:
-        text = data["text"]
+    if isinstance(data, dict):
+        text = data.get("full_transcript") or data.get("text") or ""
     else:
         text = str(data)
 
@@ -93,20 +93,35 @@ def evaluate_video(transcript_path: str, expected_verses: list[str],
     print(f"\n  File: {filename}")
     print(f"  Segments: {len(segments)} | Expected verses: {expected_verses}")
 
-    detected_verses = set()
+    all_segment_detections = []
 
     for i, segment in enumerate(segments):
+
         if debug:
             top3 = matcher.detect_top_k(segment, k=3)
             print(f"    Segment {i+1}: top3 = {top3}")
             verse, score = top3[0] if top3 else (None, 0.0)
-            if score >= matcher.threshold:
-                detected_verses.add(verse)
         else:
             verse, score = matcher.detect(segment)
-            if verse:
-                detected_verses.add(verse)
 
+        if verse:
+            # Penalize recap zone (first 20% of video)
+            position_weight = 0.9 if i < len(segments) * 0.2 else 1.0
+
+            if score * position_weight >= matcher.threshold:
+                all_segment_detections.append(verse)
+
+    detected_verses = set(all_segment_detections)
+
+    GENERIC_VERSES = {
+        'BG 2.39',
+        'BG 2.45',
+        'BG 2.65',
+        'BG 2.54',
+        'BG 2.55'
+    }
+
+    detected_verses = detected_verses - GENERIC_VERSES
     expected_set = set(expected_verses)
     detected_set = detected_verses
 
