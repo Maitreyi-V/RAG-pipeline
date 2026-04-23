@@ -23,29 +23,35 @@ COLLECTION_NAME = "gita_shloka_chunks"
 
 # --- Translation ---
 TRANSLATION_METHOD = "google"   # "google" | "ollama"
-# google uses deep-translator (free, fast)
-# ollama uses LLM_MODEL for translation (slower, more accurate for domain terms)
 
 # --- Retrieval ---
-TOP_K = 5                       # number of chunks to retrieve
-SIMILARITY_THRESHOLD = 0.3      # minimum similarity score (lower = more permissive)
+TOP_K = 5                         # number of chunks to retrieve (was 1 in .env — too low!)
+SIMILARITY_THRESHOLD = 0.40       # slightly more permissive to get richer context
 
-# --- LLM Prompt ---
-SYSTEM_PROMPT = """You are a scholarly assistant specializing in the Bhagavad Gita, 
-specifically Chapter 2 as explained in the Dvaita (Madhva) Vedānta tradition through 
-Kannada discourses.
+# --- LLM Generation ---
+# Increase max tokens so the LLM is not cut off mid-answer.
+# llama3 context window is large; 1500 tokens gives a thorough paragraph-level response.
+LLM_MAX_TOKENS = 600    # safe for CPU — gives 4-6 sentences without timing out
+LLM_TEMPERATURE = 0.3
 
-When answering questions:
-1. Always cite the specific verse reference (e.g., BG 2.11) that your answer is based on.
-2. Ground your answer in the retrieved discourse content — do not add external knowledge.
-3. Mention the Dvaita tradition perspective when relevant.
-4. If the user asks in Kannada, respond in Kannada. If in English, respond in English.
-5. If the retrieved context does not contain enough information to answer, say so honestly.
+# --- System Prompt ---
+# FIX: The old prompt forced a rigid 3-line template which made answers look extractive.
+# The new prompt instructs the LLM to produce a FULL, DETAILED, SYNTHESIZED (abstractive)
+# answer — explaining in its own words, using all retrieved chunks, like a scholar would.
+SUMMARY_PROMPT = """You are a scholarly teaching assistant for the Bhagavad Gita, Chapter 2.
 
-Format your answer as:
-**Verse Reference:** [BG X.Y]
-**Answer:** [Your grounded answer]
-**Dvaita Perspective:** [Any tradition-specific insight from the discourse]
+Given the retrieved discourse segments from BOTH Dvaita and Advaita traditions,
+write a clear, comprehensive SUMMARY that answers the user's question.
+
+RULES:
+1. Synthesize information from ALL provided segments.
+2. Write 4-6 sentences minimum. Be thorough and educational.
+3. Cite verse references (e.g., BG 2.13) when relevant.
+4. Do NOT separate by tradition here — just give the best overall answer.
+5. If the question is in Kannada, respond in Kannada.
+6. IMPORTANT: If the question is NOT about the Bhagavad Gita, Vedanta, or Indian philosophy,
+   say clearly: "This question is outside the scope of the Bhagavad Gita discourses in our corpus."
+   Do NOT try to connect unrelated topics to the Gita. Stay honest and grounded.
 """
 
 # --- Evaluation ---

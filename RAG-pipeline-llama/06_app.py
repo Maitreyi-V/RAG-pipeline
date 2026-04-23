@@ -1,10 +1,12 @@
 """
-Step 6: Streamlit Web UI
-========================
-Interactive Q&A interface for the Gita RAG pipeline.
+06_app.py — Cross-Tradition Bhagavad Gita Q&A
+==============================================
+Impressive UI showing:
+  1. Summary (synthesized from both traditions)
+  2. Dvaita (Madhva) perspective
+  3. Advaita (Shankara) perspective
 
-Usage:
-    streamlit run 06_app.py
+Supports: tradition toggle, English/Kannada, verse citations, source segments.
 """
 import json
 import os
@@ -13,7 +15,19 @@ import streamlit as st
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
-from retrieve_lib import retrieve_for_eval, detect_language
+from retrieve_lib import (
+    detect_language,
+    retrieve_for_eval,
+    retrieve_cross_tradition,
+    generate_cross_tradition_answer,
+    retrieve_chunks,
+    build_context,
+    generate_answer_with_prompt,
+    SUMMARY_PROMPT,
+    TRADITION_PROMPT,
+    DVAITA_DETAILS,
+    ADVAITA_DETAILS,
+)
 
 
 def init_db():
@@ -22,135 +36,260 @@ def init_db():
     return client.get_collection(config.COLLECTION_NAME)
 
 
+def get_tradition_counts(collection):
+    """Check how many chunks exist per tradition."""
+    try:
+        dvaita = collection.get(where={"tradition": "Dvaita"})
+        advaita = collection.get(where={"tradition": "Advaita"})
+        return len(dvaita["ids"]), len(advaita["ids"])
+    except Exception:
+        return 0, 0
+
+
+def extract_verses(chunks):
+    """Extract unique verse refs from chunks."""
+    verses = set()
+    for c in chunks:
+        vr = c.get("verse_ref", "") or c.get("metadata", {}).get("verse_ref", "")
+        if vr:
+            for v in vr.split(","):
+                v = v.strip()
+                if v:
+                    verses.add(v)
+    return sorted(verses)
+
+
+def display_source_chunks(chunks, tradition_label):
+    """Display retrieved source chunks in expanders."""
+    if not chunks:
+        st.caption(f"No {tradition_label} sources retrieved.")
+        return
+
+    for i, chunk in enumerate(chunks):
+        meta = chunk.get("metadata", {})
+        verse = meta.get("verse_ref", "N/A")
+        sim = chunk.get("similarity", 0)
+        speaker = meta.get("speaker", "Unknown")
+        section = meta.get("section_type", "")
+
+        with st.expander(
+            f"Source {i+1}: {verse} | {speaker} | "
+            f"Type: {section} | Relevance: {sim:.3f}"
+        ):
+            st.write(chunk["document"][:1000])
+            if len(chunk["document"]) > 1000:
+                st.caption("(truncated — full text was sent to LLM)")
+            st.caption(f"Video: {meta.get('video_file', '')} | Tradition: {tradition_label}")
+
+
 def main():
     st.set_page_config(
-        page_title="Gita Discourse Q&A",
+        page_title="Gita Cross-Tradition Q&A",
         page_icon="🙏",
         layout="wide"
     )
 
-    st.title("🙏 Bhagavad Gita Discourse Q&A")
-    st.caption("Śloka-aware, Dvaita tradition | Chapter 2 (BG 2.1–2.14) | Kannada discourses")
+    # ── Header ──
+    st.title("🙏 Bhagavad Gita — Cross-Tradition Q&A")
+    st.caption(
+        "Chapter 2 · Dvaita (Madhva) + Advaita (Shankara) · "
+        "Śloka-aware RAG · Abstractive answers"
+    )
 
-    # Sidebar
+    # ── Sidebar ──
     with st.sidebar:
-        st.header("About")
-        st.markdown("""
-        This system answers questions about **Bhagavad Gita Chapter 2** 
-        based on Kannada discourses from the **Dvaita (Madhva) tradition**.
-        
-        **Features:**
-        - Ask in English or Kannada
-        - Verse-level citations
-        - Grounded in actual discourse content
-        - Sanskrit śloka + padavibhāga display
-        """)
+        st.header("⚙️ Settings")
 
-        st.header("Settings")
-        top_k = st.slider("Number of sources to retrieve", 1, 10, config.TOP_K)
-        show_sources = st.checkbox("Show source details", value=True)
-
-        st.header("Coverage")
-        st.markdown("**Verses:** BG 2.1 – 2.14")
-        st.markdown("**Videos:** 6 Kannada discourses")
-        st.markdown("**Tradition:** Dvaita (Madhva)")
-
-    # Load chunks for metadata display
-    chunks_data = {}
-    if os.path.exists(config.CHUNKS_JSON):
-        with open(config.CHUNKS_JSON, "r", encoding="utf-8") as f:
-            for chunk in json.load(f):
-                chunks_data[chunk["chunk_id"]] = chunk
-
-    # Main interface
-    col1, col2 = st.columns([3, 1])
-    with col1:
-        query = st.text_input(
-            "Ask a question (English or Kannada / ಕನ್ನಡದಲ್ಲಿ ಪ್ರಶ್ನೆ ಕೇಳಿ)",
-            placeholder="e.g., What does Krishna say about the soul? / ಆತ್ಮದ ಬಗ್ಗೆ ಕೃಷ್ಣ ಏನು ಹೇಳುತ್ತಾನೆ?"
+        tradition_mode = st.radio(
+            "Tradition",
+            options=["Both (Cross-Tradition)", "Dvaita Only", "Advaita Only"],
+            index=0,
+            help="Choose which tradition's discourses to search"
         )
-    with col2:
-        st.write("")
-        st.write("")
-        ask_button = st.button("🔍 Ask", type="primary", use_container_width=True)
 
-    # Example questions
-    with st.expander("Example questions"):
-        examples = [
-            "What does Krishna say about grief and sorrow?",
-            "Why does Arjuna refuse to fight?",
-            "What is the meaning of BG 2.14?",
-            "What is abhimana according to Madhvacharya?",
-            "How does Krishna describe the soul?",
-            "ಅರ್ಜುನನ ದುಃಖಕ್ಕೆ ಕಾರಣ ಏನು?",
-        ]
-        for ex in examples:
-            if st.button(ex, key=f"ex_{ex[:20]}"):
-                query = ex
-                ask_button = True
+        top_k = st.slider(
+            "Sources per tradition",
+            min_value=1, max_value=10, value=5,
+            help="Number of discourse segments to retrieve from each tradition"
+        )
 
-    if ask_button and query:
+        show_sources = st.checkbox("Show source segments", value=True)
+
+        st.markdown("---")
+        st.header("📊 Corpus Info")
+
         try:
             collection = init_db()
-        except Exception as e:
-            st.error(f"Database not initialized. Run the pipeline first (steps 01-03). Error: {e}")
-            return
+            d_count, a_count = get_tradition_counts(collection)
+            st.metric("Dvaita chunks", d_count)
+            st.metric("Advaita chunks", a_count)
+            if a_count == 0:
+                st.warning(
+                    "No Advaita chunks indexed yet! "
+                    "Run `python index_advaita.py` first."
+                )
+        except Exception:
+            st.error("ChromaDB not initialized. Run the pipeline first.")
+            d_count, a_count = 0, 0
 
-        with st.spinner("Searching discourses..."):
-            lang = detect_language(query)
-            if lang == "kn":
-                st.info("ಕನ್ನಡ ಪ್ರಶ್ನೆ ಪತ್ತೆಯಾಗಿದೆ. ಇಂಗ್ಲಿಷ್‌ಗೆ ಅನುವಾದಿಸಿ ಹುಡುಕುತ್ತಿದ್ದೇನೆ...")
+        st.markdown("---")
+        st.header("About")
+        st.markdown("""
+        **Dvaita** (Madhva): Kannada discourses.
+        Eternal distinction between soul and God.
 
-            retrieved, answer = retrieve_for_eval(query, collection, top_k=top_k)
+        **Advaita** (Shankara): English lectures by
+        Swami Sarvapriyananda, Vedanta Society of NY.
+        Non-duality: Atman IS Brahman.
 
-        # Display answer
-        st.markdown("### Answer")
-        st.markdown(answer)
+        The system retrieves relevant segments from
+        each tradition and generates perspective-specific
+        answers using Llama3.
+        """)
 
-        # Display cited verses
-        cited = list(set(c.get("verse_ref", "") for c in retrieved if c.get("verse_ref")))
-        if cited:
-            st.markdown(f"**Cited verses:** {', '.join(cited)}")
+    # ── Main Input ──
+    query = st.text_input(
+        "Ask a question about Bhagavad Gita Chapter 2",
+        placeholder="e.g., What is the nature of the soul according to Krishna?  /  "
+                    "ಆತ್ಮದ ಬಗ್ಗೆ ಕೃಷ್ಣ ಏನು ಹೇಳುತ್ತಾನೆ?"
+    )
 
-        # Display sources
-        if show_sources and retrieved:
-            st.markdown("### Sources")
-            for i, chunk in enumerate(retrieved):
-                verse = chunk.get("verse_ref", "N/A")
-                sim = chunk.get("similarity", 0)
-                meta = chunk.get("metadata", {})
-                chunk_detail = chunks_data.get(chunk["chunk_id"], {})
+    # ── Example Questions ──
+    with st.expander("💡 Example questions"):
+        examples = [
+            "What does Krishna teach about the eternal nature of the soul?",
+            "How should we deal with pleasure and pain according to BG 2.14?",
+            "Why does Arjuna refuse to fight?",
+            "What is the meaning of Sthitaprajna (person of steady wisdom)?",
+            "Explain the concept of Karma Yoga from Chapter 2.",
+            "What happens to the soul after death?",
+            "ಆತ್ಮದ ಬಗ್ಗೆ ಕೃಷ್ಣ ಏನು ಹೇಳುತ್ತಾನೆ?",
+        ]
+        cols = st.columns(2)
+        for i, ex in enumerate(examples):
+            with cols[i % 2]:
+                if st.button(ex, key=f"ex_{i}", use_container_width=True):
+                    st.session_state["query_input"] = ex
+                    query = ex
 
-                with st.expander(
-                    f"Source {i+1}: {verse} | {meta.get('section_type', '')} | "
-                    f"Similarity: {sim:.3f}"
-                ):
-                    # Sanskrit shloka
-                    if chunk_detail.get("sanskrit_shloka"):
-                        st.markdown("**Sanskrit Śloka:**")
-                        st.code(chunk_detail["sanskrit_shloka"], language=None)
+    ask = st.button("🔍 Search & Answer", type="primary", use_container_width=True)
 
-                    # Padavibhaga
-                    if chunk_detail.get("padavibhaga"):
-                        st.markdown("**Padavibhāga (word split):**")
-                        st.code(chunk_detail["padavibhaga"], language=None)
+    if not (ask and query):
+        return
 
-                    # English explanation
-                    st.markdown("**Explanation (English):**")
-                    st.write(chunk_detail.get("explanation_summary_en", chunk["document"]))
+    # ── Retrieve & Generate ──
+    try:
+        collection = init_db()
+    except Exception as e:
+        st.error(f"Database error: {e}")
+        return
 
-                    # Kannada text
-                    if chunk_detail.get("kannada_text"):
-                        st.markdown("**Original Kannada discourse:**")
-                        st.write(chunk_detail["kannada_text"][:500] + "...")
-
-                    st.caption(f"Video: {meta.get('video_file', '')} | "
-                             f"Speaker: {meta.get('speaker', '')} | "
-                             f"Tradition: {meta.get('tradition', 'Dvaita')}")
-
-    # Footer
     st.markdown("---")
-    st.caption("Built for PES University Capstone Project | Dvaita Tradition Discourses on BG Chapter 2")
+
+    # ────────────────────────────────────────
+    # MODE: CROSS-TRADITION (BOTH)
+    # ────────────────────────────────────────
+    if tradition_mode == "Both (Cross-Tradition)":
+        with st.spinner("🔎 Retrieving from both traditions and generating answers..."):
+            result = generate_cross_tradition_answer(query, collection, top_k=top_k)
+
+        # ── SUMMARY ──
+        st.markdown("## 📖 Summary")
+        st.info("Synthesized from both Dvaita and Advaita discourse sources.")
+        st.markdown(result["summary"])
+
+        # Cited verses
+        all_chunks = result["dvaita_chunks"] + result["advaita_chunks"]
+        verses = extract_verses(all_chunks)
+        if verses:
+            st.markdown(f"**Relevant verses:** {' · '.join(f'`{v}`' for v in verses)}")
+
+        st.markdown("---")
+
+        # ── TRADITION COLUMNS ──
+        col_d, col_a = st.columns(2)
+
+        with col_d:
+            st.markdown("## 🔶 Dvaita Perspective")
+            st.caption("Madhva tradition · Kannada discourses")
+            if result["dvaita_chunks"]:
+                st.markdown(result["dvaita_answer"])
+                d_verses = extract_verses(result["dvaita_chunks"])
+                if d_verses:
+                    st.markdown(f"**Verses:** {' · '.join(f'`{v}`' for v in d_verses)}")
+            else:
+                st.warning("No relevant Dvaita content found for this question.")
+
+        with col_a:
+            st.markdown("## 🔷 Advaita Perspective")
+            st.caption("Shankara tradition · Swami Sarvapriyananda lectures")
+            if result["advaita_chunks"]:
+                st.markdown(result["advaita_answer"])
+                a_verses = extract_verses(result["advaita_chunks"])
+                if a_verses:
+                    st.markdown(f"**Verses:** {' · '.join(f'`{v}`' for v in a_verses)}")
+            else:
+                st.warning(
+                    "No Advaita content found. "
+                    "Have you run `python index_advaita.py`?"
+                )
+
+        # ── Source Segments ──
+        if show_sources:
+            st.markdown("---")
+            st.markdown("## 📚 Retrieved Discourse Segments")
+            tab_d, tab_a = st.tabs(["Dvaita Sources", "Advaita Sources"])
+            with tab_d:
+                display_source_chunks(result["dvaita_chunks"], "Dvaita")
+            with tab_a:
+                display_source_chunks(result["advaita_chunks"], "Advaita")
+
+    # ────────────────────────────────────────
+    # MODE: SINGLE TRADITION
+    # ────────────────────────────────────────
+    else:
+        tradition = "Dvaita" if "Dvaita" in tradition_mode else "Advaita"
+        emoji = "🔶" if tradition == "Dvaita" else "🔷"
+
+        with st.spinner(f"🔎 Searching {tradition} discourses..."):
+            chunks = retrieve_chunks(query, collection, top_k=top_k, tradition=tradition)
+            context = build_context(chunks, label=tradition)
+
+            if tradition == "Dvaita":
+                prompt = TRADITION_PROMPT.format(
+                    tradition="Dvaita", tradition_details=DVAITA_DETAILS)
+            else:
+                prompt = TRADITION_PROMPT.format(
+                    tradition="Advaita", tradition_details=ADVAITA_DETAILS)
+
+            lang = detect_language(query)
+            answer = generate_answer_with_prompt(query, context, prompt, lang)
+
+        st.markdown(f"## {emoji} {tradition} Perspective")
+        if tradition == "Dvaita":
+            st.caption("Madhva tradition · Kannada discourses")
+        else:
+            st.caption("Shankara tradition · Swami Sarvapriyananda lectures")
+
+        if chunks:
+            st.markdown(answer)
+            verses = extract_verses(chunks)
+            if verses:
+                st.markdown(f"**Relevant verses:** {' · '.join(f'`{v}`' for v in verses)}")
+        else:
+            st.warning(f"No relevant {tradition} content found for this question.")
+
+        if show_sources:
+            st.markdown("---")
+            st.markdown("## 📚 Retrieved Discourse Segments")
+            display_source_chunks(chunks, tradition)
+
+    # ── Footer ──
+    st.markdown("---")
+    st.caption(
+        "PES University Capstone · Multilingual Audio-Grounded Q&A · "
+        "Bhagavad Gita Chapter 2 · Cross-Tradition RAG Pipeline"
+    )
 
 
 if __name__ == "__main__":
