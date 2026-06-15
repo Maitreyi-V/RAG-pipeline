@@ -1,0 +1,496 @@
+[
+  {
+    "id": "QA_V1_01",
+    "type": "Factual",
+    "question_en_no_ref": "According to Swami Sarvapriyananda, what three consequences does Krishna warn Arjuna about regarding his refusal to fight?",
+    "expected_verses": [
+      "BG 2.2"
+    ],
+    "video_source": "video_01",
+    "notes": "Krishna says: (1) not worthy of an Aryan/noble person, (2) not conducive to heaven, (3) will ruin his reputation"
+  },
+  {
+    "id": "QA_V1_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "What does Swamiji say about why the mind disguises weakness as righteousness, and how does this apply to Arjuna's situation?",
+    "expected_verses": [
+      "BG 2.2",
+      "BG 2.3"
+    ],
+    "video_source": "video_01",
+    "notes": "The mind has a trick - disguises weakness as strength/righteousness. Arjuna presents his fear as noble compassion."
+  },
+  {
+    "id": "QA_V1_03",
+    "type": "Factual",
+    "question_en_no_ref": "What does the word 'klaibyam' mean, and why does Swami Vivekananda consider this verse one of the central teachings of the Gita?",
+    "expected_verses": [
+      "BG 2.3"
+    ],
+    "video_source": "video_01",
+    "notes": "Klaibyam = unmanliness/being neutered. Vivekananda says willingness to change is the first condition for any spirituality."
+  },
+  {
+    "id": "QA_V1_04",
+    "type": "Interpretive",
+    "question_en_no_ref": "Why does Krishna address Arjuna as 'Partha' (son of Pritha), and what story about Queen Kunti illustrates this significance?",
+    "expected_verses": [
+      "BG 2.3"
+    ],
+    "video_source": "video_01",
+    "notes": "Kunti told Krishna: tell my sons the time for which a Kshatriya is born is upon us. Like Spartan mothers."
+  },
+  {
+    "id": "QA_V1_05",
+    "type": "Factual",
+    "question_en_no_ref": "What does Arjuna say about the dilemma of winning versus losing the war, and why does he see both outcomes as pointless?",
+    "expected_verses": [
+      "BG 2.6"
+    ],
+    "video_source": "video_01",
+    "notes": "Winning = killing kinsmen, empty victory. Losing = death. He doesn't know which is better."
+  },
+  {
+    "id": "QA_V1_06",
+    "type": "Factual",
+    "question_en_no_ref": "What does 'karpanya dosha' mean, and what is significant about verse 7 where Arjuna says 'I am thy disciple, teach me'?",
+    "expected_verses": [
+      "BG 2.7"
+    ],
+    "video_source": "video_01",
+    "notes": "Karpanya = smallness/meanness. First time Arjuna admits confusion, asks to be taught, says prapannam (I take refuge)."
+  },
+  {
+    "id": "QA_V1_07",
+    "type": "Interpretive",
+    "question_en_no_ref": "What is the spiritual significance of Krishna smiling before he begins teaching, as described in verse 10?",
+    "expected_verses": [
+      "BG 2.10"
+    ],
+    "video_source": "video_01",
+    "notes": "Prahasanniva = as if smiling. Not tense or annoyed. Vivekananda: this is the ideal of karma yoga - eternal calm in midst of intense action."
+  },
+  {
+    "id": "QA_V1_08",
+    "type": "Applied",
+    "question_en_no_ref": "Swamiji tells a story about a novice monk who complained to a senior monk about not being able to bear his monastery. What was the senior monk's one-line reply and what lesson does it teach?",
+    "expected_verses": [
+      "BG 2.2",
+      "BG 2.3"
+    ],
+    "video_source": "video_01",
+    "notes": "'Remember, others are also putting up with you.' Parallels Krishna's shock therapy to Arjuna."
+  },
+  {
+    "id": "QA_V1_09",
+    "type": "General",
+    "question_en_no_ref": "How does the Advaita lecture describe the story of how Krishna became Arjuna's chariot driver, and what is the spiritual lesson?",
+    "expected_verses": [
+      "BG 2.1"
+    ],
+    "video_source": "video_01",
+    "notes": "Duryodhana chose the army, Arjuna chose Krishna alone. One chose God, the other chose the world."
+  },
+  {
+    "id": "QA_V2_01",
+    "type": "Factual",
+    "question_en_no_ref": "What does Krishna mean when he tells Arjuna 'you grieve for those who should not be grieved for, yet you speak like a learned person'?",
+    "expected_verses": [
+      "BG 2.11"
+    ],
+    "video_source": "video_02",
+    "notes": "You sound wise but act foolishly. True pandits don't grieve for the living or the dead."
+  },
+  {
+    "id": "QA_V2_02",
+    "type": "Factual",
+    "question_en_no_ref": "According to Shankaracharya, what is the original meaning of the word 'pandit', and how does it relate to the concept of 'panda'?",
+    "expected_verses": [
+      "BG 2.11"
+    ],
+    "video_source": "video_02",
+    "notes": "Panda = knowledge/enlightenment about the self (atma vishaya prajna). Pandit = one who has this knowledge. Not a temple priest or scholar."
+  },
+  {
+    "id": "QA_V2_03",
+    "type": "Interpretive",
+    "question_en_no_ref": "How does Vedanta trace the root cause of all human suffering, and what is the 'one fatal mistake' that leads to the entire drama of samsara?",
+    "expected_verses": [
+      "BG 2.11",
+      "BG 2.12"
+    ],
+    "video_source": "video_02",
+    "notes": "Root cause = ignorance about our real nature. Fatal mistake = thinking we are these bodies and minds."
+  },
+  {
+    "id": "QA_V2_04",
+    "type": "Interpretive",
+    "question_en_no_ref": "What is the wave analogy that Swami Sarvapriyananda uses to explain the self, and how does the wave's fear of the shore illustrate our misunderstanding?",
+    "expected_verses": [
+      "BG 2.12"
+    ],
+    "video_source": "video_02",
+    "notes": "Little wave in Atlantic afraid of dying at shore. Doesn't realize it IS the ocean. We think we're the wave (body) but we're the ocean (Atman)."
+  },
+  {
+    "id": "QA_V2_05",
+    "type": "Factual",
+    "question_en_no_ref": "What are the three types of suffering (duhkha traya) mentioned in the Sankhya Karika, and why does this ancient text say spiritual seeking begins?",
+    "expected_verses": [
+      "BG 2.11"
+    ],
+    "video_source": "video_02",
+    "notes": "Adhyatmika (from oneself), Adhibhautika (from others), Adhidaivika (from nature/gods). Spiritual quest begins because no temporal solution is permanent."
+  },
+  {
+    "id": "QA_V2_06",
+    "type": "Cross-verse",
+    "question_en_no_ref": "How does the Advaita teaching connect Krishna's rebuke about false grief to the doctrine of the immortality of the self?",
+    "expected_verses": [
+      "BG 2.11",
+      "BG 2.12"
+    ],
+    "video_source": "video_02",
+    "notes": "Grief comes from wrong identification with body. If the self is eternal (verse 12), grief is based on ignorance (verse 11)."
+  },
+  {
+    "id": "QA_V3_01",
+    "type": "Factual",
+    "question_en_no_ref": "What is the body-change analogy Krishna uses about childhood, youth, and old age, and what does it prove about the self?",
+    "expected_verses": [
+      "BG 2.13"
+    ],
+    "video_source": "video_03",
+    "notes": "Just as the self passes through childhood-youth-old age in one body, so too it passes to another body at death. The self continues."
+  },
+  {
+    "id": "QA_V3_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "In the Advaita lecture, how is the wave analogy extended to explain why we should not fear death?",
+    "expected_verses": [
+      "BG 2.13"
+    ],
+    "video_source": "video_03",
+    "notes": "Wave sees shore and fears death. But it IS the ocean. Death of the wave is not death of the ocean. Our body dies but the Atman continues."
+  },
+  {
+    "id": "QA_V3_03",
+    "type": "Factual",
+    "question_en_no_ref": "What does the Sanskrit term 'matra-sparsha' mean, and what example does Swamiji give about how sensory contacts produce pleasure and pain?",
+    "expected_verses": [
+      "BG 2.14"
+    ],
+    "video_source": "video_03",
+    "notes": "Matra-sparsha = contact of the senses with their objects. These produce heat/cold, pleasure/pain. They are agamapayinah (coming and going) and anityah (impermanent)."
+  },
+  {
+    "id": "QA_V3_04",
+    "type": "Factual",
+    "question_en_no_ref": "How does Shankaracharya define 'titiksha' (forbearance) in the Vivekachudamani, and what does it involve?",
+    "expected_verses": [
+      "BG 2.14"
+    ],
+    "video_source": "video_03",
+    "notes": "Sahanam sarva duhkhanam apratikara purvakam chinta vilapa rahitam = bearing all miseries without seeking remedy, without complaining or anxiety."
+  },
+  {
+    "id": "QA_V3_05",
+    "type": "Factual",
+    "question_en_no_ref": "According to the lecture, what makes a person 'fit for immortality' according to verse 15?",
+    "expected_verses": [
+      "BG 2.15"
+    ],
+    "video_source": "video_03",
+    "notes": "The one who is serene, who has equanimity in pleasure and pain, who is a dhira (brave/wise), is fit for immortality/moksha."
+  },
+  {
+    "id": "QA_V3_06",
+    "type": "Cross-verse",
+    "question_en_no_ref": "How do the teachings about the eternal self, impermanent sensory experience, and equanimity build a logical argument across verses 13 to 15?",
+    "expected_verses": [
+      "BG 2.13",
+      "BG 2.14",
+      "BG 2.15"
+    ],
+    "video_source": "video_03",
+    "notes": "Self is eternal (13) → sensory experiences are transient (14) → therefore cultivate equanimity, which leads to moksha (15)."
+  },
+  {
+    "id": "QA_V4_01",
+    "type": "Factual",
+    "question_en_no_ref": "What does verse 16 say about the unreal (asat) and the real (sat), and why does Swamiji call this the 'philosophical heart of the Bhagavad Gita'?",
+    "expected_verses": [
+      "BG 2.16"
+    ],
+    "video_source": "video_04",
+    "notes": "The unreal never truly exists, the real never ceases to exist. A monk in Himalayas told Swamiji: 'ye toh Gita ki darshanik hriday hai.'"
+  },
+  {
+    "id": "QA_V4_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "What is the concept of 'isness' that Shankaracharya uses to explain the sat-asat distinction, and how does the example 'pot exists, cloth exists, elephant exists' illustrate it?",
+    "expected_verses": [
+      "BG 2.16"
+    ],
+    "video_source": "video_04",
+    "notes": "Objects change (pot, cloth, elephant) but 'is/exists' is constant. Objects have borrowed existence. The background isness is the reality."
+  },
+  {
+    "id": "QA_V4_03",
+    "type": "Interpretive",
+    "question_en_no_ref": "How does Swamiji connect the Advaita Vedanta teaching of verse 16 to the 'hard problem of consciousness' discussed at the NYU philosophy conference?",
+    "expected_verses": [
+      "BG 2.16"
+    ],
+    "video_source": "video_04",
+    "notes": "Professor Miri Albahari presented Advaita answer to hard problem. What she said in philosophical language was exactly what Shankaracharya said 1400 years ago."
+  },
+  {
+    "id": "QA_V4_04",
+    "type": "Applied",
+    "question_en_no_ref": "If everything in the world of experience has only 'borrowed existence' and constantly changes, what is the practical implication for how we view our life situations?",
+    "expected_verses": [
+      "BG 2.16"
+    ],
+    "video_source": "video_04",
+    "notes": "Names and forms change but the underlying reality (sat/isness) never changes. Don't be devastated by changes."
+  },
+  {
+    "id": "QA_V5_01",
+    "type": "Factual",
+    "question_en_no_ref": "What does Krishna say about the nature of that which pervades everything, and why can nobody cause its destruction?",
+    "expected_verses": [
+      "BG 2.17"
+    ],
+    "video_source": "video_05",
+    "notes": "That which pervades all this (the Atman/consciousness) is indestructible. Nobody can destroy it."
+  },
+  {
+    "id": "QA_V5_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "How does Swami Sarvapriyananda connect Vivekananda's critique of caste in India to the Advaita teaching about the divinity within every person?",
+    "expected_verses": [
+      "BG 2.17",
+      "BG 2.18"
+    ],
+    "video_source": "video_05",
+    "notes": "Vivekananda said Hinduism preaches glory of human nature but tramples the poor. Advaita is most democratic — divinity lies equally in everyone, like political power in democracy."
+  },
+  {
+    "id": "QA_V5_03",
+    "type": "Interpretive",
+    "question_en_no_ref": "What is the 'hard problem of matter' that Swamiji discusses, and how does combining it with the hard problem of consciousness lead to Advaita Vedanta?",
+    "expected_verses": [
+      "BG 2.17",
+      "BG 2.18"
+    ],
+    "video_source": "video_05",
+    "notes": "Galen Strawson: science keeps finding only structure (nama-rupa) in matter, substance disappears. Hard problem of consciousness + hard problem of matter = Advaita Vedanta / Tattvamasi."
+  },
+  {
+    "id": "QA_V5_04",
+    "type": "Cross-verse",
+    "question_en_no_ref": "How does the teaching about the indestructible self in verse 17 relate to the claim about perishable bodies in verse 18?",
+    "expected_verses": [
+      "BG 2.17",
+      "BG 2.18"
+    ],
+    "video_source": "video_05",
+    "notes": "Verse 17: the self pervades everything and is indestructible. Verse 18: the bodies are perishable but the self is eternal. Therefore fight - you cannot truly kill anyone."
+  },
+  {
+    "id": "QA_V6_01",
+    "type": "Factual",
+    "question_en_no_ref": "What does 'aprameya' mean, and why does Swamiji say you should not look for the self in the world of objects?",
+    "expected_verses": [
+      "BG 2.18",
+      "BG 2.19"
+    ],
+    "video_source": "video_06",
+    "notes": "Aprameya = not an object of knowledge. Everything we know is an object. The self is the pure subject, ever-shining, always present to itself."
+  },
+  {
+    "id": "QA_V6_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "Why does Krishna say that both the one who thinks the self slays and the one who thinks it is slain are ignorant?",
+    "expected_verses": [
+      "BG 2.19"
+    ],
+    "video_source": "video_06",
+    "notes": "The Atman is neither the agent of killing nor the object of being killed. It is beyond action and change."
+  },
+  {
+    "id": "QA_V6_03",
+    "type": "Factual",
+    "question_en_no_ref": "According to the lecture, what are the three effects of karma, and which two can be scientifically verified?",
+    "expected_verses": [
+      "BG 2.19"
+    ],
+    "video_source": "video_06",
+    "notes": "1) Immediate physical result (observable), 2) Psychological/character change (observable), 3) Unseen/adrishta result (metaphysical, not directly verifiable)."
+  },
+  {
+    "id": "QA_V6_04",
+    "type": "Interpretive",
+    "question_en_no_ref": "How does Swamiji contrast the faith-based approach to God with the Vedantic approach of self-knowledge, using the example of doubting existence?",
+    "expected_verses": [
+      "BG 2.19"
+    ],
+    "video_source": "video_06",
+    "notes": "Existence of objects can be doubted. Existence of the subject (you, consciousness) cannot be doubted — it is what lights up the doubt. Self-knowledge doesn't require faith."
+  },
+  {
+    "id": "QA_V7_01",
+    "type": "Factual",
+    "question_en_no_ref": "What does the verse 'na jayate mriyate va kadachin' teach about the nature of the self?",
+    "expected_verses": [
+      "BG 2.20"
+    ],
+    "video_source": "video_07",
+    "notes": "The self is never born, never dies, was never not, and will never cease to be. It is unborn, eternal, permanent, primeval."
+  },
+  {
+    "id": "QA_V7_02",
+    "type": "Factual",
+    "question_en_no_ref": "What is the garment analogy Krishna uses for death and rebirth, and what are the three types of bodies mentioned in the Vedantic analysis?",
+    "expected_verses": [
+      "BG 2.22"
+    ],
+    "video_source": "video_07",
+    "notes": "As one casts off worn-out clothes for new ones, so the self casts off bodies. Three bodies: sthula sharira (physical), sukshma sharira (subtle), karana sharira (causal)."
+  },
+  {
+    "id": "QA_V7_03",
+    "type": "Interpretive",
+    "question_en_no_ref": "Swamiji says 'when you know you are perfectly safe, then you can play the game to the hilt.' How does self-knowledge make ethical and moral life possible?",
+    "expected_verses": [
+      "BG 2.20",
+      "BG 2.22"
+    ],
+    "video_source": "video_07",
+    "notes": "Nothing can tempt or scare you. Enlightened people sacrificed their lives because they found something eternal. Others' suffering became their suffering."
+  },
+  {
+    "id": "QA_V7_04",
+    "type": "Applied",
+    "question_en_no_ref": "Swamiji tells the story of a senior monk who had a stroke and was partially paralyzed. When asked how he was, what was his response and what does it illustrate?",
+    "expected_verses": [
+      "BG 2.22"
+    ],
+    "video_source": "video_07",
+    "notes": "'Oh I am fine. Oh you mean the body? It's not at all good.' Illustrates the clear distinction between self (always fine) and body (affected). The two are not equally real."
+  },
+  {
+    "id": "QA_V8_01",
+    "type": "Factual",
+    "question_en_no_ref": "What four elements does Krishna say cannot affect the self — what cannot cut it, burn it, wet it, or dry it?",
+    "expected_verses": [
+      "BG 2.23"
+    ],
+    "video_source": "video_08",
+    "notes": "Weapons cannot cut the Atman, fire cannot burn it, water cannot wet it, wind cannot dry it."
+  },
+  {
+    "id": "QA_V8_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "How does Swamiji use the impermanence of Manhattan — from underwater prehistoric creatures to scattered settlements to the modern city — to illustrate the concept of anitya?",
+    "expected_verses": [
+      "BG 2.24",
+      "BG 2.25"
+    ],
+    "video_source": "video_08",
+    "notes": "300 years ago scattered settlements, before that forests, millions of years ago underwater monsters. All gone. 'The winds of time have not stopped blowing.' This samsara will vanish like a dream."
+  },
+  {
+    "id": "QA_V8_03",
+    "type": "Factual",
+    "question_en_no_ref": "What are the five great unsolved problems of philosophy that Swamiji discusses, and how does Vedanta answer them?",
+    "expected_verses": [
+      "BG 2.24",
+      "BG 2.25"
+    ],
+    "video_source": "video_08",
+    "notes": "God, free will, immortality, knowledge, justice. Vedanta answers: God = Brahman/Atman, free will = real at self level, immortality = Atman is eternal, knowledge = self-knowledge beyond subject-object, justice = karma."
+  },
+  {
+    "id": "QA_V8_04",
+    "type": "Interpretive",
+    "question_en_no_ref": "What does the Buddha's analogy of life as 'a bubble in midstream, a flash of lightning, a phantom in the dark' have in common with the Vedantic teaching about samsara?",
+    "expected_verses": [
+      "BG 2.25"
+    ],
+    "video_source": "video_08",
+    "notes": "Both traditions agree that samsara is transient (anitya). But Vedanta adds: there is an eternal reality (Atman) which does not perish. The terror of impermanence is resolved by knowing the eternal within."
+  },
+  {
+    "id": "QA_V9_01",
+    "type": "Factual",
+    "question_en_no_ref": "What is Krishna's argument in verse 27 — what is certain for those who are born, and what is certain for those who have died?",
+    "expected_verses": [
+      "BG 2.27"
+    ],
+    "video_source": "video_09",
+    "notes": "Jatasya hi dhruvo mrityu = death is certain for the born. Dhruvam janma mritasya ca = rebirth is certain for the dead. Both are unavoidable, so why grieve?"
+  },
+  {
+    "id": "QA_V9_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "How does Ramanuja's argument for bhakti differ from Shankaracharya's approach to self-knowledge, and why does Ramanuja say pure knowledge alone is insufficient?",
+    "expected_verses": [
+      "BG 2.26"
+    ],
+    "video_source": "video_09",
+    "notes": "Ramanuja: to know the self you need sense control, but sense control requires enlightenment — circular. Bhakti breaks the circle: direct love toward God, senses naturally controlled."
+  },
+  {
+    "id": "QA_V9_03",
+    "type": "Applied",
+    "question_en_no_ref": "Swamiji says Vedanta can work even without belief in reincarnation. What is the purpose of Vedanta expressed as 'atyantika duhkha nivritti paramananda praptischa'?",
+    "expected_verses": [
+      "BG 2.26",
+      "BG 2.27"
+    ],
+    "video_source": "video_09",
+    "notes": "Complete cessation of sorrow and attainment of deep lasting peace and bliss — in this life, here and now. Past/future lives are cultural context, not essential."
+  },
+  {
+    "id": "QA_V10_01",
+    "type": "Factual",
+    "question_en_no_ref": "What does Krishna say about beings being unmanifest before birth, manifest during life, and unmanifest again after death?",
+    "expected_verses": [
+      "BG 2.28"
+    ],
+    "video_source": "video_10",
+    "notes": "Avyaktadini bhutani = beings are unmanifest in the beginning, vyakta madhyani = manifest in the middle, avyakta nidhanani = unmanifest at death."
+  },
+  {
+    "id": "QA_V10_02",
+    "type": "Interpretive",
+    "question_en_no_ref": "Why does the verse say 'some see the self as a wonder, some speak of it as a wonder, some hear of it as a wonder' — what makes the Atman a mystery even to the enlightened?",
+    "expected_verses": [
+      "BG 2.29"
+    ],
+    "video_source": "video_10",
+    "notes": "The triputhi (knower-known-knowledge) doesn't apply. The Atman is not known in the ordinary sense. It knows itself by itself — unique."
+  },
+  {
+    "id": "QA_V10_03",
+    "type": "Interpretive",
+    "question_en_no_ref": "What is the dark room analogy Swamiji uses to explain how the self is known differently from all other objects?",
+    "expected_verses": [
+      "BG 2.29"
+    ],
+    "video_source": "video_10",
+    "notes": "To see a book in a dark room you need light + eyes + mind. But to know whether YOU are in the room, you need none of these. Your presence is self-evident. The Atman is self-luminous."
+  },
+  {
+    "id": "QA_V10_04",
+    "type": "General",
+    "question_en_no_ref": "What story does Swamiji tell about Latu Maharaj (Swami Adbhutananda) and what does it teach about the relationship between learning and enlightenment?",
+    "expected_verses": [
+      "BG 2.29"
+    ],
+    "video_source": "video_10",
+    "notes": "Latu Maharaj had no education but attained enlightenment. Said: all this study is not necessary. But then conceded: teachers need it. Ramakrishna: to kill yourself a nail is enough, to fight enemies you need sword and shield."
+  }
+]
