@@ -20,6 +20,7 @@ Usage:
     python 05_evaluate.py --no-ref --questions-only   # Fastest honest retrieval eval
 """
 
+from html import parser
 import json
 import os
 import sys
@@ -58,6 +59,29 @@ def load_test_questions(xlsx_path):
         if q["question_en"] and q["question_en"] != "nan":
             questions.append(q)
 
+    return questions
+
+def load_test_questions_json(json_path):
+    """Load test questions from JSON file (e.g., Advaita questions)."""
+    import json as json_mod
+    with open(json_path, "r", encoding="utf-8") as f:
+        raw = json_mod.load(f)
+    questions = []
+    for r in raw:
+        expected = r.get("expected_verses", [])
+        if isinstance(expected, list):
+            expected = ", ".join(expected)
+        q = {
+            "question_id":        r.get("id", ""),
+            "question_en":        r.get("question_en_no_ref", ""),
+            "question_en_no_ref": r.get("question_en_no_ref", ""),
+            "question_kn":        "",
+            "expected_verse":     expected,
+            "expected_answer_en": "",
+            "question_type":      r.get("type", ""),
+        }
+        if q["question_en"]:
+            questions.append(q)
     return questions
 
 
@@ -200,14 +224,29 @@ def main():
     parser.add_argument("--output", default=os.path.join(config.RESULTS_DIR, "eval_results.json"))
     parser.add_argument("--lang", default="en", choices=["en", "kn"],
                         help="Which question language to use (ignored if --no-ref)")
+    parser.add_argument("--questions-file", default=None,
+                    help="Load questions from JSON instead of Excel")
+    parser.add_argument("--include-xlsx", action="store_true",
+                    help="Also include Excel questions when using --questions-file")
     args = parser.parse_args()
 
     import chromadb
 
     # ── Load questions ──────────────────────────────────────────────────
-    if not os.path.exists(config.TEST_QUESTIONS_XLSX):
-        print(f"ERROR: Test questions not found: {config.TEST_QUESTIONS_XLSX}")
-        sys.exit(1)
+    questions = []
+    if args.questions_file:
+        questions = load_test_questions_json(args.questions_file)
+        print(f"Loaded {len(questions)} questions from {args.questions_file}")
+        if args.include_xlsx and os.path.exists(config.TEST_QUESTIONS_XLSX):
+            xlsx_q = load_test_questions(config.TEST_QUESTIONS_XLSX)
+            questions.extend(xlsx_q)
+            print(f"  + {len(xlsx_q)} from Excel = {len(questions)} total")
+    else:
+        if not os.path.exists(config.TEST_QUESTIONS_XLSX):
+            print(f"ERROR: Test questions not found: {config.TEST_QUESTIONS_XLSX}")
+            sys.exit(1)
+        questions = load_test_questions(config.TEST_QUESTIONS_XLSX)
+    print(f"Loaded {len(questions)} test questions")
 
     questions = load_test_questions(config.TEST_QUESTIONS_XLSX)
     print(f"Loaded {len(questions)} test questions")
