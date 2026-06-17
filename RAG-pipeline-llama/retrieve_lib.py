@@ -45,6 +45,15 @@ def get_embedding(text):
     return resp.json()["embedding"]
 
 
+def _fmt_timestamp(seconds) -> str:
+    """Format seconds as MM:SS for display."""
+    try:
+        s = int(float(seconds))
+        return f"{s // 60}:{s % 60:02d}"
+    except (TypeError, ValueError):
+        return ""
+
+
 def build_context(retrieved_chunks, label=None):
     """Build context string from retrieved chunks, optionally with a tradition label."""
     if not retrieved_chunks:
@@ -62,8 +71,15 @@ def build_context(retrieved_chunks, label=None):
         similarity = chunk.get("similarity", 0)
         tradition = meta.get("tradition", "")
 
+        # Include timestamp range if available
+        ts_start = meta.get("start_time_sec")
+        ts_end = meta.get("end_time_sec")
+        timestamp_str = ""
+        if ts_start is not None:
+            timestamp_str = f" | Timestamp: {_fmt_timestamp(ts_start)}–{_fmt_timestamp(ts_end)}"
+
         header = (f"[Source {j} | Verse: {verse} | Speaker: {speaker} | "
-                  f"Tradition: {tradition} | Relevance: {similarity:.2f}]")
+                  f"Tradition: {tradition} | Relevance: {similarity:.2f}{timestamp_str}]")
         parts.append(f"{header}\n{chunk['document']}")
 
     return "\n\n".join(parts)

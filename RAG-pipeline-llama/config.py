@@ -12,11 +12,19 @@ TEST_QUESTIONS_XLSX = os.path.join(DATA_DIR, "test_questions.xlsx")
 CHUNKS_JSON = os.path.join(DATA_DIR, "chunks.json")
 CHROMA_DIR = os.path.join(DATA_DIR, "chroma_db")
 RESULTS_DIR = os.path.join(BASE_DIR, "results")
+AUDIO_CACHE_DIR = os.path.join(DATA_DIR, "audio_cache")
 
 # --- Ollama ---
 OLLAMA_BASE_URL = "http://localhost:11434"
 LLM_MODEL = "llama3"            # for answer generation
 EMBED_MODEL = "bge-m3"          # for embeddings
+
+# --- Whisper ---
+WHISPER_MODEL = "small"         # base | small | medium | large-v3
+WHISPER_LANGUAGE_MAP = {        # tradition → expected audio language for Whisper
+    "Advaita": "en",
+    "Dvaita": "kn",
+}
 
 # --- ChromaDB ---
 COLLECTION_NAME = "gita_shloka_chunks"
