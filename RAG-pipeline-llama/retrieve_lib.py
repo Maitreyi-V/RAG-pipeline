@@ -238,31 +238,51 @@ def retrieve_cross_tradition(query, collection, top_k=5):
     return dvaita_chunks, advaita_chunks
 
 
+_OUT_OF_SCOPE_PHRASES = (
+    "outside the scope",
+    "not about the bhagavad gita",
+    "not related to the bhagavad gita",
+    "outside the scope of",
+)
+
+
+def _is_out_of_scope(text: str) -> bool:
+    lower = text.lower()
+    return any(phrase in lower for phrase in _OUT_OF_SCOPE_PHRASES)
+
+
 def generate_cross_tradition_answer(query, collection, top_k=5):
     """
     Full cross-tradition pipeline:
       1. Retrieve from both traditions
       2. Generate summary (using all chunks)
-      3. Generate Dvaita perspective
-      4. Generate Advaita perspective
+      3. If the summary flags the question as out of scope, return early —
+         no Dvaita/Advaita answers are generated.
+      4. Otherwise generate Dvaita and Advaita perspective answers.
 
     Returns dict with: summary, dvaita_answer, advaita_answer,
-                       dvaita_chunks, advaita_chunks
+                       dvaita_chunks, advaita_chunks, out_of_scope (bool)
     """
     lang = detect_language(query)
     dvaita_chunks, advaita_chunks = retrieve_cross_tradition(query, collection, top_k)
 
-    # Combined context for summary
     all_context = build_context(dvaita_chunks + advaita_chunks)
-
-    # Tradition-specific contexts
-    dvaita_context = build_context(dvaita_chunks, label="Dvaita")
-    advaita_context = build_context(advaita_chunks, label="Advaita")
-
     print(f"  Retrieved: {len(dvaita_chunks)} Dvaita + {len(advaita_chunks)} Advaita chunks")
 
-    # Generate three answers
     summary = generate_answer_with_prompt(query, all_context, SUMMARY_PROMPT, lang)
+
+    if _is_out_of_scope(summary):
+        return {
+            "summary": summary,
+            "dvaita_answer": "",
+            "advaita_answer": "",
+            "dvaita_chunks": dvaita_chunks,
+            "advaita_chunks": advaita_chunks,
+            "out_of_scope": True,
+        }
+
+    dvaita_context = build_context(dvaita_chunks, label="Dvaita")
+    advaita_context = build_context(advaita_chunks, label="Advaita")
 
     dvaita_prompt = TRADITION_PROMPT.format(
         tradition="Dvaita", tradition_details=DVAITA_DETAILS)
@@ -278,6 +298,7 @@ def generate_cross_tradition_answer(query, collection, top_k=5):
         "advaita_answer": advaita_answer,
         "dvaita_chunks": dvaita_chunks,
         "advaita_chunks": advaita_chunks,
+        "out_of_scope": False,
     }
 
 

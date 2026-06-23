@@ -89,24 +89,39 @@ def load_test_questions_json(json_path):
 # RETRIEVAL METRICS
 # ─────────────────────────────────────────────
 
+def _flatten_verses(verse_list):
+    """Expand comma-separated verse labels (e.g. 'BG 2.13, BG 2.14') into individual refs."""
+    result = set()
+    for entry in verse_list:
+        for v in entry.split(","):
+            v = v.strip()
+            if v:
+                result.add(v)
+    return result
+
+
 def compute_precision_at_k(retrieved_verses, expected_verse, k):
     """
     Precision@k: is the expected verse in the top-k retrieved verses?
     For cross-verse questions (multiple expected verses), any match counts.
     Returns None if no expected verse is set (e.g. General questions).
+    Each element of retrieved_verses may itself be a comma-separated string
+    of verse refs (multi-verse chunk labels), so we flatten before comparing.
     """
     expected_set = set(v.strip() for v in expected_verse.split(",") if v.strip())
     if not expected_set:
         return None
 
-    top_k = set(retrieved_verses[:k])
-    return 1.0 if expected_set & top_k else 0.0
+    top_k_flat = _flatten_verses(retrieved_verses[:k])
+    return 1.0 if expected_set & top_k_flat else 0.0
 
 
 def compute_shloka_accuracy(retrieved_verses, expected_verse):
-    """Is the expected verse anywhere in the full retrieved set?"""
+    """Is the expected verse anywhere in the full retrieved set?
+    Handles multi-verse chunk labels (comma-separated) by flattening first.
+    """
     expected_set = set(v.strip() for v in expected_verse.split(",") if v.strip())
-    return 1.0 if expected_set & set(retrieved_verses) else 0.0
+    return 1.0 if expected_set & _flatten_verses(retrieved_verses) else 0.0
 
 
 # ─────────────────────────────────────────────

@@ -531,6 +531,50 @@ _SCOPE_NOTICE = (
 )
 
 
+def get_indexed_sources(collection) -> list[dict]:
+    """Return distinct video sources (video_id + title) already in ChromaDB."""
+    try:
+        results = collection.get(include=["metadatas"])
+        seen, sources = set(), []
+        for meta in results.get("metadatas", []):
+            vid = meta.get("video_id", "")
+            if vid and vid not in seen:
+                seen.add(vid)
+                sources.append({
+                    "video_id": vid,
+                    "tradition": meta.get("tradition", ""),
+                    "youtube_url": meta.get("youtube_url", ""),
+                })
+        return sorted(sources, key=lambda s: s["video_id"])
+    except Exception:
+        return []
+
+
+def _render_remove_source_panel(collection):
+    sources = get_indexed_sources(collection)
+    if not sources:
+        st.caption("No indexed sources yet.")
+        return
+
+    options = {
+        f"{s['video_id']} ({s['tradition']})": s["video_id"]
+        for s in sources
+    }
+    selected_label = st.selectbox(
+        "Select source to remove",
+        list(options.keys()),
+        key="remove_source_select",
+    )
+    selected_video_id = options[selected_label]
+
+    if st.button("🗑 Remove source", key="remove_source_btn", use_container_width=True):
+        try:
+            collection.delete(where={"video_id": selected_video_id})
+            st.success(f"Removed all chunks for **{selected_video_id}**. Refresh to update counts.")
+        except Exception as e:
+            st.error(f"Failed to remove source: {e}")
+
+
 def _render_ingest_panel():
     ingest_tradition = st.selectbox(
         "Tradition of new source",
@@ -584,8 +628,8 @@ def _render_ingest_panel():
         log_lines   = []
 
         def _cb(step, detail):
-            icon = {"download": "⬇", "transcribe": "🎙", "detect": "🔍",
-                    "chunk": "✂", "index": "💾"}.get(step, "•")
+            icon = {"download": "⬇", "transcribe": "🎙", "validate": "✅",
+                    "detect": "🔍", "chunk": "✂", "index": "💾"}.get(step, "•")
             log_lines.append(f"{icon} {detail}")
             status_area.markdown("\n\n".join(log_lines))
 
@@ -686,6 +730,14 @@ def main():
         _render_ingest_panel()
 
         st.markdown("---")
+        st.markdown("### 🗑 Remove Indexed Source")
+        try:
+            _collection_for_remove = init_db()
+            _render_remove_source_panel(_collection_for_remove)
+        except Exception:
+            st.caption("Database unavailable.")
+
+        st.markdown("---")
         st.markdown(
             '<div style="color:#4b5563;font-size:.75rem;line-height:1.7">'
             '<strong style="color:#6b7280">Dvaita</strong> · Madhva · Kannada<br>'
@@ -772,6 +824,14 @@ def main():
     if "Both" in tradition_mode:
         with st.spinner("Retrieving from both traditions and generating answers…"):
             result = generate_cross_tradition_answer(query, collection, top_k=top_k)
+
+        if result.get("out_of_scope"):
+            st.warning(
+                "This question is outside the scope of our Chapter 2 corpus. "
+                "Please ask a question related to Bhagavad Gita Chapter 2 teachings, "
+                "verses, or philosophy."
+            )
+            st.stop()
 
         all_chunks  = result["dvaita_chunks"] + result["advaita_chunks"]
         all_verses  = extract_verses(all_chunks)

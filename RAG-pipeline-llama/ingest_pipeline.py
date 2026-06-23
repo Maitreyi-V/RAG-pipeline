@@ -67,6 +67,33 @@ def download_youtube_audio(url: str) -> tuple:
 
 
 # ─────────────────────────────────────────────
+# CONTENT VALIDATION
+# ─────────────────────────────────────────────
+
+_GITA_KEYWORDS = {
+    "krishna", "arjuna", "gita", "bhagavad",
+    "verse", "śloka", "shloka",
+    "atma", "dharma", "vedanta", "brahman",
+}
+
+_GITA_VALIDATION_ERROR = (
+    "This video doesn't appear to be a Bhagavad Gita discourse. "
+    "Only Gita Chapter 2 lectures can be indexed."
+)
+
+
+def validate_gita_content(text: str) -> None:
+    """
+    Raise ValueError if the transcript doesn't look like a Gita discourse.
+    Requires at least 2 of the known Gita keywords (case-insensitive).
+    """
+    lower = text.lower()
+    hits = sum(1 for kw in _GITA_KEYWORDS if kw in lower)
+    if hits < 2:
+        raise ValueError(_GITA_VALIDATION_ERROR)
+
+
+# ─────────────────────────────────────────────
 # TRANSCRIPTION
 # ─────────────────────────────────────────────
 
@@ -339,6 +366,10 @@ def _run_pipeline(
     n_segs = len(transcript["segments"])
     duration_sec = transcript["segments"][-1]["end"] if transcript["segments"] else 0
     _cb("transcribe", f"Done — {n_segs} segments, {duration_sec / 60:.1f} min")
+
+    _cb("validate", "Validating Gita content…")
+    validate_gita_content(transcript["text"])
+    _cb("validate", "Content validated ✓")
 
     _cb("detect", "Detecting verse boundaries…")
     offset_map = _build_offset_map(transcript["segments"])
