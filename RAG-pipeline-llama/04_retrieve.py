@@ -1,21 +1,19 @@
 """
-Step 4: Retrieval & Answer Generation
-======================================
-Given a user query (English or Kannada):
-1. Translate query to English if needed
-2. Embed query using BGE-M3
-3. Retrieve top-k relevant chunks from ChromaDB
-4. Generate answer using Llama3 with verse citations and Dvaita tradition context
+retrieve_lib.py  (UPDATED — cross-tradition retrieval)
+======================================================
+Now supports:
+  - tradition="both"    → retrieve from Dvaita AND Advaita (default)
+  - tradition="Dvaita"  → Dvaita only
+  - tradition="Advaita" → Advaita only
 
-Usage:
-    python 04_retrieve.py "What does Krishna say about grief?"
-    python 04_retrieve.py "ಅರ್ಜುನನ ದುಃಖಕ್ಕೆ ಕಾರಣ ಏನು?"
-    python 04_retrieve.py --interactive
+The key change: retrieve_for_eval() now accepts a tradition parameter
+and uses ChromaDB's `where` filter to scope the search.
+
+For cross-tradition mode, it makes TWO separate queries (one per tradition)
+so each perspective gets its own best chunks.
 """
-import json
 import os
 import sys
-import argparse
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +21,6 @@ import config
 
 
 def detect_language(text):
-    """Simple detection: if text contains Kannada Unicode, it's Kannada."""
     for char in text:
         if "\u0C80" <= char <= "\u0CFF":
             return "kn"
@@ -31,16 +28,14 @@ def detect_language(text):
 
 
 def translate_query_to_english(query):
-    """Translate a Kannada query to English for embedding-based retrieval."""
     from deep_translator import GoogleTranslator
     try:
         return GoogleTranslator(source="kn", target="en").translate(query)
-    except:
+    except Exception:
         return query
 
 
 def get_embedding(text):
-    """Get embedding from Ollama BGE-M3."""
     resp = requests.post(
         f"{config.OLLAMA_BASE_URL}/api/embeddings",
         json={"model": config.EMBED_MODEL, "prompt": text},
@@ -50,66 +45,109 @@ def get_embedding(text):
     return resp.json()["embedding"]
 
 
-def retrieve(query, collection, top_k=None):
-    """Retrieve top-k relevant chunks for a query."""
-    if top_k is None:
-        top_k = config.TOP_K
-
-    lang = detect_language(query)
-    search_query = query
-    if lang == "kn":
-        search_query = translate_query_to_english(query)
-        print(f"  Translated query: {search_query}")
-
-    query_embedding = get_embedding(search_query)
-
-    results = collection.query(
-        query_embeddings=[query_embedding],
-        n_results=top_k,
-        include=["documents", "metadatas", "distances"]
-    )
-
-    retrieved = []
-    for i in range(len(results["ids"][0])):
-        chunk_id = results["ids"][0][i]
-        distance = results["distances"][0][i]
-        similarity = 1 - distance  # cosine distance -> similarity
-
-        if similarity < config.SIMILARITY_THRESHOLD:
-            continue
-
-        retrieved.append({
-            "chunk_id": chunk_id,
-            "similarity": round(similarity, 4),
-            "document": results["documents"][0][i],
-            "metadata": results["metadatas"][0][i],
-        })
-
-    return retrieved, lang
+def _fmt_timestamp(seconds) -> str:
+    """Format seconds as MM:SS for display."""
+    try:
+        s = int(float(seconds))
+        return f"{s // 60}:{s % 60:02d}"
+    except (TypeError, ValueError):
+        return ""
 
 
-def build_context(retrieved_chunks):
-    """Build context string from retrieved chunks for LLM."""
-    context_parts = []
-    for i, chunk in enumerate(retrieved_chunks, 1):
-        meta = chunk["metadata"]
+def build_context(retrieved_chunks, label=None):
+    """Build context string from retrieved chunks, optionally with a tradition label."""
+    if not retrieved_chunks:
+        return ""
+
+    parts = []
+    if label:
+        parts.append(f"=== {label} Tradition Sources ===\n")
+
+    for j, chunk in enumerate(retrieved_chunks, 1):
+        meta = chunk.get("metadata", {})
         verse = meta.get("verse_ref", "N/A")
         speaker = meta.get("speaker", "Unknown")
         section = meta.get("section_type", "")
+        similarity = chunk.get("similarity", 0)
+        tradition = meta.get("tradition", "")
 
-        header = f"--- Source {i} | {verse} | Speaker: {speaker} | Type: {section} ---"
-        context_parts.append(f"{header}\n{chunk['document']}")
+        # Include timestamp range if available
+        ts_start = meta.get("start_time_sec")
+        ts_end = meta.get("end_time_sec")
+        timestamp_str = ""
+        if ts_start is not None:
+            timestamp_str = f" | Timestamp: {_fmt_timestamp(ts_start)}–{_fmt_timestamp(ts_end)}"
 
-    return "\n\n".join(context_parts)
+        header = (f"[Source {j} | Verse: {verse} | Speaker: {speaker} | "
+                  f"Tradition: {tradition} | Relevance: {similarity:.2f}{timestamp_str}]")
+        parts.append(f"{header}\n{chunk['document']}")
+
+    return "\n\n".join(parts)
 
 
-def generate_answer(query, context, query_lang="en"):
-    """Generate answer using Llama3 via Ollama with grounding in retrieved context."""
+# ─────────────────────────────────────────────
+# GENERATION PROMPTS
+# ─────────────────────────────────────────────
+
+SUMMARY_PROMPT = """You are a scholarly teaching assistant for the Bhagavad Gita, Chapter 2.
+
+Given the retrieved discourse segments from BOTH Dvaita and Advaita traditions,
+write a clear, comprehensive SUMMARY that answers the user's question.
+
+RULES:
+1. Synthesize information from ALL provided segments.
+2. Write 4-6 sentences minimum. Be thorough and educational.
+3. Cite verse references (e.g., BG 2.13) when relevant.
+4. Do NOT separate by tradition here — just give the best overall answer.
+5. If the question is in Kannada, respond in Kannada.
+6. IMPORTANT: If the question is NOT about the Bhagavad Gita, Vedanta, or Indian philosophy,
+   say clearly: "This question is outside the scope of the Bhagavad Gita discourses in our corpus."
+   Do NOT try to connect unrelated topics to the Gita. Stay honest and grounded.
+"""
+
+TRADITION_PROMPT = """You are a scholar of {tradition} Vedānta philosophy, specializing in the Bhagavad Gita.
+
+Given the discourse segments from the {tradition} tradition, explain the answer to the user's
+question FROM THE {tradition} PERSPECTIVE SPECIFICALLY.
+
+{tradition_details}
+
+RULES:
+1. Focus on what makes the {tradition} interpretation DISTINCTIVE.
+2. Use the specific terminology and concepts of this tradition.
+3. Write 3-5 sentences. Be specific, not generic.
+4. Cite verse references (BG X.Y) and the speaker/teacher where relevant.
+5. If there is no relevant {tradition} content in the provided segments, say so honestly.
+6. If the question is in Kannada, respond in Kannada.
+7. IMPORTANT: If the question is NOT about the Bhagavad Gita, Vedanta, or Indian philosophy,
+   say clearly: "This question is outside the scope of the Bhagavad Gita discourses in our corpus."
+   Do NOT try to connect unrelated topics to the Gita. Stay honest and grounded.
+"""
+
+DVAITA_DETAILS = """The Dvaita tradition (founded by Madhvacharya) emphasizes:
+- Eternal distinction between the individual soul (jiva) and God (Vishnu/Narayana)
+- The soul is dependent on God but eternally separate
+- Bhakti (devotion) as the primary path
+- The discourse source is Kannada lectures on Chapter 2"""
+
+ADVAITA_DETAILS = """The Advaita tradition (founded by Shankaracharya, taught here by Swami Sarvapriyananda) emphasizes:
+- Non-duality: the individual self (Atman) IS Brahman (ultimate reality)
+- The world of multiplicity is maya (apparent, not ultimately real)
+- Jnana (knowledge/self-inquiry) as the primary path
+- The discourse source is Swami Sarvapriyananda's English lectures on Chapter 2"""
+
+
+def generate_answer_with_prompt(query, context, system_prompt, query_lang="en"):
+    """Generate an answer using a specific system prompt."""
+    if not context:
+        return "No relevant content found for this perspective."
+
     lang_instruction = ""
     if query_lang == "kn":
-        lang_instruction = "\nIMPORTANT: The user asked in Kannada. Respond in Kannada, but include verse references in English format (BG X.Y)."
+        lang_instruction = ("\nIMPORTANT: The user asked in Kannada. "
+                           "Respond fully in Kannada. Use verse refs in English (BG X.Y).")
 
-    prompt = f"""{config.SYSTEM_PROMPT}
+    prompt = f"""{system_prompt}
 {lang_instruction}
 
 Retrieved discourse segments:
@@ -126,9 +164,196 @@ Answer:"""
                 "model": config.LLM_MODEL,
                 "prompt": prompt,
                 "stream": False,
-                "options": {"temperature": 0.3, "num_predict": 800}
+                "options": {
+                    "temperature": config.LLM_TEMPERATURE,
+                    "num_predict": config.LLM_MAX_TOKENS,
+                    "top_p": 0.9,
+                    "repeat_penalty": 1.1,
+                }
             },
-            timeout=180
+            timeout=600
+        )
+        resp.raise_for_status()
+        return resp.json().get("response", "").strip()
+    except requests.exceptions.Timeout:
+        return "⚠️ Answer generation timed out. Try reducing TOP_K or asking a simpler question."
+    except Exception as e:
+        return f"Error generating answer: {e}"
+
+
+# ─────────────────────────────────────────────
+# RETRIEVAL
+# ─────────────────────────────────────────────
+
+def retrieve_chunks(query, collection, top_k=5, tradition=None):
+    """
+    Retrieve chunks from ChromaDB, optionally filtered by tradition.
+
+    Args:
+        tradition: "Dvaita", "Advaita", or None (no filter)
+    Returns:
+        list of chunk dicts with document, metadata, similarity
+    """
+    lang = detect_language(query)
+    search_query = query
+    if lang == "kn":
+        search_query = translate_query_to_english(query)
+
+    query_embedding = get_embedding(search_query)
+
+    query_params = {
+        "query_embeddings": [query_embedding],
+        "n_results": top_k,
+        "include": ["documents", "metadatas", "distances"],
+    }
+    if tradition:
+        query_params["where"] = {"tradition": tradition}
+
+    results = collection.query(**query_params)
+
+    retrieved = []
+    for i in range(len(results["ids"][0])):
+        distance = results["distances"][0][i]
+        similarity = 1 - distance
+        if similarity < config.SIMILARITY_THRESHOLD:
+            continue
+        retrieved.append({
+            "chunk_id": results["ids"][0][i],
+            "similarity": round(similarity, 4),
+            "document": results["documents"][0][i],
+            "verse_ref": results["metadatas"][0][i].get("verse_ref", ""),
+            "metadata": results["metadatas"][0][i],
+        })
+
+    return retrieved
+
+
+def retrieve_cross_tradition(query, collection, top_k=5):
+    """
+    Retrieve from BOTH traditions separately.
+    Returns: (dvaita_chunks, advaita_chunks)
+    """
+    dvaita_chunks = retrieve_chunks(query, collection, top_k=top_k, tradition="Dvaita")
+    advaita_chunks = retrieve_chunks(query, collection, top_k=top_k, tradition="Advaita")
+    return dvaita_chunks, advaita_chunks
+
+
+_OUT_OF_SCOPE_PHRASES = (
+    "outside the scope",
+    "not about the bhagavad gita",
+    "not related to the bhagavad gita",
+    "outside the scope of",
+)
+
+
+def _is_out_of_scope(text: str) -> bool:
+    lower = text.lower()
+    return any(phrase in lower for phrase in _OUT_OF_SCOPE_PHRASES)
+
+
+def generate_cross_tradition_answer(query, collection, top_k=5):
+    """
+    Full cross-tradition pipeline:
+      1. Retrieve from both traditions
+      2. Generate summary (using all chunks)
+      3. If the summary flags the question as out of scope, return early —
+         no Dvaita/Advaita answers are generated.
+      4. Otherwise generate Dvaita and Advaita perspective answers.
+
+    Returns dict with: summary, dvaita_answer, advaita_answer,
+                       dvaita_chunks, advaita_chunks, out_of_scope (bool)
+    """
+    lang = detect_language(query)
+    dvaita_chunks, advaita_chunks = retrieve_cross_tradition(query, collection, top_k)
+
+    all_context = build_context(dvaita_chunks + advaita_chunks)
+    print(f"  Retrieved: {len(dvaita_chunks)} Dvaita + {len(advaita_chunks)} Advaita chunks")
+
+    summary = generate_answer_with_prompt(query, all_context, SUMMARY_PROMPT, lang)
+
+    if _is_out_of_scope(summary):
+        return {
+            "summary": summary,
+            "dvaita_answer": "",
+            "advaita_answer": "",
+            "dvaita_chunks": dvaita_chunks,
+            "advaita_chunks": advaita_chunks,
+            "out_of_scope": True,
+        }
+
+    dvaita_context = build_context(dvaita_chunks, label="Dvaita")
+    advaita_context = build_context(advaita_chunks, label="Advaita")
+
+    dvaita_prompt = TRADITION_PROMPT.format(
+        tradition="Dvaita", tradition_details=DVAITA_DETAILS)
+    dvaita_answer = generate_answer_with_prompt(query, dvaita_context, dvaita_prompt, lang)
+
+    advaita_prompt = TRADITION_PROMPT.format(
+        tradition="Advaita", tradition_details=ADVAITA_DETAILS)
+    advaita_answer = generate_answer_with_prompt(query, advaita_context, advaita_prompt, lang)
+
+    return {
+        "summary": summary,
+        "dvaita_answer": dvaita_answer,
+        "advaita_answer": advaita_answer,
+        "dvaita_chunks": dvaita_chunks,
+        "advaita_chunks": advaita_chunks,
+        "out_of_scope": False,
+    }
+
+
+# ─────────────────────────────────────────────
+# BACKWARD-COMPATIBLE API
+# ─────────────────────────────────────────────
+
+def generate_answer(query, context, query_lang="en"):
+    """Original single-answer generation (backward compatible)."""
+    return generate_answer_with_prompt(query, context, SUMMARY_PROMPT, query_lang)
+
+
+CLOSED_BOOK_PROMPT = """You are a knowledgeable teaching assistant for the Bhagavad Gita, Chapter 2.
+Answer the user's question to the best of your own knowledge.
+Write 4-6 sentences. Cite verse references (e.g., BG 2.13) where relevant.
+If the question is in Kannada, respond in Kannada."""
+
+
+def generate_answer_no_context(query, query_lang="en"):
+    """
+    CLOSED-BOOK generation for the no-context ablation.
+
+    Deliberately gives the LLM NO retrieved context — only the question.
+    If answers here are about as good as the with-context answers, the
+    system is leaning on the model's own memory of the Gita rather than
+    on the retrieved transcripts. If they get noticeably worse, retrieval
+    is genuinely carrying the answer. This function never short-circuits.
+    """
+    lang_instruction = ""
+    if query_lang == "kn":
+        lang_instruction = ("\nIMPORTANT: The user asked in Kannada. "
+                            "Respond fully in Kannada. Use verse refs in English (BG X.Y).")
+
+    prompt = f"""{CLOSED_BOOK_PROMPT}
+{lang_instruction}
+
+User question: {query}
+
+Answer:"""
+
+    try:
+        resp = requests.post(
+            f"{config.OLLAMA_BASE_URL}/api/generate",
+            json={
+                "model": config.LLM_MODEL,
+                "prompt": prompt,
+                "stream": False,
+                "options": {
+                    "temperature": config.LLM_TEMPERATURE,
+                    "num_predict": config.LLM_MAX_TOKENS,
+                    "top_p": 0.9,
+                    "repeat_penalty": 1.1,
+                }
+            },
+            timeout=600
         )
         resp.raise_for_status()
         return resp.json().get("response", "").strip()
@@ -136,99 +361,17 @@ Answer:"""
         return f"Error generating answer: {e}"
 
 
-def query_pipeline(query, collection):
-    """Full pipeline: retrieve + generate."""
-    print(f"\nQuery: {query}")
-    print("-" * 50)
+def retrieve_for_eval(query, collection, top_k=None, tradition=None):
+    """
+    Backward-compatible retrieval + generation.
+    Now supports optional tradition filter.
+    """
+    if top_k is None:
+        top_k = config.TOP_K
 
-    # Retrieve
-    retrieved, query_lang = retrieve(query, collection)
-    print(f"\nRetrieved {len(retrieved)} relevant chunks:")
-    for chunk in retrieved:
-        meta = chunk["metadata"]
-        print(f"  {chunk['chunk_id']} | {meta.get('verse_ref', 'N/A')} | "
-              f"sim={chunk['similarity']:.3f} | {meta.get('section_type', '')}")
-
-    if not retrieved:
-        return {
-            "query": query,
-            "answer": "I could not find relevant information in the discourse corpus to answer this question.",
-            "retrieved_verses": [],
-            "num_retrieved": 0
-        }
-
-    # Generate
+    retrieved = retrieve_chunks(query, collection, top_k, tradition)
     context = build_context(retrieved)
-    answer = generate_answer(query, context, query_lang)
+    lang = detect_language(query)
+    answer = generate_answer(query, context, lang)
 
-    # Extract cited verses
-    cited_verses = list(set(
-        chunk["metadata"].get("verse_ref", "")
-        for chunk in retrieved
-        if chunk["metadata"].get("verse_ref")
-    ))
-
-    result = {
-        "query": query,
-        "query_language": query_lang,
-        "answer": answer,
-        "retrieved_verses": cited_verses,
-        "num_retrieved": len(retrieved),
-        "top_similarity": retrieved[0]["similarity"] if retrieved else 0,
-        "retrieved_chunks": [
-            {
-                "chunk_id": c["chunk_id"],
-                "verse_ref": c["metadata"].get("verse_ref", ""),
-                "similarity": c["similarity"]
-            }
-            for c in retrieved
-        ]
-    }
-
-    print(f"\n{'='*50}")
-    print(f"ANSWER:\n{answer}")
-    print(f"\nCited verses: {cited_verses}")
-
-    return result
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("query", nargs="?", help="Question to ask")
-    parser.add_argument("--interactive", "-i", action="store_true")
-    parser.add_argument("--top_k", type=int, default=config.TOP_K)
-    args = parser.parse_args()
-
-    import chromadb
-
-    client = chromadb.PersistentClient(path=config.CHROMA_DIR)
-    try:
-        collection = client.get_collection(config.COLLECTION_NAME)
-    except:
-        print("ERROR: ChromaDB collection not found. Run 03_index.py first.")
-        sys.exit(1)
-
-    print(f"Connected to ChromaDB: {collection.count()} documents")
-
-    if args.interactive:
-        print("\nInteractive mode. Type 'quit' to exit.")
-        while True:
-            query = input("\nYour question: ").strip()
-            if query.lower() in ("quit", "exit", "q"):
-                break
-            if query:
-                query_pipeline(query, collection)
-    elif args.query:
-        result = query_pipeline(args.query, collection)
-        # Save result
-        os.makedirs(config.RESULTS_DIR, exist_ok=True)
-        with open(os.path.join(config.RESULTS_DIR, "last_query_result.json"), "w") as f:
-            json.dump(result, f, ensure_ascii=False, indent=2)
-    else:
-        print("Provide a query or use --interactive mode.")
-        print('  python 04_retrieve.py "What does Krishna say about grief?"')
-        print('  python 04_retrieve.py --interactive')
-
-
-if __name__ == "__main__":
-    main()
+    return retrieved, answer
