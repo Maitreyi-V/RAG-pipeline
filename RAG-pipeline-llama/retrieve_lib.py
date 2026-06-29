@@ -311,6 +311,56 @@ def generate_answer(query, context, query_lang="en"):
     return generate_answer_with_prompt(query, context, SUMMARY_PROMPT, query_lang)
 
 
+CLOSED_BOOK_PROMPT = """You are a knowledgeable teaching assistant for the Bhagavad Gita, Chapter 2.
+Answer the user's question to the best of your own knowledge.
+Write 4-6 sentences. Cite verse references (e.g., BG 2.13) where relevant.
+If the question is in Kannada, respond in Kannada."""
+
+
+def generate_answer_no_context(query, query_lang="en"):
+    """
+    CLOSED-BOOK generation for the no-context ablation.
+
+    Deliberately gives the LLM NO retrieved context — only the question.
+    If answers here are about as good as the with-context answers, the
+    system is leaning on the model's own memory of the Gita rather than
+    on the retrieved transcripts. If they get noticeably worse, retrieval
+    is genuinely carrying the answer. This function never short-circuits.
+    """
+    lang_instruction = ""
+    if query_lang == "kn":
+        lang_instruction = ("\nIMPORTANT: The user asked in Kannada. "
+                            "Respond fully in Kannada. Use verse refs in English (BG X.Y).")
+
+    prompt = f"""{CLOSED_BOOK_PROMPT}
+{lang_instruction}
+
+User question: {query}
+
+Answer:"""
+
+    try:
+        resp = requests.post(
+            f"{config.OLLAMA_BASE_URL}/api/generate",
+            json={
+                "model": config.LLM_MODEL,
+                "prompt": prompt,
+                "stream": False,
+                "options": {
+                    "temperature": config.LLM_TEMPERATURE,
+                    "num_predict": config.LLM_MAX_TOKENS,
+                    "top_p": 0.9,
+                    "repeat_penalty": 1.1,
+                }
+            },
+            timeout=600
+        )
+        resp.raise_for_status()
+        return resp.json().get("response", "").strip()
+    except Exception as e:
+        return f"Error generating answer: {e}"
+
+
 def retrieve_for_eval(query, collection, top_k=None, tradition=None):
     """
     Backward-compatible retrieval + generation.
