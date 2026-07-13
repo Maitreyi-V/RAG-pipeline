@@ -1,0 +1,166 @@
+Loaded 48 questions from advaita_test_questions.json
+Judge backend   : none
+Generation mode : with_context
+Tradition filter: Advaita
+Question mode   : HONEST (verse refs stripped)
+ChromaDB collection: 210 documents
+
+[1/48] QQA_V1_01 (Factual): According to Swami Sarvapriyananda, what three consequences does Krishna warn Ar...
+  Expected: BG 2.2 | Retrieved: ['BG 2.14', 'introduction', 'BG 2.18']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.530
+[2/48] QQA_V1_02 (Interpretive): What does Swamiji say about why the mind disguises weakness as righteousness, an...
+  Expected: BG 2.2, BG 2.3 | Retrieved: ['BG 2.18', 'BG 2.16', 'BG 2.10, BG 2.11']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.577
+[3/48] QQA_V1_03 (Factual): What does the word 'klaibyam' mean, and why does Swami Vivekananda consider this...
+  Expected: BG 2.3 | Retrieved: ['introduction', 'introduction', 'introduction']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.550
+[4/48] QQA_V1_04 (Interpretive): Why does Krishna address Arjuna as 'Partha' (son of Pritha), and what story abou...
+  Expected: BG 2.3 | Retrieved: ['BG 2.5', 'BG 2.10, BG 2.11, BG 2.66', 'BG 2.26']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.501
+[5/48] QQA_V1_05 (Factual): What does Arjuna say about the dilemma of winning versus losing the war, and why...
+  Expected: BG 2.6 | Retrieved: ['BG 2.25', 'introduction', 'BG 2.10, BG 2.11, BG 2.66']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.547
+[6/48] QQA_V1_06 (Factual): What does 'karpanya dosha' mean, and what is significant about verse 7 where Arj...
+  Expected: BG 2.7 | Retrieved: ['introduction', 'BG 2.10, BG 2.11, BG 2.66', 'BG 2.10, BG 2.11']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.541
+[7/48] QQA_V1_07 (Interpretive): What is the spiritual significance of Krishna smiling before he begins teaching,...
+  Expected: BG 2.10 | Retrieved: ['BG 2.10, BG 2.11, BG 2.66', 'BG 2.10, BG 2.11', 'BG 2.26']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.622
+[8/48] QQA_V1_08 (Applied): Swamiji tells a story about a novice monk who complained to a senior monk about ...
+  Expected: BG 2.2, BG 2.3 | Retrieved: ['BG 2.18', 'BG 2.14', 'BG 2.18']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.553
+[9/48] QQA_V1_09 (General): How does the Advaita lecture describe the story of how Krishna became Arjuna's c...
+  Expected: BG 2.1 | Retrieved: ['introduction', 'BG 2.10, BG 2.11, BG 2.66', 'introduction']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.604
+[10/48] QQA_V2_01 (Factual): What does Krishna mean when he tells Arjuna 'you grieve for those who should not...
+  Expected: BG 2.11 | Retrieved: ['BG 2.10, BG 2.11, BG 2.66', 'BG 2.11, BG 2.25', 'BG 2.11']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.606
+[11/48] QQA_V2_02 (Factual): According to Shankaracharya, what is the original meaning of the word 'pandit', ...
+  Expected: BG 2.11 | Retrieved: ['BG 2.11', 'BG 2.16', 'BG 2.16']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.527
+[12/48] QQA_V2_03 (Interpretive): How does Vedanta trace the root cause of all human suffering, and what is the 'o...
+  Expected: BG 2.11, BG 2.12 | Retrieved: ['BG 2.21', 'BG 2.16', 'BG 2.27']
+  P@1=0.0 | Śloka=1.0 | AvgSim=0.565
+[13/48] QQA_V2_04 (Interpretive): What is the wave analogy that Swami Sarvapriyananda uses to explain the self, an...
+  Expected: BG 2.12 | Retrieved: ['introduction', 'BG 2.16', 'BG 2.28']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.570
+[14/48] QQA_V2_05 (Factual): What are the three types of suffering (duhkha traya) mentioned in the Sankhya Ka...
+  Expected: BG 2.11 | Retrieved: ['BG 2.11', 'BG 2.11', 'BG 2.27']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.555
+[15/48] QQA_V2_06 (Cross-verse): How does the Advaita teaching connect Krishna's rebuke about false grief to the ...
+  Expected: BG 2.11, BG 2.12 | Retrieved: ['introduction', 'BG 2.16', 'BG 2.27']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.587
+[16/48] QQA_V3_01 (Factual): What is the body-change analogy Krishna uses about childhood, youth, and old age...
+  Expected: BG 2.13 | Retrieved: ['BG 2.13', 'BG 2.13', 'BG 2.23']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.622
+[17/48] QQA_V3_02 (Interpretive): In the Advaita lecture, how is the wave analogy extended to explain why we shoul...
+  Expected: BG 2.13 | Retrieved: ['introduction', 'BG 2.28', 'BG 2.26']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.607
+[18/48] QQA_V3_03 (Factual): What does the Sanskrit term 'matra-sparsha' mean, and what example does Swamiji ...
+  Expected: BG 2.14 | Retrieved: ['BG 2.14', 'BG 2.17', 'BG 2.13']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.561
+[19/48] QQA_V3_04 (Factual): How does Shankaracharya define 'titiksha' (forbearance) in the Vivekachudamani, ...
+  Expected: BG 2.14 | Retrieved: ['BG 2.14', 'BG 2.16', 'BG 2.14']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.528
+[20/48] QQA_V3_05 (Factual): According to the lecture, what makes a person 'fit for immortality' according to...
+  Expected: BG 2.15 | Retrieved: ['BG 2.15, BG 2.16', 'BG 2.21', 'BG 2.12']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.558
+[21/48] QQA_V3_06 (Cross-verse): How do the teachings about the eternal self, impermanent sensory experience, and...
+  Expected: BG 2.13, BG 2.14, BG 2.15 | Retrieved: ['BG 2.15, BG 2.16', 'BG 2.16', 'BG 2.16']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.550
+[22/48] QQA_V4_01 (Factual): What does verse 16 say about the unreal (asat) and the real (sat), and why does ...
+  Expected: BG 2.16 | Retrieved: ['BG 2.16', 'BG 2.16', 'BG 2.16']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.617
+[23/48] QQA_V4_02 (Interpretive): What is the concept of 'isness' that Shankaracharya uses to explain the sat-asat...
+  Expected: BG 2.16 | Retrieved: ['BG 2.16', 'BG 2.16', 'BG 2.16']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.633
+[24/48] QQA_V4_03 (Interpretive): How does Swamiji connect the Advaita Vedanta teaching of verse 16 to the 'hard p...
+  Expected: BG 2.16 | Retrieved: ['introduction', 'BG 2.16', 'BG 2.16']
+  P@1=0.0 | Śloka=1.0 | AvgSim=0.612
+[25/48] QQA_V4_04 (Applied): If everything in the world of experience has only 'borrowed existence' and const...
+  Expected: BG 2.16 | Retrieved: ['BG 2.16', 'BG 2.16', 'BG 2.27']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.538
+[26/48] QQA_V5_01 (Factual): What does Krishna say about the nature of that which pervades everything, and wh...
+  Expected: BG 2.17 | Retrieved: ['BG 2.23', 'BG 2.12', 'BG 2.27']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.611
+[27/48] QQA_V5_02 (Interpretive): How does Swami Sarvapriyananda connect Vivekananda's critique of caste in India ...
+  Expected: BG 2.17, BG 2.18 | Retrieved: ['BG 2.26', 'BG 2.16', 'BG 2.26']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.572
+[28/48] QQA_V5_03 (Interpretive): What is the 'hard problem of matter' that Swamiji discusses, and how does combin...
+  Expected: BG 2.17, BG 2.18 | Retrieved: ['BG 2.18', 'BG 2.26', 'BG 2.26']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.592
+[29/48] QQA_V5_04 (Cross-verse): How does the teaching about the indestructible self in verse 17 relate to the cl...
+  Expected: BG 2.17, BG 2.18 | Retrieved: ['BG 2.17', 'BG 2.17', 'BG 2.16']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.558
+[30/48] QQA_V6_01 (Factual): What does 'aprameya' mean, and why does Swamiji say you should not look for the ...
+  Expected: BG 2.18, BG 2.19 | Retrieved: ['BG 2.18', 'BG 2.18', 'BG 2.18']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.600
+[31/48] QQA_V6_02 (Interpretive): Why does Krishna say that both the one who thinks the self slays and the one who...
+  Expected: BG 2.19 | Retrieved: ['BG 2.27', 'BG 2.11', 'BG 2.24']
+  P@1=0.0 | Śloka=1.0 | AvgSim=0.611
+[32/48] QQA_V6_03 (Factual): According to the lecture, what are the three effects of karma, and which two can...
+  Expected: BG 2.19 | Retrieved: ['BG 2.19', 'BG 2.19', 'BG 2.27']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.568
+[33/48] QQA_V6_04 (Interpretive): How does Swamiji contrast the faith-based approach to God with the Vedantic appr...
+  Expected: BG 2.19 | Retrieved: ['BG 2.26', 'BG 2.26', 'BG 2.16']
+  P@1=0.0 | Śloka=1.0 | AvgSim=0.556
+[34/48] QQA_V7_01 (Factual): What does the verse 'na jayate mriyate va kadachin' teach about the nature of th...
+  Expected: BG 2.20 | Retrieved: ['introduction', 'BG 2.16', 'introduction']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.565
+[35/48] QQA_V7_02 (Factual): What is the garment analogy Krishna uses for death and rebirth, and what are the...
+  Expected: BG 2.22 | Retrieved: ['BG 2.22, BG 2.23', 'BG 2.22', 'BG 2.27']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.605
+[36/48] QQA_V7_03 (Interpretive): Swamiji says 'when you know you are perfectly safe, then you can play the game t...
+  Expected: BG 2.20, BG 2.22 | Retrieved: ['BG 2.29', 'BG 2.14', 'BG 2.18']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.558
+[37/48] QQA_V7_04 (Applied): Swamiji tells the story of a senior monk who had a stroke and was partially para...
+  Expected: BG 2.22 | Retrieved: ['BG 2.22', 'BG 2.22', 'BG 2.18']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.599
+[38/48] QQA_V8_01 (Factual): What four elements does Krishna say cannot affect the self — what cannot cut it,...
+  Expected: BG 2.23 | Retrieved: ['BG 2.23', 'BG 2.23', 'BG 2.23']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.613
+[39/48] QQA_V8_02 (Interpretive): How does Swamiji use the impermanence of Manhattan — from underwater prehistoric...
+  Expected: BG 2.24, BG 2.25 | Retrieved: ['BG 2.23', 'BG 2.18', 'BG 2.18']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.562
+[40/48] QQA_V8_03 (Factual): What are the five great unsolved problems of philosophy that Swamiji discusses, ...
+  Expected: BG 2.24, BG 2.25 | Retrieved: ['BG 2.24', 'BG 2.24', 'BG 2.26']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.594
+[41/48] QQA_V8_04 (Interpretive): What does the Buddha's analogy of life as 'a bubble in midstream, a flash of lig...
+  Expected: BG 2.25 | Retrieved: ['BG 2.23', 'BG 2.27', 'BG 2.26']
+  P@1=0.0 | Śloka=0.0 | AvgSim=0.523
+[42/48] QQA_V9_01 (Factual): What is Krishna's argument in verse 27 — what is certain for those who are born,...
+  Expected: BG 2.27 | Retrieved: ['BG 2.27', 'BG 2.27', 'BG 2.28']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.640
+[43/48] QQA_V9_02 (Interpretive): How does Ramanuja's argument for bhakti differ from Shankaracharya's approach to...
+  Expected: BG 2.26 | Retrieved: ['BG 2.26', 'BG 2.29', 'BG 2.26']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.617
+[44/48] QQA_V9_03 (Applied): Swamiji says Vedanta can work even without belief in reincarnation. What is the ...
+  Expected: BG 2.26, BG 2.27 | Retrieved: ['BG 2.27', 'BG 2.21', 'BG 2.26']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.600
+[45/48] QQA_V10_01 (Factual): What does Krishna say about beings being unmanifest before birth, manifest durin...
+  Expected: BG 2.28 | Retrieved: ['BG 2.28', 'BG 2.5', 'BG 2.27']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.669
+[46/48] QQA_V10_02 (Interpretive): Why does the verse say 'some see the self as a wonder, some speak of it as a won...
+  Expected: BG 2.29 | Retrieved: ['BG 2.29', 'BG 2.29', 'BG 2.24']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.667
+[47/48] QQA_V10_03 (Interpretive): What is the dark room analogy Swamiji uses to explain how the self is known diff...
+  Expected: BG 2.29 | Retrieved: ['BG 2.29', 'BG 2.16', 'BG 2.26']
+  P@1=1.0 | Śloka=1.0 | AvgSim=0.566
+[48/48] QQA_V10_04 (General): What story does Swamiji tell about Latu Maharaj (Swami Adbhutananda) and what do...
+  Expected: BG 2.29 | Retrieved: ['BG 2.26', 'BG 2.29', 'BG 2.26']
+  P@1=0.0 | Śloka=1.0 | AvgSim=0.540
+
+============================================================
+EVALUATION SUMMARY
+============================================================
+Questions       : 48
+Judge / Gen     : none / with_context
+Question mode   : no_ref
+
+Precision@1  : 0.5417
+Precision@3  : 0.5833
+Precision@5  : 0.6458
+Śloka Accuracy  : 0.6458
+Avg Similarity  : 0.5801
+
+Results saved to: results/eval_shloka_aware.json
