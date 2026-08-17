@@ -34,6 +34,11 @@ import argparse
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 # ??? Ground Truth (from advaita_ground_truth.py) ???????????????????????
 
 GROUND_TRUTH = {
@@ -54,7 +59,11 @@ GROUND_TRUTH = {
 def call_openai(prompt: str, model: str = "gpt-4o-mini") -> str:
     """Call OpenAI API."""
     from openai import OpenAI
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY not set — check the repo-root .env file")
+    client = OpenAI(api_key=api_key)
     resp = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],

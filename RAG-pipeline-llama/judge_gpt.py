@@ -30,13 +30,21 @@ import os
 import time
 from typing import List, Dict, Any, Optional
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 JUDGE_MODEL = os.environ.get("JUDGE_MODEL", "gpt-4o-mini")
 
 
 def _client():
     """Lazy OpenAI client — same pattern as layer4_llm_detector.call_openai."""
     from openai import OpenAI
-    return OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY not set — check the repo-root .env file")
+    return OpenAI(api_key=api_key)
 
 
 def _chat_json(prompt: str, model: str = None, max_retries: int = 3) -> Optional[dict]:
