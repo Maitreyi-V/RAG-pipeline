@@ -30,21 +30,16 @@ USAGE:
 import json
 import os
 import sys
-import requests
 import numpy as np
 from typing import Optional
 
 # Add parent dir to path so config is accessible
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-try:
-    import config
-    OLLAMA_BASE_URL = config.OLLAMA_BASE_URL
-    EMBED_MODEL = config.EMBED_MODEL  # should be "bge-m3"
-except Exception:
-    # Fallback defaults if config not available
-    OLLAMA_BASE_URL = "http://localhost:11434"
-    EMBED_MODEL = "bge-m3"
+import config
+from embeddings import embed_text as _embed_text
+
+EMBED_MODEL = config.EMBED_MODEL
 
 from verse_translations import VERSE_TRANSLATIONS
 
@@ -54,23 +49,11 @@ from verse_translations import VERSE_TRANSLATIONS
 # ─────────────────────────────────────────────
 
 def embed_text(text: str) -> Optional[np.ndarray]:
-    """
-    Embed a single text string using BGE-M3 via Ollama.
-    Returns numpy array of shape (1024,) or None on failure.
-    """
+    """Embed text locally with BGE-M3 through sentence-transformers."""
     try:
-        resp = requests.post(
-            f"{OLLAMA_BASE_URL}/api/embeddings",
-            json={"model": EMBED_MODEL, "prompt": text},
-            timeout=60
-        )
-        resp.raise_for_status()
-        vec = resp.json().get("embedding", [])
-        if not vec:
-            return None
-        return np.array(vec, dtype=np.float32)
-    except Exception as e:
-        print(f"[Layer3] Embedding error: {e}")
+        return np.asarray(_embed_text(text), dtype=np.float32)
+    except Exception as exc:
+        print(f"[Layer3] Embedding error: {exc}")
         return None
 
 
@@ -156,7 +139,7 @@ class Layer3SemanticMatcher:
         
         Args:
             segment: a chunk of transcript text (~200-400 words)
-        
+        requests.post(...)
         Returns:
             (verse_ref, confidence) if match found, e.g. ("BG 2.13", 0.67)
             (None, best_score)      if no match above threshold

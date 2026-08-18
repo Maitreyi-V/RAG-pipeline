@@ -33,12 +33,12 @@ import os
 import sys
 import re
 import json
-import requests
 import argparse
 from collections import defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
+from embeddings import embed_text
 from advaita_ground_truth import GROUND_TRUTH
 
 
@@ -206,14 +206,6 @@ def shloka_aware_chunk(text: str, mentions: list[dict],
 # EMBEDDING
 # ─────────────────────────────────────────────
 
-def embed_text(text: str) -> list[float]:
-    resp = requests.post(
-        f"{config.OLLAMA_BASE_URL}/api/embeddings",
-        json={"model": config.EMBED_MODEL, "prompt": text},
-        timeout=120
-    )
-    resp.raise_for_status()
-    return resp.json()["embedding"]
 
 
 def get_transcript_text(filepath: str) -> str:

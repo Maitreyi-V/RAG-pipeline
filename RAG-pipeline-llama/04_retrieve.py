@@ -20,6 +20,7 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
+v
 
 
 def detect_language(text):
@@ -39,16 +40,6 @@ def translate_query_to_english(query):
         return query
 
 
-def get_embedding(text):
-    """Get embedding from Ollama BGE-M3."""
-    resp = requests.post(
-        f"{config.OLLAMA_BASE_URL}/api/embeddings",
-        json={"model": config.EMBED_MODEL, "prompt": text},
-        timeout=60
-    )
-    resp.raise_for_status()
-    return resp.json()["embedding"]
-
 
 def retrieve(query, collection, top_k=None):
     """Retrieve top-k relevant chunks for a query."""
@@ -61,7 +52,7 @@ def retrieve(query, collection, top_k=None):
         search_query = translate_query_to_english(query)
         print(f"  Translated query: {search_query}")
 
-    query_embedding = get_embedding(search_query)
+    query_embedding = embed_text(search_query)
 
     results = collection.query(
         query_embeddings=[query_embedding],

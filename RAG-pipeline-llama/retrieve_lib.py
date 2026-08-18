@@ -18,7 +18,7 @@ import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
-
+from embeddings import embed_text
 
 def detect_language(text):
     for char in text:
@@ -34,15 +34,6 @@ def translate_query_to_english(query):
     except Exception:
         return query
 
-
-def get_embedding(text):
-    resp = requests.post(
-        f"{config.OLLAMA_BASE_URL}/api/embeddings",
-        json={"model": config.EMBED_MODEL, "prompt": text},
-        timeout=60
-    )
-    resp.raise_for_status()
-    return resp.json()["embedding"]
 
 
 def _fmt_timestamp(seconds) -> str:
@@ -199,7 +190,7 @@ def retrieve_chunks(query, collection, top_k=5, tradition=None):
     if lang == "kn":
         search_query = translate_query_to_english(query)
 
-    query_embedding = get_embedding(search_query)
+    query_embedding = embed_text(search_query)
 
     query_params = {
         "query_embeddings": [query_embedding],

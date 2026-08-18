@@ -17,7 +17,9 @@ AUDIO_CACHE_DIR = os.path.join(DATA_DIR, "audio_cache")
 # --- Ollama ---
 OLLAMA_BASE_URL = "http://localhost:11434"
 LLM_MODEL = "llama3"            # for answer generation
-EMBED_MODEL = "bge-m3"          # for embeddings
+EMBED_MODEL = os.getenv("EMBED_MODEL", "BAAI/bge-m3")
+EMBED_DEVICE = os.getenv("EMBED_DEVICE", "auto")
+EMBED_BATCH_SIZE = int(os.getenv("EMBED_BATCH_SIZE", "16"))         # for embeddings
 
 # --- Whisper ---
 WHISPER_MODEL = "small"         # base | small | medium | large-v3

@@ -8,9 +8,15 @@ The Kannada script versions are what the ASR will produce when the
 speaker recites Sanskrit — since Sarvam AI transcribes everything
 as Kannada text regardless of whether it's actually Sanskrit.
 
-For Phase 1, we include verses 2.1–2.14 (our annotated set) with
-exact Kannada-script text from our transcripts. Remaining verses
-use standard transliteration.
+Verses 2.1–2.14 use Kannada-script text observed in our transcripts.
+Verses 2.15–2.49 use standard Kannada-script transliteration. Verses 2.50–2.72
+were machine-transliterated, lightly normalised to the same Kannada
+orthographic style, and accepted after team review.
+
+Devanagari source for BG 2.50–2.72:
+  Sanskrit Documents, "shrImadbhagavadgItA" (mūlam)
+  https://sanskritdocuments.org/doc_giitaa/bhagvadnew.html
+  Accessed 2026-08-17.
 """
 
 # Each entry: verse_ref, devanagari, kannada_script, first_words_kn (for quick scan)
@@ -359,7 +365,197 @@ VERSES_BG_CH2 = [
         "first_words": ["ದೂರೇಣ", "ಅವರಂ", "ಬುದ್ಧಿಯೋಗ", "ಕೃಪಣಾಃ"],
         "speaker": "Krishna",
     },
+    # BG 2.50–2.72: Devanagari was copied from the edition above and the
+    # Kannada transliteration was accepted after team review.
+    {
+        "ref": "BG 2.50",
+        "devanagari": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते | तस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ||",
+        "kannada": "ಬುದ್ಧಿಯುಕ್ತೋ ಜಹಾತೀಹ ಉಭೇ ಸುಕೃತದುಷ್ಕೃತೇ ತಸ್ಮಾದ್ಯೋಗಾಯ ಯುಜ್ಯಸ್ವ ಯೋಗಃ ಕರ್ಮಸು ಕೌಶಲಂ",
+        "first_words": ["ಬುದ್ಧಿಯುಕ್ತೋ", "ಜಹಾತೀಹ", "ಸುಕೃತದುಷ್ಕೃತೇ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.51",
+        "devanagari": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः | जन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ||",
+        "kannada": "ಕರ್ಮಜಂ ಬುದ್ಧಿಯುಕ್ತಾ ಹಿ ಫಲಂ ತ್ಯಕ್ತ್ವಾ ಮನೀಷಿಣಃ ಜನ್ಮಬಂಧವಿನಿರ್ಮುಕ್ತಾಃ ಪದಂ ಗಚ್ಛಂತ್ಯನಾಮಯಂ",
+        "first_words": ["ಕರ್ಮಜಂ", "ಬುದ್ಧಿಯುಕ್ತಾ", "ಮನೀಷಿಣಃ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.52",
+        "devanagari": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति | तदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च ||",
+        "kannada": "ಯದಾ ತೇ ಮೋಹಕಲಿಲಂ ಬುದ್ಧಿರ್ವ್ಯತಿತರಿಷ್ಯತಿ ತದಾ ಗಂತಾಸಿ ನಿರ್ವೇದಂ ಶ್ರೋತವ್ಯಸ್ಯ ಶ್ರುತಸ್ಯ ಚ",
+        "first_words": ["ಮೋಹಕಲಿಲಂ", "ವ್ಯತಿತರಿಷ್ಯತಿ", "ನಿರ್ವೇದಂ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.53",
+        "devanagari": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला | समाधावचला बुद्धिस्तदा योगमवाप्स्यसि ||",
+        "kannada": "ಶ್ರುತಿವಿಪ್ರತಿಪನ್ನಾ ತೇ ಯದಾ ಸ್ಥಾಸ್ಯತಿ ನಿಶ್ಚಲಾ ಸಮಾಧಾವಚಲಾ ಬುದ್ಧಿಸ್ತದಾ ಯೋಗಮವಾಪ್ಸ್ಯಸಿ",
+        "first_words": ["ಶ್ರುತಿವಿಪ್ರತಿಪನ್ನಾ", "ಸ್ಥಾಸ್ಯತಿ", "ಸಮಾಧಾವಚಲಾ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.54",
+        "devanagari": "स्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव | स्थितधीः किं प्रभाषेत किमासीत व्रजेत किम् ||",
+        "kannada": "ಸ್ಥಿತಪ್ರಜ್ಞಸ್ಯ ಕಾ ಭಾಷಾ ಸಮಾಧಿಸ್ಥಸ್ಯ ಕೇಶವ ಸ್ಥಿತಧೀಃ ಕಿಂ ಪ್ರಭಾಷೇತ ಕಿಮಾಸೀತ ವ್ರಜೇತ ಕಿಂ",
+        "first_words": ["ಸ್ಥಿತಪ್ರಜ್ಞಸ್ಯ", "ಭಾಷಾ", "ಸಮಾಧಿಸ್ಥಸ್ಯ"],
+        "speaker": "Arjuna",
+    },
+    {
+        "ref": "BG 2.55",
+        "devanagari": "प्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान् | आत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ||",
+        "kannada": "ಪ್ರಜಹಾತಿ ಯದಾ ಕಾಮಾನ್ಸರ್ವಾನ್ಪಾರ್ಥ ಮನೋಗತಾನ್ ಆತ್ಮನ್ಯೇವಾತ್ಮನಾ ತುಷ್ಟಃ ಸ್ಥಿತಪ್ರಜ್ಞಸ್ತದೋಚ್ಯತೇ",
+        "first_words": ["ಪ್ರಜಹಾತಿ", "ಕಾಮಾನ್ಸರ್ವಾನ್ಪಾರ್ಥ", "ಮನೋಗತಾನ್"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.56",
+        "devanagari": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः | वीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ||",
+        "kannada": "ದುಃಖೇಷ್ವನುದ್ವಿಗ್ನಮನಾಃ ಸುಖೇಷು ವಿಗತಸ್ಪೃಹಃ ವೀತರಾಗಭಯಕ್ರೋಧಃ ಸ್ಥಿತಧೀರ್ಮುನಿರುಚ್ಯತೇ",
+        "first_words": ["ದುಃಖೇಷ್ವನುದ್ವಿಗ್ನಮನಾಃ", "ವಿಗತಸ್ಪೃಹಃ", "ವೀತರಾಗಭಯಕ್ರೋಧಃ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.57",
+        "devanagari": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम् | नाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता ||",
+        "kannada": "ಯಃ ಸರ್ವತ್ರಾನಭಿಸ್ನೇಹಸ್ತತ್ತತ್ಪ್ರಾಪ್ಯ ಶುಭಾಶುಭಂ ನಾಭಿನಂದತಿ ನ ದ್ವೇಷ್ಟಿ ತಸ್ಯ ಪ್ರಜ್ಞಾ ಪ್ರತಿಷ್ಠಿತಾ",
+        "first_words": ["ಸರ್ವತ್ರಾನಭಿಸ್ನೇಹಸ್ತತ್ತತ್ಪ್ರಾಪ್ಯ", "ಶುಭಾಶುಭಂ", "ನಾಭಿನಂದತಿ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.58",
+        "devanagari": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः | इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ||",
+        "kannada": "ಯದಾ ಸಂಹರತೇ ಚಾಯಂ ಕೂರ್ಮೋಂಗಾನೀವ ಸರ್ವಶಃ ಇಂದ್ರಿಯಾಣೀಂದ್ರಿಯಾರ್ಥೇಭ್ಯಸ್ತಸ್ಯ ಪ್ರಜ್ಞಾ ಪ್ರತಿಷ್ಠಿತಾ",
+        "first_words": ["ಸಂಹರತೇ", "ಕೂರ್ಮೋಂಗಾನೀವ", "ಇಂದ್ರಿಯಾಣೀಂದ್ರಿಯಾರ್ಥೇಭ್ಯಸ್ತಸ್ಯ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.59",
+        "devanagari": "विषया विनिवर्तन्ते निराहारस्य देहिनः | रसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते ||",
+        "kannada": "ವಿಷಯಾ ವಿನಿವರ್ತಂತೇ ನಿರಾಹಾರಸ್ಯ ದೇಹಿನಃ ರಸವರ್ಜಂ ರಸೋಪ್ಯಸ್ಯ ಪರಂ ದೃಷ್ಟ್ವಾ ನಿವರ್ತತೇ",
+        "first_words": ["ವಿಷಯಾ", "ವಿನಿವರ್ತಂತೇ", "ನಿರಾಹಾರಸ್ಯ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.60",
+        "devanagari": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः | इन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः ||",
+        "kannada": "ಯತತೋ ಹ್ಯಪಿ ಕೌಂತೇಯ ಪುರುಷಸ್ಯ ವಿಪಶ್ಚಿತಃ ಇಂದ್ರಿಯಾಣಿ ಪ್ರಮಾಥೀನಿ ಹರಂತಿ ಪ್ರಸಭಂ ಮನಃ",
+        "first_words": ["ಯತತೋ", "ವಿಪಶ್ಚಿತಃ", "ಪ್ರಮಾಥೀನಿ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.61",
+        "devanagari": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः | वशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता ||",
+        "kannada": "ತಾನಿ ಸರ್ವಾಣಿ ಸಂಯಮ್ಯ ಯುಕ್ತ ಆಸೀತ ಮತ್ಪರಃ ವಶೇ ಹಿ ಯಸ್ಯೇಂದ್ರಿಯಾಣಿ ತಸ್ಯ ಪ್ರಜ್ಞಾ ಪ್ರತಿಷ್ಠಿತಾ",
+        "first_words": ["ಸಂಯಮ್ಯ", "ಮತ್ಪರಃ", "ಯಸ್ಯೇಂದ್ರಿಯಾಣಿ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.62",
+        "devanagari": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते | सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते ||",
+        "kannada": "ಧ್ಯಾಯತೋ ವಿಷಯಾನ್ಪುಂಸಃ ಸಂಗಸ್ತೇಷೂಪಜಾಯತೇ ಸಂಗಾತ್ಸಂಜಾಯತೇ ಕಾಮಃ ಕಾಮಾತ್ಕ್ರೋಧೋಭಿಜಾಯತೇ",
+        "first_words": ["ಧ್ಯಾಯತೋ", "ವಿಷಯಾನ್ಪುಂಸಃ", "ಸಂಗಸ್ತೇಷೂಪಜಾಯತೇ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.63",
+        "devanagari": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः | स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ||",
+        "kannada": "ಕ್ರೋಧಾದ್ಭವತಿ ಸಮ್ಮೋಹಃ ಸಮ್ಮೋಹಾತ್ಸ್ಮೃತಿವಿಭ್ರಮಃ ಸ್ಮೃತಿಭ್ರಂಶಾದ್ ಬುದ್ಧಿನಾಶೋ ಬುದ್ಧಿನಾಶಾತ್ಪ್ರಣಶ್ಯತಿ",
+        "first_words": ["ಕ್ರೋಧಾದ್ಭವತಿ", "ಸಮ್ಮೋಹಃ", "ಸ್ಮೃತಿವಿಭ್ರಮಃ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.64",
+        "devanagari": "रागद्वेषविमुक्तैस्तु विषयानिन्द्रियैश्चरन् | आत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति ||",
+        "kannada": "ರಾಗದ್ವೇಷವಿಮುಕ್ತೈಸ್ತು ವಿಷಯಾನಿಂದ್ರಿಯೈಶ್ಚರನ್ ಆತ್ಮವಶ್ಯೈರ್ವಿಧೇಯಾತ್ಮಾ ಪ್ರಸಾದಮಧಿಗಚ್ಛತಿ",
+        "first_words": ["ರಾಗದ್ವೇಷವಿಮುಕ್ತೈಸ್ತು", "ವಿಷಯಾನಿಂದ್ರಿಯೈಶ್ಚರನ್", "ವಿಧೇಯಾತ್ಮಾ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.65",
+        "devanagari": "प्रसादे सर्वदुःखानां हानिरस्योपजायते | प्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ||",
+        "kannada": "ಪ್ರಸಾದೇ ಸರ್ವದುಃಖಾನಾಂ ಹಾನಿರಸ್ಯೋಪಜಾಯತೇ ಪ್ರಸನ್ನಚೇತಸೋ ಹ್ಯಾಶು ಬುದ್ಧಿಃ ಪರ್ಯವತಿಷ್ಠತೇ",
+        "first_words": ["ಪ್ರಸಾದೇ", "ಸರ್ವದುಃಖಾನಾಂ", "ಪ್ರಸನ್ನಚೇತಸೋ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.66",
+        "devanagari": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना | न चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ||",
+        "kannada": "ನಾಸ್ತಿ ಬುದ್ಧಿರಯುಕ್ತಸ್ಯ ನ ಚಾಯುಕ್ತಸ್ಯ ಭಾವನಾ ನ ಚಾಭಾವಯತಃ ಶಾಂತಿರಶಾಂತಸ್ಯ ಕುತಃ ಸುಖಂ",
+        "first_words": ["ನಾಸ್ತಿ", "ಬುದ್ಧಿರಯುಕ್ತಸ್ಯ", "ಅಶಾಂತಸ್ಯ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.67",
+        "devanagari": "इन्द्रियाणां हि चरतां यन्मनोऽनुविधीयते | तदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ||",
+        "kannada": "ಇಂದ್ರಿಯಾಣಾಂ ಹಿ ಚರತಾಂ ಯನ್ಮನೋನುವಿಧೀಯತೇ ತದಸ್ಯ ಹರತಿ ಪ್ರಜ್ಞಾಂ ವಾಯುರ್ನಾವಮಿವಾಂಭಸಿ",
+        "first_words": ["ಇಂದ್ರಿಯಾಣಾಂ", "ಚರತಾಂ", "ಯನ್ಮನೋನುವಿಧೀಯತೇ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.68",
+        "devanagari": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः | इन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ||",
+        "kannada": "ತಸ್ಮಾದ್ಯಸ್ಯ ಮಹಾಬಾಹೋ ನಿಗೃಹೀತಾನಿ ಸರ್ವಶಃ ಇಂದ್ರಿಯಾಣೀಂದ್ರಿಯಾರ್ಥೇಭ್ಯಸ್ತಸ್ಯ ಪ್ರಜ್ಞಾ ಪ್ರತಿಷ್ಠಿತಾ",
+        "first_words": ["ತಸ್ಮಾದ್ಯಸ್ಯ", "ನಿಗೃಹೀತಾನಿ", "ಸರ್ವಶಃ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.69",
+        "devanagari": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी | यस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः ||",
+        "kannada": "ಯಾ ನಿಶಾ ಸರ್ವಭೂತಾನಾಂ ತಸ್ಯಾಂ ಜಾಗರ್ತಿ ಸಂಯಮೀ ಯಸ್ಯಾಂ ಜಾಗ್ರತಿ ಭೂತಾನಿ ಸಾ ನಿಶಾ ಪಶ್ಯತೋ ಮುನೇಃ",
+        "first_words": ["ಸರ್ವಭೂತಾನಾಂ", "ಜಾಗರ್ತಿ", "ಸಂಯಮೀ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.70",
+        "devanagari": "आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत् | तद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी ||",
+        "kannada": "ಆಪೂರ್ಯಮಾಣಮಚಲಪ್ರತಿಷ್ಠಂ ಸಮುದ್ರಮಾಪಃ ಪ್ರವಿಶಂತಿ ಯದ್ವತ್ ತದ್ವತ್ಕಾಮಾ ಯಂ ಪ್ರವಿಶಂತಿ ಸರ್ವೇ ಸ ಶಾಂತಿಮಾಪ್ನೋತಿ ನ ಕಾಮಕಾಮೀ",
+        "first_words": ["ಆಪೂರ್ಯಮಾಣಮಚಲಪ್ರತಿಷ್ಠಂ", "ಸಮುದ್ರಮಾಪಃ", "ಪ್ರವಿಶಂತಿ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.71",
+        "devanagari": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः | निर्ममो निरहङ्कारः स शान्तिमधिगच्छति ||",
+        "kannada": "ವಿಹಾಯ ಕಾಮಾನ್ಯಃ ಸರ್ವಾನ್ಪುಮಾಂಶ್ಚರತಿ ನಿಃಸ್ಪೃಹಃ ನಿರ್ಮಮೋ ನಿರಹಂಕಾರಃ ಸ ಶಾಂತಿಮಧಿಗಚ್ಛತಿ",
+        "first_words": ["ಕಾಮಾನ್ಯಃ", "ನಿಃಸ್ಪೃಹಃ", "ನಿರ್ಮಮೋ"],
+        "speaker": "Krishna",
+    },
+    {
+        "ref": "BG 2.72",
+        "devanagari": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति | स्थित्वास्यामन्तकालेऽपि ब्रह्मनिर्वाणमृच्छति ||",
+        "kannada": "ಏಷಾ ಬ್ರಾಹ್ಮೀ ಸ್ಥಿತಿಃ ಪಾರ್ಥ ನೈನಾಂ ಪ್ರಾಪ್ಯ ವಿಮುಹ್ಯತಿ ಸ್ಥಿತ್ವಾಸ್ಯಾಮಂತಕಾಲೇಪಿ ಬ್ರಹ್ಮನಿರ್ವಾಣಮೃಚ್ಛತಿ",
+        "first_words": ["ಬ್ರಾಹ್ಮೀ", "ಸ್ಥಿತಿಃ", "ಬ್ರಹ್ಮನಿರ್ವಾಣಮೃಚ್ಛತಿ"],
+        "speaker": "Krishna",
+    },
 ]
+
+# Integrity checks: Chapter 2 must contain each reference exactly once and Layer
+# 1 must search the same candidate space as Layer 3.
+_verse_refs = [verse["ref"] for verse in VERSES_BG_CH2]
+_expected_refs = {f"BG 2.{verse_number}" for verse_number in range(1, 73)}
+
+assert len(_verse_refs) == 72, f"Expected 72 verses, found {len(_verse_refs)}"
+assert set(_verse_refs) == _expected_refs, (
+    f"Missing/extra Chapter 2 references: {set(_verse_refs) ^ _expected_refs}"
+)
+assert all(
+    set(verse) == {"ref", "devanagari", "kannada", "first_words", "speaker"}
+    for verse in VERSES_BG_CH2
+), "Every verse entry must contain exactly the five canonical fields"
+assert next(v for v in VERSES_BG_CH2 if v["ref"] == "BG 2.54")["speaker"] == "Arjuna"
+assert all(
+    verse["speaker"] == "Krishna"
+    for verse in VERSES_BG_CH2[49:]
+    if verse["ref"] != "BG 2.54"
+), "BG 2.50–2.72 must be Krishna's speech except for Arjuna's BG 2.54"
+
+from verse_translations import VERSE_TRANSLATIONS as _VERSE_TRANSLATIONS
+
+assert set(_verse_refs) == set(_VERSE_TRANSLATIONS), (
+    "Layer 1/Layer 3 candidate mismatch: "
+    f"{set(_verse_refs) ^ set(_VERSE_TRANSLATIONS)}"
+)
 
 # Quick lookup by first words (for fast scanning)
 FIRST_WORD_INDEX = {}

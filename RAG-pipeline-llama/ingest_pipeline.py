@@ -22,6 +22,7 @@ import hashlib
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
+from embeddings import embed_text
 
 
 # ─────────────────────────────────────────────
@@ -306,15 +307,7 @@ def _chunk_by_mentions(
 # EMBED + INDEX
 # ─────────────────────────────────────────────
 
-def _embed(text: str) -> list:
-    import requests
-    resp = requests.post(
-        f"{config.OLLAMA_BASE_URL}/api/embeddings",
-        json={"model": config.EMBED_MODEL, "prompt": text},
-        timeout=60,
-    )
-    resp.raise_for_status()
-    return resp.json()["embedding"]
+
 
 
 def index_chunks(chunks: list, collection) -> int:
@@ -324,7 +317,7 @@ def index_chunks(chunks: list, collection) -> int:
         if not chunk["text"].strip():
             continue
         try:
-            embedding = _embed(chunk["text"])
+            embedding = embed_text(chunk["text"])
             meta = {k: chunk[k] for k in (
                 "tradition", "verse_ref", "section_type", "video_id",
                 "youtube_url", "start_time_sec", "end_time_sec",

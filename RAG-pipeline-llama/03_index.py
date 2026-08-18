@@ -1,7 +1,7 @@
 """
 Step 3: Embedding & Indexing
 ============================
-Embeds the ENGLISH translation/summary text using BGE-M3 via Ollama,
+Embeds the ENGLISH translation/summary text using BGE-M3 via sentence-transformers,
 then stores vectors + metadata in ChromaDB.
 
 Key design: We embed English text (not raw Kannada) so that English queries
@@ -16,25 +16,11 @@ import json
 import os
 import sys
 import argparse
-import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
+from embeddings import embed_text
 
-
-def get_embedding_ollama(text):
-    """Get embedding vector from Ollama's BGE-M3 model."""
-    try:
-        resp = requests.post(
-            f"{config.OLLAMA_BASE_URL}/api/embeddings",
-            json={"model": config.EMBED_MODEL, "prompt": text},
-            timeout=60
-        )
-        resp.raise_for_status()
-        return resp.json()["embedding"]
-    except Exception as e:
-        print(f"    Embedding error: {e}")
-        return None
 
 
 def main():
@@ -99,7 +85,7 @@ def main():
         label = chunk.get("verse_ref") or chunk.get("section_type", "?")
         print(f"  [{i+1}/{len(chunks)}] {chunk_id}: {label} ...", end=" ", flush=True)
 
-        embedding = get_embedding_ollama(embedding_text)
+        embedding = embed_text(embedding_text)
         if embedding is None:
             print("FAILED")
             error_count += 1

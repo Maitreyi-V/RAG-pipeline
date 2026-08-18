@@ -25,11 +25,11 @@ AFTER RUNNING:
 import os
 import sys
 import json
-import requests
 import argparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
+from embeddings import embed_text
 from advaita_ground_truth import GROUND_TRUTH
 
 
@@ -58,16 +58,6 @@ def chunk_transcript(text: str, words_per_chunk: int = 300,
         i += step
     return chunks
 
-
-def embed_text(text: str) -> list[float]:
-    """Embed text using BGE-M3 via Ollama."""
-    resp = requests.post(
-        f"{config.OLLAMA_BASE_URL}/api/embeddings",
-        json={"model": config.EMBED_MODEL, "prompt": text},
-        timeout=120
-    )
-    resp.raise_for_status()
-    return resp.json()["embedding"]
 
 
 def main():

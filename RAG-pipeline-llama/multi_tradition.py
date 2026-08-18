@@ -19,7 +19,7 @@ Usage:
 """
 import os
 import json
-import requests
+from embeddings import embed_text
 
 
 class TraditionConfig:
@@ -87,10 +87,9 @@ Respond with:
 
     def __init__(self, chroma_dir="data/chroma_db",
                  ollama_url="http://localhost:11434",
-                 embed_model="bge-m3", llm_model="llama3"):
+                llm_model="llama3"):
         self.chroma_dir = chroma_dir
         self.ollama_url = ollama_url
-        self.embed_model = embed_model
         self.llm_model = llm_model
         self.collections = {}
 
@@ -110,15 +109,6 @@ Respond with:
             except Exception as e:
                 print(f"  {tradition.name}: ERROR — {e}")
 
-    def get_embedding(self, text):
-        resp = requests.post(
-            f"{self.ollama_url}/api/embeddings",
-            json={"model": self.embed_model, "prompt": text},
-            timeout=60
-        )
-        resp.raise_for_status()
-        return resp.json()["embedding"]
-
     def retrieve_single_tradition(self, query, tradition_key, top_k=3):
         """Retrieve from a single tradition's collection."""
         if tradition_key not in self.collections:
@@ -128,7 +118,7 @@ Respond with:
         if collection.count() == 0:
             return []
 
-        query_embedding = self.get_embedding(query)
+        query_embedding = embed_text(query)
 
         results = collection.query(
             query_embeddings=[query_embedding],
@@ -236,7 +226,7 @@ Respond with:
         collection = self.collections[tradition_key]
 
         for chunk in chunks:
-            embedding = self.get_embedding(chunk["embedding_text"])
+            embedding = embed_text(chunk["embedding_text"])
             collection.upsert(
                 ids=[chunk["chunk_id"]],
                 embeddings=[embedding],

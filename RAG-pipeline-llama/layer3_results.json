@@ -17,25 +17,25 @@
     {
       "filename": "video_01.json",
       "expected": [
-        "BG 2.4",
-        "BG 2.9",
-        "BG 2.1",
-        "BG 2.6",
-        "BG 2.8",
-        "BG 2.5",
-        "BG 2.3",
         "BG 2.2",
+        "BG 2.7",
+        "BG 2.5",
         "BG 2.10",
-        "BG 2.7"
+        "BG 2.9",
+        "BG 2.4",
+        "BG 2.1",
+        "BG 2.8",
+        "BG 2.6",
+        "BG 2.3"
       ],
       "detected": [
-        "BG 2.4",
-        "BG 2.6",
-        "BG 2.1",
-        "BG 2.10",
         "BG 2.2",
+        "BG 2.7",
+        "BG 2.10",
+        "BG 2.4",
+        "BG 2.1",
         "BG 2.48",
-        "BG 2.7"
+        "BG 2.6"
       ],
       "tp": 6,
       "fp": 1,
@@ -44,8 +44,8 @@
     {
       "filename": "video_02.json",
       "expected": [
-        "BG 2.12",
-        "BG 2.11"
+        "BG 2.11",
+        "BG 2.12"
       ],
       "detected": [
         "BG 2.20"
@@ -57,13 +57,13 @@
     {
       "filename": "video_03.json",
       "expected": [
-        "BG 2.14",
         "BG 2.15",
-        "BG 2.13"
+        "BG 2.13",
+        "BG 2.14"
       ],
       "detected": [
-        "BG 2.14",
-        "BG 2.13"
+        "BG 2.13",
+        "BG 2.14"
       ],
       "tp": 2,
       "fp": 0,
@@ -82,8 +82,8 @@
     {
       "filename": "video_05.json",
       "expected": [
-        "BG 2.17",
-        "BG 2.18"
+        "BG 2.18",
+        "BG 2.17"
       ],
       "detected": [
         "BG 2.30"
@@ -105,8 +105,8 @@
     {
       "filename": "video_07.json",
       "expected": [
-        "BG 2.21",
         "BG 2.22",
+        "BG 2.21",
         "BG 2.20"
       ],
       "detected": [
@@ -120,10 +120,10 @@
     {
       "filename": "video_08.json",
       "expected": [
-        "BG 2.25",
         "BG 2.22",
+        "BG 2.23",
         "BG 2.24",
-        "BG 2.23"
+        "BG 2.25"
       ],
       "detected": [],
       "tp": 0,
@@ -137,8 +137,8 @@
         "BG 2.27"
       ],
       "detected": [
-        "BG 2.27",
-        "BG 2.13"
+        "BG 2.13",
+        "BG 2.27"
       ],
       "tp": 1,
       "fp": 1,
