@@ -20,6 +20,30 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import config
 from embeddings import embed_text
 
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
+_oai = None
+
+
+def _llm(prompt: str) -> str:
+    """Generate an answer with OpenAI (replaces the local Ollama call)."""
+    global _oai
+    if _oai is None:
+        key = os.environ.get("OPENAI_API_KEY")
+        if not key:
+            raise RuntimeError("OPENAI_API_KEY not set — check .env at repo root")
+        _oai = OpenAI(api_key=key)
+    resp = _oai.chat.completions.create(
+        model=os.environ.get("ANSWER_MODEL", "gpt-4o-mini"),
+        messages=[{"role": "user", "content": prompt}],
+        temperature=config.LLM_TEMPERATURE,
+        max_tokens=config.LLM_MAX_TOKENS,
+    )
+    return (resp.choices[0].message.content or "").strip()
+
+
 def detect_language(text):
     for char in text:
         if "\u0C80" <= char <= "\u0CFF":
@@ -149,25 +173,7 @@ User question: {query}
 Answer:"""
 
     try:
-        resp = requests.post(
-            f"{config.OLLAMA_BASE_URL}/api/generate",
-            json={
-                "model": config.LLM_MODEL,
-                "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "temperature": config.LLM_TEMPERATURE,
-                    "num_predict": config.LLM_MAX_TOKENS,
-                    "top_p": 0.9,
-                    "repeat_penalty": 1.1,
-                }
-            },
-            timeout=600
-        )
-        resp.raise_for_status()
-        return resp.json().get("response", "").strip()
-    except requests.exceptions.Timeout:
-        return "⚠️ Answer generation timed out. Try reducing TOP_K or asking a simpler question."
+        return _llm(prompt)
     except Exception as e:
         return f"Error generating answer: {e}"
 
@@ -331,23 +337,7 @@ User question: {query}
 Answer:"""
 
     try:
-        resp = requests.post(
-            f"{config.OLLAMA_BASE_URL}/api/generate",
-            json={
-                "model": config.LLM_MODEL,
-                "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "temperature": config.LLM_TEMPERATURE,
-                    "num_predict": config.LLM_MAX_TOKENS,
-                    "top_p": 0.9,
-                    "repeat_penalty": 1.1,
-                }
-            },
-            timeout=600
-        )
-        resp.raise_for_status()
-        return resp.json().get("response", "").strip()
+        return _llm(prompt)
     except Exception as e:
         return f"Error generating answer: {e}"
 
