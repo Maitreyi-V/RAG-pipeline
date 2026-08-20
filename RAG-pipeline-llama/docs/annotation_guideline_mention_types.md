@@ -131,6 +131,51 @@ verse* is being referenced? If **no**, but the gold says a verse is grounded her
 
 ---
 
+## ⚠️ ADDENDUM (2026-08-20) — T5 in the exhaustive workflow
+
+**Read this. It overrides the T5 wording above.**
+
+The sections above were written for a *verification* workflow: you already had a gold answer key
+(`annotations.csv`, `advaita_ground_truth.py`) and only had to tag *how* each known mention appeared.
+That is why the T5 test says "if **the gold** says a verse is grounded here."
+
+**We no longer work that way.** You now annotate every unit in `data/units_v1.csv` from scratch and
+decide yourself whether a verse is grounded. There is no answer key to consult — **you are writing
+it.** So the old T5 test is circular, and left as-is two annotators will split on the same passage:
+
+> *"A wise person isn't shaken by pleasure or pain; he stays steady whatever happens."*
+> — Annotator A: that's the sthitaprajña, → T5 on BG 2.56.
+> — Annotator B: no verse is signalled, → ∅ No verse here.
+
+Both follow the old text. Both are "right". That disagreement is concentrated in T5 (the fuzziest
+tier), so left unfixed it lands directly on our reported Cohen's κ.
+
+### The operative rule
+
+> **Tag T5 only if you can name ONE specific verse** (or a tight 2–3 verse set) whose content this
+> passage is explicating. Your confidence must come from either:
+> - **(a) content** — the passage matches that verse's specific content closely, or
+> - **(b) discourse context** — the speaker has been working through that verse and is still
+>   elaborating it without re-citing.
+>
+> If the most you can honestly say is *"this is generally about Chapter 2's themes"* without landing
+> on a specific verse → **∅ No verse here**, **not** T5.
+>
+> If you are genuinely torn, tag T5 **and tick `uncertain`**. Those rows get adjudicated, and the
+> count of them is a dataset statistic we report.
+
+### Applying it to the two examples above
+
+- The *"spiritual battle of life"* passage in `video_01.json`: no specific verse is identifiable from
+  content or context → **∅**, not T5.
+- The *sthitaprajña* passage: **T5 on the specific verse** if the speaker has been walking through,
+  say, BG 2.56 and is still unpacking it. If it is a free-floating remark about staying calm → **∅**.
+
+**"No identifiable verse" is never automatically T5.** T5 means a specific verse *is* grounded here
+and the speaker simply gave no signal about which one.
+
+---
+
 ## Decision procedure (apply top-down, stop at first match)
 
 ```
@@ -139,8 +184,16 @@ verse* is being referenced? If **no**, but the gold says a verse is grounded her
 3. Is there a faithful translation, framed as the verse? .......... YES → T3
 4. Is the verse explained in the speaker's own words,
    with the specific verse still identifiable? .................... YES → T4
-5. Only the theme/idea is present, no signal of a specific verse? .. YES → T5
+5. Only the theme/idea is present, no signal of a specific verse,
+   BUT you can still name ONE specific verse it explicates
+   (from content or discourse context — see ADDENDUM) ............. YES → T5
+6. Otherwise — narration, story, logistics, a digression, or a
+   general theme you cannot pin to a specific verse ............... → ∅ No verse here
 ```
+
+Step 6 is a **normal, frequent outcome** — most units in a lecture are not verse mentions. Do not
+force a verse onto a passage that does not carry one; that corrupts the gold data far more than a
+missed mention does.
 
 ---
 
