@@ -1,0 +1,54 @@
+unit_id,video_file,annotator,verse_ref,mention_type,has_explicit_ref,uncertain,notes,created_at
+en_video_01_0000,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:13:00
+en_video_01_0001,video_01,Maitreyi,NONE,NONE,0,0,OOS: BG 1.21-22,2026-08-20T17:17:25
+en_video_01_0002,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:23:27
+en_video_01_0003,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:23:29
+en_video_01_0004,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:24:29
+en_video_01_0005,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:40:39
+en_video_01_0006,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:42:16
+en_video_01_0007,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:42:46
+en_video_01_0008,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:07
+en_video_01_0009,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:26
+en_video_01_0010,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:32
+en_video_01_0011,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:38
+en_video_01_0012,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:43
+en_video_01_0013,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:49
+en_video_01_0014,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:55
+en_video_01_0015,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:44:27
+en_video_01_0016,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:44:36
+en_video_01_0017,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:45:21
+en_video_01_0018,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:46:01
+en_video_01_0019,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:49:09
+en_video_01_0020,video_01,Maitreyi,BG 2.7,T5,0,0,,2026-08-20T17:51:46
+en_video_01_0021,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:52:16
+en_video_01_0022,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:52:31
+en_video_01_0023,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:54:26
+en_video_01_0024,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:54:41
+en_video_01_0025,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:54:48
+en_video_01_0026,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:55:07
+en_video_01_0027,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:55:29
+en_video_01_0028,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:56:49
+en_video_01_0029,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:56:56
+en_video_01_0030,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:04
+en_video_01_0031,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:13
+en_video_01_0032,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:23
+en_video_01_0033,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:33
+en_video_01_0034,video_01,Maitreyi,BG 2.1,T1,0,0,"ASR_DROP: recitation announced, absent from transcript",2026-08-20T18:13:22
+en_video_01_0035,video_01,Maitreyi,NONE,NONE,0,0,OOS: BG 1.1 (Dhritarashtra asks Sanjaya),2026-08-20T18:14:57
+en_video_01_0036,video_01,Maitreyi,BG 2.1,T3,0,0,,2026-08-20T18:16:08
+en_video_01_0037,video_01,Maitreyi,BG 2.1,T4,0,0,,2026-08-20T18:16:38
+en_video_01_0038,video_01,Maitreyi,BG 2.1,T4,0,0,,2026-08-20T18:17:45
+en_video_01_0039,video_01,Maitreyi,BG 2.1,T5,0,1,,2026-08-20T18:19:19
+en_video_01_0040,video_01,Maitreyi,BG 2.1,T4,0,1,,2026-08-20T18:20:00
+en_video_01_0041,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T18:20:48
+en_video_01_0042,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T18:21:05
+en_video_01_0043,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T18:21:11
+en_video_01_0044,video_01,Maitreyi,BG 2.2,T1,0,0,,2026-08-20T18:23:29
+en_video_01_0045,video_01,Maitreyi,BG 2.2,T3,0,0,,2026-08-20T18:24:24
+en_video_01_0046,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-08-20T18:24:51
+en_video_01_0047,video_01,Maitreyi,BG 2.2,T2,0,0,,2026-08-20T18:25:09
+en_video_01_0048,video_01,Maitreyi,BG 2.2,T2,0,0,"OOS: Shankara, Brahma Sutra Bhashya",2026-08-20T18:25:58
+en_video_01_0049,video_01,Maitreyi,BG 2.2,T5,0,1,,2026-08-20T18:27:41
+en_video_01_0050,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-08-20T18:28:11
+en_video_01_0051,video_01,Maitreyi,BG 2.2,T2,0,0,,2026-08-20T18:28:30
+en_video_01_0052,video_01,Maitreyi,BG 2.2,T2,0,0,,2026-08-20T18:28:58
