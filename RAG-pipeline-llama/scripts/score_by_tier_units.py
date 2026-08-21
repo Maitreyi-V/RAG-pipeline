@@ -65,6 +65,9 @@ def main():
     ap.add_argument("--spans", default=DEFAULT_SPANS)
     ap.add_argument("--units", default=DEFAULT_UNITS)
     ap.add_argument("--detections", help="detector JSON with per_video results")
+    ap.add_argument("--unit-detections",
+                    help="CSV from scripts/detect_units.py (unit_id, detected_verses) "
+                         "-- scores localisation, the real grounding task")
     ap.add_argument("--annotator", help="use only this annotator's labels")
     ap.add_argument("--language", choices=["kn", "en"], help="restrict to one language")
     ap.add_argument("--total-videos", type=int, default=30,
@@ -145,7 +148,61 @@ def main():
         for k, c in pref.most_common():
             print(f"    {k+':':12} {c}")
 
-    # ---------------- scoring ----------------
+    # ---------------- unit-level (localisation) scoring ----------------
+    if args.unit_detections:
+        with open(args.unit_detections, newline="", encoding="utf-8") as f:
+            pred = {r["unit_id"]: {v for v in (r["detected_verses"] or "").split(";") if v}
+                    for r in csv.DictReader(f)}
+
+        # Only units a human actually reviewed can be scored: for those we know
+        # the truth, including "no verse here" (the NONE rows).
+        scored_units = reviewed & set(pred)
+        gold_pairs = {}
+        for r in mentions:
+            if r["unit_id"] in scored_units:
+                t = (r.get("mention_type") or "").strip().upper()
+                k = (r["unit_id"], r["verse_ref"].strip())
+                if k not in gold_pairs or FIDELITY.get(t, 9) < FIDELITY.get(gold_pairs[k], 9):
+                    gold_pairs[k] = t
+        pred_pairs = {(u, v) for u in scored_units for v in pred[u]}
+
+        print("\n" + "=" * 70)
+        print(f"UNIT-LEVEL (LOCALISATION) — {os.path.basename(args.unit_detections)}")
+        print("=" * 70)
+        print(f"  reviewed units scored : {len(scored_units)}")
+        print(f"  gold mentions         : {len(gold_pairs)}")
+        print(f"\n  {'tier':6} {'gold':>6} {'found':>6} {'recall':>8}")
+        print("  " + "-" * 30)
+        for t in TIERS:
+            g = [k for k, tt in gold_pairs.items() if tt == t]
+            if not g:
+                print(f"  {t:6} {0:>6} {'-':>6} {'-':>8}")
+                continue
+            hit = sum(1 for k in g if k in pred_pairs)
+            print(f"  {t:6} {len(g):>6} {hit:>6} {hit/len(g):>8.3f}")
+
+        tp = len(set(gold_pairs) & pred_pairs)
+        fn = len(gold_pairs) - tp
+        fp = len(pred_pairs - set(gold_pairs))
+        p = tp / (tp + fp) if tp + fp else 0.0
+        r_ = tp / (tp + fn) if tp + fn else 0.0
+        f1 = 2 * p * r_ / (p + r_) if p + r_ else 0.0
+        print("  " + "-" * 30)
+        print(f"  OVERALL  TP={tp} FP={fp} FN={fn}   P={p:.3f} R={r_:.3f} F1={f1:.3f}")
+
+        empty = {u for u in scored_units if not any(k[0] == u for k in gold_pairs)}
+        spurious = sum(1 for u in empty if pred[u])
+        print(f"\n  units gold-labelled 'no verse': {len(empty)}"
+              f"   of which the detector fired on: {spurious}")
+
+        top_fp = Counter(v for u, v in (pred_pairs - set(gold_pairs)))
+        if top_fp:
+            print("\n  attractor verses (most frequent false positives):")
+            for v, c in top_fp.most_common(8):
+                print(f"    {v:10} {c}")
+        return
+
+    # ---------------- video-level scoring ----------------
     if not args.detections:
         print("\n" + "=" * 70)
         print("  (stats only — pass --detections <file.json> for per-tier recall)")

@@ -1,0 +1,106 @@
+#!/usr/bin/env python3
+"""
+Run a detection layer over annotation UNITS rather than whole videos.
+
+Video-level detection ("BG 2.1 appears somewhere in this video") collapses many
+gold mentions into one scorable item and gives false positives no location.
+Unit-level detection is the actual grounding task: for each ~100-word unit, which
+verse (if any) is being grounded here?
+
+Output: results/units_layer{N}.csv  ->  unit_id, detected_verses (semicolon list)
+
+Usage:
+    python scripts/detect_units.py --layer 1 --language kn
+    python scripts/detect_units.py --layer 3 --language en --threshold 0.65
+"""
+import argparse
+import csv
+import io
+import contextlib
+import os
+import sys
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, HERE)
+
+UNITS = os.path.join(HERE, "data", "units_v1.csv")
+
+
+def refs_from(result):
+    """Detector outputs vary; pull verse refs out of whatever shape came back."""
+    out = []
+    for d in result or []:
+        if isinstance(d, dict):
+            r = d.get("verse_ref") or d.get("ref") or d.get("verse")
+        elif isinstance(d, (list, tuple)) and len(d) >= 2:
+            r = d[1]
+        else:
+            r = d
+        if r:
+            out.append(str(r))
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--layer", type=int, choices=[1, 3], required=True)
+    ap.add_argument("--units", default=UNITS)
+    ap.add_argument("--language", choices=["kn", "en"])
+    ap.add_argument("--video")
+    ap.add_argument("--threshold", type=float, default=0.65, help="layer 3 only")
+    ap.add_argument("--out")
+    args = ap.parse_args()
+
+    with open(args.units, newline="", encoding="utf-8") as f:
+        units = list(csv.DictReader(f))
+    if args.language:
+        units = [u for u in units if u["language"] == args.language]
+    if args.video:
+        units = [u for u in units if u["video_file"] == args.video]
+    if not units:
+        sys.exit("No units matched.")
+
+    if args.layer == 1:
+        from shloka_detector import ShlokaDetector
+        det = ShlokaDetector()
+
+        def predict(text):
+            with contextlib.redirect_stdout(io.StringIO()):
+                return refs_from(det.detect(text))
+    else:
+        from layer3_semantic import Layer3SemanticMatcher
+        m = Layer3SemanticMatcher(threshold=args.threshold)
+        with contextlib.redirect_stdout(io.StringIO()):
+            m.build_index()
+
+        def predict(text):
+            with contextlib.redirect_stdout(io.StringIO()):
+                r = m.detect(text)
+            return [r[0]] if r and r[0] else []
+
+    out = args.out or os.path.join(HERE, "results", f"units_layer{args.layer}.csv")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+
+    n_hit = 0
+    with open(out, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["unit_id", "video_file", "detected_verses"])
+        for i, u in enumerate(units, 1):
+            try:
+                refs = sorted(set(predict(u["text"])))
+            except Exception as e:
+                print(f"  !! {u['unit_id']}: {type(e).__name__}: {e}")
+                refs = []
+            if refs:
+                n_hit += 1
+            w.writerow([u["unit_id"], u["video_file"], ";".join(refs)])
+            if i % 50 == 0:
+                print(f"  ... {i}/{len(units)}")
+
+    print(f"\n  layer {args.layer} over {len(units)} units")
+    print(f"  units with a detection: {n_hit} ({n_hit/len(units):.1%})")
+    print(f"  wrote -> {os.path.relpath(out, HERE)}")
+
+
+if __name__ == "__main__":
+    main()
