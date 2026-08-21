@@ -48,6 +48,8 @@ def main():
     ap.add_argument("--language", choices=["kn", "en"])
     ap.add_argument("--video")
     ap.add_argument("--threshold", type=float, default=0.65, help="layer 3 only")
+    ap.add_argument("--top-k", type=int, default=3,
+                    help="layer 3: max verses returned per unit (default 3)")
     ap.add_argument("--out")
     args = ap.parse_args()
 
@@ -74,9 +76,12 @@ def main():
             m.build_index()
 
         def predict(text):
+            # top-k, so Layer 3 can return several verses like Layer 1 can.
+            # detect() is top-1 only, which caps recall on multi-verse units.
             with contextlib.redirect_stdout(io.StringIO()):
-                r = m.detect(text)
-            return [r[0]] if r and r[0] else []
+                hits = m.detect_top_k(text, k=args.top_k)
+            return [ref for ref, score in hits
+                    if ref and score >= args.threshold]
 
     out = args.out or os.path.join(HERE, "results", f"units_layer{args.layer}.csv")
     os.makedirs(os.path.dirname(out), exist_ok=True)
