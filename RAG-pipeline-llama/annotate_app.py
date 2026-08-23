@@ -135,10 +135,28 @@ st.markdown(
 if i < len(sub) - 1:
     st.caption(f"{sub.iloc[i + 1].text[:220]}…")
 
+def _flag(v):
+    try:
+        return bool(int(v))
+    except (TypeError, ValueError):
+        return False
+
+
 existing = done[done.unit_id == row.unit_id] if len(done) else done
 if len(existing):
-    st.info(" · ".join(f"{r.annotator}: {r.verse_ref}/{r.mention_type}"
-                       for r in existing.itertuples()))
+    lines = []
+    for r in existing.itertuples():
+        bit = f"**{r.annotator}** — `{r.verse_ref}` / `{r.mention_type}`"
+        if _flag(r.has_explicit_ref):
+            bit += " · explicit ref"
+        if _flag(r.uncertain):
+            bit += " · ⚠️ uncertain"
+        if str(r.notes).strip():
+            bit += f" · 📝 _{r.notes}_"
+        lines.append(bit)
+    st.success("**Already labelled**  \n" + "  \n".join(lines))
+else:
+    st.caption("· not yet labelled ·")
 
 # ── verse reference (lookup aid — deliberately NOT model suggestions) ──
 with st.expander("📖 Verse reference — search all 72", expanded=False):
@@ -193,7 +211,7 @@ def advance():
     st.rerun()
 
 
-b1, b2, b3 = st.columns(3)
+b1, b2 = st.columns(2)
 
 if b1.button("💾 Save label(s) →", type="primary", use_container_width=True):
     if not picked:
@@ -212,6 +230,19 @@ if b2.button("∅ No verse here →", use_container_width=True):
              "notes": notes, "created_at": now()}])
     advance()
 
-if b3.button("← Previous", use_container_width=True):
+# ── navigation (moves without labelling) ──────────────────
+st.caption("Navigate without labelling:")
+n1, n2, n3 = st.columns(3)
+
+if n1.button("← Previous", use_container_width=True, disabled=i == 0):
     st.session_state[key] = max(i - 1, 0)
+    st.rerun()
+
+if n2.button("Next →", use_container_width=True, disabled=i >= len(sub) - 1):
+    st.session_state[key] = min(i + 1, len(sub) - 1)
+    st.rerun()
+
+if n3.button("⏭ Jump to first unlabelled", use_container_width=True):
+    todo = [n for n, r in enumerate(sub.itertuples()) if r.unit_id not in reviewed]
+    st.session_state[key] = todo[0] if todo else len(sub) - 1
     st.rerun()
