@@ -51,13 +51,32 @@ def load_csv(path):
 
 
 def latest_per_pair(rows):
-    newest = {}
+    """Resolve the append-only log to one current view.
+
+    Keyed on (unit, annotator, VERSE): re-saving one verse must not shadow a
+    different verse labelled on the same unit in a separate save. Then, per
+    (unit, annotator), a NONE row and real verses are mutually exclusive --
+    whichever was recorded later wins.
+    """
+    best = {}
     for r in rows:
-        k = (r["unit_id"], r["annotator"])
-        ts = r.get("created_at", "")
-        if k not in newest or ts > newest[k]:
-            newest[k] = ts
-    return [r for r in rows if r.get("created_at", "") == newest[(r["unit_id"], r["annotator"])]]
+        k = (r["unit_id"], r["annotator"], (r.get("verse_ref") or "").strip())
+        if k not in best or r.get("created_at", "") > best[k].get("created_at", ""):
+            best[k] = r
+    by_ua = defaultdict(list)
+    for r in best.values():
+        by_ua[(r["unit_id"], r["annotator"])].append(r)
+    out = []
+    for rs in by_ua.values():
+        nones = [r for r in rs if (r.get("verse_ref") or "").strip() == "NONE"]
+        reals = [r for r in rs if (r.get("verse_ref") or "").strip() != "NONE"]
+        if nones and reals:
+            nn = max(r.get("created_at", "") for r in nones)
+            nr = max(r.get("created_at", "") for r in reals)
+            out.extend(nones if nn > nr else reals)
+        else:
+            out.extend(rs)
+    return out
 
 
 def main():

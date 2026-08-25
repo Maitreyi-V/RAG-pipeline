@@ -43,13 +43,23 @@ def refs_from(result):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--layer", type=int, choices=[1, 3], required=True)
+    ap.add_argument("--layer", type=int, choices=[1, 3, 4], required=True)
+    ap.add_argument("--provider", choices=["openai", "ollama"], default="openai",
+                    help="layer 4 only")
+    ap.add_argument("--model", default=None, help="layer 4 only")
+    ap.add_argument("--only-annotated", action="store_true",
+                    help="restrict to units that already have gold labels "
+                         "(saves API calls on layer 4)")
     ap.add_argument("--units", default=UNITS)
     ap.add_argument("--language", choices=["kn", "en"])
     ap.add_argument("--video")
     ap.add_argument("--threshold", type=float, default=0.65, help="layer 3 only")
     ap.add_argument("--top-k", type=int, default=3,
                     help="layer 3: max verses returned per unit (default 3)")
+    ap.add_argument("--sanskrit-threshold", type=float, default=0.12,
+                    help="layer 1: min Sanskrit density for a window (default 0.12)")
+    ap.add_argument("--match-threshold", type=int, default=55,
+                    help="layer 1: min fuzzy score 0-100 (default 55)")
     ap.add_argument("--out")
     args = ap.parse_args()
 
@@ -59,16 +69,36 @@ def main():
         units = [u for u in units if u["language"] == args.language]
     if args.video:
         units = [u for u in units if u["video_file"] == args.video]
+    if args.only_annotated:
+        spans = os.path.join(HERE, "data", "mention_spans.csv")
+        if os.path.exists(spans):
+            with open(spans, newline="", encoding="utf-8") as f:
+                labelled = {r["unit_id"] for r in csv.DictReader(f)}
+            units = [u for u in units if u["unit_id"] in labelled]
     if not units:
         sys.exit("No units matched.")
 
     if args.layer == 1:
         from shloka_detector import ShlokaDetector
-        det = ShlokaDetector()
+        det = ShlokaDetector(sanskrit_threshold=args.sanskrit_threshold,
+                             match_threshold=args.match_threshold)
+        print(f"  layer 1: sanskrit_threshold={args.sanskrit_threshold} "
+              f"match_threshold={args.match_threshold}")
 
         def predict(text):
             with contextlib.redirect_stdout(io.StringIO()):
                 return refs_from(det.detect(text))
+    elif args.layer == 4:
+        from dotenv import load_dotenv
+        load_dotenv()
+        from layer4_llm_detector import detect_verse_llm
+        model = args.model or ("gpt-4o-mini" if args.provider == "openai"
+                               else "llama3.1:8b")
+        print(f"  layer 4: {args.provider} / {model}")
+
+        def predict(text):
+            nums = detect_verse_llm(text, args.provider, model)
+            return [f"BG 2.{n}" for n in nums]
     else:
         from layer3_semantic import Layer3SemanticMatcher
         m = Layer3SemanticMatcher(threshold=args.threshold)
