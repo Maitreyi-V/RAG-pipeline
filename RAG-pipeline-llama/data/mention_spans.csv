@@ -65,69 +65,70 @@ kn_kannada_13_0010,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T18:08:12
 kn_kannada_13_0007,kannada_13,Meghana S,BG 2.33,T1,0,0,,2026-08-21T19:08:09
 kn_kannada_13_0007,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T19:08:09
 kn_kannada_13_0009,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T23:25:09
-kn_kannada_07_0000,kannada_07,Prerana,BG 2.14,T4,0,0,Recap of the previous session's verse,2026-08-21T21:06:15
+kn_kannada_07_0000,kannada_07,Prerana,BG 2.14,T4,1,0,Recap of the previous session's verse,2026-08-21T21:06:15
+kn_kannada_07_0001,kannada_07,Prerana,BG 2.15,T4,1,0,,2026-08-21T21:15:07
 kn_kannada_07_0002,kannada_07,Prerana,BG 2.15,T1,0,0,,2026-08-21T21:15:25
 kn_kannada_07_0003,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:22:33
 kn_kannada_07_0004,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:25:03
-kn_kannada_07_0005,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:27:25
-kn_kannada_07_0006,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:28:59
+kn_kannada_07_0005,kannada_07,Prerana,BG 2.15,T2,0,1,,2026-08-21T21:27:25
+kn_kannada_07_0006,kannada_07,Prerana,BG 2.15,T2,0,1,,2026-08-21T21:28:59
 kn_kannada_07_0007,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:31:54
-kn_kannada_07_0008,kannada_07,Prerana,BG 2.15,T1,0,0,,2026-08-21T21:32:37
-kn_kannada_07_0009,kannada_07,Prerana,BG 2.16,T1,0,0,,2026-08-21T21:33:53
+kn_kannada_07_0008,kannada_07,Prerana,BG 2.15,T1,1,0,,2026-08-21T21:32:37
+kn_kannada_07_0009,kannada_07,Prerana,BG 2.16,T1,1,0,,2026-08-21T21:33:53
+kn_kannada_07_0010,kannada_07,Prerana,BG 2.16,T2,0,0,,2026-08-21T21:48:00
 kn_kannada_07_0011,kannada_07,Prerana,BG 2.16,T2,0,0,,2026-08-21T21:35:51
 kn_kannada_07_0012,kannada_07,Prerana,BG 2.16,T4,0,0,,2026-08-21T21:38:29
 kn_kannada_07_0013,kannada_07,Prerana,BG 2.16,T4,0,0,,2026-08-21T21:40:09
-kn_kannada_07_0010,kannada_07,Prerana,BG 2.16,T2,0,0,,2026-08-21T21:48:00
 kn_kannada_07_0014,kannada_07,Prerana,BG 2.16,T1,0,0,,2026-08-21T21:49:07
-kn_kannada_08_0000,kannada_08,Prerana,BG 2.14,T2,0,0,,2026-08-23T11:41:20
-kn_kannada_08_0000,kannada_08,Prerana,BG 2.15,T2,0,0,,2026-08-23T11:41:20
-kn_kannada_08_0001,kannada_08,Prerana,BG 2.15,T2,0,0,,2026-08-23T11:42:56
-kn_kannada_08_0001,kannada_08,Prerana,BG 2.16,T2,0,0,,2026-08-23T11:42:56
-kn_kannada_08_0002,kannada_08,Prerana,BG 2.17,T1,0,0,,2026-08-23T11:45:13
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.14,T2,1,0,,2026-08-23T11:41:20
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.15,T2,1,0,,2026-08-23T11:41:20
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.16,T2,1,0,,2026-08-23T11:41:20
+kn_kannada_08_0001,kannada_08,Prerana,BG 2.15,T2,1,0,,2026-08-23T11:42:56
+kn_kannada_08_0001,kannada_08,Prerana,BG 2.16,T2,1,0,,2026-08-23T11:42:56
+kn_kannada_08_0002,kannada_08,Prerana,BG 2.17,T1,1,0,,2026-08-23T11:45:13
 kn_kannada_08_0003,kannada_08,Prerana,BG 2.17,T1,0,0,,2026-08-23T11:47:08
 kn_kannada_08_0004,kannada_08,Prerana,BG 2.17,T2,0,0,,2026-08-23T11:48:27
 kn_kannada_08_0006,kannada_08,Prerana,BG 2.17,T4,0,0,,2026-08-23T11:55:05
+kn_kannada_08_0006,kannada_08,Prerana,BG 2.18,T4,0,0,,2026-08-23T11:55:05
 kn_kannada_08_0007,kannada_08,Prerana,BG 2.18,T1,0,0,,2026-08-23T11:59:58
 kn_kannada_08_0008,kannada_08,Prerana,BG 2.18,T2,0,0,,2026-08-23T12:00:59
 kn_kannada_08_0009,kannada_08,Prerana,BG 2.18,T2,0,0,,2026-08-23T12:02:15
 kn_kannada_08_0010,kannada_08,Prerana,BG 2.18,T2,0,0,,2026-08-23T12:03:25
 kn_kannada_08_0011,kannada_08,Prerana,BG 2.18,T1,0,0,,2026-08-23T12:46:09
 kn_kannada_08_0005,kannada_08,Prerana,BG 2.17,T1,0,0,,2026-08-23T12:51:29
-kn_kannada_07_0001,kannada_07,Prerana,BG 2.15,T4,0,0,,2026-08-23T12:54:51
 kn_kannada_09_0000,kannada_09,Prerana,BG 2.19,T1,0,0,,2026-08-23T13:27:42
 kn_kannada_09_0001,kannada_09,Prerana,BG 2.19,T2,0,0,,2026-08-23T13:29:18
 kn_kannada_09_0002,kannada_09,Prerana,BG 2.19,T4,0,0,,2026-08-23T13:33:06
-kn_kannada_09_0003,kannada_09,Prerana,BG 2.19,T1,0,0,,2026-08-23T13:34:42
-kn_kannada_09_0003,kannada_09,Prerana,BG 2.20,T1,0,0,,2026-08-23T13:34:42
+kn_kannada_09_0003,kannada_09,Prerana,BG 2.19,T1,1,0,,2026-08-23T13:34:42
+kn_kannada_09_0003,kannada_09,Prerana,BG 2.20,T1,1,0,,2026-08-23T13:34:42
 kn_kannada_09_0004,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:36:52
 kn_kannada_09_0005,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:38:38
 kn_kannada_09_0006,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:39:52
 kn_kannada_09_0007,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:40:29
 kn_kannada_09_0008,kannada_09,Prerana,BG 2.20,T1,0,0,,2026-08-23T13:42:41
 kn_kannada_09_0008,kannada_09,Prerana,BG 2.21,T1,0,0,,2026-08-23T13:42:41
-kn_kannada_09_0009,kannada_09,Prerana,BG 2.20,T1,0,0,,2026-08-23T13:46:45
 kn_kannada_09_0009,kannada_09,Prerana,BG 2.21,T1,0,0,,2026-08-23T13:46:45
 kn_kannada_09_0010,kannada_09,Prerana,BG 2.21,T1,0,0,,2026-08-23T13:47:20
 kn_kannada_09_0010,kannada_09,Prerana,BG 2.22,T1,0,0,,2026-08-23T13:47:20
-kn_kannada_09_0011,kannada_09,Prerana,BG 2.22,T1,0,0,,2026-08-23T13:48:06
+kn_kannada_09_0011,kannada_09,Prerana,BG 2.22,T1,1,0,,2026-08-23T13:48:06
 kn_kannada_09_0012,kannada_09,Prerana,BG 2.22,T2,0,0,,2026-08-23T13:48:41
 kn_kannada_09_0013,kannada_09,Prerana,BG 2.22,T1,0,0,,2026-08-23T13:49:23
 kn_kannada_09_0014,kannada_09,Prerana,NONE,NONE,0,0,,2026-08-23T13:49:50
-kn_kannada_10_0000,kannada_10,Prerana,BG 2.23,T1,0,0,,2026-08-23T13:51:39
+kn_kannada_10_0000,kannada_10,Prerana,BG 2.23,T1,1,0,,2026-08-23T13:51:39
 kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T13:55:35
-kn_kannada_10_0002,kannada_10,Prerana,BG 2.23,T1,0,0,,2026-08-23T13:56:51
-kn_kannada_10_0002,kannada_10,Prerana,BG 2.24,T1,0,0,,2026-08-23T13:56:51
+kn_kannada_10_0002,kannada_10,Prerana,BG 2.23,T1,1,0,,2026-08-23T13:56:51
+kn_kannada_10_0002,kannada_10,Prerana,BG 2.24,T1,1,0,,2026-08-23T13:56:51
 kn_kannada_10_0003,kannada_10,Prerana,BG 2.24,T2,0,0,,2026-08-23T13:58:08
 kn_kannada_10_0004,kannada_10,Prerana,BG 2.24,T2,0,0,,2026-08-23T13:59:24
 kn_kannada_10_0005,kannada_10,Prerana,BG 2.24,T2,0,0,,2026-08-23T14:00:05
-kn_kannada_10_0006,kannada_10,Prerana,BG 2.24,T1,0,0,,2026-08-23T14:01:31
-kn_kannada_10_0007,kannada_10,Prerana,BG 2.24,T1,0,0,,2026-08-23T14:01:57
-kn_kannada_10_0007,kannada_10,Prerana,BG 2.25,T1,0,0,,2026-08-23T14:01:57
+kn_kannada_10_0006,kannada_10,Prerana,BG 2.24,T1,0,1,,2026-08-23T14:01:31
+kn_kannada_10_0007,kannada_10,Prerana,BG 2.24,T1,1,0,,2026-08-23T14:01:57
+kn_kannada_10_0007,kannada_10,Prerana,BG 2.25,T1,1,0,,2026-08-23T14:01:57
 kn_kannada_10_0008,kannada_10,Prerana,BG 2.25,T2,0,0,,2026-08-23T14:02:33
 kn_kannada_10_0009,kannada_10,Prerana,BG 2.25,T1,0,0,,2026-08-23T14:03:23
-kn_kannada_10_0010,kannada_10,Prerana,BG 2.25,T2,0,0,,2026-08-23T14:04:05
-kn_kannada_11_0000,kannada_11,Prerana,BG 2.26,T1,0,0,,2026-08-23T14:44:39
-kn_kannada_11_0001,kannada_11,Prerana,BG 2.26,T1,0,0,,2026-08-23T14:46:48
+kn_kannada_10_0010,kannada_10,Prerana,BG 2.25,T2,1,0,,2026-08-23T14:04:05
+kn_kannada_11_0000,kannada_11,Prerana,BG 2.19,T4,1,1,,2026-08-23T14:44:39
+kn_kannada_11_0001,kannada_11,Prerana,BG 2.26,T1,1,0,,2026-08-23T14:46:48
 kn_kannada_11_0002,kannada_11,Prerana,BG 2.26,T2,0,0,,2026-08-23T14:47:21
 kn_kannada_11_0003,kannada_11,Prerana,BG 2.26,T2,0,0,,2026-08-23T14:48:22
 kn_kannada_11_0004,kannada_11,Prerana,BG 2.26,T1,0,0,,2026-08-23T14:49:36
@@ -135,36 +136,33 @@ kn_kannada_11_0004,kannada_11,Prerana,BG 2.27,T1,0,0,,2026-08-23T14:49:36
 kn_kannada_11_0005,kannada_11,Prerana,BG 2.27,T2,0,0,,2026-08-23T14:50:07
 kn_kannada_11_0006,kannada_11,Prerana,BG 2.27,T2,0,0,,2026-08-23T14:50:40
 kn_kannada_11_0007,kannada_11,Prerana,BG 2.27,T4,0,0,,2026-08-23T14:53:08
-kn_kannada_11_0008,kannada_11,Prerana,BG 2.27,T1,0,0,,2026-08-23T14:54:56
-kn_kannada_11_0008,kannada_11,Prerana,BG 2.28,T1,0,0,,2026-08-23T14:54:56
+kn_kannada_11_0008,kannada_11,Prerana,BG 2.27,T1,1,0,,2026-08-23T14:54:56
+kn_kannada_11_0008,kannada_11,Prerana,BG 2.28,T1,1,0,,2026-08-23T14:54:56
 kn_kannada_11_0009,kannada_11,Prerana,BG 2.28,T2,0,0,,2026-08-23T15:09:55
 kn_kannada_11_0010,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:10:33
 kn_kannada_11_0011,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:10:58
 kn_kannada_11_0012,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:11:23
-kn_kannada_11_0013,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:11:48
+kn_kannada_11_0013,kannada_11,Prerana,BG 2.28,T4,0,1,,2026-08-23T15:11:48
 kn_kannada_11_0014,kannada_11,Prerana,BG 2.28,T1,0,0,,2026-08-23T15:12:10
 kn_kannada_11_0015,kannada_11,Prerana,NONE,NONE,0,0,,2026-08-23T15:12:24
-kn_kannada_12_0000,kannada_12,Prerana,BG 2.29,T1,0,0,,2026-08-23T15:15:27
+kn_kannada_12_0000,kannada_12,Prerana,BG 2.29,T1,1,0,,2026-08-23T15:15:27
 kn_kannada_12_0001,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:16:03
 kn_kannada_12_0002,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:16:40
 kn_kannada_12_0003,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:17:10
 kn_kannada_12_0004,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:18:39
 kn_kannada_12_0005,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:19:33
 kn_kannada_12_0006,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:21:01
-kn_kannada_12_0007,kannada_12,Prerana,BG 2.29,T1,0,0,,2026-08-23T15:21:27
-kn_kannada_12_0007,kannada_12,Prerana,BG 2.30,T1,0,0,,2026-08-23T15:21:27
+kn_kannada_12_0007,kannada_12,Prerana,BG 2.29,T1,1,0,,2026-08-23T15:21:27
+kn_kannada_12_0007,kannada_12,Prerana,BG 2.30,T1,1,0,,2026-08-23T15:21:27
 kn_kannada_12_0008,kannada_12,Prerana,BG 2.30,T2,0,0,,2026-08-23T15:21:52
-kn_kannada_12_0009,kannada_12,Prerana,BG 2.30,T1,0,0,,2026-08-23T15:22:28
-kn_kannada_12_0010,kannada_12,Prerana,BG 2.30,T1,0,0,,2026-08-23T15:24:10
-kn_kannada_12_0010,kannada_12,Prerana,BG 2.31,T1,0,0,,2026-08-23T15:24:10
+kn_kannada_12_0009,kannada_12,Prerana,BG 2.30,T2,0,0,,2026-08-23T15:22:28
+kn_kannada_12_0010,kannada_12,Prerana,BG 2.30,T1,1,0,,2026-08-23T15:24:10
+kn_kannada_12_0010,kannada_12,Prerana,BG 2.31,T1,1,0,,2026-08-23T15:24:10
 kn_kannada_12_0011,kannada_12,Prerana,BG 2.31,T2,0,0,,2026-08-23T15:25:54
 kn_kannada_12_0012,kannada_12,Prerana,BG 2.31,T2,0,0,,2026-08-23T15:26:13
-kn_kannada_12_0013,kannada_12,Prerana,BG 2.31,T2,0,0,,2026-08-23T15:26:45
+kn_kannada_12_0013,kannada_12,Prerana,BG 2.31,T2,0,1,,2026-08-23T15:26:45
 kn_kannada_12_0014,kannada_12,Prerana,BG 2.31,T1,0,0,,2026-08-23T15:27:11
 kn_kannada_12_0015,kannada_12,Prerana,NONE,NONE,0,0,,2026-08-23T15:27:18
-kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T16:28:10
-kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T16:30:02
-kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T16:36:29
 kn_kannada_14_0000,kannada_14,Meghana S,BG 2.34,T2,0,0,,2026-08-23T19:46:24
 kn_kannada_14_0001,kannada_14,Meghana S,BG 2.35,T1,0,0,,2026-08-23T19:47:13
 kn_kannada_14_0002,kannada_14,Meghana S,BG 2.35,T2,0,0,,2026-08-23T19:48:10
@@ -253,7 +251,6 @@ kn_kannada_18_0009,kannada_18,Meghana S,BG 2.45,T1,0,0,,2026-08-24T23:18:43
 kn_kannada_18_0010,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T23:19:32
 kn_kannada_18_0011,kannada_18,Meghana S,BG 2.45,T2,0,0,OOS: Kena Upanishad 2.5,2026-08-24T23:23:35
 kn_kannada_18_0012,kannada_18,Meghana S,BG 2.45,T5,0,0,,2026-08-24T23:24:13
-kn_kannada_07_0001,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:15:07
 kn_gita-1st_video_0000,gita-1st_video,Maitreyi,NONE,NONE,0,0,OOS:Gita-Ch1 BG 1.35,2026-08-21T23:52:02
 kn_gita-1st_video_0000,gita-1st_video,Maitreyi,NONE,NONE,0,0,,2026-08-21T23:52:09
 kn_gita-1st_video_0001,gita-1st_video,Maitreyi,BG 2.1,T1,0,0,,2026-08-21T23:53:04
