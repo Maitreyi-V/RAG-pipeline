@@ -89,6 +89,7 @@ def main():
                          "-- scores localisation, the real grounding task")
     ap.add_argument("--annotator", help="use only this annotator's labels")
     ap.add_argument("--language", choices=["kn", "en"], help="restrict to one language")
+    ap.add_argument("--videos", help="comma-separated video_file list (dev/test split)")
     ap.add_argument("--total-videos", type=int, default=30,
                     help="corpus size to project towards (default 30)")
     args = ap.parse_args()
@@ -105,6 +106,9 @@ def main():
     units_per_video = Counter(u["video_file"] for u in units)
     if args.language:
         rows = [r for r in rows if lang_of.get(r["unit_id"]) == args.language]
+    if args.videos:
+        keep = {v.strip() for v in args.videos.split(",") if v.strip()}
+        rows = [r for r in rows if r["video_file"] in keep]
 
     if not rows:
         sys.exit("No annotation rows after filtering.")

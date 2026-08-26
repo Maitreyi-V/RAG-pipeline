@@ -1,0 +1,43 @@
+unit_id,video_file,annotator,verse_ref,mention_type,has_explicit_ref,uncertain,notes,created_at
+kn_gita-5th_video_0000,gita-5th_video,Expert (father),BG 2.11,T2,1,1,"pratika-only: asocya (2.11), prahasan (2.10); one-word-fragment case, adjudicate with kannada_07 0005",2026-08-26T14:25:26
+kn_gita-5th_video_0001,gita-5th_video,Expert (father),BG 2.12,T1,1,0,"""12ne shloka"" + full recitation na tv evaham jatu nasam + PADAVIBHAGA:",2026-08-26T14:25:26
+kn_gita-5th_video_0002,gita-5th_video,Expert (father),BG 2.12,T2,0,0,"aham nasam iti na tv eva, tvam nasih",2026-08-26T14:25:26
+kn_gita-5th_video_0003,gita-5th_video,Expert (father),BG 2.12,T2,0,0,"ime janadhipah, nasan iti na + three-persons analysis",2026-08-26T14:25:26
+kn_gita-5th_video_0004,gita-5th_video,Expert (father),BG 2.12,T2,0,0,atah param sarve vayam na bhavishyamah iti na,2026-08-26T14:25:26
+kn_gita-5th_video_0005,gita-5th_video,Expert (father),BG 2.12,T4,0,0,application: deceased atman persists; ajara amara is vocabulary not verse text,2026-08-26T14:25:26
+kn_gita-5th_video_0006,gita-5th_video,Expert (father),BG 2.12,T1,1,0,"full re-recitation of 2.12, then ""13ne shloka"" + full 2.13 dehinosmin yatha dehe + PADAVIBHAGA:",2026-08-26T14:25:26
+kn_gita-5th_video_0006,gita-5th_video,Expert (father),BG 2.13,T1,1,0,"full re-recitation of 2.12, then ""13ne shloka"" + full 2.13 dehinosmin yatha dehe + PADAVIBHAGA:",2026-08-26T14:25:26
+kn_gita-5th_video_0007,gita-5th_video,Expert (father),BG 2.13,T2,0,0,"dehinah, dehe, kaumaram yauvanam jara + grhi/dehi analogy",2026-08-26T14:25:26
+kn_gita-5th_video_0008,gita-5th_video,Expert (father),BG 2.13,T2,0,0,yatha... tatha dehantara praptih,2026-08-26T14:25:26
+kn_gita-5th_video_0009,gita-5th_video,Expert (father),BG 2.13,T2,0,0,dhirah... tatra na muhyati + etymology dhiya ramate iti dhirah,2026-08-26T14:25:26
+kn_gita-5th_video_0010,gita-5th_video,Expert (father),BG 2.13,T1,0,0,"asocyan anusocas tvam (2.11 fragment) mid-unit, then full re-recitation of 2.13",2026-08-26T14:25:26
+kn_gita-5th_video_0011,gita-5th_video,Expert (father),BG 2.13,T2,0,0,"OOS: non-Gita Carvaka/Lokayata maxim bhasmibhutasya dehasya punaragamanam kutah, quoted to be refuted",2026-08-26T14:25:26
+kn_gita-5th_video_0012,gita-5th_video,Expert (father),BG 2.13,T2,0,1,pratika-only (dehi as lemma); same adjudication bucket as unit 0000,2026-08-26T14:25:26
+kn_gita-5th_video_0013,gita-5th_video,Expert (father),BG 2.13,T4,0,0,karma-across-lives application; dehantara as flowing vocabulary not quotation,2026-08-26T14:25:26
+kn_gita-5th_video_0014,gita-5th_video,Expert (father),BG 2.13,T2,0,0,ends quoting dhirah tatra na muhyati,2026-08-26T14:25:26
+kn_gita-5th_video_0015,gita-5th_video,Expert (father),BG 2.12,T4,0,0,"reflection on both verses teaching, no quotes",2026-08-26T14:25:26
+kn_gita-5th_video_0015,gita-5th_video,Expert (father),BG 2.13,T4,0,0,"reflection on both verses teaching, no quotes",2026-08-26T14:25:26
+kn_gita-5th_video_0016,gita-5th_video,Expert (father),BG 2.13,T4,0,0,"transitional: Arjunas remaining objection (viyoga); still inside 2.12-13 block, transition toward 2.14",2026-08-26T14:25:26
+kn_gita-5th_video_0017,gita-5th_video,Expert (father),BG 2.14,T4,1,0,"Drona/Bhishma lament: the question 2.14 answers; speaker names ""14ne shloka"". Forward-reference",2026-08-26T14:25:26
+kn_gita-5th_video_0018,gita-5th_video,Expert (father),NONE,NONE,0,0,8 words of dedication,2026-08-26T14:25:26
+kn_gita-6th_video_0000,gita-6th_video,Expert (father),BG 2.14,T1,1,0,"""14ne shloka"" + full recitation + PADAVIBHAGA:. Commentary Sanskrit: Raghavendra Gitartha-sangraha avatarika. ASR renders anityah as nityaha - garble, does not downgrade T1",2026-08-26T14:27:12
+kn_gita-6th_video_0001,gita-6th_video,Expert (father),BG 2.14,T2,0,0,avatarika Sanskrit continues (tad-deha-darsana-sparsana-sambhasanadeh) - all commentary; verse anchor is matra-sparsah at end,2026-08-26T14:27:12
+kn_gita-6th_video_0002,gita-6th_video,Expert (father),BG 2.14,T2,0,0,matra-sparsa + etymology miyante iti matrah (commentary),2026-08-26T14:27:12
+kn_gita-6th_video_0003,gita-6th_video,Expert (father),BG 2.14,T2,0,0,"matra-sparsah, kaunteya, sita-usna-sukha-duhkha-dah",2026-08-26T14:27:12
+kn_gita-6th_video_0004,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"senses/experience explanation, pure Kannada",2026-08-26T14:27:12
+kn_gita-6th_video_0005,gita-6th_video,Expert (father),BG 2.14,T2,0,0,matra-sparsas tu quoted; the tu = eva kaku point (Madhva bhasya),2026-08-26T14:27:12
+kn_gita-6th_video_0006,gita-6th_video,Expert (father),BG 2.14,T4,0,0,kaku discussion + apple example begins - no verse Sanskrit,2026-08-26T14:27:12
+kn_gita-6th_video_0007,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"apple example, own words",2026-08-26T14:27:12
+kn_gita-6th_video_0008,gita-6th_video,Expert (father),BG 2.14,T4,0,0,visayabhimana as vocabulary; own words,2026-08-26T14:27:12
+kn_gita-6th_video_0009,gita-6th_video,Expert (father),BG 2.14,T4,0,0,fallen-child example,2026-08-26T14:27:12
+kn_gita-6th_video_0010,gita-6th_video,Expert (father),BG 2.14,T4,0,0,rented-house/nail example,2026-08-26T14:27:12
+kn_gita-6th_video_0011,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"application to Arjunas grief, own words",2026-08-26T14:27:12
+kn_gita-6th_video_0012,gita-6th_video,Expert (father),BG 2.14,T4,0,0,own words + commentary phrase bhagavad-dvit-tad-anubandhinah (same Madhva term as gita-4th 0010),2026-08-26T14:27:12
+kn_gita-6th_video_0013,gita-6th_video,Expert (father),BG 2.14,T2,0,0,agamapayinah quoted and glossed,2026-08-26T14:27:12
+kn_gita-6th_video_0014,gita-6th_video,Expert (father),BG 2.14,T2,0,0,"agama apayinah, anitya + Ganga analogy",2026-08-26T14:27:12
+kn_gita-6th_video_0015,gita-6th_video,Expert (father),BG 2.14,T2,0,0,anityah explicitly attributed to the verse (anityaha anno padadinda),2026-08-26T14:27:12
+kn_gita-6th_video_0016,gita-6th_video,Expert (father),BG 2.14,T2,0,0,tan titiksasva + Madhva viphalikuru gloss (commentary note),2026-08-26T14:27:12
+kn_gita-6th_video_0017,gita-6th_video,Expert (father),BG 2.14,T2,0,0,titiksasva vs other commentators sahasva,2026-08-26T14:27:12
+kn_gita-6th_video_0018,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"doctor/fever analogy, own words",2026-08-26T14:27:12
+kn_gita-6th_video_0019,gita-6th_video,Expert (father),BG 2.14,T1,0,0,"""mattomme shloka"" full re-recitation, then the phala preview",2026-08-26T14:27:12
+kn_gita-6th_video_0020,gita-6th_video,Expert (father),NONE,NONE,0,0,dedication,2026-08-26T14:27:12
