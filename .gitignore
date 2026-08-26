@@ -223,3 +223,5 @@ backend/data/chunks/
 
 # Vector database (Chroma)
 backend/data/chroma_db/
+RAG-pipeline-llama/data/mention_spans.csv.*.bak
+RAG-pipeline-llama/data/mention_spans.csv.*.bak

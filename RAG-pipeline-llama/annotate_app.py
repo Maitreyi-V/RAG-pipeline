@@ -11,7 +11,9 @@ Annotation guideline: docs/annotation_guideline_mention_types.md
 """
 import csv
 import datetime
+import glob
 import os
+import re
 
 import pandas as pd
 import streamlit as st
@@ -21,10 +23,22 @@ from verse_translations import VERSE_TRANSLATIONS
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 UNITS = os.path.join(BASE, "data", "units_v1.csv")
-OUT = os.path.join(BASE, "data", "mention_spans.csv")
+
+# One file per annotator: nobody ever edits anyone else's, so git cannot
+# conflict on them. Merge into data/mention_spans.csv for analysis with
+# scripts/merge_annotations.py data/annotations/*.csv
+OUT_DIR = os.path.join(BASE, "data", "annotations")
 
 COLS = ["unit_id", "video_file", "annotator", "verse_ref", "mention_type",
         "has_explicit_ref", "uncertain", "notes", "created_at"]
+
+
+def slug(name):
+    return re.sub(r"[^a-z0-9]+", "_", name.strip().lower()).strip("_") or "unnamed"
+
+
+def out_path(name):
+    return os.path.join(OUT_DIR, slug(name) + ".csv")
 
 TYPES = {
     "T1": "Verbatim Sanskrit recitation",
@@ -68,14 +82,24 @@ def verse_options():
 
 
 def load_done():
-    if not os.path.exists(OUT):
+    """Everyone's annotations: every per-annotator file, plus the legacy merged one."""
+    frames = []
+    for p in sorted(glob.glob(os.path.join(OUT_DIR, "*.csv"))):
+        frames.append(pd.read_csv(p, keep_default_na=False))
+    legacy = os.path.join(BASE, "data", "mention_spans.csv")
+    if os.path.exists(legacy):
+        frames.append(pd.read_csv(legacy, keep_default_na=False))
+    if not frames:
         return pd.DataFrame(columns=COLS)
-    return pd.read_csv(OUT, keep_default_na=False)
+    df = pd.concat(frames, ignore_index=True)
+    return df.drop_duplicates(subset=COLS)
 
 
-def append(rows):
-    is_new = not os.path.exists(OUT)
-    with open(OUT, "a", newline="", encoding="utf-8") as f:
+def append(rows, name):
+    os.makedirs(OUT_DIR, exist_ok=True)
+    path = out_path(name)
+    is_new = not os.path.exists(path)
+    with open(path, "a", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLS)
         if is_new:
             w.writeheader()
@@ -107,6 +131,7 @@ n_done = int(sub.unit_id.isin(reviewed).sum())
 st.sidebar.progress(n_done / len(sub))
 st.sidebar.caption(f"{n_done}/{len(sub)} units in this video")
 st.sidebar.caption(f"{len(reviewed)}/{len(units)} units overall")
+st.sidebar.caption(f"saving to `data/annotations/{slug(who)}.csv`")
 st.sidebar.divider()
 st.sidebar.caption("**Mention types**")
 for t, d in TYPES.items():
@@ -220,14 +245,14 @@ if b1.button("💾 Save label(s) →", type="primary", use_container_width=True)
         append([{"unit_id": row.unit_id, "video_file": vid, "annotator": who,
                  "verse_ref": r, "mention_type": mtype,
                  "has_explicit_ref": int(explicit), "uncertain": int(uncertain),
-                 "notes": notes, "created_at": now()} for r in picked])
+                 "notes": notes, "created_at": now()} for r in picked], who)
         advance()
 
 if b2.button("∅ No verse here →", use_container_width=True):
     append([{"unit_id": row.unit_id, "video_file": vid, "annotator": who,
              "verse_ref": "NONE", "mention_type": "NONE",
              "has_explicit_ref": 0, "uncertain": 0,
-             "notes": notes, "created_at": now()}])
+             "notes": notes, "created_at": now()}], who)
     advance()
 
 # ── navigation (moves without labelling) ──────────────────
