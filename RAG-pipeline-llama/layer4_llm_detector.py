@@ -155,12 +155,11 @@ Verse(s):"""
 def detect_verse_llm(segment_text: str, provider: str, model: str) -> List[int]:
     """Ask the LLM which verse a segment discusses. Returns list of verse numbers."""
     prompt = DETECTION_PROMPT.format(segment_text=segment_text)
-    try:
-        response = call_lm(prompt, provider, model)
-    except Exception as e:
-        print(f"  [LLM error: {e}]")
-        return []
-
+    # Deliberately NOT caught. Swallowing API errors here turns a wrong model
+    # name, an expired key or a rate limit into "no verse detected", which then
+    # scores as a perfectly plausible F1 of 0.000. A failed call must be visible
+    # to the caller so the run can be aborted rather than silently reported.
+    response = call_lm(prompt, provider, model)
     return parse_verse_response(response)
 
 

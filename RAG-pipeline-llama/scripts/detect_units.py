@@ -116,24 +116,48 @@ def main():
     out = args.out or os.path.join(HERE, "results", f"units_layer{args.layer}.csv")
     os.makedirs(os.path.dirname(out), exist_ok=True)
 
-    n_hit = 0
-    with open(out, "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["unit_id", "video_file", "detected_verses"])
-        for i, u in enumerate(units, 1):
-            try:
-                refs = sorted(set(predict(u["text"])))
-            except Exception as e:
-                print(f"  !! {u['unit_id']}: {type(e).__name__}: {e}")
-                refs = []
-            if refs:
-                n_hit += 1
-            w.writerow([u["unit_id"], u["video_file"], ";".join(refs)])
-            if i % 50 == 0:
-                print(f"  ... {i}/{len(units)}")
+    # Rows are buffered and written only on success: a systematic failure (bad
+    # model name, auth, quota) must not leave behind a file of empty predictions
+    # that scores as a perfectly plausible F1 of 0.000.
+    n_hit = n_err = 0
+    first_err = None
+    rows = []
+    for i, u in enumerate(units, 1):
+        try:
+            refs = sorted(set(predict(u["text"])))
+        except Exception as e:
+            n_err += 1
+            if first_err is None:
+                first_err = f"{type(e).__name__}: {e}"
+                print(f"  !! {u['unit_id']}: {first_err}")
+            if n_err >= 5 and n_err == i:
+                sys.exit(f"\nABORTED: first {n_err} units all failed.\n"
+                         f"  {first_err}\n  No output written.")
+            refs = []
+        if refs:
+            n_hit += 1
+        rows.append([u["unit_id"], u["video_file"], ";".join(refs)])
+        if i % 50 == 0:
+            print(f"  ... {i}/{len(units)}")
 
     print(f"\n  layer {args.layer} over {len(units)} units")
     print(f"  units with a detection: {n_hit} ({n_hit/len(units):.1%})")
+    if n_err:
+        print(f"  !! errors: {n_err} ({n_err/len(units):.1%}) — first was {first_err}")
+
+    # Intermittent failures (rate limits) never trip the consecutive-error abort
+    # above, but a partially-failed run is still unscoreable: the missing units
+    # are indistinguishable from genuine negatives. Refuse to write it.
+    if n_err and n_err / len(units) > 0.02:
+        sys.exit(f"\nABORTED: {n_err}/{len(units)} units failed "
+                 f"({n_err/len(units):.1%}). Results would be unscoreable — "
+                 f"failed units look identical to true negatives.\n"
+                 f"  No output written. Fix the cause and re-run.")
+
+    with open(out, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["unit_id", "video_file", "detected_verses"])
+        w.writerows(rows)
     print(f"  wrote -> {os.path.relpath(out, HERE)}")
 
 
