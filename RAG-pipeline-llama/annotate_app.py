@@ -4,7 +4,7 @@ annotate_app.py — span + mention-type annotation UI for the verse-grounding co
 Run:
     ../.venv/bin/python -m streamlit run annotate_app.py --server.fileWatcherType none
 
-Reads  : data/units_v1.csv   (frozen unit grid — never regenerate)
+Reads  : data/units_v2.csv   (frozen unit grid — never regenerate)
 Writes : data/mention_spans.csv  (append-only; safe for concurrent annotators)
 
 Annotation guideline: docs/annotation_guideline_mention_types.md
@@ -22,7 +22,7 @@ from verse_database import VERSES_BG_CH2
 from verse_translations import VERSE_TRANSLATIONS
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-UNITS = os.path.join(BASE, "data", "units_v1.csv")
+UNITS = os.path.join(BASE, "data", "units_v2.csv")
 
 # One file per annotator: nobody ever edits anyone else's, so git cannot
 # conflict on them. Merge into data/mention_spans.csv for analysis with

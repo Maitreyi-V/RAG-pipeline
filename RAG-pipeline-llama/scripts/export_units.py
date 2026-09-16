@@ -17,7 +17,7 @@ import os
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DEFAULT_UNITS = os.path.join(HERE, "data", "units_v1.csv")
+DEFAULT_UNITS = os.path.join(HERE, "data", "units_v2.csv")
 DEFAULT_OUT = os.path.join(HERE, "data", "exports")
 
 LEGEND = ("Tag each unit: **T1** full Sanskrit recitation · **T2** partial Sanskrit · "

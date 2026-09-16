@@ -225,3 +225,6 @@ backend/data/chunks/
 backend/data/chroma_db/
 RAG-pipeline-llama/data/mention_spans.csv.*.bak
 RAG-pipeline-llama/data/mention_spans.csv.*.bak
+
+# Local-only working context (personal notes; not for the public repo)
+RAG-pipeline-llama/docs/PROJECT_CONTEXT.md

@@ -18,8 +18,9 @@ MAX_SENTENCE_WORDS = 2 * TARGET_WORDS
 
 BASE        = os.path.dirname(os.path.abspath(__file__))
 TRANSCRIPTS = os.path.join(BASE, "data", "transcripts")
+SARVAM      = os.path.join(BASE, "data", "transcripts_sarvam")
 NORMALIZED  = os.path.join(BASE, "data", "normalized")
-OUT_CSV     = os.path.join(BASE, "data", "units_v1.csv")
+OUT_CSV     = os.path.join(BASE, "data", "units_v2.csv")
 
 FIELDS = ["unit_id", "video_file", "language", "tradition", "unit_index",
           "text", "char_start", "char_end", "time_start", "time_end", "n_words"]
@@ -65,7 +66,7 @@ def _hard_split(full, cs, ce, max_words):
             for c in (toks[i:i + max_words] for i in range(0, len(toks), max_words)) if c]
 
 
-def kannada_units(path):
+def text_units(path):
     full = open(path, encoding="utf-8").read().strip()
     sents = []
     for m in re.finditer(r"[^.?]+[.?]?", full):
@@ -96,17 +97,21 @@ def kannada_units(path):
 def main():
     os.makedirs(NORMALIZED, exist_ok=True)
     rows = []
+    sources = []
+    # Kannada: unchanged, so unit_ids stay stable and existing annotations hold
     for fn in sorted(os.listdir(TRANSCRIPTS)):
-        path = os.path.join(TRANSCRIPTS, fn)
-        if fn.endswith(".json"):
-            lang, tradition = "en", "Advaita"
-            full, units = english_units(path)
-        elif fn.endswith(".txt"):
-            lang, tradition = "kn", "Dvaita"
-            full, units = kannada_units(path)
-        else:
-            continue                                   # skips .DS_Store
-        vk = norm_video(fn)
+        if fn.endswith(".txt"):
+            sources.append((os.path.join(TRANSCRIPTS, fn), norm_video(fn), "kn", "Dvaita"))
+    # English: Sarvam transcripts. The Whisper .json files are NOT used --
+    # Whisper dropped Sanskrit recitation entirely in 5 of 10 lectures.
+    if os.path.isdir(SARVAM):
+        for fn in sorted(os.listdir(SARVAM)):
+            if fn.endswith(".txt") and fn.startswith("video_"):
+                vk = norm_video(fn).replace("_sarvam", "")
+                sources.append((os.path.join(SARVAM, fn), vk, "en", "Advaita"))
+
+    for path, vk, lang, tradition in sources:
+        full, units = text_units(path)
         with open(os.path.join(NORMALIZED, vk + ".txt"), "w", encoding="utf-8") as f:
             f.write(full)
         for i, u in enumerate(units):

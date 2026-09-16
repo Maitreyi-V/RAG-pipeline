@@ -37,7 +37,7 @@ FIDELITY = {"T1": 0, "T2": 1, "T3": 2, "T4": 3, "T5": 4, "NONE": 5}
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_SPANS = os.path.join(HERE, "data", "mention_spans.csv")
-DEFAULT_UNITS = os.path.join(HERE, "data", "units_v1.csv")
+DEFAULT_UNITS = os.path.join(HERE, "data", "units_v2.csv")
 
 
 def norm_video(name):

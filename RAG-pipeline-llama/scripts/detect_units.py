@@ -23,7 +23,7 @@ import sys
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, HERE)
 
-UNITS = os.path.join(HERE, "data", "units_v1.csv")
+UNITS = os.path.join(HERE, "data", "units_v2.csv")
 
 
 def refs_from(result):
