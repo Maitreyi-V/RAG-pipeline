@@ -1,57 +1,4 @@
 unit_id,video_file,annotator,verse_ref,mention_type,has_explicit_ref,uncertain,notes,created_at
-en_video_01_0000,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:13:00
-en_video_01_0001,video_01,Maitreyi,NONE,NONE,0,0,OOS: BG 1.21-22,2026-08-20T17:17:25
-en_video_01_0002,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:23:27
-en_video_01_0003,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:23:29
-en_video_01_0004,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:24:29
-en_video_01_0005,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:40:39
-en_video_01_0006,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:42:16
-en_video_01_0007,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:42:46
-en_video_01_0008,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:07
-en_video_01_0009,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:26
-en_video_01_0010,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:32
-en_video_01_0011,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:38
-en_video_01_0012,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:43
-en_video_01_0013,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:49
-en_video_01_0014,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:43:55
-en_video_01_0015,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:44:27
-en_video_01_0016,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:44:36
-en_video_01_0017,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:45:21
-en_video_01_0018,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:46:01
-en_video_01_0019,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:49:09
-en_video_01_0020,video_01,Maitreyi,BG 2.7,T5,0,0,,2026-08-20T17:51:46
-en_video_01_0021,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:52:16
-en_video_01_0022,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:52:31
-en_video_01_0023,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:54:26
-en_video_01_0024,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:54:41
-en_video_01_0025,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:54:48
-en_video_01_0026,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:55:07
-en_video_01_0027,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata (Udyoga Parva),2026-08-20T17:55:29
-en_video_01_0028,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:56:49
-en_video_01_0029,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:56:56
-en_video_01_0030,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:04
-en_video_01_0031,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:13
-en_video_01_0032,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:23
-en_video_01_0033,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T17:57:33
-en_video_01_0034,video_01,Maitreyi,BG 2.1,T1,0,0,"ASR_DROP: recitation announced, absent from transcript",2026-08-20T18:13:22
-en_video_01_0035,video_01,Maitreyi,NONE,NONE,0,0,OOS: BG 1.1 (Dhritarashtra asks Sanjaya),2026-08-20T18:14:57
-en_video_01_0036,video_01,Maitreyi,BG 2.1,T3,0,0,,2026-08-20T18:16:08
-en_video_01_0037,video_01,Maitreyi,BG 2.1,T4,0,0,,2026-08-20T18:16:38
-en_video_01_0038,video_01,Maitreyi,BG 2.1,T4,0,0,,2026-08-20T18:17:45
-en_video_01_0039,video_01,Maitreyi,BG 2.1,T5,0,1,,2026-08-20T18:19:19
-en_video_01_0040,video_01,Maitreyi,BG 2.1,T4,0,1,,2026-08-20T18:20:00
-en_video_01_0041,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T18:20:48
-en_video_01_0042,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T18:21:05
-en_video_01_0043,video_01,Maitreyi,NONE,NONE,0,0,,2026-08-20T18:21:11
-en_video_01_0044,video_01,Maitreyi,BG 2.2,T1,0,0,,2026-08-20T18:23:29
-en_video_01_0045,video_01,Maitreyi,BG 2.2,T3,0,0,,2026-08-20T18:24:24
-en_video_01_0046,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-08-20T18:24:51
-en_video_01_0047,video_01,Maitreyi,BG 2.2,T2,0,0,,2026-08-20T18:25:09
-en_video_01_0048,video_01,Maitreyi,BG 2.2,T2,0,0,"OOS: Shankara, Brahma Sutra Bhashya",2026-08-20T18:25:58
-en_video_01_0049,video_01,Maitreyi,BG 2.2,T5,0,1,,2026-08-20T18:27:41
-en_video_01_0050,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-08-20T18:28:11
-en_video_01_0051,video_01,Maitreyi,BG 2.2,T2,0,0,,2026-08-20T18:28:30
-en_video_01_0052,video_01,Maitreyi,BG 2.2,T2,0,0,,2026-08-20T18:28:58
 kn_gita-1st_video_0000,gita-1st_video,Maitreyi,NONE,NONE,0,0,OOS:Gita-Ch1 BG 1.35,2026-08-21T23:52:02
 kn_gita-1st_video_0000,gita-1st_video,Maitreyi,NONE,NONE,0,0,,2026-08-21T23:52:09
 kn_gita-1st_video_0001,gita-1st_video,Maitreyi,BG 2.1,T1,0,0,,2026-08-21T23:53:04
@@ -121,3 +68,112 @@ kn_gita-4th_video_0011,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:12:
 kn_gita-4th_video_0012,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:12:35
 kn_gita-4th_video_0013,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:13:01
 kn_gita-4th_video_0014,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:13:06
+en_video_06_0000,video_06,Maitreyi,BG 2.16,T1,1,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:50:23
+en_video_06_0000,video_06,Maitreyi,BG 2.17,T1,1,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:50:23
+en_video_06_0000,video_06,Maitreyi,BG 2.18,T1,1,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:50:23
+en_video_06_0001,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0002,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0003,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0004,video_06,Maitreyi,BG 2.12,T3,1,0,,2026-09-20T23:50:23
+en_video_06_0005,video_06,Maitreyi,BG 2.12,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0005,video_06,Maitreyi,BG 2.13,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0006,video_06,Maitreyi,BG 2.13,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0007,video_06,Maitreyi,BG 2.16,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0008,video_06,Maitreyi,BG 2.16,T4,1,0,OOS: Atma Satyam Jagat Mithya (non-Gita dictum),2026-09-20T23:50:23
+en_video_06_0009,video_06,Maitreyi,BG 2.16,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0010,video_06,Maitreyi,BG 2.17,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0011,video_06,Maitreyi,BG 2.17,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0012,video_06,Maitreyi,BG 2.18,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0013,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0014,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0015,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0016,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0017,video_06,Maitreyi,BG 2.18,T4,0,1,"OOS: commentarial Sanskrit, not verse text",2026-09-20T23:50:23
+en_video_06_0018,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0019,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0020,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0020,video_06,Maitreyi,BG 2.16,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0020,video_06,Maitreyi,BG 2.17,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0021,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0022,video_06,Maitreyi,NONE,NONE,0,0,DHYANA: Vasudeva Sutam Devam fragment,2026-09-20T23:50:23
+en_video_06_0023,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0024,video_06,Maitreyi,BG 2.19,T1,1,0,,2026-09-20T23:50:23
+en_video_06_0025,video_06,Maitreyi,BG 2.19,T3,0,1,OOS: Emerson 'Brahma' (non-Gita English verse),2026-09-20T23:50:23
+en_video_06_0026,video_06,Maitreyi,BG 2.19,T4,1,1,,2026-09-20T23:50:23
+en_video_06_0027,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0028,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0029,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0030,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0031,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0032,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0033,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0034,video_06,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0035,video_06,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0036,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0037,video_06,Maitreyi,BG 2.19,T4,0,1,OOS: BG 18.61 (outside Chapter 2),2026-09-20T23:50:23
+en_video_06_0038,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0039,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0040,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0041,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0042,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0043,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0044,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0045,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0046,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0047,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0048,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0049,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0050,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0051,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0052,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0053,video_06,Maitreyi,NONE,NONE,0,0,"OOS: Vivekananda, Song of the Sannyasin",2026-09-20T23:50:23
+en_video_06_0054,video_06,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0055,video_06,Maitreyi,BG 2.19,T3,0,1,,2026-09-20T23:50:23
+en_video_06_0056,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0057,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0058,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0059,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0060,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0061,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0062,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0063,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0064,video_06,Maitreyi,NONE,NONE,0,0,OOS: Charvaka fire-oblation verse,2026-09-20T23:50:23
+en_video_06_0065,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0066,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0067,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0068,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0069,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0070,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0071,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0072,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0073,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0074,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0075,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0076,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0077,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0078,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0079,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0080,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0081,video_06,Maitreyi,BG 2.20,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0082,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0083,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0084,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0085,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0086,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0087,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0088,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0089,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0090,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0091,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0092,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0093,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0094,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0095,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0096,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0097,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0098,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0099,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0100,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0101,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0102,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0103,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
