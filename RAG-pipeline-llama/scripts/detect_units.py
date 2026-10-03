@@ -60,7 +60,12 @@ def main():
                     help="layer 1: min Sanskrit density for a window (default 0.12)")
     ap.add_argument("--match-threshold", type=int, default=55,
                     help="layer 1: min fuzzy score 0-100 (default 55)")
+    ap.add_argument("--script", choices=["native", "roman"], default="native",
+                    help="layer 1: 'native' matches Kannada-script verses; "
+                         "'roman' matches romanised Sanskrit (English transcripts)")
     ap.add_argument("--out")
+    ap.add_argument("--resume", action="store_true",
+                    help="continue from <out>.partial, skipping units already done")
     args = ap.parse_args()
 
     with open(args.units, newline="", encoding="utf-8") as f:
@@ -78,7 +83,14 @@ def main():
     if not units:
         sys.exit("No units matched.")
 
-    if args.layer == 1:
+    if args.layer == 1 and args.script == "roman":
+        from roman_detector import RomanShlokaDetector
+        det = RomanShlokaDetector(match_threshold=args.match_threshold)
+        print(f"  layer 1 (roman): match_threshold={args.match_threshold}")
+
+        def predict(text):
+            return refs_from(det.detect(text))
+    elif args.layer == 1:
         from shloka_detector import ShlokaDetector
         det = ShlokaDetector(sanskrit_threshold=args.sanskrit_threshold,
                              match_threshold=args.match_threshold)
@@ -116,48 +128,76 @@ def main():
     out = args.out or os.path.join(HERE, "results", f"units_layer{args.layer}.csv")
     os.makedirs(os.path.dirname(out), exist_ok=True)
 
-    # Rows are buffered and written only on success: a systematic failure (bad
-    # model name, auth, quota) must not leave behind a file of empty predictions
-    # that scores as a perfectly plausible F1 of 0.000.
-    n_hit = n_err = 0
+    # Checkpointing: each successful unit is appended to <out>.partial and
+    # flushed immediately, so a crash, a killed terminal or a dead ollama server
+    # costs at most one unit. The partial file is deliberately NOT the output
+    # path -- a half-finished run must never look like a scoreable result.
+    # It is deleted once the full run completes.
+    partial = out + ".partial"
+    done = {}
+    if args.resume and os.path.exists(partial):
+        with open(partial, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                done[r["unit_id"]] = r["detected_verses"]
+        print(f"  resuming: {len(done)} units already done, "
+              f"{len(units) - len(done)} to go")
+    elif os.path.exists(partial):
+        os.remove(partial)
+
+    todo = [u for u in units if u["unit_id"] not in done]
+    n_err = 0
     first_err = None
-    rows = []
-    for i, u in enumerate(units, 1):
-        try:
-            refs = sorted(set(predict(u["text"])))
-        except Exception as e:
-            n_err += 1
-            if first_err is None:
-                first_err = f"{type(e).__name__}: {e}"
-                print(f"  !! {u['unit_id']}: {first_err}")
-            if n_err >= 5 and n_err == i:
-                sys.exit(f"\nABORTED: first {n_err} units all failed.\n"
-                         f"  {first_err}\n  No output written.")
-            refs = []
-        if refs:
-            n_hit += 1
-        rows.append([u["unit_id"], u["video_file"], ";".join(refs)])
-        if i % 50 == 0:
-            print(f"  ... {i}/{len(units)}")
 
-    print(f"\n  layer {args.layer} over {len(units)} units")
-    print(f"  units with a detection: {n_hit} ({n_hit/len(units):.1%})")
+    pf = open(partial, "a", newline="", encoding="utf-8")
+    pw = csv.writer(pf)
+    if not done:
+        pw.writerow(["unit_id", "video_file", "detected_verses"])
+        pf.flush()
+
+    try:
+        for i, u in enumerate(todo, 1):
+            try:
+                refs = sorted(set(predict(u["text"])))
+            except Exception as e:
+                n_err += 1
+                if first_err is None:
+                    first_err = f"{type(e).__name__}: {e}"
+                    print(f"  !! {u['unit_id']}: {first_err}")
+                if n_err >= 5 and n_err == i:
+                    sys.exit(f"\nABORTED: first {n_err} units all failed.\n"
+                             f"  {first_err}\n  Progress kept in {os.path.basename(partial)} "
+                             f"-- fix the cause and re-run with --resume.")
+                continue                      # not checkpointed: retried on resume
+            done[u["unit_id"]] = ";".join(refs)
+            pw.writerow([u["unit_id"], u["video_file"], ";".join(refs)])
+            pf.flush()
+            if i % 25 == 0:
+                print(f"  ... {i}/{len(todo)}")
+    finally:
+        pf.close()
+
+    n_hit = sum(1 for v in done.values() if v)
+    print(f"\n  layer {args.layer} over {len(units)} units "
+          f"({len(done)} completed, {len(units)-len(done)} failed)")
+    print(f"  units with a detection: {n_hit} ({n_hit/max(len(done),1):.1%})")
     if n_err:
-        print(f"  !! errors: {n_err} ({n_err/len(units):.1%}) — first was {first_err}")
+        print(f"  !! errors: {n_err} — first was {first_err}")
 
-    # Intermittent failures (rate limits) never trip the consecutive-error abort
-    # above, but a partially-failed run is still unscoreable: the missing units
-    # are indistinguishable from genuine negatives. Refuse to write it.
-    if n_err and n_err / len(units) > 0.02:
-        sys.exit(f"\nABORTED: {n_err}/{len(units)} units failed "
-                 f"({n_err/len(units):.1%}). Results would be unscoreable — "
-                 f"failed units look identical to true negatives.\n"
-                 f"  No output written. Fix the cause and re-run.")
+    missing = len(units) - len(done)
+    if missing and missing / len(units) > 0.02:
+        sys.exit(f"\nABORTED: {missing}/{len(units)} units incomplete "
+                 f"({missing/len(units):.1%}). Failed units are indistinguishable "
+                 f"from true negatives, so the result is unscoreable.\n"
+                 f"  Progress kept in {os.path.basename(partial)} "
+                 f"-- re-run with --resume to finish them.")
 
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["unit_id", "video_file", "detected_verses"])
-        w.writerows(rows)
+        for u in units:
+            if u["unit_id"] in done:
+                w.writerow([u["unit_id"], u["video_file"], done[u["unit_id"]]])
+    os.remove(partial)
     print(f"  wrote -> {os.path.relpath(out, HERE)}")
 
 
