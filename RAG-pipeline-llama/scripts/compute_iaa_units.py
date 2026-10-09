@@ -22,9 +22,15 @@ Usage:
     python scripts/compute_iaa_units.py --spans data/mention_spans.csv
     python scripts/compute_iaa_units.py --a "Meghana G" --b "Meghana S"
     python scripts/compute_iaa_units.py --video gita-1st_video
+
+Blind second pass (annotate_app.py "Second pass (blind)"): the pairs differ per
+lecture, so agreement is pooled as FIRST PASS vs SECOND PASS over the units
+that were re-labelled:
+    python scripts/compute_iaa_units.py --second-pass data/annotations_iaa --language en
 """
 import argparse
 import csv
+import glob
 import os
 import sys
 from collections import defaultdict
@@ -137,12 +143,30 @@ def main():
     ap.add_argument("--a", help="annotator A (default: first two found)")
     ap.add_argument("--b", help="annotator B")
     ap.add_argument("--video", help="restrict to one video_file")
+    ap.add_argument("--second-pass", help="directory of blind second-pass CSVs; "
+                    "compares them, pooled, against --spans")
+    ap.add_argument("--language", choices=["kn", "en"], help="restrict to one language")
     args = ap.parse_args()
 
     if not os.path.exists(args.spans):
         sys.exit(f"No annotations at {args.spans}")
 
     rows = latest_per_pair(load_rows(args.spans))
+    if args.second_pass:
+        second = []
+        for p in sorted(glob.glob(os.path.join(args.second_pass, "*.csv"))):
+            second += load_rows(p)
+        second = latest_per_pair(second)
+        first_by = {r["unit_id"]: r["annotator"] for r in rows}
+        same = {r["unit_id"] for r in second if first_by.get(r["unit_id"]) == r["annotator"]}
+        if same:
+            print(f"  !! dropping {len(same)} unit(s) re-labelled by their own first annotator")
+        redone = {r["unit_id"] for r in second} - same
+        rows = ([dict(r, annotator="first pass") for r in rows if r["unit_id"] in redone]
+                + [dict(r, annotator="second pass") for r in second if r["unit_id"] in redone])
+        args.a, args.b = "first pass", "second pass"
+    if args.language:
+        rows = [r for r in rows if r["unit_id"].startswith(args.language + "_")]
     view = per_unit_view(rows, args.video)
 
     names = sorted(view)

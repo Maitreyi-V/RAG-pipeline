@@ -7,6 +7,12 @@ Run:
 Reads  : data/units_v2.csv   (frozen unit grid — never regenerate)
 Writes : data/mention_spans.csv  (append-only; safe for concurrent annotators)
 
+Second pass (agreement check): tick "Second pass (blind)" in the sidebar.
+    Only the lectures assigned to you in data/iaa_assignment.csv are offered,
+    nobody else's labels are shown, and labels go to data/annotations_iaa/ so
+    they can never leak into the gold file. Score with
+    scripts/compute_iaa_units.py --second-pass data/annotations_iaa
+
 Annotation guideline: docs/annotation_guideline_mention_types.md
 """
 import csv
@@ -28,6 +34,10 @@ UNITS = os.path.join(BASE, "data", "units_v2.csv")
 # conflict on them. Merge into data/mention_spans.csv for analysis with
 # scripts/merge_annotations.py data/annotations/*.csv
 OUT_DIR = os.path.join(BASE, "data", "annotations")
+# Second-pass labels live in their own directory: merge_annotations.py and the
+# scorers never read it, so the gold file stays single-annotator.
+IAA_DIR = os.path.join(BASE, "data", "annotations_iaa")
+IAA_PLAN = os.path.join(BASE, "data", "iaa_assignment.csv")
 
 COLS = ["unit_id", "video_file", "annotator", "verse_ref", "mention_type",
         "has_explicit_ref", "uncertain", "notes", "created_at"]
@@ -37,8 +47,8 @@ def slug(name):
     return re.sub(r"[^a-z0-9]+", "_", name.strip().lower()).strip("_") or "unnamed"
 
 
-def out_path(name):
-    return os.path.join(OUT_DIR, slug(name) + ".csv")
+def out_path(name, out_dir=OUT_DIR):
+    return os.path.join(out_dir, slug(name) + ".csv")
 
 TYPES = {
     "T1": "Verbatim Sanskrit recitation",
@@ -81,13 +91,13 @@ def verse_options():
     return opts
 
 
-def load_done():
+def load_done(out_dir=OUT_DIR):
     """Everyone's annotations: every per-annotator file, plus the legacy merged one."""
     frames = []
-    for p in sorted(glob.glob(os.path.join(OUT_DIR, "*.csv"))):
+    for p in sorted(glob.glob(os.path.join(out_dir, "*.csv"))):
         frames.append(pd.read_csv(p, keep_default_na=False))
     legacy = os.path.join(BASE, "data", "mention_spans.csv")
-    if os.path.exists(legacy):
+    if out_dir == OUT_DIR and os.path.exists(legacy):
         frames.append(pd.read_csv(legacy, keep_default_na=False))
     if not frames:
         return pd.DataFrame(columns=COLS)
@@ -96,8 +106,8 @@ def load_done():
 
 
 def append(rows, name):
-    os.makedirs(OUT_DIR, exist_ok=True)
-    path = out_path(name)
+    os.makedirs(SAVE_DIR, exist_ok=True)
+    path = out_path(name, SAVE_DIR)
     is_new = not os.path.exists(path)
     with open(path, "a", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLS)
@@ -120,18 +130,38 @@ if not who:
     st.warning("Enter your name in the sidebar to begin.")
     st.stop()
 
-done = load_done()
+blind = st.sidebar.checkbox("Second pass (blind)",
+                            help="Agreement check: re-label an assigned lecture "
+                                 "without seeing the first annotator's labels.")
+SAVE_DIR = IAA_DIR if blind else OUT_DIR
+
+done = load_done(SAVE_DIR)
 mine = done[done.annotator == who] if len(done) else done
 
-vid = st.sidebar.selectbox("Video", sorted(units.video_file.unique()))
+videos, limit = sorted(units.video_file.unique()), {}
+if blind:
+    plan = pd.read_csv(IAA_PLAN, keep_default_na=False)
+    plan = plan[plan.second_annotator.map(slug) == slug(who)]
+    if not len(plan):
+        st.warning(f"No second-pass lectures are assigned to '{who}' in "
+                   "data/iaa_assignment.csv. Check the spelling of your name.")
+        st.stop()
+    videos = list(plan.video_file)
+    limit = {r.video_file: int(r.max_units) for r in plan.itertuples() if str(r.max_units).strip()}
+    st.sidebar.info("Blind second pass. Do not open exports or discuss these "
+                    "lectures until both passes are finished.")
+
+vid = st.sidebar.selectbox("Video", videos)
 sub = units[units.video_file == vid].reset_index(drop=True)
+if vid in limit:
+    sub = sub.iloc[:limit[vid]]
 
 reviewed = set(mine.unit_id) if len(mine) else set()
 n_done = int(sub.unit_id.isin(reviewed).sum())
 st.sidebar.progress(n_done / len(sub))
 st.sidebar.caption(f"{n_done}/{len(sub)} units in this video")
 st.sidebar.caption(f"{len(reviewed)}/{len(units)} units overall")
-st.sidebar.caption(f"saving to `data/annotations/{slug(who)}.csv`")
+st.sidebar.caption(f"saving to `data/{os.path.basename(SAVE_DIR)}/{slug(who)}.csv`")
 st.sidebar.divider()
 st.sidebar.caption("**Mention types**")
 for t, d in TYPES.items():
@@ -167,7 +197,9 @@ def _flag(v):
         return False
 
 
-existing = done[done.unit_id == row.unit_id] if len(done) else done
+# In a blind pass only your own second-pass label may be shown.
+shown = mine if blind else done
+existing = shown[shown.unit_id == row.unit_id] if len(shown) else shown
 if len(existing):
     lines = []
     for r in existing.itertuples():
