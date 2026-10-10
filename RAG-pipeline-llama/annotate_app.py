@@ -5,6 +5,7 @@ Run:
     ../.venv/bin/python -m streamlit run annotate_app.py --server.fileWatcherType none
 
 Reads  : data/units_v2.csv   (frozen unit grid — never regenerate)
+         data/units_heldout_v1.csv   (new-speaker lectures, if present)
 Writes : data/mention_spans.csv  (append-only; safe for concurrent annotators)
 
 Second pass (agreement check): tick "Second pass (blind)" in the sidebar.
@@ -29,6 +30,9 @@ from verse_translations import VERSE_TRANSLATIONS
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 UNITS = os.path.join(BASE, "data", "units_v2.csv")
+# New-speaker lectures (build_units_heldout.py). A separate grid so the frozen
+# units_v2.csv is never rewritten; offered alongside it once the file exists.
+UNITS_HELDOUT = os.path.join(BASE, "data", "units_heldout_v1.csv")
 
 # One file per annotator: nobody ever edits anyone else's, so git cannot
 # conflict on them. Merge into data/mention_spans.csv for analysis with
@@ -79,7 +83,11 @@ st.set_page_config(page_title="Verse Grounding Annotator", layout="wide")
 
 @st.cache_data
 def load_units():
-    return pd.read_csv(UNITS, keep_default_na=False)
+    df = pd.read_csv(UNITS, keep_default_na=False)
+    if os.path.exists(UNITS_HELDOUT):
+        df = pd.concat([df, pd.read_csv(UNITS_HELDOUT, keep_default_na=False)],
+                       ignore_index=True)
+    return df
 
 
 @st.cache_data
