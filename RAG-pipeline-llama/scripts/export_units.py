@@ -10,6 +10,7 @@ Usage:
     python scripts/export_units.py --language kn      # Kannada only
     python scripts/export_units.py --video kannada_07 # one video
     python scripts/export_units.py --out data/exports
+    python scripts/export_units.py --units data/units_heldout_v1.csv   # new speakers
 """
 import argparse
 import csv
@@ -26,7 +27,7 @@ LEGEND = ("Tag each unit: **T1** full Sanskrit recitation · **T2** partial Sans
           "Notes prefixes: `OOS:` verse outside Chapter 2 · "
           "`ASR_DROP:` recitation audible but missing from transcript.\n")
 
-TRADITION = {"kn": "Kannada / Dvaita", "en": "English / Advaita"}
+LANGUAGE = {"kn": "Kannada", "en": "English"}
 
 
 def mmss(sec):
@@ -65,7 +66,7 @@ def main():
         path = os.path.join(args.out, f"{vid}_units.md")
         with open(path, "w", encoding="utf-8") as f:
             f.write(f"# {vid} — annotation units (v1)\n\n")
-            f.write(f"{len(units)} units · {words} words · {TRADITION.get(lang, lang)}\n\n")
+            f.write(f"{len(units)} units · {words} words · {LANGUAGE.get(lang, lang)} / {units[0]['tradition']}\n\n")
             f.write(LEGEND)
             f.write("\n---\n\n")
             for u in units:

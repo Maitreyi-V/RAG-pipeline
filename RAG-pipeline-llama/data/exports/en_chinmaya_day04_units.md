@@ -1,0 +1,314 @@
+# en_chinmaya_day04 — annotation units (v1)
+
+76 units · 7971 words · English / Advaita
+
+Tag each unit: **T1** full Sanskrit recitation · **T2** partial Sanskrit · **T3** translation · **T4** paraphrase · **T5** allusion · otherwise **no verse here**.
+
+Notes prefixes: `OOS:` verse outside Chapter 2 · `ASR_DROP:` recitation audible but missing from transcript.
+
+---
+
+### 1. `en_chinmaya_day04_0000`  (108 words)
+
+Om Om Sahana bhavatu sahano bhunaktu sahaviryam karavavahai te Om Shanti Shanti Shantihi Om Yam Brahma Varunendra Rudra Marutah Stunvanti Divyai Stavaih Vedai Sangapadakramopanishadaih Dhyanavasthita tadgatena manasa pashyanti yam yoginah yasyantam na vidussuraasuraganah devayu tasmai namah Deva yatastra When Arjuna confessed to Bhagwan about his confusion and when he's completely surrendered unto Bhagwan saying Bhagwan I am confused. Please guide me, please teach me. I am your disciple. I completely surrender unto you. Because this sorrow which I am facing, this sorrow cannot go unless the very understanding in me is rectified, is corrected. Bhagwan smiles, and then the teaching of Bhagavad Gita starts from verse number 11.
+
+### 2. `en_chinmaya_day04_0001`  (106 words)
+
+What does Bhagwan say? Bhagwan says, Arjuna, on one side you are talking the words of wisdom, on the other side you are grieving. Grief is not the sign of wisdom. The very fact that you are grieving, The very fact that you are immersed in sorrow, it simply shows your line of thinking is wrong. Your analysis of life is wrong. Really speaking, the wise people, Panditaha, Gatasun, Agatasun cha na anushochanti. The signature of a wise man is, he never grieves. For the people who are living or for the people who are dead. The sign of knowledge, the sign of wisdom is peace.
+
+### 3. `en_chinmaya_day04_0002`  (103 words)
+
+The sign of wisdom is cheerfulness, the sign of wisdom is joy, it is happiness. So here Bhagwan uses the term Pandita. Who is a Pandita? The one who has gained the self knowledge is called a Pandita. Pandita is not a scholar. Sometimes Pandit. Sometimes they use this term. for a great musician, for some singer. Sometime they use this term for some scholarly person. But actual meaning of Pandita is the one who has gained the knowledge of the self. This is the way it has to be understood here. Panda. Atma vishaya buddhi yasyam te. The man of self knowledge.
+
+### 4. `en_chinmaya_day04_0003`  (103 words)
+
+So Arjuna, it is only the man of self-knowledge who doesn't grieve because he has the right knowledge. Therefore, you must gain this knowledge because it is this lack of self-knowledge which has landed you in this great sorrow. Now how is lack of knowledge connected to sorrow? There Bhagwan Shankaracharya ji writes this commentary which we had seen in detail earlier yesterday. So what is the logic? First is agyana, we don't know who we are. The second is dehatma bhava, since we don't know who we are, we identify ourselves with the body. And thus, we label ourselves as the body.
+
+### 5. `en_chinmaya_day04_0004`  (102 words)
+
+I am this body. Now what is the mistake with this? What happens immediately after? With this dehatma bhava comes raga, intense attachment. Number one, attachment to the body. Number two, attachment to everything related to the body. Attachment to everything which can give comforts and conveniences to the body. Everything that can give existence to the body, that can give happiness to the body. Because we are attached to existence and happiness. This attachment finally leads to the attachment to the body and everything related to the body. Wealth, power, position, relatives, etcetera. Now what is the problem with this raga?
+
+### 6. `en_chinmaya_day04_0005`  (100 words)
+
+The problem with raga is, the moment the mind is filled with this raga dwesha, likes and dislikes, such a mind will be unable to see the reality. Raga dwesha distorts the reality. It taints the very vision of the seer. Raga dwesha makes your vision narrow. So you are not able to see the truth. You are only seeing the truth. distorted by your impure mind, the impurity being raga dwesha. So based on this truth which you see, You are seeing the distorted truth, and based on this distorted truth, you make analysis which also will be distorted.
+
+### 7. `en_chinmaya_day04_0006`  (103 words)
+
+You take decisions which also will be distorted, and finally you take actions which naturally has to be wrong. So therefore what happens? You do. Paradharma, no, before raga comes, after raga comes moha. Moha means delusion. What is delusion? Delusion is that state of mind where you are not seeing the reality. You are seeing something other than the reality. Perverted vision is the end result of Moha. So based on this Moha, then you take wrong action, which we call as Paradharma. When wrong action happen, what is the result of wrong action? Shoka is the result, sorrow is the result.
+
+### 8. `en_chinmaya_day04_0007`  (100 words)
+
+So why now in our own life you see, if there is sorrow in your life, just go back step by step and finally where you should land up. You will land up at agnana. I don't know myself, therefore I am in sorrow. Now this is the right way of analysis. This is how we have to analyze our life, analyze our problem, and this is how we have to come out of our problem. The scriptures teach us the way to think. The masters teach us the way to think, how to think, how to handle a situation.
+
+### 9. `en_chinmaya_day04_0008`  (108 words)
+
+How to solve a problem, that way of thinking is what the scriptures do for us. So Arjuna, your sorrow is because of lack of self-knowledge. So therefore, I am going to give you that self-knowledge. So from verse number 12 to 25, Bhagwan is dealing with self-knowledge alone because this alone can put an end to suffering. It's a permanent end to suffering. There may be very many methods to end suffering. Short term methods, long term methods, impermanent methods, there may be so many means, but this method is the ultimate method, a permanent method. In fact, it even puts an end to the repeated cycle.
+
+### 10. `en_chinmaya_day04_0009`  (101 words)
+
+sickles of birth and death. To such an extent, this is a permanent solution. So now how does Bhagwan begin? Bhagwan says, Arjuna, there was never a time when we were not there. We means I, you, and all these kings who have assembled here to fight. There was never a time in the past when we were not there. There will never be a time in the future when we all will not be there. Meaning, in the past also we were there. In the present also we are there, in the future also we will continue to be there.
+
+### 11. `en_chinmaya_day04_0010`  (102 words)
+
+Meaning what? We are all deathless. We are not talking of the body, we are talking of the supreme self, our true nature, which is of the nature of pure consciousness. This consciousness has no death. Bhagwan, how do you say so? Arjuna, it is your direct experience. Just analyze your experience. What is your experience? Every time your body is changing, as you grow old, the body is constantly changing. The childhood body is replaced by the youth body. Youth body is replaced by the old body. So constantly one after the other the body is changing, but are you changing?
+
+### 12. `en_chinmaya_day04_0011`  (101 words)
+
+Are you the observer? Are you the witness of this change? Are you changing? The very fact that you are able to recollect all these changes, you are able to remember them. It shows you were there in the past, you are there in the present. Even when the bodies are changing, you, the witness is not changing. Pay attention to that truth in you, that consciousness in you, that awareness in you, who is just a witness of all these changes. And thus, start paying attention to that changeless awareness in you. Start holding on to that truth in you.
+
+### 13. `en_chinmaya_day04_0012`  (121 words)
+
+Pay attention to it, hold on to it. That is the real you. What happens if you hold on to it? Just like while living your body is constantly changing. So what will be the logical step in the next? Childhood body is replaced by the youth body. Youth body is replaced by the old body. And what happens next? A time has to come when the old body will have to drop. Now what will happen to the I, the witness in you? Till now the witness nothing has happened when the body has changed. So naturally nothing will happen even when the body drops dead because the consciousness in you has nothing to do with the body of yours.
+
+### 14. `en_chinmaya_day04_0013`  (103 words)
+
+Body is totally different, consciousness is totally different. There is no connection at all. Body's death is not your death. This consciousness you must hold on. It is this knowledge which makes a wise man, a pandita free from grief. It is this knowledge which makes a dheera free from delusion, moha. Because there is always this consciousness which is giving you everything you need. What is our desire? I don't want to die, I want to live forever and ever and ever, I want to exist all the time. This existence is the nature of yourself. It is the nature of consciousness.
+
+### 15. `en_chinmaya_day04_0014`  (103 words)
+
+So you don't have to desire it, it is already there. Again, I have this desire that I should always be happy and peaceful. You don't have to desire it because the self in you is Ananda Swarupa. So the self in you is Sat Swarupa. The self in you is Chit Swarupa. The self in you is Ananda Swarupa. Whatever desire you have, In life, all these desires are already fulfilled in this self. So you don't have to desire it because it is your nature. Your nature means what? It can never leave you. It is the very I in you.
+
+### 16. `en_chinmaya_day04_0015`  (103 words)
+
+It is the very aham in you. Bhagwan Shankaracharya says, even God cannot take it away from you. This aham is always available. The mistake you have done is you have never paid attention to it. You were, you were ignoring it. You are not experiencing it, not because it is not there, you are not experiencing it because you are ignoring it till now. That's why it is called self-ignorance. That which is ignored is called ignorance. So then what has to be done? Start paying attention to the reality in you. Then all this peace, happiness, everything will be your nature.
+
+### 17. `en_chinmaya_day04_0016`  (100 words)
+
+Bhagwan, now with this knowledge, how to live in this world? How can this knowledge help me in living in this world? This is the essence of the next two verses. Let us chant them. Matra sparshastu kaunteya sheetoshna sukha duhkhadaha agamapayino nityaha tansthitiksha Shashva Bharata Yam hi navyathayante te Purusham Purusharshabha Samadukha Sukham Dheeram Yes. So what is life? Life is a constant interaction between the sense organs and the sense objects. So here Bhagwan says, matra sparshah. What do you mean matra? Matra doesn't mean tablet. Matra. Ma means to measure. Tra means instrument. So what is Matra?
+
+### 18. `en_chinmaya_day04_0017`  (106 words)
+
+The instrument of measuring. Meeyante aabhi shabdaadayaha. Meeyante to measure. That instrument of measuring is called matra. Now what is that instrument we have to measure? The panchagyanendriyas. The five organs of knowledge through which We measure. Measure means what? We know. So it is like we with our eyes measure color and form. Meaning, we gain the knowledge of color and form. With our ears, we measure sound. Meaning, we know sound. So what are the panchajnanendriyas? Eyes. Ears, nose, tongue, skin. And what are the knowledge we gain from the world? Shabda, sparsha, roopa, rasa, gandha. Shabda, sound, we gain it through our ears.
+
+### 19. `en_chinmaya_day04_0018`  (106 words)
+
+Sparsha. Touch, the skin is the instrument. Roopa, form and color, we use our eyes. Shabda sparsha roopa rasa, taste, through our tongue, we gain that knowledge. Gandha, smell, we gain it through. our nose. So these are the panchajnanendriyas. So with the panchajnanendriyas you gain the knowledge from the outer world. If these panchajnanendriyas are not there, for such a person the world is not there. He'll be shut out from the world. So now, matra means the instruments of knowing. Matra sparsha. Sparsha means what? Contact. So matra sparsha means contacting instruments. Those instruments which are coming in contact with the respective sense objects.
+
+### 20. `en_chinmaya_day04_0019`  (103 words)
+
+The sense organs, when they come in contact with their respective sense objects, this is the meaning Matra Sparsha. What will happen? When the instruments come in contact with the objects, sheet, ushna, sukha, dukha, dah. Dah means givers. They give. Da means to give. What do they give? Sheeta, ushna, sukha, dukha. Sheeta, cold, ushna, heat. Sukha, joy, dukha, sorrow. So when our self Sense organs come in contact with the sense objects. What do they give? What does this contact give? They give pairs of opposites. What are they? Sheeta ushna at the body level. Sukha dukha at the mind level.
+
+### 21. `en_chinmaya_day04_0020`  (103 words)
+
+Mana apamana at the intellect level. Meaning, you have no choice when the senses come in contact with the sense objects, you will experience ups and downs. All those things have to be understood, the pairs of opposites. Day and night. Victory and defeat. Ninda, stuti, praise, criticism. Health, disease, they're all pairs of opposites. What does Bhagwan say? You have no choice. These are all choiceless situations. So how to live in this world then? Understand they are Agama Apayanaha. Agama they come, Apayana they go and therefore Anityaha they are impermanent. All these experiences are impermanent, therefore what is the solution?
+
+### 22. `en_chinmaya_day04_0021`  (111 words)
+
+Tan Titikshasva Bharata. Oh Bharata, there is only one way, Titikshasva, practice Titiksha. Endure them, cheerfully endure them. What is the definition of Titiksha? Sahanam sarva dukhanam apratikara poorvakam. Chinta vilapa rahitam satitiksha nigadyate. This is the definition given by Bhagwan Shankaracharya in Vivekachudamani. So what is titiksha? Sahanam is titiksha. Sahanam means what? Endurance. Endurance of what? Sarva dukhanam, all the sorrows. How should you endure all the sorrows? Up Pratikara poorvakam, without a feeling of revenge. There is no pratikara. Chinta vilapa rahitam, free from grumbling, free from wailing and weeping, free from complaining, without any grudge. Against anyone, chinta vilapa rahitam, sati diksha nigadyate, that is called titiksha.
+
+### 23. `en_chinmaya_day04_0022`  (101 words)
+
+So as far as life is concerned, nobody has a choice. We are exposed to the ups and downs of life, everyone has to face it. Ups also will come, downs also will come. What is our only choice? The only choice is whether to grumblingly complain, or cheerfully endure. This is all our choice. Bhagwan says, choose the later. In life, 99% of the situations are choiceless. We don't say all situations are choiceless. There are choiceful situations also. So in such situation what should you do? Choose, what else? Why do you worry? Where there is a choice, choose.
+
+### 24. `en_chinmaya_day04_0023`  (101 words)
+
+Choose means work hard, try to get it. Where there is no choice, accept it cheerfully. This is the method. Why do you say 99% of the cases we are choiceless? How much choice do we have? Which body to be born, do we have any choice? What kind of body, do we have any choice? Which parents should we be born? We don't have a choice. Which place we should be born? We don't have a choice. Whether it should be a day or a night, we don't have any choice. The change of seasons, do we have any choice?
+
+### 25. `en_chinmaya_day04_0024`  (109 words)
+
+How the body should function, the heart, liver, kidney, how they should function, we don't have any choice. It is functioning, that's all. Isn't it? That is why Bhagwan takes only that case here. He's not taking the cases where there is a choice. He's taking the case where there is no choice. In life, in most of the situation, you will face a situation where there is no choice. So what should be our attitude? Cheerfully endure them. How to cheerfully endure? Understand it is Agamaha Apayanaha. Endure everything keeping this in mind. What is it? Whatever is there now, someday or the other, it will go away.
+
+### 26. `en_chinmaya_day04_0025`  (116 words)
+
+It has to go away, it cannot remain with you. Mainly the sorrowful situations only worries us. As a famous English saying goes, even this will pass away. That is Agamaha Apayana. Everything in this world is Anitya, impermanent. Now we have to think a little, how to cheerfully endure the happenings of life. First technique is the same technique, just Understand that the bad patch of time which you are going through, someday or the other it will go away. It cannot remain with you for all the time because in this world everything is anitya. The second way of practicing Titiksha is understand that whatever you are going through is your own karma phala.
+
+### 27. `en_chinmaya_day04_0026`  (105 words)
+
+You only have ordered it. So what you are going through is tailor made. You have performed some action in the past, the very same action has come. in the form of karma phala in the present. Don't blame the people around. They are not the cause, your karma is the cause. Accept it, there is no other way. Number three, always know that whatever is happening is happening for the good. This is another way of cheerful endurance. In the first two cases, cheerful endurance is not possible. Even this will pass away. It won't help. This is my karma phala, it won't help.
+
+### 28. `en_chinmaya_day04_0027`  (110 words)
+
+Somewhere you endure helplessly. To cheerfully accept a thing, you must always see the hidden hand of omniscient, omnipotent, omnipresent God in giving you that particular particular result or situation. There is a supreme Lord who is taking care of the whole world. He is Sarvajna, omniscient. He is Sarvashaktiman, omnipotent. A sarvavyapi omnipresent such a supreme Lord without whose command even a dust particle cannot move here or there. Without whose command even a blade of grass cannot move. When such a Lord is taking care of this entire cosmos. So if this is the kind of situation he has put me in, definitely there is a good purpose.
+
+### 29. `en_chinmaya_day04_0028`  (101 words)
+
+Some purpose which at present I am not able to understand. A noble purpose is definitely there. This is the way to think. God is my father and mother. Bhagwan himself says that, Pitaahamasya jagato mata dhata pitama. I am the father and mother of this whole universe. So when the father or the mother does something to the child, it is always for the good of the child. The child may not understand. With this attitude, you must face the situation, accept the situation. Look at these plants and trees etcetera. What all kinds of seasons they have to undergo.
+
+### 30. `en_chinmaya_day04_0029`  (113 words)
+
+Rainy season, summer season, storms, winter season. Isn't it? And then finally what is the result? Beautiful flowers, juicy fruits. They don't come just like that. That plant has endured so many ups and downs and as a result, the beautiful flower comes. The sweet fruit comes in the same way in our life also. You will always find that it is the suffering which makes you a noble person. Always. It is not the, it is not the what you call, good things that happen to you. When good things happen to you, you tend to become arrogant. When good things happen to you, you tend to become indifferent to other's sorrows.
+
+### 31. `en_chinmaya_day04_0030`  (109 words)
+
+When good things happen to you, you tend to become careless. When good things happen to you, you tend to become ungrateful. Just observe. When suffering comes to you, just the opposite happens. When you go through suffering, you are at your best because you are absolutely alert. In that state of pain, you cannot remain in Tamas. When you are suffering, you become introspective. And a person who has suffered, when he sees the suffering of others, His heart melts in compassion because when he sees the other suffering, he is able to recollect his own suffering. Yes, I know this pain because I have gone through it.
+
+### 32. `en_chinmaya_day04_0031`  (114 words)
+
+So then what happens? Your heart melts seeing the pain of others. And also you are filled with humility. You are filled with gratitude for God. There are so many things the pain can teach you. And that is why all those what you call people who have done bad karmas, they are sent to Naraka. All kinds of sufferings are there, descriptions are there. Now what is Naraka? It is nothing but a washing machine. You put all the soil close there. What comes out is dress clean and neat, isn't it? What happens there? When that criminal minded fellow suffers like this, it is that all the impurities of the mind gone.
+
+### 33. `en_chinmaya_day04_0032`  (110 words)
+
+A person who suffers comes out to be a noble person. It can be physical suffering, it can be mental suffering. In fact, it is this suffering which brings you vairagya, dispassion. It is this suffering which makes your mumukshutvam intense. The desire for liberation becomes intense only during the moments of suffering. The best example is Bhagavad Gita. The suffering of Arjuna led to Bhagavad Gita, isn't it? In your own life if you see, it is always the suffering which has made you a better person. At the moment of suffering we can't accept this, no doubt. At the moment of suffering we may curse God, accept it.
+
+### 34. `en_chinmaya_day04_0033`  (108 words)
+
+But after that, After that bad patch is gone, you always come out to be a better person. This is true with everyone. So therefore we say even the suffering is a blessing in disguise. That is why Kunti Mata prays for suffering, isn't it? What was her prayer? Vipada santu nashyashwata tatra tatra jagadguru bhavato darshanam yat syat apunarbhava darshanam. Bhagwan, vipadas santu na shashwatu, let vipat, calamities strike us again and again. Because it is only during the calamities that I sincerely from the depth of my heart, I seek you. And it is in those moments when I really experience your presence in my heart.
+
+### 35. `en_chinmaya_day04_0034`  (106 words)
+
+And as a result, it is only this attunement with you which puts an end to the cycles of birth and death. So therefore, Bhagwan, keep giving me calamities alone. See the prayer of Kunti Mata, my God. All the great saints and all, whenever sufferings come to them, they say, Bhagwan, thank you very much. This is what they say. Thank you very much. So our attitude towards sorrow has to change. So what does Bhagwan say? You have no choice with the outer situation. Throw yourself at the mercy of the omnipotent, omniscient Lord. And when the sorrow come, what should be your attitude?
+
+### 36. `en_chinmaya_day04_0035`  (108 words)
+
+Titikshasva, cheerfully endure, because whatever happens is for your happiness, for your welfare and well-being alone. But how to cheerfully endure, hold on to the permanent, this don't forget. Yam hi navyathayanti ete. Purusham purusharshabha. That person who is not afflicted by these ups and downs of life, shita ushna sukha dukha etcetera. Those people who don't get afflicted, vyathayanti. Ete, through this, through these pairs of opposites, that person who is sama dukha sukham, who is equanimous. Equipoised even amidst sukha or dukha, not getting elated when there is sukha, not getting dejected when there is dukha. He handles both the situations with a peaceful, equanimous mind.
+
+### 37. `en_chinmaya_day04_0036`  (102 words)
+
+Bhagwan says, such a person is dheera. The wisest man, saha amrutatvaya kalpate. Such a person is fit for amrutatvam, the state of immortality. Such a person alone is fit to realize the highest state. So what has to be done? Now this is the formula of life. In life, in this world, there are two things. What are they? One is the impermanent thing, the other is the permanent thing. So what is the secret of living a happy life? Hold on to the permanent, play in the realms of the impermanent. What is the secret? What is the permanent thing?
+
+### 38. `en_chinmaya_day04_0037`  (105 words)
+
+The self, the consciousness. It is Nitya. It is not Agamaha, Apayana, coming and going. No, everything else comes and goes, but there is one thing which just witnesses the coming and going of everything. What is it? Consciousness. Hold on to consciousness and then live your life in the realms of change. This is the secret of living a happy life. Constant change, Agamaha Apayanaha. What is that which is coming and going? Sense organs are coming and going. Sense objects are coming and going. Experiences are coming and going. But what doesn't come and go? The experiencer, the witness doesn't come and go.
+
+### 39. `en_chinmaya_day04_0038`  (107 words)
+
+Hold on to him for your existence, for your security, for your happiness. Holding on to it, you become cheerful, with that cheerful attitude, live in the world of change. This is the secret. Knowingly or unknowingly, we do this everywhere. When you are watching a movie in the theater, what are you doing? You're doing the same thing, isn't it? You very well know that whatever is happening in the movie is not going to affect me. There's a fire in the movie. You very well know that fire is not going to affect you, is it? That's why you are comfortably seated in the theater.
+
+### 40. `en_chinmaya_day04_0039`  (100 words)
+
+There's a flood in the movie, you know it is not going to affect you. So how are you able to enjoy the movie? You are able to enjoy the movie by holding on to the reality, by holding on to the Nitya Vastu, then you enjoy the Anitya Vastu, isn't it? The very reason why you are enjoying the film is because in the film also you cry and weep and all that. In the theater you do that. But you enjoy even that crying. You even enjoy that sorrowful state, isn't it? Very strange. You are enjoying sorrow.
+
+### 41. `en_chinmaya_day04_0040`  (110 words)
+
+You are enjoying crying and weeping. You are enjoying the moments of anxieties and fears and worries. How are you able to enjoy these fears and worries? You are able to enjoy because at the back of your mind, deep within, you are holding on to the reality. And what is the reality? I have nothing to do with that. That cannot affect me. I am different from that. The whole thing is an illusion. Because of this, you are able to enjoy the movie, isn't it? One part of the mind is holding on to the reality, another part of the mind is playing in the realms of change.
+
+### 42. `en_chinmaya_day04_0041`  (116 words)
+
+This is the secret. Everywhere you do the same thing. You are playing chess. What is chess? It is nothing but war. There is a king. There is a queen, there is elephants, there are horses, there are soldiers and killing is happening. You are killing others, others are killing you, even in all these killings. What is happening to you? You are unaffected, isn't it? Because these killings are only mere imaginations. It is not real. In the real world, nothing is happening. Not even one drop of blood has come out. Isn't it? Always you see you are enjoying only when you are absolutely secure holding on to the reality, otherwise you can't enjoy.
+
+### 43. `en_chinmaya_day04_0042`  (105 words)
+
+The 1 year old child makes his father a horse. The father readily becomes a horse. Now the child is sitting on the back. The child says, come on, eat grass and this father eats grass. No, he's a horse now on the floor. On all the floors he's crawling. Who? The father. The child is sitting on the back. Come on, drink water. The father drinks water. and makes all the sound of the horse also, to entertain the child, isn't it? So even when the father has become the horse, is he miserable? He's not miserable. Why? Because he knows I'm not horse.
+
+### 44. `en_chinmaya_day04_0043`  (100 words)
+
+Isn't it? In the drama also the same thing, you take up the role. You're ready to become a king or a beggar. wanting to become a wretched creature there. You do all kinds of things. Why are you able to do all this? Because at the back of the mind, you know, I have nothing to do with this role. I am somebody different. So when you have that knowledge, you are able to cheerfully do your role in the world. In the same way, we must know who we are. Without that, the life can be a tragedy.
+
+### 45. `en_chinmaya_day04_0044`  (101 words)
+
+Give importance to the permanent thing, never give importance to the impermanent. What happens when you give importance to the impermanent? Have you seen these people who commit suicide when India loses the match against Pakistan? The newspaper they come. It is the heights of madness. 11 plus 11 players are playing. Compared to the crowd of India which is in crores, what is this 11? Some insignificant number of players are playing in a very, very small, maybe 1 acre, 2 acre land. Now what is the size of India? And then in the newspaper it comes, India defeated dash.
+
+### 46. `en_chinmaya_day04_0045`  (101 words)
+
+What has India to do with these 11 people? Meaningless. It is all your imagination, foolish imagination. Some 11 people taking a piece of wood and a ball and hitting. And now you are connecting it to India. Isn't it? And there are people who take it very seriously. Oh my God, India has lost the match. Now what is the purpose of living? Just commit suicide. The heights of foolishness, that which is absolutely silly and insignificant has been given the maximum value, the greatest value, greater than your life itself. And what is the result? Shoka is the result.
+
+### 47. `en_chinmaya_day04_0046`  (100 words)
+
+Isn't it? In our life also we do the same mistake. The most important thing is ignored. The most unimportant things are given the maximum value. And this we go on suffering in life. Bhagwan says shift your attention to the most important thing in you, the consciousness in you, which is always there, which is in fact waiting for you to turn your attention inward so that that consciousness can bless you. with peace, with happiness. That's why Swami Vivekananda said, arise, awake. Wake up, you are sleeping now. considering yourself to be this mere fleshy, filthy, perishable body.
+
+### 48. `en_chinmaya_day04_0047`  (108 words)
+
+So what does Bhagwan say? Hold on to the permanent and what you call, play your role in the fields of the impermanent as Pujya Guruji used to say. Andhraama baahar drama, bas. Simple, Andhraama baahar drama. Now Bhagwan says, whoever is not affected by the ups and downs of the external world, na vyathayanti. Such a person is fit for that highest knowledge. Means what? This truth is always there in us. In order to experience this truth, you need a peaceful mind. And in order to have a peaceful mind, you must ensure that your mind is not affected by the ups and downs of life.
+
+### 49. `en_chinmaya_day04_0048`  (102 words)
+
+Remain quiet, remain peaceful, remain equanimous. Later on it will come. Samatvam yoga uchyate, real yoga means samatvam. Quietude of your mind is real yoga. Those people who can keep their mind undisturbed, peaceful at all times, Bhagwan says, he is a fit person for the highest. Why? Because to experience the highest, the only qualification necessary is a quiet mind. And this person has a quiet mind. So even in that state of utter misery, this person experiences the infinite and the immortal. person who can remain quiet, who can keep his mind peaceful, steady, such a person easily gets it.
+
+### 50. `en_chinmaya_day04_0049`  (118 words)
+
+So Arjuna therefore, this is the way to live. Hold on to the real, play in the realms of the Impermanent. Now here, interestingly Bhagwan uses the two terms, Nitya and Anitya. Arjuna, this self in the past also it was there, in the present also it is there. In the future also it will be there. So therefore this self is Nitya Vastu. And everything else, the world, the body, the mind, the senses, everything is Anitya Vastu. So Arjuna, there are two things in this world, one is Nitya Vastu, Anitya Vastu. So what should be done? Hold on to the Nitya and Play your game in the Anitya, but Arjuna, do you know one thing?
+
+### 51. `en_chinmaya_day04_0050`  (100 words)
+
+Bhagwan, what is it? Actually, this division of Nitya Anitya is wrong. Then what is it, Bhagwan? It is actually Sat and Asat. What is the difference? Let us see the next verse. Na sato vidyate bhavah, na bhavo vidyate satah, ubhayorapi drushtontah, tvanyostatvadarshibhih. Yes, a very, very famous verse. In short, the entire message of the Upanishad is in a capsule form given in this. What is the message of the Upanishads? Now see what is said here. Asataha bhavaha na vidyate, first statement. Asataha bhavaha na vidyate. Asataha of the unreal bhavaha existence na vidyate is not there.
+
+### 52. `en_chinmaya_day04_0051`  (106 words)
+
+The unreal doesn't exist. Statement number one. The unreal has no existence. Then statement number two. Sataha abhavaha na vidyate. Sataha of the real. Abhavaha, non-existence na vidyate is not there. Of the unreal, there is no non-existence. This is the second statement. What is the first statement? For the unreal, there is no existence. Second statement, for the real, there is no non-existence. Means what? Real always exist. Unreal never exists, bas. Tatvadarshibhihi, the seers of the truth. Tatva, tatva means what? Tat plus tvam is tatva. Tat means that. Tvam means ness, that ness. T H A T dash N E S S thatness.
+
+### 53. `en_chinmaya_day04_0052`  (105 words)
+
+That is called Tatvam. Thatness means what? The truth of that. So Tatvadarshi means the one who is seeing the truth of a thing. Such a person is called Tatvadarshi. The same Pandita, Dheera, they're all different names. The wise man. who is seeing the reality as it is. For such a tatvadarshi, ubhayoho antah drishtaha. He has seen both. What are the two things? The real and the unreal. What is the nature of real? Real always exists. What is the nature of the unreal? Unreal never exists. Tatvadarshi has seen the truth, antah means the truth. He has seen the truth of both.
+
+### 54. `en_chinmaya_day04_0053`  (111 words)
+
+He knows what is real, he knows what is unreal. Now very interestingly, till now Bhagwan was talking of nitya anitya, suddenly Bhagwan raises his level to Sat, Asat. Now what is the difference? When you say something is impermanent, somewhere you are giving reality to it, isn't it? This is impermanent means what? Ha, it remains for a short time, but it remains. It is real, at least for a short time it is real. So when you are saying something is anitya, You are not, you are not telling that it is unreal. You are telling it is real, at least for some time it is real, isn't it?
+
+### 55. `en_chinmaya_day04_0054`  (101 words)
+
+That's the difference between Anitya and Asat. When something is unreal, it never existed, either in the past or in the future or in the present, it is never there. Then that is called Asat. For example, the snake in the rope, Rajju Sarpa. In the past also the snake was not there. In the future also it is, it will not be there, in the present also it is, it was never there. That is called Asat. Are you able to distinguish? When you say Anitya, what does it mean? Like a flower, it is there, but for some time.
+
+### 56. `en_chinmaya_day04_0055`  (105 words)
+
+There is a time wise limitation, but it is real, that is called Anitya. Now Bhagwan says, actually speaking Arjuna, the world which you see is not Anitya, actually it is Asat. One more level he goes higher. I have told you Anitya because you may not be able to digest it. You may not be able to accept what? This body is Anitya, world is Anitya, but I'm experiencing, you may say that, but the fact is a fact. The world doesn't even exist. is Asat. Then what is Sat? The consciousness alone is Sat. Other than consciousness, everything is Asat, everything is unreal.
+
+### 57. `en_chinmaya_day04_0056`  (101 words)
+
+This truth Tatvadarshi knows. Therefore, as far as a Tatvadarshi is concerned, he need not do Titiksha. Who has to do Titiksha? The one who considers world to be real, he has to do Titiksha. As far as a Tatvadarshi is concerned, there is no thing at all. Then what would what? What is that Titiksha then? Titiksha means enduring. That which doesn't even exist, where is the question of endurance? This is the level of a Gnani. Whatever we have discussed earlier, it is at the level of a Sadhaka. For a Sadhaka, things are explained as Nitya and Anitya.
+
+### 58. `en_chinmaya_day04_0057`  (101 words)
+
+For a Gyani, things are very clear. What is the clarity? It is not Nitya Anitya, it is Sat Asat. Bhagwan, I understand that this consciousness is nitya, etcetera. But what about the world? How can you say this world is unreal? How can you say that? Let us chant the next words. Avinashitu tadviddhi yena sarvamidam tatam vinashamavyayasyasya na kashchit kartumarhati. Understand Arjuna, it is Avinashi, that Satvastu is Avinashi, indestructible. And what is the greatness of this Satvastu? Yena idam sarvam tatam. Arjuna, you are talking of the world, isn't it? Actually, the world has no existence by itself.
+
+### 59. `en_chinmaya_day04_0058`  (101 words)
+
+It has only a borrowed existence. It has only a borrowed existence. What exists is only the self, what exists is only the consciousness, consciousness distorted by an agitated mind is the world. Consciousness distorted by the agitated mind is the world. That is why only when your mind is awake, you see the world. Without the mind, you don't see the world, because a distorting medium is necessary to distort the truth and present the untruth. So actually speaking, what is existing? It is not the world, it is the consciousness which is existing. Consciousness is misunderstood as the world.
+
+### 60. `en_chinmaya_day04_0059`  (104 words)
+
+Therefore, I can say the whole world is pervaded by consciousness. Exactly like dream. Take the example of dream. In the dream, you have everything in the dream. Dream time is there, dream space is there, dream happenings are there, dream bodies are there, things are there, there is a Cause affect relationship also, in the dream you use your mind, in the dream you use your intellect, isn't it? You take decisions. Everything happens in the dream. And there is a dreamer who is experiencing the dream world. You are also there in the dream world, taking a special body in the dream.
+
+### 61. `en_chinmaya_day04_0060`  (105 words)
+
+Isn't it? But there is something totally different from the dreamer and the dream world. What is it? The observer of the dreamer and the dream world. Now, who is giving existence to this dream world and the dreamer? There is no material existence. Who is giving existence? The observer is giving existence. Isn't it? Minus observer, can there be a dream? I am seeing the dream, without me, can there be a dream? Impossible. So what does it mean? The dream world is existing in me. Without me, there is no dream world. Put in another words, entire dream world is pervaded by me.
+
+### 62. `en_chinmaya_day04_0061`  (103 words)
+
+Isn't it? The dream objects, they have only a borrowed existence, they borrow their existence from me. I have the absolute existence, that absolute existence they borrow it and then project another world. So even when in the dream you see a person there, who is existing? It is not the person who is existing, it is me who is existing, misunderstood as that person. Isn't it? Absolute existence is misunderstood as existence of the world. The same is true with this world also. What is existing is only pure consciousness. Now a mind comes in between, that mind what does it do?
+
+### 63. `en_chinmaya_day04_0062`  (105 words)
+
+The consciousness, the pure consciousness, it projects, it takes the existence from consciousness and then projects a world as though it has its own existence. Now, again come back to this dream example. How do you know that observer alone is Sat and everything is Asat? How do you know? When you come out of the dream, what survives the dream? It is not the dreamer, it is not the dream world, only one thing survives the dream and that is the observer of the dream. Even when you wake up, what remains with you is the observer. You remember certain scenes of the dream.
+
+### 64. `en_chinmaya_day04_0063`  (106 words)
+
+How do you remember? The observer was there during the dream. Now the very same observer is there during your waking state. What does it mean? Observer is constantly present. There is no destruction for the observer. So therefore we can say observer is the sattvastu in that example. In the same way here also, there is a witnessing consciousness which is witnessing everything. This witnessing consciousness remains always and it is this consciousness which is giving existence to everything. So therefore we can say whatever you see is pervaded by. The existence of the self alone. Whatever you see is pervaded by the self alone.
+
+### 65. `en_chinmaya_day04_0064`  (105 words)
+
+That is what he said, yena sarvamidam tatam. Put in another words, the self is sarvagataha, all pervading. There are only two things, one is real, the other is unreal. So other than the real, everything is unreal. So if unreal appears to exist, it must have borrowed the existence from The real, simple. So therefore we can say the self is all pervading, really speaking. This concept of all pervading also is a limited concept. The space which you see, who is giving existence to that space? Again, the consciousness alone. What is being pointed out is the self is beyond time, beyond space.
+
+### 66. `en_chinmaya_day04_0065`  (105 words)
+
+Avinashi. It is never destroyed, means what? The self is beyond time. It is existing all the time. It is Sarvagataha, it is everywhere. At all time, in all places, it is there. Such an indestructible self, nobody can destroy. Now each and every verse is pointing to one particular characteristics of the self and that's what we have to take here. So what is the characteristic pointed out here? Sarvagataha. Atma is Sarvagata. It is all pervading. Nowadays this what you call the modern philosophers, they use the term here and now. Living in the present moment, you know, it is nothing but this.
+
+### 67. `en_chinmaya_day04_0066`  (105 words)
+
+Far, far away there is a star. You think spatially it is far away, but where do you experience it? Here. Isn't it? Experience is happening here, though the object is there. Where is experience happening? Where is the awareness happening? Here. Mind is projecting something that mind is existing in consciousness. So where is your experience happening? Here. You are remembering of the past, but where is the experience happening now? See. You are remembering about the future, but where is the experience happening now? So that is the greatness of here and now. When you say here, that means the space is denied.
+
+### 68. `en_chinmaya_day04_0067`  (100 words)
+
+When you say now, time is denied. So what is the truth? This here and now is the truth. What is the truth? This present moment is the truth. What is the truth? I Who is experiencing this present moment is the truth. This state of being is the truth. Because state of being can be experienced only in the here and now. You are not imagining anything about yourself. You are in the here and now, in the present moment. You are in the state of being. These are all different, different, different ways of putting the same thing.
+
+### 69. `en_chinmaya_day04_0068`  (109 words)
+
+The point is, except this aham, everything is unreal. And aham is something which you are all the time experiencing. You are you are not experiencing anything else. Actually, you are always experiencing unknowingly, unconsciously, you are always experiencing what? God and God alone. Now Bhagwan says, this truth is none other than your own subject, the subject in you. That is the next verse. Let us chant that. Antavanta ime dehaha nityasyo kta shareerinaha. Anashino prameyasya tasmad yuddhyasva Bharata. Yes. Ime dehaah antavantah. Arjuna, all these bodies that you see, those who have come to fight the war. All these physical bodies, they are antavantaha, they are perishable.
+
+### 70. `en_chinmaya_day04_0069`  (106 words)
+
+They have to die. As far as the deha is concerned, it is perishable. This word deha comes from the root dih. Dih means upachaye, that which grows. Also this deha comes from the word dah, that which is burnt. Meaning what? This is a body which has to perish. So all these bodies Arjuna that you see, They are perishable in nature, but sharirinaha, the one who is possessing the body. What is his nature? Anashi, aprameyah, nityah. The possessor of the body is Anashi, indestructible. Nityaha, it is eternal and it is Aprameyah. So now in this verse a new term is used Aprameyah.
+
+### 71. `en_chinmaya_day04_0070`  (101 words)
+
+So what is the nature of the self? It is Aprameya. Now what do you mean Aprameya? Prama means knowledge. Pramata means the knower of the knowledge. Pramata means knower. Pramanam means the means of knowledge. Prameya means the object of knowledge. Pramata is the knower. Prameya is the object of knowledge. Prama is knowledge. Pramana is called instrument of knowledge. So what are we doing in this world? Constantly the pramata is gaining the prama of the prameya through pramana. You are seeing a flower. Who is seeing a flower? I am seeing the flower. So who is the pramata?
+
+### 72. `en_chinmaya_day04_0071`  (105 words)
+
+I am the pramata. Now you are seeing a red flower. So what is the prama? This flower is red. So that red, it's a knowledge. So that is prama. How did you gain this prama knowledge by using the pramana? What is the pramana? Eyes, the instrument of knowledge. So the pramata using the pramana. is gaining the prama of the prameya. What is the prameya? The flower. The object of knowledge. Now the question is, this self is aprameya. It cannot be made the object of knowledge. Why it cannot be made the object? Because it is the very subject, it is me.
+
+### 73. `en_chinmaya_day04_0072`  (101 words)
+
+I cannot see myself as an object. The seer can never be seen. This is the point. Can you see the camera in the movie? The entire movie shot by the camera. But you will never be able to see the camera in the movie, isn't it? The very fact that you are seeing the movie proves that there was a camera with which it was shot. It is inferred. It is not seen. It is inferred. In the same way when people ask, where is God? Prove me God, show me God, unless you show it, I will not believe.
+
+### 74. `en_chinmaya_day04_0073`  (104 words)
+
+Foolish fellow. He's just like saying, show me the camera. In the movie there is no camera. Show me the camera then only I'll believe that there is a camera. Foolishness. The very fact that you are seeing the movie shows that there was a camera, otherwise it's impossible. In the same way, the very fact that you are knowing, you are seeing, there is somebody there behind. Who is the witness of everything? Who is seeing? Who is the ultimate seer? Who is the ultimate witness? That ultimate witness is God. You cannot see God because it is a very seer in you.
+
+### 75. `en_chinmaya_day04_0074`  (102 words)
+
+You cannot know God as an object because it is a very subject in you. So therefore, proving God, showing God, it is foolishness, it is meaningless. It is impossible. That which is a subject, how can it become the object of knowledge? This is how you have to answer them. It is impossible to know God as an object. How do you know it? You know it as a subject. You know it as the very being in you. as a very state of being in you, as a very awareness in you. Awareness cannot be objectified. Consciousness cannot be objectified.
+
+### 76. `en_chinmaya_day04_0075`  (92 words)
+
+You can only be conscious of consciousness. That consciousness in you is God. That is the supreme self. That is the Sat Vastu. So therefore we can say this Atma is Aprameyah. So what all terms have we seen? Atma is Nityah. It is satswaroopaha. It is sarvagataha. It is aprameyahaha. More of it we will see tomorrow. Om. Sarve bhavantu sukhinah. Sarve santu niramayah. Sarve bhadrani pashyantu. Ma kashchit duhkha bhagbhavet. Asato ma sadgamaya, tamaso ma jyotirgamaya, mrityorma amritam gamaya. Om Shanti Shanti Shantihi Harih Om Shri Gurubhyo Namah Harih Om
+

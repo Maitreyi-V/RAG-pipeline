@@ -1,0 +1,870 @@
+# en_iskcon — annotation units (v1)
+
+215 units · 23561 words · English / Gaudiya Vaishnava
+
+Tag each unit: **T1** full Sanskrit recitation · **T2** partial Sanskrit · **T3** translation · **T4** paraphrase · **T5** allusion · otherwise **no verse here**.
+
+Notes prefixes: `OOS:` verse outside Chapter 2 · `ASR_DROP:` recitation audible but missing from transcript.
+
+---
+
+### 1. `en_iskcon_0000`  (105 words)
+
+Best Gift For Everyone, Carva Mini. Hare Krishna Hare Krishna Krishna Krishna Hare Hare Hare Rama Hare Rama Ram Ram Hare Hare. Today we will be discussing second chapter of Bhagavad Gita. Contents of the Gita summarized. This session is dedicated to his divine grace A. C. Bhaktivedanta Swami Prabhupada, our spiritual master and the founder and Acharya of the worldwide Hare Krishna movement. Let us see verse number one. Sanjaya uvacha tam tatha kripaya vishtam ashru poona kulekshanam vishidantam idam vakyam. Uvacha Madhusudanaha. Sanjaya said, seeing Arjuna full of compassion and very sorrowful, His eyes brimming with tears, Madhusudana Krishna spoke the following words.
+
+### 2. `en_iskcon_0001`  (109 words)
+
+Arjuna was feeling great compassion, and this compassion is considered a very good quality. However, this is the first instruction of Bhagavad Gita that Compassion, lamentation, and tears on material platform are because of ignorance of the knowledge of the self. Usually we think, and that is how we define all the activities of our life. All the activities are directed towards comfort of the body. We think if the body is comfortable, Then we'll be happy. If there is discomfort for the body, such situations we are willing to avoid. But compassion and lamentation simply for the body is like Compassion for the dress of a drowning man.
+
+### 3. `en_iskcon_0002`  (101 words)
+
+If a man is drowning and we are crying for the dress of such a person, then that is less intelligence. In a similar fashion, we have to understand more important than saving the dress is saving the person who is drowning with that dress. But all the efforts are simply to save the dress. This body is nothing but dress of the spirit soul. That is why it is told by Lord Rishabhdev. Lord Rishabhdev was also incarnation of Krishna and his great son was Bharat Maharaj. And because of Bharat Maharaj, this entire planet got the name Bharat Varsha.
+
+### 4. `en_iskcon_0003`  (106 words)
+
+Before his rule, it was called Ilavrat Varsha. So Bharat Maharaj along with his brothers was given very, very sublime instructions by his father, Rishabh Dev. Before he was about to take Sanyas, and the most important of all instruction is, Lord Shri Rishabhdev tells to Bharat Maharaj. Nayam deho dehe bhajaam riloke kashtaan kaamaan arhate vid bujaam ye. Tapo divyaam putra kaayen satvam shuddhied yasmaat brahma saukhyam tvanantam. Human life is not meant simply to bring comfort to the body. Rather, people do not know. We should try to take voluntarily discomforts. That is called Tapasya. Tapasya means willingly one is Taking discomforts in life.
+
+### 5. `en_iskcon_0004`  (103 words)
+
+For what? For spiritual pleasure, for spiritual advancement. The body becomes purified if one takes discomforts according to the direction of the scriptures. And by such scientific taking of discomforts, even for maintaining physical body, we take discomforts. discomforts, otherwise we'll get diseased. And for spiritual fitness, spiritual pleasure, physical discomforts, mental discomforts are very much required. Thus Vedic culture is full of Tapasya. So human life is only meant for Tapasya, Rishi Dev tells. Since enjoyment which is available even in the lower species like that of stool eating hogs, vidbhujam ye, human being should not work to enjoy the same pleasure.
+
+### 6. `en_iskcon_0005`  (106 words)
+
+But one should do Tapasya so that one's existence becomes purified. Once the existence is purified, then a person can experience Brahma Saukhyam, spiritual pleasure. And because we are spirit souls, unless we relish spiritual pleasure in our life, we will always be dissatisfied. So Arjuna here because of ignorance, was simply crying for the external dress. He was thinking I'm going to kill my relatives and he was not able to understand that in this activity of war lies the spiritual emancipation of both the parties. How is it so that Lord Krishna will explain? Shri Bhagavan uvacha, kutastva kashmalamidam vishame samupasthitam, anarya justam asvargyam.
+
+### 7. `en_iskcon_0006`  (101 words)
+
+Akirti Karam Arjuna. The supreme person Bhagwan said, my dear Arjuna, how have these impurities come upon you? They are not at all befitting a man who knows the progressive values of life. They do not lead to higher planets but to infamy. Very important word used here for Lord Krishna is Bhagwan. Shri Bhagwanuvacha. What is Bhagwan? Why God is called Bhagwan? This question may come in many minds. So the entire Vedic system of education directs a man to have Brahma Jigyasa. Brahma Jigyasa means to understand The spiritual existence. What is the ultimate reality? Why am I existing?
+
+### 8. `en_iskcon_0007`  (110 words)
+
+Who am I within this body? Who has created this body? A wonderful supercomputer who has assembled this wonderful brain, who has assembled these most wonderful fantastic cameras called the eyes, like this who has manufactured this body in which every cell is more complex than a metropolitan city. Who has assembled and for what purpose? What is the truth of life? This is called Brahma Jigyasa. So just like modern science has analyzed, actually whatever we see around us, the atomic physics is, it is actually nothing but combination of protons, neutrons, and electrons. Nothing else. Protons, neutrons, electrons, they combine together to produce whatever we see around us.
+
+### 9. `en_iskcon_0008`  (113 words)
+
+But now, the science has become more advanced and they are understanding, no even proton, neutron, electrons are not the fundamental particles. They are combination of some other energies. Like this if we keep on tracing, ultimately what is truth? What is the substance that we are seeing around us? Wood, cement is definitely, definitely an illusion, but even atoms and proton, neutron, electrons are also not the ultimate reality. So what is that ultimate reality, the substance which is manifesting in so many forms around us? So the Vedas inform us that is Brahm or the spirit. So unless a person understands this ultimate reality, the problems of life cannot be solved.
+
+### 10. `en_iskcon_0009`  (104 words)
+
+So those who are seers of the truth, Srimad Bhagavatam explains, vadanti tat tatvavidastatvam yaj jnanam advayam. That absolute truth is discovered by them in three phases. Which are those three phases? Brahmeti, Paramatmeti, Bhagwan iti shabdyate. The first phase of understanding the ultimate truth, absolute truth is called Brahma. Brahma means spiritual energy. When we keep on analyzing, go deeper, what is the fundamental energy, we'll understand there is one energy which is all pervading. And when a person advances further, he realizes actually this energy which is all pervading is coming. from a person who is present in all of our hearts.
+
+### 11. `en_iskcon_0010`  (112 words)
+
+That is called Paramatma. In this body there is Atma. that Krishna will explain in detail in 13th chapter of Bhagavad Gita. But along with Atma, there is another Atma and that is called Param Atma. So the individual atma is conscious of this body but Paramatma is conscious of all the bodies. This is called second phase of realization of absolute truth that the energy which is there everywhere. This energy is coming from a person who is present in the hearts of all the living entities. And then the third and the final phase of realization of absolute truth, the most advanced transcendentalists are able to understand the Bhagwan feature.
+
+### 12. `en_iskcon_0011`  (100 words)
+
+Brahma, Brahmeti, Paramatmeti, Bhagwan iti shabdyate. So this Bhagwan feature is the ultimate word in realization of absolute truth. What is the meaning of Bhagwan? Some people ask whether Bhagwan is a person or simply an energy. Actually if we understand the Sanskrit language, the meaning of the root, then such a question will not arise. Bhagwan, van means possessor, and bhag means opulences. The definition of Bhagwan has been given by Parashar Muni, father of Vyasadev, the author of Mahabharat, Bhagavad Gita, the compiler of all the Vedas. His father Parashar Muni has given definition in the Vishnu Purana.
+
+### 13. `en_iskcon_0012`  (113 words)
+
+Aishwaryasya samagrasya veeryasya yashasa shriya jnana vairagyayashchaiva shannam bhag itingana. Bhag means opulence. There are six kinds of opulences which make a person attractive. One opulence is the beauty, beautiful people attract others. Second opulence is wisdom, it attracts. Third opulence is power. strength if a person is very strong, fame and renunciation. So any person who has got these opulences and riches. So any person has got these six opulences becomes very attractive. So Parashar Muni explains, Samagrasya. There could be many, many rich people, but nobody can claim all the riches in the world belong to me. So all the riches are owned by a person, that person is called Bhagwan.
+
+### 14. `en_iskcon_0013`  (102 words)
+
+So any person who can claim that all the riches, wealth of the world creation belongs to me, that is Bhagwan. So any person who has got all the opulences in completion, that is called Bhagwan. Bhagwan means who is having all the riches, who is most beautiful, who is having all the strength in this world. Who is most wise? Who is most learned? He is called Bhagwan. Thus, these are the attributes of a person. So Bhagwan means possessor of opulence, a person. So ultimate truth cannot be simply dead energy, impersonal energy, because we see beautiful designs around us.
+
+### 15. `en_iskcon_0014`  (102 words)
+
+Energy cannot act automatically and create designs. There has to be a conscious designer. So some people tell God is only a person, ultimate truth is person. Some people tell ultimate truth is only all pervading impersonal energy. But actually, the all-pervading impersonal energy called Brahm and Bhagwan are non-different features of absolute truth. Absolute truth is having personal aspect as well as impersonal aspect. But the impersonal aspect energy is dependent on the person. So there is no difference between the two, Brahma and Bhagwan. They are one and the same. Example given is like that of sun and the sunlight.
+
+### 16. `en_iskcon_0015`  (125 words)
+
+There is no difference between sun and sunlight because it is not possible that sun is existing without its light. And it is not possible also that light is existing without sun. So in that sense, sun and sunlight are one and the same, but still there is difference. If I am seeing the sunlight, I am contacting the sunlight, it does not mean I am touching or I have entered the sun planet. This is called achintya bhed abhed. Oneness and difference at the same time. So in this way, definitely absolute truth is Brahm, all pervading energy, which is non-different from Bhagwan, but this all pervading energy is emanating from Bhagwan, the personality of Godhead, just like the sunlight is emanating from sun.
+
+### 17. `en_iskcon_0016`  (105 words)
+
+This is the perfect understanding of absolute truth. So thus, Ved Vyas has not written Shri Krishna Uvacha because people may think, oh Krishna, One powerful man is giving his opinion. So throughout the Bhagavad Gita, Lord Krishna has been addressed whenever Lord Krishna speaks as Shri Bhagavanuvacha, Shri Bhagavanuvacha. Ved Vyas wants to tell, please understand this knowledge is coming from Bhagwan, the supreme reality. From whom all the living entities are coming, all the planets are coming, all the matter is coming. He is the creator, therefore knowledge given by him is perfect. So people are having so many confusions about this world.
+
+### 18. `en_iskcon_0017`  (101 words)
+
+What is this world all about? What is the purpose, who we are? And we are going to get answers of all these questions by Bhagwan, the supreme person, creator himself. How fortunate we are. So let us see how Lord, the supreme Lord is going to give this wonderful wisdom to Arjuna and bring him out of lamentation. Klayabyam asmagamah partha nayatatvai upapadyate kshudram hriday daurbalyam Tyakpo tistha parantapa. O son of Pritha, do not yield to this degrading impotence. It does not become you. Give up such petty weakness of the heart and arise, oh chastiser of the enemy.
+
+### 19. `en_iskcon_0018`  (111 words)
+
+Arjuna uvacha, Katham Bhishmam Aham Sankhye Dronam cha Madhusudana. Ishu bhi pratiyotsyami Poojaravari Sudana. Arjuna said, O killer of Madhu, Krishna, how can I counteract with arrows in battle men like Bhishma and Drona who are worthy of my worship? So it is Vedic injunction, etiquette, moral obligation that superior should not be offered even a verbal fight. And who is superior? A person can be superior in knowledge, that is the first criteria, or in social position, that is second criteria. or in age. If a person is more in age, social position, or knowledge, such people are called superiors and they should never be offered even a verbal argument.
+
+### 20. `en_iskcon_0019`  (104 words)
+
+It is a sinful activity. So if a verbal argument also cannot be offered, here Arjuna is being told to kill them. So he's telling how can I pierce them with arrows? Arjuna is completely bewildered. This is against the religious injunctions. Guru nahatva hi mahanubhavan shreyo bhoktum bhaikshyam apiha loke. Hatvartha kamasthu gurunihaiva bhunjiya bhogan rudhira pradigdhan It is better to live in this world by begging than to live at the cost of the lives of great souls who are my teachers. Even though they are avaricious, they are nonetheless superiors. If they are killed, our spoils will be tainted with blood.
+
+### 21. `en_iskcon_0020`  (100 words)
+
+Nachayatadvidama kataranno gariyo yadva jayema yadi va no jayeyuh. Yaneva hatva najijivishamas teva sthita pramukhe dhartarashtra. Nor do we know which is better, conquering them or being conquered by them. The sons of Dhritarashtra, whom if we killed, we should not care to live, are now standing before us on this battlefield. So this shows that Arjuna is having all the good qualities. He's a very virtuous man. Even though he was put along with his family into so many troubles by the Kauravas. And such aggressors are standing, their wife was attempted to be disrobed in a full assembly.
+
+### 22. `en_iskcon_0021`  (104 words)
+
+They were given poison, their house was set on fire, and so many other life attempts were made. So an ordinary person would not leave the chance to attack such an enemy and kill him. But Arjuna, his senses are perfectly under control, very nicely as per his capacity, he is analyzing. Oh, this is sinful, this is bad, even though I can kill them, they are avaricious, but what will happen to their families? They are elderly people, they are supposed to guide family. Families without guidance will fall down from the path of religion, will not attain the ultimate objective of life.
+
+### 23. `en_iskcon_0022`  (101 words)
+
+Like this Arjuna is very nicely with controlled senses and controlled mind, he is analyzing the situation. So thus Arjun is perfect candidate for self-realization. Unless the senses are controlled, unfortunately today there is no training for controlling the senses. We think the more we indulge in sense enjoyment we'll be happy. No, that is illusion. If the senses are not controlled, there is no question of coming to the platform of knowledge, and without knowledge and devotion, there is no question of liberation. Karpanya doshapahata swabhavah. Prichchami twam dharma sammoodha chetah. Yat shreyasya nishchitam bruhi tanme. Shishyasteham shadhimaam twam prapannam.
+
+### 24. `en_iskcon_0023`  (115 words)
+
+Now, I am confused about my duty and have lost all composure because of weakness. In this condition, I am asking you to tell me clearly. What is best for me? Now I am your disciple and a soul surrendered unto you, please instruct me. Karpanaya doshapahata swabhavah. The word used here is Kripana. From Kripana comes Karpanaya. What is Kripana? Kripana means miser. And who is a miser? It is explained in Garga Samhita. Yuva etat. Aksharam Gargi aviditva asmal lokat prayati sa kripanaha. Any person who does not understand the science of self-realization, and passes away from this world like cats and dogs, simply catering to the demands of material mind and body.
+
+### 25. `en_iskcon_0024`  (107 words)
+
+Such a person is called miser. Why such a person is called miser who does not do spiritual inquiry? Because miser does not know how to utilize the assets. He could be very rich, but he would be living a very wretched life. In a similar fashion in human form of life, by self-realization, a person can solve all the problems of life. But if a person does not do self-realization, he has wasted this very rich asset of a human form of life. So he's called miser. And such misers mainly they are not able to Have spiritual inquiry because of material affection and family attachments.
+
+### 26. `en_iskcon_0025`  (106 words)
+
+We are all just like travelers. Suppose in a long journey, we sit in a restaurant with some strangers, and we spend all our money on taking care of such strangers and all our love and affection we show on them. So such an act is not very wise because all of us will carry on to our respective destinations we are never going to meet again. That is the situation in this material world. We are all travelers, we are traveling through various bodies life after life and then we assemble in this world. And we meet in this eternal voyage in groups called families.
+
+### 27. `en_iskcon_0026`  (105 words)
+
+So if you simply spend all the time, the family members are natural objects of affection, but if a person is overly affectionate, He's attached to anything in this material world, people or objects, places, anything, then a person will get trapped in the cycle of birth and death. So Arjuna here, because of strong family affection, is not able to wage a war which is his duty, even though his family members are standing on the other side. So Arjuna is conscious that this is Karpanya Dosha, this is miserly weakness. Because of this family affection, I am not able to do my duty.
+
+### 28. `en_iskcon_0027`  (100 words)
+
+And unless a person does his duty very nicely, there is no question of self-realization. Another important word used in this verse is, Shadhi Mam Tvam Prapannam. So when such complexities arise in life, Arjuna is very successful person, very strong person. There is no material dearth in his life. But still, he's perplexed. So even though we can become very, very successful in our material life, perplexities are going to come in life, and the solution lies in prapadyante, shadhimaam tvam prapannam, surrender. One has to surrender to Krishna or Krishna's representative who is called guru or spiritual master.
+
+### 29. `en_iskcon_0028`  (107 words)
+
+Unless one completely surrenders to guru, there is no question of solving the problems of life. Of course, such surrender is not blind. Just like using our intelligence, we find a very good doctor and then surrender unto that doctor. Doctor, please operate my heart. And you please fix my disease, unless such complete surrender is there, doctor will not be able to help despite doctor's willingness. In a similar fashion, unless we completely surrender into spiritual master, we cannot solve the problems of life. Of course, we should be wise enough. to have knowledge who is a bonafide spiritual master, only then surrender should be done.
+
+### 30. `en_iskcon_0029`  (119 words)
+
+Nahi prapashyami mama panudyad yachokamuchoshanam indriyanam avapya bhumavasapat Namriddham rajyam suranam apichadhipatyam. I can find no means to drive away this grief which is drying up my senses. I will not be able to destroy it even if I win an unrivaled kingdom on the earth with sovereignty like that of the demigods in heaven. Sanjaya uvacha evamuktva Rishikesham Gudakeshah Parantapah Nayotsya iti Govindam uktva tushnimabhuvah Sanjaya said, having spoken thus, Arjuna, chastiser of enemies, told Krishna, Govinda, I shall not fight, and fell silent. Tam uvacha Rishikeshah prahasanniva Bharata senayorubhayor madhye vishidantam idam vachah or descendant of Bharat. At that time, Krishna, smiling in the midst of both the armies, spoke the following words to the grief-stricken Arjuna.
+
+### 31. `en_iskcon_0030`  (101 words)
+
+Shri Bhagavanu vacha, ashochyananvashochastvam pragyavadanscha bhashyase, gatasunagatasuncha. nanu shochanti panditah. The blessed Lord said, while speaking learned words, you are moaning for what is not worthy of grief. Those who are wise lament neither for the living nor the dead. We see in the society stress, depression, lamentation is continuously increasing. And now various people, even celebrities are telling, it is okay, we should not be shy, depression is normal. No sir, it is not normal. It is normal for the ignorant people who are not educated people. But a person who is educated, educated person, learned man is called Pandita.
+
+### 32. `en_iskcon_0031`  (102 words)
+
+So those who are wise, Pandit. Such a person does not lament, Lord Krishna is telling, either for the living or for the dead. He does not lament for any situation of this material body. Lamentation is only the business of the people who are not trained in the science of self-realization. Because I am not the body, I am spirit soul, I remain eternally the same. So all the lamentation, this distress is because of abhiniveshataha. Abhiniveshita means absorption. As a sleeping man gets absorbed in the body of the dream and thus he creates situation of so-called happiness and distress.
+
+### 33. `en_iskcon_0032`  (109 words)
+
+Ideally should be unaffected because it is only a dream. In a similar fashion, we are spirit souls, we have got nothing to do with this body and this world. But when the spirit soul starts thinking out of illusion, I am this body, then the situation of so-called happiness and lamentation is created. But a person who is wise laments neither for the living nor for the dead. Natvevaham jatu nasam. Nathvam nemijanadhipah, nachch eva na bhavishyamah. Sarve vayam atah param. Never was there a time when I did not exist, nor you, nor all these kings, nor in the future shall any of us cease to be.
+
+### 34. `en_iskcon_0033`  (123 words)
+
+So this is the first instruction which is given by Lord Krishna to Arjuna. Never was a time when we were not existing. And there shall never be a time in future when any of us will cease to exist. Arjuna was thinking, oh if I kill these people, they will cease to exist. So Krishna told, no, there is no cause of lamentation because we are spirit soul different from the body, we will never cease to exist. And apart from the eternality of the individual soul, the individuality also is being expressed here. There is a class of philosophers called Mayavadi, impersonalists, who tell that We have come from the supreme spirit, and now we have got trapped in this body.
+
+### 35. `en_iskcon_0034`  (100 words)
+
+Again, we have to merge in the supreme spirit. So this is rejected by Krishna. In the words, Sarve vayam atah param. Vayam means plural, plurality. And this plurality of consciousness is also asserted in various Upanishads, like Kathopanishad, Shvetashvatara Upanishad. Nityo nityanam chetanas chetananam ekoyo bahunam viddhati kaman. So the Upanishads point out, there are two kinds of Nityas or eternal entities. There is Nitya, one singular entity, and Nityanam, so many. eternal entities. There is Chetana, one conscious living entity which is different from so many other conscious entities. What is the difference? Eko yo bahunam viddhati kaman.
+
+### 36. `en_iskcon_0035`  (135 words)
+
+This one eternal living entity. Conscious living entity takes care of all other infinitesimal consciousnesses. So thus plurality is explained here. There is one soul which is infinite. which is supreme, it takes care, fulfills the desires, bahuna viddhati kaman of multitudes of infinitesimal. Atomic living entities. So there was never a time, sarve vayam athah param. Lord Krishna explains when we were not existing, we were always existing. And in future also there will never be a time when you merge into me or anybody merges into me. We will all continue to exist in future. Dehinosmin yatha dehe kaumaram yauvanam jara tatha dehantara prapti dheeras tatra na muhyati As the embodied soul continually passes in this body from boyhood to youth to old age, the soul similarly passes into another body at death.
+
+### 37. `en_iskcon_0036`  (101 words)
+
+The self-realized soul is not bewildered by such a change. As we did not cry for change of bodies, our body was pea-shaped in the womb of mother. Then it developed into a grown-up embryo. Then it came out as a child. We did not cry. I was pea-sized, now my body has changed. Similarly, the child body got transformed into a young body. We did not cry at that time for the change of body. And then, the young man became old man. We did not cry for such a change of body. Similarly, Krishna is telling tatha dehantara praptihi.
+
+### 38. `en_iskcon_0037`  (121 words)
+
+At the time of death, soul simply is going to change the body. What is the need of crying? Anyway, we are changing body always, and death is final change. We move to another body, simply a change of external appearance. So what is the cause of lamentation? So dheeras tatra na mohyati, death. The media, the news, it is filled with such news and the whole world is lamenting for death, but it is told Dheerah, a self-realized soul is not at all disturbed by death. Matra sparshastu Kaunteya. Shitoshana sukha dukha dah agama payino nityas ta sthitikshasva bharata So even though we may theoretically understand I am not the body, but still we feel the pangs of the body.
+
+### 39. `en_iskcon_0038`  (111 words)
+
+To have practical realization is difficult. It needs great advancement in spiritual life. But there is a stage, just like when a person wakes up from the dream, he's no longer affected by the calamities of dream. He understands I am not the body of dream. Such a state of wakefulness, self-realization is possible, but that is very advanced stage. Till then, a person has to, Lord Krishna recommends here, tan sthitikshasva bharata. Unfortunately, many people have taken to profession of spiritual life and they try to solve the material problems of their disciples in the name of spirituality. Please ask what is your material desire and I will fulfill it.
+
+### 40. `en_iskcon_0039`  (102 words)
+
+I will cure your disease, your toothache and people think this is spiritual life. Arjuna was in distress, so Krishna did not tell Arjuna, okay Arjun no problem, you will sit, I will fight for you. Or take this pill of ash and throw it on the enemy, enemy will get destroyed. No. Krishna told that is the nature of this material world. As long as one is there in the body, action reactions will continue just like you feel heat and cold. The summer and winter seasons they come and go, similarly happiness and distress is nature of this material world.
+
+### 41. `en_iskcon_0040`  (102 words)
+
+We think if I do some adjustment in my life, my life will be all set and I will be happy, that is not possible. So, as long as a person is not very advanced where one can practically realize I'm not the body, one has to tolerate. Tansthitikshasva Bharata. Tolerate for what? For spiritual life, when we execute our spiritual duties, Then, in course of such duties, just like it is told in the Vedas, one has to get up early in the morning and take cold water bath. Now, such bath has to be taken even in the winter season.
+
+### 42. `en_iskcon_0041`  (107 words)
+
+So that is a duty, like this it is told that you have to fast on certain days in a month. If we fast, then hunger pangs will disturb a person, but one has to tolerate, that is called Tapasya. So one has to learn how to tolerate such material dualities in course of performing the spiritual duties. Yam hina vyathayante te purusham purusharshabha sam dukha sukham dhiram. Somritatvaya kalpate. Oh best among men, Arjuna, the person who is not disturbed by happiness and distress and is steady in both is certainly eligible for liberation. So a very important word used here is Amritatvay Kalpate, Amritatva immortality.
+
+### 43. `en_iskcon_0042`  (109 words)
+
+This is the aim of life. So one may ask why so many austerities, tapasyas are recommended, why to take physical discomfort? Because this physical discomfort brings immortality to the soul. There will no longer be need to accept more bodies, material bodies, which come along with concomitant distress of birth, death, old age, and disease. So if we are able to tolerate the happiness and distress, we are neither related by material happiness, nor we are disturbed by material distress, then Amritatvayi Kalpate, such a person becomes eligible. For Amritatva, immortality, yes. So some of the richest people of the world are funding research how to become immortal.
+
+### 44. `en_iskcon_0043`  (103 words)
+
+God is telling here the standard procedure. So the spiritual life is nothing but scientific discipline to attain the stage of immortality and solve all the problems of life. Na sato vidyate bhavo, na bhavo vidyate satah, ubhayorapi drishto antas. Vanayo Tatvadarshibhihi. Those who are seers of the truth have concluded that of the non-existent there is no endurance and of the existent there is no cessation. This seers have concluded by studying the nature of both. Very, very important. Arjuna is crying. So Krishna tells, you should cry for the substance and not for illusion if at all you wish to cry.
+
+### 45. `en_iskcon_0044`  (103 words)
+
+There are many things in the world which we perceive as real but are non-existent. Just like water in the desert. That is actually called mirage. It is illusion. We see water, but water is not there. In a similar fashion, Krishna is telling, before crying, you understand whether that thing is reality or illusion. Thus all the philosophers have always been wondering, what is reality and what is illusion? Am I dreaming right now? Because how Would a person know one is dreaming or not? Even what I am touching, this desk I am touching, this is dream or this is reality?
+
+### 46. `en_iskcon_0045`  (113 words)
+
+What exists and what does not exist? How do we understand that? So here Lord Krishna is quoting the version of the seers of truths. How can we understand what is reality and what is illusion? Krishna has explained just in one verse. Very beautiful verse. Na sato vidyate bhavo na bhavo vidyate satah. Lord Krishna explains, those who are seers of the truth have concluded that of the non-existent there is no endurance. So anything which does not endure does not exist. And what exists, there is no cessation of it. So what does not endure? We see so many animals around us, dog, cat, fish, are they going to endure always?
+
+### 47. `en_iskcon_0046`  (104 words)
+
+No. It means they do not exist. Similarly, we see people around us. We see our family members. Will they always exist? No, they will not endure. It means they are non-existent. They don't exist. Oh, don't exist, but I touch them, I speak with them. How do we understand the meaning of the statement they are non-existent? Then what is it that I'm seeing around me? I'm seeing so many personalities, species. They don't exist means what you are seeing is only dress. Such identities do not exist. Just like a man can take the getup of a woman and perform very nicely.
+
+### 48. `en_iskcon_0047`  (109 words)
+
+on the stage. Similarly, another person can take the dress of a lion. Somebody can take the dress of a tree, but there is no tree on the stage, there is no lion on the stage, there is no woman on the stage. The male members have taken these different dresses. They are completely different from the appearance, those characters on the stage. In a similar fashion, what is there within everybody, either the dog on the street or the fish in the water, in the aquarium? Or within all our family members whom we identify as father, mother, children, male, female, uncle, aunt, friend, enemy, is spirit soul.
+
+### 49. `en_iskcon_0048`  (111 words)
+
+And these are simply different roles which we have taken. Such personalities do not exist. Just like on the stage, A person has taken certain role. He has taken the role of a farmer, but farmer does not exist. He has taken the role of a warrior. Warrior does not exist. It is only the external getup. In a similar fashion, dog does not exist, there is no dog over there. That is why it is told Krishna will explain further in Bhagavad Gita, Pandita samadarshina shunichaiva shopachecha brahmani gavi hastini. A learned man, whether he sees an elephant, dog, or a dog eater, he does not discriminate the external dresses.
+
+### 50. `en_iskcon_0049`  (106 words)
+
+He knows these are only dresses within it, same similar spirit souls are living. So thus a wise person does not discriminate. This is my family, this is enemy, this is human, this is animal. He sees all of them on equal level. He understands these identities do not exist. These are simply the designations given to their dresses. So thus, Arjuna is being informed by Lord Krishna, please do not fall for these roles. Some spirit soul has taken the role of grandfather of your teacher. Actually, these are only roles, such personalities do not exist. So what we see around us are only dresses.
+
+### 51. `en_iskcon_0050`  (101 words)
+
+We are getting attached simply to the dresses. We have never seen the spirit soul which is living inside the dress. So is it sanity to get attracted by the dresses? If a man comes in the dress of a woman and another man gets attracted, oh I want to marry that woman. Oh, that is not woman itself. On the, that is a man actually in the getup of a woman. This is the illusion of this. materialistic society. We get trapped in the external appearance of dresses and not able to see the spirit soul living within the dress.
+
+### 52. `en_iskcon_0051`  (100 words)
+
+So thus Krishna tells Arjuna and of the existent there is no cessation, spirit soul always continues to exist, it will leave this body, enter another body. The spirit soul is reality and these external designations, please. Such personalities never exist. They are only dresses. Avinashi tu tadviddhi yena sarvam idam tatam. Vinasham avyayasyaasya na kashchit kartumarhati. Know that which pervades the entire body is indestructible. No one is able to destroy the imperishable soul. Antavantayime deha nityasyokta shareerinah. Anashino aprameyasya tasmad yudhyasva Bharata. Only the material body of the indestructible, immeasurable, and eternal living entity is subject to destruction.
+
+### 53. `en_iskcon_0052`  (101 words)
+
+Therefore, fight, oh descendant of Bharat. Ya enam vetti hantaram, yashchayanam manyate hatam. Ubhau tau na vijanito, nayam hanti na hanyate. He who thinks that the living entity is the slayer or that he is slain does not understand. One who is in knowledge knows that the self slays not nor is slain. Na jayate mriyate va kadachin. Nayam bhutva bhavita va na bhuyah. Ajo nitya shashvato yam purano. Na hanyate hanyamane shareere. For the soul there is never birth nor death, nor having once been does he ever cease to be. He is unborn, eternal, ever existing, undying and primeval.
+
+### 54. `en_iskcon_0053`  (125 words)
+
+He is not slain when the body is slain. Veda vinashinam nityam ya enam ajamavyayam. Katham sa purushah Partha kam ghatayati hanti kam? Oh Parth, how can a person who knows that the soul is indestructible, Unborn, eternal, and immutable, kill anyone or cause anyone to kill. Vasansi jeernani yatha vihaya navani grihanti naroparani. Tatha shareerani vihay jeernani anyani sanyati navani dehi. As a person puts on new garments, giving up old ones, similarly the soul accepts new material bodies, giving up the old and useless ones. Nayanam chhindanti shastraani, nayanam dahati pavakah. Nachayanam kledayantyapo, na shoshiyati marutah. The soul can never be cut into pieces by any weapon, nor can he be burned by fire, nor moistened by water, nor withered by the wind.
+
+### 55. `en_iskcon_0054`  (120 words)
+
+Achhedyoyam adayoyam akledyoshoshya evacha nitya sarvagatasthanur achaloyam sanatanah This individual soul is unbreakable and insoluble and can neither be burned nor dried. He is everlasting, all pervading, unchangeable, immovable, and eternally the same. So, sometimes people experiment to find out about the soul, this consciousness which animates the body. At times there are experiments where they just want to the body before and after death. In this way they want to understand the mass of the soul. Sometimes they want to use advanced instruments, some radars to capture the motion of the soul, but here Lord Krishna is describing. that the soul cannot be cut, cannot be cut into pieces, cannot be moistened by water, cannot be burned by fire.
+
+### 56. `en_iskcon_0055`  (102 words)
+
+The soul cannot be perceived by any of the material instruments because the soul is beyond material dimension, technically called Turiya. So something which is not belonging to material dimension can never be perceived by scientific experiments. If at all we have to have knowledge of soul, then understanding it from the creator, is the only bonafide way. Here Lord Krishna further explains, it is unbreakable and insoluble, and it is everlasting, all pervading. We are willing to find out whether there is life on other planets. Here it is being told life is there on all planets, soul is all pervading.
+
+### 57. `en_iskcon_0056`  (100 words)
+
+We may not be able to perceive in which form life is existing. But, uh, here it is being explained soul is all pervading, everywhere you'll find the souls. There is life on every planet, and actually science is now beginning to understand even in fire, we find microorganisms. So thus even on sun planet, there is life on every planet, it is full of life, bustling with life. Avyakto yam achintyo yam avikaryo yam uchyate. Tasmadevam viditvainam nanushochitumarhasi. It is said that the soul is invisible, inconceivable, immutable, and unchangeable. Knowing this, you should not grieve for the body.
+
+### 58. `en_iskcon_0057`  (117 words)
+
+Another important word used here is achintyoyam, means inconceivable. As a dog's brain cannot understand our science and technology, similarly the creator Lord Krishna is telling, our brains are not designed, our minds are not designed. to conceive soul. Soul is inconceivable to material minds. So thus, how much ever we try, We will not be able to conceive how something is always existing and it cannot be broken into pieces and the same small soul. It animates such a huge body of that of whales and elephants and that of even small ants and mosquitoes. How it becomes all pervading, how it enters the body, how it leaves the body, it is very difficult to conceive.
+
+### 59. `en_iskcon_0058`  (133 words)
+
+So if we want to have knowledge, understanding from the creator is the only way. Ath chayanam nitya jatam, nityam va manyase mritam. Tathapi tvam mahabaho nayanam shochitumarhasi. If however you think that the soul is perpetually born and always dies, still you have no reason to lament, O mighty armed. Now Krishna is speaking from the perspective of an atheist. As soul is inconceivable, it might be difficult unless somebody is austere or devoted. It is very difficult to understand the subject matter of soul. But even if a person is not able to understand the eternal existence of soul, Lord Krishna is telling if you think this Consciousness is function of matter, under certain mature material combination the body gives rise to consciousness, then also you have no reason to lament.
+
+### 60. `en_iskcon_0059`  (116 words)
+
+Because if everything is just chemical, then who cries for loss of some chemicals? Then all your relatives, they are nothing but chemical combinations. So who cries for loss of chemicals? So thus Krishna is telling, in any case you should not lament. Jatasya hi dhruvo mrityu, dhruvam janma mritasya cha, tasmad apariharyarthe natvam shochitumarhasi. For one who has taken his birth, death is certain. And for one who is dead, birth is certain. Therefore, in the unavoidable discharge of your duty, you should not lament. Avyaktadini Bhutani Vyaktam Adhyani Bharata avyakta nidhananyeva tatra ka paridevana All created beings are unmanifest in their beginning, manifest in their interim state, and unmanifest again when they are annihilated.
+
+### 61. `en_iskcon_0060`  (102 words)
+
+So what need is there for lamentation? Now Krishna is presenting both perspectives. If you do not believe in the existence of eternal existence of soul, and such philosophers were there even 5000 years ago. They were called Vaibhashikas or Lokayatikas. Such philosophers would say that consciousness is the result of chemical combination. So anyway, nobody cries for loss of chemicals. And just like the children, they make some sand castles on the beach. And then they dismantle it. Nobody cries for the loss of castle. In a similar fashion, these bodies are nothing but castles of earth which has combined together.
+
+### 62. `en_iskcon_0061`  (102 words)
+
+So death is nothing but dismantling of this castle, why should you cry for it? And if at all you believe in the eternal existence of soul, then the soul was always existing. It took this dress and then again it has left the dress. Again there is no cause of lamentation. In other words, Krishna is telling no thoughtful person. will lament in life. Lamentation, distress is only meant for people who are ignorant. Brahma bhuta prasannatma na shochati na kankshati. Shochati, lamentation is not meant for people who are educated in the science of self. Prasannatma, they are always happy.
+
+### 63. `en_iskcon_0062`  (119 words)
+
+So thus happiness does not lie in working very hard for material success. Unfortunately, in the absence of this guidance, Given by Lord, even the best brains of the society are spoiling their time, thinking material adjustments will make us happy. No, we are spirit soul, when we become callous for the material adjustments, and rise to the platform of self-realization, then only there is freedom from lamentation, otherwise it is going to continue. Aashcharyavat pashyati kashchidenam. Aashcharyavat vadati tathaiva chanyah. Aashcharyavachayanam anya shrunoti shrutvapi enam vedanachiva kashchet. Some look on the soul as amazing, some describe him as amazing, and some hear of his as amazing, while others even after hearing about him cannot understand him at all.
+
+### 64. `en_iskcon_0063`  (104 words)
+
+Just like a small child who is always busy with his toys, cannot understand the function of the government, the economic policies, and so many advanced concepts. Similarly, people who are very fond of Materialistic enjoyment. Actually, there is no difference. Small child is crying for and hankering for toy car and a grown-up man, so-called educated man is hankering for a big car. What is the difference? Car is big or small? Both are made of matter, material ingredients, thus any material desire is but childish. But childish. A child becomes very sad when he sees his favorite character dying in the movie.
+
+### 65. `en_iskcon_0064`  (100 words)
+
+Similarly, if we also cry seeing death in this world which are nothing but movie characters, this life is but a movie, soul has taken a role for a certain time, then such situation. Such behavior is not expected from wise and learned people. So anybody who has any material desire, I want a big house, I want car, I want so-called success or so-called people, actually, This is only ignorance, it is childish. So as a child is not expected to understand advanced subject matters, people who are very much attached on the material platform cannot understand about soul.
+
+### 66. `en_iskcon_0065`  (107 words)
+
+And some who are able to have some understanding, They are also not able to have perfect understanding of the soul. They mistake soul to be the same as super soul. So the Vedas are mentioning Nityo Nityanam Chetanas Chetananam Atmasya Jantor Mihito Guhayam. There are two souls in the Guhayam in the heart, Atma and Paramatma. So if at all they are able to understand that I am soul different from body, they start thinking I am only Paramatma, I am God. And there are some philosophers who tell you are God. Don't realize you are God. This is not recommended here as per Bhagavad Gita.
+
+### 67. `en_iskcon_0066`  (116 words)
+
+Nitya Nityanam Nityanam plural infinitesimal living entities will continue. And all their desires will be supplied by Nityaha, one infinite soul. Lord Krishna has told the soul cannot be cut into pieces, Nayanam chindanti shastrani, it is it cannot be broken. So it is not that from one soul small souls have come up, again it will merge, it will become God or that you are God. So all these are misunderstandings. created because of material desires. Either desire to enjoy matter or desire to leave matter for attaining liberation. Both are different formats of material desires. So when a person desires the satisfaction of God, then he's able to have perfect understanding of spiritual life.
+
+### 68. `en_iskcon_0067`  (114 words)
+
+So Krishna is telling here, others cannot understand about the soul even after hearing a lot. Dehi nityamavadhyoyam dehe sarvasya Bharata. Tasmāt sarvāṇi bhūtāni natvam śocitumarhasi. Oh, descendant of Bharat, he who dwells in this body is eternal and can never be slain. Therefore, you need not grieve for any creature. This is the conclusion of Lord Krishna about the subject matter of soul. Lord Krishna presented both the perspective, if at all you are thoughtful, even though you are atheist, you should not lament. If for you, everything is chemical combination, who cries for loss of chemicals? And if you understand you are wise, you understand eternal soul, again why you are lamenting?
+
+### 69. `en_iskcon_0068`  (106 words)
+
+But Lord Krishna being God, he needs to give proper knowledge about soul, he explains. Please understand the conclusion is, he who dwells in the body is eternal and can never be slain. Dehi nityam avadhyoayam. Deha means body, dehi means one who lives in the body. One who lives in the body can never be destroyed. This is a great revelation and a person should get very much fascinated by this knowledge. Oh, I am eternal, then who was I in my previous life? What am I going to become in the next life? We all understand, oh, nature, nature does, yes, nature does everything.
+
+### 70. `en_iskcon_0069`  (106 words)
+
+Nature is going to give us next body, but we also understand nature works strictly as per laws. So which are those laws which are governing my next body? Now everybody is so very much cautious of which school I should take admission in, which college I should have, which business I should launch. Which technology is going to come? Let me keep myself updated, otherwise I'll be out of business. We are going to be out of body. Where is preparation about next life? This is very important subject matter, a great revelation, and this is just the beginning of the knowledge of Bhagavad Gita.
+
+### 71. `en_iskcon_0070`  (107 words)
+
+Understand that we are eternal. So Arjuna was putting forth various reasons not to fight. First of all, Arjuna was telling, I do not think how any good can happen. It will cause us great distress and lamentation. So Krishna has given argument of soul different from body. to avoid all the lamentation. Arjuna gave another argument of not fighting. He's telling this is against my duty, against Dharma. Now Krishna is going to give arguments to Arjuna how fighting is his duty and it is not against Dharma. Even though He's supposed to kill his elderly respectable relatives. Swadharma api cha vekshya navikampitumarhasi dharmayadhi yuddhat shreyonyat.
+
+### 72. `en_iskcon_0071`  (122 words)
+
+Kshatriyasya na vidyate. Considering your specific duty as a Kshatriya, you should know that there is no better engagement for you than fighting on religious principles, and so there is no need for hesitation. Dharma means intrinsic behavior or characteristic which cannot be separated. It has come from Dhri Dhatu. Dhri means to capture. Dharma means something which maintains one's existence. Just like sweetness is the dharma of sugar. Sugar cannot be bitter. Heat is the dharma of fire. In a similar fashion, different dharma is given to living entities who are absorbed in the bodily concept of life. their intrinsic behavior which they are never supposed to leave, using that way, performing duties in that fashion, they should maintain their existence.
+
+### 73. `en_iskcon_0072`  (115 words)
+
+Why such duties are given? So that eventually they can come to the platform of self-realization. Just like the dharma for a young student is not to carry calculator in the examination hall. And the dharma for an advanced student is to carry, one must carry a scientific calculator in the examination. Similarly, for Kshatriya, it is not allowed to be non-violent. And for Brahmana, it is not allowed to be violent. He must always remain non-violent. So something which is dharma for one person becomes adharma for another. So just like the child is gradually trained, in a similar fashion, the consciousness is given chance for gradual elevation to come to its original state.
+
+### 74. `en_iskcon_0073`  (105 words)
+
+Thus Arjuna was having body of a Kshatriya. So Krishna is telling Arjuna, please stick to your Swadharma. What is your Swadharma? As a Kshatriya, your specific duty is to fight. So even though there are inconveniences, you should tolerate. Because if you do not stick to your dharma, you will not be able to attain self-realization. And only by self-realization, you can attain immortality. Ya drichchaya choppannam swargadwaram apavritam sukhinakshatriya partha labhante yuddhamidrusham O Parth, happy are the Kshatriyas, to whom such fighting opportunities come unsought, opening for them the doors of the heavenly planets. Atachetvam imam dharmaim. Athachetvam imam dharmayam sangramam na karishyasi.
+
+### 75. `en_iskcon_0074`  (105 words)
+
+Tatha swadharma keertim cha hitva papam avapsyasi. If, however, you do not fight this religious war, then you will certainly incur sins for neglecting your duties and thus lose your reputation as a fighter. Akirtim chapi bhutani kathayishyanti tevyayam. Sambhavitasya cha kirti maranad atirichyate. People will always speak of your infamy and for one who has been honored. Dishonor is worse than death. Bhayadrinad uparatam mansayante tvam maharathah. Yesham chatvam bahumato bhutva yasyasi laghavam. The great generals who have highly esteemed your name and fame will think that you have left the battlefield out of fear only and thus they will consider you a coward.
+
+### 76. `en_iskcon_0075`  (102 words)
+
+Avachya vadashabhoon vadishyanti tavahitah. Nindantastav samarthyam tato dukhtaram nukim. Your enemies will describe you in many unkind words and scorn your ability. What could be more painful for you? Hato va prapsyasi swargam, jitva va bhokshyase mahim, tasmaduttistha kaunteya. Yuddhaya krita nishchayah. O son of Kunti, either you will be killed on the battlefield and attain the heavenly planets, or you will conquer and enjoy the earthly kingdom. Therefore, get up and fight with determination. So if a Kshatriya dies fighting on the battlefield facing his enemy, then he's immediately promoted to planets where the standard of living is very, very high.
+
+### 77. `en_iskcon_0076`  (117 words)
+
+So Arjuna is being told, if you die, then you will go to heaven. If you live, you are victorious. Previous then you will enjoy the earthly kingdom. Thus, by all means, you should fight. Sukha dukhe samekritva labha labhou jaya jayau. Tato yuddhaya yujyasva naivam papam avapsyasi. Do thou fight for the sake of fighting, without considering happiness or distress, loss or gain, victory or defeat, and by so doing you shall never incur sin. So Arjuna was fearful of committing sins, breaking the laws of nature. So we should be very, very careful of not committing sins. All the sufferings that we have is only because of breaking the laws of nature that we have.
+
+### 78. `en_iskcon_0077`  (136 words)
+
+If we think, oh, now this Uh, some virus is there in the world, it is creating problem. Let me now fix it with some technology. With technology we might be able to fix the virus, but if we have broken the laws of nature more, more viruses are going to attack us. So if you break the laws of nature, we suffer. Bad people around us, bad situations around us, bad governance, these are only instruments. These people do not know. So we should be very, very careful not to commit sins. And here Lord Krishna is telling Arjuna, If you fight simply for the sake of fighting as a matter of duty, without getting attached to the results, without caring for victory or gain, profit or loss, then such an action never incurs sin.
+
+### 79. `en_iskcon_0078`  (118 words)
+
+So do not worry, in this attitude you please fight. Esha te abhihita sankhye buddhir yoget vimamshinu. Buddhya yukto yaya partha karma bandham prahasayasi. Thus far I have declared to you the analytical knowledge of Sankhya philosophy. Now listen to the knowledge of yoga whereby one works without fruitive result. O son of Pritha, When you act by such intelligence, you can free yourself from the bondage of works. Sankhya means analysis. Analytical study of body and spirit soul has been carried out very nicely by Lord Krishna. And this is what Lord Krishna is explaining as Sankhya. Now after very nice analysis of one's existence completely different from the body, Lord Krishna is explaining the second level.
+
+### 80. `en_iskcon_0079`  (103 words)
+
+It is not sufficient just to know that I am not the body. If we understand I am not the body, I will not be affected by the distress of the body, but I do not want just freedom from stress and miseries, I want positive happiness and pleasure in life. So how can the soul have positive pleasure in life, happiness in life, when the soul engages in the service of the super soul, gets connected with the super soul. And that is called yoga. Yoga word is very famous, but people do not know what is the actual meaning of yoga.
+
+### 81. `en_iskcon_0080`  (121 words)
+
+We think throwing hands and legs around in the air, that is called yoga. The word yoga actually has come from yuj dhatu. Yuj means to link or to connect. So the process of linking the individual soul with the super soul, God, is called yoga. What is this linking? It is not any mechanical linking, just like men and women get linked in a relationship. So we have a relationship with God, we have forgotten that relationship. So when a person is able to revive his relationship, once we are out of this bodily concept of life, by following the spiritual discipline, under the guidance of a bonafide spiritual master, our memory is revived of our eternal relationship with God.
+
+### 82. `en_iskcon_0081`  (116 words)
+
+God is eternal, we are eternal, and our relationship is also eternal. So when we are able to revive that relationship and engage in the service of God in that relationship, then that is called yoga. Now here, there are various kinds of yoga systems described in the Bhagavad Gita. Lord Krishna is explaining a very advanced form of yoga practice which is called Buddhi Yoga. Yoga is a ladder. Not everyone is expected to be on the top rung of the ladder. So as per the capacity of individuals. Different rungs, different processes of yoga have been recommended. But a person should not get stuck at any of the level, one should keep on progressing.
+
+### 83. `en_iskcon_0082`  (111 words)
+
+Karma yoga, dhyan yoga, raj yoga, ashtanga yoga, finally a person should come to the level of bhakti yoga. which is a topmost yoga system, which is also known by the name Buddhi Yoga. Buddhi Yoga means doing yoga not by changing your external circumstances. as the yogas and asanas, yogasanas and the pranayams which are part of Hatha yoga or Ashtanga yoga which is normally taken as yoga. In that you have to do external adjustments. You have to leave your house, family, go to the Himalayas or sacred place, pure place, and then sit there alone, stop your eating, stop your activities, some external arrangements have to be done.
+
+### 84. `en_iskcon_0083`  (122 words)
+
+But this Buddhi Yoga is such an advanced process. There is no need of any external arrangement. Using the same activity, you are an educator, you can continue your profession of educator. You are a businessman, you can continue being a businessman. Arjun was a fighter. He could continue being a fighter at the same time. Do yoga, establish your relationship with the supreme soul. How simply by manipulating your intelligence, this is called Buddhi Yoga. So this very advanced form of yoga, Lord Krishna will now explain to Arjuna. And although this is most advanced, this is most practical also, because being situated in one's own position, in one's own occupational duty, one can perform and attain success of spiritual life.
+
+### 85. `en_iskcon_0084`  (111 words)
+
+So what is this yoga? Let us try to hear very, very carefully. Neha Vikram Nashosti Pratyavayo Na Vidyate. Swalpamapyasya Dharmasya Trayate Mahato Bhayat. In this endeavor, there is no loss or diminution, and little advancement on this path can protect one from the most dangerous type of fear. So Lord Krishna explains, if you follow this process of yoga, suppose you are able to finish only 5% in this life, there is no loss. Next life you will begin from that point, 5%. In material world, it is not possible that you finish first 2 years of your college in this life and next life you continue from third year.
+
+### 86. `en_iskcon_0085`  (104 words)
+
+It is not possible. But in This process of Buddhi Yoga, Neha Vikram Nashasti, there is no loss or diminution from the same point you can continue in next life. And keep on continuing till you reach perfection. And it is told, swalpamapyasya dharmasya, even though you have just a small beginning in this path, it saves you from the greatest danger. What is the greatest danger? People think, oh if I lose my job, that is great danger. If I lose my family members, that is great danger. Yes, these are dangerous situations, but anyway we are going to lose all these things.
+
+### 87. `en_iskcon_0086`  (108 words)
+
+And after losing all our relatives, all the money, name, fame, position that we have, If we degrade to lower species of life, that is the greatest danger, most serious fear. So now there is a lot of talk about data, data colonization. We should not give our data to others. We will lose our independence. People care a lot about their independence. The Independence Day is a national holiday, it is celebrated. People take pride in independence, nobody wants to become dependent. Everyone wants equal rights. But what if after human form of life, we degrade to animal species, we become dog, finish, all independence is gone.
+
+### 88. `en_iskcon_0087`  (123 words)
+
+We become domestic animal, all independence is gone. And if we don't become domestic animal, life is much more horrible. Always we are fearful, somebody can kill me, somebody can attack me suddenly. Fearing, fearing, ultimately somebody will kill, attack and we are finished. So this is the most dangerous fear. Just imagine you are there out and there are all killers around you, anybody can come and kill you anytime. How your life would be so full of fear. This is the greatest fear of life. If I degrade to animal species, unfortunately there is no knowledge. Just like children, we are attached to materialistic pursuits and we are not able to think that the nature has given me this human body.
+
+### 89. `en_iskcon_0088`  (126 words)
+
+Some species have got animal bodies also. If I become animal, how horrible my life would be. But if we perform Buddhi Yoga, even a small beginning saves from degrading to animal species. A human form is guaranteed and a person begins from the point he stopped in the previous life. Vyavasaayaatmika buddhir ekeha kurunandana Bahushakhahyanantascha Buddhayo vyavasayina. Those who are on this path are resolute in purpose and their aim is one. O beloved child of the Kurus, the intelligence of those who are irresolute is many branched. So those who are following this Buddhi Yoga process, they are fixed up because they know the aim of life, but not everyone is able to appreciate that this is the aim of life, the highest activity.
+
+### 90. `en_iskcon_0089`  (140 words)
+
+And even the Vedic scholars are not able to appreciate this. Why they are not able to understand? Lord Krishna explains. Yamimam pushpitam vacham pravadanti avipashchitah Vedavadarata Partha Nanyad astiti vadinah Kamatma na swarg para, janma karma phala prada, kriya vishesha bahula. Bhog Aishwarya Gatim Prati. Men of small knowledge are very much attached to the flowery words of the Vedas, which recommend various fruitive activities for elevation to heavenly planets, resultant good birth, power and so forth. Being desirous of sense gratification and opulent life, they say that there is nothing more than this. Bhogeshwarya Prasaktanam Tayaparita Chetasam Vyavasayatmika Buddhi Samadhau na vidhiyate In the minds of those who are too attached to sense enjoyment and material opulence, and who are bewildered by such things, the resolute determination of devotional service to the supreme Lord does not take place.
+
+### 91. `en_iskcon_0090`  (107 words)
+
+Traigunya vishaya veda, Nistraigunyo bhavarjuna, Nirdvandvo nitya sattvastho. Niryoga Kshema Atmavaan. The Vedas mainly deal with the subject, subject of the three modes of material nature. Rise above these modes. The Vedas mainly deal with the subject of the three modes of material nature. Rise above these modes, oh Arjuna. Be transcendental to all of them. Be free from all dualities and from all anxieties for gain and safety. and be established in the self. Veda vada rata partha na anyad asti iti vadinah. People get trapped in the fruitive activity segment of the Vedas called Karmakanda. Because generally people in this world are having material desires.
+
+### 92. `en_iskcon_0091`  (100 words)
+
+So Vedas, in order to gradually bring them to the point of surrender to Supreme Lord, In order to increase their faith in the Vedic authority, promise them material benefits. You do this sacrifice, this charity, this tapasya, austerity and you will get such wisdom, such heroic power, such fame, and very nice life partner, good children. And because people are having material desires, they get stuck in following these things of the Vedas. Thus many people ask why Krishna's name is not much mentioned. In Rig, Yaju, Sama and Atharva Vedas, but that of various Devatas are more mentioned.
+
+### 93. `en_iskcon_0092`  (129 words)
+
+Yes, that is fact. Krishna's name is mentioned but not much because Vedas mainly talk of Karma Kanda portion. Fruitive activity, for that there is no need of disturbing Supreme Lord. And you can approach other devatas and get your desires fulfilled. Actually even for that material desires also we should approach supreme lord because he's supreme power. But people are not interested in the supreme lord. And thus Vedas tell it's all right. You have no interest in supreme lord. You have only material Material desires approach these various other devatas. But when a person is even because when he follows this karmakanda portion, material desires will be fulfilled, but even after following and fulfillment of all the material aspirations, the contentment of the heart does not come.
+
+### 94. `en_iskcon_0093`  (101 words)
+
+So then a person is expected to come to next level of knowledge that is called the Gyanakand which is mentioned in the Upanishads that is called Vedanta. It is at that point that Lord Krishna is telling Arjuna to come to at least. So mostly people tell Vedavada Rata Partha, they tell, oh there is nothing more than religious rituals. And you do this ceremony, do this fasting and you visit temple once in a while and that's all what is religion. I am very religious man. So Krishna is telling, please do not get stuck in these religious formalities.
+
+### 95. `en_iskcon_0094`  (107 words)
+
+and rise to Vedanta, the end of the Vedic knowledge, the knowledge of the Upanishads, spiritual inquiry. And Krishna is telling very importantly, nirdvandvo nitya sattvastho niryogakshema atmavan. The whole world is bothered about Gain and safety. I want to gain more money, I want to gain more fame, recognition, respect, property in the society. Or people are worried about safety, once you have gained it, I may not lose it. But Krishna is telling be free from all anxieties about gain and safety. Then If I simply care, yes, I will care about spiritual life, but then at least we have to bother about material affairs.
+
+### 96. `en_iskcon_0095`  (105 words)
+
+If I don't think about my gain and safety, then I will be in distress. This is a general understanding, but Krishna is telling no. Why no, let us see the next important verse. Yavanarthodpane sarvatah samplutodake. Tavan Sarveshu Vedeshu Brahmanasya Vijanataha. All purposes that are served by the small pond can at once be served by the great reservoirs of water. Similarly, All the purposes of the Vedas can be served to one who knows the purpose behind them. So in India, it was mainly full of villages. Even now, mainly the population lives in villages, but earlier the cities were very, very less.
+
+### 97. `en_iskcon_0096`  (104 words)
+
+Hastinapur, Dwarka, very less cities. Mainly it was village. Because people were knowing we are just travelers, instead of building a huge palatial apartment, let me save my efforts for spiritual salvation. So they would live a simple life in village and how would they arrange water? There were no boring and modern supplies as we have now. So there were wells. And there are different wells for different purposes. There would be one well in which you can take bath. From another well, you can take water for drinking purpose. Then there is third well for washing clothes, fourth well for washing dishes.
+
+### 98. `en_iskcon_0097`  (105 words)
+
+In this way, there would be at least half a dozen wells in villages. But if you have river in the village, then there is no need of well. Then all the actions can, all the activities can be carried out on the river bank. You can wash clothes there, you can take bath, you can fetch water for drinking, because in flowing water there is no contamination, but in static water of well, there can be contamination. So here it is being explained, if you have a river in your village, a big water reservoir, then there is no need of having small wells.
+
+### 99. `en_iskcon_0098`  (102 words)
+
+There is no need of digging, making such a great effort. So, similarly, a person who is a brahmana, brahmana means Brahma janati iti brahmana, who is a self-realized soul, who knows the purpose behind all the Vedas, then he need not follow other religious formalities for gain and safety. So what is the purpose of the Vedas? That Lord Krishna will explain in the Bhagavad Gita itself, 15th chapter. Vedaischa sarvair aham eva vedyo vedanta krit vedavid eva chaham. From all the Vedas, I am to be known. So ultimately the end of knowledge is to understand the science of God.
+
+### 100. `en_iskcon_0099`  (103 words)
+
+So a person who understands Krishna, who understands God, then there is no need of following any religious formalities or worrying about gain and safety. So this process of Buddhi yoga is so nice, Lord Krishna is explaining, that automatically yoga and kshema will happen. Whatever gains are required for your comfortable living, those gains will be arranged. And whatever requires to be protected for a comfortable life, That protection will also follow. This is Buddhi Yoga. So people think if I follow spiritual life, I will suffer in the material life. I will have material discomfort. No. Spiritual life is all inclusive.
+
+### 101. `en_iskcon_0100`  (110 words)
+
+If we follow Buddhi Yoga, then not just we have spiritual advancement, but also all the material comforts follow automatically by the grace of the Supreme Lord. How is it so? Lord Krishna will explain. Karmanye vadhikaraste ma phaleshu kadachana. Ma karma phal heturbhur, mate sangostva karmani. You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself to be the cause of the results of your activities and never be attached to not doing your duty. So this is Buddhi Yoga, very important and well-known verse. But people are missing the crux, do not understand the actual import.
+
+### 102. `en_iskcon_0101`  (114 words)
+
+So here Lord Krishna is telling, Karmanyeva adhikarate. You have a right to perform your duty, but you do not have adhikara ma phaleshu on the result of the activity. So somebody will tell, oh really, I have a right to do my job, but I do not have the result right on result, right on salary. Yes, this is the right understanding. We have right to do our job, but we do not have right upon the result which we are generating out of our activity. How is it so? Why we do not have right? So actually it is simple understanding, Buddhi Yoga, we need to have little intelligence to understand this.
+
+### 103. `en_iskcon_0102`  (116 words)
+
+If we see in the world around us, there are so many species. We have various plants and trees which produce grains and fruits. Suppose, The plant in the field tells, I have been standing here braving the heat, cold, and the sunlight, and I have produced these grains. So they belong to me. I will not give it to humans or to other animals. Then humans and animals will die. If the mango tree tells, this mango belongs to me, I have produced it, I will not give it to anybody, what shall we eat? If the tree does not give its leaves, it barks, its wood to us, how shall we make our houses?
+
+### 104. `en_iskcon_0103`  (105 words)
+
+So we have to understand there is very nice symbiotic arrangement in the nature. Just like the workers in a factory. Say somebody is working in a mobile factory. So the training given to manufacture the mobile handsets, the required technology, equipments and the materials. All have been provided by the proprietor of the firm. So the worker cannot tell I have manufactured this handset so I will carry it home. He has no right over the result of his activity. It belongs to the proprietor. In a similar fashion, whatever actions we are doing from this body, this body does not belong to us.
+
+### 105. `en_iskcon_0104`  (117 words)
+
+We have not manufactured this brain, this intelligence. So the skills, the body, and the matter that we manipulate to produce some effect in this world, that matter also we have not created. So the ingredients, the material, the training, the body, the brain, intelligence, everything is given by God. So actually the result belongs to God. Ma phaleshu kadachana, we do not have right upon the result. So God has a plan to use it for the welfare of all the other species. So if at all we are not able to understand that it belongs to God, we can use it, that also Krishna recommends in the 12th chapter, use it for general social purpose.
+
+### 106. `en_iskcon_0105`  (104 words)
+
+for so-called pious activities and charity, but you are not entitled to enjoy everything for yourself. Unfortunately, now what is happening in society, we think whatever I earn, it belongs to me, I will enjoy it. Whatever property I have made that belongs to me, I will enjoy it. This is ignorance. We are disturbing the laws of nature. If the plants and trees do not give us their produce, then there is no civilization. But human being, human being has got some freedom which he should use to engage in the service of God. He uses that freedom to become independent of God.
+
+### 107. `en_iskcon_0106`  (109 words)
+
+So this is very bad mentality. So thus Lord Krishna is telling, you have right to do your duty, but you're not entitled for the results. Then how will I maintain myself? Yes, for maintenance, we can take it. For maintaining, keeping body and soul together, That much resources I can enjoy and apart from that it should be used in the service of God. That is not mentioned in this verse because this is the beginning. Lord Krishna explains that in further verses. Lord Krishna explains. Yat karoshi, yat juhoshi, yat dadasi, tat kurush madarpanam. Whatever you do, offer the result to me because I am the proprietor.
+
+### 108. `en_iskcon_0107`  (118 words)
+
+That Lord Krishna gradually will reveal his identity. Aham sarvasya prabho matta sarvam pravartate. I am the supreme proprietor. Everything belongs to me. Then Lord Krishna tells, ma karma phal heturbhur, do not become the cause of your activity. If I do any activity for my sense pleasure, then I become the cause of that activity, and then that activity creates karma, bondage. If I do, let's say good activity, I have helped some people, done lot of charity, then if I did this charity for my pleasure, Oh yes, I will enjoy name and fame without keeping the pleasure of God in mind, not under the direction of God, then the money will come back to us.
+
+### 109. `en_iskcon_0108`  (107 words)
+
+We have to take one more birth to get back that money. And as soon as we take birth, Then the pains of birth, staying in the womb of mother, so many diseases, old age and death, they also follow. Thus we get trapped in the bondage of action and reaction. So thus it is told, Maa Karmaphala Heturbhur, do not do any activity for Your pleasure. You feel good in helping others. You feel good in tasting some nice food stuff. So I'll work hard so that I can eat nicely. You feel good in showing off your property to others so you are working, no.
+
+### 110. `en_iskcon_0109`  (105 words)
+
+If for your feeling good you are doing any activity, then you become the cause of the activity and you have to face the result of the action. Just like a soldier, soldier may kill many many people, but if he has done this killing under the direction of King, then he will not be given any punishment. But without the direction of king or government, the soldier kills enemy without order, even that is considered a sin. How you can kill even enemy without my order? Then he will be punished. So for his own enjoyment, on his own, he cannot kill even enemy.
+
+### 111. `en_iskcon_0110`  (106 words)
+
+But on the direction of the government, the soldier can do unlimited killings. and there would be no sin incurred for that. Similar case happens with us also. On our own, if we do any activity good or bad, we get trapped in the cycle of karma. But if we do that activity only for the satisfaction of God, then we are free from the bondage of action and reaction. Now one may tell, oh if nothing belongs to me, uh, the result of my activity do not belong to me, then why to act? So here it is being told, Ma te sang vastva karmani.
+
+### 112. `en_iskcon_0111`  (127 words)
+
+No, you cannot Do not be attached to not doing your duty because not doing duty is sinful. Yogasthaha kuru karmani sangam tyaktva dhananjaya siddhya siddhyo samo bhutva Samatvam yoga uchyate. Be steadfast in yoga, oh Arjuna, perform your duty and abandon all attachment to success or failure. Such evenness of mind is called yoga. Siddhi asiddhi. We do any activity because we want to see ourselves successful. We rejoice success, and we become very much disturbed if we fail in our attempts. So this is not yoga. These kinds of activities create bondage. A Yogi can also do the same activity of studying, doing business, doing job, or any other service, but how a Yogi acts, Without attachment to success or failure, Siddhi Asiddhi Samah Bhutva.
+
+### 113. `en_iskcon_0112`  (100 words)
+
+A person should not care just like a soldier should not think, oh why I am being ordered to fight, will I win the war or I will lose the battle? No. The soldier is ordered, you go and fight, the soldier should march ahead and fight without caring for profit and loss. This is called a Yogi. A Yogi understands what is the desire of God and he simply acts for the pleasure of God without caring for success or failure in that activity. This is called yoga, such equanimity is yoga. Durena hi avaram karma buddhi yoga dhananjaya.
+
+### 114. `en_iskcon_0113`  (103 words)
+
+Buddhau sharanam anvichcha kripana phala hetavaha. Oh Dhananjaya, rid yourself of all fruitive activities by devotional service and surrender fully to that consciousness. Those who want to enjoy the fruits of their work are Misers. So Krishna is telling Avaram, Avaram means abominable karma. So this fruitive activity, doing any activity so that you can enjoy the result, it is Avaram. God is telling it is abominable because it is stealing. It is just like a worker. Creating any product in the factory so that he can use it for his own self, that is stealing. That is abominable, that is criminal mentality.
+
+### 115. `en_iskcon_0114`  (107 words)
+
+So God has given everything, everything should be offered simply to God. God is a person. This is the revelation of Bhagavad Gita. That is why God is called Bhagwan, a person. And why this person is so demanding, give it to me, give it to me. No, actually he's not demanding. This demand is not of an autocratic ruler. This demand is that of an eternal lover. A lover expects, please do it for me, give something to me to eat. That gives pleasure in the relationship. Thus we will find further in Bhagavad Gita, Krishna is telling, Patram pushpam phalam toyam yo me bhaktaya prayacchati.
+
+### 116. `en_iskcon_0115`  (119 words)
+
+If you are an ordinary person, you are not very rich person. Uh, at least you can grow a plant in your house that everybody can do and offer the leaf of that plant to me. Is it a very difficult task? You cannot even do that, at least you have water in your house. Toyam, please offer that water to me. But Bhaktya, please do it with love. Why Krishna is telling this? Because Krishna knows unless we engage ourselves in this loving relationship with God, we will never be satisfied. And anyway we are doing this activity, nobody works in this world very hard so that he can enjoy all the money and prosperity that he has.
+
+### 117. `en_iskcon_0116`  (124 words)
+
+He uses those things for others. He uses them for the people, for his family members, but unless When one uses it in the service of God, there is no satisfaction of the heart. A person works very hard for the family, the family is never satisfied. They ask what you have done for us. And the person, poor fellow, entire life has worked only for the family, for his till his best capacity. But they complain what you have done. So neither the object of service is satisfied, neither the person who is rendering service is satisfied. So when the family is not there, especially in the western countries, people have dogs, pets, and they want to engage their money in their service.
+
+### 118. `en_iskcon_0117`  (104 words)
+
+Sometimes they give all the property to dogs. Because a person wants love, loving reciprocation in their life. So Krishna knows we living entities can never be satisfied unless we revive our loving relationship with God. So Krishna is not in need of anything, he has everything. So when we offer the result of our activity to God, then what happens? This loving relationship is established, and then that satisfies us so much, we do not have any material desires. And when we do not have material desires, the nature is designed only to fulfill our desires, then we will not have material body.
+
+### 119. `en_iskcon_0118`  (107 words)
+
+And if you do not have material body, we have a spiritual body, and we go to the place where the personality of God is living, that place is called Vaikuntha. Padam gacchanti anamayam, that Krishna will explain here. So this is called broad mentality. This is called a loving relationship, liberal mindedness. Krishna has given me everything, let me work just for Krishna. And other mentality, let me work so that I can Enjoy, I can steal personally what I produce. Neither we can, okay, no, no, I don't use it for myself. I work very hard so that I can do charity and help others.
+
+### 120. `en_iskcon_0119`  (105 words)
+
+No, sir. You cannot do charity of stolen goods, that is also a crime. Everything belongs to God should be used only for God. Now again, please do not think service of God is exclusive of service to other living entities. We are part and parcel of God, Krishna will explain. So service of God automatically, yavanarthodupane sarvatha sampluto dake. So please do not think service of God will exclude service of family members, service of nations, service of other people, animals. Rather, all these living entities are automatically served. It is not that when we love God, we start hating our family members, no.
+
+### 121. `en_iskcon_0120`  (133 words)
+
+Real love for the family arises when we love God, otherwise nobody can love even family. That is why even among the most closest relationship, husband and wife, there is separation, there are so many divorces because people are interested in their own pleasure, personal pleasure. But when we understand, when we love God, when we know my family members are also part and parcel of God, we cannot love a person and hit. his finger. So we understand if I love God, they are also part of God, inseparable part of God. So how can I hate them? So love of God, If it is brought in our life, then a person actually increases one love for his family members, increases his love for all the species, and universal welfare happens automatically.
+
+### 122. `en_iskcon_0121`  (116 words)
+
+If the family members don't behave nicely, he understands, oh, still I should behave nicely because they are part and parcel of God. They may be in ignorance. They are offending me, but I know that they are part and parcel of God, how can I hurt them? So thus, all the relationships are automatically improved and a person's all duties are automatically fulfilled. Just like we do Prasad distribution. Sometimes people take it as poor feeding. So that is not poor feeding. We are distributing Prasadam, the remnants of God to other living entities. By taking this rich and poor without discrimination, they all advance in their knowledge of God, in their love of God.
+
+### 123. `en_iskcon_0122`  (107 words)
+
+But those people who are poor and hungry, they are also fed automatically. So social service automatically is taken care. So thus, if a person simply realizes one's duties towards God, all other duties are automatically fulfilled. But if one forgets his duty towards God, then no sir, you cannot do charity with stolen goods. Your object of charity will not be satisfied, neither will you be satisfied. So Krishna is telling, avaram karma, karpana phal hetva, do not become a miser in this human form of life. You can enjoy some temporary happiness by enjoying the results of your work, but then you are a miser.
+
+### 124. `en_iskcon_0123`  (100 words)
+
+You do not know if you simply offer that to God, instead of using it for your own self, you can attain unlimited happiness for which you are hankering and you can attain immortality. Buddhi yukto jaha tiha ubhe sukriti dushkrute tasmad yogaya yujyasya yogah karma sukausalam A man engaged in devotional service rid himself of both good and bad actions even in this life. Therefore strive for yoga, oh Arjuna, which is the art of all work. So yoga, buddhi yoga is nothing but the art of all work. The best way of performing any action is called yoga.
+
+### 125. `en_iskcon_0124`  (103 words)
+
+So somebody can do the activity which is called sin, which is stealing, breaking the laws of nature, which is called Dushkriti. So Krishna is telling do not do Dushkriti, but Krishna is telling here, Ubhe Sukrit Dushkrute, do not do Sukriti also, do not do good deeds also. Now this person can ask why Krishna is telling Sukrite Dushkrite, I will not do bad deeds, why good deeds are also prohibited? Because as we discussed in the previous verse, So-called good activity is also bad. And we can understand from a different perspective also. Any good activity, will it stop our death?
+
+### 126. `en_iskcon_0125`  (101 words)
+
+Will it stop our diseases? Will it stop our old age? No, it means Even that activity is sinful. Otherwise, nature will not kill us. So any activity which does not stop our death is actually a sinful activity, right? If any person is being given capital punishment to be hanged till death, it means he has done wrong activity. So we have to understand any activity which does not stop our death, old age and disease, that is bad activity. So why good activity is also called bad activity? Because what is good activity? All the resources belong to God.
+
+### 127. `en_iskcon_0126`  (110 words)
+
+Now those you want to use directly simply in the service of others without engaging them in the service of God. Thus it is bad activity. But still it is recommended because at least you start thinking about others. You do not remain on a very lower platform of animal consciousness, my life, my resources for myself. At least you start thinking about others. So such pious activities are recommended. But even if you do pious, good, charitable, noble activities, what you will have is a good birth with good material facilities, enjoyment in next life. But whatever enjoyment material facilities we have, we may become very educated, beautiful, successful.
+
+### 128. `en_iskcon_0127`  (102 words)
+
+And then we may have a big house for ourselves, but then instead of suffering from COVID in a small house, you will suffer from COVID in a big house, suffering will not go. You may be less educated, you may attract a life partner who is also less educated or less beautiful. If you are having a beautiful, attractive body, learned body, you may attract a life partner which is beautiful and learned, but fight with the life partner will happen. The pain will always be there. So you fight with a less educated life partner or more educated life partner.
+
+### 129. `en_iskcon_0128`  (102 words)
+
+Similarly, death will also accompany and old age will also accompany. So thus, if a person is wise, he understands so-called good activities also do not solve the problems of life. I simply suffer from the same problems in a different setup. So one should not do good and bad activities both because both entangle us in the laws of karma. As soon as we do any activity, we produce reaction of that activity which we have to suffer or enjoy in a material body. And as soon as we take a material body, it means birth, death, old age, and disease.
+
+### 130. `en_iskcon_0129`  (122 words)
+
+These miseries they follow. So Krishna is telling, rise above good activity and bad activity. Simply do the activities in yoga, in buddhi yoga, in Krishna consciousness. So when the activity is done only for the satisfaction of the supreme God, Then such activity is called neither good nor bad. Such activity is called akarma. It does not bring any material reaction. It brings spiritual reaction. You become spiritually happy and liberated from cycle of birth and death. Karmajam buddhi yukta hi phalam tyaktva manishinah janma bandha vinirmuktaah padam gacchanti anamayam The wise engage in devotional service, take refuge in the Lord, and free themselves from the cycle of birth and death by renouncing the fruits of action in the material world.
+
+### 131. `en_iskcon_0130`  (113 words)
+
+In this way, they can attain that state beyond all miseries. So when we renounce the action, The results of our actions, then we attain a stage beyond all miseries. Padam gacchanti anamayam. We become free from janma bandha vinirmukta from the cycle of birth and death. Oh, so Krishna is telling us to commit suicide? You become free, you do not take birth again, you stop to exist? No. As Krishna has already explained, there was never a time we were not existing, there will never be a time we will not exist. But we will get freedom. From this process of taking material bodies, birth and death happens to material bodies.
+
+### 132. `en_iskcon_0131`  (103 words)
+
+We will continue to exist. How shall we continue to exist? Anamayam, in a state beyond all the miseries. That place is called Vaikuntha. So now, uh, the limitations in modern science do not give us knowledge about other planets, life on other planets. So just like we have various elements in our body. There is earth, water, fire. But apart from this body, there are places where only water is there, water is predominant. There also there is life. Then only earth is predominant, there also there is life. And only fire is predominant like sun globe, there also there is life.
+
+### 133. `en_iskcon_0132`  (102 words)
+
+In a similar fashion, there is A planet, rather there are many, many planets where only spirit soul is there. There is no matter at all. Now because only they are made up of spiritual substance, time has got no influence upon them, they are eternal. So because there is no temporary nature, there is no death, no disease, no old age, no change introduced by time. So the Vedas tell us not to waste this human form of life in transferring to other planets where the living standards could be better, but ultimately life will end, diseases, old age will happen.
+
+### 134. `en_iskcon_0133`  (132 words)
+
+One should work to transfer oneself to a state of Anamayam where there is no misery at all. That is called Vaikuntha. Taddhamam Paramam Mama, the supreme person, he lives on that planet. So that description further we will understand in the Bhagavad Gita. Very beautifully, elaborately Lord Krishna will explain. So this is the aim of human form of life. This is beyond Moksha, not just freedom from birth and death, but going to spiritual planet and engaging in activities full of loving relationship with God and his associates. Yada te moh kalilam buddhir vyati tarishyati tada gantasi nirvedam shrotavyasya shrutasya cha When your intelligence has passed out of the dense forest of delusion, you shall become indifferent to all that has been heard and all that is to be heard.
+
+### 135. `en_iskcon_0134`  (111 words)
+
+Shruti vi pratipanna te yada sthasyati nishchala samadha vachala buddhis tada yogam avapsyasi. When your mind is no longer disturbed by the flowery language of the Vedas and when it remains fixed in the trance of self-realization, Then you will have attained the divine consciousness. So when a person starts acting in Buddhi Yoga, realizes his relationship with the Lord, he experiences such an extraordinary happiness in life, he does not care about flowery language of Vedas. Oh, you'll have such material enjoyment in other planet or this planet. He does not care about religious formalities and rituals. So one need not wait till death for the proof of spiritual life.
+
+### 136. `en_iskcon_0135`  (107 words)
+
+Even in this body, person can perceive and realize all that we have discussed. This extraordinary spiritual happiness which is called Samadhi. The transcendental consciousness. So what are the symptoms of a person who is absorbed in such consciousness even while living in this material body? That is called Sthitaprajna. That Lord Krishna is going to explain now to Arjuna. Arjuna uvacha sthitaprajyasya ka bhasha samadhisthasya Keshava Sthitadhi kim prabhasheta kim asith vrajet kim Arjuna said, what are the symptoms of one whose consciousness is thus merged in transcendence? How does he speak and what is his language? How does he sit and how does he walk?
+
+### 137. `en_iskcon_0136`  (102 words)
+
+Important word used in this verse is Samadhi. Samadhi sthasya Keshava. One who is situated on the platform of Samadhi. or transcendence, spiritual platform. How does he behave? How does he talk? How does he walk? What are the symptoms? So this samadhi is the ultimate objective of yoga. In the Ashtanga yoga process, which starts with Yam, Niyam, Asan, Pranayam, Dharana, Dhyan, finally one has to reach the stage of Samadhi. Samadhi means complete absorption in the thoughts of Krishna. So many yoga processes now people are getting patents also for it. And people are inventing various ways of doing yoga.
+
+### 138. `en_iskcon_0137`  (125 words)
+
+But somehow, they have forgotten the ultimate objective which one has to attain by doing yoga. It is not simply reducing belly fat or some physical fitness or some temporary peace of mind, but the ultimate objective of yoga is to reach the stage of Samadhi. When a person is completely absorbed on the, mind is absorbed on the spiritual platform. And spiritual platform means mind is absorbed on the form of Lord Krishna. So the recommendation of meditating on some voidness or some light, candle light or sunlight or some impersonal effulgence. or focusing on anything else. It is not recommended as per the standard instructions given either in the Patanjali Yoga Sutra or in Bhagavad Gita or in any standard book of yoga.
+
+### 139. `en_iskcon_0138`  (106 words)
+
+That is why it is told, Shravanam Kirtanam Vishnoho Smaranam. The meditation contemplation has to be there on Vishnu. Similarly, it is told in Mahabharat, Shantakaram Bhujagashayanam Padmanabham Suresham. The form of Lord is described very beautifully. The Lord who is Shantakaram Bhujagashayanam, the most peaceful Lord who is lying on the bed of snake. Padmanabham Suresham, he is having lotus navel, he is the master of all demigods. Lakshmi Kantam Kamal Nayanam, he is the husband of Lakshmi, the goddess of fortune. And his eyes are very beautiful like the petals of lotus flower. Megh varnam shubhangam, his color is like that of dark cloud.
+
+### 140. `en_iskcon_0139`  (123 words)
+
+So in this way the description is given of the personal features of the Lord. And then it is told, Yogi Hridaya Dhyanagamyam. The Yogis Hridaya in their hearts, Dhyanagamyam. So the meditation means meditation on this form of the personality of Godhead within one's heart. This is the authorized instruction as per Mahabharat, Patanjali Yoga Sutra, Bhagavad Gita or any other standard book of yoga practice. So we should be very careful, we should not fall for such modern inventions, rather the yoga process is coming from the God, it should be taken from the authorized sources. So only when the mind is completely fixed without any deviation on the form of personality of God, a person reaches the stage of Samadhi.
+
+### 141. `en_iskcon_0140`  (125 words)
+
+So this system is also explained by Lord Krishna in the sixth chapter of Bhagavad Gita. But Arjuna rejects that, we will see very nice conversation it is. And when Arjuna rejects because he tells I'm a householder, how can I go to the Himalayas or some jungle and sit there alone? I have to leave all my family members, my kingdom and all other opulences. has so much hardship I cannot take, I cannot control my mind in that way. So Krishna tells, do not worry, you are already the best Yogi because Yoginamapi sarvesham mad gatena antaratmana. Among all the Yogis mad gatena antaratmana within his heart, one who is always thinking of me, shraddhavan bhajate yo mam and with great faith bhajate.
+
+### 142. `en_iskcon_0141`  (108 words)
+
+has come from Bhaj Dhatu means to render service. Who is always thinking of me and rendering me service. Sa me yukta tama mataha. He is the best Yogi. So this is the yoga process which is being prescribed by Krishna to Arjuna. And that is the yoga process which is meant for the people in this age of Kaliyuga. So Krishna also will prescribe other yoga process as we will see so that Arjuna can reject and so that we can understand when Arjuna could not follow who was trained in Gurukul. And mind and senses were perfectly controlled, very sharp moralist, but he could not follow.
+
+### 143. `en_iskcon_0142`  (104 words)
+
+So what is the hope for people like us who are always disturbed and short-lived? That is why it is told in the scriptures. Krite ya dhyayato Vishnum. Krit means in Satyuga. The process was this Ashtanga Yoga, Dhyan Yoga process. Dhyayato Vishnum, but the word used here is Vishnu again. Please. Mind these verses very carefully. Dhyayato Vishnum, impersonal meditation on void, light, XYZ is not recommended anywhere. Dhyayato Vishnum. And Treta Yam Yajitomakhaye in Treta Yug, the same spiritual success was possible by doing Yagyas, fire sacrifices. Dwapari Paricharyayam in Dwapar Yuga that success was possible by elaborate temple worship, deity worship.
+
+### 144. `en_iskcon_0143`  (120 words)
+
+But in Kaliyuga we do not have any qualifications. to follow either of these processes. So, Kalau in Kaliyuga, in this millennium, Tad Hari Kirtanad. We need not worry, same result can be attained by Hari Kirtanad, chanting the names of Hari. So this is the first symptom of a person who is in Samadhi, that he will always be talking only of Krishna or of matters related to Krishna. Kalau tad hari kirtanat, that success can be attained by hari kirtan, chanting the names of God. It was also mentioned in the ninth chapter of Bhagavad Gita as we will see in the verse number 14, satatam kirtayanto mam, because the mind is always absorbed in thoughts of Krishna.
+
+### 145. `en_iskcon_0144`  (137 words)
+
+So Yogi, a real Yogi cannot do anything but talk only of Krishna. Thus it is told Satatam. Satatam means always. Krishna mentions Kirtayanto. Kirtan means to chant or to speak about Krishna. Mam satatam kirtayantu mam about me. So this is the first symptom. One who is in Samadhi, he cannot do anything but talk only of Krishna or of matters relating to Krishna, Krishna's service. And then other symptoms of transcendence, they follow automatically. Which are those symptoms? Let us see now. Shri Bhagwan uvacha prajahati yada kaman sarvan parth manogatan. Atmaneeyavatmana tushtah sthitaprajnyastadochyate The blessed Lord said, O Parth, when a man gives up all varieties of sense desire which arise from mental concoction, and when his mind finds satisfaction in the self alone, then he is said to be in pure Transcendental consciousness.
+
+### 146. `en_iskcon_0145`  (108 words)
+
+Prajahati yada kaman when a person gives up all kama means material desires. Any desire which is Not for the satisfaction of Krishna, when we directly want to enjoy our senses, that is called Kaam. Atmendriya preeti vancha tare bali kaam. It just does not mean only the gross sexual desire, but Kama means any kind of desire which is meant for direct enjoyment of senses without pleasing the senses of Krishna. So person whose consciousness is absorbed in transcendence, who is Krishna conscious, prajahati yada kama and he gives up all such desires. Why gives up such desires? Because significant word used here is Sarvan Partha Manogatan.
+
+### 147. `en_iskcon_0146`  (106 words)
+
+These material desires are actually the result of mental concoction. This is very important. Our mind suggests us something. You please do this and you will become happy. And then we chase those suggestions of mind thinking that I will actually become happy. But we have to understand just like a small child. Child's mind suggests him so many desires. You get this toy, you'll be happy. You eat mud, you will be happy. You eat many, many chocolates, you'll be happy. You don't go to school, you will be happy, but all these are harmful desires. And we have seen previously the example of moth.
+
+### 148. `en_iskcon_0147`  (101 words)
+
+The mind of a moth suggests, oh, this fire is so nice. If you have a closer look, you will be very, very happy. And the moth loses its life following the suggestion of mind. Thus, as long as the mind is contaminated by material energy, it is not liberated. One should not listen to the suggestions of mind. So just like following the suggestion of mind in case of child and moth is very, very dangerous. It is dangerous for every conditioned soul. So the suggestions of mind are because of association, the material desires are actually because of association.
+
+### 149. `en_iskcon_0148`  (112 words)
+
+We are hankering for this pleasure which a person can only attain in Samadhi when he's absorbed in loving service of Krishna, always thinking of Krishna. In absence of such pleasure in life, Then material desires arise in our life. Even we can understand it from the love affairs of this world also sometimes. People leave all the their comforts of rich house and family if the family don't agree for marriage and The young couple, they live in very humble circumstances. So why are they able to give up all the comforts of their wealthy families and they are able to live a simple life because there is love in life.
+
+### 150. `en_iskcon_0149`  (117 words)
+
+So we are all hankering for this loving relationship, but real loving relationship can be established only with God. On material platform it does not stay. So when there is no love in life, then automatically you want certain enjoyment and then you develop some mental concoction, you develop association. If you associate with tamoguna, you develop tamasic desires. You saw some drunkards and you assumed that they are enjoying. Oh, let me also drink wine and I will enjoy, let me also smoke, I will enjoy. From birth we were not Having such desire, oh let me smoke, let me drink, but we had association of smokers and drunkards, so such desire came into our mind.
+
+### 151. `en_iskcon_0150`  (106 words)
+
+The student have certain desire. I want to crack this particular examination. Why? This is also mental concoction. We associated with certain people who were preparing or who had cracked those examinations or who gave value to that examination and then we thought, oh, if I crack this exam, I will have recognition in society and then I'll be happy. And then we started following this thing, it became our desire. So our desires are the result of association. We are hungry for pleasure. Now, in association of such people, One moth saw another moth, oh let me also chase fire and then lost its life.
+
+### 152. `en_iskcon_0151`  (100 words)
+
+So in such association we develop mentally concocted desires. And such desires do not actually give us happiness. So a person whose consciousness is absorbed in Krishna, who is in transcendence, he's completely satisfied. And thus the material desires do not arise in his heart. Therefore, Sarvan Partha Manogatan Prajahati Yada Kaman. He is able to able to give up all the material desires because he is very very satisfied just like a man who has eaten till neck in a feast. He does not have any more desire to eat any of the tastiest dishes. Atmanyevatmana tushtah sthita pragyastadochyate.
+
+### 153. `en_iskcon_0152`  (102 words)
+
+Satisfaction is to be found on the platform of self, platform of soul. So we can find enjoyment on the external platform. There is a design, you give sense objects to the senses and then there will be Pleasure on the external platform, but a person who is absorbed in transcendence, who is sthita pragya, he takes pleasure internally. The soul when it is engaged in the service of super soul, then there is internal self pleasure because Such a yogi is absorbed in the self-pleasure, he does not care, does not feel the need at all to satisfy the senses externally.
+
+### 154. `en_iskcon_0153`  (104 words)
+
+So this is first symptom, he will not have any material desires. Dukheshu anudvigna manaha sukheshu vigatasprihaha Veetaraga bhaya krodhaha sthita dheermuniruchyate One who is not disturbed in spite of the threefold miseries, who is not elated when there is happiness, and who is free from attachment, fear, and anger, is called a sage of steady mind. The whole world gets disturbed when they have material problems, miseries, and they become very happy on finding material happiness. But a sage of steady mind is not disturbed by material happiness or distress. Because he is having complete faith in Krishna, he's completely dependent upon Krishna.
+
+### 155. `en_iskcon_0154`  (109 words)
+
+Whenever he faces any miseries in life, he takes it as mercy of God. Because miseries are also very much required. When we have material miseries, we develop Purification of consciousness. We develop detachment for this material world. And detachment for material world is the result of all spiritual knowledge. So this material world as we discussed is it's a very dangerous place. It is like A drop of water which is there on the leaf of or the petal of lotus. Any time with even a small gust of wind, it can fall down. And now in Kali Yuga even in human species there is so much disturbance.
+
+### 156. `en_iskcon_0155`  (101 words)
+
+So life is very very uncertain. Anytime there is calamity, there is chaos, there is distress, there is depression, there is accident. So life in material world is full of danger. So thus detachment from the material world is a great asset and that is brought about by material miseries. So a devotee perfectly knows this fact, whenever misery happens, he takes it, he understands not a blade of grass moves without the sanction of Krishna. So the miseries are also taken as blessing, as mercy of Krishna. He thinks I should suffer much more, but Krishna has minimized my misery.
+
+### 157. `en_iskcon_0156`  (109 words)
+
+And when he is having material happiness, he is not very much carried away by it. He has no personal desire to enjoy in this world, he only desires to give pleasure to Krishna. Thus for personal pleasure if it comes in his life, he takes it as an opportunity to use these comforts to engage more enthusiastically and energetically in the service of Krishna. His only aim is to satisfy Krishna, give pleasure to Krishna. Krishna. Thus he is not very excited to have any personal pleasures in life and he is also very happy if there are reversals in life, he takes it as mercy of Krishna.
+
+### 158. `en_iskcon_0157`  (107 words)
+
+Thus he is always equipoised. And then Vitaraga bhaya krodha, it is very difficult to get freedom from raga, attachment, fear, and anger. Now because the devotee's aim is only to satisfy Krishna, he does not get attached to anything here, just like a cashier who is sitting on the bank. He does not get attached with whatever money flow can happen. He's seeing a lot of money in front of him, but he understands this money does not belong to me. So that is why there is no attachment. So a devotee perfectly knows nothing belongs to me. My family members, actually they are Krishna's family.
+
+### 159. `en_iskcon_0158`  (102 words)
+
+In this life, we have assembled together as we discussed, just like travelers assemble in a restaurant. So they have assembled, they belong to Krishna, my duty is to take them to Krishna. to make them advanced in this process of yoga. So thus there is no undue and overly affection for the people around him. Similarly, the resources, the money, the opulence that he has, he understands I'm just a cashier. And everything, this entire property belongs to Krishna, so that he does not develop attachment with people, place, or resources because he understands I am just custodian of Krishna's property.
+
+### 160. `en_iskcon_0159`  (110 words)
+
+So there is no attachment in life. And people are very, very fearful. Oh, I may lose somebody, I may lose some money, I may lose my position because we are very much attached. And because a devotee is not attached, he is free from fear also. Vitaraga bhaya krodhaha. And when we are attached to material objects, we are not able to enjoy them, anger arises. Krodha. And when there is no tendency to enjoy the objects for yourself, then there is no anger at all. Thus simply this understanding that everything belongs to Krishna makes a devotee a transcendentalist free from any kind of attachment, fear, and anger.
+
+### 161. `en_iskcon_0160`  (115 words)
+
+Can we imagine a state even the most successful people are fearful? The most successful sportsmen, they are fearful of performance even though they are on top of the world, they are fearful. The best of the performers in academics are very fearful. I may not lose my rank. So everybody in this material world is fearful, but a devotee is fearless. How nice is the consciousness and he's free of anger as well. Next symptom. Yas sarvatra anabhisnehas tat tat praapya shubha shubham. Nabhinandati na dveshti tasya prajna pratisthita. He who is without attachment, who does not rejoice when he obtains good, nor lament when he obtains evil, is firmly fixed in perfect knowledge.
+
+### 162. `en_iskcon_0161`  (120 words)
+
+Same examples, cashier. Sometimes there is lot of flow of money. So if money flows in our life, we become very happy or material success, bank is growing. The share value is increasing. It does not matter to the employees. But if I think, oh, this money belongs to me, everything, then I'll become very elated. Or if there is inauspiciousness, means if we lose money, if we lose reputation lose XYZ then become very much disturbed. But if a person is fixed in this consciousness that everything belongs to God, then auspiciousness or inauspiciousness, one is not disturbed by this, just like a cashier is not disturbed by so much excess flow of money or no flow of money.
+
+### 163. `en_iskcon_0162`  (105 words)
+
+He understands money does not belong to me at all. So thus, a transcendentalist is not at all disturbed by so-called good or evil events which can happen in one's life. Thus he is always situated without any disturbance. Yada samharate chayam Kurmo anganiva sarvashah Indriyanendriyarthebhyas tasya prajna pratisthita One who is able to withdraw his senses from the sense objects, as the tortoise draws his limbs within the shell, is to be understood as truly situated in knowledge. So just like a tortoise, it spreads out its limbs when required and then it is able to draw its limbs inside the shell as well.
+
+### 164. `en_iskcon_0163`  (110 words)
+
+In a similar fashion, uh, A mentalist is very different from a materialist. Materialists have loose senses, they cannot withdraw them. They cannot control when there is urge of the eyes to watch something. They cannot control the urge of tongue to taste something or to talk something. They cannot check the urge of belly and genitals, they get carried away. But a devotee follows the do's and don'ts very nicely. So do's and don'ts are very, very important for spiritual life. Without regulating the senses, Nobody can make advancement. So please note here, stopping the activities of senses is not recommended as it is recommended in the Ashtanga yoga.
+
+### 165. `en_iskcon_0164`  (106 words)
+
+Stop all the activities of senses, sit down firmly. You have to close your eyes, you have to not get deviated by any of the material sounds. You have to stop even eating and drinking. And sometimes the ants they build hill on the body of a Yogi, sometimes the insects they eat away all the flesh as it happened with Hiranyakashipu, Valmiki, so many sages. They cannot move, they cannot eat, they cannot drink, they just have to be sitting on that place. All the sensual activities are stopped. This is the process recommended for the devotees, it's for normal people who are not devotees.
+
+### 166. `en_iskcon_0165`  (109 words)
+
+But those who are having positive knowledge of God, different kind of yoga system is recommended. And that is what is recommendation of Krishna to all of us through Arjuna. Don't stop the activities of senses. Just like in a class when the student is naughty, he may be told pin drop silence, do not talk anything, but a student who is wise, he is encouraged by teacher to come and give a speech. So for a foolish person, they are told, hands up, punishment is given or kneel down. But a person who is having some skills, he will be told to go and perform on the stage.
+
+### 167. `en_iskcon_0166`  (100 words)
+
+So thus different yoga processes are for different people. When positive knowledge of God and there is no knowledge about personal features of God, how to engage in service of God, then such processes are recommended. Okay, do not do at least wrong materialistic activities. Stop the material activities which are cause of all distress. Sit down in one place without eating and sleeping. But those who are having positive knowledge, they are supposed to behave like tortoise. Spread out your limbs in the service of God and for personal enjoyment, no, no, do not indulge, pull your limbs back.
+
+### 168. `en_iskcon_0167`  (104 words)
+
+So perfect control of the senses is required just like a tortoise. But it is not so easy. I am addicted to so many things. I cannot even regulate my senses for basic things like controlling tea, coffee, smoking, or watching some videos. Then how can I exercise such perfect control, use my senses only when required? That is explained here in the next verse. Vishaya vinivartante niraharasya dehinah. Rasavarjam rasopyasya param drishtva nivartate. The embodied soul may be restricted from sense enjoyment, though the taste for sense objects remains. But seizing such engagements by experiencing a higher taste, he is fixed in consciousness.
+
+### 169. `en_iskcon_0168`  (109 words)
+
+Niraharasya dehinah, when you restrict your senses from enjoyment, the taste remains in the heart. So if you tell a child, sit down. Do not do mischievous activity. Just I'll sit down for a while, but then he will be restless. He wants to go out and play and jump around. In a similar fashion, unless we have a higher taste, the senses will fall for the lower taste, the material activities. So, In order to control the senses from material enjoyment, one needs to experience Param Drishtva Nivartate. Param means higher taste. When you have higher experience, better pleasure, then automatically we will not fall for lower pleasures.
+
+### 170. `en_iskcon_0169`  (103 words)
+
+And then, uh, we can have, uh, some research, go and study the life of great devotees. How they are very easily able to give up all the activities of personal sense enjoyment. There must be something which is there in their life just like Roop Goswami, Sanatan Goswami. They were very, very rich, but they gave up all opulence and they were sleeping under different trees every night in Vrindavan. How was this possible? Because they were experiencing very extraordinary taste. in the service of Krishna. And as Yamunacharya says, he is a very stalwart devotee, the spiritual master of Sripad Ramanujacharya.
+
+### 171. `en_iskcon_0170`  (105 words)
+
+He was a king before, and kings have all the royal opulences, and there is so too much physical enjoyment in relationship with the other gender. So when Yamunacharya, he renounced his kingdom, became a pure devotee. He's giving his experience. What is this spiritual pleasure? He tells, Yadavadhi mama cheta Krishna padaravinde, nava nava rasa dhamaniyudhyatam rantumaseet. Tadavadhi bat nari sangame smaryamane bhavati mukha vikara srushti nishti vanam cha. Yadavadhi from the time I have engaged myself. Krishna Pada Arvinde, in meditation upon the lotus feet of Krishna, Nav Nav Rasa, I am experiencing newer and newer pleasures in my heart by this meditation.
+
+### 172. `en_iskcon_0171`  (106 words)
+
+And when I remember my old gross enjoyment which I had with Nari Sangame with many women, as a royal king, my mouth curled in distaste, Bhavatu Mukha Vikara, Susthu Nishti Vanam Cha, and I spit at this thought. So it is very difficult to control the sexual urge, but he's telling when I think of that enjoyment, that was such low grade enjoyment compared to what I am experiencing now by meditating on the lotus feet of Krishna. Because I'm experiencing a higher taste, my mouth curls in distaste for these lower great pleasures. This is the way of controlling one's senses like a tortoise.
+
+### 173. `en_iskcon_0172`  (100 words)
+
+One has to have Param Drishtva. So just see Krishna so clearly he is explaining Param Drishtva. You have to experience higher taste, taste of spiritual life, then you will be able to do it. Yatato hi api kaunteya purushasya vipashchitah indriyani pramathini haranti prasabham manah The senses are so strong and impetuous, oh Arjuna, that they forcibly carry away the mind even of a man of discrimination who is endeavoring to control them. So here Krishna is telling the situation of spiritualists who are not devotees, who are not able to engage their senses in the service of Krishna.
+
+### 174. `en_iskcon_0173`  (104 words)
+
+So Krishna is telling, yatato hi api kaunteya, even though spiritualist is endeavoring, learned man is trying to control his senses. Vipasschita means very learned, a person becomes advanced in this knowledge, but still, pramathini, the senses, indriyas are so strong, haranti prasabham mana, forcefully they carry away the mind. And we all must have experience in our life. We want to control the senses, regulate the life, but senses are so strong and impetuous, forcibly they carry away the mind. So Krishna is warning, if the mind is not having higher engagement, then you will have to Follow the dictates of the senses.
+
+### 175. `en_iskcon_0174`  (100 words)
+
+So thus Krishna recommends here, how to have that higher taste. We have been discussing engagement in the service of Krishna, one may ask where it is recommended. It is recommended now here very directly in verse number 61. Tani sarvani sanyamya yukta asit matparah. Vashhehi yasyendriyani tasya prajna pratisthita. One who restrains his senses and fixes his consciousness upon me is known as a man of steady intelligence. Vashhehi, yes, now Krishna is telling how you experience that higher pleasure. What activity do I do that I experience that higher pleasure greater than materialistic enjoyment? That is explained here.
+
+### 176. `en_iskcon_0175`  (147 words)
+
+Yukta asit matparaha vashhehi yasendriyani. The indriyas have to be controlled in such a way that matparaha yukta asit. Yukta means engaged. The senses have to be engaged matparaha. Paraha means in my service. So the senses are classified as 5, sometimes 10 when you include the Karmendriyas and mind is also considered as the sixth sense. Mana Sashtanindriyani Prakriti Sthani Karshati. So all the senses including the mind. Yukta asit mat paraha in my service they have to be engaged. Krishna very clearly he is explaining here. So this is the highest conception of yoga practice. There are many kinds of Yogis but Krishna is warning unless they reach to this understanding of personality of God, and they get positive knowledge of engagement in the service of God, when we engage in the service of some people or animal or pets here, we get certain pleasure.
+
+### 177. `en_iskcon_0176`  (105 words)
+
+But unless you have knowledge of God and you engage in service of God, you cannot not experience that param drishtva which will be able to help you get rid of the troublesome materialistic enjoyment. So very clearly, yukta asit mat paraha, the senses have to be engaged in my service. This is the way of having higher taste. And for those whose senses are not engaged, what happens, Krishna explains now. Dhyayato vishayan punsa. Sangaste shupajayate, sangasanjayate kamah, kamat krodhobhijayate. While contemplating the objects of the senses, a person develops attachment for them, and from such attachment, lust develops, and from lust, anger arises.
+
+### 178. `en_iskcon_0177`  (114 words)
+
+So one who is not Krishna conscious is subject to such strong attachment and lust while contemplating on the objects of senses. If a cashier is not conscious, what is my relationship with the bank? I'm not proprietor, he will develop lust if he sees lot of money. He would like to enjoy for himself. So one who is not engaged in the service of Krishna, when he sees any object of senses, he thinks how I can enjoy it. Dhyayato, when he sees, contemplates, Sangha, he develops attachment, I want to enjoy it. And sanga sanjayate kama, strong desire lust develops to enjoy the sense objects and then the lust is not fulfilled.
+
+### 179. `en_iskcon_0178`  (102 words)
+
+And when the lust, the desires are not fulfilled, kamat krodho bijayate, anger arises. Krodhat bhavati sammohah, sammoha smriti vibhramah, smriti bhramashat buddhi nasho. Buddhi nashat pranashyati. From anger, delusion arises, and from delusion, bewilderment of memory. When memory is bewildered, intelligence is lost, and when intelligence is lost, one falls down again into the material pool. So Krishna is warning here the Yogis who are not yukta asit matpara who are not engaged in the service of Krishna. When they contemplate on the sense object, attachment, lust, anger, from anger, bewilderment of memory, and when memory is bewildered, intelligence is lost.
+
+### 180. `en_iskcon_0179`  (106 words)
+
+When intelligence is lost, person falls down on the material platform. So other Yogis also can reach a stage of peace and transcendence, but they cannot stay on that platform because a slight agitation created by the mind, slight contemplation on sense objects makes them fall down. Has it happened with Vishwamitra, a very great Yogi? And Menaka came, and he heard the jingle of her bells, ankle bells, and then he was not able to continue in meditation, and he enjoyed with her. And then after many, many years, he realized what mistake I have done. I was so nicely advancing in my spiritual life.
+
+### 181. `en_iskcon_0180`  (111 words)
+
+Similarly, Saubhari Muni, this Muni was so advanced that he was able to meditate within the water. So he was sitting within the water so that he can avoid any distraction, but within the water he saw two fishes copulating, and then he could not control the suggestion of the mind. He came out, married many, many princesses. and he also lost his spiritual growth. So in this way, even though these Yogis were absorbed on very advanced Brahma platform, but they could not stay for a long time. They fell down. Thus Krishna is warning here, please do not follow this process in which higher taste you do not attain.
+
+### 182. `en_iskcon_0181`  (104 words)
+
+Thus Krishna explains in the next verse. Raag dwesha vimuktaisthu vishayanindriyaischaran aatmavashyarvidheyatma prasadam adhigacchati. One who can control his senses by practicing the regulated principles of freedom can obtain the complete mercy of the Lord and thus become free from all attachment and aversion. The word is very significant here. Tu means but. So Krishna has described the fate of a non-devotee Yogi. But Krishna mentions tu, but a person who is devotee, vishayanindreyascharan aatmavashayairvidheyatma, who controls his senses and in this way engages his senses in the service of Krishna. He attains Prasadam Adhigacchati. He attains the Prasadam means mercy of the Lord.
+
+### 183. `en_iskcon_0182`  (119 words)
+
+So I happened to chance upon one author of one prominent religion. So he was explaining his philosophy. He tells, we want to attain spiritual status, but our philosophy is even if God exists, We do not want to take help of God to make our life perfect. We want to advance on our own strength. We don't want to take even God's help, God's help if even God exists. But such a process is not recommended in the Bhagavad Gita, in the standard books of yoga. Here it is mentioned, Prasadam adhigacchati, vidheyatma. So when a person is able to follow the regulated principles of freedom, Sometimes people think, oh, this religious life, spiritual life is very hasslesome.
+
+### 184. `en_iskcon_0183`  (111 words)
+
+So many restrictions are imposed upon us. Actually, these restrictions are important. Just like traffic rules and regulations may be considered restriction, unnecessary restriction. But a wise man knows if these traffic regulation little restrictions are not there, it will create so much of chaos and accident. In a similar fashion, such restrictions are recommended, they are actually regulated principles of freedom. Just like a sick man is given some prescriptions and proscriptions, If he follows that, he'll be fit, then he can enjoy life. So as long as we are there trapped in this body, in this bodily concept of life, following these restrictions, regulative principles of freedom are important.
+
+### 185. `en_iskcon_0184`  (106 words)
+
+So when we follow these do's and don'ts very nicely in the service of Krishna, we attain Prasadam. We attain the mercy of Krishna. Without prasadam, without mercy of God, we cannot advance. So, we should not get carried away by the philosophies, oh you are only God, you just have to realize you are God. No, the word used here is prasadam. You are not God, so you need mercy, prasadam of God. If you are God, where is the question of receiving any mercy? No. Prasadam, mercy. Mercy is the key factor for spiritual advancement as per the yoga process described by Lord Krishna.
+
+### 186. `en_iskcon_0185`  (115 words)
+
+Prasadam adhigacchati. And a person can attain mercy when he follows the do's and don'ts very strictly. and engages senses in the service of Krishna. What happens then when he receives prasadam, mercy of Krishna, he becomes free from all attachment and detachment also. So materialist is attached and a non-devotee yogi is detached. They go leave all the people and all the sense objects, they go to far off place, they are detached. But a devotee is neither attached nor detached. He simply wants to engage in service of Krishna. So if I am there around sense objects, uh, let me use those sense objects in the service of Krishna if it is required.
+
+### 187. `en_iskcon_0186`  (105 words)
+
+His only consideration is what gives Krishna pleasure. If I leave everything and go far away and that brings displeasure to Krishna, I don't want to have such detachment also. So a devotee is perfectly situated in the understanding that my existence is only for the pleasure of God because I am part and parcel of God. This secret Krishna will reveal mamaivaanso jeevaloke jeevabhutas sanatanah. Yatha tarur mool nishechaneena, just like you put water on the roots of the tree, all the leaves are automatically satisfied. This is my design. I am ansha of Krishna, just like the finger is ansha of the body.
+
+### 188. `en_iskcon_0187`  (104 words)
+
+Only when the finger puts food stuff in the stomach, finger will be healthy. So a devotee knows this. I should not get carried away by attachment, let me directly enjoy the sweet, finger should not think, or detachment, what is the use of feeding the stomach if I am not able to enjoy the food stuff, no. So, similarly devotees neither attached nor detached. He knows I am Ansha of Krishna. Only when I satisfy God, satisfy Krishna, I will gain satisfaction in life. So when mercy is received, this knowledge is awakened and devotee becomes free from attachment as well as detachment.
+
+### 189. `en_iskcon_0188`  (124 words)
+
+Prasade sarva dukhanam hanir asyopajayate prasanna chetaso hyashu. Buddhi paryavatishthate. For one who is so situated in the divine consciousness, the threefold miseries of material existence exist no longer. In such a happy state, one's intelligence soon becomes steady. When the mercy of the Lord is received, then there are no more miseries in life, the devotee becomes very happy. So this happiness is very much required to understand the science of God. Those who are Always troubled by threefold miseries, who are there on the platform of Rajoguna and Tamoguna cannot understand the science of God. So when we follow this process of Buddhi Yoga, the first Installment of spiritual advancement that we receive is freedom from all the miseries of material life.
+
+### 190. `en_iskcon_0189`  (108 words)
+
+And prasanna chetaso chetaso hi aashu very soon he becomes prasanna very very happy. So if by following spiritual life we are not becoming happy means we are not following the standard method. Otherwise very soon a person should become fixed on the platform of happiness. And when a person continues to engage in yoga practice on the platform of happiness, then intelligence becomes very clear. All the confusion is removed. and very clearly understands who am I, who is God, what is this creation, what is the purpose. And there is no more confusion in life. Nasti buddhir yuktasya, na cha yuktasya bhavana, na cha bhavayatash shanti.
+
+### 191. `en_iskcon_0190`  (102 words)
+
+Ashantasya kutas sukham. One who is not in transcendental consciousness can have neither a controlled mind nor steady intelligence without which there is no possibility of peace. And how can there be happiness without peace? So here again Krishna is warning, please do not indulge in other yoga practices in which nasti buddhir ayuktasya ayukta. Any yoga practice which does not recommend yuktaha means engagement in the service of Krishna, please do not follow that. Krishna has told so many ways. You will contemplate on the sense objects, you will get carried away, you will not be able to experience higher taste.
+
+### 192. `en_iskcon_0191`  (113 words)
+
+So here Krishna is telling, nasti buddhir yuktasya nacha yuktasya bhavana. One who is not yukta, yukta asit matparaha, who senses not engaged in my service, he cannot have fixed intelligence. Because he will not have higher pleasure in life, then they would always be calculating. As we see a materialist is always thinking, let me crack this exam, then his intelligence changes, let me crack that exam also. Then intelligence changes, let me do this job, then intelligence changes, let me do some other business or some other job. Then let me marry this person, let me divorce this person, let me do this, let me spend time with in this fashion.
+
+### 193. `en_iskcon_0192`  (111 words)
+
+Their intelligence is not fixed, always they are wondering what will make me happy. So the disturbance in life is because of no fixed aim, because nothing satisfies the spirit soul apart from Krishna consciousness. So here Krishna is telling if you don't engage, In my service, what will happen? Nasti buddhi, intelligence will not be fixed, and intelligence controls the mind. People ask how do I have a controlled mind? We can have a controlled mind by controlled intelligence. When the intelligence is not controlled, not fixed, then mind will be disturbed, mind will be going on. This plan, that plan, this idea, that idea, mind will always be disturbed.
+
+### 194. `en_iskcon_0193`  (104 words)
+
+Na cha yuktasya bhavana. Bhavana means when the mind is fixed on happiness. Na cha bhavayata shantir and if the mind is not fixed, then there is no shanti, there is disturbance. Ashantasya kuta sukham and Krishna is telling if there is no peace in life, then where is the question of happiness. So Krishna has explained again he has warned, time is very less, this age. Krishna spoke this Bhagavad Gita just at the end of Dwapar Yuga before the beginning of Kali Yuga. He wanted to reiterate, stress this very important method. In Kali Yuga people will anyway be very much disturbed.
+
+### 195. `en_iskcon_0194`  (111 words)
+
+So save time from gradual processes of yoga. Understand this topmost yoga practice, Buddhi yoga, engage your senses in my service, offer the results to me, try to establish a loving relationship with me. Don't follow this artificial yoga practice, Ashtanga yoga, other yoga, which was meant for Satyuga. Vedas are telling, "Kritya yat dhyayato vishnum," Kritya yoga, it is for Satyuga. Nowhere in the Vedas it is mentioned in Kaliyuga you follow this practice, we will not gain success. And further, ultimately, success of any yoga means yogi hrid dhyan gamyam. Dhyanavasthita tadgatena manasa pashyanti yam yoginah. The meditation has to be there upon Lord Vishnu, Krishna in the heart.
+
+### 196. `en_iskcon_0195`  (118 words)
+
+So Yogis artificially they want to do this meditation. They first want to avoid all the distractions, stop all the activities of senses, then they start dharana, contemplation and then they come to meditation. and then there is Samadhi. Artificially they want to focus on the form of Krishna, but very natural way of focusing is engaging in the service of Krishna. When you serve anybody, there is a loving relationship and when there is love, always you are thinking of your object of love. So this natural process of yoga is being recommended by Krishna here. You please engage in my service, whatever little means you may have, please use it to the best of your capacity.
+
+### 197. `en_iskcon_0196`  (113 words)
+
+And when there is seva, there is love, and when there is love, you develop, revive your affection for me, then always you will be thinking of me. And the process of yoga is naturally attained without artificial. austerities which were recommended for previous ages. So Krishna tells if you do not engage, intelligence is not fixed, mind is not fixed. Thus there is disturbance in life, there is no peace, and without peace there is no happiness. Indriyanam hi charatam yanmanonuvidhiyate tadasyaharti pragyam vayurnavamivambhasi. As a boat on the water is swept away by a strong wind, even one of the senses on which the mind focuses can carry away man's intelligence.
+
+### 198. `en_iskcon_0197`  (101 words)
+
+So if your intelligence is not fixed, then mind will focus on any of the senses just like wind topples the boat, even contemplation on Sense object of any one of the senses, it will topple your intelligence, your spiritual life completely, and you will again fall for material sense enjoyment. Tasmaadyasya Mahabaho Nigrahitani Sarvashah Indriyanendriyarthebhyas tasya Prajna Pratishthita Therefore, oh mighty armed, one whose senses are restrained from their objects is certainly of steady intelligence. So just like the enemies are curved by a higher power, higher force, By human endeavor efforts, it is not possible to control the senses.
+
+### 199. `en_iskcon_0198`  (102 words)
+
+So when the senses are engaged in the service of the Lord, Lord's power controls the senses. But when we engage in some in certain practice as described here, controlling the senses, then there would be a reaction from the people around us. And what is that reaction? Very nicely Krishna explains. Ya nisha sarvabhutanam tasyam jagarti sanyami yasyam jagrati bhutani sa nisha pashyato muneh What is night for all beings is the time of awakening for the self-controlled, and the time of awakening for all beings is night for the introspective sage. So people may scoff, oh what is your life?
+
+### 200. `en_iskcon_0199`  (115 words)
+
+What is this Krishna consciousness, this yoga you have been following? You have been reading Bhagavad Gita, your life has got transformed. Now you no longer take pleasure in material enjoyment. Yes, people will say like this, they may scoff at times also. And Krishna is telling that is natural. Ya nisha sarva bhutani. The night time for materialist is day time for spiritualist. A spiritualist does not give value to these external sense objects which are very low grade third class pleasure which always give rise. to so many complexities and so many miseries in life. But a materialist gives value only to the external sense objects, has no value for internal spiritual pleasure.
+
+### 201. `en_iskcon_0200`  (136 words)
+
+A materialist is giving no value or rather does not believe upon the existence of spiritual pleasure, the existence of spirit soul. And a spiritualist does not give any value to the existence of material identities, because all these identities are merely dresses and illusory. So what is day time for spiritualist is night time for materialist, that is but natural. So when people, but we need to answer people if they ask such questions, why your course of life seems to have completely turned around, then we can give them this wonderful logic which Krishna is giving here. Aapuryamanam achala pratishtham samudramapah pravishanti yadvat tadvat kamayam pravishanti sarve sashantimapnoti na kamakami A person who is not disturbed by the incessant flow of desires that enter like rivers into the ocean, which is ever being filled.
+
+### 202. `en_iskcon_0201`  (114 words)
+
+But is always still, can alone achieve peace and not the man who strives to satisfy such desires. So Krishna is telling just like so many rivers are entering in the ocean but the ocean is not disturbed. Ocean remains very placid. In a similar fashion although so many desires will enter the body but only the person who does not try to satisfy those desires he attains peace. If a person tries to fulfill the suggestions given by the mind of materialistic enjoyment, he loses his peace of mind. Why? It is explained in Srimad Bhagavatam, Ijjyastokai Ivanalah. Sensual enjoyment is actually not enjoyment as we discussed previously, also it is mental concoction.
+
+### 203. `en_iskcon_0202`  (108 words)
+
+There is hunger for higher pleasure, so we fall for whatever pleasure is available immediately. And this pleasure is not required, it is addictive in nature. Nobody needs to be addicted, but once we start chasing, following those addictions, we cannot help but getting carried away. It is not required to smoke, it is not required to drink. Similarly, it is not required to have any kind of material enjoyment. But once we start material enjoyment, The desires always keep on increasing. Kanduyane na karyoriva dukha dukha. Example given is, as an eczema patient has got many wet sores on his body and those are very itchy sores.
+
+### 204. `en_iskcon_0203`  (119 words)
+
+But if a person tries to rub or scratch that sore, the itching sensation only increases. And if you scratch more, finally it starts bleeding. The sore becomes worse, disease becomes worse. So that is the nature. So that is why, Uh, those people who are poor, their distress is not so much as that of rich people because poor person has hope, if I become rich then I'll be happy, but rich person, rich person becomes hopeless. Now I've got so many resources, I have gained recognition, name, fame, money also, and I am trying to have all the sense objects, enjoyment I can have, still why there is dissatisfaction in my life, what do I do more?
+
+### 205. `en_iskcon_0204`  (106 words)
+
+So they become more distressed and they come in depression because they do not see any hope, what else do I do to become happy? This is the nature of material happiness. It is like putting butter into fire. The senses always demand more. Today you have one cigarette, two cigarettes. Then for same kick you need to have four cigarettes then eight, there is no end to it. Little sex, more sex, varieties of sex, there is no end to it. So please understand this is the nature of material happiness. Nobody educates the best of the brains in the world, they do not know.
+
+### 206. `en_iskcon_0205`  (109 words)
+
+After topping in the country in various examinations, making the best of technical and business plans, ultimately they do not understand because unless prasadam, there is mercy of Lord, it is very difficult to understand this knowledge. That actually Krishna God is telling. A person who tries to satisfy the desires which are always flowing within this mind and body, he never attains peace because that is not the design. All the material enjoyments are but addictions. You do not need them, but once you start enjoying them, you cannot stop having it. So one who is not disturbed by the incessant flow of desires, why is not disturbed?
+
+### 207. `en_iskcon_0206`  (113 words)
+
+Because he is relishing higher pleasure. Such a person attains peace. So, is it not very simple logic? So when people tell, oh what is day for us is night time for you, you are having other, please explain this that this is real life which we need to actually have. It is common sense. Then finally Krishna is giving the conclusive knowledge in this chapter. Vihaya kaman yas sarvan pumans charati nisprihaha. Nirmamo nirahankarah sashantim adhigacchati. A person who has given up all desires for sense gratification, who lives free from desires, who has given up all sense of proprietorship and is devoid of false ego, he alone can attain real peace.
+
+### 208. `en_iskcon_0207`  (110 words)
+
+So vihay kaman. So he understands this logic, material desires are addictive, it is like rubbing or scratching the wet eczema sore, it will only increase worsen the situation. So he gives up material desires. And Nirmamo nirahankarah. He becomes free from the sense of proprietorship that everything belongs to God. Nothing belongs to me, should be used in the service of God. And then he becomes nirahankarah. Ahankarasa. Krishna will describe further, is an energy which makes the soul believe I am this covering, I am this body. Because of this I feel I am the body of the dream, I feel I am this body, man, woman, animal.
+
+### 209. `en_iskcon_0208`  (118 words)
+
+So when a person gives up material desires by following this process of yoga, Then he's become, he becomes freed from proprietorship and he becomes freed from false ego. He's able to understand I am not this body, I am different from this temporary identity. And then, sa shantim adhigacchati, then he understands I'm different, what is the profit, what is the loss, nothing belongs to me, he's very very peaceful. Esha Brahmi sthitih Partha, Nayanam praapya vimuhyati. Sthitva syamantakalepi Brahma nirvanam richchhati. That is the way of the spiritual and godly life, after attaining which, a man is not bewildered, being so situated even at the hour of death, one can enter into the kingdom of God.
+
+### 210. `en_iskcon_0209`  (100 words)
+
+So when a person has this consciousness, even at the time of death, if one is able to maintain this consciousness, then he attains Brahma Nirvana. Nirvana means cessation of material existence. Some philosophers say, yes you have to get liberation but after liberation there is void. There is no life. So such a philosophy is alright for people who are hardcore sense gratifiers, who are, who have realized that sense enjoyment gives only frustration and they are so much frustrated by material enjoyment, they want to stop this. life. They just want to get rid of this material life.
+
+### 211. `en_iskcon_0210`  (108 words)
+
+And such philosophies recommend that you stop this material existence and then you stop existing. There is no existence beyond it. But this is not what is recommended in Bhagavad Gita. Here the special kind of Nirvana is the object and that is called Brahma Nirvana. Brahma Nirvana means positive life. A diseased person It is not sufficient for him just to get rid of the disease, but he needs to have now positive enjoyment. He wants to eat now, he wants to walk around, move around, play, enjoy with his family and friends. So this positive liberation is called Brahma Nirvana, attainment of the kingdom of God.
+
+### 212. `en_iskcon_0211`  (113 words)
+
+Tejo vari mridam yatha vinimayo yatra trisargo amrisha. Dhamna svena sada nirasta hukukam satyam param dhimahi. The board of God, the description is given in the scriptures. As there is Tejo Vari Mridam, in this body there is fire, there is water, and there is air. And there is consciousness also. And outside this body we see, there is a world which is predominantly of water and there is life in water, water bodies. And then we see there is a world which is predominantly of fire, the sun planet. And life is there on sun also, fire, as we discussed, scientists have found the few micros which are there in fire also.
+
+### 213. `en_iskcon_0212`  (110 words)
+
+Like this, there are other species who exist in a world completely made up of fire. So there is a world which is completely made up of water, there is a world which is completely made up of fire, there are planets like this, there is planet which is completely made up of spirit, spiritual substance. And Krishna tells, "Taddhamam paramam mama," that is my abode. So this positive knowledge of spiritual life, not just material life is illusion, material forms are illusory, no. You are soul within this body, you have a form, but that form is spiritual. That is revealed when we are out of this material body.
+
+### 214. `en_iskcon_0213`  (125 words)
+
+or out of this bodily concept of life. God is not simply an energy, God is a person, God is having form. And there are many activities which are called devotional service in which one has to engage in order to realize this positive spiritual existence. and transferring oneself not to any material planet, but to the planet which is made of completely spirit, is the aim of the topmost Yogi. That is what is recommendation of Krishna. So if a person follows this yoga system as described by Lord Krishna, he attains Brahma Nirvanam. attainment of spiritual planets where there where there is no influence of time and thus there is no fear, no anxiety and there is always higher pleasure of Krishna consciousness.
+
+### 215. `en_iskcon_0214`  (55 words)
+
+With this we end the second chapter which is the summary of Bhagavad Gita, here Karma Yoga is explained, Gyan Yoga is explained, and a hint of Bhakti Yoga is also. given. Further very beautiful instructions await us in the third chapter of Bhagavad Gita that we will discuss in the next session. Hare Krishna.
+
