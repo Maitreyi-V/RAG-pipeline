@@ -26,6 +26,8 @@ from score_by_tier_units import FIDELITY, TIERS, latest_per_pair, load_csv  # no
 
 SPANS = os.path.join(HERE, "data", "mention_spans.csv")
 UNITS = os.path.join(HERE, "data", "units_v2.csv")
+UNITS_HELDOUT = os.path.join(HERE, "data", "units_heldout_v1.csv")
+LECTURES_NEW = os.path.join(HERE, "data", "lectures_new.csv")
 SPLITS = os.path.join(HERE, "results", "results_v3")
 
 
@@ -55,8 +57,11 @@ def load_gold(spans=SPANS, units=UNITS):
         print(f"  !! {len(bad)} gold row(s) with a malformed tier "
               f"(counted overall, in no tier): {bad}", file=sys.stderr)
 
+    grid = load_csv(units)
+    if units == UNITS and os.path.exists(UNITS_HELDOUT):
+        grid += load_csv(UNITS_HELDOUT)          # new-speaker lectures
     by_video, lang = defaultdict(list), {}
-    for u in load_csv(units):
+    for u in grid:
         lang[u["video_file"]] = u["language"]
         if u["unit_id"] in reviewed:
             by_video[u["video_file"]].append((int(u["unit_index"]), u["unit_id"]))
@@ -65,7 +70,14 @@ def load_gold(spans=SPANS, units=UNITS):
 
 
 def read_split(language, split, splits_dir=SPLITS):
-    """Lecture names for 'dev' / 'test' / 'all' from the frozen split files."""
+    """Lecture names for 'dev' / 'test' / 'all' from the frozen split files.
+
+    'heldout' is the new-speaker set (data/lectures_new.csv): never tuned on,
+    and not part of 'all'.
+    """
+    if split == "heldout":
+        return [r["video_file"] for r in load_csv(LECTURES_NEW)
+                if r["language"] == language and r["status"] == "ready"]
     names = []
     for s in (["dev", "test"] if split == "all" else [split]):
         with open(os.path.join(splits_dir, f"{language}_{s}.txt"), encoding="utf-8") as f:

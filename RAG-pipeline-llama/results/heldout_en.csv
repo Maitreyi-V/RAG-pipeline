@@ -1,0 +1,22 @@
+group,lectures,units,system,P,R,F1,F1_CI,fired,T1,T2,T3,T4,T5
+ORIGINAL TEST SET (for reference),7,676,string matching,0.7174,0.0889,0.1583,"[0.116,0.193]",29,15/18,7/60,5/24,6/244,0/25
+ORIGINAL TEST SET (for reference),7,676,embeddings (margin),0.2143,0.1779,0.1944,"[0.136,0.265]",308,8/18,19/60,7/24,30/244,2/25
+ORIGINAL TEST SET (for reference),7,676,carry max_gap=50,0.2813,0.8059,0.4170,"[0.292,0.576]",610,15/18,53/60,21/24,202/244,8/25
+ORIGINAL TEST SET (for reference),7,676,carry unbounded,0.2604,0.8113,0.3942,"[0.267,0.574]",645,15/18,53/60,21/24,202/244,10/25
+ORIGINAL TEST SET (for reference),7,676,"gated, drop (tau=-1.25)",0.3589,0.7062,0.4759,"[0.373,0.585]",489,15/18,47/60,16/24,176/244,8/25
+ORIGINAL TEST SET (for reference),7,676,"gated, resume (tau=0.5)",0.4125,0.6415,0.5021,"[0.378,0.642]",437,15/18,48/60,17/24,153/244,5/25
+ORIGINAL TEST SET (for reference),7,676,oracle gate (resume),0.9586,0.8113,0.8788,"[0.805,0.936]",294,15/18,53/60,21/24,202/244,10/25
+HG Gaurmandal Das (Gaudiya Vaishnava),1,215,string matching,0.7757,0.3180,0.4511,n/a,70,71/77,9/47,1/8,2/109,0/20
+HG Gaurmandal Das (Gaudiya Vaishnava),1,215,embeddings (margin),0.5556,0.2874,0.3788,n/a,135,44/77,14/47,4/8,11/109,2/20
+HG Gaurmandal Das (Gaudiya Vaishnava),1,215,carry max_gap=50,0.7376,0.7969,0.7661,n/a,215,77/77,36/47,5/8,71/109,19/20
+HG Gaurmandal Das (Gaudiya Vaishnava),1,215,carry unbounded,0.7376,0.7969,0.7661,n/a,215,77/77,36/47,5/8,71/109,19/20
+HG Gaurmandal Das (Gaudiya Vaishnava),1,215,"gated, drop (tau=-1.25)",0.7357,0.7893,0.7616,n/a,213,77/77,36/47,5/8,69/109,19/20
+HG Gaurmandal Das (Gaudiya Vaishnava),1,215,"gated, resume (tau=0.5)",0.7746,0.7241,0.7485,n/a,190,76/77,34/47,5/8,58/109,16/20
+HG Gaurmandal Das (Gaudiya Vaishnava),1,215,oracle gate (resume),0.8966,0.7969,0.8438,n/a,194,77/77,36/47,5/8,71/109,19/20
+Swami Aparajitananda (Advaita),2,147,string matching,0.8333,0.0649,0.1205,n/a,11,9/10,0/20,1/1,0/121,0/2
+Swami Aparajitananda (Advaita),2,147,embeddings (margin),0.3538,0.1494,0.2100,n/a,65,3/10,10/20,1/1,9/121,0/2
+Swami Aparajitananda (Advaita),2,147,carry max_gap=50,0.8562,0.8117,0.8333,n/a,127,10/10,15/20,1/1,97/121,2/2
+Swami Aparajitananda (Advaita),2,147,carry unbounded,0.8562,0.8117,0.8333,n/a,127,10/10,15/20,1/1,97/121,2/2
+Swami Aparajitananda (Advaita),2,147,"gated, drop (tau=-1.25)",0.9789,0.6039,0.7470,n/a,94,10/10,15/20,1/1,65/121,2/2
+Swami Aparajitananda (Advaita),2,147,"gated, resume (tau=0.5)",0.9437,0.4351,0.5956,n/a,69,9/10,12/20,1/1,44/121,1/2
+Swami Aparajitananda (Advaita),2,147,oracle gate (resume),0.9843,0.8117,0.8897,n/a,126,10/10,15/20,1/1,97/121,2/2

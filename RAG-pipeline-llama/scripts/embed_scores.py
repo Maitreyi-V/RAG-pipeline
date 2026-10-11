@@ -24,6 +24,8 @@ commentary later only re-embeds the 72 verse documents.
 Usage:
     python scripts/embed_scores.py
     python scripts/embed_scores.py --commentary data/verse_commentary.json
+    python scripts/embed_scores.py --units data/units_heldout_v1.csv \
+        --out results/embed_scores_heldout.npz          # new speakers
 """
 import argparse
 import json
@@ -37,7 +39,13 @@ sys.path.insert(0, HERE)
 
 from evalkit import UNITS, load_csv  # noqa: E402
 
-UNIT_CACHE = os.path.join(HERE, "results", "unit_embeddings.npz")
+def unit_cache(units_path):
+    """One embedding cache per unit grid, so grids never overwrite each other."""
+    stem = os.path.splitext(os.path.basename(units_path))[0]
+    name = "unit_embeddings.npz" if stem == "units_v2" else f"unit_embeddings_{stem}.npz"
+    return os.path.join(HERE, "results", name)
+
+
 OUT = os.path.join(HERE, "results", "embed_scores.npz")
 
 
@@ -54,6 +62,7 @@ def main():
     from verse_translations import VERSE_TRANSLATIONS
 
     units = load_csv(args.units)
+    UNIT_CACHE = unit_cache(args.units)
     unit_ids = [u["unit_id"] for u in units]
 
     if os.path.exists(UNIT_CACHE) and not args.rebuild_units:
