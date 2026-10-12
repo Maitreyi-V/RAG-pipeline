@@ -9,6 +9,7 @@ then applied unchanged to the new speakers (data/lectures_new.csv):
   string matching   match thresholds as in results_v3 (run detect_units.py first)
   carry max_gap     the results_v3 values (kn 3, en 50)
   embeddings        expanded verse documents, top-1 with a margin; threshold = max dev F1
+  GPT-4o-mini       no settings (detect_units.py --layer 4); shown once every unit is covered
   gated             string anchors + embedding gate; tau = max dev F1
   oracle gate       the ceiling for any gate, given the same anchors
 
@@ -57,6 +58,7 @@ def main():
     ap.add_argument("--language", choices=["kn", "en"], required=True)
     ap.add_argument("--rep", choices=["expanded", "trans"], default="expanded")
     ap.add_argument("--n-boot", type=int, default=1000)
+    ap.add_argument("--out-dir", default=RES, help="where to write heldout_<lang>.csv")
     args = ap.parse_args()
     L = args.language
 
@@ -111,15 +113,40 @@ def main():
     tau_drop = best_on_dev(TAUS, lambda t: run_carry(keep=lambda u, v: z(u, v) >= t))
     tau_res = best_on_dev(TAUS, lambda t: run_carry(keep=lambda u, v: z(u, v) >= t, resume=True))
 
+    # GPT-4o-mini needs no tuning. It is only reported if it covers every unit:
+    # a unit missing from the file would silently score as "no verse".
+    llm = {}
+    for name in (f"llm_{L}.csv", "heldout_llm.csv"):
+        if os.path.exists(os.path.join(RES, name)):
+            llm.update(load_pred(os.path.join(RES, name)))
+    need = [u for v in everything for u in lectures[v]]
+    missing = sum(1 for u in need if u not in llm)
+
+    recited = {u: [v for v, t in g.items() if t in ("T1", "T2")] for u, g in gold.items()}
+
+    def run_oracle_anchors():
+        pred = {}
+        for v in everything:
+            pred.update(carry(lectures[v], recited))
+        return pred
+
     systems = [
         ("string matching", run_carry(max_gap=0)),
         ("embeddings (margin)", run_embed(t_embed)),
+    ]
+    if llm and not missing:
+        systems.append(("GPT-4o-mini", llm))
+    elif llm:
+        print(f"  !! GPT-4o-mini row skipped: {missing} unit(s) have no prediction")
+    systems += [
         (f"carry max_gap={FROZEN_GAP[L]}", run_carry(max_gap=FROZEN_GAP[L])),
         ("carry unbounded", run_carry()),
         (f"gated, drop (tau={tau_drop})", run_carry(keep=lambda u, v: z(u, v) >= tau_drop)),
         (f"gated, resume (tau={tau_res})",
          run_carry(keep=lambda u, v: z(u, v) >= tau_res, resume=True)),
+        ("monotonic unbounded", run_carry(monotonic=True)),
         ("oracle gate (resume)", run_carry(keep=lambda u, v: v in gold[u], resume=True)),
+        ("oracle anchors (T1+T2)", run_oracle_anchors()),
     ]
 
     groups = [("ORIGINAL TEST SET (for reference)", test)]
@@ -150,7 +177,7 @@ def main():
             out_rows.append([name, len(videos), n_units, sname, f"{s['P']:.4f}",
                              f"{s['R']:.4f}", f"{s['F1']:.4f}", ci, s["fired"]] + tiers)
 
-    out = os.path.join(RES, f"heldout_{L}.csv")
+    out = os.path.join(args.out_dir, f"heldout_{L}.csv")
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["group", "lectures", "units", "system", "P", "R", "F1", "F1_CI", "fired"] + TIERS)

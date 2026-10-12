@@ -1,0 +1,2205 @@
+unit_id,video_file,annotator,verse_ref,mention_type,has_explicit_ref,uncertain,notes,created_at
+kn_kannada_13_0000,kannada_13,Meghana S,BG 2.32,T1,0,0,,2026-08-21T12:24:35
+kn_kannada_13_0000,kannada_13,Meghana S,BG 2.32,T1,0,0,,2026-08-21T12:25:08
+kn_kannada_13_0001,kannada_13,Meghana S,BG 2.32,T2,0,0,,2026-08-21T12:30:08
+kn_kannada_13_0002,kannada_13,Meghana S,BG 2.32,T2,0,0,,2026-08-21T12:36:44
+kn_kannada_13_0003,kannada_13,Meghana S,BG 2.32,T2,0,0,,2026-08-21T12:38:50
+kn_kannada_13_0004,kannada_13,Meghana S,BG 2.32,T1,0,0,,2026-08-21T12:40:31
+kn_kannada_13_0005,kannada_13,Meghana S,BG 2.33,T1,0,0,,2026-08-21T18:03:01
+kn_kannada_13_0006,kannada_13,Meghana S,BG 2.33,T1,0,0,,2026-08-21T18:03:36
+kn_kannada_13_0008,kannada_13,Meghana S,BG 2.34,T2,0,0,,2026-08-21T18:07:27
+kn_kannada_13_0010,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T18:08:12
+kn_kannada_13_0007,kannada_13,Meghana S,BG 2.33,T1,0,0,,2026-08-21T19:08:09
+kn_kannada_13_0007,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T19:08:09
+kn_kannada_13_0009,kannada_13,Meghana S,BG 2.34,T1,0,0,,2026-08-21T23:25:09
+kn_kannada_07_0000,kannada_07,Prerana,BG 2.14,T4,0,0,Recap of the previous session's verse,2026-08-21T21:06:15
+kn_kannada_07_0002,kannada_07,Prerana,BG 2.15,T1,0,0,,2026-08-21T21:15:25
+kn_kannada_07_0003,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:22:33
+kn_kannada_07_0004,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:25:03
+kn_kannada_07_0005,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:27:25
+kn_kannada_07_0006,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:28:59
+kn_kannada_07_0007,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:31:54
+kn_kannada_07_0008,kannada_07,Prerana,BG 2.15,T1,0,0,,2026-08-21T21:32:37
+kn_kannada_07_0009,kannada_07,Prerana,BG 2.16,T1,0,0,,2026-08-21T21:33:53
+kn_kannada_07_0011,kannada_07,Prerana,BG 2.16,T2,0,0,,2026-08-21T21:35:51
+kn_kannada_07_0012,kannada_07,Prerana,BG 2.16,T4,0,0,,2026-08-21T21:38:29
+kn_kannada_07_0013,kannada_07,Prerana,BG 2.16,T4,0,0,,2026-08-21T21:40:09
+kn_kannada_07_0010,kannada_07,Prerana,BG 2.16,T2,0,0,,2026-08-21T21:48:00
+kn_kannada_07_0014,kannada_07,Prerana,BG 2.16,T1,0,0,,2026-08-21T21:49:07
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.14,T2,0,0,,2026-08-23T11:41:20
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.15,T2,0,0,,2026-08-23T11:41:20
+kn_kannada_08_0001,kannada_08,Prerana,BG 2.15,T2,0,0,,2026-08-23T11:42:56
+kn_kannada_08_0001,kannada_08,Prerana,BG 2.16,T2,0,0,,2026-08-23T11:42:56
+kn_kannada_08_0002,kannada_08,Prerana,BG 2.17,T1,0,0,,2026-08-23T11:45:13
+kn_kannada_08_0003,kannada_08,Prerana,BG 2.17,T1,0,0,,2026-08-23T11:47:08
+kn_kannada_08_0004,kannada_08,Prerana,BG 2.17,T2,0,0,,2026-08-23T11:48:27
+kn_kannada_08_0006,kannada_08,Prerana,BG 2.17,T4,0,0,,2026-08-23T11:55:05
+kn_kannada_08_0007,kannada_08,Prerana,BG 2.18,T1,0,0,,2026-08-23T11:59:58
+kn_kannada_08_0008,kannada_08,Prerana,BG 2.18,T2,0,0,,2026-08-23T12:00:59
+kn_kannada_08_0009,kannada_08,Prerana,BG 2.18,T2,0,0,,2026-08-23T12:02:15
+kn_kannada_08_0010,kannada_08,Prerana,BG 2.18,T2,0,0,,2026-08-23T12:03:25
+kn_kannada_08_0011,kannada_08,Prerana,BG 2.18,T1,0,0,,2026-08-23T12:46:09
+kn_kannada_08_0005,kannada_08,Prerana,BG 2.17,T1,0,0,,2026-08-23T12:51:29
+kn_kannada_07_0001,kannada_07,Prerana,BG 2.15,T4,0,0,,2026-08-23T12:54:51
+kn_kannada_09_0000,kannada_09,Prerana,BG 2.19,T1,0,0,,2026-08-23T13:27:42
+kn_kannada_09_0001,kannada_09,Prerana,BG 2.19,T2,0,0,,2026-08-23T13:29:18
+kn_kannada_09_0002,kannada_09,Prerana,BG 2.19,T4,0,0,,2026-08-23T13:33:06
+kn_kannada_09_0003,kannada_09,Prerana,BG 2.19,T1,0,0,,2026-08-23T13:34:42
+kn_kannada_09_0003,kannada_09,Prerana,BG 2.20,T1,0,0,,2026-08-23T13:34:42
+kn_kannada_09_0004,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:36:52
+kn_kannada_09_0005,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:38:38
+kn_kannada_09_0006,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:39:52
+kn_kannada_09_0007,kannada_09,Prerana,BG 2.20,T2,0,0,,2026-08-23T13:40:29
+kn_kannada_09_0008,kannada_09,Prerana,BG 2.20,T1,0,0,,2026-08-23T13:42:41
+kn_kannada_09_0008,kannada_09,Prerana,BG 2.21,T1,0,0,,2026-08-23T13:42:41
+kn_kannada_09_0009,kannada_09,Prerana,BG 2.20,T1,0,0,,2026-08-23T13:46:45
+kn_kannada_09_0009,kannada_09,Prerana,BG 2.21,T1,0,0,,2026-08-23T13:46:45
+kn_kannada_09_0010,kannada_09,Prerana,BG 2.21,T1,0,0,,2026-08-23T13:47:20
+kn_kannada_09_0010,kannada_09,Prerana,BG 2.22,T1,0,0,,2026-08-23T13:47:20
+kn_kannada_09_0011,kannada_09,Prerana,BG 2.22,T1,0,0,,2026-08-23T13:48:06
+kn_kannada_09_0012,kannada_09,Prerana,BG 2.22,T2,0,0,,2026-08-23T13:48:41
+kn_kannada_09_0013,kannada_09,Prerana,BG 2.22,T1,0,0,,2026-08-23T13:49:23
+kn_kannada_09_0014,kannada_09,Prerana,NONE,NONE,0,0,,2026-08-23T13:49:50
+kn_kannada_10_0000,kannada_10,Prerana,BG 2.23,T1,0,0,,2026-08-23T13:51:39
+kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T13:55:35
+kn_kannada_10_0002,kannada_10,Prerana,BG 2.23,T1,0,0,,2026-08-23T13:56:51
+kn_kannada_10_0002,kannada_10,Prerana,BG 2.24,T1,0,0,,2026-08-23T13:56:51
+kn_kannada_10_0003,kannada_10,Prerana,BG 2.24,T2,0,0,,2026-08-23T13:58:08
+kn_kannada_10_0004,kannada_10,Prerana,BG 2.24,T2,0,0,,2026-08-23T13:59:24
+kn_kannada_10_0005,kannada_10,Prerana,BG 2.24,T2,0,0,,2026-08-23T14:00:05
+kn_kannada_10_0006,kannada_10,Prerana,BG 2.24,T1,0,0,,2026-08-23T14:01:31
+kn_kannada_10_0007,kannada_10,Prerana,BG 2.24,T1,0,0,,2026-08-23T14:01:57
+kn_kannada_10_0007,kannada_10,Prerana,BG 2.25,T1,0,0,,2026-08-23T14:01:57
+kn_kannada_10_0008,kannada_10,Prerana,BG 2.25,T2,0,0,,2026-08-23T14:02:33
+kn_kannada_10_0009,kannada_10,Prerana,BG 2.25,T1,0,0,,2026-08-23T14:03:23
+kn_kannada_10_0010,kannada_10,Prerana,BG 2.25,T2,0,0,,2026-08-23T14:04:05
+kn_kannada_11_0000,kannada_11,Prerana,BG 2.26,T1,0,0,,2026-08-23T14:44:39
+kn_kannada_11_0001,kannada_11,Prerana,BG 2.26,T1,0,0,,2026-08-23T14:46:48
+kn_kannada_11_0002,kannada_11,Prerana,BG 2.26,T2,0,0,,2026-08-23T14:47:21
+kn_kannada_11_0003,kannada_11,Prerana,BG 2.26,T2,0,0,,2026-08-23T14:48:22
+kn_kannada_11_0004,kannada_11,Prerana,BG 2.26,T1,0,0,,2026-08-23T14:49:36
+kn_kannada_11_0004,kannada_11,Prerana,BG 2.27,T1,0,0,,2026-08-23T14:49:36
+kn_kannada_11_0005,kannada_11,Prerana,BG 2.27,T2,0,0,,2026-08-23T14:50:07
+kn_kannada_11_0006,kannada_11,Prerana,BG 2.27,T2,0,0,,2026-08-23T14:50:40
+kn_kannada_11_0007,kannada_11,Prerana,BG 2.27,T4,0,0,,2026-08-23T14:53:08
+kn_kannada_11_0008,kannada_11,Prerana,BG 2.27,T1,0,0,,2026-08-23T14:54:56
+kn_kannada_11_0008,kannada_11,Prerana,BG 2.28,T1,0,0,,2026-08-23T14:54:56
+kn_kannada_11_0009,kannada_11,Prerana,BG 2.28,T2,0,0,,2026-08-23T15:09:55
+kn_kannada_11_0010,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:10:33
+kn_kannada_11_0011,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:10:58
+kn_kannada_11_0012,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:11:23
+kn_kannada_11_0013,kannada_11,Prerana,BG 2.28,T4,0,0,,2026-08-23T15:11:48
+kn_kannada_11_0014,kannada_11,Prerana,BG 2.28,T1,0,0,,2026-08-23T15:12:10
+kn_kannada_11_0015,kannada_11,Prerana,NONE,NONE,0,0,,2026-08-23T15:12:24
+kn_kannada_12_0000,kannada_12,Prerana,BG 2.29,T1,0,0,,2026-08-23T15:15:27
+kn_kannada_12_0001,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:16:03
+kn_kannada_12_0002,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:16:40
+kn_kannada_12_0003,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:17:10
+kn_kannada_12_0004,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:18:39
+kn_kannada_12_0005,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:19:33
+kn_kannada_12_0006,kannada_12,Prerana,BG 2.29,T2,0,0,,2026-08-23T15:21:01
+kn_kannada_12_0007,kannada_12,Prerana,BG 2.29,T1,0,0,,2026-08-23T15:21:27
+kn_kannada_12_0007,kannada_12,Prerana,BG 2.30,T1,0,0,,2026-08-23T15:21:27
+kn_kannada_12_0008,kannada_12,Prerana,BG 2.30,T2,0,0,,2026-08-23T15:21:52
+kn_kannada_12_0009,kannada_12,Prerana,BG 2.30,T1,0,0,,2026-08-23T15:22:28
+kn_kannada_12_0010,kannada_12,Prerana,BG 2.30,T1,0,0,,2026-08-23T15:24:10
+kn_kannada_12_0010,kannada_12,Prerana,BG 2.31,T1,0,0,,2026-08-23T15:24:10
+kn_kannada_12_0011,kannada_12,Prerana,BG 2.31,T2,0,0,,2026-08-23T15:25:54
+kn_kannada_12_0012,kannada_12,Prerana,BG 2.31,T2,0,0,,2026-08-23T15:26:13
+kn_kannada_12_0013,kannada_12,Prerana,BG 2.31,T2,0,0,,2026-08-23T15:26:45
+kn_kannada_12_0014,kannada_12,Prerana,BG 2.31,T1,0,0,,2026-08-23T15:27:11
+kn_kannada_12_0015,kannada_12,Prerana,NONE,NONE,0,0,,2026-08-23T15:27:18
+kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T16:28:10
+kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T16:30:02
+kn_kannada_10_0001,kannada_10,Prerana,BG 2.23,T2,0,0,,2026-08-23T16:36:29
+kn_kannada_14_0001,kannada_14,Meghana S,BG 2.35,T1,1,0,,2026-08-23T19:47:13
+kn_kannada_14_0002,kannada_14,Meghana S,BG 2.35,T2,0,0,,2026-08-23T19:48:10
+kn_kannada_14_0003,kannada_14,Meghana S,BG 2.35,T2,0,0,,2026-08-23T19:49:28
+kn_kannada_14_0004,kannada_14,Meghana S,BG 2.35,T1,0,0,,2026-08-23T19:50:04
+kn_kannada_14_0004,kannada_14,Meghana S,BG 2.36,T1,0,0,,2026-08-23T19:50:58
+kn_kannada_14_0005,kannada_14,Meghana S,BG 2.36,T2,0,0,,2026-08-23T19:53:08
+kn_kannada_14_0006,kannada_14,Meghana S,BG 2.36,T2,0,0,,2026-08-23T19:53:40
+kn_kannada_14_0007,kannada_14,Meghana S,BG 2.36,T1,1,0,,2026-08-23T19:54:48
+kn_kannada_14_0007,kannada_14,Meghana S,BG 2.37,T1,0,0,,2026-08-23T19:54:58
+kn_kannada_14_0008,kannada_14,Meghana S,BG 2.37,T4,0,0,,2026-08-23T19:55:48
+kn_kannada_14_0009,kannada_14,Meghana S,BG 2.37,T2,0,0,OOS: Rigveda 10.154.3,2026-08-23T20:01:52
+kn_kannada_14_0010,kannada_14,Meghana S,BG 2.37,T2,0,0,OOS: Rigveda 10.154.3,2026-08-23T20:05:52
+kn_kannada_14_0011,kannada_14,Meghana S,BG 2.37,T2,0,0,OOS:Rigveda 10.154.3,2026-08-23T20:07:36
+kn_kannada_14_0012,kannada_14,Meghana S,BG 2.37,T2,0,0,,2026-08-23T20:09:33
+kn_kannada_14_0013,kannada_14,Meghana S,BG 2.37,T1,1,0,,2026-08-23T20:10:15
+kn_kannada_15_0001,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:13:23
+kn_kannada_15_0002,kannada_15,Meghana S,NONE,NONE,0,0,"OOS: Abhijñānaśākuntalam (Śākuntala) Act 5, Verse 6 (5.6) ",2026-08-23T20:15:55
+kn_kannada_15_0003,kannada_15,Meghana S,NONE,NONE,0,0,,2026-08-23T20:16:50
+kn_kannada_15_0004,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:18:23
+kn_kannada_15_0005,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:19:13
+kn_kannada_15_0006,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:20:28
+kn_kannada_15_0007,kannada_15,Meghana S,BG 2.38,T4,0,0,,2026-08-23T20:20:59
+kn_kannada_15_0008,kannada_15,Meghana S,BG 2.38,T1,0,0,,2026-08-23T20:21:47
+kn_kannada_15_0009,kannada_15,Meghana S,BG 2.38,T3,1,0,,2026-08-23T20:22:34
+kn_kannada_15_0009,kannada_15,Meghana S,BG 2.39,T1,0,0,,2026-08-23T20:22:42
+kn_kannada_15_0010,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:23:21
+kn_kannada_15_0012,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:24:28
+kn_kannada_15_0013,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:24:59
+kn_kannada_15_0014,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:25:28
+kn_kannada_15_0017,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:33:06
+kn_kannada_15_0018,kannada_15,Meghana S,BG 2.39,T2,0,0,,2026-08-23T20:34:38
+kn_kannada_15_0019,kannada_15,Meghana S,BG 2.39,T1,0,0,,2026-08-23T20:35:05
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.39,T3,1,0,,2026-08-23T22:55:24
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.40,T3,1,0,,2026-08-23T22:55:33
+kn_kannada_16_0001,kannada_16,Meghana S,BG 2.40,T1,0,0,,2026-08-23T22:56:08
+kn_kannada_16_0002,kannada_16,Meghana S,BG 2.40,T2,1,0,,2026-08-23T22:57:02
+kn_kannada_16_0003,kannada_16,Meghana S,BG 2.40,T4,0,0,,2026-08-23T22:57:43
+kn_kannada_16_0004,kannada_16,Meghana S,BG 2.40,T2,0,0,,2026-08-23T23:00:52
+kn_kannada_15_0016,kannada_15,Meghana S,BG 2.50,T4,0,0,,2026-08-23T23:06:30
+kn_kannada_16_0005,kannada_16,Meghana S,BG 2.40,T4,0,0,,2026-08-23T23:09:01
+kn_kannada_16_0006,kannada_16,Meghana S,BG 2.40,T2,0,0,,2026-08-23T23:10:01
+kn_kannada_16_0007,kannada_16,Meghana S,BG 2.40,T3,0,0,OOS: Viṣṇudharma,2026-08-23T23:11:44
+kn_kannada_16_0008,kannada_16,Meghana S,BG 2.40,T1,0,0,,2026-08-23T23:13:55
+kn_kannada_16_0009,kannada_16,Meghana S,BG 2.41,T1,0,0,,2026-08-23T23:15:21
+kn_kannada_16_0010,kannada_16,Meghana S,BG 2.41,T3,0,0,,2026-08-23T23:16:19
+kn_kannada_16_0011,kannada_16,Meghana S,BG 2.41,T3,0,0,OOS: Śvetāśvatara Upanishad 3.8,2026-08-23T23:18:16
+kn_kannada_16_0012,kannada_16,Meghana S,BG 2.41,T1,0,0,,2026-08-23T23:19:56
+kn_kannada_16_0013,kannada_16,Meghana S,BG 2.41,T3,0,0,,2026-08-23T23:20:32
+kn_kannada_16_0014,kannada_16,Meghana S,BG 2.41,T1,0,0,,2026-08-23T23:21:06
+kn_kannada_17_0000,kannada_17,Meghana S,BG 2.39,T3,0,0,,2026-08-24T00:25:48
+kn_kannada_17_0000,kannada_17,Meghana S,BG 2.43,T1,0,0,,2026-08-24T00:25:59
+kn_kannada_17_0000,kannada_17,Meghana S,BG 2.42,T1,0,0,,2026-08-24T00:25:59
+kn_kannada_17_0001,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T00:28:08
+kn_kannada_17_0001,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T00:28:08
+kn_kannada_17_0002,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T00:30:18
+kn_kannada_17_0002,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T00:30:18
+kn_kannada_17_0003,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T12:04:34
+kn_kannada_17_0004,kannada_17,Meghana S,BG 2.42,T2,0,0,OOS: Gita Bhashya 2.45 (Madhvacharya).,2026-08-24T12:07:05
+kn_kannada_17_0005,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T12:08:13
+kn_kannada_17_0006,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T12:09:42
+kn_kannada_17_0007,kannada_17,Meghana S,BG 2.42,T2,0,0,,2026-08-24T12:11:11
+kn_kannada_17_0007,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-24T12:11:11
+kn_kannada_17_0008,kannada_17,Meghana S,BG 2.42,T1,0,0,,2026-08-24T12:12:53
+kn_kannada_17_0008,kannada_17,Meghana S,BG 2.43,T1,0,0,,2026-08-24T12:12:53
+kn_kannada_17_0008,kannada_17,Meghana S,BG 2.44,T1,0,0,,2026-08-24T12:12:53
+kn_kannada_17_0009,kannada_17,Meghana S,BG 2.44,T2,0,0,,2026-08-24T12:14:38
+kn_kannada_17_0010,kannada_17,Meghana S,BG 2.44,T2,0,0,,2026-08-24T12:17:26
+kn_kannada_17_0011,kannada_17,Meghana S,BG 2.44,T2,0,0,,2026-08-24T12:18:33
+kn_kannada_17_0012,kannada_17,Meghana S,BG 2.44,T1,0,0,,2026-08-24T12:20:32
+kn_kannada_17_0013,kannada_17,Meghana S,NONE,NONE,0,0,,2026-08-24T12:20:52
+kn_kannada_18_0000,kannada_18,Meghana S,BG 2.45,T1,1,0,,2026-08-24T17:25:49
+kn_kannada_18_0001,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:27:08
+kn_kannada_18_0002,kannada_18,Meghana S,BG 2.45,T4,0,0,,2026-08-24T17:27:53
+kn_kannada_18_0003,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:29:27
+kn_kannada_18_0004,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:30:26
+kn_kannada_18_0005,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:32:08
+kn_kannada_18_0006,kannada_18,Meghana S,BG 2.45,T2,0,0,,2026-08-24T23:15:29
+kn_kannada_18_0007,kannada_18,Meghana S,BG 2.45,T3,0,0,OOS:9.22,2026-08-24T23:16:43
+kn_kannada_18_0008,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T23:17:45
+kn_kannada_18_0009,kannada_18,Meghana S,BG 2.45,T1,0,0,,2026-08-24T23:18:43
+kn_kannada_18_0010,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T23:19:32
+kn_kannada_18_0011,kannada_18,Meghana S,BG 2.45,T2,0,0,OOS: Kena Upanishad 2.5,2026-08-24T23:23:35
+kn_kannada_18_0012,kannada_18,Meghana S,BG 2.45,T5,0,0,,2026-08-24T23:24:13
+kn_kannada_14_0000,kannada_14,Meghana S,BG 2.33,T2,0,0,,2026-08-26T20:03:52
+kn_kannada_14_0000,kannada_14,Meghana S,BG 2.34,T2,0,0,,2026-08-26T20:03:52
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.37,T2,0,0,OOS:BG 1.36,2026-08-26T20:15:51
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.38,T1,1,0,,2026-08-26T20:16:04
+kn_kannada_15_0011,kannada_15,Meghana S,BG 2.39,T3,0,0,OOS:BG 13.24,2026-08-26T20:22:48
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.48,T3,0,0,,2026-08-26T20:25:33
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.50,T3,0,0,,2026-08-26T20:25:33
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-26T20:25:49
+kn_kannada_15_0016,kannada_15,Meghana S,BG 2.48,T4,0,0,,2026-08-26T22:52:55
+kn_kannada_17_0003,kannada_17,Meghana S,BG 2.43,T2,0,0,,2026-08-26T23:05:41
+kn_kannada_07_0000,kannada_07,Prerana,BG 2.14,T4,1,0,Recap of the previous session's verse,2026-08-21T21:06:15
+kn_kannada_07_0001,kannada_07,Prerana,BG 2.15,T4,1,0,,2026-08-21T21:15:07
+kn_kannada_07_0005,kannada_07,Prerana,BG 2.15,T2,0,1,,2026-08-21T21:27:25
+kn_kannada_07_0006,kannada_07,Prerana,BG 2.15,T2,0,1,,2026-08-21T21:28:59
+kn_kannada_07_0008,kannada_07,Prerana,BG 2.15,T1,1,0,,2026-08-21T21:32:37
+kn_kannada_07_0009,kannada_07,Prerana,BG 2.16,T1,1,0,,2026-08-21T21:33:53
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.14,T2,1,0,,2026-08-23T11:41:20
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.15,T2,1,0,,2026-08-23T11:41:20
+kn_kannada_08_0000,kannada_08,Prerana,BG 2.16,T2,1,0,,2026-08-23T11:41:20
+kn_kannada_08_0001,kannada_08,Prerana,BG 2.15,T2,1,0,,2026-08-23T11:42:56
+kn_kannada_08_0001,kannada_08,Prerana,BG 2.16,T2,1,0,,2026-08-23T11:42:56
+kn_kannada_08_0002,kannada_08,Prerana,BG 2.17,T1,1,0,,2026-08-23T11:45:13
+kn_kannada_08_0006,kannada_08,Prerana,BG 2.18,T4,0,0,,2026-08-23T11:55:05
+kn_kannada_09_0003,kannada_09,Prerana,BG 2.19,T1,1,0,,2026-08-23T13:34:42
+kn_kannada_09_0003,kannada_09,Prerana,BG 2.20,T1,1,0,,2026-08-23T13:34:42
+kn_kannada_09_0011,kannada_09,Prerana,BG 2.22,T1,1,0,,2026-08-23T13:48:06
+kn_kannada_10_0000,kannada_10,Prerana,BG 2.23,T1,1,0,,2026-08-23T13:51:39
+kn_kannada_10_0002,kannada_10,Prerana,BG 2.23,T1,1,0,,2026-08-23T13:56:51
+kn_kannada_10_0002,kannada_10,Prerana,BG 2.24,T1,1,0,,2026-08-23T13:56:51
+kn_kannada_10_0006,kannada_10,Prerana,BG 2.24,T1,0,1,,2026-08-23T14:01:31
+kn_kannada_10_0007,kannada_10,Prerana,BG 2.24,T1,1,0,,2026-08-23T14:01:57
+kn_kannada_10_0007,kannada_10,Prerana,BG 2.25,T1,1,0,,2026-08-23T14:01:57
+kn_kannada_10_0010,kannada_10,Prerana,BG 2.25,T2,1,0,,2026-08-23T14:04:05
+kn_kannada_11_0000,kannada_11,Prerana,BG 2.19,T4,1,1,,2026-08-23T14:44:39
+kn_kannada_11_0001,kannada_11,Prerana,BG 2.26,T1,1,0,,2026-08-23T14:46:48
+kn_kannada_11_0008,kannada_11,Prerana,BG 2.27,T1,1,0,,2026-08-23T14:54:56
+kn_kannada_11_0008,kannada_11,Prerana,BG 2.28,T1,1,0,,2026-08-23T14:54:56
+kn_kannada_11_0013,kannada_11,Prerana,BG 2.28,T4,0,1,,2026-08-23T15:11:48
+kn_kannada_12_0000,kannada_12,Prerana,BG 2.29,T1,1,0,,2026-08-23T15:15:27
+kn_kannada_12_0007,kannada_12,Prerana,BG 2.29,T1,1,0,,2026-08-23T15:21:27
+kn_kannada_12_0007,kannada_12,Prerana,BG 2.30,T1,1,0,,2026-08-23T15:21:27
+kn_kannada_12_0009,kannada_12,Prerana,BG 2.30,T2,0,0,,2026-08-23T15:22:28
+kn_kannada_12_0010,kannada_12,Prerana,BG 2.30,T1,1,0,,2026-08-23T15:24:10
+kn_kannada_12_0010,kannada_12,Prerana,BG 2.31,T1,1,0,,2026-08-23T15:24:10
+kn_kannada_12_0013,kannada_12,Prerana,BG 2.31,T2,0,1,,2026-08-23T15:26:45
+kn_kannada_14_0000,kannada_14,Meghana S,BG 2.34,T2,0,0,,2026-08-23T19:46:24
+kn_kannada_14_0001,kannada_14,Meghana S,BG 2.35,T1,0,0,,2026-08-23T19:47:13
+kn_kannada_14_0007,kannada_14,Meghana S,BG 2.36,T2,0,0,,2026-08-23T19:54:48
+kn_kannada_14_0008,kannada_14,Meghana S,BG 2.37,T3,0,0,,2026-08-23T19:55:48
+kn_kannada_14_0013,kannada_14,Meghana S,BG 2.37,T1,0,0,,2026-08-23T20:10:15
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.37,T2,0,0,,2026-08-23T20:11:13
+kn_kannada_15_0000,kannada_15,Meghana S,BG 2.38,T1,0,0,,2026-08-23T20:11:48
+kn_kannada_15_0007,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:20:59
+kn_kannada_15_0009,kannada_15,Meghana S,BG 2.38,T3,0,0,,2026-08-23T20:22:34
+kn_kannada_15_0011,kannada_15,Meghana S,BG 2.39,T3,0,0,,2026-08-23T20:23:45
+kn_kannada_15_0015,kannada_15,Meghana S,BG 2.39,T3,0,0,"OOS:2.50, 2.48",2026-08-23T20:31:44
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.39,T3,0,0,,2026-08-23T22:55:24
+kn_kannada_16_0000,kannada_16,Meghana S,BG 2.40,T3,0,0,,2026-08-23T22:55:33
+kn_kannada_16_0002,kannada_16,Meghana S,BG 2.40,T2,0,0,,2026-08-23T22:57:02
+kn_kannada_16_0003,kannada_16,Meghana S,BG 2.40,T3,0,0,,2026-08-23T22:57:43
+kn_kannada_15_0016,kannada_15,Meghana S,BG 2.50,T4,0,0,OOS:2.48,2026-08-23T23:06:30
+kn_kannada_16_0005,kannada_16,Meghana S,BG 2.40,T3,0,0,,2026-08-23T23:09:01
+kn_kannada_18_0000,kannada_18,Meghana S,BG 2.45,T4,0,0,,2026-08-24T17:25:49
+kn_kannada_18_0002,kannada_18,Meghana S,BG 2.45,T3,0,0,,2026-08-24T17:27:53
+kn_gita-1st_video_0000,gita-1st_video,Maitreyi,NONE,NONE,0,0,OOS:Gita-Ch1 BG 1.35,2026-08-21T23:52:02
+kn_gita-1st_video_0000,gita-1st_video,Maitreyi,NONE,NONE,0,0,,2026-08-21T23:52:09
+kn_gita-1st_video_0001,gita-1st_video,Maitreyi,BG 2.1,T1,0,0,,2026-08-21T23:53:04
+kn_gita-1st_video_0002,gita-1st_video,Maitreyi,BG 2.1,T2,0,0,,2026-08-21T23:56:00
+kn_gita-1st_video_0003,gita-1st_video,Maitreyi,BG 2.1,T2,1,0,,2026-08-22T00:01:34
+kn_gita-1st_video_0004,gita-1st_video,Maitreyi,BG 2.1,T1,0,0,,2026-08-22T00:02:36
+kn_gita-1st_video_0004,gita-1st_video,Maitreyi,BG 2.2,T1,0,0,,2026-08-22T00:02:36
+kn_gita-1st_video_0005,gita-1st_video,Maitreyi,BG 2.2,T2,0,0,,2026-08-22T00:03:14
+kn_gita-1st_video_0006,gita-1st_video,Maitreyi,BG 2.2,T2,0,0,,2026-08-22T00:03:45
+kn_gita-1st_video_0007,gita-1st_video,Maitreyi,BG 2.2,T2,0,0,,2026-08-22T00:04:18
+kn_gita-1st_video_0008,gita-1st_video,Maitreyi,BG 2.2,T1,0,0,,2026-08-22T00:04:57
+kn_gita-1st_video_0008,gita-1st_video,Maitreyi,BG 2.3,T1,0,0,,2026-08-22T00:04:57
+kn_gita-1st_video_0009,gita-1st_video,Maitreyi,BG 2.3,T2,0,0,,2026-08-22T00:05:18
+kn_gita-1st_video_0010,gita-1st_video,Maitreyi,BG 2.3,T2,0,0,,2026-08-22T00:05:41
+kn_gita-1st_video_0011,gita-1st_video,Maitreyi,BG 2.3,T2,0,0,,2026-08-22T00:06:17
+kn_gita-1st_video_0012,gita-1st_video,Maitreyi,BG 2.3,T2,0,0,,2026-08-22T00:06:44
+kn_gita-1st_video_0013,gita-1st_video,Maitreyi,BG 2.7,T2,0,0,,2026-08-22T00:09:58
+kn_gita-1st_video_0014,gita-1st_video,Maitreyi,BG 2.3,T1,0,0,,2026-08-22T00:10:12
+kn_gita-2nd_video_0000,gita-2nd_video,Maitreyi,BG 2.4,T1,0,0,,2026-08-26T00:51:45
+kn_gita-2nd_video_0000,gita-2nd_video,Maitreyi,BG 2.3,T2,0,0,,2026-08-26T00:51:54
+kn_gita-2nd_video_0001,gita-2nd_video,Maitreyi,BG 2.4,T2,0,0,,2026-08-26T00:53:18
+kn_gita-2nd_video_0002,gita-2nd_video,Maitreyi,BG 2.4,T4,0,0,,2026-08-26T00:54:14
+kn_gita-2nd_video_0003,gita-2nd_video,Maitreyi,BG 2.4,T1,0,0,,2026-08-26T00:57:29
+kn_gita-2nd_video_0003,gita-2nd_video,Maitreyi,BG 2.5,T1,0,0,,2026-08-26T00:57:29
+kn_gita-2nd_video_0004,gita-2nd_video,Maitreyi,BG 2.5,T2,0,0,,2026-08-26T00:57:54
+kn_gita-2nd_video_0005,gita-2nd_video,Maitreyi,BG 2.5,T2,0,0,,2026-08-26T00:58:11
+kn_gita-2nd_video_0006,gita-2nd_video,Maitreyi,BG 2.5,T2,0,0,,2026-08-26T00:58:54
+kn_gita-2nd_video_0007,gita-2nd_video,Maitreyi,BG 2.5,T2,0,0,,2026-08-26T00:59:08
+kn_gita-2nd_video_0008,gita-2nd_video,Maitreyi,BG 2.5,T1,0,0,,2026-08-26T00:59:25
+kn_gita-2nd_video_0008,gita-2nd_video,Maitreyi,BG 2.6,T1,0,0,,2026-08-26T00:59:25
+kn_gita-2nd_video_0009,gita-2nd_video,Maitreyi,BG 2.6,T2,0,0,,2026-08-26T00:59:41
+kn_gita-2nd_video_0010,gita-2nd_video,Maitreyi,BG 2.6,T2,0,0,,2026-08-26T00:59:54
+kn_gita-2nd_video_0011,gita-2nd_video,Maitreyi,BG 2.6,T1,0,0,,2026-08-26T01:00:07
+kn_gita-2nd_video_0012,gita-2nd_video,Maitreyi,NONE,NONE,0,0,,2026-08-26T01:00:19
+kn_gita-2nd_video_0008,gita-2nd_video,Maitreyi,BG 2.5,T1,1,0,,2026-08-26T01:12:13
+kn_gita-2nd_video_0000,gita-2nd_video,Maitreyi,BG 2.4,T1,1,0,,2026-08-26T01:13:22
+kn_gita-3rd_video_0000,gita-3rd_video,Maitreyi,BG 2.7,T1,1,0,,2026-08-26T08:47:37
+kn_gita-3rd_video_0001,gita-3rd_video,Maitreyi,BG 2.7,T2,0,0,,2026-08-26T08:47:49
+kn_gita-3rd_video_0002,gita-3rd_video,Maitreyi,BG 2.7,T2,0,0,,2026-08-26T08:48:04
+kn_gita-3rd_video_0003,gita-3rd_video,Maitreyi,BG 2.7,T2,0,0,,2026-08-26T08:48:30
+kn_gita-3rd_video_0004,gita-3rd_video,Maitreyi,BG 2.3,T2,0,0,,2026-08-26T08:49:21
+kn_gita-3rd_video_0004,gita-3rd_video,Maitreyi,BG 2.7,T2,0,0,,2026-08-26T08:49:21
+kn_gita-3rd_video_0005,gita-3rd_video,Maitreyi,BG 2.7,T1,0,0,,2026-08-26T08:49:31
+kn_gita-3rd_video_0006,gita-3rd_video,Maitreyi,BG 2.8,T1,0,0,,2026-08-26T08:49:47
+kn_gita-3rd_video_0007,gita-3rd_video,Maitreyi,BG 2.8,T2,0,0,,2026-08-26T08:49:59
+kn_gita-3rd_video_0008,gita-3rd_video,Maitreyi,BG 2.8,T2,0,0,,2026-08-26T08:50:16
+kn_gita-3rd_video_0009,gita-3rd_video,Maitreyi,BG 2.7,T2,0,0,,2026-08-26T08:50:45
+kn_gita-3rd_video_0010,gita-3rd_video,Maitreyi,BG 2.8,T1,0,0,,2026-08-26T08:51:02
+kn_gita-3rd_video_0010,gita-3rd_video,Maitreyi,BG 2.9,T1,0,0,,2026-08-26T08:51:02
+kn_gita-3rd_video_0011,gita-3rd_video,Maitreyi,BG 2.9,T2,0,0,,2026-08-26T08:51:12
+kn_gita-3rd_video_0012,gita-3rd_video,Maitreyi,BG 2.9,T1,0,0,OOS:non-Gita verse(mostly harivamsha),2026-08-26T08:52:14
+kn_gita-3rd_video_0013,gita-3rd_video,Maitreyi,NONE,NONE,0,0,,2026-08-26T08:52:16
+kn_kannada_07_0001,kannada_07,Prerana,BG 2.15,T2,0,0,,2026-08-21T21:15:07
+kn_gita-5th_video_0000,gita-5th_video,Expert (father),BG 2.11,T2,1,1,"pratika-only: asocya (2.11), prahasan (2.10); one-word-fragment case, adjudicate with kannada_07 0005",2026-08-26T14:25:26
+kn_gita-5th_video_0001,gita-5th_video,Expert (father),BG 2.12,T1,1,0,"""12ne shloka"" + full recitation na tv evaham jatu nasam + PADAVIBHAGA:",2026-08-26T14:25:26
+kn_gita-5th_video_0002,gita-5th_video,Expert (father),BG 2.12,T2,0,0,"aham nasam iti na tv eva, tvam nasih",2026-08-26T14:25:26
+kn_gita-5th_video_0003,gita-5th_video,Expert (father),BG 2.12,T2,0,0,"ime janadhipah, nasan iti na + three-persons analysis",2026-08-26T14:25:26
+kn_gita-5th_video_0004,gita-5th_video,Expert (father),BG 2.12,T2,0,0,atah param sarve vayam na bhavishyamah iti na,2026-08-26T14:25:26
+kn_gita-5th_video_0005,gita-5th_video,Expert (father),BG 2.12,T4,0,0,application: deceased atman persists; ajara amara is vocabulary not verse text,2026-08-26T14:25:26
+kn_gita-5th_video_0006,gita-5th_video,Expert (father),BG 2.12,T1,1,0,"full re-recitation of 2.12, then ""13ne shloka"" + full 2.13 dehinosmin yatha dehe + PADAVIBHAGA:",2026-08-26T14:25:26
+kn_gita-5th_video_0006,gita-5th_video,Expert (father),BG 2.13,T1,1,0,"full re-recitation of 2.12, then ""13ne shloka"" + full 2.13 dehinosmin yatha dehe + PADAVIBHAGA:",2026-08-26T14:25:26
+kn_gita-5th_video_0007,gita-5th_video,Expert (father),BG 2.13,T2,0,0,"dehinah, dehe, kaumaram yauvanam jara + grhi/dehi analogy",2026-08-26T14:25:26
+kn_gita-5th_video_0008,gita-5th_video,Expert (father),BG 2.13,T2,0,0,yatha... tatha dehantara praptih,2026-08-26T14:25:26
+kn_gita-5th_video_0009,gita-5th_video,Expert (father),BG 2.13,T2,0,0,dhirah... tatra na muhyati + etymology dhiya ramate iti dhirah,2026-08-26T14:25:26
+kn_gita-5th_video_0010,gita-5th_video,Expert (father),BG 2.13,T1,0,0,"asocyan anusocas tvam (2.11 fragment) mid-unit, then full re-recitation of 2.13",2026-08-26T14:25:26
+kn_gita-5th_video_0011,gita-5th_video,Expert (father),BG 2.13,T2,0,0,"OOS: non-Gita Carvaka/Lokayata maxim bhasmibhutasya dehasya punaragamanam kutah, quoted to be refuted",2026-08-26T14:25:26
+kn_gita-5th_video_0012,gita-5th_video,Expert (father),BG 2.13,T2,0,1,pratika-only (dehi as lemma); same adjudication bucket as unit 0000,2026-08-26T14:25:26
+kn_gita-5th_video_0013,gita-5th_video,Expert (father),BG 2.13,T4,0,0,karma-across-lives application; dehantara as flowing vocabulary not quotation,2026-08-26T14:25:26
+kn_gita-5th_video_0014,gita-5th_video,Expert (father),BG 2.13,T2,0,0,ends quoting dhirah tatra na muhyati,2026-08-26T14:25:26
+kn_gita-5th_video_0015,gita-5th_video,Expert (father),BG 2.12,T4,0,0,"reflection on both verses teaching, no quotes",2026-08-26T14:25:26
+kn_gita-5th_video_0015,gita-5th_video,Expert (father),BG 2.13,T4,0,0,"reflection on both verses teaching, no quotes",2026-08-26T14:25:26
+kn_gita-5th_video_0016,gita-5th_video,Expert (father),BG 2.13,T4,0,0,"transitional: Arjunas remaining objection (viyoga); still inside 2.12-13 block, transition toward 2.14",2026-08-26T14:25:26
+kn_gita-5th_video_0017,gita-5th_video,Expert (father),BG 2.14,T4,1,0,"Drona/Bhishma lament: the question 2.14 answers; speaker names ""14ne shloka"". Forward-reference",2026-08-26T14:25:26
+kn_gita-5th_video_0018,gita-5th_video,Expert (father),NONE,NONE,0,0,8 words of dedication,2026-08-26T14:25:26
+kn_gita-4th_video_0000,gita-4th_video,Maitreyi,BG 2.10,T1,0,0,,2026-08-26T14:08:21
+kn_gita-4th_video_0001,gita-4th_video,Maitreyi,BG 2.10,T2,0,0,,2026-08-26T14:08:40
+kn_gita-4th_video_0002,gita-4th_video,Maitreyi,BG 2.3,T2,0,0,,2026-08-26T14:09:34
+kn_gita-4th_video_0002,gita-4th_video,Maitreyi,BG 2.10,T2,0,0,,2026-08-26T14:09:34
+kn_gita-4th_video_0003,gita-4th_video,Maitreyi,BG 2.10,T2,0,0,,2026-08-26T14:09:46
+kn_gita-4th_video_0003,gita-4th_video,Maitreyi,BG 2.7,T2,0,0,,2026-08-26T14:09:46
+kn_gita-4th_video_0004,gita-4th_video,Maitreyi,BG 2.10,T1,0,0,,2026-08-26T14:09:57
+kn_gita-4th_video_0005,gita-4th_video,Maitreyi,BG 2.11,T1,0,0,,2026-08-26T14:10:22
+kn_gita-4th_video_0006,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:11:04
+kn_gita-4th_video_0007,gita-4th_video,Maitreyi,BG 2.11,T4,0,1,,2026-08-26T14:11:20
+kn_gita-4th_video_0008,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:11:31
+kn_gita-4th_video_0009,gita-4th_video,Maitreyi,BG 2.11,T4,0,0,,2026-08-26T14:11:40
+kn_gita-4th_video_0010,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:12:07
+kn_gita-4th_video_0011,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:12:25
+kn_gita-4th_video_0012,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:12:35
+kn_gita-4th_video_0013,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:13:01
+kn_gita-4th_video_0014,gita-4th_video,Maitreyi,BG 2.11,T2,0,0,,2026-08-26T14:13:06
+kn_gita-6th_video_0000,gita-6th_video,Expert (father),BG 2.14,T1,1,0,"""14ne shloka"" + full recitation + PADAVIBHAGA:. Commentary Sanskrit: Raghavendra Gitartha-sangraha avatarika. ASR renders anityah as nityaha - garble, does not downgrade T1",2026-08-26T14:27:12
+kn_gita-6th_video_0001,gita-6th_video,Expert (father),BG 2.14,T2,0,0,avatarika Sanskrit continues (tad-deha-darsana-sparsana-sambhasanadeh) - all commentary; verse anchor is matra-sparsah at end,2026-08-26T14:27:12
+kn_gita-6th_video_0002,gita-6th_video,Expert (father),BG 2.14,T2,0,0,matra-sparsa + etymology miyante iti matrah (commentary),2026-08-26T14:27:12
+kn_gita-6th_video_0003,gita-6th_video,Expert (father),BG 2.14,T2,0,0,"matra-sparsah, kaunteya, sita-usna-sukha-duhkha-dah",2026-08-26T14:27:12
+kn_gita-6th_video_0004,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"senses/experience explanation, pure Kannada",2026-08-26T14:27:12
+kn_gita-6th_video_0005,gita-6th_video,Expert (father),BG 2.14,T2,0,0,matra-sparsas tu quoted; the tu = eva kaku point (Madhva bhasya),2026-08-26T14:27:12
+kn_gita-6th_video_0006,gita-6th_video,Expert (father),BG 2.14,T4,0,0,kaku discussion + apple example begins - no verse Sanskrit,2026-08-26T14:27:12
+kn_gita-6th_video_0007,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"apple example, own words",2026-08-26T14:27:12
+kn_gita-6th_video_0008,gita-6th_video,Expert (father),BG 2.14,T4,0,0,visayabhimana as vocabulary; own words,2026-08-26T14:27:12
+kn_gita-6th_video_0009,gita-6th_video,Expert (father),BG 2.14,T4,0,0,fallen-child example,2026-08-26T14:27:12
+kn_gita-6th_video_0010,gita-6th_video,Expert (father),BG 2.14,T4,0,0,rented-house/nail example,2026-08-26T14:27:12
+kn_gita-6th_video_0011,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"application to Arjunas grief, own words",2026-08-26T14:27:12
+kn_gita-6th_video_0012,gita-6th_video,Expert (father),BG 2.14,T4,0,0,own words + commentary phrase bhagavad-dvit-tad-anubandhinah (same Madhva term as gita-4th 0010),2026-08-26T14:27:12
+kn_gita-6th_video_0013,gita-6th_video,Expert (father),BG 2.14,T2,0,0,agamapayinah quoted and glossed,2026-08-26T14:27:12
+kn_gita-6th_video_0014,gita-6th_video,Expert (father),BG 2.14,T2,0,0,"agama apayinah, anitya + Ganga analogy",2026-08-26T14:27:12
+kn_gita-6th_video_0015,gita-6th_video,Expert (father),BG 2.14,T2,0,0,anityah explicitly attributed to the verse (anityaha anno padadinda),2026-08-26T14:27:12
+kn_gita-6th_video_0016,gita-6th_video,Expert (father),BG 2.14,T2,0,0,tan titiksasva + Madhva viphalikuru gloss (commentary note),2026-08-26T14:27:12
+kn_gita-6th_video_0017,gita-6th_video,Expert (father),BG 2.14,T2,0,0,titiksasva vs other commentators sahasva,2026-08-26T14:27:12
+kn_gita-6th_video_0018,gita-6th_video,Expert (father),BG 2.14,T4,0,0,"doctor/fever analogy, own words",2026-08-26T14:27:12
+kn_gita-6th_video_0019,gita-6th_video,Expert (father),BG 2.14,T1,0,0,"""mattomme shloka"" full re-recitation, then the phala preview",2026-08-26T14:27:12
+kn_gita-6th_video_0020,gita-6th_video,Expert (father),NONE,NONE,0,0,dedication,2026-08-26T14:27:12
+kn_kannada_19_0000,kannada_19,Expert (father),BG 2.46,T1,1,0,"""46ne shloka"" spoken; full recitation + pada-vibhaga (vija anatah = vijanatah split by ASR, ruling 12). Opening recap of 2.45 in Kannada -> cross-ref 2.45 (note only, no row); traigunya/nistraigunya here = flowing-speech vocabulary (ruling 7), not fragments",2026-08-27T11:40:00
+kn_kannada_19_0001,kannada_19,Expert (father),BG 2.46,T2,0,0,"yavan / tavan parsed as verse words, then contiguous udapane yavan arthah sarvatah samplutodake tavan re-quoted in anvaya discussion",2026-08-27T11:40:00
+kn_kannada_19_0002,kannada_19,Expert (father),BG 2.46,T2,0,0,"udapane yavan arthah, tavan sarvatah samplutodake; well-vs-river gloss follows",2026-08-27T11:40:00
+kn_kannada_19_0003,kannada_19,Expert (father),BG 2.46,T4,0,1,"RULED T4 (was T2): only Sanskrit in unit is OOS, not a fragment of 2.46 -> guideline step 2 does not fire; Kannada content is jnana-vs-karma application -> step 4. OOS: kim iha alabhyam prasanne srinikeetane - devotional/stotra line, source unverified, expert to confirm (new inventory entry). Sudhama story = Bhagavata anecdote, Kannada only, no Sanskrit -> noted, no OOS tag (parable convention, cf. honey-drop). Pending team ratification of the OOS-only rule",2026-08-27T11:40:00
+kn_kannada_19_0004,kannada_19,Expert (father),BG 2.46,T2,0,0,"sarvesu vedesu, vijanatah brahmanasya tavan (x2) - uttarardha gloss phase",2026-08-27T11:40:00
+kn_kannada_19_0005,kannada_19,Expert (father),BG 2.46,T2,0,1,"Verse lemmas brahmana / vijanatah quoted and parsed (""giteya shabda..."", ""vijanatah anta onde shabda ide"") - citation function clear, but short-lemma rows go to the fragment-distinctiveness bucket. NOTE: the kannada_15 members of that bucket (0001/0004/0010/0013) are currently tagged T3, not T2 - bucket is split across videos, adjudicate together. Commentary Sanskrit (brahma anati [gacchati] iti brahmanah, Srimad-Acarya etymology, ruling 6), not verse text",2026-08-27T11:40:00
+kn_kannada_19_0006,kannada_19,Expert (father),BG 2.46,T2,0,0,"vijanatah gloss continues; OOS: Brhadaranyaka Up. 2.4.5 (atma va are drastavyah srotavyo mantavyo nididhyasitavyah), confident - new inventory entry. sravana/manana exposition follows",2026-08-27T11:40:00
+kn_kannada_19_0007,kannada_19,Expert (father),BG 2.46,T2,0,0,"vijanatah wrap-up + nididhyasitavyah re-quoted (Brh. Up. continuation); OOS: BG 5.29 (suhrdam sarva-bhutanam), confident - new inventory entry",2026-08-27T11:40:00
+kn_kannada_19_0008,kannada_19,Expert (father),BG 2.46,T1,0,0,"""mattomme shloka"" full re-recitation of 2.46 (ruling 10; udapani/samplu todake garbles, no downgrade) - positional reference, so explicit=0. Then ""47ne shloka"" announced with NO 2.47 Sanskrit or content in this unit -> no 2.47 row created here (tie-break 6); the explicit ref is carried on the 2.47 row at 0009. Cross-ref 2.45 (nitya-sattvastha, atmavan frags) - note only, but these are in-scope Ch.2 Sanskrit fragments and may warrant their own 2.45 row; flagged",2026-08-27T11:40:00
+kn_kannada_19_0009,kannada_19,Expert (father),BG 2.47,T1,1,1,"Full 2.47 recitation + pada-vibhaga (ma ate sangostva = ma te sango stv garble). explicit=1 CHANGED from 0: the number ""47ne shloka"" is spoken at the end of 0008 and the announcement + recitation are one act split by the 100-word chunker (tie-break 1). uncertain=1 pending ratification of that boundary convention. Then the ""labor-hostile"" misreading critique begins (Kannada)",2026-08-27T11:40:00
+kn_kannada_19_0010,kannada_19,Expert (father),BG 2.47,T2,0,0,te karmany eva adhikarah re-quoted amid the misinterpretation rebuttal,2026-08-27T11:40:00
+kn_kannada_19_0011,kannada_19,Expert (father),BG 2.47,T4,0,1,"RULED T4 (was T2): only Sanskrit in unit is OOS, not a fragment of 2.47 -> guideline step 2 does not fire; Kannada is kamya-vs-nitya vidhi distinction -> step 4. OOS: ahar ahah sandhyam upasita - Vedic/smrti vidhi (nitya-karma injunction), source unverified, expert to confirm (new inventory entry). Pending team ratification of the OOS-only rule",2026-08-27T11:40:00
+kn_kannada_19_0012,kannada_19,Expert (father),BG 2.47,T2,0,0,karmany evadhikaras te quoted by name; te... karmani adhikarah / phalesu na reassembled with gloss (ruling 2 territory but fragments suffice for T2); ahar ahah sandhyam upasita repeated (same OOS),2026-08-27T11:40:00
+kn_kannada_19_0013,kannada_19,Expert (father),BG 2.47,T2,0,0,"ma karma-phala-hetur bhuh, ma te sango stv [a]karmani, karma-phala-hetuh ma bhuh; commentary Sanskrit (speaker's ""ola abhipraya"" gloss karma-krtau phalam eva hetuh [na] bhu-, Raghavendra-style, ruling 6), not verse text",2026-08-27T11:40:00
+kn_kannada_19_0014,kannada_19,Expert (father),BG 2.47,T4,0,0,"Pure Kannada application (salary/dakshine sermon, government-employee point) - no verse Sanskrit; ""dakshinege takkante pradakshine"" = idiom, ruling 7",2026-08-27T11:40:00
+kn_kannada_19_0015,kannada_19,Expert (father),BG 2.47,T2,0,0,ma [a]ti sankostva karmani = garbled ma te sango stv akarmani (ruling 12); banana-plantation parable = explanation around the fragment,2026-08-27T11:40:00
+kn_kannada_19_0016,kannada_19,Expert (father),BG 2.47,T2,0,0,"ma karma-phala-hetur bhuh, ma te sangah astu akarmani - both padas re-quoted with gloss",2026-08-27T11:40:00
+kn_kannada_19_0017,kannada_19,Expert (father),BG 2.47,T1,0,0,"""mattomme shloka"" full re-recitation; dedication folds in (ruling 11)",2026-08-27T11:40:00
+kn_kannada_20_0000,kannada_20,Expert (father),BG 2.47,T2,1,0,"Session-opening recap of previous session's verse with fragments: karmany eva adhikaras te, [phalesu] na adhikarah, ma te sango stu akarmani (all three verified in unit text). ""47neya shlokadalli"" spoken -> Explicit=1. Sanskrit present, so T2 - not the ruling-13 (no-Sanskrit recap) case. Cross-session recap convention: verse is in-scope Ch.2, so plain verse_ref, no OOS",2026-08-27T12:15:00
+kn_kannada_20_0001,kannada_20,Expert (father),BG 2.47,T2,0,0,"ma te sangah astu akarmani quoted as the answer Krishna gave, before the turn to 2.48. Split from the 2.48 row on this unit (one row per verse); the spoken number in this unit is 48, so Explicit=0 here",2026-08-27T12:15:00
+kn_kannada_20_0001,kannada_20,Expert (father),BG 2.48,T1,1,0,"""ee 48neya shlokadalli"" spoken -> full recitation of 2.48, all four padas (yogastha kuru karmani sangam tyaktva dhanam jaya siddha siddho samobhutva samatvam yoga uccate; uccate = ucyate garble, ruling 12). Split from the 2.47 row on this unit",2026-08-27T12:15:00
+kn_kannada_20_0002,kannada_20,Expert (father),BG 2.48,T1,0,1,"Full pada-vibhaga alone, every token in order (yogasthah kuru karmani sangam tyaktva dhanamjaya siddhy-asiddhyoh samah bhutva samatvam yogah ucyate), samhita recitation fell in previous unit - T1 per ruling 3, which is still pending team confirmation -> Uncertain=1. First live instance of ruling 3 in my batches; word-by-word gloss follows",2026-08-27T12:15:00
+kn_kannada_20_0003,kannada_20,Expert (father),BG 2.48,T2,0,0,"yogastha[h] parsed, kuru karmani; pradakshine example is explanation",2026-08-27T12:15:00
+kn_kannada_20_0004,kannada_20,Expert (father),BG 2.48,T2,0,0,"sangam tyaktva, karmani kuru; jackfruit-wax parable = explanation around fragments",2026-08-27T12:15:00
+kn_kannada_20_0005,kannada_20,Expert (father),BG 2.48,T2,0,0,"sangam tyaktva (x3), yogasthah, karmani kuru dhanamjaya; OOS: karmana badhyate jantuh (bhajyate = badhyate garble) - second occurrence of the kannada_17 0006 line, still source unverified (smrti/MBh). NOTE: the kannada_17 0006 row carries no OOS note, so there is no inventory entry to increment - this is effectively entry 1",2026-08-27T12:15:00
+kn_kannada_20_0006,kannada_20,Expert (father),BG 2.48,T2,0,0,"siddhy-asiddhyoh samo bhutva samatvam yoga ucyate re-quoted with gloss, yogasthah, samah - second half nearly complete but woven through explanation -> reassembled != T1 (ruling 2)",2026-08-27T12:15:00
+kn_kannada_20_0007,kannada_20,Expert (father),BG 2.48,T2,0,0,"sangam tyaktva, nishkama framing; ma te sango stu akarmani -> cross-ref 2.47 (note only, no row - in-scope Ch.2 fragment, flagged for the cross-ref convention decision)",2026-08-27T12:15:00
+kn_kannada_20_0008,kannada_20,Expert (father),BG 2.48,T4,0,0,"Pure Kannada application (festival-cooking/naivedya example); ""nishkama karma"" = flowing-speech vocabulary (ruling 7), no verse fragments",2026-08-27T12:15:00
+kn_kannada_20_0009,kannada_20,Expert (father),BG 2.48,T1,0,0,"""mattomme shloka"" full re-recitation of 2.48 (ruling 10) - positional, Explicit=0. Split from the 2.49 row on this unit",2026-08-27T12:15:00
+kn_kannada_20_0009,kannada_20,Expert (father),BG 2.49,T1,0,0,"""mundina shloka"" (positional -> Explicit=0) -> full recitation of 2.49 + pada-vibhaga (shyavaram parsed by speaker as hi avaram: ""shyavaram ondu pada alla, alli eradu pada ide""; ananjaya = dhanamjaya garble). Split from the 2.48 row on this unit",2026-08-27T12:15:00
+kn_kannada_20_0010,kannada_20,Expert (father),BG 2.49,T2,0,0,"durena [hi] avaram, karma buddhi-yogat fragments in word-sense discussion",2026-08-27T12:15:00
+kn_kannada_20_0011,kannada_20,Expert (father),BG 2.49,T2,0,0,"durena hi avaram karma buddhiyogat dhanamjaya re-quoted, buddhau saranam anviccha (x2, anmiccha garble)",2026-08-27T12:15:00
+kn_kannada_20_0012,kannada_20,Expert (father),BG 2.49,T2,0,0,"krpanah phala-hetavah parsed (phalahina etavah = garbled repeat, ruling 12); OOS: imam lokam hinataram va visanti - speaker attributes to ""Upanishat""; kamya-karma-return doctrine, likely Prasna Up. family but source unverified, expert to confirm - new inventory entry",2026-08-27T12:15:00
+kn_kannada_20_0013,kannada_20,Expert (father),BG 2.49,T1,0,0,"""mattomme shloka"" full continuous re-recitation of 2.49 (verified: durena shyavaram karma buddhiyogadhanam jaya buddhau saranamanmiccha krpana phalahe tavah); then forward pointer (2.50 = buddhi-yoga's fruit) in Kannada",2026-08-27T12:15:00
+kn_kannada_20_0014,kannada_20,Expert (father),NONE,NONE,0,0,"Standalone sponsor dedication, zero content - same pattern as kannada_17 0013 (ruling 11 standalone case), which is recorded NONE,NONE",2026-08-27T12:15:00
+en_video_06_0000,video_06,Maitreyi,BG 2.16,T1,1,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:50:23
+en_video_06_0000,video_06,Maitreyi,BG 2.17,T1,1,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:50:23
+en_video_06_0000,video_06,Maitreyi,BG 2.18,T1,1,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:50:23
+en_video_06_0001,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0002,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0003,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0004,video_06,Maitreyi,BG 2.12,T3,1,0,,2026-09-20T23:50:23
+en_video_06_0005,video_06,Maitreyi,BG 2.12,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0005,video_06,Maitreyi,BG 2.13,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0006,video_06,Maitreyi,BG 2.13,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0007,video_06,Maitreyi,BG 2.16,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0008,video_06,Maitreyi,BG 2.16,T4,1,0,OOS: Atma Satyam Jagat Mithya (non-Gita dictum),2026-09-20T23:50:23
+en_video_06_0009,video_06,Maitreyi,BG 2.16,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0010,video_06,Maitreyi,BG 2.17,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0011,video_06,Maitreyi,BG 2.17,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0012,video_06,Maitreyi,BG 2.18,T4,1,0,,2026-09-20T23:50:23
+en_video_06_0013,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0014,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0015,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0016,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0017,video_06,Maitreyi,BG 2.18,T4,0,1,"OOS: commentarial Sanskrit, not verse text",2026-09-20T23:50:23
+en_video_06_0018,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0019,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0020,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0020,video_06,Maitreyi,BG 2.16,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0020,video_06,Maitreyi,BG 2.17,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0021,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0022,video_06,Maitreyi,NONE,NONE,0,0,DHYANA: Vasudeva Sutam Devam fragment,2026-09-20T23:50:23
+en_video_06_0023,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0024,video_06,Maitreyi,BG 2.19,T1,1,0,,2026-09-20T23:50:23
+en_video_06_0025,video_06,Maitreyi,BG 2.19,T3,0,1,OOS: Emerson 'Brahma' (non-Gita English verse),2026-09-20T23:50:23
+en_video_06_0026,video_06,Maitreyi,BG 2.19,T4,1,1,,2026-09-20T23:50:23
+en_video_06_0027,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0028,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0029,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0030,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0031,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0032,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0033,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0034,video_06,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0035,video_06,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0036,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0037,video_06,Maitreyi,BG 2.19,T4,0,1,OOS: BG 18.61 (outside Chapter 2),2026-09-20T23:50:23
+en_video_06_0038,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0039,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0040,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0041,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0042,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0043,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0044,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0045,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0046,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0047,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0048,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0049,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0050,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0051,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0052,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0053,video_06,Maitreyi,NONE,NONE,0,0,"OOS: Vivekananda, Song of the Sannyasin",2026-09-20T23:50:23
+en_video_06_0054,video_06,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0055,video_06,Maitreyi,BG 2.19,T3,0,1,,2026-09-20T23:50:23
+en_video_06_0056,video_06,Maitreyi,BG 2.19,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0057,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0058,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0059,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0060,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0061,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0062,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0063,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0064,video_06,Maitreyi,NONE,NONE,0,0,OOS: Charvaka fire-oblation verse,2026-09-20T23:50:23
+en_video_06_0065,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0066,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0067,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0068,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0069,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0070,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0071,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0072,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0073,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0074,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0075,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0076,video_06,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:50:23
+en_video_06_0077,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0078,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0079,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0080,video_06,Maitreyi,BG 2.18,T4,0,1,,2026-09-20T23:50:23
+en_video_06_0081,video_06,Maitreyi,BG 2.20,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0082,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0083,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0084,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0085,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0086,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0087,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0088,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0089,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0090,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0091,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0092,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0093,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0094,video_06,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:50:23
+en_video_06_0095,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0096,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0097,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0098,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0099,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0100,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0101,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0102,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_06_0103,video_06,Maitreyi,BG 2.18,T5,0,1,,2026-09-20T23:50:23
+en_video_02_0000,video_02,Meghana S,BG 2.9,T1,1,0,OOS:Dhyana Shloka,2026-08-28T13:13:45
+en_video_02_0000,video_02,Meghana S,BG 2.10,T1,1,0,OOS:Dhyana Shloka,2026-08-28T13:13:45
+en_video_02_0001,video_02,Meghana S,BG 2.9,T3,1,0,,2026-08-28T13:14:54
+en_video_02_0001,video_02,Meghana S,BG 2.10,T3,1,0,,2026-08-28T13:14:54
+en_video_02_0002,video_02,Meghana S,BG 2.10,T2,0,0,,2026-08-28T13:18:02
+en_video_02_0003,video_02,Meghana S,BG 2.11,T1,1,0,,2026-08-28T13:19:53
+en_video_02_0004,video_02,Meghana S,BG 2.11,T2,0,0,,2026-08-28T13:21:04
+en_video_02_0005,video_02,Meghana S,BG 2.11,T3,0,0,,2026-08-28T13:22:18
+en_video_02_0006,video_02,Meghana S,BG 2.11,T2,0,0,,2026-08-28T13:22:49
+en_video_02_0007,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:23:23
+en_video_02_0008,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:23:52
+en_video_02_0009,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:24:16
+en_video_02_0010,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:24:43
+en_video_02_0011,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:25:45
+en_video_02_0012,video_02,Meghana S,NONE,NONE,0,0,"OOS:Sāṅkhya Kārikā,",2026-08-28T13:27:44
+en_video_02_0013,video_02,Meghana S,NONE,NONE,0,0,OOS:Sāṅkhya philosophy,2026-08-28T13:29:26
+en_video_02_0014,video_02,Meghana S,NONE,NONE,0,0,OOS:Sāṅkhya Kārikā,2026-08-28T13:31:07
+en_video_02_0015,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:01
+en_video_02_0016,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:19
+en_video_02_0017,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:32
+en_video_02_0018,video_02,Meghana S,NONE,NONE,0,0,OOS: Sāṅkhya Kārikā,2026-08-28T13:32:55
+en_video_02_0019,video_02,Meghana S,NONE,NONE,0,0,OOS: Buddhism,2026-08-28T13:33:09
+en_video_02_0020,video_02,Meghana S,NONE,NONE,0,0,OOS: Vedanta,2026-08-28T13:33:56
+en_video_02_0021,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:34:52
+en_video_02_0022,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:35:12
+en_video_02_0023,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:35:34
+en_video_02_0024,video_02,Meghana S,BG 2.11,T3,0,0,,2026-08-28T13:35:54
+en_video_02_0025,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:36:13
+en_video_02_0026,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:36:37
+en_video_02_0027,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:36:53
+en_video_02_0028,video_02,Meghana S,BG 2.11,T4,0,0,OOS:Vedanta,2026-08-28T13:37:29
+en_video_02_0029,video_02,Meghana S,BG 2.11,T4,0,0,,2026-08-28T13:38:34
+en_video_02_0029,video_02,Meghana S,BG 2.25,T4,0,0,,2026-08-28T13:38:34
+en_video_02_0030,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:55:14
+en_video_02_0032,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:56:30
+en_video_02_0033,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:57:33
+en_video_02_0034,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T16:57:48
+en_video_02_0035,video_02,Meghana S,BG 2.11,T2,0,0,,2026-08-28T16:58:46
+en_video_02_0036,video_02,Meghana S,BG 2.12,T2,0,0,,2026-08-28T16:59:32
+en_video_02_0037,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:00:00
+en_video_02_0038,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:00:23
+en_video_02_0039,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:00:46
+en_video_02_0040,video_02,Meghana S,BG 2.12,T3,0,0,,2026-08-28T17:03:54
+en_video_02_0041,video_02,Meghana S,BG 2.12,T3,0,0,,2026-08-28T17:04:12
+en_video_02_0042,video_02,Meghana S,BG 2.12,T3,0,0,OOS:BG 4.5,2026-08-28T17:05:00
+en_video_02_0043,video_02,Meghana S,BG 2.12,T4,0,0,OOS:BG 4.5,2026-08-28T17:05:51
+en_video_02_0045,video_02,Meghana S,NONE,NONE,0,0,OOS:Gospel of Sri Ramakrishna/BG 4.5,2026-08-28T17:07:17
+en_video_02_0046,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:07:35
+en_video_02_0047,video_02,Meghana S,BG 2.12,T4,0,0,OOS:Ramakrishna tradition,2026-08-28T17:08:22
+en_video_02_0048,video_02,Meghana S,BG 2.12,T4,0,0,OOS:BG 4.5,2026-08-28T17:12:33
+en_video_02_0049,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:13:55
+en_video_02_0050,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:14:51
+en_video_02_0051,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:15:51
+en_video_02_0052,video_02,Meghana S,BG 2.12,T4,0,0,OOS: Aparoksha Anubhuti,2026-08-28T17:16:15
+en_video_02_0053,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:16:44
+en_video_02_0054,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:17:11
+en_video_02_0055,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:17:27
+en_video_02_0056,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:17:47
+en_video_02_0057,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:18:00
+en_video_02_0058,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:18:13
+en_video_02_0059,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:18:28
+en_video_02_0060,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-28T17:18:40
+en_video_02_0061,video_02,Meghana S,BG 2.12,T3,0,0,,2026-08-28T17:19:07
+en_video_02_0062,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:19:34
+en_video_02_0063,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:20:05
+en_video_02_0064,video_02,Meghana S,NONE,NONE,0,0,,2026-08-28T17:20:28
+en_video_02_0065,video_02,Meghana S,NONE,NONE,0,0,,2026-08-29T00:30:02
+en_video_02_0066,video_02,Meghana S,NONE,NONE,0,0,,2026-08-29T00:30:21
+en_video_02_0067,video_02,Meghana S,NONE,NONE,0,0,,2026-08-29T00:30:40
+en_video_02_0068,video_02,Meghana S,BG 2.12,T4,0,0,OOS: Taittiriya Upanishad ,2026-08-29T00:31:18
+en_video_02_0069,video_02,Meghana S,NONE,NONE,0,0,OOS: Taittiriya Upanishad,2026-08-29T00:32:00
+en_video_02_0070,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:32:14
+en_video_02_0071,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:32:49
+en_video_02_0072,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:33:12
+en_video_02_0073,video_02,Meghana S,BG 2.12,T4,0,0,,2026-08-29T00:33:51
+en_video_02_0031,video_02,Meghana S,NONE,NONE,0,0,,2026-09-08T12:25:31
+en_video_02_0044,video_02,Meghana S,BG 2.12,T4,0,0,OOS:BG 4.5,2026-09-08T12:34:24
+en_video_02_0074,video_02,Meghana S,BG 2.13,T4,0,0,,2026-09-08T13:46:45
+en_video_02_0075,video_02,Meghana S,BG 2.13,T4,0,0,,2026-09-08T13:47:27
+en_video_02_0076,video_02,Meghana S,NONE,NONE,0,0,OOS:Buddhist teaching,2026-09-08T13:48:05
+en_video_02_0077,video_02,Meghana S,NONE,NONE,0,0,OOS:Buddhist teaching,2026-09-08T13:48:40
+en_video_02_0078,video_02,Meghana S,NONE,NONE,0,0,OOS:Bṛhadāraṇyaka Upanishad 1.3.28,2026-09-08T13:49:12
+en_video_02_0079,video_02,Meghana S,BG 2.27,T2,0,0,,2026-09-08T13:50:22
+en_video_03_0000,video_03,Prerana,BG 2.11,T1,1,0,,2026-09-11T23:01:12
+en_video_03_0000,video_03,Prerana,BG 2.12,T1,1,0,,2026-09-11T23:01:12
+en_video_03_0001,video_03,Prerana,BG 2.12,T4,0,0,,2026-09-11T23:04:05
+en_video_03_0002,video_03,Prerana,NONE,NONE,0,0,,2026-09-11T23:04:42
+en_video_03_0003,video_03,Prerana,NONE,NONE,0,0,,2026-09-11T23:05:26
+en_video_03_0004,video_03,Prerana,NONE,NONE,0,0,,2026-09-11T23:06:24
+en_video_03_0005,video_03,Prerana,NONE,NONE,0,0,,2026-09-11T23:06:48
+en_video_03_0006,video_03,Prerana,NONE,NONE,0,0,OOS: BG 6.29,2026-09-11T23:09:47
+en_video_03_0007,video_03,Prerana,BG 2.12,T4,0,1,,2026-09-11T23:36:11
+en_video_03_0008,video_03,Prerana,BG 2.12,T3,0,0,,2026-09-11T23:37:00
+en_video_03_0009,video_03,Prerana,BG 2.12,T4,0,0,,2026-09-11T23:37:52
+en_video_03_0010,video_03,Prerana,NONE,NONE,0,0,,2026-09-11T23:39:20
+en_video_03_0011,video_03,Prerana,NONE,NONE,0,0,,2026-09-11T23:41:43
+en_video_03_0012,video_03,Prerana,BG 2.13,T1,1,0,,2026-09-12T00:57:32
+en_video_03_0013,video_03,Prerana,BG 2.13,T4,0,1,,2026-09-12T09:42:26
+en_video_03_0014,video_03,Prerana,BG 2.13,T4,0,1,,2026-09-12T09:42:50
+en_video_03_0015,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T09:43:17
+en_video_03_0016,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T09:43:41
+en_video_03_0017,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T09:44:03
+en_video_03_0018,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T09:44:19
+en_video_03_0019,video_03,Prerana,BG 2.13,T4,0,1,,2026-09-12T09:45:16
+en_video_03_0020,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T09:51:42
+en_video_03_0021,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T09:54:07
+en_video_03_0022,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T09:58:41
+en_video_03_0023,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T09:59:21
+en_video_03_0024,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T10:00:07
+en_video_03_0025,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T10:00:38
+en_video_03_0026,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T10:01:19
+en_video_03_0027,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T10:01:42
+en_video_03_0028,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T10:02:02
+en_video_03_0029,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T10:02:35
+en_video_03_0030,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T10:08:56
+en_video_03_0031,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T10:09:18
+en_video_03_0032,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T10:10:10
+en_video_03_0033,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T10:10:57
+en_video_03_0034,video_03,Prerana,BG 2.13,T2,0,1,,2026-09-12T10:11:46
+en_video_03_0035,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T10:12:14
+en_video_03_0036,video_03,Prerana,BG 2.14,T4,0,0,,2026-09-12T10:12:41
+en_video_03_0037,video_03,Prerana,BG 2.14,T2,1,0,,2026-09-12T10:21:36
+en_video_03_0038,video_03,Prerana,BG 2.14,T2,1,0,,2026-09-12T10:23:43
+en_video_03_0039,video_03,Prerana,BG 2.14,T2,1,0,,2026-09-12T10:52:54
+en_video_03_0040,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T10:53:24
+en_video_03_0041,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T10:53:43
+en_video_03_0042,video_03,Prerana,BG 2.14,T2,0,0,OOS:  Vivekacūḍāmaṇi,2026-09-12T11:07:50
+en_video_03_0043,video_03,Prerana,BG 2.14,T2,0,0,OOS:  Vivekacūḍāmaṇi,2026-09-12T11:10:41
+en_video_03_0044,video_03,Prerana,BG 2.14,T2,1,0,,2026-09-12T11:12:13
+en_video_03_0045,video_03,Prerana,BG 2.14,T2,1,0,,2026-09-12T11:12:35
+en_video_03_0046,video_03,Prerana,BG 2.14,T2,1,0,,2026-09-12T11:13:15
+en_video_03_0047,video_03,Prerana,BG 2.14,T2,1,0,,2026-09-12T11:14:19
+en_video_03_0048,video_03,Prerana,NONE,NONE,0,0,"OOS: Buddhism: Buddha’s teachings, Shantideva, Bodhicharyavatara, Mahayana.",2026-09-12T11:24:01
+en_video_03_0049,video_03,Prerana,NONE,NONE,0,0,OOS: Jonathan Haidt’s psychology research / Good Samaritan experiment.,2026-09-12T11:34:39
+en_video_03_0050,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:33:36
+en_video_03_0051,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:34:09
+en_video_03_0052,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:34:42
+en_video_03_0053,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:35:38
+en_video_03_0054,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:37:35
+en_video_03_0055,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:43:27
+en_video_03_0056,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:44:01
+en_video_03_0057,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:44:53
+en_video_03_0058,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:45:22
+en_video_03_0059,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:45:48
+en_video_03_0060,video_03,Prerana,NONE,NONE,0,0,OOS: Kabir bhajan,2026-09-12T12:46:23
+en_video_03_0061,video_03,Prerana,NONE,NONE,0,0,OOS: Kabir bhajan,2026-09-12T12:47:56
+en_video_03_0062,video_03,Prerana,NONE,NONE,0,0,OOS: Kabir bhajan,2026-09-12T12:48:31
+en_video_03_0063,video_03,Prerana,BG 2.14,T4,0,1,,2026-09-12T12:49:16
+en_video_03_0064,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:49:39
+en_video_03_0065,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:50:10
+en_video_03_0066,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:50:36
+en_video_03_0067,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:56:39
+en_video_03_0068,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:56:58
+en_video_03_0069,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:57:57
+en_video_03_0070,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T12:59:10
+en_video_03_0071,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T13:00:13
+en_video_03_0072,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T13:00:40
+en_video_03_0073,video_03,Prerana,NONE,NONE,0,0,OOS — Ashtavakra-gītā,2026-09-12T13:01:00
+en_video_03_0074,video_03,Prerana,NONE,NONE,0,0,OOS: the speaker is discussing The Imitation of Christ and Christ’s teachings.,2026-09-12T13:01:54
+en_video_03_0075,video_03,Prerana,NONE,NONE,0,0,OOS: discussing The Imitation of Christ / Christ’s teachings.,2026-09-12T13:02:47
+en_video_03_0076,video_03,Prerana,NONE,NONE,0,0,OOS — this is discussing Christ’s teachings / The Imitation of Christ.,2026-09-12T13:03:29
+en_video_03_0077,video_03,Prerana,NONE,NONE,0,0,OOS:  discussing The Imitation of Christ / Christ’s teachings.,2026-09-12T13:04:10
+en_video_03_0078,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T13:05:11
+en_video_03_0079,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T13:06:28
+en_video_03_0080,video_03,Prerana,BG 2.14,T2,0,1,,2026-09-12T13:06:55
+en_video_03_0081,video_03,Prerana,BG 2.14,T4,0,1,,2026-09-12T13:07:32
+en_video_03_0082,video_03,Prerana,BG 2.15,T1,0,0,,2026-09-12T13:07:52
+en_video_03_0083,video_03,Prerana,BG 2.15,T3,0,0,,2026-09-12T13:08:17
+en_video_03_0084,video_03,Prerana,BG 2.15,T2,0,0,,2026-09-12T13:08:38
+en_video_07_0000,video_07,Maitreyi,NONE,NONE,0,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:57:16
+en_video_07_0001,video_07,Maitreyi,BG 2.12,T4,1,1,OOS: 'spiritual beings having a human experience' (non-Gita saying),2026-09-20T23:57:16
+en_video_07_0002,video_07,Maitreyi,BG 2.16,T4,1,0,,2026-09-20T23:57:16
+en_video_07_0003,video_07,Maitreyi,BG 2.17,T2,1,0,,2026-09-20T23:57:16
+en_video_07_0004,video_07,Maitreyi,BG 2.18,T4,1,0,,2026-09-20T23:57:16
+en_video_07_0004,video_07,Maitreyi,BG 2.17,T4,1,0,,2026-09-20T23:57:16
+en_video_07_0005,video_07,Maitreyi,BG 2.19,T4,1,0,,2026-09-20T23:57:16
+en_video_07_0005,video_07,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0006,video_07,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0006,video_07,Maitreyi,BG 2.12,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0007,video_07,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0007,video_07,Maitreyi,BG 2.16,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0007,video_07,Maitreyi,BG 2.17,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0008,video_07,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0009,video_07,Maitreyi,BG 2.19,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0009,video_07,Maitreyi,BG 2.18,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0010,video_07,Maitreyi,BG 2.20,T1,0,0,,2026-09-20T23:57:16
+en_video_07_0011,video_07,Maitreyi,BG 2.20,T3,0,0,,2026-09-20T23:57:16
+en_video_07_0012,video_07,Maitreyi,BG 2.20,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0013,video_07,Maitreyi,BG 2.20,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0014,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0015,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0016,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0017,video_07,Maitreyi,NONE,NONE,0,0,OOS: Nyaya formula 'Parvato Vanniman Dhoomat' (non-Gita Sanskrit),2026-09-20T23:57:16
+en_video_07_0018,video_07,Maitreyi,NONE,NONE,0,0,OOS: vyapti formula 'yatra yatra dhoomah tatra tatra vanni' (non-Gita),2026-09-20T23:57:16
+en_video_07_0019,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0020,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0021,video_07,Maitreyi,BG 2.20,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0022,video_07,Maitreyi,BG 2.20,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0023,video_07,Maitreyi,BG 2.20,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0024,video_07,Maitreyi,BG 2.20,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0025,video_07,Maitreyi,BG 2.20,T2,0,0,,2026-09-20T23:57:16
+en_video_07_0026,video_07,Maitreyi,BG 2.20,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0027,video_07,Maitreyi,BG 2.20,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0028,video_07,Maitreyi,BG 2.20,T2,0,0,,2026-09-20T23:57:16
+en_video_07_0029,video_07,Maitreyi,BG 2.20,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0030,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0031,video_07,Maitreyi,NONE,NONE,0,0,OOS: Mahavakyas 'Tat tvam asi / Aham Brahmasmi / Pragyanam Brahma' (Upanishad),2026-09-20T23:57:16
+en_video_07_0032,video_07,Maitreyi,NONE,NONE,0,0,OOS: 'Ayamatma Brahma' (Mandukya Upanishad),2026-09-20T23:57:16
+en_video_07_0033,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0034,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0035,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0036,video_07,Maitreyi,BG 2.16,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0036,video_07,Maitreyi,BG 2.12,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0037,video_07,Maitreyi,BG 2.17,T4,0,0,OOS: 'Atma Satyam Jagat Mithya' (non-Gita dictum),2026-09-20T23:57:16
+en_video_07_0037,video_07,Maitreyi,BG 2.18,T4,0,0,OOS: 'Atma Satyam Jagat Mithya' (non-Gita dictum),2026-09-20T23:57:16
+en_video_07_0037,video_07,Maitreyi,BG 2.19,T4,0,0,OOS: 'Atma Satyam Jagat Mithya' (non-Gita dictum),2026-09-20T23:57:16
+en_video_07_0037,video_07,Maitreyi,BG 2.16,T4,0,0,OOS: 'Atma Satyam Jagat Mithya' (non-Gita dictum),2026-09-20T23:57:16
+en_video_07_0038,video_07,Maitreyi,BG 2.20,T4,1,0,,2026-09-20T23:57:16
+en_video_07_0039,video_07,Maitreyi,BG 2.21,T1,0,0,,2026-09-20T23:57:16
+en_video_07_0040,video_07,Maitreyi,BG 2.21,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0041,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0042,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0043,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0044,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0045,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0046,video_07,Maitreyi,BG 2.21,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0047,video_07,Maitreyi,BG 2.21,T2,0,1,,2026-09-20T23:57:16
+en_video_07_0048,video_07,Maitreyi,BG 2.21,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0049,video_07,Maitreyi,BG 2.21,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0050,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0051,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0052,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0053,video_07,Maitreyi,BG 2.21,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0054,video_07,Maitreyi,BG 2.21,T5,0,1,,2026-09-20T23:57:16
+en_video_07_0055,video_07,Maitreyi,BG 2.21,T5,0,1,,2026-09-20T23:57:16
+en_video_07_0056,video_07,Maitreyi,BG 2.18,T3,0,1,,2026-09-20T23:57:16
+en_video_07_0056,video_07,Maitreyi,BG 2.21,T5,0,1,,2026-09-20T23:57:16
+en_video_07_0057,video_07,Maitreyi,BG 2.21,T5,0,1,,2026-09-20T23:57:16
+en_video_07_0058,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0059,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0060,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0061,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0062,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0063,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0064,video_07,Maitreyi,BG 2.16,T4,1,0,OOS: BG 13.2 forward reference (outside Chapter 2),2026-09-20T23:57:16
+en_video_07_0065,video_07,Maitreyi,NONE,NONE,0,0,OOS: BG 13.2 exposition (outside Chapter 2),2026-09-20T23:57:16
+en_video_07_0066,video_07,Maitreyi,BG 2.22,T3,1,0,OOS: BG 13.2 tail (outside Chapter 2),2026-09-20T23:57:16
+en_video_07_0067,video_07,Maitreyi,BG 2.22,T1,1,0,ASR_DROP: fourth pada truncated mid-word ('Anyani sang' = anyani sam[yati navani dehi]),2026-09-20T23:57:16
+en_video_07_0068,video_07,Maitreyi,BG 2.22,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0069,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0070,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0071,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0072,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0073,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0074,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0075,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0076,video_07,Maitreyi,BG 2.22,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0077,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0078,video_07,Maitreyi,BG 2.22,T4,0,0,,2026-09-20T23:57:16
+en_video_07_0079,video_07,Maitreyi,BG 2.22,T5,0,1,,2026-09-20T23:57:16
+en_video_07_0080,video_07,Maitreyi,BG 2.22,T5,0,1,,2026-09-20T23:57:16
+en_video_07_0081,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0082,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0083,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0084,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0085,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0086,video_07,Maitreyi,NONE,NONE,0,0,OOS: rivers-into-sea image (Mundaka 3.2.8),2026-09-20T23:57:16
+en_video_07_0087,video_07,Maitreyi,NONE,NONE,0,0,OOS: five koshas 'Annamaya ... Anandamaya' (Taittiriya),2026-09-20T23:57:16
+en_video_07_0088,video_07,Maitreyi,NONE,NONE,0,0,OOS: 'Sharira traya vilakshana ... Tum ho Maharaj' (non-Gita),2026-09-20T23:57:16
+en_video_07_0089,video_07,Maitreyi,BG 2.22,T4,0,1,,2026-09-20T23:57:16
+en_video_07_0090,video_07,Maitreyi,NONE,NONE,0,0,"OOS: T.S. Eliot, The Hollow Men (non-Gita poetry)",2026-09-20T23:57:16
+en_video_07_0091,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0092,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0093,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0094,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0095,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_07_0096,video_07,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:57:16
+en_video_10_0000,video_10,Maitreyi,NONE,NONE,0,0,DHYANA: opening dhyana shloka (non-Gita Sanskrit),2026-09-20T23:58:57
+en_video_10_0001,video_10,Maitreyi,BG 2.27,T2,1,0,,2026-09-20T23:58:57
+en_video_10_0002,video_10,Maitreyi,BG 2.27,T2,0,0,,2026-09-20T23:58:57
+en_video_10_0003,video_10,Maitreyi,BG 2.27,T5,0,1,,2026-09-20T23:58:57
+en_video_10_0004,video_10,Maitreyi,BG 2.27,T5,0,1,,2026-09-20T23:58:57
+en_video_10_0005,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0006,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0007,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0008,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0009,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0010,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0011,video_10,Maitreyi,BG 2.27,T5,0,1,,2026-09-20T23:58:57
+en_video_10_0012,video_10,Maitreyi,BG 2.27,T5,0,1,,2026-09-20T23:58:57
+en_video_10_0013,video_10,Maitreyi,BG 2.27,T4,1,0,,2026-09-20T23:58:57
+en_video_10_0014,video_10,Maitreyi,BG 2.28,T1,0,0,,2026-09-20T23:58:57
+en_video_10_0015,video_10,Maitreyi,BG 2.28,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0016,video_10,Maitreyi,BG 2.28,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0017,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0018,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0019,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0020,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0021,video_10,Maitreyi,BG 2.28,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0022,video_10,Maitreyi,BG 2.28,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0023,video_10,Maitreyi,BG 2.28,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0024,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0025,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0026,video_10,Maitreyi,BG 2.28,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0027,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0028,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0029,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0030,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0031,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0032,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0033,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0034,video_10,Maitreyi,BG 2.28,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0035,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0036,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0037,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0038,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0039,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0040,video_10,Maitreyi,NONE,NONE,0,0,"OOS: Song of the Sannyasin (Vivekananda, English)",2026-09-20T23:58:57
+en_video_10_0041,video_10,Maitreyi,NONE,NONE,0,0,OOS: Song of the Sannyasin; also BG 4.37-region allusion (outside Chapter 2),2026-09-20T23:58:57
+en_video_10_0042,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0043,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0044,video_10,Maitreyi,BG 2.29,T4,1,0,,2026-09-20T23:58:57
+en_video_10_0045,video_10,Maitreyi,BG 2.29,T1,1,0,,2026-09-20T23:58:57
+en_video_10_0046,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0047,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0048,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0049,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0050,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0051,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0052,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0053,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0054,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0055,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0056,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0057,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0058,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0059,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0060,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0061,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0062,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0063,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0064,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0065,video_10,Maitreyi,NONE,NONE,0,0,OOS: Katha Upanishad 1.2.23 recited in Sanskrit,2026-09-20T23:58:57
+en_video_10_0066,video_10,Maitreyi,NONE,NONE,0,0,OOS: Katha Upanishad commentary (Shankaracharya),2026-09-20T23:58:57
+en_video_10_0067,video_10,Maitreyi,BG 2.29,T2,0,0,,2026-09-20T23:58:57
+en_video_10_0068,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0069,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0070,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0071,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0072,video_10,Maitreyi,NONE,NONE,0,0,OOS: five koshas 'Annamaya ... Anandamaya' (Taittiriya),2026-09-20T23:58:57
+en_video_10_0073,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0074,video_10,Maitreyi,BG 2.29,T2,0,0,,2026-09-20T23:58:57
+en_video_10_0075,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0076,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0077,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0078,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0079,video_10,Maitreyi,BG 2.29,T2,0,0,,2026-09-20T23:58:57
+en_video_10_0080,video_10,Maitreyi,BG 2.29,T4,0,0,OOS: Kena Upanishad 1.3 recited in Sanskrit,2026-09-20T23:58:57
+en_video_10_0081,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0082,video_10,Maitreyi,BG 2.29,T4,0,1,OOS: Kena Upanishad 1.4-region recited,2026-09-20T23:58:57
+en_video_10_0083,video_10,Maitreyi,BG 2.29,T4,0,1,OOS: Kena Upanishad 1.4 recited,2026-09-20T23:58:57
+en_video_10_0084,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0085,video_10,Maitreyi,BG 2.29,T4,0,1,,2026-09-20T23:58:57
+en_video_10_0086,video_10,Maitreyi,BG 2.29,T4,0,0,,2026-09-20T23:58:57
+en_video_10_0087,video_10,Maitreyi,BG 2.29,T5,0,1,OOS: Dakshinamurti Stotram (non-Gita hymn),2026-09-20T23:58:57
+en_video_10_0088,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0089,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0090,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0091,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0092,video_10,Maitreyi,BG 2.29,T5,0,1,,2026-09-20T23:58:57
+en_video_10_0093,video_10,Maitreyi,BG 2.29,T5,0,1,,2026-09-20T23:58:57
+en_video_10_0094,video_10,Maitreyi,BG 2.29,T4,0,0,OOS: 'Shrotriya akamahata brahmanishta' (Mundaka-region),2026-09-20T23:58:57
+en_video_10_0095,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0096,video_10,Maitreyi,NONE,NONE,0,0,OOS: Yajnavalkya-Janaka (Brihadaranyaka Upanishad),2026-09-20T23:58:57
+en_video_10_0097,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0098,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0099,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0100,video_10,Maitreyi,NONE,NONE,0,0,,2026-09-20T23:58:57
+en_video_10_0101,video_10,Maitreyi,BG 2.29,T5,0,1,,2026-09-20T23:58:57
+en_video_01_0000,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0001,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0002,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0003,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0004,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0005,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0006,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0007,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0008,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0009,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0010,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0011,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0012,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0013,video_01,Maitreyi,NONE,NONE,0,0,OOS: Hindi aphorism 'jab tak swas chalegi' (non-Gita),2026-09-21T00:04:42
+en_video_01_0014,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0015,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0016,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0017,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0018,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0019,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0020,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0021,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0022,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0023,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0024,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0025,video_01,Maitreyi,NONE,NONE,0,0,"OOS: Mahabharata verses (English paraphrase, non-Gita source)",2026-09-21T00:04:42
+en_video_01_0026,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0027,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0028,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0029,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0030,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0031,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0032,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0033,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0034,video_01,Maitreyi,BG 2.1,T1,0,0,,2026-09-21T00:04:42
+en_video_01_0035,video_01,Maitreyi,BG 2.1,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0036,video_01,Maitreyi,BG 2.1,T3,0,1,,2026-09-21T00:04:42
+en_video_01_0037,video_01,Maitreyi,BG 2.1,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0038,video_01,Maitreyi,BG 2.1,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0039,video_01,Maitreyi,BG 2.2,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0040,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0041,video_01,Maitreyi,BG 2.1,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0042,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0043,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0044,video_01,Maitreyi,BG 2.2,T1,0,0,OOS: Bengali line in-span (non-Gita),2026-09-21T00:04:42
+en_video_01_0045,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0046,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0047,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0048,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0049,video_01,Maitreyi,BG 2.2,T4,0,1,OOS: 'Pashvadibhiya visheshat' (Brahma Sutra Bhashya),2026-09-21T00:04:42
+en_video_01_0050,video_01,Maitreyi,BG 2.2,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0051,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0052,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0053,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0054,video_01,Maitreyi,BG 2.2,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0055,video_01,Maitreyi,BG 2.3,T1,1,0,,2026-09-21T00:04:42
+en_video_01_0056,video_01,Maitreyi,BG 2.3,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0057,video_01,Maitreyi,BG 2.3,T4,0,1,OOS: Mahabharata Kunti-Krishna scene (non-Gita source),2026-09-21T00:04:42
+en_video_01_0058,video_01,Maitreyi,NONE,NONE,0,0,OOS: Mahabharata narrative + Spartan-mothers parallel,2026-09-21T00:04:42
+en_video_01_0059,video_01,Maitreyi,BG 2.3,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0060,video_01,Maitreyi,BG 2.3,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0061,video_01,Maitreyi,BG 2.3,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0062,video_01,Maitreyi,BG 2.3,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0063,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0064,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0065,video_01,Maitreyi,BG 2.3,T3,0,1,,2026-09-21T00:04:42
+en_video_01_0066,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0067,video_01,Maitreyi,NONE,NONE,0,0,,2026-09-21T00:04:42
+en_video_01_0068,video_01,Maitreyi,BG 2.3,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0069,video_01,Maitreyi,BG 2.4,T1,0,0,"ASR_GARBLE: 'sankhi'=sankhye, 'Poojar ho Varisudana'=pujarhav ari-sudana",2026-09-21T00:04:42
+en_video_01_0070,video_01,Maitreyi,BG 2.4,T3,0,0,,2026-09-21T00:04:42
+en_video_01_0070,video_01,Maitreyi,BG 2.5,T1,1,0,,2026-09-21T00:04:42
+en_video_01_0071,video_01,Maitreyi,BG 2.5,T1,0,0,,2026-09-21T00:04:42
+en_video_01_0072,video_01,Maitreyi,BG 2.5,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0073,video_01,Maitreyi,BG 2.5,T4,0,0,ASR_GARBLE: 'dhatra rashtra'=dhartarashtrah (split across word boundary),2026-09-21T00:04:42
+en_video_01_0073,video_01,Maitreyi,BG 2.6,T1,0,0,ASR_GARBLE: 'dhatra rashtra'=dhartarashtrah (split across word boundary),2026-09-21T00:04:42
+en_video_01_0074,video_01,Maitreyi,BG 2.6,T3,0,1,,2026-09-21T00:04:42
+en_video_01_0075,video_01,Maitreyi,BG 2.6,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0075,video_01,Maitreyi,BG 2.7,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0076,video_01,Maitreyi,BG 2.7,T1,1,0,,2026-09-21T00:04:42
+en_video_01_0077,video_01,Maitreyi,BG 2.7,T4,0,0,OOS: Pali refuge formula 'Buddham sharanam gacchami' (non-Gita),2026-09-21T00:04:42
+en_video_01_0078,video_01,Maitreyi,BG 2.7,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0079,video_01,Maitreyi,BG 2.7,T4,1,0,,2026-09-21T00:04:42
+en_video_01_0079,video_01,Maitreyi,BG 2.8,T1,1,0,,2026-09-21T00:04:42
+en_video_01_0080,video_01,Maitreyi,BG 2.8,T1,0,0,,2026-09-21T00:04:42
+en_video_01_0081,video_01,Maitreyi,BG 2.8,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0081,video_01,Maitreyi,BG 2.9,T1,1,0,,2026-09-21T00:04:42
+en_video_01_0082,video_01,Maitreyi,BG 2.9,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0082,video_01,Maitreyi,BG 2.10,T1,1,0,,2026-09-21T00:04:42
+en_video_01_0083,video_01,Maitreyi,BG 2.10,T4,0,0,,2026-09-21T00:04:42
+en_video_01_0084,video_01,Maitreyi,BG 2.10,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0085,video_01,Maitreyi,BG 2.10,T4,0,1,,2026-09-21T00:04:42
+en_video_01_0086,video_01,Maitreyi,NONE,NONE,0,0,"OOS: Thoreau, Walden (English)",2026-09-21T00:04:42
+en_video_01_0087,video_01,Maitreyi,NONE,NONE,0,0,"OOS: Ramakrishna, Bengali 'khub bohi'",2026-09-21T00:04:42
+en_video_03_0007,video_03,Prerana,NONE,NONE,0,0,,2026-09-11T23:36:11
+en_video_03_0008,video_03,Prerana,BG 2.12,T4,0,1,,2026-09-11T23:37:00
+en_video_03_0009,video_03,Prerana,BG 2.12,T3,0,0,,2026-09-11T23:37:52
+en_video_03_0010,video_03,Prerana,BG 2.12,T4,0,0,,2026-09-11T23:39:20
+en_video_03_0012,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T00:57:32
+en_video_03_0021,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T09:54:07
+en_video_03_0024,video_03,Prerana,BG 2.13,T4,0,0,,2026-09-12T10:00:07
+en_video_03_0025,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T10:00:38
+en_video_03_0026,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T10:01:19
+en_video_03_0027,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T10:01:42
+en_video_03_0028,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T10:02:02
+en_video_03_0029,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T10:02:35
+en_video_03_0032,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T10:10:10
+en_video_03_0035,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T10:12:14
+en_video_03_0036,video_03,Prerana,BG 2.13,T2,0,0,,2026-09-12T10:12:41
+en_video_03_0038,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T10:23:43
+en_video_03_0044,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T11:12:13
+en_video_03_0045,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T11:12:35
+en_video_03_0046,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T11:13:15
+en_video_03_0047,video_03,Prerana,BG 2.14,T2,0,0,,2026-09-12T11:14:19
+en_video_03_0082,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T13:07:52
+en_video_03_0083,video_03,Prerana,BG 2.15,T1,1,0,,2026-09-12T13:08:17
+en_video_03_0085,video_03,Prerana,BG 2.15,T2,0,0,,2026-09-12T13:11:24
+en_video_03_0086,video_03,Prerana,NONE,NONE,0,0,,2026-09-12T13:14:37
+en_video_04_0000,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T10:54:04
+en_video_04_0001,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T10:54:25
+en_video_04_0002,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:07:06
+en_video_04_0003,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:07:21
+en_video_04_0004,video_04,Prerana,BG 2.16,T5,1,0,,2026-09-15T11:08:48
+en_video_04_0005,video_04,Prerana,BG 2.47,T2,0,0,OOS: BG 18.66,2026-09-15T11:09:27
+en_video_04_0006,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T11:10:34
+en_video_04_0007,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T11:12:47
+en_video_04_0008,video_04,Prerana,BG 2.16,T4,0,0,"OOS: brahma satyaṃ jagat mithyā jīvo brahmaiva nāparaḥ — attributed Śaṅkara, source unverified",2026-09-15T11:15:50
+en_video_04_0009,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T11:18:52
+en_video_04_0010,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:19:15
+en_video_04_0011,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:19:40
+en_video_04_0012,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:21:59
+en_video_04_0013,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T11:28:29
+en_video_04_0014,video_04,Prerana,BG 2.16,T1,0,0,,2026-09-15T11:31:02
+en_video_04_0015,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T11:34:22
+en_video_04_0016,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:35:14
+en_video_04_0017,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:37:16
+en_video_04_0018,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:37:43
+en_video_04_0019,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:47:28
+en_video_04_0020,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T11:51:28
+en_video_04_0021,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T11:54:13
+en_video_04_0022,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T12:07:14
+en_video_04_0023,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T12:08:51
+en_video_04_0024,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T12:24:20
+en_video_04_0025,video_04,Prerana,BG 2.16,T2,0,1,,2026-09-15T12:31:19
+en_video_04_0026,video_04,Prerana,BG 2.16,T2,0,1,,2026-09-15T12:31:47
+en_video_04_0027,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T12:45:42
+en_video_04_0028,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T12:46:29
+en_video_04_0029,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T12:47:00
+en_video_04_0030,video_04,Prerana,BG 2.16,T2,0,1,,2026-09-15T12:47:51
+en_video_04_0031,video_04,Prerana,BG 2.16,T2,0,1,,2026-09-15T12:59:42
+en_video_04_0032,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:02:50
+en_video_04_0033,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:03:51
+en_video_04_0034,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:11:29
+en_video_04_0035,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:12:00
+en_video_04_0036,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:20:14
+en_video_04_0037,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:21:08
+en_video_04_0038,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:22:28
+en_video_04_0039,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:29:32
+en_video_04_0040,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:31:08
+en_video_04_0041,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:31:59
+en_video_04_0042,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:32:27
+en_video_04_0043,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T13:33:09
+en_video_04_0044,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:16:30
+en_video_04_0045,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:18:16
+en_video_04_0046,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:19:09
+en_video_04_0047,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:19:35
+en_video_04_0048,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:24:40
+en_video_04_0049,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:25:56
+en_video_04_0050,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:26:37
+en_video_04_0051,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T17:27:24
+en_video_04_0052,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:32:17
+en_video_04_0053,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:35:26
+en_video_04_0054,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:38:41
+en_video_04_0055,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:41:37
+en_video_04_0056,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:44:52
+en_video_04_0057,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:47:48
+en_video_04_0058,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:50:55
+en_video_04_0059,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:53:43
+en_video_04_0060,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T19:56:51
+en_video_04_0061,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T19:59:39
+en_video_04_0062,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T20:02:46
+en_video_04_0063,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T20:05:34
+en_video_04_0064,video_04,Prerana,BG 2.16,T4,0,0,"OOS: brahma satyaṃ jagat mithyā jīvo brahmaiva nāparaḥ — attributed Śaṅkara, source unverified",2026-09-15T20:08:49
+en_video_04_0065,video_04,Prerana,BG 2.16,T2,0,0,,2026-09-15T20:11:43
+en_video_04_0066,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T20:14:57
+en_video_04_0067,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T20:17:45
+en_video_04_0068,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T20:20:52
+en_video_04_0069,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T20:23:48
+en_video_04_0070,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T20:26:55
+en_video_04_0071,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T20:29:43
+en_video_04_0072,video_04,Prerana,BG 2.16,T4,0,0,,2026-09-15T20:32:51
+en_video_04_0073,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T20:35:39
+en_video_04_0074,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T20:38:46
+en_video_04_0075,video_04,Prerana,BG 2.16,T4,0,1,"OOS: Aṣṭāvakra-gītā, likely 7.2",2026-09-15T20:41:42
+en_video_04_0076,video_04,Prerana,BG 2.16,T4,0,1,"OOS: Aṣṭāvakra-gītā, likely 7.2",2026-09-15T20:44:55
+en_video_04_0077,video_04,Prerana,BG 2.16,T2,0,1,,2026-09-15T20:47:43
+en_video_04_0078,video_04,Prerana,BG 2.16,T2,0,1,,2026-09-15T20:50:51
+en_video_04_0079,video_04,Prerana,BG 2.16,T2,0,1,Cross-ref BG 2.14,2026-09-15T20:53:39
+en_video_04_0080,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T20:56:46
+en_video_04_0081,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T20:59:42
+en_video_04_0082,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:02:55
+en_video_04_0083,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T21:05:43
+en_video_04_0084,video_04,Prerana,NONE,NONE,0,0,"OOS: prāptasya prāptiḥ nivṛttasya nivṛttiḥ, source unverified",2026-09-15T21:08:51
+en_video_04_0085,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T21:11:39
+en_video_04_0086,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T21:14:46
+en_video_04_0087,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T21:17:42
+en_video_04_0088,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T21:20:55
+en_video_04_0089,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:23:43
+en_video_04_0090,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:26:51
+en_video_04_0091,video_04,Prerana,BG 2.16,T4,0,1,,2026-09-15T21:29:39
+en_video_04_0092,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:32:46
+en_video_04_0093,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:35:42
+en_video_04_0094,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:38:55
+en_video_04_0095,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:41:43
+en_video_04_0096,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:44:51
+en_video_04_0097,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:47:39
+en_video_04_0098,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:50:46
+en_video_04_0099,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:53:42
+en_video_04_0100,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:56:55
+en_video_04_0101,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T21:59:43
+en_video_04_0102,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T22:02:51
+en_video_04_0103,video_04,Prerana,NONE,NONE,0,0,,2026-09-15T22:05:39
+en_video_04_0104,video_04,Prerana,NONE,NONE,0,0,OOS: Māṇḍūkya-kārikā 1.9,2026-09-15T22:08:46
+en_video_04_0105,video_04,Prerana,NONE,NONE,0,0,OOS: Māṇḍūkya-kārikā 1.9,2026-09-15T22:11:42
+en_video_04_0106,video_04,Prerana,NONE,NONE,0,0,OOS: Māṇḍūkya-kārikā 1.9,2026-09-15T22:14:55
+en_video_05_0000,video_05,Prerana,NONE,NONE,0,0,,2026-09-15T23:20:44
+en_video_05_0001,video_05,Prerana,BG 2.16,T1,1,0,,2026-09-15T23:24:35
+en_video_05_0002,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-15T23:28:10
+en_video_05_0003,video_05,Prerana,NONE,NONE,0,0,,2026-09-15T23:32:22
+en_video_05_0004,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-15T23:36:01
+en_video_05_0005,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-15T23:39:17
+en_video_05_0006,video_05,Prerana,NONE,NONE,0,0,,2026-09-15T23:43:06
+en_video_05_0007,video_05,Prerana,BG 2.16,T4,0,1,,2026-09-15T23:46:44
+en_video_05_0008,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-15T23:50:07
+en_video_05_0009,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-15T23:53:31
+en_video_05_0010,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-15T23:57:12
+en_video_05_0011,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-16T00:00:41
+en_video_05_0012,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-16T00:04:08
+en_video_05_0013,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-16T00:07:35
+en_video_05_0014,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-16T00:10:59
+en_video_05_0015,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-16T00:14:26
+en_video_05_0016,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-16T00:18:03
+en_video_05_0017,video_05,Prerana,BG 2.17,T1,1,0,,2026-09-16T05:30:00
+en_video_05_0018,video_05,Prerana,BG 2.16,T4,0,0,,2026-09-16T05:35:12
+en_video_05_0019,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T05:40:26
+en_video_05_0020,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T05:44:51
+en_video_05_0021,video_05,Prerana,BG 2.17,T4,0,1,,2026-09-16T05:49:17
+en_video_05_0022,video_05,Prerana,BG 2.17,T2,0,0,,2026-09-16T05:53:44
+en_video_05_0023,video_05,Prerana,BG 2.17,T2,0,0,,2026-09-16T05:58:09
+en_video_05_0024,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T06:02:33
+en_video_05_0025,video_05,Prerana,BG 2.17,T4,0,0,OOS: Muṇḍaka 1.1.6 fragments,2026-09-16T06:07:01
+en_video_05_0026,video_05,Prerana,BG 2.17,T2,0,0,,2026-09-16T06:11:27
+en_video_05_0027,video_05,Prerana,BG 2.17,T2,0,0,,2026-09-16T06:15:52
+en_video_05_0028,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T06:20:19
+en_video_05_0029,video_05,Prerana,BG 2.16,T4,1,0,Cross-ref: 16th verse / BG 2.16,2026-09-16T06:24:44
+en_video_05_0030,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T06:29:11
+en_video_05_0031,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T06:33:38
+en_video_05_0032,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T06:38:05
+en_video_05_0033,video_05,Prerana,BG 2.17,T2,1,0,OOS: BG 8.22 recited in full; shared pāda,2026-09-16T06:42:31
+en_video_05_0034,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T06:46:58
+en_video_05_0035,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T06:51:24
+en_video_05_0036,video_05,Prerana,BG 2.17,T2,0,1,OOS: BG 18.46 recited in full; shared pāda,2026-09-16T06:55:51
+en_video_05_0037,video_05,Prerana,NONE,NONE,0,0,"OOS: BG 18.46, BG 9.4",2026-09-16T07:00:18
+en_video_05_0038,video_05,Prerana,NONE,NONE,0,1,OOS: BG 9.4,2026-09-16T07:04:45
+en_video_05_0039,video_05,Prerana,NONE,NONE,0,0,OOS: BG 9.4,2026-09-16T07:09:12
+en_video_05_0040,video_05,Prerana,NONE,NONE,0,0,"OOS: BG 9.4, BG 9.5",2026-09-16T07:13:39
+en_video_05_0041,video_05,Prerana,NONE,NONE,0,0,"OOS: BG 9.4, BG 9.5",2026-09-16T07:18:06
+en_video_05_0042,video_05,Prerana,NONE,NONE,0,0,"OOS: BG 9.4, BG 9.5",2026-09-16T07:22:33
+en_video_05_0043,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T07:27:00
+en_video_05_0044,video_05,Prerana,NONE,NONE,0,0,OOS: BG 8.22 fragment re-quoted,2026-09-16T07:31:27
+en_video_05_0045,video_05,Prerana,BG 2.16,T5,1,1,,2026-09-16T07:35:54
+en_video_05_0046,video_05,Prerana,BG 2.17,T2,0,0,,2026-09-16T07:40:21
+en_video_05_0047,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T07:44:48
+en_video_05_0048,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T07:49:15
+en_video_05_0049,video_05,Prerana,BG 2.17,T4,0,1,,2026-09-16T07:53:42
+en_video_05_0050,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T07:58:09
+en_video_05_0051,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T08:02:36
+en_video_05_0052,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T08:07:03
+en_video_05_0053,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T08:11:30
+en_video_05_0054,video_05,Prerana,BG 2.17,T2,0,0,,2026-09-16T08:15:57
+en_video_05_0055,video_05,Prerana,BG 2.17,T2,0,0,,2026-09-16T08:20:24
+en_video_05_0056,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T08:24:51
+en_video_05_0057,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T08:29:18
+en_video_05_0058,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T08:33:45
+en_video_05_0059,video_05,Prerana,BG 2.17,T4,0,1,,2026-09-16T08:38:12
+en_video_05_0060,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T08:42:39
+en_video_05_0061,video_05,Prerana,BG 2.17,T4,0,0,,2026-09-16T08:47:06
+en_video_05_0062,video_05,Prerana,BG 2.17,T4,0,1,,2026-09-16T08:51:33
+en_video_05_0063,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T08:55:59
+en_video_05_0064,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:00:26
+en_video_05_0065,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:04:53
+en_video_05_0066,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:09:20
+en_video_05_0067,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:13:47
+en_video_05_0068,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:18:14
+en_video_05_0069,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:22:41
+en_video_05_0070,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:27:08
+en_video_05_0071,video_05,Prerana,BG 2.18,T1,1,0,,2026-09-16T09:31:35
+en_video_05_0072,video_05,Prerana,BG 2.18,T2,0,0,,2026-09-16T09:36:02
+en_video_05_0073,video_05,Prerana,BG 2.18,T2,0,0,,2026-09-16T09:40:29
+en_video_05_0074,video_05,Prerana,BG 2.18,T2,0,0,,2026-09-16T09:44:56
+en_video_05_0075,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:49:23
+en_video_05_0076,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:53:50
+en_video_05_0077,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T09:58:17
+en_video_05_0078,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T10:00:02
+en_video_05_0079,video_05,Prerana,BG 2.18,T2,0,1,,2026-09-16T14:01:02
+en_video_05_0080,video_05,Prerana,BG 2.18,T2,0,0,,2026-09-16T14:05:18
+en_video_05_0081,video_05,Prerana,BG 2.18,T2,0,0,,2026-09-16T14:10:36
+en_video_05_0082,video_05,Prerana,BG 2.18,T4,0,0,,2026-09-16T14:15:54
+en_video_05_0083,video_05,Prerana,BG 2.18,T2,0,0,,2026-09-16T14:21:12
+en_video_05_0084,video_05,Prerana,BG 2.18,T4,0,1,,2026-09-16T14:26:30
+en_video_05_0085,video_05,Prerana,BG 2.18,T4,0,1,,2026-09-16T14:31:48
+en_video_05_0086,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T14:37:06
+en_video_05_0087,video_05,Prerana,NONE,NONE,0,0,"OOS: Muṇḍaka 3.2.9 (brahmavid brahmaiva bhavati), confident — new entry",2026-09-16T14:42:24
+en_video_05_0088,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T14:47:42
+en_video_05_0089,video_05,Prerana,NONE,NONE,0,0,"OOS: BG 13.2 (kṣetrajñaṃ cāpi māṃ viddhi…), confident — numbering 13.2/13.3 varies by edition",2026-09-16T14:53:00
+en_video_05_0090,video_05,Prerana,NONE,NONE,0,0,OOS: BG 13.2,2026-09-16T14:58:18
+en_video_05_0091,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:03:36
+en_video_05_0092,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:08:54
+en_video_05_0093,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:14:12
+en_video_05_0094,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:19:30
+en_video_05_0095,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:24:48
+en_video_05_0096,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:30:06
+en_video_05_0097,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:35:24
+en_video_05_0098,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:40:42
+en_video_05_0099,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:46:00
+en_video_05_0100,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:51:18
+en_video_05_0101,video_05,Prerana,NONE,NONE,0,0,,2026-09-16T15:56:36
+en_video_05_0102,video_05,Prerana,NONE,NONE,0,0,OOS: Tat tvam asi, Chandogya 6.8.7
+en_video_08_0000,video_08,Meghana S,NONE,NONE,0,0,OOS:dhyāna śloka,2026-09-09T16:50:19
+en_video_08_0001,video_08,Meghana S,BG 2.22,T3,0,0,,2026-09-09T16:51:01
+en_video_08_0002,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:51:17
+en_video_08_0003,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:51:42
+en_video_08_0004,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:52:02
+en_video_08_0005,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:52:35
+en_video_08_0006,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:52:46
+en_video_08_0007,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:53:01
+en_video_08_0008,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-09T16:53:21
+en_video_08_0009,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:53:38
+en_video_08_0010,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:53:54
+en_video_08_0011,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:54:07
+en_video_08_0012,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:54:51
+en_video_08_0013,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:55:00
+en_video_08_0014,video_08,Meghana S,NONE,NONE,0,0,OOS:Taittirīya Upaniṣad 2.1.1.,2026-09-09T16:56:23
+en_video_08_0015,video_08,Meghana S,NONE,NONE,0,0,OOS:Taittirīya Upaniṣad,2026-09-09T16:56:41
+en_video_08_0016,video_08,Meghana S,NONE,NONE,0,0,OOS:Taittirīya Upaniṣad,2026-09-09T16:56:52
+en_video_08_0017,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:57:11
+en_video_08_0017,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:57:11
+en_video_08_0018,video_08,Meghana S,BG 2.23,T3,0,0,,2026-09-09T16:57:42
+en_video_08_0018,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:57:42
+en_video_08_0019,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T16:58:08
+en_video_08_0020,video_08,Meghana S,BG 2.23,T4,0,0,,2026-09-09T16:58:38
+en_video_08_0020,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T16:58:38
+en_video_08_0021,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T16:58:52
+en_video_08_0022,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:59:10
+en_video_08_0023,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T16:59:24
+en_video_08_0024,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T16:59:53
+en_video_08_0025,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:11:13
+en_video_08_0026,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:11:36
+en_video_08_0027,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:11:52
+en_video_08_0028,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:12:21
+en_video_08_0029,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:00
+en_video_08_0030,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:14
+en_video_08_0031,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:25
+en_video_08_0032,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:42
+en_video_08_0033,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:13:56
+en_video_08_0034,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:06
+en_video_08_0035,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:16
+en_video_08_0036,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:28
+en_video_08_0037,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:14:41
+en_video_08_0038,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:10
+en_video_08_0039,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:24
+en_video_08_0040,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:35
+en_video_08_0041,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:15:49
+en_video_08_0042,video_08,Meghana S,BG 2.24,T3,0,0,,2026-09-09T17:16:31
+en_video_08_0043,video_08,Meghana S,BG 2.24,T2,0,0,,2026-09-09T17:17:07
+en_video_08_0044,video_08,Meghana S,BG 2.24,T2,0,0,,2026-09-09T17:17:35
+en_video_08_0045,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:17:45
+en_video_08_0046,video_08,Meghana S,BG 2.27,T4,0,0,,2026-09-09T17:18:04
+en_video_08_0047,video_08,Meghana S,NONE,NONE,0,0,,2026-09-09T17:18:23
+en_video_08_0048,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:18:46
+en_video_08_0049,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-09T17:19:00
+en_video_08_0050,video_08,Meghana S,BG 2.24,T4,0,0,OOS: Swami Virajananda / Towards the Goal Supreme,2026-09-12T13:35:07
+en_video_08_0051,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-12T13:35:32
+en_video_08_0052,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-12T13:36:05
+en_video_08_0053,video_08,Meghana S,BG 2.25,T2,0,0,,2026-09-12T13:36:51
+en_video_08_0054,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:37:11
+en_video_08_0055,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:37:28
+en_video_08_0056,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:37:46
+en_video_08_0057,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:38:06
+en_video_08_0058,video_08,Meghana S,Bg 2.25,T4,0,0,,2026-09-12T13:38:26
+en_video_08_0059,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:38:39
+en_video_08_0060,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T13:39:03
+en_video_08_0061,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:39:27
+en_video_08_0062,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:39:45
+en_video_08_0063,video_08,Meghana S,NONE,NONE,0,0,OOS:Bṛhadāraṇyaka Upaniṣad,2026-09-12T13:40:10
+en_video_08_0064,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:24
+en_video_08_0065,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:35
+en_video_08_0066,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:50
+en_video_08_0067,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:40:58
+en_video_08_0068,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:41:06
+en_video_08_0069,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:41:16
+en_video_08_0070,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:41:25
+en_video_08_0071,video_08,Meghana S,NONE,NONE,0,0,OOS: “Anubhava-mātram Parabrahma,2026-09-12T13:43:53
+en_video_08_0072,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:44:06
+en_video_08_0073,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:45:06
+en_video_08_0074,video_08,Meghana S,NONE,NONE,0,0,OOS: Patañjali Yoga / samādhi,2026-09-12T13:45:45
+en_video_08_0075,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:47:30
+en_video_08_0076,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:48:39
+en_video_08_0077,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T13:48:54
+en_video_08_0078,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:00:32
+en_video_08_0079,video_08,Meghana S,BG 2.11,T4,0,0,,2026-09-12T14:01:09
+en_video_08_0079,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T14:01:09
+en_video_08_0080,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-12T14:09:49
+en_video_08_0080,video_08,Meghana S,BG 2.25,T4,0,0,,2026-09-12T14:09:49
+en_video_08_0081,video_08,Meghana S,BG 2.19,T4,0,0,,2026-09-12T14:10:14
+en_video_08_0082,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:10:36
+en_video_08_0083,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:10:47
+en_video_08_0084,video_08,Meghana S,NONE,NONE,0,0,OOS:BG: 13.29,2026-09-12T14:11:12
+en_video_08_0085,video_08,Meghana S,NONE,NONE,0,0,OOS:BG 13.29,2026-09-12T14:11:59
+en_video_08_0086,video_08,Meghana S,NONE,NONE,0,0,OOS:BG 13.29,2026-09-12T14:12:26
+en_video_08_0087,video_08,Meghana S,NONE,NONE,0,0,OOS:BG 13.29,2026-09-12T14:12:47
+en_video_08_0088,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:12:59
+en_video_08_0089,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:13:12
+en_video_08_0090,video_08,Meghana S,NONE,NONE,0,0,OOS:Muṇḍaka Upaniṣad 1.1.4–5,2026-09-12T14:13:40
+en_video_08_0091,video_08,Meghana S,BG 2.22,T4,0,0,,2026-09-12T14:14:00
+en_video_08_0092,video_08,Meghana S,NONE,NONE,0,0,,2026-09-12T14:14:13
+en_video_09_0000,video_09,Meghana S,NONE,NONE,0,0,OOS:dhyāna śloka,2026-09-12T23:07:27
+en_video_09_0001,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:07:53
+en_video_09_0002,video_09,Meghana S,BG 2.25,T4,0,0,,2026-09-12T23:08:19
+en_video_09_0003,video_09,Meghana S,BG 2.16,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0003,video_09,Meghana S,BG 2.20,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0003,video_09,Meghana S,BG 2.23,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0003,video_09,Meghana S,BG 2.24,T4,0,0,,2026-09-12T23:08:59
+en_video_09_0004,video_09,Meghana S,BG 2.16,T2,0,0,,2026-09-12T23:10:10
+en_video_09_0005,video_09,Meghana S,BG 2.24,T4,0,0,,2026-09-12T23:10:29
+en_video_09_0006,video_09,Meghana S,BG 2.18,T4,0,0,,2026-09-12T23:11:07
+en_video_09_0007,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:11:30
+en_video_09_0007,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-12T23:11:30
+en_video_09_0008,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:11:45
+en_video_09_0009,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:12:22
+en_video_09_0010,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:12:40
+en_video_09_0011,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:12:51
+en_video_09_0012,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:13:03
+en_video_09_0013,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:13:19
+en_video_09_0014,video_09,Meghana S,NONE,NONE,0,0,,2026-09-12T23:13:29
+en_video_09_0015,video_09,Meghana S,BG 2.26,T1,0,0,,2026-09-12T23:13:45
+en_video_09_0016,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:14:01
+en_video_09_0017,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-12T23:14:18
+en_video_09_0018,video_09,Meghana S,BG 2.26,T4,0,0,OOS: Cārvāka/Lokāyata materialism,2026-09-12T23:14:45
+en_video_09_0019,video_09,Meghana S,BG 2.26,T4 in what do you see that I wanted to finally says for her referral I know this one is played for the tour gave you organizations such as two saying course you're just encouraged is tapping to rather than ten,,,,
+en_video_09_0020,video_09,Meghana S,BG 2.26,T4,0,0,OOS: Cārvāka/Lokāyata,2026-09-13T13:40:39
+en_video_09_0021,video_09,Meghana S,NONE,NONE,0,0,OOS: Cārvāka/Lokāyata,2026-09-13T13:40:56
+en_video_09_0022,video_09,Meghana S,BG 2.26,T4,0,0,OOS: Cārvāka/Lokāyata,2026-09-13T13:41:23
+en_video_09_0023,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:41:58
+en_video_09_0024,video_09,Meghana S,NONE,NONE,0,0,"OOS: Māṇḍūkya Kārikā, Aparokṣānubhūti, Advaita Vedanta",2026-09-13T13:42:18
+en_video_09_0025,video_09,Meghana S,NONE,NONE,0,0,"OOS: Rāmānuja, Madhva, Nimbārkācārya, Vallabhācārya, Chaitanya/Hare Krishna tradition",2026-09-13T13:42:41
+en_video_09_0026,video_09,Meghana S,NONE,NONE,0,0,"OOS: Patañjali Yoga Sūtras, Yoga school, Bhakti traditions, Jñāna traditions",2026-09-13T13:42:57
+en_video_09_0027,video_09,Meghana S,NONE,NONE,0,0,"OOS:Śrī Vaiṣṇava tradition, Madhva tradition, Swaminarayan tradition, Puṣṭi Mārga",2026-09-13T13:43:33
+en_video_09_0028,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:43:51
+en_video_09_0029,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:44:08
+en_video_09_0030,video_09,Meghana S,NONE,NONE,0,0,"OOS: Rāmānujācārya, Śrī Vaiṣṇava tradition, Viśiṣṭādvaita",2026-09-13T13:44:27
+en_video_09_0031,video_09,Meghana S,NONE,NONE,0,0,OOS:Vasudev Shastri Abhyankar's Advaita Modha,2026-09-13T13:45:02
+en_video_09_0032,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:45:29
+en_video_09_0033,video_09,Meghana S,NONE,NONE,0,0,OOS: Rāmānuja's Śrī Bhāṣya,2026-09-13T13:45:42
+en_video_09_0034,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:45:57
+en_video_09_0035,video_09,Meghana S,NONE,NONE,0,0,OOS: Vāda,2026-09-13T13:46:17
+en_video_09_0036,video_09,Meghana S,NONE,NONE,0,0,OOS: Vāda,2026-09-13T13:46:33
+en_video_09_0037,video_09,Meghana S,NONE,NONE,0,0,OOS: Vedānta Deśika,2026-09-13T13:46:48
+en_video_09_0038,video_09,Meghana S,NONE,NONE,0,0,OOS: Rāmānuja / Viśiṣṭādvaita Vedānta,2026-09-13T13:47:03
+en_video_09_0039,video_09,Meghana S,NONE,NONE,0,0,,2026-09-13T13:47:15
+en_video_08_0050,video_08,Meghana S,BG 2.24,T4,0,0,,2026-09-20T13:34:16
+en_video_09_0040,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:11
+en_video_09_0041,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:19
+en_video_09_0042,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:20
+en_video_09_0043,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:21
+en_video_09_0044,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:21
+en_video_09_0045,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:22
+en_video_09_0046,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:23
+en_video_09_0047,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:24
+en_video_09_0048,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:46:26
+en_video_09_0049,video_09,Meghana S,BG 2.59,T5,0,0,,2026-09-22T08:53:33
+en_video_09_0050,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T08:54:52
+en_video_09_0051,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:45
+en_video_09_0052,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:46
+en_video_09_0053,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:47
+en_video_09_0054,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:47
+en_video_09_0055,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:48
+en_video_09_0056,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:49
+en_video_09_0057,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T14:10:50
+en_video_09_0058,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T14:11:06
+en_video_09_0059,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T14:11:15
+en_video_09_0060,video_09,Meghana S,BG 2.27,T1,0,0,,2026-09-22T15:53:29
+en_video_09_0060,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:53:42
+en_video_09_0061,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:54:21
+en_video_09_0061,video_09,Meghana S,BG 2.22,T4,0,0,,2026-09-22T15:54:21
+en_video_09_0062,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:54:32
+en_video_09_0063,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:54:41
+en_video_09_0064,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:54:52
+en_video_09_0064,video_09,Meghana S,BG 2.22,T4,0,0,,2026-09-22T15:55:04
+en_video_09_0065,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:55:14
+en_video_09_0066,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:55:23
+en_video_09_0067,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:55:31
+en_video_09_0068,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:55:39
+en_video_09_0069,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:50
+en_video_09_0070,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:51
+en_video_09_0071,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:51
+en_video_09_0072,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:52
+en_video_09_0073,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:53
+en_video_09_0074,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:54
+en_video_09_0075,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:54
+en_video_09_0076,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:55
+en_video_09_0077,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:56
+en_video_09_0078,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:55:58
+en_video_09_0079,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:56:06
+en_video_09_0080,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:16
+en_video_09_0081,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:27
+en_video_09_0082,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:36
+en_video_09_0083,video_09,Meghana S,BG 2.27,T2,0,0,,2026-09-22T15:56:45
+en_video_09_0084,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:56:59
+en_video_09_0085,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:57:13
+en_video_09_0086,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:57:21
+en_video_09_0087,video_09,Meghana S,BG 2.26,T4,0,0,,2026-09-22T15:57:32
+en_video_09_0088,video_09,Meghana S,BG 2.27,T3,0,0,,2026-09-22T15:57:48
+en_video_09_0089,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:57:50
+en_video_09_0090,video_09,Meghana S,BG 2.27,T4,0,0,,2026-09-22T15:58:05
+en_video_09_0091,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:58:12
+en_video_09_0092,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:58:21
+en_video_09_0093,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:27
+en_video_09_0094,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:28
+en_video_09_0095,video_09,Meghana S,BG 2.27,T5,0,0,,2026-09-22T15:58:38
+en_video_09_0096,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:44
+en_video_09_0097,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:47
+en_video_09_0098,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:53
+en_video_09_0099,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:53
+en_video_09_0100,video_09,Meghana S,NONE,NONE,0,0,,2026-09-22T15:58:54
+kn_kannada_21_0000,kannada_21,Maitreyi,BG 2.50,T1,1,0,,2026-10-04T22:49:34
+kn_kannada_21_0001,kannada_21,Maitreyi,BG 2.50,T4,0,0,,2026-10-04T22:51:16
+kn_kannada_21_0001,kannada_21,Maitreyi,NONE,NONE,0,0,OOS- 4.37 quoted,2026-10-04T22:52:35
+kn_kannada_21_0002,kannada_21,Maitreyi,BG 2.50,T4,0,0,,2026-10-04T22:54:09
+kn_kannada_21_0003,kannada_21,Maitreyi,BG 2.50,T4,0,0,,2026-10-04T22:54:30
+kn_kannada_21_0004,kannada_21,Maitreyi,BG 2.50,T2,0,0,,2026-10-04T22:54:53
+kn_kannada_21_0005,kannada_21,Maitreyi,BG 2.50,T2,0,0,,2026-10-04T22:58:54
+kn_kannada_21_0005,kannada_21,Maitreyi,BG 2.49,T4,0,1,,2026-10-04T22:59:18
+kn_kannada_21_0006,kannada_21,Maitreyi,BG 2.50,T4,0,0,,2026-10-04T23:00:02
+kn_kannada_21_0007,kannada_21,Maitreyi,BG 2.50,T2,0,0,,2026-10-04T23:00:27
+kn_kannada_21_0007,kannada_21,Maitreyi,BG 2.48,T2,0,0,,2026-10-04T23:00:40
+kn_kannada_21_0008,kannada_21,Maitreyi,BG 2.50,T1,0,0,,2026-10-04T23:01:14
+kn_kannada_21_0009,kannada_21,Maitreyi,BG 2.51,T1,0,0,,2026-10-04T23:01:58
+kn_kannada_21_0010,kannada_21,Maitreyi,BG 2.51,T2,0,0,,2026-10-04T23:34:28
+kn_kannada_21_0011,kannada_21,Maitreyi,BG 2.51,T1,0,0,,2026-10-04T23:34:42
+kn_kannada_21_0012,kannada_21,Maitreyi,BG 2.52,T5,0,1,,2026-10-04T23:35:12
+kn_kannada_22_0000,kannada_22,Maitreyi,BG 2.52,T1,1,0,,2026-10-05T22:56:01
+kn_kannada_22_0000,kannada_22,Maitreyi,BG 2.51,T4,0,0,,2026-10-05T22:56:59
+kn_kannada_22_0001,kannada_22,Maitreyi,BG 2.52,T2,0,0,,2026-10-05T22:58:02
+kn_kannada_22_0002,kannada_22,Maitreyi,BG 2.52,T2,0,0,,2026-10-05T22:58:16
+kn_kannada_22_0003,kannada_22,Maitreyi,BG 2.52,T2,0,0,,2026-10-05T22:58:29
+kn_kannada_22_0004,kannada_22,Maitreyi,BG 2.52,T2,0,0,,2026-10-05T22:58:52
+kn_kannada_22_0005,kannada_22,Maitreyi,BG 2.52,T4,0,0,,2026-10-05T22:59:09
+kn_kannada_22_0006,kannada_22,Maitreyi,BG 2.52,T4,0,0,,2026-10-05T22:59:29
+kn_kannada_22_0007,kannada_22,Maitreyi,BG 2.52,T2,0,0,,2026-10-05T22:59:50
+kn_kannada_22_0008,kannada_22,Maitreyi,BG 2.52,T2,0,0,,2026-10-05T23:00:01
+kn_kannada_22_0009,kannada_22,Maitreyi,BG 2.52,T4,0,0,,2026-10-05T23:00:11
+kn_kannada_22_0010,kannada_22,Maitreyi,BG 2.52,T1,0,0,,2026-10-05T23:00:40
+kn_kannada_22_0010,kannada_22,Maitreyi,BG 2.53,T1,0,0,,2026-10-05T23:00:49
+kn_kannada_22_0011,kannada_22,Maitreyi,BG 2.53,T2,0,0,,2026-10-05T23:01:02
+kn_kannada_22_0012,kannada_22,Maitreyi,BG 2.53,T1,0,0,,2026-10-05T23:01:22
+kn_kannada_22_0013,kannada_22,Maitreyi,BG 2.54,T5,0,1,,2026-10-05T23:01:36
+kn_kannada_23_0000,kannada_23,Maitreyi,BG 2.39,T2,0,0,,2026-10-05T23:03:52
+kn_kannada_23_0000,kannada_23,Maitreyi,BG 2.54,T4,0,0,,2026-10-05T23:04:06
+kn_kannada_23_0000,kannada_23,Maitreyi,BG 2.53,T4,0,0,,2026-10-05T23:04:23
+kn_kannada_23_0001,kannada_23,Maitreyi,BG 2.54,T1,1,0,,2026-10-05T23:04:46
+kn_kannada_23_0002,kannada_23,Maitreyi,BG 2.54,T2,0,0,,2026-10-05T23:04:56
+kn_kannada_23_0003,kannada_23,Maitreyi,BG 2.54,T4,0,0,,2026-10-05T23:05:03
+kn_kannada_23_0004,kannada_23,Maitreyi,BG 2.54,T2,0,0,,2026-10-05T23:05:15
+kn_kannada_23_0005,kannada_23,Maitreyi,BG 2.54,T4,0,1,,2026-10-05T23:05:26
+kn_kannada_23_0006,kannada_23,Maitreyi,BG 2.54,T4,0,1,,2026-10-05T23:05:50
+kn_kannada_23_0007,kannada_23,Maitreyi,BG 2.54,T4,0,0,,2026-10-05T23:05:57
+kn_kannada_23_0008,kannada_23,Maitreyi,BG 2.54,T4,0,0,,2026-10-05T23:06:27
+kn_kannada_23_0009,kannada_23,Maitreyi,BG 2.54,T2,0,0,,2026-10-05T23:06:37
+kn_kannada_23_0010,kannada_23,Maitreyi,BG 2.54,T1,0,0,,2026-10-05T23:06:58
+kn_kannada_23_0011,kannada_23,Maitreyi,BG 2.55,T1,0,0,,2026-10-05T23:07:12
+kn_kannada_23_0012,kannada_23,Maitreyi,BG 2.55,T2,0,0,,2026-10-05T23:07:21
+kn_kannada_23_0013,kannada_23,Maitreyi,BG 2.54,T4,0,1,,2026-10-05T23:07:35
+kn_kannada_23_0014,kannada_23,Maitreyi,NONE,NONE,0,0,,2026-10-05T23:08:00
+kn_kannada_23_0015,kannada_23,Maitreyi,BG 2.55,T2,0,0,,2026-10-05T23:08:16
+kn_kannada_23_0016,kannada_23,Maitreyi,BG 2.55,T1,0,0,,2026-10-05T23:08:32
+kn_kannada_24_0000,kannada_24,Maitreyi,BG 2.56,T1,1,0,,2026-10-05T23:09:26
+kn_kannada_24_0000,kannada_24,Maitreyi,BG 2.55,T4,0,0,,2026-10-05T23:09:34
+kn_kannada_24_0001,kannada_24,Maitreyi,BG 2.56,T2,0,0,,2026-10-05T23:09:51
+kn_kannada_24_0002,kannada_24,Maitreyi,BG 2.56,T4,0,1,OOS ,2026-10-05T23:10:32
+kn_kannada_24_0003,kannada_24,Maitreyi,BG 2.56,T2,0,0,,2026-10-05T23:10:46
+kn_kannada_24_0004,kannada_24,Maitreyi,BG 2.56,T4,0,0,,2026-10-05T23:10:55
+kn_kannada_24_0005,kannada_24,Maitreyi,BG 2.56,T2,0,0,,2026-10-05T23:11:09
+kn_kannada_24_0006,kannada_24,Maitreyi,NONE,NONE,0,0,,2026-10-05T23:11:14
+kn_kannada_24_0007,kannada_24,Maitreyi,BG 2.56,T2,0,0,,2026-10-05T23:11:45
+kn_kannada_24_0007,kannada_24,Maitreyi,BG 2.59,T2,0,0,,2026-10-05T23:11:52
+kn_kannada_24_0008,kannada_24,Maitreyi,BG 2.56,T1,0,0,,2026-10-05T23:12:11
+kn_kannada_24_0008,kannada_24,Maitreyi,BG 2.57,T1,1,0,,2026-10-05T23:12:19
+kn_kannada_24_0009,kannada_24,Maitreyi,BG 2.57,T2,0,0,,2026-10-05T23:12:30
+kn_kannada_24_0010,kannada_24,Maitreyi,BG 2.57,T1,0,0,,2026-10-05T23:12:39
+kn_kannada_24_0011,kannada_24,Maitreyi,NONE,NONE,0,0,,2026-10-05T23:12:51
+kn_kannada_25_0000,kannada_25,Maitreyi,BG 2.56,T2,0,0,,2026-10-07T20:59:35
+kn_kannada_25_0000,kannada_25,Maitreyi,BG 2.64,T2,0,0,,2026-10-07T21:00:11
+kn_kannada_25_0000,kannada_25,Maitreyi,BG 2.55,T4,0,0,,2026-10-07T21:00:47
+kn_kannada_25_0001,kannada_25,Maitreyi,BG 2.58,T1,1,0,,2026-10-07T21:01:10
+kn_kannada_25_0002,kannada_25,Maitreyi,BG 2.58,T2,0,0,,2026-10-07T21:01:17
+kn_kannada_25_0003,kannada_25,Maitreyi,BG 2.58,T2,0,0,,2026-10-07T21:01:29
+kn_kannada_25_0004,kannada_25,Maitreyi,BG 2.58,T1,0,0,,2026-10-07T21:01:41
+kn_kannada_25_0005,kannada_25,Maitreyi,BG 2.59,T1,1,0,,2026-10-07T21:01:51
+kn_kannada_25_0006,kannada_25,Maitreyi,BG 2.59,T2,0,0,,2026-10-07T21:02:01
+kn_kannada_25_0007,kannada_25,Maitreyi,BG 2.59,T2,0,0,,2026-10-07T21:02:26
+kn_kannada_25_0008,kannada_25,Maitreyi,BG 2.59,T2,0,0,,2026-10-07T21:02:35
+kn_kannada_25_0009,kannada_25,Maitreyi,BG 2.59,T4,0,0,,2026-10-07T21:02:45
+kn_kannada_25_0010,kannada_25,Maitreyi,BG 2.59,T4,0,0,,2026-10-07T21:02:57
+kn_kannada_25_0011,kannada_25,Maitreyi,BG 2.59,T4,0,0,,2026-10-07T21:03:35
+kn_kannada_25_0012,kannada_25,Maitreyi,BG 2.59,T1,0,0,,2026-10-07T21:03:45
+kn_kannada_25_0013,kannada_25,Maitreyi,NONE,NONE,0,0,,2026-10-07T21:03:50
+kn_kannada_26_0000,kannada_26,Maitreyi,BG 2.59,T4,0,0,,2026-10-07T21:05:06
+kn_kannada_26_0001,kannada_26,Maitreyi,BG 2.60,T1,1,0,,2026-10-07T21:05:14
+kn_kannada_26_0002,kannada_26,Maitreyi,BG 2.60,T2,0,0,,2026-10-07T21:05:21
+kn_kannada_26_0003,kannada_26,Maitreyi,BG 2.61,T1,0,0,"NOTE: KATHA UPANISHAD 2.1.1 recited — ""ಪರಾಂಚಿ ಖಾನಿ ವ್ಯತೃಣಾತ್ ಸ್ವಯಂಭೂ"" (paranci khani vyatrnat svayambhuh) — non-Gita Upanishad verse in Sanskrit",2026-10-07T21:06:08
+kn_kannada_26_0003,kannada_26,Maitreyi,BG 2.60,T1,0,0,,2026-10-07T21:06:19
+kn_kannada_26_0004,kannada_26,Maitreyi,BG 2.61,T2,0,0,,2026-10-07T21:06:29
+kn_kannada_26_0005,kannada_26,Maitreyi,BG 2.61,T2,0,0,,2026-10-07T21:07:02
+kn_kannada_26_0005,kannada_26,Maitreyi,BG 2.59,T4,0,0,,2026-10-07T21:07:17
+kn_kannada_26_0006,kannada_26,Maitreyi,BG 2.61,T1,0,0,,2026-10-07T21:07:32
+kn_kannada_26_0006,kannada_26,Maitreyi,BG 2.62,T1,0,0,,2026-10-07T21:07:40
+kn_kannada_26_0007,kannada_26,Maitreyi,BG 2.63,T1,0,0,,2026-10-07T21:08:02
+kn_kannada_26_0007,kannada_26,Maitreyi,BG 2.62,T1,0,1,,2026-10-07T21:09:00
+kn_kannada_26_0008,kannada_26,Maitreyi,BG 2.62,T2,0,0,,2026-10-07T21:09:16
+kn_kannada_26_0009,kannada_26,Maitreyi,BG 2.63,T2,0,0,,2026-10-07T21:09:27
+kn_kannada_26_0009,kannada_26,Maitreyi,BG 2.62,T2,0,0,"tika Sanskrit ""ಪರ ವಿತ್ತಾಪಹರಣಾದಿ ಅನರ್ಥೇ ಧರ್ಮ ಬುದ್ಧಿಹಿ ಮಿಥ್ಯಾ ಜ್ಞಾನಂ"" (para-vittapaharanadi... mithya-jnanam — sammoha definition) — non-Gita-verse Sanskrit, confound.",2026-10-07T21:10:01
+kn_kannada_26_0010,kannada_26,Maitreyi,BG 2.63,T2,0,0,,2026-10-07T21:11:37
+kn_kannada_26_0010,kannada_26,Maitreyi,BG 2.62,T2,0,0,,2026-10-07T21:11:49
+kn_kannada_26_0011,kannada_26,Maitreyi,BG 2.62,T1,0,0,,2026-10-07T21:12:02
+kn_kannada_26_0011,kannada_26,Maitreyi,BG 2.63,T1,0,0,,2026-10-07T21:12:17
+kn_kannada_27_0000,kannada_27,Maitreyi,BG 2.64,T1,1,0,,2026-10-07T21:13:17
+kn_kannada_27_0000,kannada_27,Maitreyi,BG 2.63,T4,0,0,,2026-10-07T21:13:35
+kn_kannada_27_0001,kannada_27,Maitreyi,BG 2.64,T2,0,0,,2026-10-07T21:13:43
+kn_kannada_27_0002,kannada_27,Maitreyi,BG 2.64,T2,0,0,,2026-10-07T21:13:52
+kn_kannada_27_0003,kannada_27,Maitreyi,BG 2.64,T4,0,0,,2026-10-07T21:14:00
+kn_kannada_27_0004,kannada_27,Maitreyi,BG 2.64,T4,0,0,,2026-10-07T21:14:57
+kn_kannada_27_0005,kannada_27,Maitreyi,BG 2.64,T1,0,0,,2026-10-07T21:15:19
+kn_kannada_27_0005,kannada_27,Maitreyi,BG 2.65,T1,0,0,,2026-10-07T21:15:28
+kn_kannada_27_0006,kannada_27,Maitreyi,BG 2.65,T2,0,0,,2026-10-07T21:15:37
+kn_kannada_27_0007,kannada_27,Maitreyi,BG 2.65,T2,0,0,,2026-10-07T21:15:43
+kn_kannada_27_0008,kannada_27,Maitreyi,BG 2.65,T1,0,0,,2026-10-07T21:15:58
+kn_kannada_27_0008,kannada_27,Maitreyi,BG 2.66,T1,0,0,,2026-10-07T21:16:04
+kn_kannada_27_0009,kannada_27,Maitreyi,BG 2.66,T2,0,0,,2026-10-07T21:16:18
+kn_kannada_27_0010,kannada_27,Maitreyi,BG 2.66,T2,0,0,,2026-10-07T21:16:33
+kn_kannada_27_0011,kannada_27,Maitreyi,BG 2.66,T1,0,0,,2026-10-07T21:16:55
+kn_kannada_27_0011,kannada_27,Maitreyi,BG 2.67,T1,0,0,,2026-10-07T21:17:06
+kn_kannada_27_0012,kannada_27,Maitreyi,BG 2.67,T1,0,0,,2026-10-07T21:17:20
+kn_kannada_27_0013,kannada_27,Maitreyi,NONE,NONE,0,0,,2026-10-07T21:17:21
+kn_kannada_28_0000,kannada_28,Maitreyi,BG 2.65,T2,0,0,,2026-10-07T21:17:59
+kn_kannada_28_0000,kannada_28,Maitreyi,BG 2.66,T4,0,0,,2026-10-07T21:18:10
+kn_kannada_28_0001,kannada_28,Maitreyi,BG 2.65,T2,0,0,,2026-10-07T21:18:19
+kn_kannada_28_0001,kannada_28,Maitreyi,BG 2.66,T4,0,0,,2026-10-07T21:18:28
+kn_kannada_28_0002,kannada_28,Maitreyi,BG 2.67,T2,0,0,,2026-10-07T21:18:40
+kn_kannada_28_0002,kannada_28,Maitreyi,BG 2.66,T2,0,0,,2026-10-07T21:18:51
+kn_kannada_28_0003,kannada_28,Maitreyi,BG 2.68,T1,1,0,,2026-10-07T21:19:18
+kn_kannada_28_0004,kannada_28,Maitreyi,BG 2.68,T1,0,0,,2026-10-07T21:19:33
+kn_kannada_28_0004,kannada_28,Maitreyi,BG 2.54,T2,0,0,,2026-10-07T21:19:42
+kn_kannada_28_0005,kannada_28,Maitreyi,BG 2.69,T1,0,0,,2026-10-07T21:19:53
+kn_kannada_28_0006,kannada_28,Maitreyi,BG 2.69,T2,0,0,,2026-10-07T21:20:01
+kn_kannada_28_0007,kannada_28,Maitreyi,BG 2.69,T2,0,0,,2026-10-07T21:20:10
+kn_kannada_28_0008,kannada_28,Maitreyi,BG 2.69,T4,0,0,,2026-10-07T21:20:21
+kn_kannada_28_0009,kannada_28,Maitreyi,BG 2.69,T1,0,0,,2026-10-07T21:20:35
+kn_kannada_28_0009,kannada_28,Maitreyi,BG 2.70,T1,1,0,,2026-10-07T21:20:48
+kn_kannada_28_0010,kannada_28,Maitreyi,NONE,NONE,0,0,,2026-10-07T21:20:50
+kn_kannada_29_0000,kannada_29,Maitreyi,BG 2.70,T1,1,0,,2026-10-07T21:21:28
+kn_kannada_29_0000,kannada_29,Maitreyi,BG 2.72,T4,0,0,,2026-10-07T21:21:41
+kn_kannada_29_0001,kannada_29,Maitreyi,BG 2.70,T2,0,0,,2026-10-07T21:21:50
+kn_kannada_29_0002,kannada_29,Maitreyi,BG 2.70,T2,0,0,,2026-10-07T21:21:59
+kn_kannada_29_0003,kannada_29,Maitreyi,BG 2.70,T1,0,0,,2026-10-07T21:22:17
+kn_kannada_29_0003,kannada_29,Maitreyi,BG 2.71,T1,0,0,,2026-10-07T21:22:27
+kn_kannada_29_0004,kannada_29,Maitreyi,BG 2.71,T2,0,0,,2026-10-07T21:22:37
+kn_kannada_29_0005,kannada_29,Maitreyi,BG 2.71,T1,0,0,,2026-10-07T21:22:48
+kn_kannada_29_0005,kannada_29,Maitreyi,BG 2.72,T1,0,0,,2026-10-07T21:22:56
+kn_kannada_29_0006,kannada_29,Maitreyi,BG 2.72,T1,0,0,,2026-10-07T21:23:08
+kn_kannada_29_0006,kannada_29,Maitreyi,BG 2.69,T2,0,0,,2026-10-07T21:23:16
+kn_kannada_29_0007,kannada_29,Maitreyi,BG 2.72,T2,0,0,,2026-10-07T21:23:25
+kn_kannada_29_0008,kannada_29,Maitreyi,BG 2.72,T5,0,1,,2026-10-07T21:23:41
+kn_kannada_29_0009,kannada_29,Maitreyi,BG 2.39,T2,0,0,,2026-10-07T21:23:55
+kn_kannada_29_0009,kannada_29,Maitreyi,BG 2.16,T2,0,0,,2026-10-07T21:24:05
+kn_kannada_29_0010,kannada_29,Maitreyi,NONE,NONE,0,0,,2026-10-07T21:24:08
+kn_kannada_29_0011,kannada_29,Maitreyi,BG 2.72,T1,0,0,,2026-10-07T21:24:20
+kn_kannada_29_0012,kannada_29,Maitreyi,NONE,NONE,0,0,,2026-10-07T21:24:21
+en_video_09_0019,video_09,Meghana S,BG 2.26,T4,0,0,,2026-10-10T12:31:58
+en_video_02_0080,video_02,Meghana S,NONE,NONE,0,0,,2026-10-10T12:33:59
+en_video_02_0081,video_02,Meghana S,BG 2.27,T4,0,0,,2026-10-10T12:34:37
+en_video_08_0093,video_08,Meghana S,BG 2.22,T4,0,0,,2026-10-10T12:35:25
+en_video_08_0094,video_08,Meghana S,NONE,NONE,0,0,,2026-10-10T12:35:42
+en_video_08_0095,video_08,Meghana S,NONE,NONE,0,0,,2026-10-10T12:35:46
+en_video_09_0101,video_09,Meghana S,NONE,NONE,0,0,,2026-10-10T12:36:08
+en_iskcon_0000,en_iskcon,Maitreyi,BG 2.1,T1,1,0,,2026-10-10T19:28:25
+en_iskcon_0001,en_iskcon,Maitreyi,BG 2.1,T4,0,0,,2026-10-10T19:28:35
+en_iskcon_0002,en_iskcon,Maitreyi,BG 2.1,T4,0,1,"SB 5.5.1 RECITED in Sanskrit — ""Nayam deho dehe bhajaam riloke kashtaan",2026-10-10T19:29:03
+en_iskcon_0003,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T19:29:28
+en_iskcon_0003,en_iskcon,Maitreyi,BG 2.1,T4,0,1,,2026-10-10T19:29:34
+en_iskcon_0004,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T19:29:42
+en_iskcon_0004,en_iskcon,Maitreyi,BG 2.1,T4,0,1,,2026-10-10T19:29:48
+en_iskcon_0005,en_iskcon,Maitreyi,BG 2.2,T1,0,0,,2026-10-10T19:29:57
+en_iskcon_0005,en_iskcon,Maitreyi,BG 2.1,T4,0,0,,2026-10-10T19:30:09
+en_iskcon_0006,en_iskcon,Maitreyi,BG 2.2,T2,0,1,,2026-10-10T19:30:23
+en_iskcon_0007,en_iskcon,Maitreyi,BG 2.2,T4,0,1,,2026-10-10T19:30:35
+en_iskcon_0008,en_iskcon,Maitreyi,BG 2.2,T4,0,1,,2026-10-10T19:30:42
+en_iskcon_0009,en_iskcon,Maitreyi,BG 2.2,T4,0,1,,2026-10-10T19:30:58
+en_iskcon_0010,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T19:31:05
+en_iskcon_0011,en_iskcon,Maitreyi,BG 2.2,T4,0,1,"VISHNU PURANA verse RECITED — ""Aishwaryasya samagrasya veeryasya",2026-10-10T19:31:32
+en_iskcon_0012,en_iskcon,Maitreyi,BG 2.2,T4,0,1,,2026-10-10T19:32:01
+en_iskcon_0013,en_iskcon,Maitreyi,BG 2.2,T4,0,0,,2026-10-10T19:32:12
+en_iskcon_0014,en_iskcon,Maitreyi,BG 2.2,T4,0,1,,2026-10-10T19:32:24
+en_iskcon_0015,en_iskcon,Maitreyi,BG 2.2,T4,0,1,,2026-10-10T19:32:36
+en_iskcon_0016,en_iskcon,Maitreyi,BG 2.2,T4,0,0,,2026-10-10T19:32:47
+en_iskcon_0017,en_iskcon,Maitreyi,BG 2.3,T1,0,0,,2026-10-10T19:32:55
+en_iskcon_0017,en_iskcon,Maitreyi,BG 2.2,T4,0,0,,2026-10-10T19:33:02
+en_iskcon_0018,en_iskcon,Maitreyi,BG 2.4,T1,0,0,,2026-10-10T19:33:13
+en_iskcon_0019,en_iskcon,Maitreyi,BG 2.5,T1,0,0,,2026-10-10T19:33:28
+en_iskcon_0019,en_iskcon,Maitreyi,BG 2.4,T4,0,0,,2026-10-10T19:33:37
+en_iskcon_0020,en_iskcon,Maitreyi,BG 2.6,T1,0,0,,2026-10-10T19:33:48
+en_iskcon_0021,en_iskcon,Maitreyi,BG 2.6,T4,0,1,,2026-10-10T19:34:04
+en_iskcon_0022,en_iskcon,Maitreyi,BG 2.6,T3,0,0,,2026-10-10T19:34:52
+en_iskcon_0022,en_iskcon,Maitreyi,BG 2.7,T1,0,0,,2026-10-10T19:35:02
+en_iskcon_0023,en_iskcon,Maitreyi,BG 2.7,T2,0,0,,2026-10-10T19:35:12
+en_iskcon_0024,en_iskcon,Maitreyi,BG 2.7,T4,0,0,,2026-10-10T19:35:21
+en_iskcon_0025,en_iskcon,Maitreyi,BG 2.7,T4,0,1,,2026-10-10T19:35:32
+en_iskcon_0026,en_iskcon,Maitreyi,BG 2.7,T4,0,0,,2026-10-10T19:35:41
+en_iskcon_0027,en_iskcon,Maitreyi,BG 2.7,T2,0,0,,2026-10-10T19:35:48
+en_iskcon_0028,en_iskcon,Maitreyi,BG 2.7,T4,0,1,,2026-10-10T19:36:10
+en_iskcon_0029,en_iskcon,Maitreyi,BG 2.8,T1,0,0,,2026-10-10T19:36:29
+en_iskcon_0029,en_iskcon,Maitreyi,BG 2.9,T1,0,0,,2026-10-10T19:36:36
+en_iskcon_0029,en_iskcon,Maitreyi,BG 2.10,T1,0,0,,2026-10-10T19:36:43
+en_iskcon_0030,en_iskcon,Maitreyi,BG 2.11,T1,0,0,,2026-10-10T19:36:51
+en_iskcon_0031,en_iskcon,Maitreyi,BG 2.11,T4,0,0,,2026-10-10T19:37:04
+en_iskcon_0032,en_iskcon,Maitreyi,BG 2.11,T4,0,0,,2026-10-10T19:37:10
+en_iskcon_0033,en_iskcon,Maitreyi,BG 2.11,T4,0,0,,2026-10-10T19:41:00
+en_iskcon_0033,en_iskcon,Maitreyi,BG 2.12,T1,0,0,,2026-10-10T19:41:08
+en_iskcon_0034,en_iskcon,Maitreyi,BG 2.12,T2,0,0,,2026-10-10T19:41:36
+en_iskcon_0035,en_iskcon,Maitreyi,BG 2.12,T2,0,0,,2026-10-10T19:41:47
+en_iskcon_0035,en_iskcon,Maitreyi,BG 2.13,T1,0,0,,2026-10-10T19:41:57
+en_iskcon_0036,en_iskcon,Maitreyi,BG 2.13,T3,0,1,,2026-10-10T19:42:08
+en_iskcon_0037,en_iskcon,Maitreyi,BG 2.13,T2,0,0,,2026-10-10T19:42:16
+en_iskcon_0037,en_iskcon,Maitreyi,BG 2.14,T1,0,0,,2026-10-10T19:42:26
+en_iskcon_0038,en_iskcon,Maitreyi,BG 2.14,T2,0,0,,2026-10-10T19:42:36
+en_iskcon_0039,en_iskcon,Maitreyi,BG 2.14,T4,0,0,,2026-10-10T19:42:46
+en_iskcon_0040,en_iskcon,Maitreyi,BG 2.14,T2,0,0,,2026-10-10T19:42:54
+en_iskcon_0041,en_iskcon,Maitreyi,BG 2.14,T4,0,0,,2026-10-10T19:44:29
+en_iskcon_0041,en_iskcon,Maitreyi,BG 2.15,T1,0,0,,2026-10-10T19:44:41
+en_iskcon_0042,en_iskcon,Maitreyi,BG 2.15,T2,0,0,,2026-10-10T19:44:50
+en_iskcon_0043,en_iskcon,Maitreyi,BG 2.15,T4,0,0,,2026-10-10T19:44:58
+en_iskcon_0043,en_iskcon,Maitreyi,BG 2.16,T1,0,0,,2026-10-10T19:45:08
+en_iskcon_0044,en_iskcon,Maitreyi,BG 2.16,T4,0,1,,2026-10-10T19:45:43
+en_iskcon_0045,en_iskcon,Maitreyi,BG 2.16,T2,0,0,,2026-10-10T19:45:52
+en_iskcon_0046,en_iskcon,Maitreyi,BG 2.16,T4,0,0,,2026-10-10T19:46:06
+en_iskcon_0047,en_iskcon,Maitreyi,BG 2.16,T4,0,1,,2026-10-10T19:46:29
+en_iskcon_0048,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T20:40:02
+en_iskcon_0049,en_iskcon,Maitreyi,BG 2.16,T4,0,0,,2026-10-10T20:40:15
+en_iskcon_0050,en_iskcon,Maitreyi,BG 2.16,T4,0,1,,2026-10-10T20:40:33
+en_iskcon_0051,en_iskcon,Maitreyi,BG 2.17,T1,0,0,,2026-10-10T20:41:39
+en_iskcon_0051,en_iskcon,Maitreyi,BG 2.18,T1,0,0,,2026-10-10T20:41:47
+en_iskcon_0051,en_iskcon,Maitreyi,BG 2.16,T4,0,0,,2026-10-10T20:41:59
+en_iskcon_0052,en_iskcon,Maitreyi,BG 2.19,T1,0,0,,2026-10-10T20:42:15
+en_iskcon_0052,en_iskcon,Maitreyi,BG 2.20,T1,0,0,,2026-10-10T20:42:24
+en_iskcon_0052,en_iskcon,Maitreyi,BG 2.18,T3,0,1,,2026-10-10T20:42:42
+en_iskcon_0053,en_iskcon,Maitreyi,BG 2.20,T3,0,1,,2026-10-10T20:43:30
+en_iskcon_0053,en_iskcon,Maitreyi,BG 2.21,T1,0,0,,2026-10-10T20:43:48
+en_iskcon_0053,en_iskcon,Maitreyi,BG 2.22,T1,0,0,,2026-10-10T20:44:07
+en_iskcon_0053,en_iskcon,Maitreyi,BG 2.23,T1,0,0,,2026-10-10T20:44:22
+en_iskcon_0054,en_iskcon,Maitreyi,BG 2.24,T1,0,0,,2026-10-10T20:44:29
+en_iskcon_0055,en_iskcon,Maitreyi,BG 2.24,T4,0,0,,2026-10-10T20:44:38
+en_iskcon_0056,en_iskcon,Maitreyi,BG 2.24,T4,0,0,,2026-10-10T20:44:54
+en_iskcon_0056,en_iskcon,Maitreyi,BG 2.25,T1,0,0,,2026-10-10T20:45:04
+en_iskcon_0057,en_iskcon,Maitreyi,BG 2.25,T2,0,0,,2026-10-10T20:45:18
+en_iskcon_0058,en_iskcon,Maitreyi,BG 2.25,T4,0,0,,2026-10-10T20:45:29
+en_iskcon_0058,en_iskcon,Maitreyi,BG 2.26,T1,0,0,,2026-10-10T20:45:38
+en_iskcon_0059,en_iskcon,Maitreyi,BG 2.26,T4,0,0,,2026-10-10T20:45:50
+en_iskcon_0059,en_iskcon,Maitreyi,BG 2.27,T1,0,0,,2026-10-10T20:45:57
+en_iskcon_0059,en_iskcon,Maitreyi,BG 2.28,T1,0,0,,2026-10-10T20:46:04
+en_iskcon_0060,en_iskcon,Maitreyi,BG 2.28,T3,0,1,,2026-10-10T20:46:16
+en_iskcon_0061,en_iskcon,Maitreyi,BG 2.28,T4,0,0,OOS 18.54,2026-10-10T20:46:47
+en_iskcon_0062,en_iskcon,Maitreyi,BG 2.28,T4,0,0,,2026-10-10T20:46:57
+en_iskcon_0062,en_iskcon,Maitreyi,BG 2.29,T1,0,0,,2026-10-10T20:47:07
+en_iskcon_0063,en_iskcon,Maitreyi,BG 2.29,T5,0,0,,2026-10-10T20:47:21
+en_iskcon_0064,en_iskcon,Maitreyi,BG 2.29,T5,0,0,,2026-10-10T20:47:29
+en_iskcon_0065,en_iskcon,Maitreyi,BG 2.29,T4,0,0,,2026-10-10T20:47:41
+en_iskcon_0066,en_iskcon,Maitreyi,BG 2.23,T2,0,0,,2026-10-10T20:47:57
+en_iskcon_0066,en_iskcon,Maitreyi,BG 2.29,T4,0,0,,2026-10-10T20:48:04
+en_iskcon_0067,en_iskcon,Maitreyi,BG 2.29,T4,0,0,,2026-10-10T20:48:14
+en_iskcon_0067,en_iskcon,Maitreyi,BG 2.30,T1,0,0,,2026-10-10T20:48:23
+en_iskcon_0068,en_iskcon,Maitreyi,BG 2.30,T2,0,0,,2026-10-10T20:48:32
+en_iskcon_0069,en_iskcon,Maitreyi,BG 2.30,T4,0,0,,2026-10-10T20:48:38
+en_iskcon_0070,en_iskcon,Maitreyi,BG 2.30,T4,0,0,,2026-10-10T20:48:46
+en_iskcon_0070,en_iskcon,Maitreyi,BG 2.31,T1,0,0,,2026-10-10T20:48:53
+en_iskcon_0071,en_iskcon,Maitreyi,BG 2.31,T3,0,0,,2026-10-10T20:49:15
+en_iskcon_0072,en_iskcon,Maitreyi,BG 2.31,T5,0,0,,2026-10-10T20:49:34
+en_iskcon_0073,en_iskcon,Maitreyi,BG 2.31,T4,0,0,,2026-10-10T20:49:47
+en_iskcon_0073,en_iskcon,Maitreyi,BG 2.32,T1,0,0,,2026-10-10T20:49:54
+en_iskcon_0073,en_iskcon,Maitreyi,BG 2.33,T1,0,0,,2026-10-10T20:50:00
+en_iskcon_0074,en_iskcon,Maitreyi,BG 2.33,T1,0,0,,2026-10-10T20:50:13
+en_iskcon_0074,en_iskcon,Maitreyi,BG 2.34,T1,0,0,,2026-10-10T20:50:18
+en_iskcon_0074,en_iskcon,Maitreyi,BG 2.35,T1,0,0,,2026-10-10T20:50:24
+en_iskcon_0075,en_iskcon,Maitreyi,BG 2.36,T1,0,0,,2026-10-10T20:50:34
+en_iskcon_0075,en_iskcon,Maitreyi,BG 2.37,T1,0,0,,2026-10-10T20:50:40
+en_iskcon_0076,en_iskcon,Maitreyi,BG 2.37,T4,0,0,,2026-10-10T20:50:53
+en_iskcon_0076,en_iskcon,Maitreyi,BG 2.38,T1,0,0,,2026-10-10T20:51:08
+en_iskcon_0077,en_iskcon,Maitreyi,BG 2.38,T4,0,1,,2026-10-10T20:51:30
+en_iskcon_0078,en_iskcon,Maitreyi,BG 2.38,T4,0,0,,2026-10-10T20:51:39
+en_iskcon_0078,en_iskcon,Maitreyi,BG 2.39,T1,0,0,,2026-10-10T20:51:46
+en_iskcon_0079,en_iskcon,Maitreyi,BG 2.39,T4,0,0,,2026-10-10T20:51:54
+en_iskcon_0080,en_iskcon,Maitreyi,BG 2.39,T4,0,0,,2026-10-10T20:52:00
+en_iskcon_0081,en_iskcon,Maitreyi,BG 2.39,T4,0,1,,2026-10-10T20:52:07
+en_iskcon_0082,en_iskcon,Maitreyi,BG 2.39,T4,0,0,,2026-10-10T20:52:20
+en_iskcon_0083,en_iskcon,Maitreyi,BG 2.39,T4,0,0,,2026-10-10T20:52:26
+en_iskcon_0084,en_iskcon,Maitreyi,BG 2.39,T4,0,0,,2026-10-10T20:52:34
+en_iskcon_0084,en_iskcon,Maitreyi,BG 2.40,T1,0,0,,2026-10-10T20:52:41
+en_iskcon_0085,en_iskcon,Maitreyi,BG 2.40,T2,0,0,,2026-10-10T20:52:51
+en_iskcon_0086,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T20:53:11
+en_iskcon_0087,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T20:53:19
+en_iskcon_0088,en_iskcon,Maitreyi,BG 2.40,T4,0,0,,2026-10-10T21:01:04
+en_iskcon_0088,en_iskcon,Maitreyi,BG 2.41,T1,0,0,,2026-10-10T21:01:11
+en_iskcon_0089,en_iskcon,Maitreyi,BG 2.42,T1,0,0,,2026-10-10T21:01:27
+en_iskcon_0089,en_iskcon,Maitreyi,BG 2.43,T1,0,0,,2026-10-10T21:01:34
+en_iskcon_0089,en_iskcon,Maitreyi,BG 2.44,T1,0,0,,2026-10-10T21:01:40
+en_iskcon_0089,en_iskcon,Maitreyi,BG 2.41,T4,0,0,,2026-10-10T21:01:50
+en_iskcon_0090,en_iskcon,Maitreyi,BG 2.42,T2,0,0,,2026-10-10T21:02:07
+en_iskcon_0090,en_iskcon,Maitreyi,BG 2.45,T1,0,0,,2026-10-10T21:02:13
+en_iskcon_0091,en_iskcon,Maitreyi,BG 2.45,T4,0,0,,2026-10-10T21:02:24
+en_iskcon_0092,en_iskcon,Maitreyi,BG 2.45,T4,0,0,,2026-10-10T21:02:30
+en_iskcon_0093,en_iskcon,Maitreyi,BG 2.42,T2,0,0,,2026-10-10T21:04:24
+en_iskcon_0093,en_iskcon,Maitreyi,BG 2.45,T4,0,0,,2026-10-10T21:04:31
+en_iskcon_0094,en_iskcon,Maitreyi,BG 2.45,T2,0,0,,2026-10-10T21:04:38
+en_iskcon_0095,en_iskcon,Maitreyi,BG 2.46,T1,0,0,,2026-10-10T21:04:43
+en_iskcon_0095,en_iskcon,Maitreyi,BG 2.45,T4,0,0,,2026-10-10T21:04:50
+en_iskcon_0096,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T21:05:02
+en_iskcon_0097,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T21:05:05
+en_iskcon_0098,en_iskcon,Maitreyi,BG 2.46,T4,0,0,OOS 15.15,2026-10-10T21:05:40
+en_iskcon_0099,en_iskcon,Maitreyi,BG 2.45,T4,0,0,,2026-10-10T21:05:49
+en_iskcon_0100,en_iskcon,Maitreyi,BG 2.47,T1,0,0,,2026-10-10T21:06:00
+en_iskcon_0101,en_iskcon,Maitreyi,BG 2.47,T2,0,0,,2026-10-10T21:06:07
+en_iskcon_0102,en_iskcon,Maitreyi,BG 2.47,T5,0,0,,2026-10-10T21:06:31
+en_iskcon_0103,en_iskcon,Maitreyi,BG 2.47,T5,0,0,,2026-10-10T21:06:37
+en_iskcon_0104,en_iskcon,Maitreyi,BG 2.47,T2,0,0,,2026-10-10T21:06:44
+en_iskcon_0105,en_iskcon,Maitreyi,BG 2.47,T4,0,0,,2026-10-10T21:06:57
+en_iskcon_0106,en_iskcon,Maitreyi,BG 2.47,T4,0,0,OOS : 9.27,2026-10-10T21:07:11
+en_iskcon_0107,en_iskcon,Maitreyi,BG 2.47,T2,0,0,OOS:10.8,2026-10-10T21:07:32
+en_iskcon_0108,en_iskcon,Maitreyi,BG 2.47,T2,0,0,,2026-10-10T21:07:38
+en_iskcon_0109,en_iskcon,Maitreyi,BG 2.47,T5,0,0,,2026-10-10T21:07:57
+en_iskcon_0110,en_iskcon,Maitreyi,BG 2.47,T2,0,0,,2026-10-10T21:08:09
+en_iskcon_0111,en_iskcon,Maitreyi,BG 2.47,T4,0,0,,2026-10-10T21:08:21
+en_iskcon_0111,en_iskcon,Maitreyi,BG 2.48,T1,0,0,,2026-10-10T21:08:28
+en_iskcon_0112,en_iskcon,Maitreyi,BG 2.48,T2,0,0,,2026-10-10T21:08:40
+en_iskcon_0112,en_iskcon,Maitreyi,BG 2.49,T1,0,0,,2026-10-10T21:08:48
+en_iskcon_0113,en_iskcon,Maitreyi,BG 2.49,T1,0,1,,2026-10-10T21:09:00
+en_iskcon_0114,en_iskcon,Maitreyi,BG 2.49,T4,0,0,OOS:9.26,2026-10-10T21:09:53
+en_iskcon_0115,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T21:50:49
+en_iskcon_0116,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T21:50:55
+en_iskcon_0117,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T21:54:01
+en_iskcon_0118,en_iskcon,Maitreyi,BG 2.51,T2,0,0,,2026-10-10T21:54:14
+en_iskcon_0119,en_iskcon,Maitreyi,BG 2.46,T2,0,0,,2026-10-10T21:54:23
+en_iskcon_0120,en_iskcon,Maitreyi,BG 2.49,T5,0,1,,2026-10-10T21:55:29
+en_iskcon_0121,en_iskcon,Maitreyi,BG 2.49,T4,0,1,,2026-10-10T21:55:38
+en_iskcon_0122,en_iskcon,Maitreyi,BG 2.49,T2,0,0,,2026-10-10T21:56:07
+en_iskcon_0123,en_iskcon,Maitreyi,BG 2.49,T4,0,0,,2026-10-10T21:56:19
+en_iskcon_0123,en_iskcon,Maitreyi,BG 2.50,T1,0,0,,2026-10-10T21:56:26
+en_iskcon_0124,en_iskcon,Maitreyi,BG 2.50,T2,0,0,,2026-10-10T21:56:41
+en_iskcon_0125,en_iskcon,Maitreyi,BG 2.50,T4,0,0,,2026-10-10T21:56:48
+en_iskcon_0126,en_iskcon,Maitreyi,BG 2.50,T4,0,0,,2026-10-10T21:56:58
+en_iskcon_0127,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T21:58:16
+en_iskcon_0128,en_iskcon,Maitreyi,BG 2.50,T4,0,0,,2026-10-10T21:59:27
+en_iskcon_0129,en_iskcon,Maitreyi,BG 2.51,T1,0,0,,2026-10-10T21:59:38
+en_iskcon_0129,en_iskcon,Maitreyi,BG 2.50,T4,0,0,,2026-10-10T21:59:47
+en_iskcon_0130,en_iskcon,Maitreyi,BG 2.12,T4,0,0,,2026-10-10T22:01:23
+en_iskcon_0130,en_iskcon,Maitreyi,BG 2.51,T2,0,0,,2026-10-10T22:01:39
+en_iskcon_0131,en_iskcon,Maitreyi,BG 2.51,T4,0,0,,2026-10-10T22:01:47
+en_iskcon_0132,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T22:01:47
+en_iskcon_0133,en_iskcon,Maitreyi,BG 2.52,T1,0,0,,2026-10-10T22:16:30
+en_iskcon_0133,en_iskcon,Maitreyi,BG 2.51,T4,0,0,OOS:15.6,2026-10-10T22:16:45
+en_iskcon_0134,en_iskcon,Maitreyi,BG 2.53,T1,0,0,,2026-10-10T22:17:38
+en_iskcon_0135,en_iskcon,Maitreyi,BG 2.54,T1,0,0,,2026-10-10T22:20:28
+en_iskcon_0135,en_iskcon,Maitreyi,BG 2.53,T4,0,0,,2026-10-10T22:20:34
+en_iskcon_0136,en_iskcon,Maitreyi,BG 2.54,T2,0,0,,2026-10-10T22:25:41
+en_iskcon_0137,en_iskcon,Maitreyi,BG 2.54,T4,0,0,,2026-10-10T22:25:49
+en_iskcon_0138,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T22:34:55
+en_iskcon_0139,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T22:35:03
+en_iskcon_0140,en_iskcon,Maitreyi,BG 2.54,T1,0,0,OOS,2026-10-10T22:42:28
+en_iskcon_0141,en_iskcon,Maitreyi,BG 2.54,T1,0,0,,2026-10-10T22:49:25
+en_iskcon_0142,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T22:49:32
+en_iskcon_0143,en_iskcon,Maitreyi,BG 2.54,T4,0,0,,2026-10-10T22:51:09
+en_iskcon_0144,en_iskcon,Maitreyi,BG 2.55,T1,0,0,,2026-10-10T22:52:38
+en_iskcon_0145,en_iskcon,Maitreyi,BG 2.55,T2,0,0,,2026-10-10T22:52:49
+en_iskcon_0146,en_iskcon,Maitreyi,BG 2.55,T4,0,0,,2026-10-10T22:52:56
+en_iskcon_0147,en_iskcon,Maitreyi,BG 2.55,T5,0,1,,2026-10-10T22:53:21
+en_iskcon_0148,en_iskcon,Maitreyi,BG 2.55,T5,0,1,,2026-10-10T22:53:27
+en_iskcon_0149,en_iskcon,Maitreyi,BG 2.55,T4,0,0,,2026-10-10T22:53:37
+en_iskcon_0150,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T22:54:54
+en_iskcon_0151,en_iskcon,Maitreyi,BG 2.55,T2,0,0,,2026-10-10T22:55:01
+en_iskcon_0152,en_iskcon,Maitreyi,BG 2.55,T4,0,0,,2026-10-10T22:55:06
+en_iskcon_0153,en_iskcon,Maitreyi,BG 2.55,T4,0,0,,2026-10-10T22:55:17
+en_iskcon_0154,en_iskcon,Maitreyi,BG 2.56,T1,0,0,,2026-10-10T22:55:25
+en_iskcon_0155,en_iskcon,Maitreyi,BG 2.56,T4,0,1,,2026-10-10T22:55:49
+en_iskcon_0156,en_iskcon,Maitreyi,BG 2.56,T4,0,0,,2026-10-10T22:55:56
+en_iskcon_0157,en_iskcon,Maitreyi,BG 2.56,T5,0,0,,2026-10-10T22:56:53
+en_iskcon_0158,en_iskcon,Maitreyi,BG 2.56,T5,0,0,,2026-10-10T22:57:08
+en_iskcon_0159,en_iskcon,Maitreyi,BG 2.56,T2,0,0,,2026-10-10T22:57:18
+en_iskcon_0160,en_iskcon,Maitreyi,BG 2.56,T4,0,0,,2026-10-10T22:57:32
+en_iskcon_0160,en_iskcon,Maitreyi,BG 2.57,T1,0,0,,2026-10-10T22:57:40
+en_iskcon_0161,en_iskcon,Maitreyi,BG 2.57,T5,0,0,,2026-10-10T22:57:49
+en_iskcon_0162,en_iskcon,Maitreyi,BG 2.58,T1,0,0,,2026-10-10T22:58:00
+en_iskcon_0162,en_iskcon,Maitreyi,BG 2.54,T4,0,0,,2026-10-10T22:58:15
+en_iskcon_0163,en_iskcon,Maitreyi,BG 2.58,T4,0,0,,2026-10-10T22:59:35
+en_iskcon_0164,en_iskcon,Maitreyi,BG 2.58,T5,0,1,,2026-10-10T23:00:20
+en_iskcon_0165,en_iskcon,Maitreyi,BG 2.58,T5,0,0,,2026-10-10T23:00:47
+en_iskcon_0166,en_iskcon,Maitreyi,BG 2.58,T4,0,0,,2026-10-10T23:00:54
+en_iskcon_0167,en_iskcon,Maitreyi,BG 2.58,T4,0,0,,2026-10-10T23:01:18
+en_iskcon_0167,en_iskcon,Maitreyi,BG 2.59,T1,0,0,,2026-10-10T23:01:25
+en_iskcon_0168,en_iskcon,Maitreyi,BG 2.59,T2,0,0,,2026-10-10T23:01:39
+en_iskcon_0169,en_iskcon,Maitreyi,BG 2.59,T4,0,1,,2026-10-10T23:01:59
+en_iskcon_0170,en_iskcon,Maitreyi,BG 2.59,T4,0,1,,2026-10-10T23:02:20
+en_iskcon_0171,en_iskcon,Maitreyi,BG 2.59,T1,0,1,,2026-10-10T23:02:42
+en_iskcon_0172,en_iskcon,Maitreyi,BG 2.59,T2,0,0,,2026-10-10T23:03:04
+en_iskcon_0172,en_iskcon,Maitreyi,BG 2.60,T1,0,0,,2026-10-10T23:03:17
+en_iskcon_0173,en_iskcon,Maitreyi,BG 2.60,T2,0,0,,2026-10-10T23:03:42
+en_iskcon_0174,en_iskcon,Maitreyi,BG 2.61,T1,0,0,,2026-10-10T23:03:54
+en_iskcon_0174,en_iskcon,Maitreyi,BG 2.60,T4,0,0,,2026-10-10T23:04:05
+en_iskcon_0175,en_iskcon,Maitreyi,BG 2.61,T2,0,0,OOS,2026-10-10T23:07:14
+en_iskcon_0176,en_iskcon,Maitreyi,BG 2.61,T2,0,0,,2026-10-10T23:07:28
+en_iskcon_0177,en_iskcon,Maitreyi,BG 2.62,T1,0,0,,2026-10-10T23:07:43
+en_iskcon_0178,en_iskcon,Maitreyi,BG 2.62,T2,0,0,,2026-10-10T23:20:21
+en_iskcon_0178,en_iskcon,Maitreyi,BG 2.63,T1,0,0,,2026-10-10T23:20:27
+en_iskcon_0179,en_iskcon,Maitreyi,BG 2.63,T4,0,1,,2026-10-10T23:20:42
+en_iskcon_0180,en_iskcon,Maitreyi,BG 2.63,T5,0,0,,2026-10-10T23:20:51
+en_iskcon_0181,en_iskcon,Maitreyi,BG 2.64,T1,0,0,,2026-10-10T23:21:00
+en_iskcon_0182,en_iskcon,Maitreyi,BG 2.64,T2,0,0,,2026-10-10T23:21:12
+en_iskcon_0183,en_iskcon,Maitreyi,BG 2.64,T4,0,1,,2026-10-10T23:21:22
+en_iskcon_0184,en_iskcon,Maitreyi,BG 2.64,T2,0,0,,2026-10-10T23:21:49
+en_iskcon_0185,en_iskcon,Maitreyi,BG 2.64,T2,0,0,,2026-10-10T23:21:55
+en_iskcon_0186,en_iskcon,Maitreyi,BG 2.64,T4,0,0,OOS,2026-10-10T23:22:07
+en_iskcon_0187,en_iskcon,Maitreyi,BG 2.64,T5,0,0,,2026-10-10T23:22:25
+en_iskcon_0188,en_iskcon,Maitreyi,BG 2.65,T1,0,0,,2026-10-10T23:22:29
+en_iskcon_0189,en_iskcon,Maitreyi,BG 2.65,T4,0,0,,2026-10-10T23:22:43
+en_iskcon_0189,en_iskcon,Maitreyi,BG 2.66,T1,0,0,,2026-10-10T23:22:50
+en_iskcon_0190,en_iskcon,Maitreyi,BG 2.66,T3,0,0,,2026-10-10T23:23:10
+en_iskcon_0191,en_iskcon,Maitreyi,BG 2.66,T2,0,0,,2026-10-10T23:24:00
+en_iskcon_0191,en_iskcon,Maitreyi,BG 2.61,T2,0,0,,2026-10-10T23:24:08
+en_iskcon_0192,en_iskcon,Maitreyi,BG 2.66,T4,0,0,,2026-10-10T23:24:17
+en_iskcon_0193,en_iskcon,Maitreyi,BG 2.66,T2,0,0,,2026-10-10T23:24:23
+en_iskcon_0194,en_iskcon,Maitreyi,BG 2.66,T5,0,0,,2026-10-10T23:24:30
+en_iskcon_0195,en_iskcon,Maitreyi,BG 2.66,T5,0,1,,2026-10-10T23:24:46
+en_iskcon_0196,en_iskcon,Maitreyi,BG 2.67,T1,0,0,,2026-10-10T23:24:55
+en_iskcon_0196,en_iskcon,Maitreyi,BG 2.66,T4,0,0,,2026-10-10T23:25:04
+en_iskcon_0197,en_iskcon,Maitreyi,BG 2.68,T1,0,0,,2026-10-10T23:25:13
+en_iskcon_0197,en_iskcon,Maitreyi,BG 2.67,T4,0,0,,2026-10-10T23:25:22
+en_iskcon_0198,en_iskcon,Maitreyi,BG 2.69,T1,0,0,,2026-10-10T23:25:31
+en_iskcon_0198,en_iskcon,Maitreyi,BG 2.68,T4,0,0,,2026-10-10T23:25:38
+en_iskcon_0199,en_iskcon,Maitreyi,BG 2.69,T4,0,0,,2026-10-10T23:25:50
+en_iskcon_0200,en_iskcon,Maitreyi,BG 2.69,T4,0,0,,2026-10-10T23:26:02
+en_iskcon_0200,en_iskcon,Maitreyi,BG 2.70,T1,0,0,,2026-10-10T23:26:09
+en_iskcon_0201,en_iskcon,Maitreyi,BG 2.70,T3,0,0,,2026-10-10T23:26:16
+en_iskcon_0202,en_iskcon,Maitreyi,BG 2.70,T4,0,0,,2026-10-10T23:26:27
+en_iskcon_0203,en_iskcon,Maitreyi,BG 2.70,T4,0,1,,2026-10-10T23:26:40
+en_iskcon_0204,en_iskcon,Maitreyi,BG 2.70,T5,0,0,,2026-10-10T23:26:48
+en_iskcon_0205,en_iskcon,Maitreyi,BG 2.70,T4,0,0,,2026-10-10T23:26:54
+en_iskcon_0206,en_iskcon,Maitreyi,BG 2.71,T1,0,0,,2026-10-10T23:27:06
+en_iskcon_0206,en_iskcon,Maitreyi,BG 2.70,T4,0,0,,2026-10-10T23:27:16
+en_iskcon_0207,en_iskcon,Maitreyi,BG 2.71,T2,0,0,,2026-10-10T23:28:24
+en_iskcon_0208,en_iskcon,Maitreyi,BG 2.71,T2,0,0,,2026-10-10T23:28:31
+en_iskcon_0208,en_iskcon,Maitreyi,BG 2.72,T1,0,0,,2026-10-10T23:28:38
+en_iskcon_0209,en_iskcon,Maitreyi,BG 2.72,T4,0,0,,2026-10-10T23:28:58
+en_iskcon_0210,en_iskcon,Maitreyi,BG 2.72,T4,0,0,,2026-10-10T23:29:09
+en_iskcon_0211,en_iskcon,Maitreyi,BG 2.72,T5,0,0,,2026-10-10T23:29:23
+en_iskcon_0212,en_iskcon,Maitreyi,BG 2.72,T4,0,0,OOS,2026-10-10T23:29:54
+en_iskcon_0213,en_iskcon,Maitreyi,BG 2.72,T2,0,0,,2026-10-10T23:30:31
+en_iskcon_0214,en_iskcon,Maitreyi,NONE,NONE,0,0,,2026-10-10T23:30:33
+kn_sumith_day01_0000,kn_sumith_day01,Maitreyi,NONE,NONE,0,0,,2026-10-11T00:20:31
+kn_sumith_day01_0001,kn_sumith_day01,Maitreyi,BG 2.1,T1,0,0,,2026-10-11T00:20:40
+kn_sumith_day01_0002,kn_sumith_day01,Maitreyi,BG 2.2,T1,1,0,,2026-10-11T00:21:04
+kn_sumith_day01_0003,kn_sumith_day01,Maitreyi,BG 2.2,T4,0,0,,2026-10-11T00:21:14
+kn_sumith_day01_0004,kn_sumith_day01,Maitreyi,BG 2.2,T4,0,0,,2026-10-11T00:21:22
+kn_sumith_day01_0005,kn_sumith_day01,Maitreyi,BG 2.3,T1,1,0,,2026-10-11T00:21:34
+kn_sumith_day01_0006,kn_sumith_day01,Maitreyi,BG 2.3,T4,0,0,,2026-10-11T00:21:41
+kn_sumith_day01_0007,kn_sumith_day01,Maitreyi,BG 2.3,T4,0,0,,2026-10-11T00:21:48
+kn_sumith_day01_0008,kn_sumith_day01,Maitreyi,BG 2.3,T5,0,1,,2026-10-11T00:22:10
+kn_sumith_day02_0000,kn_sumith_day02,Maitreyi,BG 2.4,T1,1,0,,2026-10-11T00:23:01
+kn_sumith_day02_0001,kn_sumith_day02,Maitreyi,BG 2.4,T4,0,0,,2026-10-11T00:23:12
+kn_sumith_day02_0001,kn_sumith_day02,Maitreyi,BG 2.5,T1,1,0,,2026-10-11T00:23:21
+kn_sumith_day02_0002,kn_sumith_day02,Maitreyi,BG 2.5,T4,0,0,,2026-10-11T00:23:27
+kn_sumith_day02_0003,kn_sumith_day02,Maitreyi,BG 2.5,T4,0,0,,2026-10-11T00:23:39
+kn_sumith_day02_0004,kn_sumith_day02,Maitreyi,BG 2.5,T4,0,1,,2026-10-11T00:23:54
+kn_sumith_day02_0005,kn_sumith_day02,Maitreyi,BG 2.6,T1,1,0,,2026-10-11T00:24:02
+kn_sumith_day02_0005,kn_sumith_day02,Maitreyi,BG 2.4,T4,0,0,,2026-10-11T00:24:13
+kn_sumith_day02_0006,kn_sumith_day02,Maitreyi,BG 2.6,T4,0,0,,2026-10-11T00:24:25
+kn_sumith_day02_0007,kn_sumith_day02,Maitreyi,BG 2.7,T1,1,0,,2026-10-11T00:24:35
+kn_sumith_day02_0008,kn_sumith_day02,Maitreyi,BG 2.7,T2,0,0,,2026-10-11T00:24:45
+kn_sumith_day02_0009,kn_sumith_day02,Maitreyi,BG 2.7,T4,0,0,,2026-10-11T00:24:50
+kn_sumith_day03_0000,kn_sumith_day03,Maitreyi,NONE,NONE,0,0,,2026-10-11T00:25:31
+kn_sumith_day03_0001,kn_sumith_day03,Maitreyi,NONE,NONE,0,0,,2026-10-11T00:25:35
+kn_sumith_day03_0002,kn_sumith_day03,Maitreyi,NONE,NONE,0,0,,2026-10-11T00:25:36
+kn_sumith_day03_0003,kn_sumith_day03,Maitreyi,BG 2.8,T1,1,0,,2026-10-11T00:25:47
+kn_sumith_day03_0004,kn_sumith_day03,Maitreyi,BG 2.8,T3,0,0,,2026-10-11T00:28:17
+kn_sumith_day03_0005,kn_sumith_day03,Maitreyi,BG 2.8,T4,0,0,,2026-10-11T00:28:42
+kn_sumith_day03_0006,kn_sumith_day03,Maitreyi,BG 2.8,T4,0,0,,2026-10-11T00:28:47
+kn_sumith_day03_0007,kn_sumith_day03,Maitreyi,BG 2.10,T1,0,0,,2026-10-11T00:29:02
+kn_sumith_day03_0007,kn_sumith_day03,Maitreyi,BG 2.9,T3,0,0,,2026-10-11T00:29:10
+kn_sumith_day03_0008,kn_sumith_day03,Maitreyi,BG 2.9,T4,0,0,,2026-10-11T00:29:31
+kn_sumith_day03_0008,kn_sumith_day03,Maitreyi,BG 2.10,T3,0,0,,2026-10-11T00:29:38
+kn_sumith_day03_0009,kn_sumith_day03,Maitreyi,BG 2.9,T4,0,0,,2026-10-11T00:29:48
+kn_sumith_day03_0010,kn_sumith_day03,Maitreyi,BG 2.10,T4,0,0,,2026-10-11T00:29:58
+kn_sumith_day03_0011,kn_sumith_day03,Maitreyi,BG 2.10,T5,0,1,,2026-10-11T00:30:20
+kn_sumith_day04_0000,kn_sumith_day04,Maitreyi,BG 2.7,T2,0,0,,2026-10-11T00:30:54
+kn_sumith_day04_0001,kn_sumith_day04,Maitreyi,BG 2.11,T2,0,0,,2026-10-11T00:31:08
+kn_sumith_day04_0001,kn_sumith_day04,Maitreyi,BG 2.12,T1,0,0,,2026-10-11T00:31:28
+kn_sumith_day04_0001,kn_sumith_day04,Maitreyi,BG 2.13,T1,0,0,,2026-10-11T00:31:41
+kn_sumith_day04_0002,kn_sumith_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T00:32:29
+kn_sumith_day04_0003,kn_sumith_day04,Maitreyi,BG 2.12,T3,0,0,,2026-10-11T00:32:40
+kn_sumith_day04_0004,kn_sumith_day04,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T00:32:51
+kn_sumith_day04_0005,kn_sumith_day04,Maitreyi,BG 2.12,T4,0,1,,2026-10-11T00:33:08
+kn_sumith_day04_0006,kn_sumith_day04,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T00:33:17
+kn_sumith_day04_0007,kn_sumith_day04,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T00:33:25
+kn_sumith_day04_0008,kn_sumith_day04,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T00:33:36
+kn_sumith_day04_0009,kn_sumith_day04,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T00:33:43
+kn_sumith_day04_0009,kn_sumith_day04,Maitreyi,BG 2.13,T1,0,0,,2026-10-11T00:34:00
+kn_sumith_day04_0010,kn_sumith_day04,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T00:34:09
+kn_sumith_day04_0011,kn_sumith_day04,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T00:34:14
+kn_sumith_day05_0000,kn_sumith_day05,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T00:34:38
+kn_sumith_day05_0001,kn_sumith_day05,Maitreyi,BG 2.14,T1,0,0,,2026-10-11T00:36:43
+kn_sumith_day05_0001,kn_sumith_day05,Maitreyi,BG 2.15,T1,0,0,,2026-10-11T00:36:49
+kn_sumith_day05_0001,kn_sumith_day05,Maitreyi,BG 2.16,T1,0,0,,2026-10-11T00:36:54
+kn_sumith_day05_0001,kn_sumith_day05,Maitreyi,BG 2.17,T1,0,0,,2026-10-11T00:37:00
+kn_sumith_day05_0001,kn_sumith_day05,Maitreyi,BG 2.18,T1,0,0,,2026-10-11T00:37:06
+kn_sumith_day05_0002,kn_sumith_day05,Maitreyi,BG 2.14,T3,0,0,,2026-10-11T00:37:22
+kn_sumith_day05_0002,kn_sumith_day05,Maitreyi,BG 2.15,T3,0,0,,2026-10-11T00:38:10
+kn_sumith_day05_0002,kn_sumith_day05,Maitreyi,BG 2.16,T2,0,0,,2026-10-11T00:38:18
+kn_sumith_day05_0002,kn_sumith_day05,Maitreyi,BG 2.17,T3,0,0,,2026-10-11T00:38:26
+kn_sumith_day05_0003,kn_sumith_day05,Maitreyi,BG 2.14,T4,1,0,,2026-10-11T00:38:50
+kn_sumith_day05_0003,kn_sumith_day05,Maitreyi,BG 2.18,T3,0,0,,2026-10-11T00:39:11
+kn_sumith_day05_0004,kn_sumith_day05,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T00:39:44
+kn_sumith_day05_0005,kn_sumith_day05,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T00:39:51
+kn_sumith_day05_0006,kn_sumith_day05,Maitreyi,BG 2.14,T4,0,1,,2026-10-11T00:40:04
+kn_sumith_day05_0007,kn_sumith_day05,Maitreyi,BG 2.14,T4,1,0,,2026-10-11T00:40:16
+kn_sumith_day05_0008,kn_sumith_day05,Maitreyi,BG 2.15,T3,1,0,,2026-10-11T00:40:28
+kn_sumith_day05_0009,kn_sumith_day05,Maitreyi,BG 2.16,T3,1,0,,2026-10-11T00:40:36
+kn_sumith_day05_0010,kn_sumith_day05,Maitreyi,BG 2.16,T4,0,0,,2026-10-11T00:40:46
+kn_sumith_day05_0010,kn_sumith_day05,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T00:40:54
+kn_sumith_day05_0011,kn_sumith_day05,Maitreyi,BG 2.17,T3,0,0,,2026-10-11T00:41:02
+kn_sumith_day05_0012,kn_sumith_day05,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T00:41:09
+kn_sumith_day05_0013,kn_sumith_day05,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T00:41:20
+kn_sumith_day05_0013,kn_sumith_day05,Maitreyi,BG 2.18,T3,0,0,,2026-10-11T00:41:28
+kn_sumith_day05_0014,kn_sumith_day05,Maitreyi,BG 2.18,T4,0,0,,2026-10-11T00:41:36
+kn_sumith_day06_0000,kn_sumith_day06,Maitreyi,BG 2.19,T1,1,0,,2026-10-11T00:42:00
+kn_sumith_day06_0000,kn_sumith_day06,Maitreyi,BG 2.20,T1,1,0,,2026-10-11T00:42:06
+kn_sumith_day06_0000,kn_sumith_day06,Maitreyi,BG 2.21,T1,1,0,,2026-10-11T00:42:12
+kn_sumith_day06_0001,kn_sumith_day06,Maitreyi,BG 2.20,T2,1,0,,2026-10-11T00:42:29
+kn_sumith_day06_0001,kn_sumith_day06,Maitreyi,BG 2.19,T4,0,0,,2026-10-11T00:42:38
+kn_sumith_day06_0002,kn_sumith_day06,Maitreyi,BG 2.20,T3,0,0,,2026-10-11T00:42:45
+kn_sumith_day06_0003,kn_sumith_day06,Maitreyi,BG 2.20,T2,0,0,,2026-10-11T00:42:52
+kn_sumith_day06_0004,kn_sumith_day06,Maitreyi,BG 2.20,T4,0,0,,2026-10-11T00:43:10
+kn_sumith_day06_0005,kn_sumith_day06,Maitreyi,BG 2.20,T4,0,0,,2026-10-11T00:44:25
+kn_sumith_day06_0006,kn_sumith_day06,Maitreyi,BG 2.21,T2,1,0,,2026-10-11T00:44:31
+kn_sumith_day06_0007,kn_sumith_day06,Maitreyi,BG 2.21,T4,0,0,,2026-10-11T00:44:39
+kn_sumith_day07_0000,kn_sumith_day07,Maitreyi,BG 2.22,T1,1,0,,2026-10-11T00:45:03
+kn_sumith_day07_0001,kn_sumith_day07,Maitreyi,BG 2.22,T4,0,0,,2026-10-11T00:45:08
+kn_sumith_day07_0002,kn_sumith_day07,Maitreyi,BG 2.22,T4,0,0,,2026-10-11T00:45:14
+kn_sumith_day07_0003,kn_sumith_day07,Maitreyi,BG 2.23,T1,1,1,,2026-10-11T00:45:28
+kn_sumith_day07_0004,kn_sumith_day07,Maitreyi,BG 2.24,T1,1,0,,2026-10-11T00:45:40
+kn_sumith_day07_0004,kn_sumith_day07,Maitreyi,BG 2.23,T4,0,0,,2026-10-11T00:45:49
+kn_sumith_day07_0005,kn_sumith_day07,Maitreyi,BG 2.24,T4,0,0,,2026-10-11T00:45:55
+kn_sumith_day07_0006,kn_sumith_day07,Maitreyi,BG 2.25,T1,1,0,,2026-10-11T00:46:09
+kn_sumith_day07_0006,kn_sumith_day07,Maitreyi,BG 2.24,T4,0,0,,2026-10-11T00:46:17
+kn_sumith_day07_0007,kn_sumith_day07,Maitreyi,BG 2.25,T4,0,0,,2026-10-11T00:46:28
+kn_sumith_day07_0008,kn_sumith_day07,Maitreyi,BG 2.25,T4,0,0,,2026-10-11T00:46:33
+kn_sumith_day07_0009,kn_sumith_day07,Maitreyi,BG 2.25,T4,0,0,,2026-10-11T00:46:40
+kn_sumith_day07_0010,kn_sumith_day07,Maitreyi,BG 2.25,T4,0,0,,2026-10-11T00:46:48
+kn_sumith_day08_0000,kn_sumith_day08,Maitreyi,BG 2.26,T2,0,0,,2026-10-11T00:47:18
+kn_sumith_day08_0001,kn_sumith_day08,Maitreyi,BG 2.26,T4,0,0,,2026-10-11T00:47:23
+kn_sumith_day08_0002,kn_sumith_day08,Maitreyi,BG 2.26,T4,0,0,,2026-10-11T00:47:28
+kn_sumith_day08_0003,kn_sumith_day08,Maitreyi,BG 2.26,T4,0,0,,2026-10-11T00:47:37
+kn_sumith_day08_0004,kn_sumith_day08,Maitreyi,BG 2.26,T4,0,0,,2026-10-11T00:47:49
+kn_sumith_day08_0005,kn_sumith_day08,Maitreyi,BG 2.26,T4,0,0,,2026-10-11T00:47:54
+kn_sumith_day08_0006,kn_sumith_day08,Maitreyi,BG 2.26,T4,0,1,,2026-10-11T00:48:10
+kn_sumith_day08_0007,kn_sumith_day08,Maitreyi,BG 2.27,T1,1,0,,2026-10-11T00:48:20
+kn_sumith_day08_0007,kn_sumith_day08,Maitreyi,BG 2.26,T4,0,0,,2026-10-11T00:48:30
+kn_sumith_day08_0008,kn_sumith_day08,Maitreyi,BG 2.27,T2,0,0,,2026-10-11T00:48:37
+kn_sumith_day08_0009,kn_sumith_day08,Maitreyi,BG 2.27,T4,0,0,,2026-10-11T00:48:42
+kn_sumith_day08_0010,kn_sumith_day08,Maitreyi,BG 2.27,T4,0,0,,2026-10-11T00:48:48
+en_chinmaya_day03_0000,en_chinmaya_day03,Maitreyi,BG 2.4,T4,0,0,,2026-10-11T22:21:34
+en_chinmaya_day03_0000,en_chinmaya_day03,Maitreyi,BG 2.5,T4,0,0,,2026-10-11T22:21:41
+en_chinmaya_day03_0001,en_chinmaya_day03,Maitreyi,BG 2.7,T4,0,0,,2026-10-11T22:21:53
+en_chinmaya_day03_0002,en_chinmaya_day03,Maitreyi,BG 2.7,T2,0,0,,2026-10-11T22:22:00
+en_chinmaya_day03_0003,en_chinmaya_day03,Maitreyi,BG 2.7,T2,0,0,,2026-10-11T22:22:12
+en_chinmaya_day03_0003,en_chinmaya_day03,Maitreyi,BG 2.8,T4,0,0,,2026-10-11T22:22:23
+en_chinmaya_day03_0004,en_chinmaya_day03,Maitreyi,BG 2.9,T2,0,0,,2026-10-11T22:22:29
+en_chinmaya_day03_0004,en_chinmaya_day03,Maitreyi,BG 2.10,T1,0,0,,2026-10-11T22:22:43
+en_chinmaya_day03_0005,en_chinmaya_day03,Maitreyi,BG 2.10,T2,0,0,,2026-10-11T22:22:58
+en_chinmaya_day03_0006,en_chinmaya_day03,Maitreyi,BG 2.10,T4,0,0,,2026-10-11T22:23:03
+en_chinmaya_day03_0007,en_chinmaya_day03,Maitreyi,BG 2.10,T5,0,0,,2026-10-11T22:23:25
+en_chinmaya_day03_0008,en_chinmaya_day03,Maitreyi,BG 2.10,T4,0,0,,2026-10-11T22:23:34
+en_chinmaya_day03_0009,en_chinmaya_day03,Maitreyi,BG 2.10,T4,0,0,,2026-10-11T22:23:43
+en_chinmaya_day03_0010,en_chinmaya_day03,Maitreyi,BG 2.10,T4,0,0,,2026-10-11T22:23:52
+en_chinmaya_day03_0011,en_chinmaya_day03,Maitreyi,BG 2.10,T4,0,0,,2026-10-11T22:24:15
+en_chinmaya_day03_0012,en_chinmaya_day03,Maitreyi,BG 2.11,T1,1,0,,2026-10-11T22:24:28
+en_chinmaya_day03_0013,en_chinmaya_day03,Maitreyi,BG 2.11,T2,0,0,,2026-10-11T22:24:54
+en_chinmaya_day03_0014,en_chinmaya_day03,Maitreyi,BG 2.11,T2,0,0,,2026-10-11T22:25:14
+en_chinmaya_day03_0015,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:25:20
+en_chinmaya_day03_0016,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:25:25
+en_chinmaya_day03_0017,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:25:40
+en_chinmaya_day03_0018,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:25:48
+en_chinmaya_day03_0019,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:25:52
+en_chinmaya_day03_0020,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:25:57
+en_chinmaya_day03_0021,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:01
+en_chinmaya_day03_0022,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:21
+en_chinmaya_day03_0023,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:26
+en_chinmaya_day03_0024,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:30
+en_chinmaya_day03_0025,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:35
+en_chinmaya_day03_0026,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:39
+en_chinmaya_day03_0027,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:43
+en_chinmaya_day03_0028,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:47
+en_chinmaya_day03_0029,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:51
+en_chinmaya_day03_0030,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:26:56
+en_chinmaya_day03_0031,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:27:01
+en_chinmaya_day03_0032,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:27:05
+en_chinmaya_day03_0033,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:27:09
+en_chinmaya_day03_0034,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:27:15
+en_chinmaya_day03_0035,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:27:25
+en_chinmaya_day03_0036,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:27:41
+en_chinmaya_day03_0037,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:27:46
+en_chinmaya_day03_0038,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:27:57
+en_chinmaya_day03_0039,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:28:02
+en_chinmaya_day03_0040,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:28:07
+en_chinmaya_day03_0041,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:28:18
+en_chinmaya_day03_0042,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:28:25
+en_chinmaya_day03_0043,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:28:29
+en_chinmaya_day03_0044,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:28:33
+en_chinmaya_day03_0045,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:28:37
+en_chinmaya_day03_0046,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:28:47
+en_chinmaya_day03_0047,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:28:51
+en_chinmaya_day03_0048,en_chinmaya_day03,Maitreyi,BG 2.5,T4,0,0,,2026-10-11T22:29:05
+en_chinmaya_day03_0048,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:29:11
+en_chinmaya_day03_0049,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:29:20
+en_chinmaya_day03_0050,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:29:25
+en_chinmaya_day03_0051,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:29:32
+en_chinmaya_day03_0052,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:29:37
+en_chinmaya_day03_0053,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T22:29:43
+en_chinmaya_day03_0054,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:29:51
+en_chinmaya_day03_0055,en_chinmaya_day03,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T22:29:56
+en_chinmaya_day03_0056,en_chinmaya_day03,Maitreyi,BG 2.12,T1,1,0,,2026-10-11T22:30:05
+en_chinmaya_day03_0057,en_chinmaya_day03,Maitreyi,BG 2.12,T3,0,0,,2026-10-11T22:30:13
+en_chinmaya_day03_0058,en_chinmaya_day03,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T22:30:18
+en_chinmaya_day03_0059,en_chinmaya_day03,Maitreyi,BG 2.13,T1,1,0,,2026-10-11T22:30:28
+en_chinmaya_day03_0060,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T22:30:34
+en_chinmaya_day03_0061,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T22:30:42
+en_chinmaya_day03_0062,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:01:25
+en_chinmaya_day03_0063,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:01:33
+en_chinmaya_day03_0064,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:01:41
+en_chinmaya_day03_0065,en_chinmaya_day03,Maitreyi,BG 2.13,T2,0,0,,2026-10-11T23:01:54
+en_chinmaya_day03_0066,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:02:04
+en_chinmaya_day03_0066,en_chinmaya_day03,Maitreyi,BG 2.11,T2,0,0,,2026-10-11T23:02:11
+en_chinmaya_day03_0067,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:02:18
+en_chinmaya_day03_0068,en_chinmaya_day03,Maitreyi,BG 2.13,T2,0,0,,2026-10-11T23:02:28
+en_chinmaya_day03_0069,en_chinmaya_day03,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:02:36
+en_chinmaya_day03_0070,en_chinmaya_day03,Maitreyi,NONE,NONE,0,0,,2026-10-11T23:02:38
+en_chinmaya_day04_0000,en_chinmaya_day04,Maitreyi,BG 2.7,T4,0,0,,2026-10-11T23:04:19
+en_chinmaya_day04_0001,en_chinmaya_day04,Maitreyi,BG 2.11,T2,0,0,,2026-10-11T23:04:45
+en_chinmaya_day04_0002,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:04:50
+en_chinmaya_day04_0003,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:04:57
+en_chinmaya_day04_0004,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:05:02
+en_chinmaya_day04_0005,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:05:05
+en_chinmaya_day04_0006,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:05:22
+en_chinmaya_day04_0007,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:05:25
+en_chinmaya_day04_0008,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:05:29
+en_chinmaya_day04_0009,en_chinmaya_day04,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T23:05:37
+en_chinmaya_day04_0010,en_chinmaya_day04,Maitreyi,BG 2.12,T4,0,0,,2026-10-11T23:05:41
+en_chinmaya_day04_0011,en_chinmaya_day04,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:05:57
+en_chinmaya_day04_0012,en_chinmaya_day04,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:06:13
+en_chinmaya_day04_0013,en_chinmaya_day04,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:06:21
+en_chinmaya_day04_0013,en_chinmaya_day04,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:06:28
+en_chinmaya_day04_0014,en_chinmaya_day04,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:06:34
+en_chinmaya_day04_0015,en_chinmaya_day04,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:06:39
+en_chinmaya_day04_0016,en_chinmaya_day04,Maitreyi,BG 2.14,T1,0,0,,2026-10-11T23:06:54
+en_chinmaya_day04_0016,en_chinmaya_day04,Maitreyi,BG 2.15,T1,0,0,,2026-10-11T23:07:07
+en_chinmaya_day04_0017,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:07:38
+en_chinmaya_day04_0018,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:07:42
+en_chinmaya_day04_0019,en_chinmaya_day04,Maitreyi,BG 2.14,T2,0,0,,2026-10-11T23:07:51
+en_chinmaya_day04_0020,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:07:56
+en_chinmaya_day04_0021,en_chinmaya_day04,Maitreyi,BG 2.14,T2,0,0,,2026-10-11T23:08:03
+en_chinmaya_day04_0022,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:08:14
+en_chinmaya_day04_0023,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:08:22
+en_chinmaya_day04_0024,en_chinmaya_day04,Maitreyi,BG 2.14,T2,0,0,,2026-10-11T23:08:28
+en_chinmaya_day04_0025,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:09:50
+en_chinmaya_day04_0026,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:09:54
+en_chinmaya_day04_0027,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:10:01
+en_chinmaya_day04_0028,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,OOS:9.17,2026-10-11T23:10:23
+en_chinmaya_day04_0029,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,1,,2026-10-11T23:10:33
+en_chinmaya_day04_0030,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:10:38
+en_chinmaya_day04_0031,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,1,,2026-10-11T23:10:55
+en_chinmaya_day04_0032,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:10:59
+en_chinmaya_day04_0033,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:11:03
+en_chinmaya_day04_0034,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,1,,2026-10-11T23:11:14
+en_chinmaya_day04_0035,en_chinmaya_day04,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:11:18
+en_chinmaya_day04_0036,en_chinmaya_day04,Maitreyi,BG 2.15,T2,0,0,,2026-10-11T23:11:30
+en_chinmaya_day04_0037,en_chinmaya_day04,Maitreyi,BG 2.15,T2,0,0,,2026-10-11T23:11:37
+en_chinmaya_day04_0038,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,0,,2026-10-11T23:11:46
+en_chinmaya_day04_0039,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,1,,2026-10-11T23:11:55
+en_chinmaya_day04_0040,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,1,,2026-10-11T23:12:11
+en_chinmaya_day04_0041,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,1,,2026-10-11T23:13:04
+en_chinmaya_day04_0042,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,1,,2026-10-11T23:13:10
+en_chinmaya_day04_0043,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,1,,2026-10-11T23:13:15
+en_chinmaya_day04_0044,en_chinmaya_day04,Maitreyi,BG 2.15,T5,0,0,,2026-10-11T23:13:42
+en_chinmaya_day04_0045,en_chinmaya_day04,Maitreyi,BG 2.15,T1,0,1,,2026-10-11T23:13:50
+en_chinmaya_day04_0046,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,0,,2026-10-11T23:13:55
+en_chinmaya_day04_0047,en_chinmaya_day04,Maitreyi,BG 2.15,T2,0,0,,2026-10-11T23:14:04
+en_chinmaya_day04_0048,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,0,,2026-10-11T23:14:30
+en_chinmaya_day04_0049,en_chinmaya_day04,Maitreyi,BG 2.15,T4,0,0,,2026-10-11T23:14:41
+en_chinmaya_day04_0049,en_chinmaya_day04,Maitreyi,BG 2.16,T4,0,0,,2026-10-11T23:14:53
+en_chinmaya_day04_0050,en_chinmaya_day04,Maitreyi,BG 2.16,T1,0,0,,2026-10-11T23:14:59
+en_chinmaya_day04_0051,en_chinmaya_day04,Maitreyi,BG 2.16,T2,0,0,,2026-10-11T23:15:11
+en_chinmaya_day04_0052,en_chinmaya_day04,Maitreyi,BG 2.16,T2,0,0,,2026-10-11T23:15:19
+en_chinmaya_day04_0053,en_chinmaya_day04,Maitreyi,BG 2.16,T4,0,0,,2026-10-11T23:15:25
+en_chinmaya_day04_0054,en_chinmaya_day04,Maitreyi,BG 2.16,T4,0,0,,2026-10-11T23:15:33
+en_chinmaya_day04_0055,en_chinmaya_day04,Maitreyi,BG 2.16,T4,0,0,,2026-10-11T23:15:40
+en_chinmaya_day04_0056,en_chinmaya_day04,Maitreyi,BG 2.16,T4,0,0,,2026-10-11T23:15:51
+en_chinmaya_day04_0057,en_chinmaya_day04,Maitreyi,BG 2.17,T1,0,0,,2026-10-11T23:15:58
+en_chinmaya_day04_0058,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:07
+en_chinmaya_day04_0059,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:20
+en_chinmaya_day04_0060,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:24
+en_chinmaya_day04_0061,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:28
+en_chinmaya_day04_0062,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:33
+en_chinmaya_day04_0063,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:42
+en_chinmaya_day04_0064,en_chinmaya_day04,Maitreyi,BG 2.17,T2,0,0,,2026-10-11T23:16:46
+en_chinmaya_day04_0065,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:53
+en_chinmaya_day04_0066,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:16:58
+en_chinmaya_day04_0067,en_chinmaya_day04,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:17:03
+en_chinmaya_day04_0068,en_chinmaya_day04,Maitreyi,BG 2.18,T1,0,0,,2026-10-11T23:17:14
+en_chinmaya_day04_0069,en_chinmaya_day04,Maitreyi,BG 2.18,T2,0,0,,2026-10-11T23:17:19
+en_chinmaya_day04_0070,en_chinmaya_day04,Maitreyi,BG 2.18,T4,0,0,,2026-10-11T23:17:26
+en_chinmaya_day04_0071,en_chinmaya_day04,Maitreyi,BG 2.18,T4,0,0,,2026-10-11T23:17:42
+en_chinmaya_day04_0072,en_chinmaya_day04,Maitreyi,BG 2.18,T4,0,0,,2026-10-11T23:17:47
+en_chinmaya_day04_0073,en_chinmaya_day04,Maitreyi,BG 2.18,T4,0,0,,2026-10-11T23:17:53
+en_chinmaya_day04_0074,en_chinmaya_day04,Maitreyi,BG 2.18,T4,0,0,,2026-10-11T23:17:59
+en_chinmaya_day04_0075,en_chinmaya_day04,Maitreyi,BG 2.18,T4,0,0,,2026-10-11T23:18:05
+kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b,Maitreyi,BG 2.1,T2,0,0,OOS 1.47,2026-10-11T23:19:13
+kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b,Maitreyi,BG 2.2,T1,0,0,,2026-10-11T23:19:22
+kn_brahmanyachar_day02b_0001,kn_brahmanyachar_day02b,Maitreyi,BG 2.2,T2,0,0,,2026-10-11T23:19:31
+kn_brahmanyachar_day02b_0002,kn_brahmanyachar_day02b,Maitreyi,BG 2.3,T2,0,0,,2026-10-11T23:19:38
+kn_brahmanyachar_day02b_0003,kn_brahmanyachar_day02b,Maitreyi,BG 2.3,T4,0,0,,2026-10-11T23:19:46
+kn_brahmanyachar_day02b_0003,kn_brahmanyachar_day02b,Maitreyi,BG 2.4,T1,0,0,,2026-10-11T23:19:53
+kn_brahmanyachar_day02b_0004,kn_brahmanyachar_day02b,Maitreyi,BG 2.5,T1,0,0,,2026-10-11T23:20:02
+kn_brahmanyachar_day02b_0005,kn_brahmanyachar_day02b,Maitreyi,BG 2.6,T4,0,0,,2026-10-11T23:20:06
+kn_brahmanyachar_day02b_0005,kn_brahmanyachar_day02b,Maitreyi,BG 2.7,T1,0,0,,2026-10-11T23:20:13
+kn_brahmanyachar_day02b_0006,kn_brahmanyachar_day02b,Maitreyi,BG 2.9,T1,0,0,,2026-10-11T23:20:34
+kn_brahmanyachar_day02b_0006,kn_brahmanyachar_day02b,Maitreyi,BG 2.8,T4,0,0,,2026-10-11T23:20:39
+kn_brahmanyachar_day02b_0007,kn_brahmanyachar_day02b,Maitreyi,BG 2.9,T4,0,0,,2026-10-11T23:20:48
+kn_brahmanyachar_day02b_0008,kn_brahmanyachar_day02b,Maitreyi,BG 2.10,T1,0,0,OOS: 11.33,2026-10-11T23:21:01
+kn_brahmanyachar_day02b_0009,kn_brahmanyachar_day02b,Maitreyi,BG 2.10,T4,0,0,,2026-10-11T23:21:15
+kn_brahmanyachar_day02b_0010,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T1,0,0,,2026-10-11T23:21:20
+kn_brahmanyachar_day02b_0011,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:21:28
+kn_brahmanyachar_day02b_0012,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:21:32
+kn_brahmanyachar_day02b_0013,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:21:37
+kn_brahmanyachar_day02b_0014,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:21:45
+kn_brahmanyachar_day02b_0015,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T4,0,1,,2026-10-11T23:21:57
+kn_brahmanyachar_day02b_0016,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T4,0,0,,2026-10-11T23:22:01
+kn_brahmanyachar_day02b_0017,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T2,0,0,,2026-10-11T23:22:09
+kn_brahmanyachar_day02b_0018,kn_brahmanyachar_day02b,Maitreyi,BG 2.12,T1,0,0,,2026-10-11T23:22:17
+kn_brahmanyachar_day02b_0018,kn_brahmanyachar_day02b,Maitreyi,BG 2.11,T2,0,0,,2026-10-11T23:22:23
+kn_brahmanyachar_day02b_0019,kn_brahmanyachar_day02b,Maitreyi,BG 2.13,T1,0,0,,2026-10-11T23:22:32
+kn_brahmanyachar_day02b_0020,kn_brahmanyachar_day02b,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:22:41
+kn_brahmanyachar_day02b_0021,kn_brahmanyachar_day02b,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:22:49
+kn_brahmanyachar_day02b_0022,kn_brahmanyachar_day02b,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:22:55
+kn_brahmanyachar_day02b_0023,kn_brahmanyachar_day02b,Maitreyi,BG 2.13,T4,0,1,,2026-10-11T23:23:06
+kn_brahmanyachar_day02b_0024,kn_brahmanyachar_day02b,Maitreyi,BG 2.13,T4,0,0,,2026-10-11T23:23:13
+kn_brahmanyachar_day02b_0025,kn_brahmanyachar_day02b,Maitreyi,BG 2.14,T1,0,0,,2026-10-11T23:23:25
+kn_brahmanyachar_day02b_0026,kn_brahmanyachar_day02b,Maitreyi,BG 2.14,T2,0,0,,2026-10-11T23:23:31
+kn_brahmanyachar_day02b_0027,kn_brahmanyachar_day02b,Maitreyi,BG 2.16,T1,0,0,,2026-10-11T23:23:42
+kn_brahmanyachar_day02b_0027,kn_brahmanyachar_day02b,Maitreyi,BG 2.14,T4,0,0,,2026-10-11T23:23:49
+kn_brahmanyachar_day02b_0028,kn_brahmanyachar_day02b,Maitreyi,BG 2.18,T2,0,0,,2026-10-11T23:23:58
+kn_brahmanyachar_day02b_0028,kn_brahmanyachar_day02b,Maitreyi,BG 2.17,T4,0,0,,2026-10-11T23:25:37
+kn_brahmanyachar_day02b_0028,kn_brahmanyachar_day02b,Maitreyi,BG 2.16,T4,0,0,,2026-10-11T23:25:43
+kn_brahmanyachar_day02b_0029,kn_brahmanyachar_day02b,Maitreyi,BG 2.22,T1,0,0,,2026-10-11T23:25:56
+kn_brahmanyachar_day02b_0029,kn_brahmanyachar_day02b,Maitreyi,BG 2.24,T2,0,0,,2026-10-11T23:26:03
+kn_brahmanyachar_day02b_0030,kn_brahmanyachar_day02b,Maitreyi,BG 2.31,T1,0,0,,2026-10-11T23:26:15
+kn_brahmanyachar_day02b_0030,kn_brahmanyachar_day02b,Maitreyi,BG 2.32,T2,0,0,,2026-10-11T23:26:22
+kn_brahmanyachar_day02b_0030,kn_brahmanyachar_day02b,Maitreyi,BG 2.5,T4,0,0,,2026-10-11T23:26:36
+kn_brahmanyachar_day02b_0031,kn_brahmanyachar_day02b,Maitreyi,BG 2.33,T1,0,0,,2026-10-11T23:26:49
+kn_brahmanyachar_day02b_0031,kn_brahmanyachar_day02b,Maitreyi,BG 2.32,T2,0,0,,2026-10-11T23:26:55
+kn_brahmanyachar_day02b_0032,kn_brahmanyachar_day02b,Maitreyi,BG 2.34,T1,0,0,,2026-10-11T23:27:09
+kn_brahmanyachar_day02b_0032,kn_brahmanyachar_day02b,Maitreyi,BG 2.35,T1,0,0,,2026-10-11T23:27:13
+kn_brahmanyachar_day02b_0032,kn_brahmanyachar_day02b,Maitreyi,BG 2.36,T2,0,0,,2026-10-11T23:27:20
+kn_brahmanyachar_day02b_0033,kn_brahmanyachar_day02b,Maitreyi,BG 2.36,T2,0,0,,2026-10-11T23:27:29
+kn_brahmanyachar_day02b_0033,kn_brahmanyachar_day02b,Maitreyi,BG 2.37,T2,0,0,,2026-10-11T23:27:36
+kn_brahmanyachar_day02b_0034,kn_brahmanyachar_day02b,Maitreyi,BG 2.37,T2,0,0,,2026-10-11T23:27:48
+kn_brahmanyachar_day02b_0035,kn_brahmanyachar_day02b,Maitreyi,BG 2.37,T2,0,0,,2026-10-11T23:27:56
+kn_brahmanyachar_day02b_0035,kn_brahmanyachar_day02b,Maitreyi,BG 2.38,T1,0,0,,2026-10-11T23:28:09
+kn_brahmanyachar_day02b_0036,kn_brahmanyachar_day02b,Maitreyi,BG 2.39,T2,0,0,,2026-10-11T23:28:17
+kn_brahmanyachar_day02b_0036,kn_brahmanyachar_day02b,Maitreyi,BG 2.40,T1,0,0,,2026-10-11T23:28:24
+kn_brahmanyachar_day02b_0037,kn_brahmanyachar_day02b,Maitreyi,BG 2.45,T1,0,0,,2026-10-11T23:28:39
+kn_brahmanyachar_day02b_0037,kn_brahmanyachar_day02b,Maitreyi,BG 2.42,T2,0,0,,2026-10-11T23:28:47
+kn_brahmanyachar_day02b_0037,kn_brahmanyachar_day02b,Maitreyi,BG 2.40,T4,0,0,,2026-10-11T23:28:54
+kn_brahmanyachar_day02b_0038,kn_brahmanyachar_day02b,Maitreyi,BG 2.47,T1,0,0,,2026-10-11T23:29:00
+kn_brahmanyachar_day02b_0039,kn_brahmanyachar_day02b,Maitreyi,BG 2.48,T2,0,0,,2026-10-11T23:29:07
+kn_brahmanyachar_day02b_0039,kn_brahmanyachar_day02b,Maitreyi,BG 2.50,T2,0,0,,2026-10-11T23:29:15
+kn_brahmanyachar_day02b_0040,kn_brahmanyachar_day02b,Maitreyi,BG 2.53,T1,0,0,,2026-10-11T23:29:24
+kn_brahmanyachar_day02b_0041,kn_brahmanyachar_day02b,Maitreyi,BG 2.54,T2,0,0,,2026-10-11T23:29:32
+kn_brahmanyachar_day02b_0041,kn_brahmanyachar_day02b,Maitreyi,BG 2.55,T2,0,0,,2026-10-11T23:29:38
+kn_brahmanyachar_day02b_0042,kn_brahmanyachar_day02b,Maitreyi,BG 2.62,T1,0,0,,2026-10-11T23:29:47
+kn_brahmanyachar_day02b_0042,kn_brahmanyachar_day02b,Maitreyi,BG 2.63,T1,0,0,,2026-10-11T23:29:54
+kn_brahmanyachar_day02b_0042,kn_brahmanyachar_day02b,Maitreyi,BG 2.59,T2,0,0,,2026-10-11T23:30:05
+kn_brahmanyachar_day02b_0042,kn_brahmanyachar_day02b,Maitreyi,BG 2.58,T4,0,0,,2026-10-11T23:30:12
+kn_brahmanyachar_day02b_0043,kn_brahmanyachar_day02b,Maitreyi,BG 2.62,T4,0,0,,2026-10-11T23:30:21
+kn_brahmanyachar_day02b_0043,kn_brahmanyachar_day02b,Maitreyi,BG 2.63,T4,0,0,,2026-10-11T23:30:34
