@@ -1,16 +1,8 @@
 video_file,language,first_annotator,second_annotator,max_units
-video_07,en,Maitreyi,Prerana,
-video_09,en,Meghana S,Maitreyi,
-video_05,en,Prerana,Meghana S,50
-kannada_15,kn,Meghana S,Maitreyi,
-kannada_16,kn,Meghana S,Maitreyi,
-kannada_18,kn,Meghana S,Maitreyi,
-kannada_22,kn,Maitreyi,Prerana,
-kannada_23,kn,Maitreyi,Prerana,
-gita-6th_video,kn,Expert (father),Prerana,
-kannada_21,kn,Maitreyi,Meghana S,
-kannada_29,kn,Maitreyi,Meghana S,
-gita-2nd_video,kn,Maitreyi,Meghana S,
-kannada_07,kn,Prerana,Meghana S,
-kannada_11,kn,Prerana,Meghana S,
-en_chinmaya_day04,en,Maitreyi,Prerana,
+video_09,en,Meghana S,Maitreyi,50
+en_iskcon,en,Maitreyi,Prerana,50
+en_chinmaya_day04,en,Maitreyi,Meghana S,40
+kn_sumith_day05,kn,Maitreyi,Meghana S,
+kannada_15,kn,Meghana S,Expert (father),
+kannada_22,kn,Maitreyi,Expert (father),
+kn_brahmanyachar_day02b,kn,Maitreyi,Expert (father),20

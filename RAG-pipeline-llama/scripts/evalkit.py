@@ -16,6 +16,7 @@ far too narrow. The lecture is the unit that was actually sampled.
 import csv
 import os
 import random
+import re
 import sys
 from collections import defaultdict
 
@@ -44,7 +45,8 @@ def load_gold(spans=SPANS, units=UNITS):
     gold = {u: {} for u in reviewed}
     bad = []
     for r in rows:
-        v = (r.get("verse_ref") or "").strip()
+        # one label in the log was typed "Bg 2.25"; refs are compared as strings
+        v = re.sub(r"^bg\s*", "BG ", (r.get("verse_ref") or "").strip(), flags=re.I)
         if v in ("", "NONE"):
             continue
         t = (r.get("mention_type") or "").strip().upper()
