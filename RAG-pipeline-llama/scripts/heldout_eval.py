@@ -138,6 +138,12 @@ def main():
         systems.append(("GPT-4o-mini", llm))
     elif llm:
         print(f"  !! GPT-4o-mini row skipped: {missing} unit(s) have no prediction")
+    # the same model given the verse list, earlier units and its previous answer
+    ctx_path = os.path.join(RES, "llmctx_all.csv")
+    if os.path.exists(ctx_path):
+        ctx = load_pred(ctx_path)
+        if all(u in ctx for u in need):
+            systems.append(("GPT-4o-mini + context", ctx))
     systems += [
         (f"carry max_gap={FROZEN_GAP[L]}", run_carry(max_gap=FROZEN_GAP[L])),
         ("carry unbounded", run_carry()),
