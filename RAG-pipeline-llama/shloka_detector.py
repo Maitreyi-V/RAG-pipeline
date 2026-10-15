@@ -30,6 +30,20 @@ from rapidfuzz import fuzz, process
 from verse_database import VERSES_BG_CH2, FIRST_WORD_INDEX
 
 
+def spelling_key(text):
+    """Remove spelling differences that are not differences in the verse.
+
+    The verse database holds the correct text; transcripts spell the same
+    sounds in other ways. Both sides go through this before fuzzy matching:
+      - a nasal + halanta before a consonant is written as anusvara (ಂ)
+      - avagraha (ಽ) is dropped, visarga (ಃ) is written as ಹ
+      - spaces are dropped (word splits vary with sandhi)
+    """
+    text = re.sub(r"[ಙಞಣನಮ]್(?=[ಕ-ಹ])", "ಂ", text)
+    text = text.replace("ಽ", "").replace("ಃ", "ಹ")
+    return re.sub(r"\s+", "", text)
+
+
 class ShlokaDetector:
     """Detects and identifies Sanskrit śloka fragments in Kannada ASR text."""
 
@@ -78,7 +92,7 @@ class ShlokaDetector:
         self.match_threshold = match_threshold
 
         # Pre-build search corpus: all canonical verse texts
-        self.verse_texts = {v["ref"]: v["kannada"] for v in self.verses}
+        self.verse_texts = {v["ref"]: spelling_key(v["kannada"]) for v in self.verses}
         self.verse_refs = list(self.verse_texts.keys())
         self.verse_corpus = list(self.verse_texts.values())
 
@@ -157,6 +171,7 @@ class ShlokaDetector:
         """
         # Quick check: does candidate start with any known first word?
         candidate_words = candidate_text.strip().split()[:3]
+        candidate_text = spelling_key(candidate_text)
         for word in candidate_words:
             if word in FIRST_WORD_INDEX:
                 ref = FIRST_WORD_INDEX[word]
@@ -229,7 +244,7 @@ class ShlokaDetector:
                 # Extract ~120 chars starting from this word for fuzzy matching
                 candidate = text[pos:pos + 150]
                 canonical = self.verse_texts.get(ref, "")
-                score = fuzz.partial_ratio(candidate, canonical)
+                score = fuzz.partial_ratio(spelling_key(candidate), canonical)
 
                 if score >= self.match_threshold:
                     hits.append((pos, ref, score, candidate))
