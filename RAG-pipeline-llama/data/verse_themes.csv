@@ -1,1 +1,73 @@
-theme,first_verse,last_verse
+verse_id,verse_index,theme_id,theme_name
+2.1,0,T01,Arjuna's Despondency and Surrender
+2.2,1,T01,Arjuna's Despondency and Surrender
+2.3,2,T01,Arjuna's Despondency and Surrender
+2.4,3,T01,Arjuna's Despondency and Surrender
+2.5,4,T01,Arjuna's Despondency and Surrender
+2.6,5,T01,Arjuna's Despondency and Surrender
+2.7,6,T01,Arjuna's Despondency and Surrender
+2.8,7,T01,Arjuna's Despondency and Surrender
+2.9,8,T01,Arjuna's Despondency and Surrender
+2.10,9,T01,Arjuna's Despondency and Surrender
+2.11,10,T02,Immortality and Eternal Nature of the Self
+2.12,11,T02,Immortality and Eternal Nature of the Self
+2.13,12,T02,Immortality and Eternal Nature of the Self
+2.14,13,T02,Immortality and Eternal Nature of the Self
+2.15,14,T02,Immortality and Eternal Nature of the Self
+2.16,15,T02,Immortality and Eternal Nature of the Self
+2.17,16,T02,Immortality and Eternal Nature of the Self
+2.18,17,T02,Immortality and Eternal Nature of the Self
+2.19,18,T02,Immortality and Eternal Nature of the Self
+2.20,19,T02,Immortality and Eternal Nature of the Self
+2.21,20,T02,Immortality and Eternal Nature of the Self
+2.22,21,T02,Immortality and Eternal Nature of the Self
+2.23,22,T02,Immortality and Eternal Nature of the Self
+2.24,23,T02,Immortality and Eternal Nature of the Self
+2.25,24,T02,Immortality and Eternal Nature of the Self
+2.26,25,T03,Inevitability of Birth Death and Cosmic Wonder
+2.27,26,T03,Inevitability of Birth Death and Cosmic Wonder
+2.28,27,T03,Inevitability of Birth Death and Cosmic Wonder
+2.29,28,T03,Inevitability of Birth Death and Cosmic Wonder
+2.30,29,T03,Inevitability of Birth Death and Cosmic Wonder
+2.31,30,T04,Svadharma and the Ethics of Righteous Duty
+2.32,31,T04,Svadharma and the Ethics of Righteous Duty
+2.33,32,T04,Svadharma and the Ethics of Righteous Duty
+2.34,33,T04,Svadharma and the Ethics of Righteous Duty
+2.35,34,T04,Svadharma and the Ethics of Righteous Duty
+2.36,35,T04,Svadharma and the Ethics of Righteous Duty
+2.37,36,T04,Svadharma and the Ethics of Righteous Duty
+2.38,37,T04,Svadharma and the Ethics of Righteous Duty
+2.39,38,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.40,39,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.41,40,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.42,41,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.43,42,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.44,43,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.45,44,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.46,45,T05,Transition to Buddhi-Yoga and Critique of Ritualism
+2.47,46,T06,Core Doctrine of Nishkama Karma and Equanimity
+2.48,47,T06,Core Doctrine of Nishkama Karma and Equanimity
+2.49,48,T06,Core Doctrine of Nishkama Karma and Equanimity
+2.50,49,T06,Core Doctrine of Nishkama Karma and Equanimity
+2.51,50,T06,Core Doctrine of Nishkama Karma and Equanimity
+2.52,51,T06,Core Doctrine of Nishkama Karma and Equanimity
+2.53,52,T06,Core Doctrine of Nishkama Karma and Equanimity
+2.54,53,T07,Definition and Inward Contentment of the Sthitaprajna
+2.55,54,T07,Definition and Inward Contentment of the Sthitaprajna
+2.56,55,T07,Definition and Inward Contentment of the Sthitaprajna
+2.57,56,T07,Definition and Inward Contentment of the Sthitaprajna
+2.58,57,T07,Definition and Inward Contentment of the Sthitaprajna
+2.59,58,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.60,59,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.61,60,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.62,61,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.63,62,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.64,63,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.65,64,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.66,65,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.67,66,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.68,67,T08,Mastery of the Senses and Chain of Psychological Ruin
+2.69,68,T09,Supreme Peace of the Enlightened Sage (Brahmi-Sthiti)
+2.70,69,T09,Supreme Peace of the Enlightened Sage (Brahmi-Sthiti)
+2.71,70,T09,Supreme Peace of the Enlightened Sage (Brahmi-Sthiti)
+2.72,71,T09,Supreme Peace of the Enlightened Sage (Brahmi-Sthiti)

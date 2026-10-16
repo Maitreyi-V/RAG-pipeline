@@ -13,9 +13,10 @@ One entry per verse of Chapter 2:
   theme         the verse's theme, from data/verse_themes.csv, or None until
                 that file is filled in
 
-data/verse_themes.csv has one row per theme: theme,first_verse,last_verse
-(verse numbers within Chapter 2, inclusive). Once it has any rows, every verse
-must belong to exactly one theme, or loading stops with an error.
+data/verse_themes.csv (made by the domain expert) has one row per verse:
+verse_id,verse_index,theme_id,theme_name   e.g. 2.47,46,T06,Core Doctrine of ...
+Once it has any rows, every verse must appear exactly once, or loading stops
+with an error.
 
 Usage:
     python scripts/catalogue.py          # prints a summary and checks the themes file
@@ -38,12 +39,10 @@ def load_themes(path=THEMES, n_verses=72):
         rows = list(csv.DictReader(f))
     themes = {}
     for r in rows:
-        lo, hi = int(r["first_verse"]), int(r["last_verse"])
-        for n in range(lo, hi + 1):
-            if n in themes:
-                sys.exit(f"{path}: verse 2.{n} is in two themes "
-                         f"({themes[n]!r} and {r['theme']!r})")
-            themes[n] = r["theme"].strip()
+        n = int(r["verse_id"].strip().split(".")[1])
+        if n in themes:
+            sys.exit(f"{path}: verse 2.{n} is listed twice")
+        themes[n] = r["theme_name"].strip()
     if themes:
         missing = [n for n in range(1, n_verses + 1) if n not in themes]
         if missing:

@@ -1,0 +1,35 @@
+segment_id,video_file,primary_verse,theme_id,first_unit,last_unit,dwell,effective_dwell,pos_start,pos_end
+gita-1st_video_s000,gita-1st_video,BG 2.1,T01,kn_gita-1st_video_0000,kn_gita-1st_video_0004,5,3.226,0.0,0.3515
+gita-1st_video_s001,gita-1st_video,BG 2.2,T01,kn_gita-1st_video_0005,kn_gita-1st_video_0008,4,2.99,0.3515,0.6348
+gita-1st_video_s002,gita-1st_video,BG 2.3,T01,kn_gita-1st_video_0009,kn_gita-1st_video_0014,6,4.27,0.6348,1.0
+gita-4th_video_s003,gita-4th_video,BG 2.10,T01,kn_gita-4th_video_0000,kn_gita-4th_video_0004,5,2.63,0.0,0.3404
+gita-4th_video_s004,gita-4th_video,BG 2.11,T02,kn_gita-4th_video_0005,kn_gita-4th_video_0014,10,8.683,0.3404,1.0
+kannada_07_s005,kannada_07,BG 2.14,T02,kn_kannada_07_0000,kn_kannada_07_0001,2,0.051,0.0,0.1254
+kannada_07_s006,kannada_07,BG 2.15,T02,kn_kannada_07_0002,kn_kannada_07_0008,7,5.699,0.1254,0.5878
+kannada_07_s007,kannada_07,BG 2.16,T02,kn_kannada_07_0009,kn_kannada_07_0014,6,4.186,0.5878,1.0
+kannada_10_s008,kannada_10,BG 2.23,T02,kn_kannada_10_0000,kn_kannada_10_0002,3,2.171,0.0,0.2817
+kannada_10_s009,kannada_10,BG 2.24,T02,kn_kannada_10_0003,kn_kannada_10_0007,5,3.412,0.2817,0.7226
+kannada_10_s010,kannada_10,BG 2.25,T02,kn_kannada_10_0008,kn_kannada_10_0010,3,2.096,0.7226,1.0
+kannada_13_s011,kannada_13,BG 2.32,T04,kn_kannada_13_0000,kn_kannada_13_0004,5,4.08,0.0,0.4377
+kannada_13_s012,kannada_13,BG 2.33,T04,kn_kannada_13_0005,kn_kannada_13_0007,3,1.951,0.4377,0.7616
+kannada_13_s013,kannada_13,BG 2.34,T04,kn_kannada_13_0008,kn_kannada_13_0010,3,2.543,0.7616,1.0
+kannada_16_s014,kannada_16,BG 2.39,T05,kn_kannada_16_0000,kn_kannada_16_0000,1,0.168,0.0,0.0675
+kannada_16_s015,kannada_16,BG 2.40,T05,kn_kannada_16_0001,kn_kannada_16_0008,8,5.338,0.0675,0.6282
+kannada_16_s016,kannada_16,BG 2.41,T05,kn_kannada_16_0009,kn_kannada_16_0014,6,3.926,0.6282,1.0
+video_01_s017,video_01,OFF,,en_video_01_0000,en_video_01_0033,34,25.134,0.0,0.3879
+video_01_s018,video_01,BG 2.1,T01,en_video_01_0034,en_video_01_0043,10,5.924,0.3879,0.5015
+video_01_s019,video_01,BG 2.2,T01,en_video_01_0044,en_video_01_0054,11,6.211,0.5015,0.6332
+video_01_s020,video_01,BG 2.3,T01,en_video_01_0055,en_video_01_0069,15,6.161,0.6332,0.805
+video_01_s021,video_01,BG 2.5,T01,en_video_01_0070,en_video_01_0072,3,1.836,0.805,0.839
+video_01_s022,video_01,BG 2.6,T01,en_video_01_0073,en_video_01_0075,3,2.096,0.839,0.872
+video_01_s023,video_01,BG 2.7,T01,en_video_01_0076,en_video_01_0079,4,2.762,0.872,0.9169
+video_01_s024,video_01,BG 2.8,T01,en_video_01_0080,en_video_01_0081,2,1.123,0.9169,0.9386
+video_01_s025,video_01,BG 2.10,T01,en_video_01_0082,en_video_01_0087,6,2.695,0.9386,1.0
+video_04_s026,video_04,OFF,,en_video_04_0000,en_video_04_0013,14,11.286,0.0,0.1344
+video_04_s027,video_04,BG 2.16,T02,en_video_04_0014,en_video_04_0065,52,27.719,0.1344,0.626
+video_04_s028,video_04,BG 2.40,T05,en_video_04_0066,en_video_04_0084,19,7.029,0.626,0.8053
+video_04_s029,video_04,OFF,,en_video_04_0085,en_video_04_0106,22,13.446,0.8053,1.0
+video_07_s030,video_07,OFF,,en_video_07_0000,en_video_07_0009,10,5.801,0.0,0.1036
+video_07_s031,video_07,BG 2.20,T02,en_video_07_0010,en_video_07_0038,29,12.323,0.1036,0.4024
+video_07_s032,video_07,BG 2.21,T02,en_video_07_0039,en_video_07_0065,27,6.357,0.4024,0.6802
+video_07_s033,video_07,BG 2.22,T02,en_video_07_0066,en_video_07_0096,31,14.316,0.6802,1.0
