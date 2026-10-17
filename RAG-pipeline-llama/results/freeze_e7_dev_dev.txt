@@ -4,6 +4,12 @@ abstention rule: {'signal': 'profile', 'threshold': 0.536748, 'index': 'dev', 'd
   mode             n  Hit@1  Hit@3  scored ours Hit@5  ours P@5  vec Hit@5  vec P@5  abstained  wrongly abst.
   question        74  0.473  0.662      69      0.667     0.319      0.696    0.241          -          0.081
   unanswerable    12      -      -       0          -         -          -        -      1.000              -
+
+  LLM-extracted topics baseline (GPT-4o-mini routing)
+  mode             n  Hit@1  Hit@5    P@5  abstained  wrongly abst.  verses routed  outside Ch.2  not in index
+  question        74  0.405  0.696  0.287          -          0.243            433             0           146
+  unanswerable    12      -      -      -      1.000              -              0             0             0
+
   primary claims among retrieved passages: 214/223 correct (0.960)
   passing claims among retrieved passages: 2/2 correct (1.000)
   unsupported / hallucinated topics: 0 by construction (catalogue verses and indexed passages only; LLM summary text not evaluated)
