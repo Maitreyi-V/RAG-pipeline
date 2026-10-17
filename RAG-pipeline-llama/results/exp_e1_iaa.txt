@@ -1,0 +1,8 @@
+E1 — first pass vs blind second pass (4 file(s) in data/annotations_iaa)
+passages re-labelled: 209
+second-pass annotators: Meghana S 55, Prerana 50, Maitreyi 50, Expert (father) 54
+
+  group       n   kappa strict  kappa +-1  kappa theme   F1 strict  F1 +-1  F1 theme   observed agreement strict
+  Kannada    69          0.921      0.932        0.925       0.966   0.972     0.964   0.928
+  English   140          0.826      0.903        0.894       0.889   0.943     0.950   0.850
+  all       209          0.863      0.917        0.909       0.923   0.956     0.956   0.876

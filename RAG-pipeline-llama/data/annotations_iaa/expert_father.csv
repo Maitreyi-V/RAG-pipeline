@@ -1,0 +1,67 @@
+unit_id,video_file,annotator,verse_ref,mention_type,has_explicit_ref,uncertain,notes,created_at
+kn_kannada_22_0000,kannada_22,Expert (father),BG 2.52,T1,1,0,,2026-10-17T20:10:32
+kn_kannada_22_0000,kannada_22,Expert (father),BG 2.51,T4,0,0,,2026-10-17T20:10:41
+kn_kannada_22_0001,kannada_22,Expert (father),BG 2.52,T2,0,0,,2026-10-17T20:10:47
+kn_kannada_22_0002,kannada_22,Expert (father),BG 2.52,T2,0,0,,2026-10-17T20:10:55
+kn_kannada_22_0003,kannada_22,Expert (father),BG 2.52,T2,0,0,,2026-10-17T20:11:03
+kn_kannada_22_0004,kannada_22,Expert (father),BG 2.52,T2,0,0,,2026-10-17T20:11:08
+kn_kannada_22_0005,kannada_22,Expert (father),BG 2.52,T4,0,0,,2026-10-17T20:11:17
+kn_kannada_22_0006,kannada_22,Expert (father),NONE,NONE,0,0,,2026-10-17T20:11:31
+kn_kannada_22_0007,kannada_22,Expert (father),BG 2.52,T2,0,0,,2026-10-17T20:11:43
+kn_kannada_22_0008,kannada_22,Expert (father),BG 2.52,T2,0,0,,2026-10-17T20:11:48
+kn_kannada_22_0009,kannada_22,Expert (father),BG 2.52,T4,0,0,,2026-10-17T20:11:54
+kn_kannada_22_0010,kannada_22,Expert (father),BG 2.52,T1,0,0,,2026-10-17T20:12:10
+kn_kannada_22_0010,kannada_22,Expert (father),BG 2.53,T1,0,0,,2026-10-17T20:12:17
+kn_kannada_22_0011,kannada_22,Expert (father),BG 2.53,T2,0,0,,2026-10-17T20:12:25
+kn_kannada_22_0012,kannada_22,Expert (father),BG 2.53,T1,0,0,,2026-10-17T20:12:34
+kn_kannada_22_0013,kannada_22,Expert (father),NONE,NONE,0,0,,2026-10-17T20:12:43
+kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b,Expert (father),BG 2.21,T2,0,0,,2026-10-17T20:13:24
+kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b,Expert (father),BG 2.2,T1,0,0,,2026-10-17T20:13:34
+kn_brahmanyachar_day02b_0001,kn_brahmanyachar_day02b,Expert (father),BG 2.2,T2,0,0,,2026-10-17T20:14:14
+kn_brahmanyachar_day02b_0002,kn_brahmanyachar_day02b,Expert (father),BG 2.3,T2,0,0,,2026-10-17T20:14:20
+kn_brahmanyachar_day02b_0003,kn_brahmanyachar_day02b,Expert (father),BG 2.3,T4,0,0,,2026-10-17T20:14:34
+kn_brahmanyachar_day02b_0003,kn_brahmanyachar_day02b,Expert (father),BG 2.4,T1,0,0,,2026-10-17T20:14:42
+kn_brahmanyachar_day02b_0004,kn_brahmanyachar_day02b,Expert (father),BG 2.5,T1,0,0,,2026-10-17T20:14:51
+kn_brahmanyachar_day02b_0005,kn_brahmanyachar_day02b,Expert (father),BG 2.7,T1,0,0,,2026-10-17T20:15:12
+kn_brahmanyachar_day02b_0005,kn_brahmanyachar_day02b,Expert (father),BG 2.6,T4,0,0,,2026-10-17T20:15:20
+kn_brahmanyachar_day02b_0006,kn_brahmanyachar_day02b,Expert (father),BG 2.8,T4,0,0,,2026-10-17T20:15:29
+kn_brahmanyachar_day02b_0006,kn_brahmanyachar_day02b,Expert (father),BG 2.9,T1,0,0,,2026-10-17T20:15:40
+kn_brahmanyachar_day02b_0007,kn_brahmanyachar_day02b,Expert (father),BG 2.9,T4,0,0,,2026-10-17T20:15:51
+kn_brahmanyachar_day02b_0008,kn_brahmanyachar_day02b,Expert (father),BG 2.10,T1,0,0,OOS 11.33 ,2026-10-17T20:16:26
+kn_brahmanyachar_day02b_0009,kn_brahmanyachar_day02b,Expert (father),BG 2.10,T4,0,0,,2026-10-17T20:16:34
+kn_brahmanyachar_day02b_0010,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T1,0,0,,2026-10-17T20:19:50
+kn_brahmanyachar_day02b_0011,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T4,0,0,,2026-10-17T20:19:56
+kn_brahmanyachar_day02b_0012,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T4,0,0,,2026-10-17T20:20:03
+kn_brahmanyachar_day02b_0013,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T4,0,0,,2026-10-17T20:20:15
+kn_brahmanyachar_day02b_0014,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T4,0,0,,2026-10-17T20:20:24
+kn_brahmanyachar_day02b_0015,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T4,0,0,,2026-10-17T20:21:12
+kn_brahmanyachar_day02b_0016,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T4,0,0,,2026-10-17T20:21:19
+kn_brahmanyachar_day02b_0017,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T2,0,0,,2026-10-17T20:21:25
+kn_brahmanyachar_day02b_0018,kn_brahmanyachar_day02b,Expert (father),BG 2.11,T2,0,0,,2026-10-17T20:21:37
+kn_brahmanyachar_day02b_0018,kn_brahmanyachar_day02b,Expert (father),BG 2.12,T1,0,0,,2026-10-17T20:21:45
+kn_brahmanyachar_day02b_0019,kn_brahmanyachar_day02b,Expert (father),BG 2.13,T1,0,0,,2026-10-17T20:21:52
+kn_kannada_15_0000,kannada_15,Expert (father),BG 2.38,T1,1,0,,2026-10-17T20:30:49
+kn_kannada_15_0000,kannada_15,Expert (father),BG 2.37,T2,0,0,,2026-10-17T20:30:59
+kn_kannada_15_0001,kannada_15,Expert (father),BG 2.38,T2,0,0,,2026-10-17T20:31:57
+kn_kannada_15_0002,kannada_15,Expert (father),BG 2.38,T4,0,0,,2026-10-17T20:32:07
+kn_kannada_15_0003,kannada_15,Expert (father),NONE,NONE,0,0,,2026-10-17T20:32:15
+kn_kannada_15_0004,kannada_15,Expert (father),BG 2.38,T2,0,0,,2026-10-17T20:32:34
+kn_kannada_15_0005,kannada_15,Expert (father),BG 2.38,T2,0,0,,2026-10-17T20:32:43
+kn_kannada_15_0006,kannada_15,Expert (father),BG 2.38,T2,0,0,,2026-10-17T20:32:48
+kn_kannada_15_0007,kannada_15,Expert (father),BG 2.38,T4,0,0,,2026-10-17T20:33:07
+kn_kannada_15_0008,kannada_15,Expert (father),BG 2.38,T1,0,0,,2026-10-17T20:34:51
+kn_kannada_15_0009,kannada_15,Expert (father),BG 2.39,T1,0,0,,2026-10-17T20:36:31
+kn_kannada_15_0009,kannada_15,Expert (father),BG 2.38,T4,0,0,,2026-10-17T20:36:38
+kn_kannada_15_0010,kannada_15,Expert (father),NONE,NONE,0,0,,2026-10-17T20:36:43
+kn_kannada_15_0011,kannada_15,Expert (father),BG 2.39,T4,0,0,,2026-10-17T20:36:56
+kn_kannada_15_0012,kannada_15,Expert (father),BG 2.39,T4,0,0,,2026-10-17T20:37:42
+kn_kannada_15_0013,kannada_15,Expert (father),BG 2.39,T4,0,0,,2026-10-17T20:37:48
+kn_kannada_15_0014,kannada_15,Expert (father),BG 2.39,T2,0,0,,2026-10-17T20:37:56
+kn_kannada_15_0015,kannada_15,Expert (father),BG 2.39,T2,0,0,,2026-10-17T20:38:09
+kn_kannada_15_0015,kannada_15,Expert (father),BG 2.48,T2,0,0,,2026-10-17T20:38:20
+kn_kannada_15_0015,kannada_15,Expert (father),BG 2.50,T2,0,0,,2026-10-17T20:38:28
+kn_kannada_15_0016,kannada_15,Expert (father),BG 2.50,T2,0,0,,2026-10-17T20:38:43
+kn_kannada_15_0016,kannada_15,Expert (father),BG 2.48,T2,0,0,,2026-10-17T20:38:52
+kn_kannada_15_0017,kannada_15,Expert (father),BG 2.39,T2,0,0,,2026-10-17T20:39:02
+kn_kannada_15_0018,kannada_15,Expert (father),BG 2.39,T2,0,0,,2026-10-17T20:39:12
+kn_kannada_15_0019,kannada_15,Expert (father),BG 2.39,T1,0,0,,2026-10-17T20:39:18
