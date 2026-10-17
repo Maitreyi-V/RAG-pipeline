@@ -31,7 +31,7 @@ Only the tuning (dev) split is run before the 29 Oct freeze.
 
 Usage:
     python scripts/step5_index.py                 # tuning lectures
-    python scripts/step5_index.py --split test    # ONLY at the freeze
+    python scripts/step5_index.py --split all     # ONLY at the freeze (E7 index)
 """
 import argparse
 import csv
@@ -54,7 +54,8 @@ ORIGINAL_SPEAKER = {"kn": "original Kannada speaker", "en": "original English sp
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", choices=["dev", "test", "heldout"], default="dev")
+    ap.add_argument("--split", choices=["dev", "test", "heldout", "all"], default="dev",
+                    help="'all' = every lecture (the E7 index, built at the freeze)")
     ap.add_argument("--alpha", choices=["a05", "a0"], default="a05")
     args = ap.parse_args()
 
@@ -63,7 +64,8 @@ def main():
     theme = {r["verse_id"]: (r["theme_id"], r["theme_name"])
              for r in load_csv(THEMES)}
 
-    videos = read_split("kn", args.split) + read_split("en", args.split)
+    parts = ["dev", "test", "heldout"] if args.split == "all" else [args.split]
+    videos = [v for p in parts for L in ("kn", "en") for v in read_split(L, p)]
     by_video = {}
     for u in grid.values():
         if u["video_file"] in videos:

@@ -92,7 +92,7 @@ def carried_cos(F, row, refs, us, a, key="cos"):
                          default=0.0) for u in us])
 
 
-def predict_locked(lecture_units, alpha="a05", path=OUT):
+def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
     """Apply the saved LOCKED Step 4 system (no gold labels used).
 
     lecture_units : {video: [unit_id, ...] in spoken order}
@@ -100,8 +100,11 @@ def predict_locked(lecture_units, alpha="a05", path=OUT):
     state 0..71 = verse, 72 = off; p_state = the decoded emission probability
     of that state ((1 - P_off) * share of P_verse when decoupled), p_off = P_off
     """
-    with open(path, "rb") as f:
-        m = pickle.load(f)[alpha]
+    if model is None:
+        with open(path, "rb") as f:
+            m = pickle.load(f)[alpha]
+    else:
+        m = model                              # e.g. the E4 model from fit_restricted
     z = np.load(FEATS)
     F = {k: z[k] for k in z.files}
     refs = list(F["refs"])
@@ -129,6 +132,58 @@ def predict_locked(lecture_units, alpha="a05", path=OUT):
                 float(p_all[k, s_]), float(po[k]))
                 for k, s_ in enumerate(states)]
     return out
+
+
+def fit_restricted(max_verse, alpha="a05", path=OUT):
+    """E4: the locked system re-fit on the 9 tuning lectures using ONLY verses
+    2.1 .. 2.<max_verse>. gamma, beta_off and tau are kept from the locked model
+    (they are not verse-specific); the scorer weights and transition counts are
+    re-estimated:
+      verse scorer     (passage, verse) pairs with verse <= max_verse
+      off-verse scorer passages whose gold has no verse above max_verse
+      transitions      gold sequences cut wherever a verse above max_verse occurs
+    Returns a model dict for predict_locked(model=...)."""
+    with open(path, "rb") as f:
+        m = dict(pickle.load(f)[alpha])
+    z = np.load(FEATS)
+    F = {k: z[k] for k in z.files}
+    refs = list(F["refs"])
+    row = {u: i for i, u in enumerate(F["unit_ids"])}
+    lectures, gold, _ = load_gold()
+    vids = [v for L in ("kn", "en") for v in read_split(L, "dev") if v in lectures]
+    keep_v = np.arange(V) < max_verse
+    Xv, yv, Xo, yo, seqs = [], [], [], [], []
+    for v in vids:
+        rows = [row[u] for u in lectures[v]]
+        Y = np.zeros((len(rows), V), dtype=int)
+        for k, u in enumerate(lectures[v]):
+            for r in gold[u]:
+                if r in refs:
+                    Y[k, refs.index(r)] = 1
+        X = verse_X(F, rows, alpha, m["verse_cols"]).reshape(len(rows), V, -1)
+        Xv.append(X[:, keep_v].reshape(-1, X.shape[2]))
+        yv.append(Y[:, keep_v].ravel())
+        ok = ~Y[:, ~keep_v].any(1)
+        Xo_ = off_X(F, rows, alpha)
+        if m["off_active"]:
+            Xo_ = np.column_stack([Xo_, carried_cos(F, row, refs, lectures[v], alpha)])
+        Xo.append(Xo_[ok])
+        yo.append((Y.sum(1) == 0).astype(int)[ok])
+        cur = []
+        for st in gold_states(Y):
+            if st != OFF and st >= max_verse:
+                if cur:
+                    seqs.append(cur)
+                cur = []
+            else:
+                cur.append(st)
+        if cur:
+            seqs.append(cur)
+    m["verse_model"] = model().fit(np.concatenate(Xv), np.concatenate(yv))
+    m["off_model"] = model().fit(np.concatenate(Xo), np.concatenate(yo))
+    m["logA"], m["counts"] = transitions(seqs)
+    m["trained_on"] = f"tuning lectures, verses 2.1-2.{max_verse} only"
+    return m
 
 
 def theme_f1(gold, pred, lectures, vids):

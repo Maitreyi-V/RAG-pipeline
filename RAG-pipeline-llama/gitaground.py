@@ -26,9 +26,13 @@ Levels
      the lecture's words; no durations yet), plus an extractive summary (the 3
      sentences closest to the input) or an LLM summary restricted to them
 
-Not built yet: calibrated confidence bands and abstention (they need the
-unanswerable questions).
+Abstention: when the input names no verse and matches no shloka, the app
+abstains if its abstention score is below the threshold in
+results/e7_abstain.json (signal and threshold set by scripts/freeze_e7.py on the
+DEVELOPMENT questions only). Without that file it never abstains.
+Not built: calibrated confidence bands.
 """
+import json
 import contextlib
 import csv
 import io
@@ -99,6 +103,11 @@ class GitaGround:
         self.segments = load_csv(os.path.join(res, f"step5_segments_{split}.csv"))
         self.P = np.stack([E[row[r["unit_id"]]] for r in self.index])
         self.pp = np.array([float(r["p_primary"]) for r in self.index])
+        path = os.path.join(res, "e7_abstain.json")
+        self.abstain_rule = json.load(open(path)) if os.path.exists(path) else None
+        r = self.abstain_rule                   # a passage-based threshold depends on the
+        if r and r["signal"] == "passage" and r.get("index") != split:   # index; a profile
+            self.abstain_rule = None            # one does not
         self.by_verse = defaultdict(list)
         for k, r in enumerate(self.index):
             if r["primary_verse"] != "OFF":
@@ -161,6 +170,20 @@ class GitaGround:
         out += [k for k in np.argsort(-sim) if k not in out][:K - len(out)]
         return [int(k) for k in out[:K]], top
 
+    def abstain_scores(self, text, q=None):
+        """the two candidate abstention signals: best passage cosine in the index,
+        best meaning-profile cosine over the 72 verses"""
+        q = self.embed([text])[0] if q is None else q
+        return {"passage": float((self.P @ q).max()), "profile": float((self.mu @ q).max())}
+
+    def abstains(self, text):
+        """True if the input names no verse, matches no shloka, and its abstention
+        score is below the locked threshold"""
+        if not self.abstain_rule or self.verse_numbers(text) or self.shloka_matches(text):
+            return False
+        r = self.abstain_rule
+        return self.abstain_scores(text)[r["signal"]] < r["threshold"]
+
     def answer(self, text):
         """What the app shows. Never substitutes a verse silently.
 
@@ -170,6 +193,9 @@ class GitaGround:
           note      a message to show the user, or ""
         """
         ranked = self.rank_verses(text)
+        if self.abstains(text):
+            return dict(ranked=ranked, verse=None, passages=[], query_for_summary=None,
+                        note=ABSTAIN)
         first, how = ranked[0]
         if how in ("verse number", "shloka match"):
             if first not in self.by_verse:

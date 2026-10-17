@@ -1,0 +1,7 @@
+{
+  "signal": "profile",
+  "threshold": 0.536748,
+  "index": "dev",
+  "dev_balanced_accuracy": 0.913,
+  "calibrated_on": "69 answerable dev questions, 12 dev unanswerable"
+}
