@@ -22,7 +22,7 @@ Two steps, always in this order:
 
 Reported:
   (a) verse Hit@1 / Hit@3 (verse number, shloka match, then meaning profile)
-  (b) passage Hit@5 and P@5: locked GitaGround vs plain vector search over the
+  (b) passage Hit@5, P@5 and R@5: locked GitaGround vs plain vector search over the
       same passages ("fixed-chunk vector RAG"; our passages are the chunks)
   (c) primary vs passing precision: of the retrieved passages the index marks as
       explaining the answered verse (primary) or only mentioning it (secondary),
@@ -32,7 +32,8 @@ Reported:
       summary text is not evaluated)
   (e) abstention: share of unanswerable questions abstained; share of answerable
       questions wrongly abstained. Plain vector search never abstains.
-  per input mode (question / shloka / explanation) where the file has one.
+  per input mode (question / shloka / explanation / unanswerable) and pooled
+  over the answerable modes.
 
 LLM-extracted topics baseline (the plan's third E7 system):
   route      GPT-4o-mini is asked which Chapter 2 verse(s) the input is about, or
@@ -234,6 +235,7 @@ def main():
         for name, got in (("ours", ks), ("vector", vec), ("llm", llm)):
             m[f"{name} hit5"] += bool(set(got) & rel)
             m[f"{name} p5"] += len(set(got) & rel) / K
+            m[f"{name} r5"] += len(set(got) & rel) / len(rel)
         for k in ks:
             r = g.index[k]
             kind = "primary" if r["primary_verse"] == top else \
@@ -242,29 +244,43 @@ def main():
                 claims[kind][1] += 1
                 claims[kind][0] += top in gold[r["unit_id"]]
 
-    lines.append(f"\n  {'mode':13} {'n':>4} {'Hit@1':>6} {'Hit@3':>6} {'scored':>7} "
-                 f"{'ours Hit@5':>10} {'ours P@5':>9} {'vec Hit@5':>10} {'vec P@5':>8} "
-                 f"{'abstained':>10} {'wrongly abst.':>14}")
+    # pooled row over every answerable input mode
+    pooled = defaultdict(float)
     for mode, m in by_mode.items():
-        na = m["n"] if mode != "unanswerable" else 0
+        if mode != "unanswerable":
+            for key, val in m.items():
+                pooled[key] += val
+    modes = list(by_mode.items()) + ([("ALL answerable", pooled)] if len(by_mode) > 2 else [])
+    f = lambda x, d: f"{x / d:.3f}" if d else "-"              # noqa: E731
+
+    lines.append(f"\n  VERSES AND ABSTENTION (ours)")
+    lines.append(f"  {'mode':15} {'n':>4} {'Hit@1':>6} {'Hit@3':>6} {'abstained':>10} {'wrongly abst.':>14}")
+    for mode, m in modes:
+        un = mode == "unanswerable"
+        na = 0 if un else m["n"]
+        lines.append(f"  {mode:15} {int(m['n']):>4} {f(m['hit1'], na):>6} {f(m['hit3'], na):>6} "
+                     f"{f(m['abstained'], m['n'] if un else 0):>10} {f(m['wrongly abstained'], na):>14}")
+
+    lines.append(f"\n  PASSAGES (inputs with a relevant passage in the index; R@5 = share of ALL "
+                 f"relevant passages found, so it is small for much-discussed verses)")
+    lines.append(f"  {'mode':15} {'scored':>6}   {'system':8} {'Hit@5':>6} {'P@5':>6} {'R@5':>6}")
+    for mode, m in modes:
+        if mode == "unanswerable":
+            continue
         sc = m["scored"]
-        f = lambda x, d: f"{x / d:.3f}" if d else "-"          # noqa: E731
-        lines.append(f"  {mode:13} {int(m['n']):>4} {f(m['hit1'], na):>6} {f(m['hit3'], na):>6} "
-                     f"{int(sc):>7} {f(m['ours hit5'], sc):>10} {f(m['ours p5'], sc):>9} "
-                     f"{f(m['vector hit5'], sc):>10} {f(m['vector p5'], sc):>8} "
-                     f"{f(m['abstained'], m['n'] if mode == 'unanswerable' else 0):>10} "
-                     f"{f(m['wrongly abstained'], na):>14}")
-    lines.append(f"\n  LLM-extracted topics baseline (GPT-4o-mini routing)")
-    lines.append(f"  {'mode':13} {'n':>4} {'Hit@1':>6} {'Hit@5':>6} {'P@5':>6} {'abstained':>10} "
-                 f"{'wrongly abst.':>14} {'verses routed':>14} {'outside Ch.2':>13} "
-                 f"{'not in index':>13}")
-    for mode, m in by_mode.items():
-        na = m["n"] if mode != "unanswerable" else 0
-        sc = m["scored"]
-        f = lambda x, d: f"{x / d:.3f}" if d else "-"          # noqa: E731
-        lines.append(f"  {mode:13} {int(m['n']):>4} {f(m['llm hit1'], na):>6} "
-                     f"{f(m['llm hit5'], sc):>6} {f(m['llm p5'], sc):>6} "
-                     f"{f(m['llm abstained'], m['n'] if mode == 'unanswerable' else 0):>10} "
+        for name, label in (("ours", "ours"), ("vector", "vector"), ("llm", "LLM"), ):
+            lines.append(f"  {mode if name == 'ours' else '':15} {int(sc) if name == 'ours' else '':>6}   "
+                         f"{label:8} {f(m[name + ' hit5'], sc):>6} {f(m[name + ' p5'], sc):>6} "
+                         f"{f(m[name + ' r5'], sc):>6}")
+
+    lines.append(f"\n  LLM-EXTRACTED TOPICS baseline (GPT-4o-mini routing)")
+    lines.append(f"  {'mode':15} {'n':>4} {'Hit@1':>6} {'abstained':>10} {'wrongly abst.':>14} "
+                 f"{'verses routed':>14} {'outside Ch.2':>13} {'not in index':>13}")
+    for mode, m in modes:
+        un = mode == "unanswerable"
+        na = 0 if un else m["n"]
+        lines.append(f"  {mode:15} {int(m['n']):>4} {f(m['llm hit1'], na):>6} "
+                     f"{f(m['llm abstained'], m['n'] if un else 0):>10} "
                      f"{f(m['llm wrongly abstained'], na):>14} {int(m['llm verses routed']):>14} "
                      f"{int(m['llm outside ch2']):>13} {int(m['llm not indexed']):>13}")
     lines.append("")

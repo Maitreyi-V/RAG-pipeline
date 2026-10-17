@@ -1,0 +1,39 @@
+unit_id,video_file,annotator,verse_ref,mention_type,has_explicit_ref,uncertain,notes,created_at
+en_iskcon_0005,en_iskcon,Expert (father),BG 2.2,T1,0,0,,2026-10-18T00:04:21
+en_iskcon_0005,en_iskcon,Expert (father),BG 2.1,T4,0,0,,2026-10-18T00:04:32
+en_iskcon_0010,en_iskcon,Expert (father),NONE,NONE,0,0,,2026-10-18T00:05:59
+en_iskcon_0017,en_iskcon,Expert (father),BG 2.2,T4,0,0,,2026-10-18T00:07:32
+en_iskcon_0017,en_iskcon,Expert (father),BG 2.3,T1,0,0,,2026-10-18T00:07:44
+en_iskcon_0019,en_iskcon,Expert (father),BG 2.5,T1,0,0,,2026-10-18T00:08:23
+en_iskcon_0019,en_iskcon,Expert (father),BG 2.4,T4,0,0,,2026-10-18T00:08:34
+en_iskcon_0022,en_iskcon,Expert (father),BG 2.7,T1,0,0,,2026-10-18T00:09:12
+en_iskcon_0022,en_iskcon,Expert (father),BG 2.6,T4,0,0,,2026-10-18T00:09:22
+en_iskcon_0032,en_iskcon,Expert (father),BG 2.12,T1,0,0,,2026-10-18T00:11:47
+en_iskcon_0033,en_iskcon,Expert (father),BG 2.12,T3,0,0,,2026-10-18T00:13:21
+en_iskcon_0035,en_iskcon,Expert (father),BG 2.13,T1,0,0,,2026-10-18T00:14:22
+en_iskcon_0035,en_iskcon,Expert (father),BG 2.12,T2,0,0,,2026-10-18T00:14:31
+en_iskcon_0037,en_iskcon,Expert (father),BG 2.14,T1,0,0,,2026-10-18T00:14:53
+en_iskcon_0041,en_iskcon,Expert (father),BG 2.15,T1,0,0,,2026-10-18T00:16:08
+en_iskcon_0041,en_iskcon,Expert (father),BG 2.14,T4,0,0,,2026-10-18T00:16:19
+en_iskcon_0043,en_iskcon,Expert (father),BG 2.16,T1,0,0,,2026-10-18T00:16:30
+en_iskcon_0043,en_iskcon,Expert (father),BG 2.15,T4,0,0,,2026-10-18T00:16:39
+en_iskcon_0048,en_iskcon,Expert (father),BG 2.16,T4,0,0,,2026-10-18T00:17:32
+kn_kannada_15_0002,kannada_15,Expert (father),NONE,NONE,0,0,,2026-10-18T00:18:23
+kn_kannada_15_0010,kannada_15,Expert (father),NONE,NONE,0,0,,2026-10-18T00:18:48
+kn_kannada_22_0006,kannada_22,Expert (father),NONE,NONE,0,0,,2026-10-18T00:19:33
+kn_kannada_22_0013,kannada_22,Expert (father),NONE,NONE,0,0,,2026-10-18T00:19:37
+kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b,Expert (father),BG 2.2,T1,0,0,,2026-10-18T00:20:01
+kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b,Expert (father),BG 2.2,T2,0,0,,2026-10-18T00:20:15
+kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b,Expert (father),BG 2.1,T2,0,0,,2026-10-18T00:20:15
+en_video_09_0002,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:20:30
+en_video_09_0003,video_09,Expert (father),BG 2.16,T2,0,0,,2026-10-18T00:21:19
+en_video_09_0003,video_09,Expert (father),BG 2.20,T4,0,0,,2026-10-18T00:21:37
+en_video_09_0003,video_09,Expert (father),BG 2.23,T4,0,0,,2026-10-18T00:21:54
+en_video_09_0006,video_09,Expert (father),BG 2.18,T4,0,0,,2026-10-18T00:22:42
+en_video_09_0007,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:23:05
+en_video_09_0009,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:23:07
+en_video_09_0010,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:23:10
+en_video_09_0019,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:23:12
+en_video_09_0020,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:23:14
+en_video_09_0022,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:23:15
+en_video_09_0049,video_09,Expert (father),NONE,NONE,0,0,,2026-10-18T00:23:19

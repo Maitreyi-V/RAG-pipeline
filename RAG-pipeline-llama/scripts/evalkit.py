@@ -6,6 +6,7 @@ Every experiment script (run_length, baselines, gated propagation) needs the
 same three things, and they must agree with score_by_tier_units.py exactly:
 
   load_gold()   one current view of the annotation log, per lecture, in order
+                (passages the expert adjudicated take the adjudicated labels)
   score()       P / R / F1 over (unit, verse) pairs, plus per-tier hit/n
   bootstrap()   95% CI by resampling LECTURES, not passages
 
@@ -14,6 +15,7 @@ runs for many passages), so resampling passages would give intervals that are
 far too narrow. The lecture is the unit that was actually sampled.
 """
 import csv
+import glob
 import os
 import random
 import re
@@ -30,6 +32,30 @@ UNITS = os.path.join(HERE, "data", "units_v2.csv")
 UNITS_HELDOUT = os.path.join(HERE, "data", "units_heldout_v1.csv")
 LECTURES_NEW = os.path.join(HERE, "data", "lectures_new.csv")
 SPLITS = os.path.join(HERE, "results", "results_v3")
+ADJUDICATION = os.path.join(HERE, "data", "adjudication")
+
+
+def adjudicated():
+    """{unit_id: {verse_ref: tier}} from the expert's adjudication (annotate_app.py
+    "Adjudicate (expert)"), {} if there is none. Per passage, decisions made
+    before the last "start over" (RESET) are discarded; the rest are resolved
+    like the gold log. {} for a passage = no verse."""
+    rows = []
+    for p in sorted(glob.glob(os.path.join(ADJUDICATION, "*.csv"))):
+        rows += load_csv(p)
+    last_reset = {}
+    for r in rows:
+        if r["verse_ref"] == "RESET":
+            last_reset[r["unit_id"]] = max(last_reset.get(r["unit_id"], ""), r["created_at"])
+    rows = [r for r in rows if r["verse_ref"] != "RESET"
+            and r["created_at"] > last_reset.get(r["unit_id"], "")]
+    out = {}
+    for r in latest_per_pair(rows):
+        g = out.setdefault(r["unit_id"], {})
+        v, t = r["verse_ref"].strip(), r["mention_type"].strip().upper()
+        if v != "NONE" and (v not in g or FIDELITY.get(t, 9) < FIDELITY.get(g[v], 9)):
+            g[v] = t
+    return out
 
 
 def load_gold(spans=SPANS, units=UNITS):
@@ -58,6 +84,10 @@ def load_gold(spans=SPANS, units=UNITS):
     if bad:
         print(f"  !! {len(bad)} gold row(s) with a malformed tier "
               f"(counted overall, in no tier): {bad}", file=sys.stderr)
+    # the expert's adjudication of blind-pass disagreements replaces those passages
+    for u, g in adjudicated().items():
+        if u in gold:
+            gold[u] = g
 
     grid = load_csv(units)
     if units == UNITS and os.path.exists(UNITS_HELDOUT):

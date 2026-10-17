@@ -14,6 +14,13 @@ Second pass (agreement check): tick "Second pass (blind)" in the sidebar.
     they can never leak into the gold file. Score with
     scripts/compute_iaa_units.py --second-pass data/annotations_iaa
 
+Adjudication (expert): tick "Adjudicate (expert)". Only the passages in
+    data/adjudication_units.csv (where the two blind passes disagreed) are
+    offered, with the two labels shown as A and B in random order and without
+    names. Decisions go to data/adjudication/ and replace the gold labels of
+    those passages (evalkit.load_gold); data/mention_spans.csv is never changed.
+    "Start this passage over" discards earlier decisions on the passage.
+
 Annotation guideline: docs/annotation_guideline_mention_types.md
 """
 import csv
@@ -42,6 +49,8 @@ OUT_DIR = os.path.join(BASE, "data", "annotations")
 # scorers never read it, so the gold file stays single-annotator.
 IAA_DIR = os.path.join(BASE, "data", "annotations_iaa")
 IAA_PLAN = os.path.join(BASE, "data", "iaa_assignment.csv")
+ADJ_DIR = os.path.join(BASE, "data", "adjudication")
+ADJ_UNITS = os.path.join(BASE, "data", "adjudication_units.csv")
 
 COLS = ["unit_id", "video_file", "annotator", "verse_ref", "mention_type",
         "has_explicit_ref", "uncertain", "notes", "created_at"]
@@ -141,7 +150,12 @@ if not who:
 blind = st.sidebar.checkbox("Second pass (blind)",
                             help="Agreement check: re-label an assigned lecture "
                                  "without seeing the first annotator's labels.")
-SAVE_DIR = IAA_DIR if blind else OUT_DIR
+adjudicate = st.sidebar.checkbox("Adjudicate (expert)",
+                                 help="Decide the passages where the two blind passes disagreed.")
+if blind and adjudicate:
+    st.warning("Tick only one of 'Second pass (blind)' and 'Adjudicate (expert)'.")
+    st.stop()
+SAVE_DIR = ADJ_DIR if adjudicate else IAA_DIR if blind else OUT_DIR
 
 done = load_done(SAVE_DIR)
 mine = done[done.annotator == who] if len(done) else done
@@ -159,10 +173,19 @@ if blind:
     st.sidebar.info("Blind second pass. Do not open exports or discuss these "
                     "lectures until both passes are finished.")
 
+adj = None
+if adjudicate:
+    adj = pd.read_csv(ADJ_UNITS, keep_default_na=False).set_index("unit_id")
+    videos = list(dict.fromkeys(adj.video_file))
+    st.sidebar.info("Adjudication. A and B are the two blind-pass labels in random "
+                    "order. Choose the correct label; it can match A, B, or neither.")
+
 vid = st.sidebar.selectbox("Video", videos)
 sub = units[units.video_file == vid].reset_index(drop=True)
 if vid in limit:
     sub = sub.iloc[:limit[vid]]
+if adjudicate:
+    sub = sub[sub.unit_id.isin(adj.index)].reset_index(drop=True)
 
 reviewed = set(mine.unit_id) if len(mine) else set()
 n_done = int(sub.unit_id.isin(reviewed).sum())
@@ -205,9 +228,24 @@ def _flag(v):
         return False
 
 
-# In a blind pass only your own second-pass label may be shown.
-shown = mine if blind else done
+if adjudicate:
+    a = adj.loc[row.unit_id]
+    st.info(f"**Passage {a['no']} of {len(adj)}**  \n**Label A:** {a.label_A}  \n"
+            f"**Label B:** {a.label_B}")
+    if st.button("↺ Start this passage over (discard my decisions on it)"):
+        append([{"unit_id": row.unit_id, "video_file": vid, "annotator": who,
+                 "verse_ref": "RESET", "mention_type": "RESET", "has_explicit_ref": 0,
+                 "uncertain": 0, "notes": "", "created_at": now()}], who)
+        st.rerun()
+
+# In a blind pass or adjudication only your own labels may be shown.
+shown = mine if (blind or adjudicate) else done
 existing = shown[shown.unit_id == row.unit_id] if len(shown) else shown
+if adjudicate and len(existing):
+    existing = existing.sort_values("created_at")
+    resets = existing.index[existing.verse_ref == "RESET"]
+    if len(resets):
+        existing = existing.loc[existing.index > resets[-1]]
 if len(existing):
     lines = []
     for r in existing.itertuples():
