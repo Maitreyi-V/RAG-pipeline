@@ -114,7 +114,7 @@ def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
         rows = [row[u] for u in us]
         pv = m["verse_model"].predict_proba(verse_X(F, rows, alpha, m["verse_cols"]))[:, 1]
         pv = pv.reshape(len(rows), V)
-        Xo = off_X(F, rows, alpha)
+        Xo = off_X(F, rows, alpha)[:, m.get("keep_off", list(range(len(OFF_NAMES))))]
         if m["off_active"]:
             Xo = np.column_stack([Xo, carried_cos(F, row, refs, us, alpha)])
         if m.get("held_z"):
@@ -123,6 +123,8 @@ def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
         e = (1 - po)[:, None] * pv / pv.sum(1, keepdims=True) if m["decouple"] else pv
         emit = np.log(np.clip(np.column_stack([e, po]), 1e-12, 1))
         emit[:, OFF] += m["beta"]
+        if not m.get("off_after_anchor", True):
+            emit[np.cumsum(F["anchor"][rows].any(1)) > 0, OFF] = -1e9
         if m.get("resume"):
             states = viterbi_resume(emit, m["logA"], m["gamma"])
         else:
@@ -469,7 +471,8 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
             gamma, beta, delta, tau = choose(allv, probs, logA)
             final[a] = dict(
                 verse_cols=cols, decouple=decouple, off_active=off_active,
-                resume=resume, held_z=held_z,
+                resume=resume, held_z=held_z, keep_off=keep_off,
+                off_after_anchor=off_after_anchor,
                 verse_model=model().fit(np.concatenate([verse_X(F, rows[w], a, cols) for w in allv]),
                                         np.concatenate([Y[w].ravel() for w in allv])),
                 off_model=model().fit(np.concatenate([oX(w, a) for w in allv]),

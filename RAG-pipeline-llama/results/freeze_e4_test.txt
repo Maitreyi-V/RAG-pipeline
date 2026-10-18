@@ -1,0 +1,10 @@
+FREEZE RUN — E4 unseen verses, split = test
+E4 model: tuning lectures, verses 2.1-2.36 only; transition counts {'stay': 176, 'next': 24, 'jump': 13, 'to_off': 23, 'stay_off': 95, 'from_off': 24}
+Scored on passages whose gold includes a verse in 2.37-2.72.
+
+Kannada: 191 passages in 15 lectures
+  model                             P      R  strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  trained on 2.1-2.36 (E4)      0.834  0.862  0.848 [0.807,0.892]    0.932 [0.892,0.971]    0.953 [0.925,0.981]   
+  locked, all verses            0.834  0.862  0.848 [0.807,0.892]    0.932 [0.892,0.971]    0.953 [0.925,0.981]   
+
+English: 0 passages in 0 lectures
