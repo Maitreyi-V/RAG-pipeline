@@ -228,3 +228,31 @@ RAG-pipeline-llama/data/mention_spans.csv.*.bak
 
 # Local-only working context (personal notes; not for the public repo)
 RAG-pipeline-llama/docs/PROJECT_CONTEXT.md
+# --- GitaGround additions ---
+# local environments and secrets
+.venv/
+venv/
+.env
+
+# embedding caches (large, shared out of band; see README)
+results/unit_embeddings*.npz
+
+# runtime and editor leftovers
+__pycache__/
+*.pyc
+.streamlit/
+results/last_query_result.json
+data/chroma_db/
+data/audio_cache/
+backend/data/chroma_db/
+
+# annotation tool backups
+data/*.bak
+data/*.csv.*.bak
+.venv/
+venv/
+.env
+results/unit_embeddings*.npz
+__pycache__/
+.streamlit/
+data/*.bak
