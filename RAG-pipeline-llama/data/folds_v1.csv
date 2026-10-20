@@ -1,0 +1,52 @@
+video_file,speaker,language,split,passages,fold
+kn_sumith_day01,Sumith,kn,heldout,9,0
+kn_sumith_day05,Sumith,kn,heldout,15,0
+kn_brahmanyachar_day02b,Vidwan Brahmanyacharya,kn,heldout,44,0
+video_02,original English speaker,en,test,82,0
+video_07,original English speaker,en,dev,97,0
+gita-6th_video,original Kannada speaker,kn,test,21,0
+kannada_12,original Kannada speaker,kn,test,16,0
+kannada_13,original Kannada speaker,kn,dev,11,0
+kannada_15,original Kannada speaker,kn,test,20,0
+kannada_22,original Kannada speaker,kn,test,14,0
+kannada_27,original Kannada speaker,kn,test,14,0
+kn_sumith_day02,Sumith,kn,heldout,10,1
+kn_sumith_day08,Sumith,kn,heldout,11,1
+video_03,original English speaker,en,test,87,1
+video_09,original English speaker,en,test,102,1
+gita-2nd_video,original Kannada speaker,kn,test,13,1
+kannada_09,original Kannada speaker,kn,test,15,1
+kannada_16,original Kannada speaker,kn,dev,15,1
+kannada_17,original Kannada speaker,kn,test,14,1
+kannada_19,original Kannada speaker,kn,test,18,1
+kannada_20,original Kannada speaker,kn,test,15,1
+kn_sumith_day06,Sumith,kn,heldout,8,2
+en_chinmaya_day03,Swami Aparajitananda,en,heldout,71,2
+video_01,original English speaker,en,dev,88,2
+video_06,original English speaker,en,test,104,2
+kannada_07,original Kannada speaker,kn,dev,15,2
+kannada_08,original Kannada speaker,kn,test,12,2
+kannada_10,original Kannada speaker,kn,dev,11,2
+kannada_11,original Kannada speaker,kn,test,16,2
+kannada_23,original Kannada speaker,kn,test,17,2
+kannada_25,original Kannada speaker,kn,test,14,2
+kn_sumith_day03,Sumith,kn,heldout,12,3
+en_chinmaya_day04,Swami Aparajitananda,en,heldout,76,3
+video_05,original English speaker,en,test,103,3
+video_10,original English speaker,en,test,102,3
+gita-1st_video,original Kannada speaker,kn,dev,15,3
+gita-3rd_video,original Kannada speaker,kn,test,14,3
+gita-4th_video,original Kannada speaker,kn,dev,15,3
+kannada_14,original Kannada speaker,kn,test,14,3
+kannada_28,original Kannada speaker,kn,test,11,3
+kannada_29,original Kannada speaker,kn,test,13,3
+en_iskcon,HG Gaurmandal Das,en,heldout,215,4
+kn_sumith_day04,Sumith,kn,heldout,12,4
+kn_sumith_day07,Sumith,kn,heldout,11,4
+video_04,original English speaker,en,dev,107,4
+video_08,original English speaker,en,test,96,4
+gita-5th_video,original Kannada speaker,kn,test,19,4
+kannada_18,original Kannada speaker,kn,test,13,4
+kannada_21,original Kannada speaker,kn,test,13,4
+kannada_24,original Kannada speaker,kn,test,12,4
+kannada_26,original Kannada speaker,kn,test,12,4

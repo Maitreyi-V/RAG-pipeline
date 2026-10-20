@@ -5,7 +5,8 @@ Pilot: a frontier LLM labels a WHOLE lecture at once (run by hand in claude.ai).
   prepare   writes, per lecture, one text file to paste into a NEW chat: the
             instructions, the 72-verse catalogue, and the numbered passages
             (P001, P002, ...), plus the passage-id -> unit_id map
-  score     reads the answers saved as results/<lecture>.txt and scores them
+  score     reads the answers saved as results/<lecture>.txt (Claude, chat) and
+            results_gpt5/<lecture>.txt (GPT-5, chat), and scores them
             (strict / within-1 / theme F1) next to our locked system and plain
             carry on the same lectures
 
@@ -20,6 +21,7 @@ Files contain transcript text, so they go outside the repo:
 Usage:
     python scripts/llm_pilot.py prepare
     python scripts/llm_pilot.py score
+    python scripts/llm_pilot.py api --model gpt-5.1 --lecture video_02
 """
 import argparse
 import csv
@@ -128,6 +130,28 @@ def parse(path, ids):
     return pred, dict(unparsed=bad, missing=missing, outside_ch2=outside)
 
 
+ANSWER_DIRS = {"frontier LLM (chat)": "results", "OpenAI model": "results_gpt5"}
+
+
+def api(model, lecture, out_dir="results_gpt5"):
+    """Send one lecture's paste file, unchanged, to an OpenAI model (one call, no
+    retries for a better answer). Saves the reply and the token usage."""
+    import json
+    from dotenv import load_dotenv
+    from openai import OpenAI
+    load_dotenv(os.path.join(os.path.dirname(HERE), ".env"), override=True)
+    prompt = open(os.path.join(OUT, f"{lecture}_PASTE_THIS.txt"), encoding="utf-8").read()
+    r = OpenAI().chat.completions.create(model=model, messages=[{"role": "user", "content": prompt}],
+                                         max_completion_tokens=64000)
+    os.makedirs(os.path.join(OUT, out_dir), exist_ok=True)
+    with open(os.path.join(OUT, out_dir, f"{lecture}.txt"), "w", encoding="utf-8") as f:
+        f.write(r.choices[0].message.content or "")
+    usage = r.usage.model_dump() if hasattr(r.usage, "model_dump") else dict(r.usage)
+    with open(os.path.join(OUT, out_dir, f"{lecture}_usage.json"), "w") as f:
+        json.dump(dict(model=r.model, finish_reason=r.choices[0].finish_reason, usage=usage), f, indent=1)
+    print(f"  {lecture}: served by {r.model}, finish_reason {r.choices[0].finish_reason}, usage {usage}")
+
+
 def score():
     from baselines import carry
     from freeze_grounding import f1_near, f1_strict, near_counts, strict_counts, theme_counts
@@ -137,12 +161,19 @@ def score():
     refs = list(z["refs"])
     row = {u: i for i, u in enumerate(z["unit_ids"])}
     for v in lectures_for_pilot():
-        path = os.path.join(OUT, "results", f"{v}.txt")
-        if not os.path.exists(path):
-            print(f"\n  {v}: no results/{v}.txt yet")
-            continue
         ids = [(r["passage_id"], r["unit_id"]) for r in load_csv(os.path.join(OUT, f"{v}_ids.csv"))]
-        llm, problems = parse(path, ids)
+        answers = {}
+        for name, d in ANSWER_DIRS.items():
+            path = os.path.join(OUT, d, f"{v}.txt")
+            if os.path.exists(path):
+                meta = os.path.join(OUT, d, f"{v}_usage.json")
+                if os.path.exists(meta):                  # API runs record the serving model
+                    import json
+                    name = json.load(open(meta))["model"] + " (API)"
+                answers[name] = parse(path, ids)
+        if not answers:
+            print(f"\n  {v}: no answers yet")
+            continue
         us = lectures[v]
         dec = predict_locked({v: us})[v]
         ours = {u: ([] if st == OFF else [refs[st]]) + [refs[j] for j in extra]
@@ -151,10 +182,12 @@ def score():
         plain = carry(us, anchors)
         tag = "  (prompt check, tuning lecture)" if v == PROMPT_CHECK else ""
         print(f"\n  {v}   {len(us)} passages{tag}")
-        print(f"    parsing: {len(problems['missing'])} passage(s) missing, "
-              f"{len(problems['unparsed'])} unparsed line(s), "
-              f"{problems['outside_ch2']} verse(s) outside 2.1-2.72")
-        for name, pred in (("frontier LLM (chat)", llm), ("ours (locked)", ours), ("plain carry", plain)):
+        for name, (_, problems) in answers.items():
+            print(f"    {name} parsing: {len(problems['missing'])} passage(s) missing, "
+                  f"{len(problems['unparsed'])} unparsed line(s), "
+                  f"{problems['outside_ch2']} verse(s) outside 2.1-2.72")
+        rows = [(name, pred) for name, (pred, _) in answers.items()]
+        for name, pred in rows + [("ours (locked)", ours), ("plain carry", plain)]:
             print(f"    {name:20} strict {f1_strict(strict_counts(gold, pred, us)):.3f}   "
                   f"+-1 {f1_near(near_counts(gold, pred, us)):.3f}   "
                   f"theme {f1_strict(theme_counts(gold, pred, us)):.3f}")
@@ -162,9 +195,14 @@ def score():
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("step", choices=["prepare", "score"])
+    ap.add_argument("step", choices=["prepare", "score", "api"])
+    ap.add_argument("--model", default="gpt-5.1")
+    ap.add_argument("--lecture", default="video_02")
     args = ap.parse_args()
-    prepare() if args.step == "prepare" else score()
+    if args.step == "api":
+        api(args.model, args.lecture)
+    else:
+        prepare() if args.step == "prepare" else score()
 
 
 if __name__ == "__main__":
