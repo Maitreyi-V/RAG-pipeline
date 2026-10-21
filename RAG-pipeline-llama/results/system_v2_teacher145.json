@@ -1,0 +1,32 @@
+{
+ "system": "v2 candidate: teacher-direct P_off + 145-state resume decoder, no adaptation",
+ "p_off": "results/silver/silver_labels.csv soft_target = clip((score+5)/10, 0.02, 0.98); gpt-5-mini-2025-08-07, config B",
+ "verse_scorer": "locked Step 3 verse scorer (alpha 0.5, last), fitted on all 9 tuning lectures",
+ "gamma": 2,
+ "beta_off": -2,
+ "delta": 0,
+ "tau": 0.9,
+ "counts": {
+  "stay": 188,
+  "next": 26,
+  "jump": 15,
+  "to_off": 23,
+  "pre_stay": 37,
+  "pre_exit": 5,
+  "stay_off": 59,
+  "resume": 16,
+  "from_off_other": 5
+ },
+ "trained_on": [
+  "gita-1st_video",
+  "gita-4th_video",
+  "kannada_07",
+  "kannada_10",
+  "kannada_13",
+  "kannada_16",
+  "video_01",
+  "video_04",
+  "video_07"
+ ],
+ "tuning_lolo_en_strict": 0.731
+}

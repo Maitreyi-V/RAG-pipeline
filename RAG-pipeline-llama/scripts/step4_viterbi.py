@@ -120,6 +120,8 @@ def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
         if m.get("held_z"):
             Xo = np.column_stack([Xo, carried_cos(F, row, refs, us, alpha, "z")])
         po = m["off_model"].predict_proba(Xo)[:, 1]
+        if m.get("p_off") is not None:         # saved with off_override (e.g. teacher P_off)
+            po = np.array([m["p_off"][u] for u in us])
         e = (1 - po)[:, None] * pv / pv.sum(1, keepdims=True) if m["decouple"] else pv
         emit = np.log(np.clip(np.column_stack([e, po]), 1e-12, 1))
         emit[:, OFF] += m["beta"]
@@ -222,6 +224,11 @@ def transitions(seqs):
             else:
                 c["jump"] += 1
     c = {k: x + 1 for k, x in c.items()}
+    return matrix(c), c
+
+
+def matrix(c):
+    """Log 73 x 73 matrix from bucket counts (gold or adapted)."""
     A = np.zeros((V + 1, V + 1))
     for a in range(V):
         nxt = [b for b in (a + 1, a + 2) if b < V]
@@ -233,7 +240,7 @@ def transitions(seqs):
     A[OFF, :V] = c["from_off"] / V
     A[OFF, OFF] = c["stay_off"]
     A /= A.sum(1, keepdims=True)
-    return np.log(A), c
+    return np.log(A)
 
 
 PRE = V                 # resume model: off-verse before the lecture's first verse
@@ -271,6 +278,11 @@ def transitions_resume(seqs):
             else:
                 c["resume" if b - held in (0, 1, 2) else "from_off_other"] += 1
     c = {k: x + 1 for k, x in c.items()}
+    return matrix_resume(c), c
+
+
+def matrix_resume(c):
+    """Log 145 x 145 matrix from bucket counts (gold or adapted)."""
     A = np.zeros((S_RESUME, S_RESUME))
     for a in range(V):
         nxt = [b for b in (a + 1, a + 2) if b < V]
@@ -288,7 +300,43 @@ def transitions_resume(seqs):
     A[PRE, :V] = c["pre_exit"] / V
     A /= A.sum(1, keepdims=True)
     with np.errstate(divide="ignore"):
-        return np.log(A), c
+        return np.log(A)
+
+
+KAPPAS = [float("inf"), 1000, 300, 100, 30, 10]      # inf = no adaptation; ties keep the stronger prior
+
+
+def adapt_counts(c, n, off_sum, changes, kappa):
+    """Per-lecture adaptation of two scalars (work plan Phase 2), no gold used.
+
+    Each scalar has a Beta (2-category Dirichlet) prior centred on the value the
+    training-lecture counts c imply, with strength kappa pseudo-passages; the MAP
+    estimate with Dirichlet alpha = 1 + kappa * prior share is
+    (kappa * prior + observed) / (kappa + passages).
+      stay probability  P(verse -> same verse); observed: n_on = sum(1 - P_off)
+                        verse passages with `changes` verse changes between
+                        consecutive anchored passages
+      off-verse rate    stationary share of off-verse passages; observed: off_sum
+                        = sum of P_off over the n passages
+    The probability of leaving the off-verse state is kept from c; the verse ->
+    off-verse probability is set so the stationary off rate equals the estimate.
+    next and jump share what is left in their training proportions.
+    """
+    if kappa == float("inf"):
+        return c
+    back = "resume" in c
+    out_off = (c["resume"] + c["from_off_other"]) if back else c["from_off"]
+    u = out_off / (out_off + c["stay_off"])                     # P(off -> verse)
+    tot = c["stay"] + c["next"] + c["jump"] + c["to_off"]
+    s0, q0 = c["stay"] / tot, c["to_off"] / tot
+    r0 = q0 / (q0 + u)
+    n_on = n - off_sum
+    s = (kappa * s0 + max(n_on - changes, 0)) / (kappa + n_on)
+    r = (kappa * r0 + off_sum) / (kappa + n)
+    q = min(r / (1 - r) * u, 0.99 - s)
+    rest = (1 - s - q) / (c["next"] + c["jump"])
+    a = dict(c, stay=s * tot, to_off=q * tot, next=c["next"] * rest * tot, jump=c["jump"] * rest * tot)
+    return a
 
 
 def viterbi_resume(emit, logA, gamma):
@@ -341,7 +389,8 @@ OFF_NAMES = ("max_string", "max_cos", "max_recency", "any_anchor")   # off_X col
 def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
         decouple=True, off_active=True, save=None,
         drop_verse=(), drop_off=(), off_after_anchor=True,
-        resume=False, held_z=False, info=None, off_override=None):
+        resume=False, held_z=False, info=None, off_override=None,
+        off_extra=None, adapt=False):
     """LOLO on the tuning lectures -> (systems, gold, lectures, tune).
 
     use_last   : add the 2C feature `last` to the verse scorer
@@ -363,9 +412,15 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
     info       : optional dict, filled with "counts" (all 9 lectures) and "chosen"
     off_override : optional {unit_id: P_off}; replaces the off-verse scorer's
                  probability (e.g. the silver teacher's soft_target)
+    off_extra  : optional {unit_id: value}; one more off-verse-scorer feature
+                 (e.g. the student's or teacher's logit), fitted on tuning gold
+    adapt      : per-lecture adaptation of stay probability and off-verse rate
+                 (adapt_counts); the prior strength kappa is chosen from KAPPAS
+                 with gamma, beta_off and tau
     The defaults are the LOCKED Step 4 system (16 Oct 2026).
     """
     trans = transitions_resume if resume else transitions
+    build = matrix_resume if resume else matrix
     cols = tuple(c for c in VERSE_COLS + (("last",) if use_last else ())
                 if c not in drop_verse)
     keep_off = [i for i, n in enumerate(OFF_NAMES) if n not in drop_off]
@@ -397,6 +452,8 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
             X = np.column_stack([X, active_cos(v, a)])
         if held_z:
             X = np.column_stack([X, carried_cos(F, row, refs, lectures[v], a, "z")])
+        if off_extra is not None:
+            X = np.column_stack([X, [off_extra[u] for u in lectures[v]]])
         return X
 
     def lolo_probs(a):
@@ -444,35 +501,47 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
             for L in ("kn", "en") if any(lang_of[v] == L for v in vids)]
         return sum(f) / len(f)
 
-    def choose(train, probs, logA):
-        """(gamma, beta, delta, tau) maximising macro F1 over the train lectures"""
+    def lecture_logA(w, probs, c, kappa):
+        """transition matrix for lecture w: counts c, adapted unless kappa = inf"""
+        if kappa == float("inf"):
+            return build(c)
+        po = probs[w][1]
+        seen = [set(np.flatnonzero(x)) for x in F["anchor"][rows[w]] if x.any()]
+        changes = sum(1 for x, y in zip(seen, seen[1:]) if not x & y)
+        return build(adapt_counts(c, len(po), float(po.sum()), changes, kappa))
+
+    def choose(train, probs, c):
+        """(gamma, beta, delta, tau, kappa) maximising macro F1 over the train lectures"""
         best = None
-        for gamma, beta, delta in itertools.product(GAMMAS, BETAS, deltas):
-            paths = {w: decode(w, probs, logA, gamma, beta, delta) for w in train}
-            for tau in TAUS:
-                p = {}
-                for w in train:
-                    p.update(to_pred(w, probs, paths[w], tau))
-                m = macro(p, train)
-                if best is None or m > best[0]:
-                    best = (m, gamma, beta, delta, tau)
+        for kappa in (KAPPAS if adapt else [float("inf")]):
+            mats = {w: lecture_logA(w, probs, c, kappa) for w in train}
+            for gamma, beta, delta in itertools.product(GAMMAS, BETAS, deltas):
+                paths = {w: decode(w, probs, mats[w], gamma, beta, delta) for w in train}
+                for tau in TAUS:
+                    p = {}
+                    for w in train:
+                        p.update(to_pred(w, probs, paths[w], tau))
+                    m = macro(p, train)
+                    if best is None or m > best[0]:
+                        best = (m, gamma, beta, delta, tau, kappa)
         return best[1:]
 
     results, final = {}, {}
     for a in alphas:
         probs = lolo_probs(a)
-        pred, chosen = {}, []
+        pred, chosen, kappas = {}, [], {}
         for held in lang_of:
             train = [w for w in lang_of if w != held]
-            logA, _ = trans([seq[w] for w in train])
-            gamma, beta, delta, tau = choose(train, probs, logA)
+            _, c = trans([seq[w] for w in train])
+            gamma, beta, delta, tau, kappa = choose(train, probs, c)
             chosen.append((held, gamma, beta, delta, tau))
-            pred.update(to_pred(held, probs,
-                                decode(held, probs, logA, gamma, beta, delta), tau))
+            kappas[held] = kappa
+            pred.update(to_pred(held, probs, decode(held, probs, lecture_logA(held, probs, c, kappa),
+                                                    gamma, beta, delta), tau))
         if save:
             allv = list(lang_of)
             logA, counts = trans([seq[w] for w in allv])
-            gamma, beta, delta, tau = choose(allv, probs, logA)
+            gamma, beta, delta, tau, kappa = choose(allv, probs, counts)
             final[a] = dict(
                 verse_cols=cols, decouple=decouple, off_active=off_active,
                 resume=resume, held_z=held_z, keep_off=keep_off,
@@ -481,7 +550,8 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
                                         np.concatenate([Y[w].ravel() for w in allv])),
                 off_model=model().fit(np.concatenate([oX(w, a) for w in allv]),
                                     np.concatenate([(Y[w].sum(1) == 0).astype(int) for w in allv])),
-                logA=logA, counts=counts, gamma=gamma, beta=beta, delta=delta, tau=tau,
+                logA=logA, counts=counts, gamma=gamma, beta=beta, delta=delta, tau=tau, kappa=kappa,
+                p_off=off_override,
                 trained_on=allv)
             print(f"  FINAL alpha {a}: gamma={gamma} beta_off={beta} delta={delta} tau={tau}")
         results[f"Viterbi (alpha {'0.5' if a == 'a05' else '0'})"] = pred
@@ -495,7 +565,8 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
         if verbose:
             print(f"  chosen settings per held-out lecture, alpha {a}, last={use_last}:")
             for held, g, b, d, t in chosen:
-                print(f"    {held:18} gamma={g:<5} beta_off={b:<3} delta={d:<2} tau={t}")
+                print(f"    {held:18} gamma={g:<5} beta_off={b:<3} delta={d:<2} tau={t}"
+                      + (f" kappa={kappas[held]}" if adapt else ""))
 
     anchors = {u: [refs[j] for j in np.flatnonzero(F["anchor"][row[u]])]
             for v in lang_of for u in lectures[v]}
@@ -518,6 +589,7 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
     if info is not None:
         info["counts"] = trans([seq[w] for w in lang_of])[1]
         info["chosen"] = chosen
+        info["kappa"] = kappas
     if save:
         with open(save, "wb") as f:
             pickle.dump(final, f)
