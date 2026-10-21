@@ -1,5 +1,6 @@
 Student off-verse detector — evaluation against GOLD on the TUNING lectures only
-v1 C per outer fold: [0.001, 0.001, 0.001, 0.001, 0.001]; inductive C: 0.001
+v1 C per outer fold: [0.001, 0.001, 0.001, 0.001, 0.001] (grid [1e-05, 0.0001, 0.001, 0.01, 0.1, 1.0]); MLP best epoch per fold: [7, 1, 28, 21, 6] (max 200); inductive C: 0.001
+silver out-of-fold soft log-loss: v1 0.4461, v1b 0.4971 -> FINAL student = v1 (rule declared before looking at gold)
 
 ENGLISH tuning: 292 passages, 119 gold off-verse
   P_off source        AUC  recall@0.5  false flags@0.5   per-lecture AUC
@@ -7,6 +8,7 @@ ENGLISH tuning: 292 passages, 119 gold off-verse
   teacher direct    0.836       0.857      45/173        video_01 0.915, video_04 0.753, video_07 0.845
   v1                0.775       0.630      43/173        video_01 0.802, video_04 0.913, video_07 0.711
   v1b               0.785       0.647      49/173        video_01 0.771, video_04 0.879, video_07 0.723
+  final             0.775       0.630      43/173        video_01 0.802, video_04 0.913, video_07 0.711
   inductive         0.607       0.462      57/173        video_01 0.759, video_04 0.622, video_07 0.645
   narrative         0.625       0.445      37/173        video_01 0.601, video_04 0.710, video_07 0.630
   stacker           0.738       0.639      55/173        video_01 0.840, video_04 0.900, video_07 0.708
@@ -17,6 +19,7 @@ KANNADA (1 off-verse passage; not for decisions) tuning: 82 passages, 1 gold off
   teacher direct    0.951       0.000       1/81         
   v1                0.951       0.000       1/81         
   v1b               0.988       0.000       1/81         
+  final             0.951       0.000       1/81         
   inductive         0.988       0.000       0/81         
   narrative         0.938       0.000       0/81         
   stacker           1.000       0.000       0/81         

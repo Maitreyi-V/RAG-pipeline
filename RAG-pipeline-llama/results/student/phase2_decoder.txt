@@ -1,0 +1,8 @@
+Phase 2 — TUNING lectures, leave-one-lecture-out, alpha 0.5 (no test gold)
+  P_off    decoder    KN strict  KN +-1 EN strict  EN +-1 EN theme   EN off-verse decoded OFF
+  old      73-state       0.938   0.966     0.680   0.699    0.722   59/119
+  old      145-state      0.937   0.954     0.554   0.578    0.597   71/119
+  teacher  73-state       0.938   0.966     0.728   0.783    0.807   86/119
+  teacher  145-state      0.938   0.966     0.731   0.786    0.815   97/119
+  student  73-state       0.938   0.966     0.456   0.491    0.616   47/119
+  student  145-state      0.938   0.966     0.472   0.505    0.626   51/119

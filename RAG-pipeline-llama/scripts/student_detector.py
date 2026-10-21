@@ -43,7 +43,7 @@ from evalkit import UNITS, UNITS_HELDOUT, load_csv, load_gold, read_split, verse
 
 OUT = os.path.join(HERE, "results", "student")
 CTX = 2
-CS = [0.001, 0.01, 0.1, 1.0]
+CS = [1e-5, 1e-4, 1e-3, 1e-2, 0.1, 1.0]
 SEED = 2026
 
 
@@ -143,8 +143,8 @@ def fit_mlp(X, y, Xval, yval, max_epochs=200, patience=10):
     opt = torch.optim.Adam(net.parameters(), lr=1e-3, weight_decay=1e-4)
     loss_fn = torch.nn.BCEWithLogitsLoss()
     Xt, yt, Xv, yv = f(X), torch.tensor(y, dtype=torch.float32), f(Xval), torch.tensor(yval, dtype=torch.float32)
-    best, best_state, bad = None, None, 0
-    for _ in range(max_epochs):
+    best, best_state, bad, best_epoch = None, None, 0, 0
+    for epoch in range(1, max_epochs + 1):
         net.train()
         perm = torch.randperm(len(Xt))
         for i in range(0, len(Xt), 64):
@@ -156,7 +156,7 @@ def fit_mlp(X, y, Xval, yval, max_epochs=200, patience=10):
         with torch.no_grad():
             vl = loss_fn(net(Xv).squeeze(1), yv).item()
         if best is None or vl < best - 1e-4:
-            best, best_state, bad = vl, {k: t.clone() for k, t in net.state_dict().items()}, 0
+            best, best_state, bad, best_epoch = vl, {k: t.clone() for k, t in net.state_dict().items()}, 0, epoch
         else:
             bad += 1
             if bad >= patience:
@@ -167,7 +167,7 @@ def fit_mlp(X, y, Xval, yval, max_epochs=200, patience=10):
     def predict(A):
         with torch.no_grad():
             return torch.sigmoid(net(f(A)).squeeze(1)).numpy()
-    return predict
+    return predict, best_epoch
 
 
 def old_scorer_probs(lectures):
@@ -213,7 +213,7 @@ def main():
     A_w = np.stack([XW[u] for u in units])
     A_n = np.stack([XN[u] for u in units])
     P = {k: np.zeros(len(units)) for k in ("v1", "v1b", "narrative")}
-    chosen = []
+    chosen, epochs = [], []
     for k in range(5):
         tr, te = f_of != k, f_of == k
         C = choose_C(A_w[tr], y[tr], f_of[tr])
@@ -221,10 +221,13 @@ def main():
         P["v1"][te] = fit_lr(A_w[tr], y[tr], C).predict_proba(A_w[te])[:, 1]
         val_fold = sorted(set(f_of[tr]))[0]                      # early-stopping fold (silver only)
         fit_part, val_part = tr & (f_of != val_fold), tr & (f_of == val_fold)
-        P["v1b"][te] = fit_mlp(A_w[fit_part], y[fit_part], A_w[val_part], y[val_part])(A_w[te])
+        mlp, ep = fit_mlp(A_w[fit_part], y[fit_part], A_w[val_part], y[val_part])
+        P["v1b"][te] = mlp(A_w[te])
+        epochs.append(ep)
         Cn = choose_C(A_n[tr], y[tr], f_of[tr])
         P["narrative"][te] = fit_lr(A_n[tr], y[tr], Cn).predict_proba(A_n[te])[:, 1]
-        print(f"  fold {k}: v1 C={C}, narrative C={Cn}, held-out passages {int(te.sum())}")
+        print(f"  fold {k}: v1 C={C}, MLP best epoch {epochs[-1]} (max 200), narrative C={Cn}, "
+              f"held-out passages {int(te.sum())}")
 
     old = old_scorer_probs(lectures)
     P["old scorer"] = np.array([old[u] for u in units])
@@ -245,9 +248,12 @@ def main():
         tr, te = is_t & (lec_arr != v), lec_arr == v
         P["inductive"][te] = fit_lr(A_w[tr], y[tr], Ct).predict_proba(A_w[te])[:, 1]
     P["teacher direct"] = y.copy()
+    silver_loss = {c: soft_logloss(P[c], y) for c in ("v1", "v1b")}
+    final = min(silver_loss, key=silver_loss.get)       # rule: lowest silver out-of-fold loss
+    P["final"] = P[final].copy()
 
     os.makedirs(OUT, exist_ok=True)
-    cols = ["v1", "v1b", "inductive", "narrative", "stacker"]
+    cols = ["final", "v1", "v1b", "inductive", "narrative", "stacker"]
     with open(os.path.join(OUT, "student_poff.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["unit_id", "video_file", "fold"] + [f"p_{c}" for c in cols])
@@ -258,8 +264,11 @@ def main():
     from sklearn.metrics import roc_auc_score
     _, gold, _ = load_gold()
     lines = ["Student off-verse detector — evaluation against GOLD on the TUNING lectures only",
-             f"v1 C per outer fold: {chosen}; inductive C: {Ct}", ""]
-    order = ["old scorer", "teacher direct", "v1", "v1b", "inductive", "narrative", "stacker"]
+             f"v1 C per outer fold: {chosen} (grid {CS}); MLP best epoch per fold: {epochs} (max 200); "
+             f"inductive C: {Ct}",
+             f"silver out-of-fold soft log-loss: v1 {silver_loss['v1']:.4f}, v1b {silver_loss['v1b']:.4f} "
+             f"-> FINAL student = {final} (rule declared before looking at gold)", ""]
+    order = ["old scorer", "teacher direct", "v1", "v1b", "final", "inductive", "narrative", "stacker"]
     for L in ("en", "kn"):
         vids = read_split(L, "dev")
         idx = np.array([i for i, u in enumerate(units) if lec[u] in vids])
