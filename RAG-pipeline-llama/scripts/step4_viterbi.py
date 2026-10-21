@@ -119,6 +119,8 @@ def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
             Xo = np.column_stack([Xo, carried_cos(F, row, refs, us, alpha)])
         if m.get("held_z"):
             Xo = np.column_stack([Xo, carried_cos(F, row, refs, us, alpha, "z")])
+        if m.get("off_extra") is not None:     # saved with off_extra (e.g. student logit)
+            Xo = np.column_stack([Xo, [m["off_extra"][u] for u in us]])
         po = m["off_model"].predict_proba(Xo)[:, 1]
         if m.get("p_off") is not None:         # saved with off_override (e.g. teacher P_off)
             po = np.array([m["p_off"][u] for u in us])
@@ -551,7 +553,7 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
                 off_model=model().fit(np.concatenate([oX(w, a) for w in allv]),
                                     np.concatenate([(Y[w].sum(1) == 0).astype(int) for w in allv])),
                 logA=logA, counts=counts, gamma=gamma, beta=beta, delta=delta, tau=tau, kappa=kappa,
-                p_off=off_override,
+                p_off=off_override, off_extra=off_extra,
                 trained_on=allv)
             print(f"  FINAL alpha {a}: gamma={gamma} beta_off={beta} delta={delta} tau={tau}")
         results[f"Viterbi (alpha {'0.5' if a == 'a05' else '0'})"] = pred

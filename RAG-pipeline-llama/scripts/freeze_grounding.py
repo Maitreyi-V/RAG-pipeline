@@ -30,9 +30,18 @@ Then wrong labels by cause for plain carry vs ours (false positives):
 
 Writes results/freeze_grounding_<split>.txt.
 
+--v2 (pre-registered in docs/experiment_log.md, 21 Oct 2026): also the three
+v2 systems (results/v2_*.pkl, see freeze_v2_systems.py), and paired per-lecture
+comparisons (strict F1): bootstrap CI of the difference (lectures resampled,
+paired), share of resamples with difference <= 0, wins / ties / losses on
+per-lecture strict F1 and a two-sided exact sign test (ties dropped).
+Writes results/freeze_v2_<split>.txt instead (the v1 record is not touched).
+
 Usage:
     python scripts/freeze_grounding.py --split dev
+    python scripts/freeze_grounding.py --split test --v2
 """
+import math
 import argparse
 import os
 import random
@@ -54,6 +63,14 @@ from step4_viterbi import FEATS, OFF, predict_locked  # noqa: E402
 
 RES = os.path.join(HERE, "results")
 MIN_LECTURES_FOR_CI = 5
+V2 = (("v2 teacher 145 (primary)", "v2_teacher145"), ("v2 teacher 73", "v2_teacher73"),
+      ("v2 local 73 (old+student)", "v2_local73"))
+V1 = "v1 frozen (alpha 0.5)"
+# pre-registered comparisons (A vs B); the first is the primary one
+COMPARE = [("v2 teacher 145 (primary)", V1), ("v2 teacher 145 (primary)", "v2 teacher 73"),
+           ("v2 local 73 (old+student)", V1), ("v2 teacher 145 (primary)", "plain carry"),
+           ("v2 teacher 145 (primary)", "carry, best anchor"), ("v2 local 73 (old+student)", "plain carry"),
+           ("v2 local 73 (old+student)", "carry, best anchor")]
 
 
 # ---- per-lecture counts for the three granularities ---------------------------
@@ -112,6 +129,28 @@ def with_ci(per_lecture, f1, n_boot, seed=0):
     return point, (draws[int(0.025 * n_boot)], draws[min(int(0.975 * n_boot), n_boot - 1)])
 
 
+def paired(gold, lectures, A, B, vids, n_boot, seed=0):
+    """strict F1(A) - F1(B): point, 95% paired lecture-bootstrap CI, share <= 0,
+    per-lecture wins/ties/losses and the two-sided exact sign-test p"""
+    ca = [strict_counts(gold, A, lectures[v]) for v in vids]
+    cb = [strict_counts(gold, B, lectures[v]) for v in vids]
+
+    def diff(idx):
+        return (f1_strict([sum(ca[i][j] for i in idx) for j in range(3)])
+                - f1_strict([sum(cb[i][j] for i in idx) for j in range(3)]))
+    point = diff(range(len(vids)))
+    rng = random.Random(seed)
+    draws = sorted(diff([rng.randrange(len(vids)) for _ in vids]) for _ in range(n_boot))
+    ci = (draws[int(0.025 * n_boot)], draws[min(int(0.975 * n_boot), n_boot - 1)])
+    le0 = sum(d <= 0 for d in draws) / n_boot
+    fa, fb = [f1_strict(c) for c in ca], [f1_strict(c) for c in cb]
+    w = sum(a > b + 1e-9 for a, b in zip(fa, fb))
+    lo = sum(b > a + 1e-9 for a, b in zip(fa, fb))
+    n = w + lo
+    p = min(1.0, 2 * sum(math.comb(n, k) for k in range(min(w, lo) + 1)) / 2 ** n) if n else 1.0
+    return point, ci, le0, (w, len(vids) - n, lo), p
+
+
 def causes(gold, pred, anchors, us):
     """false positives by cause A / B / C"""
     c = Counter()
@@ -126,6 +165,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--split", choices=["dev", "test", "heldout"], required=True)
     ap.add_argument("--n-boot", type=int, default=1000)
+    ap.add_argument("--v2", action="store_true", help="add the three v2 systems and the paired tests")
     args = ap.parse_args()
 
     lectures, gold, _ = load_gold()
@@ -201,6 +241,11 @@ def main():
         dec = predict_locked(lecture_units, a)
         ours[a] = {u: ([] if st == OFF else [refs[st]]) + [refs[j] for j in extra]
                    for v in scope for u, (st, extra, _, _) in zip(lectures[v], dec[v])}
+    if args.v2:
+        for label, name in V2:
+            dec = predict_locked(lecture_units, "a05", path=os.path.join(RES, f"{name}.pkl"))
+            ours[name] = {u: ([] if st == OFF else [refs[st]]) + [refs[j] for j in extra]
+                          for v in scope for u, (st, extra, _, _) in zip(lectures[v], dec[v])}
 
     lines = [f"FREEZE RUN — grounding, split = {args.split}"
              + ("   (DRY RUN: our rows are IN-SAMPLE, not results)" if args.split == "dev" else ""),
@@ -227,8 +272,10 @@ def main():
                   carry_all(vids, anchors, keep=lambda u, v: zgate(u, v) >= tau, resume=True)),
                  ("oracle stopping (ceiling)",
                   carry_all(vids, anchors, keep=lambda u, v: v in gold[u], resume=True)),
-                 ("ours, alpha 0.5", ours["a05"]),
+                 (V1 if args.v2 else "ours, alpha 0.5", ours["a05"]),
                  ("ours, alpha 0 (E5)", ours["a0"])]
+        if args.v2:
+            rows += [(label, ours[name]) for label, name in V2]
 
         n_empty = sum(1 for u in units if not gold[u])
         lines += ["", "=" * 132,
@@ -249,14 +296,24 @@ def main():
         lines.append("  wrong labels (false positives) by cause:   A carried into no-verse   "
                      "B carried past an unrecited switch   C wrong string detection")
         for name, pred in rows:
-            if name in ("plain carry", "ours, alpha 0.5"):
+            if name in ("plain carry", "ours, alpha 0.5", V1, V2[0][0]):
                 c = causes(gold, pred, anchors, units)
                 lines.append(f"    {name:28} A {c['A']:4}   B {c['B']:4}   C {c['C']:4}   "
                              f"total {sum(c.values())}")
+        if args.v2:
+            byname = dict(rows)
+            lines += [f"  paired comparisons, strict F1 (A - B), {args.n_boot * 10} paired lecture resamples; "
+                      "first row = primary; others secondary, uncorrected",
+                      f"    {'A':32} {'B':24} {'diff':>7} {'95% CI':>17} {'P(diff<=0)':>10} "
+                      f"{'win/tie/loss':>13} {'sign p':>7}"]
+            for a_, b_ in COMPARE:
+                d, ci, le0, (w, t, lo), p = paired(gold, lectures, byname[a_], byname[b_], vids, args.n_boot * 10)
+                lines.append(f"    {a_:32} {b_:24} {d:>+7.3f} [{ci[0]:+.3f},{ci[1]:+.3f}] {le0:>10.3f} "
+                             f"{f'{w}/{t}/{lo}':>13} {p:>7.3f}")
 
     text = "\n".join(lines)
     print(text)
-    out = os.path.join(RES, f"freeze_grounding_{args.split}.txt")
+    out = os.path.join(RES, f"freeze_{'v2' if args.v2 else 'grounding'}_{args.split}.txt")
     with open(out, "w", encoding="utf-8") as f:
         f.write(text + "\n")
     print(f"\n  wrote -> {os.path.relpath(out, HERE)}")
