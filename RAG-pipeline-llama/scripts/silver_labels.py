@@ -12,6 +12,8 @@ digression? The model returns a label and a probability that it is a digression.
          raw response kept). A saved passage is never queried again.
   eval   on the TUNING lectures only: AUC, accuracy and confusion of the silver
          labels against gold (gold off-verse = passage with no Chapter 2 verse).
+         The predicted label is p_digression >= 0.5 (the model's label word is
+         sometimes non-standard, e.g. "EXPLAINING"; those are counted).
 
 Usage:
     python scripts/silver_labels.py run  --model gpt-5-mini --split dev
@@ -84,7 +86,7 @@ def load_saved(model):
     return {d["unit_id"]: d for d in map(json.loads, open(p, encoding="utf-8"))}
 
 
-def run(model, split, effort, workers):
+def run(model, split, effort, workers, limit=None, lecture=None):
     from dotenv import load_dotenv
     from openai import OpenAI
     load_dotenv(os.path.join(os.path.dirname(HERE), ".env"), override=True)
@@ -92,18 +94,28 @@ def run(model, split, effort, workers):
     by = lectures_in_order()
     vids = [v for L in ("kn", "en") for s in (["dev", "test", "heldout"] if split == "all" else [split])
             for v in read_split(L, s)]
+    if lecture:
+        vids = [v for v in vids if v == lecture]
     saved = load_saved(model)
     todo = [(v, k) for v in vids for k, u in enumerate(by[v]) if u["unit_id"] not in saved]
+    if limit:
+        todo = todo[:limit]
     print(f"  {len(todo)} passage(s) to label ({len(saved)} already saved) with {model}, effort {effort}")
     os.makedirs(OUT_DIR, exist_ok=True)
     lock = threading.Lock()
-    usage = {"in": 0, "out": 0, "n": 0}
+    usage = {"in": 0, "out": 0, "n": 0, "failed": 0, "last_error": ""}
 
     def one(item):
         v, k = item
         u = by[v][k]
-        r = client.chat.completions.create(model=model, reasoning_effort=effort,
-                                           messages=[{"role": "user", "content": build(by[v], k)}])
+        try:
+            r = client.chat.completions.create(model=model, reasoning_effort=effort,
+                                               messages=[{"role": "user", "content": build(by[v], k)}])
+        except Exception as e:                  # no answer saved: a later run asks again
+            with lock:
+                usage["failed"] += 1
+                usage["last_error"] = f"{type(e).__name__}: {str(e)[:120]}"
+            return
         text = r.choices[0].message.content
         label, p = parse(text)
         rec = dict(unit_id=u["unit_id"], video_file=v, model=r.model, effort=effort,
@@ -118,7 +130,8 @@ def run(model, split, effort, workers):
 
     with ThreadPoolExecutor(workers) as ex:
         list(ex.map(one, todo))
-    print(f"  done: {usage['n']} calls, {usage['in']} input + {usage['out']} output tokens")
+    print(f"  done: {usage['n']} calls, {usage['in']} input + {usage['out']} output tokens; "
+          f"{usage['failed']} failed (not saved){'; last error: ' + usage['last_error'] if usage['failed'] else ''}")
 
 
 def evaluate(model):
@@ -132,13 +145,14 @@ def evaluate(model):
         missing = sum(1 for v in vids for u in lectures[v]) - len(us)
         y = [int(not any(verse_number(r) for r in gold[u])) for u in us]
         p = [saved[u]["p_digression"] for u in us]
-        pred = [int(saved[u]["label"] == "DIGRESSION") for u in us]
+        pred = [int(saved[u]["p_digression"] >= 0.5) for u in us]       # label from the probability
+        odd = sum(1 for u in us if saved[u]["label"] not in ("VERSE", "DIGRESSION"))
         auc = roc_auc_score(y, p) if 0 < sum(y) < len(y) else float("nan")
         acc = sum(a == b for a, b in zip(y, pred)) / len(y)
         tn, fp, fn, tp = confusion_matrix(y, pred, labels=[0, 1]).ravel()
         print(f"  {L:4} n={len(us)} (unparsed/missing {missing})  gold off-verse {sum(y)}  "
               f"AUC {auc:.3f}  accuracy {acc:.3f}  | verse->verse {tn}  verse->digr {fp}  "
-              f"digr->verse {fn}  digr->digr {tp}")
+              f"digr->verse {fn}  digr->digr {tp}  | non-standard label word {odd}")
 
 
 def main():
@@ -148,9 +162,11 @@ def main():
     ap.add_argument("--split", choices=["dev", "all"], default="dev")
     ap.add_argument("--effort", default="low", help="reasoning effort: minimal | low | medium | high")
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--limit", type=int, help="label at most this many passages (cost check)")
+    ap.add_argument("--lecture", help="only this lecture")
     args = ap.parse_args()
     if args.step == "run":
-        run(args.model, args.split, args.effort, args.workers)
+        run(args.model, args.split, args.effort, args.workers, args.limit, args.lecture)
     else:
         evaluate(args.model)
 
