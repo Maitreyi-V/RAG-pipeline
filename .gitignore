@@ -256,3 +256,6 @@ results/unit_embeddings*.npz
 __pycache__/
 .streamlit/
 data/*.bak
+
+# rebuilt by scripts/step3_scorer.py
+RAG-pipeline-llama/results/step3_scorers.pkl
