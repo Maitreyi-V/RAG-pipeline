@@ -1,0 +1,8 @@
+Teacher (gpt-5-mini, config B) vs gold off-verse — split = heldout
+  group                                    lect   pass gold off  flagged    acc  recall false flags   rate  kappa    AUC
+  Kannada: Sumith                             8     88    0.045    0.205  0.841   1.000    14/84     0.167  0.313  0.940
+  Kannada: Vidwan Brahmanyacharya             1     44    0.000    0.068  0.932     nan     3/44     0.068  0.000    nan
+  Kannada new speakers (pooled)               9    132    0.030    0.159  0.871   1.000    17/128    0.133  0.284  0.949
+  English: HG Gaurmandal Das                  1    215    0.070    0.172  0.814   0.400    31/200    0.155  0.146  0.771
+  English: Swami Aparajitananda               2    147    0.007    0.190  0.816   1.000    27/146    0.185  0.057  0.966
+  English new speakers (pooled)               3    362    0.044    0.180  0.815   0.438    58/346    0.168  0.110  0.759
