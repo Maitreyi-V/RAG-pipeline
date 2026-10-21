@@ -341,7 +341,7 @@ OFF_NAMES = ("max_string", "max_cos", "max_recency", "any_anchor")   # off_X col
 def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
         decouple=True, off_active=True, save=None,
         drop_verse=(), drop_off=(), off_after_anchor=True,
-        resume=False, held_z=False, info=None):
+        resume=False, held_z=False, info=None, off_override=None):
     """LOLO on the tuning lectures -> (systems, gold, lectures, tune).
 
     use_last   : add the 2C feature `last` to the verse scorer
@@ -361,6 +361,8 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
                  can resume v, v+1, v+2 (plan Step 4.1, bucket 5)
     held_z     : add to the off-verse scorer the z-score of the carried verse
     info       : optional dict, filled with "counts" (all 9 lectures) and "chosen"
+    off_override : optional {unit_id: P_off}; replaces the off-verse scorer's
+                 probability (e.g. the silver teacher's soft_target)
     The defaults are the LOCKED Step 4 system (16 Oct 2026).
     """
     trans = transitions_resume if resume else transitions
@@ -408,6 +410,8 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
             yo = np.concatenate([(Y[w].sum(1) == 0).astype(int) for w in pool])
             pv = model().fit(Xv, yv).predict_proba(verse_X(F, rows[v], a, cols))[:, 1]
             po = model().fit(Xo, yo).predict_proba(oX(v, a))[:, 1]
+            if off_override is not None:
+                po = np.array([off_override[u] for u in lectures[v]])
             out[v] = (pv.reshape(len(rows[v]), V), po)
         return out
 
