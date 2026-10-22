@@ -15,6 +15,11 @@ Passages missing from the answer count as NONE and are reported.
            theme F1 with 95% lecture-bootstrap CI, and paired comparisons
            (freeze_grounding.paired) vs v2_teacher145, v1 frozen, plain carry
 
+Local open-weight models: --model ollama:<name> (e.g. ollama:llama3.1:8b) sends the
+same prompt to a local Ollama server (temperature 0, seed 0, context NUM_CTX tokens,
+one lecture at a time); prompt tokens actually read are recorded, so a truncated
+prompt is visible. Cost $0; wall time is recorded instead.
+
 Raw answers (and the prompts) go outside the repo:
   /Users/maitreyi/Documents/Capstone/review/llm_e2e/<model>/
 Parsed labels (no transcript text): results/llm_e2e_<model>.csv
@@ -43,6 +48,22 @@ from llm_pilot import INSTRUCTIONS, catalogue, parse  # noqa: E402
 REVIEW = "/Users/maitreyi/Documents/Capstone/review/llm_e2e"
 DRYRUN = ["video_01"]
 PRICE = (0.25, 2.00)        # $ per 1M input / output tokens, as pasted 15 Oct (check the pricing page)
+NUM_CTX = 65536
+
+
+def folder(model):
+    return model.replace("ollama:", "").replace(":", "-")
+
+
+def ollama_call(name, prompt):
+    import requests
+    t0 = time.time()
+    r = requests.post("http://localhost:11434/api/chat", timeout=7200, json=dict(
+        model=name, stream=False, messages=[{"role": "user", "content": prompt}],
+        options=dict(temperature=0, seed=0, num_ctx=NUM_CTX))).json()
+    usage = dict(prompt_tokens=r.get("prompt_eval_count", 0), completion_tokens=r.get("eval_count", 0),
+                 seconds=round(time.time() - t0, 1))
+    return r["message"]["content"], r.get("model", name), r.get("done_reason", ""), usage
 
 
 def all_lectures():
@@ -50,14 +71,18 @@ def all_lectures():
 
 
 def run(model, effort, which, workers=4):
-    from dotenv import load_dotenv
-    from openai import OpenAI
-    load_dotenv(os.path.join(os.path.dirname(HERE), ".env"), override=True)
-    client = OpenAI()
+    local = model.startswith("ollama:")
+    if local:
+        workers = 1
+    else:
+        from dotenv import load_dotenv
+        from openai import OpenAI
+        load_dotenv(os.path.join(os.path.dirname(HERE), ".env"), override=True)
+        client = OpenAI()
     lectures, _, _ = load_gold()
     text = {u["unit_id"]: u["text"] for u in load_csv(UNITS) + load_csv(UNITS_HELDOUT)}
     cat = catalogue()
-    out = os.path.join(REVIEW, model)
+    out = os.path.join(REVIEW, folder(model))
     os.makedirs(out, exist_ok=True)
     vids = DRYRUN if which == "dryrun" else all_lectures()
     todo = [v for v in vids if not os.path.exists(os.path.join(out, f"{v}.txt"))]
@@ -70,9 +95,14 @@ def run(model, effort, which, workers=4):
                   + "\n\n".join(f"{i}: {text[u]}" for i, u in zip(ids, us)) + "\n")
         for i in range(6):
             try:
-                r = client.chat.completions.create(model=model, reasoning_effort=effort,
-                                                   messages=[{"role": "user", "content": prompt}],
-                                                   max_completion_tokens=64000)
+                if local:
+                    content, served, finish, usage = ollama_call(model[len("ollama:"):], prompt)
+                else:
+                    r = client.chat.completions.create(model=model, reasoning_effort=effort,
+                                                       messages=[{"role": "user", "content": prompt}],
+                                                       max_completion_tokens=64000)
+                    content, served, finish = r.choices[0].message.content, r.model, r.choices[0].finish_reason
+                    usage = r.usage.model_dump()
                 break
             except Exception as e:                 # no answer received: ask again
                 if i == 5:
@@ -82,25 +112,26 @@ def run(model, effort, which, workers=4):
         with open(os.path.join(out, f"{v}_ids.csv"), "w", newline="", encoding="utf-8") as f:
             csv.writer(f).writerows([("passage_id", "unit_id")] + list(zip(ids, us)))
         with open(os.path.join(out, f"{v}.txt"), "w", encoding="utf-8") as f:
-            f.write(r.choices[0].message.content or "")
-        usage = r.usage.model_dump()
-        json.dump(dict(model=r.model, effort=effort, finish_reason=r.choices[0].finish_reason, usage=usage),
+            f.write(content or "")
+        json.dump(dict(model=served, effort=None if local else effort, finish_reason=finish, usage=usage,
+                       **(dict(temperature=0, seed=0, num_ctx=NUM_CTX) if local else {})),
                   open(os.path.join(out, f"{v}_usage.json"), "w"), indent=1)
-        return v, r.model, r.choices[0].finish_reason, usage["prompt_tokens"], usage["completion_tokens"]
+        print(f"  {v:22} {served}  finish {finish:7} in {usage['prompt_tokens']:>7}  out "
+              f"{usage['completion_tokens']:>6}" + (f"  {usage['seconds']}s" if local else ""), flush=True)
+        return v, served, finish, usage["prompt_tokens"], usage["completion_tokens"]
 
     with ThreadPoolExecutor(workers) as ex:
         res = [x for x in ex.map(one, todo) if x]
     tin = sum(x[3] for x in res)
     tout = sum(x[4] for x in res)
-    for v, m, fr, a, b in res:
-        print(f"  {v:22} {m}  finish {fr:7} in {a:>7}  out {b:>6}")
     print(f"  total: {len(res)} answered, {tin} input + {tout} output tokens "
-          f"= ${tin / 1e6 * PRICE[0] + tout / 1e6 * PRICE[1]:.3f} at ${PRICE[0]}/${PRICE[1]} per 1M")
+          + ("(local, $0)" if local else
+             f"= ${tin / 1e6 * PRICE[0] + tout / 1e6 * PRICE[1]:.3f} at ${PRICE[0]}/${PRICE[1]} per 1M"))
 
 
 def load_answers(model):
     lectures, _, _ = load_gold()
-    out = os.path.join(REVIEW, model)
+    out = os.path.join(REVIEW, folder(model))
     pred, problems = {}, {}
     for v in all_lectures():
         path = os.path.join(out, f"{v}.txt")
@@ -122,7 +153,7 @@ def score(model):
     lectures, gold, _ = load_gold()
     pred, problems = load_answers(model)
     vids_all = [v for v in all_lectures() if v in problems]
-    with open(os.path.join(HERE, "results", f"llm_e2e_{model}.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(os.path.join(HERE, "results", f"llm_e2e_{folder(model)}.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["unit_id", "video_file", "refs"])
         for v in vids_all:
@@ -160,12 +191,16 @@ def score(model):
     n_out = sum(p["outside_ch2"] for p in problems.values())
     tin = tout = 0
     for v in vids_all:
-        u_ = json.load(open(os.path.join(REVIEW, model, f"{v}_usage.json")))["usage"]
+        u_ = json.load(open(os.path.join(REVIEW, folder(model), f"{v}_usage.json")))["usage"]
         tin, tout = tin + u_["prompt_tokens"], tout + u_["completion_tokens"]
-    lines = [f"Phase 3 — {model} end to end (reasoning effort low), {len(vids_all)} lectures, one call each",
+    local = model.startswith("ollama:")
+    lines = [f"Phase 3 — {model} end to end ("
+             + (f"temperature 0, seed 0, num_ctx {NUM_CTX}" if local else "reasoning effort low")
+             + f"), {len(vids_all)} lectures, one call each",
              f"parsing: {n_missing} passage(s) missing (scored as NONE), {n_bad} unparsed line(s), "
              f"{n_out} verse(s) outside 2.1-2.72; tokens {tin} in + {tout} out "
-             f"= ${tin / 1e6 * PRICE[0] + tout / 1e6 * PRICE[1]:.3f} at ${PRICE[0]}/${PRICE[1]} per 1M"]
+             + ("(local, $0)" if local else
+                f"= ${tin / 1e6 * PRICE[0] + tout / 1e6 * PRICE[1]:.3f} at ${PRICE[0]}/${PRICE[1]} per 1M")]
     for gname, vs in groups:
         units = [u for v in vs for u in lectures[v]]
         lines += ["", f"{gname}   lectures {len(vs)}   passages {len(units)}   no-verse "
@@ -186,7 +221,7 @@ def score(model):
                          f"{f'{w}/{t}/{lo}':>13} {p:>7.3f}")
     text = "\n".join(lines)
     print(text)
-    open(os.path.join(HERE, "results", f"llm_e2e_{model}.txt"), "w").write(text + "\n")
+    open(os.path.join(HERE, "results", f"llm_e2e_{folder(model)}.txt"), "w").write(text + "\n")
 
 
 def main():
