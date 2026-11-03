@@ -27,6 +27,7 @@ Writes results/exp_e1_iaa.txt.
 Usage:
     python scripts/exp_e1_iaa.py
     python scripts/exp_e1_iaa.py --second-pass data/annotations_iaa
+    python scripts/exp_e1_iaa.py --second-pass data/annotations_iaa_random --out results/exp_e1_iaa_random.txt
 """
 import argparse
 import glob
@@ -82,6 +83,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--spans", default=DEFAULT_SPANS)
     ap.add_argument("--second-pass", default=os.path.join(HERE, "data", "annotations_iaa"))
+    ap.add_argument("--out", default=OUT, help="report file (E1b random sample: results/exp_e1_iaa_random.txt)")
     args = ap.parse_args()
 
     files = sorted(glob.glob(os.path.join(args.second_pass, "*.csv")))
@@ -122,9 +124,9 @@ def main():
                      f"{fmt(ks[2][0]):>12}   {f[0]:>9.3f} {f[1]:>7.3f} {f[2]:>9.3f}   {ks[0][1]:.3f}")
     text = "\n".join(lines)
     print(text)
-    with open(OUT, "w", encoding="utf-8") as fh:
+    with open(args.out, "w", encoding="utf-8") as fh:
         fh.write(text + "\n")
-    print(f"\n  wrote -> {os.path.relpath(OUT, HERE)}")
+    print(f"\n  wrote -> {os.path.relpath(args.out, HERE)}")
 
 
 if __name__ == "__main__":

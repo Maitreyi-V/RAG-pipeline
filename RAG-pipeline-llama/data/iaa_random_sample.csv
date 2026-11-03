@@ -1,0 +1,101 @@
+unit_id,video_file,language,unit_index,first_annotator,second_annotator
+kn_gita-2nd_video_0002,gita-2nd_video,kn,2,Maitreyi,Meghana S
+kn_gita-2nd_video_0011,gita-2nd_video,kn,11,Maitreyi,Prerana
+kn_gita-3rd_video_0000,gita-3rd_video,kn,0,Maitreyi,Meghana S
+kn_gita-3rd_video_0004,gita-3rd_video,kn,4,Maitreyi,Prerana
+kn_gita-3rd_video_0008,gita-3rd_video,kn,8,Maitreyi,Meghana S
+kn_gita-6th_video_0014,gita-6th_video,kn,14,Expert (father),Maitreyi
+kn_kannada_07_0001,kannada_07,kn,1,Prerana,Maitreyi
+kn_kannada_08_0011,kannada_08,kn,11,Prerana,Maitreyi
+kn_kannada_10_0000,kannada_10,kn,0,Prerana,Maitreyi
+kn_kannada_13_0009,kannada_13,kn,9,Meghana S,Prerana
+kn_kannada_14_0008,kannada_14,kn,8,Meghana S,Prerana
+kn_kannada_14_0013,kannada_14,kn,13,Meghana S,Maitreyi
+kn_kannada_17_0005,kannada_17,kn,5,Meghana S,Prerana
+kn_kannada_17_0011,kannada_17,kn,11,Meghana S,Maitreyi
+kn_kannada_18_0002,kannada_18,kn,2,Meghana S,Prerana
+kn_kannada_19_0007,kannada_19,kn,7,Expert (father),Meghana S
+kn_kannada_19_0011,kannada_19,kn,11,Expert (father),Meghana S
+kn_kannada_20_0002,kannada_20,kn,2,Expert (father),Meghana S
+kn_kannada_20_0009,kannada_20,kn,9,Expert (father),Maitreyi
+kn_kannada_21_0001,kannada_21,kn,1,Maitreyi,Meghana S
+kn_kannada_21_0008,kannada_21,kn,8,Maitreyi,Prerana
+kn_kannada_21_0012,kannada_21,kn,12,Maitreyi,Meghana S
+kn_kannada_23_0012,kannada_23,kn,12,Maitreyi,Prerana
+kn_kannada_24_0011,kannada_24,kn,11,Maitreyi,Meghana S
+kn_kannada_25_0002,kannada_25,kn,2,Maitreyi,Prerana
+kn_kannada_27_0000,kannada_27,kn,0,Maitreyi,Meghana S
+kn_kannada_27_0010,kannada_27,kn,10,Maitreyi,Prerana
+kn_kannada_28_0005,kannada_28,kn,5,Maitreyi,Meghana S
+kn_kannada_28_0007,kannada_28,kn,7,Maitreyi,Prerana
+kn_kannada_28_0009,kannada_28,kn,9,Maitreyi,Meghana S
+kn_kannada_29_0002,kannada_29,kn,2,Maitreyi,Prerana
+kn_brahmanyachar_day02b_0021,kn_brahmanyachar_day02b,kn,21,Maitreyi,Meghana S
+kn_brahmanyachar_day02b_0025,kn_brahmanyachar_day02b,kn,25,Maitreyi,Prerana
+kn_sumith_day01_0005,kn_sumith_day01,kn,5,Maitreyi,Meghana S
+kn_sumith_day01_0006,kn_sumith_day01,kn,6,Maitreyi,Prerana
+kn_sumith_day03_0000,kn_sumith_day03,kn,0,Maitreyi,Meghana S
+kn_sumith_day03_0009,kn_sumith_day03,kn,9,Maitreyi,Prerana
+kn_sumith_day04_0009,kn_sumith_day04,kn,9,Maitreyi,Meghana S
+kn_sumith_day06_0001,kn_sumith_day06,kn,1,Maitreyi,Prerana
+kn_sumith_day06_0003,kn_sumith_day06,kn,3,Maitreyi,Meghana S
+en_chinmaya_day03_0050,en_chinmaya_day03,en,50,Maitreyi,Prerana
+en_chinmaya_day03_0051,en_chinmaya_day03,en,51,Maitreyi,Meghana S
+en_chinmaya_day04_0069,en_chinmaya_day04,en,69,Maitreyi,Prerana
+en_iskcon_0099,en_iskcon,en,99,Maitreyi,Meghana S
+en_iskcon_0126,en_iskcon,en,126,Maitreyi,Prerana
+en_iskcon_0128,en_iskcon,en,128,Maitreyi,Meghana S
+en_iskcon_0153,en_iskcon,en,153,Maitreyi,Prerana
+en_iskcon_0181,en_iskcon,en,181,Maitreyi,Meghana S
+en_iskcon_0192,en_iskcon,en,192,Maitreyi,Prerana
+en_iskcon_0207,en_iskcon,en,207,Maitreyi,Meghana S
+en_video_01_0016,video_01,en,16,Maitreyi,Prerana
+en_video_01_0019,video_01,en,19,Maitreyi,Meghana S
+en_video_02_0070,video_02,en,70,Meghana S,Maitreyi
+en_video_03_0017,video_03,en,17,Prerana,Maitreyi
+en_video_03_0026,video_03,en,26,Prerana,Maitreyi
+en_video_03_0072,video_03,en,72,Prerana,Maitreyi
+en_video_03_0073,video_03,en,73,Prerana,Maitreyi
+en_video_04_0000,video_04,en,0,Prerana,Maitreyi
+en_video_04_0060,video_04,en,60,Prerana,Maitreyi
+en_video_04_0069,video_04,en,69,Prerana,Maitreyi
+en_video_04_0101,video_04,en,101,Prerana,Maitreyi
+en_video_04_0103,video_04,en,103,Prerana,Maitreyi
+en_video_05_0007,video_05,en,7,Prerana,Maitreyi
+en_video_05_0061,video_05,en,61,Prerana,Maitreyi
+en_video_05_0076,video_05,en,76,Prerana,Maitreyi
+en_video_05_0094,video_05,en,94,Prerana,Maitreyi
+en_video_06_0005,video_06,en,5,Maitreyi,Prerana
+en_video_06_0016,video_06,en,16,Maitreyi,Meghana S
+en_video_06_0031,video_06,en,31,Maitreyi,Prerana
+en_video_06_0074,video_06,en,74,Maitreyi,Meghana S
+en_video_06_0076,video_06,en,76,Maitreyi,Prerana
+en_video_06_0077,video_06,en,77,Maitreyi,Meghana S
+en_video_06_0084,video_06,en,84,Maitreyi,Prerana
+en_video_07_0017,video_07,en,17,Maitreyi,Meghana S
+en_video_07_0021,video_07,en,21,Maitreyi,Prerana
+en_video_07_0028,video_07,en,28,Maitreyi,Meghana S
+en_video_07_0036,video_07,en,36,Maitreyi,Prerana
+en_video_07_0092,video_07,en,92,Maitreyi,Meghana S
+en_video_07_0093,video_07,en,93,Maitreyi,Prerana
+en_video_08_0004,video_08,en,4,Meghana S,Maitreyi
+en_video_08_0021,video_08,en,21,Meghana S,Maitreyi
+en_video_08_0022,video_08,en,22,Meghana S,Maitreyi
+en_video_08_0041,video_08,en,41,Meghana S,Maitreyi
+en_video_08_0047,video_08,en,47,Meghana S,Maitreyi
+en_video_08_0065,video_08,en,65,Meghana S,Maitreyi
+en_video_08_0080,video_08,en,80,Meghana S,Maitreyi
+en_video_09_0051,video_09,en,51,Meghana S,Maitreyi
+en_video_09_0064,video_09,en,64,Meghana S,Maitreyi
+en_video_09_0065,video_09,en,65,Meghana S,Prerana
+en_video_09_0074,video_09,en,74,Meghana S,Maitreyi
+en_video_09_0085,video_09,en,85,Meghana S,Prerana
+en_video_09_0088,video_09,en,88,Meghana S,Maitreyi
+en_video_10_0013,video_10,en,13,Maitreyi,Meghana S
+en_video_10_0029,video_10,en,29,Maitreyi,Meghana S
+en_video_10_0047,video_10,en,47,Maitreyi,Meghana S
+en_video_10_0053,video_10,en,53,Maitreyi,Prerana
+en_video_10_0058,video_10,en,58,Maitreyi,Meghana S
+en_video_10_0067,video_10,en,67,Maitreyi,Prerana
+en_video_10_0090,video_10,en,90,Maitreyi,Meghana S
+en_video_10_0094,video_10,en,94,Maitreyi,Prerana
