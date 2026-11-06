@@ -24,6 +24,7 @@ Files contain transcript text, so they live outside the repo:
 Usage:
     python scripts/llm_frontier.py prepare
     python scripts/llm_frontier.py score
+    python scripts/llm_frontier.py score --model gemini31pro   # answers_gemini31pro/, Opus as extra row
 """
 import argparse
 import csv
@@ -43,6 +44,10 @@ from llm_pilot import catalogue  # noqa: E402
 DIR = "/Users/maitreyi/Documents/Capstone/review/llm_frontier"
 ANSWERS = os.path.join(DIR, "answers")
 NAME = "Claude Opus 5.5 (chat, high) end-to-end"
+# score --model: answers folder, row name, output stem (opus55 = the pre-registered 42-lecture run)
+MODELS = {"opus55": (ANSWERS, NAME, "llm_frontier_opus55"),
+          "gemini31pro": (os.path.join(DIR, "answers_gemini31pro"), "Gemini 3.1 Pro (AI Studio) end-to-end",
+                          "llm_frontier_gemini31pro")}
 FORMAT_CHECK = "kannada_10"
 
 INSTRUCTIONS = """Follow these instructions exactly. Do not ask questions, do not summarise, do not add commentary before or after the output, and do not request the lecture in parts. Your entire reply must be the single code block described under OUTPUT FORMAT.
@@ -117,25 +122,30 @@ def parse(path, ids):
     return pred, dict(unparsed=bad, missing=missing, outside_ch2=outside)
 
 
-def score():
+def score(model="opus55"):
     from baselines import carry
     from freeze_grounding import (f1_near, f1_strict, near_counts, paired, strict_counts, theme_counts,
                                   with_ci)
     from step4_viterbi import FEATS, OFF, OUT, predict_locked
     lectures, gold, _ = load_gold()
-    pred, problems = {}, {}
-    for v in all_lectures():
-        path = os.path.join(ANSWERS, f"{v}.txt")
-        if not os.path.exists(path):
-            continue
-        ids = [(r["passage_id"], r["unit_id"]) for r in load_csv(os.path.join(DIR, f"{v}_ids.csv"))]
-        p, problems[v] = parse(path, ids)
-        for u in lectures[v]:
-            pred[u] = p.get(u, [])                       # missing passage = NONE
+    answers, me, stem = MODELS[model]
+
+    def read_answers(folder, only=None):
+        pred, problems = {}, {}
+        for v in all_lectures():
+            path = os.path.join(folder, f"{v}.txt")
+            if not os.path.exists(path) or (only is not None and v not in only):
+                continue
+            ids = [(r["passage_id"], r["unit_id"]) for r in load_csv(os.path.join(DIR, f"{v}_ids.csv"))]
+            p, problems[v] = parse(path, ids)
+            for u in lectures[v]:
+                pred[u] = p.get(u, [])                   # missing passage = NONE
+        return pred, problems
+    pred, problems = read_answers(answers)
     vids = [v for v in all_lectures() if v in problems]
     if not vids:
-        sys.exit(f"no answers in {ANSWERS} yet")
-    with open(os.path.join(HERE, "results", "llm_frontier_opus55.csv"), "w", newline="", encoding="utf-8") as f:
+        sys.exit(f"no answers in {answers} yet")
+    with open(os.path.join(HERE, "results", f"{stem}.csv"), "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["unit_id", "video_file", "refs"])
         for v in vids:
@@ -150,7 +160,10 @@ def score():
         dec = predict_locked({v: lectures[v] for v in vids}, "a05", path=path)
         return {u: ([] if st == OFF else [refs[st]]) + [refs[j] for j in extra]
                 for v in vids for u, (st, extra, _, _) in zip(lectures[v], dec[v])}
-    systems = {NAME: pred, "GitaGround-Cue": decoded(os.path.join(HERE, "results", "v2_teacher145.pkl")),
+    systems = {me: pred}
+    if model != "opus55":                                # same lectures, Opus 5.5 answers as a comparison row
+        systems[NAME] = read_answers(ANSWERS, set(vids))[0]
+    systems |= {"GitaGround-Cue": decoded(os.path.join(HERE, "results", "v2_teacher145.pkl")),
                "GitaGround-Local": decoded(OUT), "Plain Carry": {}}
     for v in vids:
         systems["Plain Carry"].update(carry(lectures[v], anchors))
@@ -167,7 +180,7 @@ def score():
                 groups.append((f"E3 new {lname} (pooled)", vs))
             else:
                 groups.append((f"E2 {lname} test", vs))
-    lines = [f"Phase 3 — {NAME}, {len(vids)} of 42 lectures answered",
+    lines = [f"Phase 3 — {me}, {len(vids)} of 42 lectures answered",
              "parsing: " + f"{sum(len(p['missing']) for p in problems.values())} passage(s) missing (scored as NONE), "
              f"{sum(len(p['unparsed']) for p in problems.values())} unparsed line(s), "
              f"{sum(p['outside_ch2'] for p in problems.values())} verse(s) outside 2.1-2.72"]
@@ -185,19 +198,22 @@ def score():
             lines.append(f"  {name:42} {cells[0]:22} {cells[1]:22} {cells[2]:22}")
         lines.append(f"  paired, strict F1 (A - B), 10000 resamples:  {'diff':>7} {'95% CI':>17} "
                      f"{'win/tie/loss':>13}")
-        for b in ("GitaGround-Cue", "Plain Carry"):
-            d, ci, _, (w, t, lo), _ = paired(gold, lectures, systems[NAME], systems[b], vs, 10000)
-            lines.append(f"    Opus 5.5 - {b:30} {d:>+7.3f} [{ci[0]:+.3f},{ci[1]:+.3f}] {f'{w}/{t}/{lo}':>13}")
+        short = me.split(" (")[0]
+        for b in [s for s in systems if s not in (me, "GitaGround-Local")]:
+            d, ci, _, (w, t, lo), _ = paired(gold, lectures, systems[me], systems[b], vs, 10000)
+            lines.append(f"    {short + ' - ' + b.split(' (')[0]:41} {d:>+7.3f} [{ci[0]:+.3f},{ci[1]:+.3f}] "
+                         f"{f'{w}/{t}/{lo}':>13}")
     text = "\n".join(lines)
     print(text)
-    open(os.path.join(HERE, "results", "llm_frontier_opus55.txt"), "w").write(text + "\n")
+    open(os.path.join(HERE, "results", f"{stem}.txt"), "w").write(text + "\n")
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("step", choices=["prepare", "score"])
+    ap.add_argument("--model", choices=sorted(MODELS), default="opus55", help="score: whose answers")
     args = ap.parse_args()
-    prepare() if args.step == "prepare" else score()
+    prepare() if args.step == "prepare" else score(args.model)
 
 
 if __name__ == "__main__":
