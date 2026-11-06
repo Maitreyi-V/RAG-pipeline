@@ -27,6 +27,7 @@ Parsed labels (no transcript text): results/llm_e2e_<model>.csv
 Usage:
     python scripts/llm_e2e.py run --lectures dryrun
     python scripts/llm_e2e.py run --lectures all
+    python scripts/llm_e2e.py run --lectures dev    # 9 tuning lectures (features for the v3 hybrid)
     python scripts/llm_e2e.py score
 """
 import argparse
@@ -84,7 +85,8 @@ def run(model, effort, which, workers=4):
     cat = catalogue()
     out = os.path.join(REVIEW, folder(model))
     os.makedirs(out, exist_ok=True)
-    vids = DRYRUN if which == "dryrun" else all_lectures()
+    vids = (DRYRUN if which == "dryrun" else all_lectures() if which == "all"
+            else [v for L in ("kn", "en") for v in read_split(L, "dev")])
     todo = [v for v in vids if not os.path.exists(os.path.join(out, f"{v}.txt"))]
     print(f"  {len(todo)} lecture(s) to send ({len(vids) - len(todo)} already answered) to {model}, effort {effort}")
 
@@ -229,7 +231,7 @@ def main():
     ap.add_argument("step", choices=["run", "score"])
     ap.add_argument("--model", default="gpt-5-mini")
     ap.add_argument("--effort", default="low")
-    ap.add_argument("--lectures", choices=["dryrun", "all"], default="dryrun")
+    ap.add_argument("--lectures", choices=["dryrun", "all", "dev"], default="dryrun")
     args = ap.parse_args()
     if args.step == "run":
         run(args.model, args.effort, args.lectures)

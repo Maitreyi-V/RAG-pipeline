@@ -23,6 +23,7 @@ Files contain transcript text, so they live outside the repo:
 
 Usage:
     python scripts/llm_frontier.py prepare
+    python scripts/llm_frontier.py prepare-tuning   # 9 tuning lectures -> review/llm_frontier/tuning/
     python scripts/llm_frontier.py score
     python scripts/llm_frontier.py score --model gemini31pro   # answers_gemini31pro/, Opus as extra row
 """
@@ -43,6 +44,7 @@ from llm_pilot import catalogue  # noqa: E402
 
 DIR = "/Users/maitreyi/Documents/Capstone/review/llm_frontier"
 ANSWERS = os.path.join(DIR, "answers")
+TUNING_DIR = os.path.join(DIR, "tuning")              # 9 tuning lectures, v3 hybrid votes
 NAME = "Claude Opus 5.5 (chat, high) end-to-end"
 # score --model: answers folder, row name, output stem (opus55 = the pre-registered 42-lecture run)
 MODELS = {"opus55": (ANSWERS, NAME, "llm_frontier_opus55"),
@@ -70,28 +72,32 @@ One code block. One line per passage:
 """
 
 
-def prepare():
-    os.makedirs(ANSWERS, exist_ok=True)
+def prepare(tuning=False):
+    """tuning=True: the 9 TUNING lectures (votes for the v3 hybrid), same instructions and
+    catalogue, into TUNING_DIR (answers in TUNING_DIR/answers/)"""
+    d = TUNING_DIR if tuning else DIR
+    os.makedirs(os.path.join(d, "answers") if tuning else ANSWERS, exist_ok=True)
     lectures, _, _ = load_gold()
     units = {u["unit_id"]: u for u in load_csv(UNITS) + load_csv(UNITS_HELDOUT)}
     cat = catalogue()
-    order = [FORMAT_CHECK] + all_lectures()
+    order = ([v for L in ("kn", "en") for v in read_split(L, "dev")] if tuning
+             else [FORMAT_CHECK] + all_lectures())
     lines = []
     for n, v in enumerate(order):
         us = lectures[v]
         ids = [f"P{k + 1:03d}" for k in range(len(us))]
         lang = units[us[0]]["language"].upper()
         body = "\n\n".join(f"{i}: {units[u]['text']}" for i, u in zip(ids, us))
-        tag = "00_FORMAT_CHECK" if v == FORMAT_CHECK else f"{n:02d}"
-        with open(os.path.join(DIR, f"{tag}_{v}_PASTE_THIS.txt"), "w", encoding="utf-8") as f:
+        tag = f"T{n + 1}" if tuning else "00_FORMAT_CHECK" if v == FORMAT_CHECK else f"{n:02d}"
+        with open(os.path.join(d, f"{tag}_{v}_PASTE_THIS.txt"), "w", encoding="utf-8") as f:
             f.write(INSTRUCTIONS + "\n" + cat + f"\n\nLECTURE: {v}, {len(us)} passages, language {lang}\n\n"
                     + body + "\n")
-        with open(os.path.join(DIR, f"{v}_ids.csv"), "w", newline="", encoding="utf-8") as f:
+        with open(os.path.join(d, f"{v}_ids.csv"), "w", newline="", encoding="utf-8") as f:
             csv.writer(f).writerows([("passage_id", "unit_id")] + list(zip(ids, us)))
         lines.append(f"{tag}\t{v}\t{lang}\t{len(us)} passages\tsave answer as answers/{v}.txt")
-    with open(os.path.join(DIR, "ORDER.txt"), "w", encoding="utf-8") as f:
+    with open(os.path.join(d, "ORDER.txt"), "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
-    print(f"  wrote {len(order)} paste files (1 format check + {len(order) - 1} lectures) to {DIR}")
+    print(f"  wrote {len(order)} paste files to {d}")
 
 
 def parse(path, ids):
@@ -210,10 +216,13 @@ def score(model="opus55"):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("step", choices=["prepare", "score"])
+    ap.add_argument("step", choices=["prepare", "prepare-tuning", "score"])
     ap.add_argument("--model", choices=sorted(MODELS), default="opus55", help="score: whose answers")
     args = ap.parse_args()
-    prepare() if args.step == "prepare" else score(args.model)
+    if args.step == "score":
+        score(args.model)
+    else:
+        prepare(tuning=args.step == "prepare-tuning")
 
 
 if __name__ == "__main__":

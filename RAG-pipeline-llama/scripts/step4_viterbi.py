@@ -41,6 +41,7 @@ Usage:
     python scripts/step4_viterbi.py
 """
 import itertools
+import math
 import os
 import pickle
 import sys
@@ -61,6 +62,7 @@ GAMMAS = [0.25, 0.5, 1, 2, 4]
 BETAS = [-5, -4, -3, -2, -1, 0, 1, 2, 3]
 DELTAS = [0, 1, 2, 4]
 TAUS = [0.3, 0.5, 0.7, 0.9, 1.01]          # 1.01 = never add a second verse
+LAMBDAS = [0, 0.5, 1, 2, 4, 8, 16]              # weight of an external verse vote (verse_bonus); 0 = ignore it
 
 
 def near_f1(gold, pred, lectures, vids, k=1):
@@ -92,6 +94,19 @@ def carried_cos(F, row, refs, us, a, key="cos"):
                          default=0.0) for u in us])
 
 
+def bonus_share(pv, us, bonus, lam):
+    """multiply the verse-scorer value of each externally voted verse by e^lam (bonus:
+    {unit_id: [verse index]}). With decoupled emissions the total verse mass stays
+    1 - P_off, but the voted verse's emission gets more peaked, so the Viterbi path can
+    also switch from off-verse to that verse (measured on tuning: more off-verse
+    passages labelled)"""
+    w = np.ones_like(pv)
+    for k, u in enumerate(us):
+        for j in bonus.get(u, ()):
+            w[k, j] = math.exp(lam)
+    return pv * w
+
+
 def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
     """Apply the saved LOCKED Step 4 system (no gold labels used).
 
@@ -114,6 +129,9 @@ def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
         rows = [row[u] for u in us]
         pv = m["verse_model"].predict_proba(verse_X(F, rows, alpha, m["verse_cols"]))[:, 1]
         pv = pv.reshape(len(rows), V)
+        pv_raw = pv
+        if m.get("llm_bonus") is not None and m.get("llm_lambda"):
+            pv = bonus_share(pv, us, m["llm_bonus"], m["llm_lambda"])
         Xo = off_X(F, rows, alpha)[:, m.get("keep_off", list(range(len(OFF_NAMES))))]
         if m["off_active"]:
             Xo = np.column_stack([Xo, carried_cos(F, row, refs, us, alpha)])
@@ -134,7 +152,7 @@ def predict_locked(lecture_units, alpha="a05", path=OUT, model=None):
         else:
             states = viterbi(emit, m["logA"], m["gamma"], m["delta"], F["anchor"][rows])
         p_all = np.column_stack([e, po])
-        out[v] = [(s_, [j for j in np.flatnonzero(pv[k] >= m["tau"]) if j != s_],
+        out[v] = [(s_, [j for j in np.flatnonzero(pv_raw[k] >= m["tau"]) if j != s_],
                 float(p_all[k, s_]), float(po[k]))
                 for k, s_ in enumerate(states)]
     return out
@@ -392,7 +410,7 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
         decouple=True, off_active=True, save=None,
         drop_verse=(), drop_off=(), off_after_anchor=True,
         resume=False, held_z=False, info=None, off_override=None,
-        off_extra=None, adapt=False):
+        off_extra=None, adapt=False, verse_bonus=None):
     """LOLO on the tuning lectures -> (systems, gold, lectures, tune).
 
     use_last   : add the 2C feature `last` to the verse scorer
@@ -419,6 +437,9 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
     adapt      : per-lecture adaptation of stay probability and off-verse rate
                  (adapt_counts); the prior strength kappa is chosen from KAPPAS
                  with gamma, beta_off and tau
+    verse_bonus : optional {unit_id: [verse index]}, an external verse vote (e.g. an LLM's
+                 end-to-end labels); its weight lambda is chosen from LAMBDAS with gamma,
+                 beta_off and tau (bonus_share)
     The defaults are the LOCKED Step 4 system (16 Oct 2026).
     """
     trans = transitions_resume if resume else transitions
@@ -474,8 +495,10 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
             out[v] = (pv.reshape(len(rows[v]), V), po)
         return out
 
-    def decode(v, probs, logA, gamma, beta, delta):
+    def decode(v, probs, logA, gamma, beta, delta, lam=0):
         pv, po = probs[v]
+        if lam:
+            pv = bonus_share(pv, lectures[v], verse_bonus, lam)
         if decouple:
             pv = (1 - po)[:, None] * pv / pv.sum(1, keepdims=True)
         emit = np.log(np.clip(np.column_stack([pv, po]), 1e-12, 1))
@@ -513,21 +536,22 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
         return build(adapt_counts(c, len(po), float(po.sum()), changes, kappa))
 
     def choose(train, probs, c):
-        """(gamma, beta, delta, tau, kappa) maximising macro F1 over the train lectures"""
+        """(gamma, beta, delta, tau, kappa, lam) maximising macro F1 over the train lectures"""
         best = None
         for kappa in (KAPPAS if adapt else [float("inf")]):
             mats = {w: lecture_logA(w, probs, c, kappa) for w in train}
-            for gamma, beta, delta in itertools.product(GAMMAS, BETAS, deltas):
-                paths = {w: decode(w, probs, mats[w], gamma, beta, delta) for w in train}
+            for gamma, beta, delta, lam in itertools.product(GAMMAS, BETAS, deltas, lams):
+                paths = {w: decode(w, probs, mats[w], gamma, beta, delta, lam) for w in train}
                 for tau in TAUS:
                     p = {}
                     for w in train:
                         p.update(to_pred(w, probs, paths[w], tau))
                     m = macro(p, train)
                     if best is None or m > best[0]:
-                        best = (m, gamma, beta, delta, tau, kappa)
+                        best = (m, gamma, beta, delta, tau, kappa, lam)
         return best[1:]
 
+    lams = LAMBDAS if verse_bonus is not None else [0]
     results, final = {}, {}
     for a in alphas:
         probs = lolo_probs(a)
@@ -535,15 +559,15 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
         for held in lang_of:
             train = [w for w in lang_of if w != held]
             _, c = trans([seq[w] for w in train])
-            gamma, beta, delta, tau, kappa = choose(train, probs, c)
-            chosen.append((held, gamma, beta, delta, tau))
+            gamma, beta, delta, tau, kappa, lam = choose(train, probs, c)
+            chosen.append((held, gamma, beta, delta, tau, lam))
             kappas[held] = kappa
             pred.update(to_pred(held, probs, decode(held, probs, lecture_logA(held, probs, c, kappa),
-                                                    gamma, beta, delta), tau))
+                                                    gamma, beta, delta, lam), tau))
         if save:
             allv = list(lang_of)
             logA, counts = trans([seq[w] for w in allv])
-            gamma, beta, delta, tau, kappa = choose(allv, probs, counts)
+            gamma, beta, delta, tau, kappa, lam = choose(allv, probs, counts)
             final[a] = dict(
                 verse_cols=cols, decouple=decouple, off_active=off_active,
                 resume=resume, held_z=held_z, keep_off=keep_off,
@@ -553,9 +577,10 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
                 off_model=model().fit(np.concatenate([oX(w, a) for w in allv]),
                                     np.concatenate([(Y[w].sum(1) == 0).astype(int) for w in allv])),
                 logA=logA, counts=counts, gamma=gamma, beta=beta, delta=delta, tau=tau, kappa=kappa,
-                p_off=off_override, off_extra=off_extra,
+                p_off=off_override, off_extra=off_extra, llm_bonus=verse_bonus, llm_lambda=lam,
                 trained_on=allv)
-            print(f"  FINAL alpha {a}: gamma={gamma} beta_off={beta} delta={delta} tau={tau}")
+            print(f"  FINAL alpha {a}: gamma={gamma} beta_off={beta} delta={delta} tau={tau}"
+                  + (f" lambda={lam}" if verse_bonus is not None else ""))
         results[f"Viterbi (alpha {'0.5' if a == 'a05' else '0'})"] = pred
         if a == "a05":
             scorer = {}
@@ -566,9 +591,10 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
             results["scorer alone (alpha 0.5)"] = scorer
         if verbose:
             print(f"  chosen settings per held-out lecture, alpha {a}, last={use_last}:")
-            for held, g, b, d, t in chosen:
+            for held, g, b, d, t, lm in chosen:
                 print(f"    {held:18} gamma={g:<5} beta_off={b:<3} delta={d:<2} tau={t}"
-                      + (f" kappa={kappas[held]}" if adapt else ""))
+                      + (f" kappa={kappas[held]}" if adapt else "")
+                      + (f" lambda={lm}" if verse_bonus is not None else ""))
 
     anchors = {u: [refs[j] for j in np.flatnonzero(F["anchor"][row[u]])]
             for v in lang_of for u in lectures[v]}
