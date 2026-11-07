@@ -1,0 +1,98 @@
+Phase 3 — GPT-6.1 Sol (API, high) end-to-end, 42 of 42 lectures answered
+parsing: 0 passage(s) missing (scored as NONE), 21 unparsed line(s), 0 verse(s) outside 2.1-2.72
+
+E2 Kannada test   lectures 23   passages 340   no-verse 23
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.934 [0.917,0.953]    0.969 [0.959,0.980]    0.970 [0.956,0.984]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.911 [0.891,0.932]    0.964 [0.947,0.980]    0.963 [0.946,0.979]   
+  GitaGround-Cue                             0.820 [0.767,0.867]    0.899 [0.840,0.945]    0.904 [0.837,0.951]   
+  GitaGround-Local                           0.817 [0.763,0.863]    0.894 [0.835,0.941]    0.899 [0.833,0.944]   
+  Plain Carry                                0.789 [0.738,0.832]    0.851 [0.795,0.896]    0.857 [0.793,0.909]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.023 [+0.008,+0.039]        13/5/5
+    GPT-6.1 Sol - GitaGround-Cue               +0.114 [+0.063,+0.172]        18/2/3
+    GPT-6.1 Sol - Plain Carry                  +0.145 [+0.101,+0.199]        22/0/1
+
+E2 English test   lectures 7   passages 676   no-verse 336
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.792 [0.715,0.865]    0.823 [0.754,0.880]    0.824 [0.760,0.880]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.758 [0.686,0.833]    0.805 [0.743,0.866]    0.807 [0.743,0.879]   
+  GitaGround-Cue                             0.631 [0.501,0.731]    0.729 [0.665,0.785]    0.750 [0.695,0.797]   
+  GitaGround-Local                           0.600 [0.482,0.692]    0.680 [0.615,0.728]    0.684 [0.626,0.728]   
+  Plain Carry                                0.395 [0.264,0.577]    0.477 [0.375,0.621]    0.575 [0.479,0.659]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.034 [+0.016,+0.055]         6/0/1
+    GPT-6.1 Sol - GitaGround-Cue               +0.161 [+0.006,+0.353]         5/0/2
+    GPT-6.1 Sol - Plain Carry                  +0.397 [+0.184,+0.571]         7/0/0
+
+E3 Kannada: Sumith   lectures 8   passages 88   no-verse 4
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.944 [0.916,0.975]    0.963 [0.932,0.986]    0.970 [0.955,0.986]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.900 [0.824,0.962]    0.968 [0.916,1.000]    0.959 [0.898,1.000]   
+  GitaGround-Cue                             0.650 [0.528,0.791]    0.861 [0.767,0.958]    0.918 [0.820,0.981]   
+  GitaGround-Local                           0.703 [0.590,0.843]    0.882 [0.789,0.982]    0.938 [0.837,1.000]   
+  Plain Carry                                0.710 [0.581,0.880]    0.870 [0.763,0.984]    0.943 [0.841,0.994]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.044 [-0.006,+0.112]         3/4/1
+    GPT-6.1 Sol - GitaGround-Cue               +0.294 [+0.157,+0.415]         8/0/0
+    GPT-6.1 Sol - Plain Carry                  +0.235 [+0.070,+0.361]         7/0/1
+
+E3 Kannada: Vidwan Brahmanyacharya   lectures 1   passages 44   no-verse 0
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.905                  0.966                  0.936                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.901                  0.971                  0.956                 
+  GitaGround-Cue                             0.686                  0.847                  0.887                 
+  GitaGround-Local                           0.686                  0.847                  0.887                 
+  Plain Carry                                0.889                  0.962                  0.978                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.004 [+0.004,+0.004]         1/0/0
+    GPT-6.1 Sol - GitaGround-Cue               +0.219 [+0.219,+0.219]         1/0/0
+    GPT-6.1 Sol - Plain Carry                  +0.017 [+0.017,+0.017]         1/0/0
+
+E3 new Kannada (pooled)   lectures 9   passages 132   no-verse 4
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.929 [0.911,0.964]    0.964 [0.942,0.981]    0.958 [0.943,0.981]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.901 [0.850,0.949]    0.970 [0.933,0.996]    0.958 [0.917,0.994]   
+  GitaGround-Cue                             0.665 [0.563,0.764]    0.855 [0.787,0.934]    0.906 [0.848,0.967]   
+  GitaGround-Local                           0.696 [0.611,0.813]    0.868 [0.804,0.969]    0.919 [0.858,0.989]   
+  Plain Carry                                0.776 [0.620,0.889]    0.904 [0.793,0.977]    0.956 [0.877,0.994]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.028 [-0.002,+0.091]         4/4/1
+    GPT-6.1 Sol - GitaGround-Cue               +0.264 [+0.181,+0.384]         9/0/0
+    GPT-6.1 Sol - Plain Carry                  +0.153 [+0.039,+0.330]         8/0/1
+
+E3 English: HG Gaurmandal Das   lectures 1   passages 215   no-verse 15
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.908                  0.946                  0.943                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.873                  0.920                  0.922                 
+  GitaGround-Cue                             0.790                  0.895                  0.908                 
+  GitaGround-Local                           0.806                  0.912                  0.933                 
+  Plain Carry                                0.775                  0.873                  0.902                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.036 [+0.036,+0.036]         1/0/0
+    GPT-6.1 Sol - GitaGround-Cue               +0.118 [+0.118,+0.118]         1/0/0
+    GPT-6.1 Sol - Plain Carry                  +0.133 [+0.133,+0.133]         1/0/0
+
+E3 English: Swami Aparajitananda   lectures 2   passages 147   no-verse 1
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.913                  0.938                  0.954                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.758                  0.810                  0.806                 
+  GitaGround-Cue                             0.857                  0.919                  0.958                 
+  GitaGround-Local                           0.783                  0.896                  0.935                 
+  Plain Carry                                0.833                  0.909                  0.920                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.155 [+0.029,+0.340]         2/0/0
+    GPT-6.1 Sol - GitaGround-Cue               +0.055 [+0.014,+0.097]         2/0/0
+    GPT-6.1 Sol - Plain Carry                  +0.079 [-0.004,+0.154]         1/0/1
+
+E3 new English (pooled)   lectures 3   passages 362   no-verse 16
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  GPT-6.1 Sol (API, high) end-to-end         0.910                  0.944                  0.948                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.831                  0.882                  0.877                 
+  GitaGround-Cue                             0.814                  0.903                  0.929                 
+  GitaGround-Local                           0.798                  0.906                  0.934                 
+  Plain Carry                                0.796                  0.890                  0.909                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    GPT-6.1 Sol - Claude Opus 5.5              +0.079 [+0.029,+0.340]         3/0/0
+    GPT-6.1 Sol - GitaGround-Cue               +0.096 [+0.014,+0.118]         3/0/0
+    GPT-6.1 Sol - Plain Carry                  +0.114 [-0.004,+0.154]         2/0/1
