@@ -58,7 +58,10 @@ MODELS = {"opus55": (ANSWERS, NAME, "llm_frontier_opus55", ()),
           "gpt61sol": (os.path.join(DIR, "answers_gpt-6.1-sol"), "GPT-6.1 Sol (API, high) end-to-end",
                        "llm_frontier_gpt61sol", ("opus55",)),
           "gemini31pro42": (os.path.join(DIR, "answers_gemini31pro_42"), "Gemini 3.1 Pro (AI Studio) end-to-end",
-                            "llm_frontier_gemini31pro_42", ("opus55",))}
+                            "llm_frontier_gemini31pro_42", ("opus55",)),
+          "gemini31proapilow": (os.path.join(DIR, "answers_api_gemini-3.1-pro-preview_low"),
+                                "Gemini 3.1 Pro (API, low) end-to-end", "llm_frontier_gemini31pro_api_low",
+                                ("opus55", "gpt61sol"))}
 FORMAT_CHECK = "kannada_10"
 
 INSTRUCTIONS = """Follow these instructions exactly. Do not ask questions, do not summarise, do not add commentary before or after the output, and do not request the lecture in parts. Your entire reply must be the single code block described under OUTPUT FORMAT.
