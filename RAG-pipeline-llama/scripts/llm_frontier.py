@@ -27,6 +27,7 @@ Usage:
     python scripts/llm_frontier.py score
     python scripts/llm_frontier.py score --model gemini31pro   # answers_gemini31pro/, Opus as extra row
     python scripts/llm_frontier.py score --model gemini38flash # answers_gemini38flash/, Opus + Gemini Pro rows
+    python scripts/llm_frontier.py score --model gpt61sol      # answers_gpt-6.1-sol/ (llm_frontier_api.py), Opus row
 """
 import argparse
 import csv
@@ -47,12 +48,15 @@ DIR = "/Users/maitreyi/Documents/Capstone/review/llm_frontier"
 ANSWERS = os.path.join(DIR, "answers")
 TUNING_DIR = os.path.join(DIR, "tuning")              # 9 tuning lectures, v3 hybrid votes
 NAME = "Claude Opus 5.5 (chat, high) end-to-end"
-# score --model: answers folder, row name, output stem (opus55 = the pre-registered 42-lecture run)
-MODELS = {"opus55": (ANSWERS, NAME, "llm_frontier_opus55"),
+# score --model: answers folder, row name, output stem, LLM comparison rows (same lectures)
+# (opus55 and gpt61sol = pre-registered 42-lecture runs; gemini31pro, gemini38flash = spot checks)
+MODELS = {"opus55": (ANSWERS, NAME, "llm_frontier_opus55", ()),
           "gemini31pro": (os.path.join(DIR, "answers_gemini31pro"), "Gemini 3.1 Pro (AI Studio) end-to-end",
-                          "llm_frontier_gemini31pro"),
+                          "llm_frontier_gemini31pro", ("opus55",)),
           "gemini38flash": (os.path.join(DIR, "answers_gemini38flash"), "Gemini 3.8 Flash (AI Studio) end-to-end",
-                            "llm_frontier_gemini38flash")}
+                            "llm_frontier_gemini38flash", ("opus55", "gemini31pro")),
+          "gpt61sol": (os.path.join(DIR, "answers_gpt-6.1-sol"), "GPT-6.1 Sol (API, high) end-to-end",
+                       "llm_frontier_gpt61sol", ("opus55",))}
 FORMAT_CHECK = "kannada_10"
 
 INSTRUCTIONS = """Follow these instructions exactly. Do not ask questions, do not summarise, do not add commentary before or after the output, and do not request the lecture in parts. Your entire reply must be the single code block described under OUTPUT FORMAT.
@@ -137,7 +141,7 @@ def score(model="opus55"):
                                   with_ci)
     from step4_viterbi import FEATS, OFF, OUT, predict_locked
     lectures, gold, _ = load_gold()
-    answers, me, stem = MODELS[model]
+    answers, me, stem, compare = MODELS[model]
 
     def read_answers(folder, only=None):
         pred, problems = {}, {}
@@ -170,7 +174,7 @@ def score(model="opus55"):
         return {u: ([] if st == OFF else [refs[st]]) + [refs[j] for j in extra]
                 for v in vids for u, (st, extra, _, _) in zip(lectures[v], dec[v])}
     systems = {me: pred}
-    for k in list(MODELS)[:list(MODELS).index(model)]:   # earlier models, same lectures, as comparison rows
+    for k in compare:                                    # other LLMs, same lectures, as comparison rows
         systems[MODELS[k][1]] = read_answers(MODELS[k][0], set(vids))[0]
     systems |= {"GitaGround-Cue": decoded(os.path.join(HERE, "results", "v2_teacher145.pkl")),
                "GitaGround-Local": decoded(OUT), "Plain Carry": {}}
