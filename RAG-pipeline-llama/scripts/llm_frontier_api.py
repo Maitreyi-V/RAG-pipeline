@@ -11,6 +11,7 @@ sent unchanged, one API call per lecture (OpenAI Responses API).
           --lectures test    the 30 E2 test lectures (ORDER.txt 01-30) -> answers_<model>/
           --lectures heldout the 12 E3 lectures (ORDER.txt 31-42)
           --lectures all     the 42 paste files in ORDER.txt order
+          --lectures tuning  the 9 TUNING lectures (tuning/ORDER.txt, T1-T9) -> answers_<model>/tuning/
 
 An API error with no answer is retried; an answer is never re-asked. A lecture
 whose answer file exists is skipped. Answers and per-call usage live outside the
@@ -57,6 +58,16 @@ def paste_files(split=None):
     return out
 
 
+def tuning_files():
+    """the 9 tuning lectures, tuning/ORDER.txt order"""
+    d = os.path.join(DIR, "tuning")
+    out = []
+    for line in open(os.path.join(d, "ORDER.txt"), encoding="utf-8"):
+        tag, v = line.split("\t")[:2]
+        out.append((v, os.path.join(d, f"{tag}_{v}_PASTE_THIS.txt")))
+    return out
+
+
 def count(model):
     c = client()
     total = 0
@@ -70,9 +81,10 @@ def count(model):
 def send(model, effort, which, workers=4):
     import openai
     c = client()
-    out = os.path.join(DIR, f"answers_{model}") + ("/probe" if which == "probe" else "")
+    out = os.path.join(DIR, f"answers_{model}") + {"probe": "/probe", "tuning": "/tuning"}.get(which, "")
     os.makedirs(out, exist_ok=True)
-    todo = [PROBE] if which == "probe" else paste_files(None if which == "all" else which)
+    todo = ([PROBE] if which == "probe" else tuning_files() if which == "tuning"
+            else paste_files(None if which == "all" else which))
     todo = [(v, p) for v, p in todo if not os.path.exists(os.path.join(out, f"{v}.txt"))]
     print(f"  {len(todo)} lecture(s) to send to {model}, effort {effort}", flush=True)
 
@@ -119,7 +131,7 @@ def main():
     ap.add_argument("step", choices=["count", "send"])
     ap.add_argument("--model", required=True)
     ap.add_argument("--effort", default="high")
-    ap.add_argument("--lectures", choices=["probe", "test", "heldout", "all"], default="probe")
+    ap.add_argument("--lectures", choices=["probe", "test", "heldout", "all", "tuning"], default="probe")
     a = ap.parse_args()
     count(a.model) if a.step == "count" else send(a.model, a.effort, a.lectures)
 
