@@ -1,0 +1,69 @@
+Four-layer override cascade, TUNING lectures only; gpt-5-mini passages missing 0 (= NONE)
+
+=== layer 4 = Gemini (whole-lecture labels) ===
+  Kannada: 82 passages
+    1 anchor               would accept  54: right  51 vs Gemini  51 -> KEEP
+    2 Cue conf>=0.9        would accept   0: right   0 vs Gemini   0 -> KEEP
+    3 mini agrees w/ Cue   would accept  18: right  17 vs Gemini  18 -> drop
+    reaching Gemini: 28/82 (34%)
+    Gemini alone               strict F1 0.967  (tp 87 fp 4 fn 2)
+    3-layer (1-2 + frontier)   strict F1 0.967  (tp 87 fp 4 fn 2)
+    4-layer (1-3 + frontier)   strict F1 0.967  (tp 87 fp 4 fn 2)
+    per lecture, Gemini alone / 3-layer / 4-layer: gita-1st_video 0.970 / 1.000 / 1.000, gita-4th_video 1.000 / 0.971 / 0.971, kannada_07 0.968 / 1.000 / 1.000, kannada_10 0.889 / 0.923 / 0.923, kannada_13 1.000 / 1.000 / 1.000, kannada_16 0.968 / 0.909 / 0.909
+  English: 292 passages
+    1 anchor               not used in English
+    2 Cue conf>=0.9        would accept 119: right  98 vs Gemini  92 -> KEEP
+    3 mini agrees w/ Cue   would accept 116: right 106 vs Gemini 106 -> KEEP
+    reaching Gemini: 57/292 (20%)
+    Gemini alone               strict F1 0.816  (tp 155 fp 35 fn 35)
+    3-layer (1-2 + frontier)   strict F1 0.816  (tp 144 fp 19 fn 46)
+    4-layer (1-3 + frontier)   strict F1 0.816  (tp 144 fp 19 fn 46)
+    per lecture, Gemini alone / 3-layer / 4-layer: video_01 0.854 / 0.844 / 0.844, video_04 0.851 / 0.821 / 0.821, video_07 0.750 / 0.791 / 0.791
+
+=== layer 4 = Sol (whole-lecture labels) ===
+  Kannada: 82 passages
+    1 anchor               would accept  54: right  51 vs Sol  45 -> KEEP
+    2 Cue conf>=0.9        would accept   0: right   0 vs Sol   0 -> KEEP
+    3 mini agrees w/ Cue   would accept  18: right  17 vs Sol  18 -> drop
+    reaching Sol: 28/82 (34%)
+    Sol alone                  strict F1 0.921  (tp 87 fp 13 fn 2)
+    3-layer (1-2 + frontier)   strict F1 0.956  (tp 87 fp 6 fn 2)
+    4-layer (1-3 + frontier)   strict F1 0.956  (tp 87 fp 6 fn 2)
+    per lecture, Sol alone / 3-layer / 4-layer: gita-1st_video 1.000 / 1.000 / 1.000, gita-4th_video 0.872 / 0.919 / 0.919, kannada_07 0.938 / 1.000 / 1.000, kannada_10 0.828 / 0.923 / 0.923, kannada_13 0.923 / 1.000 / 1.000, kannada_16 0.968 / 0.909 / 0.909
+  English: 292 passages
+    1 anchor               not used in English
+    2 Cue conf>=0.9        would accept 119: right  98 vs Sol  99 -> drop
+    3 mini agrees w/ Cue   would accept 177: right 163 vs Sol 153 -> KEEP
+    reaching Sol: 115/292 (39%)
+    Sol alone                  strict F1 0.883  (tp 174 fp 30 fn 16)
+    3-layer (1-2 + frontier)   strict F1 0.883  (tp 174 fp 30 fn 16)
+    4-layer (1-3 + frontier)   strict F1 0.910  (tp 181 fp 27 fn 9)
+    per lecture, Sol alone / 3-layer / 4-layer: video_01 0.882 / 0.882 / 0.911, video_04 0.877 / 0.877 / 0.877, video_07 0.891 / 0.891 / 0.944
+
+=== layer 4 = Opus (whole-lecture labels) ===
+  Kannada: 82 passages
+    1 anchor               would accept  54: right  51 vs Opus  45 -> KEEP
+    2 Cue conf>=0.9        would accept   0: right   0 vs Opus   0 -> KEEP
+    3 mini agrees w/ Cue   would accept  18: right  17 vs Opus  18 -> drop
+    reaching Opus: 28/82 (34%)
+    Opus alone                 strict F1 0.937  (tp 89 fp 12 fn 0)
+    3-layer (1-2 + frontier)   strict F1 0.967  (tp 89 fp 6 fn 0)
+    4-layer (1-3 + frontier)   strict F1 0.967  (tp 89 fp 6 fn 0)
+    per lecture, Opus alone / 3-layer / 4-layer: gita-1st_video 0.970 / 1.000 / 1.000, gita-4th_video 0.919 / 0.944 / 0.944, kannada_07 0.882 / 0.968 / 0.968, kannada_10 0.929 / 0.963 / 0.963, kannada_13 0.960 / 1.000 / 1.000, kannada_16 0.970 / 0.941 / 0.941
+  English: 292 passages
+    1 anchor               not used in English
+    2 Cue conf>=0.9        would accept 119: right  98 vs Opus  87 -> KEEP
+    3 mini agrees w/ Cue   would accept 116: right 106 vs Opus 106 -> KEEP
+    reaching Opus: 57/292 (20%)
+    Opus alone                 strict F1 0.817  (tp 167 fp 52 fn 23)
+    3-layer (1-2 + frontier)   strict F1 0.825  (tp 153 fp 28 fn 37)
+    4-layer (1-3 + frontier)   strict F1 0.828  (tp 154 fp 28 fn 36)
+    per lecture, Opus alone / 3-layer / 4-layer: video_01 0.868 / 0.866 / 0.887, video_04 0.859 / 0.812 / 0.809, video_07 0.745 / 0.809 / 0.806
+
+SUMMARY, strict F1 on tuning
+  Gemini  kn: alone 0.967  3-layer 0.967 (+0.000)  4-layer 0.967 (+0.000)
+  Gemini  en: alone 0.816  3-layer 0.816 (+0.000)  4-layer 0.816 (+0.000)
+  Sol     kn: alone 0.921  3-layer 0.956 (+0.035)  4-layer 0.956 (+0.035)
+  Sol     en: alone 0.883  3-layer 0.883 (+0.000)  4-layer 0.910 (+0.026)
+  Opus    kn: alone 0.937  3-layer 0.967 (+0.031)  4-layer 0.967 (+0.031)
+  Opus    en: alone 0.817  3-layer 0.825 (+0.008)  4-layer 0.828 (+0.011)
