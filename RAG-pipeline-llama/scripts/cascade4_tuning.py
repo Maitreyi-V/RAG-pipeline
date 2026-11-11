@@ -42,12 +42,39 @@ def labels(folder, tune, lectures):
     return out, missing
 
 
+def candidates(anchor, cue, conf, mini):
+    """layer -> (accepts passage?, label source)"""
+    return {L1: (lambda u: bool(anchor[u]), anchor), L2: (lambda u: conf[u] >= CONF, cue),
+            L3: (lambda u: set(mini[u]) == set(cue[u]), cue)}
+
+
+def assign(L, us, llm, name, gold, cand):
+    """keep rule per layer, in order -> (layer per passage, label per passage, keep-rule lines)"""
+    ok = lambda p, u: set(p[u]) == set(gold[u])  # noqa: E731
+    left, layer, out, lines = list(us), {}, {}, []
+    for la in (L1, L2, L3):
+        if la == L1 and L in NO_ANCHOR_LAYER:
+            lines.append(f"    {la:22} not used in English")
+            continue
+        take, src = cand[la]
+        acc = [u for u in left if take(u)]
+        a, g = sum(ok(src, u) for u in acc), sum(ok(llm, u) for u in acc)
+        keep = a >= g
+        lines.append(f"    {la:22} would accept {len(acc):>3}: right {a:>3} vs {name} {g:>3} -> "
+                     f"{'KEEP' if keep else 'drop'}")
+        if keep:
+            for u in acc:
+                layer[u], out[u] = la, src[u]
+            left = [u for u in left if u not in layer]
+    for u in left:
+        layer[u], out[u] = L4, llm[u]
+    return layer, out, lines
+
+
 def main():
     gold, lectures, tune, cue, _, conf, anchor = load()
     mini, mini_missing = labels(MINI, tune, lectures)
-    ok = lambda p, u: set(p[u]) == set(gold[u])  # noqa: E731
-    cand = {L1: (lambda u: bool(anchor[u]), anchor), L2: (lambda u: conf[u] >= CONF, cue),
-            L3: (lambda u: set(mini[u]) == set(cue[u]), cue)}
+    cand = candidates(anchor, cue, conf, mini)
     lines = [f"Four-layer override cascade, TUNING lectures only; gpt-5-mini passages missing {mini_missing} (= NONE)"]
     summary = []
     for name, folder in LLMS:
@@ -55,24 +82,9 @@ def main():
         lines += ["", f"=== layer 4 = {name} (whole-lecture labels) ==="]
         for L, lname in (("kn", "Kannada"), ("en", "English")):
             us = [u for v in tune[L] for u in lectures[v]]
-            left, layer, out = list(us), {}, {}
             lines.append(f"  {lname}: {len(us)} passages")
-            for la in (L1, L2, L3):
-                if la == L1 and L in NO_ANCHOR_LAYER:
-                    lines.append(f"    {la:22} not used in English")
-                    continue
-                take, src = cand[la]
-                acc = [u for u in left if take(u)]
-                a, g = sum(ok(src, u) for u in acc), sum(ok(llm, u) for u in acc)
-                keep = a >= g
-                lines.append(f"    {la:22} would accept {len(acc):>3}: right {a:>3} vs {name} {g:>3} -> "
-                             f"{'KEEP' if keep else 'drop'}")
-                if keep:
-                    for u in acc:
-                        layer[u], out[u] = la, src[u]
-                    left = [u for u in left if u not in layer]
-            for u in left:
-                layer[u], out[u] = L4, llm[u]
+            layer, out, keep = assign(L, us, llm, name, gold, cand)
+            lines += keep
             three = {u: out[u] if layer[u] in (L1, L2) else llm[u] for u in us}
             reach = sum(layer[u] == L4 for u in us)
             f4, f3, fl = (score(gold, p, lectures, tune[L]) for p in (out, three, llm))

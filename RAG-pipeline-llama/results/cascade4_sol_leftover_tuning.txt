@@ -1,0 +1,14 @@
+Four-layer cascade with Sol, ENGLISH tuning: real last layer (leftover passages only) vs Sol's whole-lecture labels; leftover passages missing 0 (= NONE)
+  keep rule:
+    1 anchor               not used in English
+    2 Cue conf>=0.9        would accept 119: right  98 vs Sol  99 -> drop
+    3 mini agrees w/ Cue   would accept 177: right 163 vs Sol 153 -> KEEP
+
+  lecture     to Sol  Sol alone  4L whole  4L real  $ Sol whole  $ Sol leftover  $ mini
+  video_01        18      0.882     0.911    0.900        0.084           0.052   0.012
+  video_04        49      0.877     0.877    0.870        0.086           0.078   0.013
+  video_07        48      0.891     0.944    0.950        0.091           0.107   0.013
+  POOLED         115      0.883     0.910    0.906        0.260           0.237   0.037
+
+  leftover passages right (115): Sol whole-lecture 95, Sol leftover call 94; labels differ on 7
+  English cost: Sol alone $0.260; 4-layer whole $0.298; 4-layer real $0.274 (+5% vs Sol alone)
