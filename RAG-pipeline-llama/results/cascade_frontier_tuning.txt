@@ -1,0 +1,103 @@
+Override cascade per frontier model, TUNING lectures only: the LLM's whole-lecture labels, overridden where a kept cheap layer accepts the passage (layers and keep rule of 65dbb40)
+
+=== Gemini: layer 3 = Gemini's whole-lecture labels ('Gemini' columns = Gemini) ===
+  keep rule:
+  kn 1 anchor           would accept  54: right  51 vs Gemini  51 -> KEEP
+  kn 2 Cue conf>=0.9    would accept   0: right   0 vs Gemini   0 -> KEEP
+  en 1 anchor           dropped (fix 1)
+  en 2 Cue conf>=0.9    would accept 119: right  98 vs Gemini  92 -> KEEP
+  Kannada: 82 passages
+    layer                   accepted  cascade ok  Gemini (full) ok
+    1 anchor                54 (66%)          51                51
+    2 Cue conf>=0.9           0 (0%)           0                 0
+    3 Gemini                28 (34%)          26                26
+    by passage type, accepted / cascade ok:   1 anchor   2 Cue conf>=0.9   3 Gemini
+    T1   (n= 28)    26 / 24           0 / 0            2 / 2   
+    T2   (n= 40)    26 / 25           0 / 0           14 / 13  
+    T3   (n=  5)     2 / 2            0 / 0            3 / 2   
+    T4   (n=  8)     0 / 0            0 / 0            8 / 8   
+    OFF  (n=  1)     0 / 0            0 / 0            1 / 1   
+    cascade strict F1 0.967 (tp 87 fp 4 fn 2) vs Gemini alone 0.967 (+0.000); reaching Gemini 28/82 (34%)
+    per lecture, cascade / Gemini alone: gita-1st_video 1.000 / 0.970, gita-4th_video 0.971 / 1.000, kannada_07 1.000 / 0.968, kannada_10 0.923 / 0.889, kannada_13 1.000 / 1.000, kannada_16 0.909 / 0.968
+  English: 292 passages
+    layer                   accepted  cascade ok  Gemini (full) ok
+    1 anchor                  0 (0%)           0                 0
+    2 Cue conf>=0.9        119 (41%)          98                92
+    3 Gemini               173 (59%)         140               140
+    by passage type, accepted / cascade ok:   1 anchor   2 Cue conf>=0.9   3 Gemini
+    T1   (n= 16)     0 / 0            1 / 0           15 / 14  
+    T2   (n= 13)     0 / 0            1 / 0           12 / 10  
+    T3   (n=  6)     0 / 0            0 / 0            6 / 5   
+    T4   (n=132)     0 / 0           16 / 2          116 / 99  
+    T5   (n=  6)     0 / 0            3 / 0            3 / 0   
+    OFF  (n=119)     0 / 0           98 / 96          21 / 12  
+    cascade strict F1 0.816 (tp 144 fp 19 fn 46) vs Gemini alone 0.816 (+0.000); reaching Gemini 173/292 (59%)
+    per lecture, cascade / Gemini alone: video_01 0.844 / 0.854, video_04 0.821 / 0.851, video_07 0.791 / 0.750
+
+=== Sol: layer 3 = Sol's whole-lecture labels ('Gemini' columns = Sol) ===
+  keep rule:
+  kn 1 anchor           would accept  54: right  51 vs Gemini  45 -> KEEP
+  kn 2 Cue conf>=0.9    would accept   0: right   0 vs Gemini   0 -> KEEP
+  en 1 anchor           dropped (fix 1)
+  en 2 Cue conf>=0.9    would accept 119: right  98 vs Gemini  99 -> drop
+  Kannada: 82 passages
+    layer                   accepted  cascade ok  Gemini (full) ok
+    1 anchor                54 (66%)          51                45
+    2 Cue conf>=0.9           0 (0%)           0                 0
+    3 Gemini                28 (34%)          25                25
+    by passage type, accepted / cascade ok:   1 anchor   2 Cue conf>=0.9   3 Gemini
+    T1   (n= 28)    26 / 24           0 / 0            2 / 2   
+    T2   (n= 40)    26 / 25           0 / 0           14 / 13  
+    T3   (n=  5)     2 / 2            0 / 0            3 / 2   
+    T4   (n=  8)     0 / 0            0 / 0            8 / 7   
+    OFF  (n=  1)     0 / 0            0 / 0            1 / 1   
+    cascade strict F1 0.956 (tp 87 fp 6 fn 2) vs Gemini alone 0.921 (+0.035); reaching Gemini 28/82 (34%)
+    per lecture, cascade / Gemini alone: gita-1st_video 1.000 / 1.000, gita-4th_video 0.919 / 0.872, kannada_07 1.000 / 0.938, kannada_10 0.923 / 0.828, kannada_13 1.000 / 0.923, kannada_16 0.909 / 0.968
+  English: 292 passages
+    layer                   accepted  cascade ok  Gemini (full) ok
+    1 anchor                  0 (0%)           0                 0
+    2 Cue conf>=0.9           0 (0%)           0                 0
+    3 Gemini              292 (100%)         248               248
+    by passage type, accepted / cascade ok:   1 anchor   2 Cue conf>=0.9   3 Gemini
+    T1   (n= 16)     0 / 0            0 / 0           16 / 16  
+    T2   (n= 13)     0 / 0            0 / 0           13 / 12  
+    T3   (n=  6)     0 / 0            0 / 0            6 / 6   
+    T4   (n=132)     0 / 0            0 / 0          132 / 119 
+    T5   (n=  6)     0 / 0            0 / 0            6 / 2   
+    OFF  (n=119)     0 / 0            0 / 0          119 / 93  
+    cascade strict F1 0.883 (tp 174 fp 30 fn 16) vs Gemini alone 0.883 (+0.000); reaching Gemini 292/292 (100%)
+    per lecture, cascade / Gemini alone: video_01 0.882 / 0.882, video_04 0.877 / 0.877, video_07 0.891 / 0.891
+
+=== Opus: layer 3 = Opus's whole-lecture labels ('Gemini' columns = Opus) ===
+  keep rule:
+  kn 1 anchor           would accept  54: right  51 vs Gemini  45 -> KEEP
+  kn 2 Cue conf>=0.9    would accept   0: right   0 vs Gemini   0 -> KEEP
+  en 1 anchor           dropped (fix 1)
+  en 2 Cue conf>=0.9    would accept 119: right  98 vs Gemini  87 -> KEEP
+  Kannada: 82 passages
+    layer                   accepted  cascade ok  Gemini (full) ok
+    1 anchor                54 (66%)          51                45
+    2 Cue conf>=0.9           0 (0%)           0                 0
+    3 Gemini                28 (34%)          25                25
+    by passage type, accepted / cascade ok:   1 anchor   2 Cue conf>=0.9   3 Gemini
+    T1   (n= 28)    26 / 24           0 / 0            2 / 2   
+    T2   (n= 40)    26 / 25           0 / 0           14 / 12  
+    T3   (n=  5)     2 / 2            0 / 0            3 / 3   
+    T4   (n=  8)     0 / 0            0 / 0            8 / 7   
+    OFF  (n=  1)     0 / 0            0 / 0            1 / 1   
+    cascade strict F1 0.967 (tp 89 fp 6 fn 0) vs Gemini alone 0.937 (+0.031); reaching Gemini 28/82 (34%)
+    per lecture, cascade / Gemini alone: gita-1st_video 1.000 / 0.970, gita-4th_video 0.944 / 0.919, kannada_07 0.968 / 0.882, kannada_10 0.963 / 0.929, kannada_13 1.000 / 0.960, kannada_16 0.941 / 0.970
+  English: 292 passages
+    layer                   accepted  cascade ok  Gemini (full) ok
+    1 anchor                  0 (0%)           0                 0
+    2 Cue conf>=0.9        119 (41%)          98                87
+    3 Gemini               173 (59%)         143               143
+    by passage type, accepted / cascade ok:   1 anchor   2 Cue conf>=0.9   3 Gemini
+    T1   (n= 16)     0 / 0            1 / 0           15 / 14  
+    T2   (n= 13)     0 / 0            1 / 0           12 / 9   
+    T3   (n=  6)     0 / 0            0 / 0            6 / 5   
+    T4   (n=132)     0 / 0           16 / 2          116 / 105 
+    T5   (n=  6)     0 / 0            3 / 0            3 / 3   
+    OFF  (n=119)     0 / 0           98 / 96          21 / 7   
+    cascade strict F1 0.825 (tp 153 fp 28 fn 37) vs Gemini alone 0.817 (+0.008); reaching Gemini 173/292 (59%)
+    per lecture, cascade / Gemini alone: video_01 0.866 / 0.868, video_04 0.812 / 0.859, video_07 0.809 / 0.745
