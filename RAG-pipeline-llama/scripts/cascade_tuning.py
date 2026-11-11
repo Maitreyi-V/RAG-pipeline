@@ -21,6 +21,12 @@ Spec in docs/experiment_log.md.
              answers  -> review/llm_frontier/answers_api_gemini-3.1-pro-preview_low/tuning_leftover/
   score      step 2: the real cascade (layer 3 = the leftover answers; a missing passage = NONE)
              vs the simulated cascade and Gemini alone, strict F1 per language and lecture
+  round 2    send --run v2       both languages, prompt v2: each [LABEL] passage also shows the nearest
+                                 accepted label before and after it and how many passages away, and
+                                 the passage id must be written exactly as shown (e.g. P002)
+             send --run v2rep    English again with the v2 prompts (run-to-run variation)
+             send --run control  English, every passage [LABEL] (no cheap layers), v2 prompt
+             score2              per-lecture table -> results/cascade_tuning_round2.txt
 
 -> results/cascade_tuning.txt
 
@@ -28,6 +34,8 @@ Usage:
     python scripts/cascade_tuning.py simulate
     python scripts/cascade_tuning.py send
     python scripts/cascade_tuning.py score
+    python scripts/cascade_tuning.py send --run v2 | v2rep | control
+    python scripts/cascade_tuning.py score2
 """
 import argparse
 import csv
@@ -66,6 +74,17 @@ HEADER_NEW = ("You are labelling selected passages of a transcribed lecture on B
 RULE_OLD = "- Every passage must get exactly one line, in order. Do not skip, merge, or renumber passages."
 RULE_NEW = ("- Every [LABEL] passage must get exactly one line, in order. Do not skip, merge, or renumber "
             "passages. Output no line for [CONTEXT] passages.")
+RULE_ID = "\n- Write each passage id exactly as shown, including the P (e.g. P002)."
+HINT_NOTE = (" A [LABEL] passage also shows the nearest already-decided label before and after it in the "
+             "lecture and how many passages away it is; use it as context only.")
+ANS_ROOT = os.path.join(DIR, "answers_api_gemini-3.1-pro-preview_low")
+RUNS = {"v1": (PROMPTS, ANSWERS, False, False, ("kn", "en")),
+        "v2": (os.path.join(DIR, "tuning_leftover_v2"), os.path.join(ANS_ROOT, "tuning_leftover_v2"), True, False,
+               ("kn", "en")),
+        "v2rep": (os.path.join(DIR, "tuning_leftover_v2"), os.path.join(ANS_ROOT, "tuning_leftover_v2_rep"), True,
+                  False, ("en",)),
+        "control": (os.path.join(DIR, "tuning_window_control"), os.path.join(ANS_ROOT, "tuning_window_control"),
+                    True, True, ("en",))}
 
 
 def load():
@@ -162,13 +181,29 @@ def fmt(refs):
     return ",".join(r.replace("BG ", "") for r in refs) or "NONE"
 
 
-def build_prompt(v, lectures, layer, label):
+def hint(k, us, layer, label):
+    """nearest accepted label before and after passage k, with distance"""
+    out = []
+    for side, rng in (("before", range(k - 1, -1, -1)), ("after", range(k + 1, len(us)))):
+        j = next((j for j in rng if layer[us[j]] != LAYERS[2]), None)
+        out.append(f"{side}: none" if j is None else
+                   f"{side}: {fmt(label[us[j]])} ({abs(j - k)} passage{'s' if abs(j - k) > 1 else ''} away)")
+    return "; nearest decided label " + ", ".join(out)
+
+
+def build_prompt(v, lectures, layer, label, hints=False, everything=False):
     src = os.path.join(DIR, "tuning", next(f for f in os.listdir(os.path.join(DIR, "tuning"))
                                            if f.endswith(f"_{v}_PASTE_THIS.txt")))
     text = open(src, encoding="utf-8").read()
     head, body = text.split("\nLECTURE: ", 1)
     assert HEADER_OLD in head and RULE_OLD in head
     head = head.replace(HEADER_OLD, HEADER_NEW).replace(RULE_OLD, RULE_NEW)
+    if hints:
+        head = head.replace("must not be output. [...] marks passages left out.",
+                            "must not be output. [...] marks passages left out." + HINT_NOTE)
+        head = head.replace(RULE_NEW, RULE_NEW + RULE_ID)
+    if everything:
+        layer = {u: LAYERS[2] for u in lectures[v]}
     passages = dict(re.findall(r"^(P\d{3}): (.*)$", body, flags=re.M))
     ids = ids_of(v)
     pid = {u: p for p, u in ids}
@@ -180,7 +215,8 @@ def build_prompt(v, lectures, layer, label):
         if prev is not None and j != prev + 1:
             out.append("[...]")
         u = us[j]
-        tag = "[LABEL]" if layer[u] == LAYERS[2] else f"[CONTEXT, already labelled: {fmt(label[u])}]"
+        tag = (("[LABEL" + (hint(j, us, layer, label) if hints else "") + "]") if layer[u] == LAYERS[2]
+               else f"[CONTEXT, already labelled: {fmt(label[u])}]")
         out.append(f"{pid[u]} {tag}: {passages[pid[u]]}")
         prev = j
     lang = body.split("\n", 1)[0].rsplit("language ", 1)[-1]
@@ -188,17 +224,18 @@ def build_prompt(v, lectures, layer, label):
             f"{len(show) - len(target)} context passages, language {lang}\n\n" + "\n\n".join(out) + "\n"), len(target)
 
 
-def send(gold, lectures, tune, layer, label):
+def send(gold, lectures, tune, layer, label, run_="v1"):
     import requests
     from llm_frontier_gemini_api import MAX_OUT, URL, cost, key
     k = key()
-    os.makedirs(PROMPTS, exist_ok=True)
-    os.makedirs(ANSWERS, exist_ok=True)
-    for v in [v for L in ("kn", "en") for v in tune[L]]:
-        prompt, n = build_prompt(v, lectures, layer, label)
-        with open(os.path.join(PROMPTS, f"{v}_LEFTOVER.txt"), "w", encoding="utf-8") as f:
+    prompts, answers, hints, everything, langs = RUNS[run_]
+    os.makedirs(prompts, exist_ok=True)
+    os.makedirs(answers, exist_ok=True)
+    for v in [v for L in langs for v in tune[L]]:
+        prompt, n = build_prompt(v, lectures, layer, label, hints, everything)
+        with open(os.path.join(prompts, f"{v}_LEFTOVER.txt"), "w", encoding="utf-8") as f:
             f.write(prompt)
-        if not n or os.path.exists(os.path.join(ANSWERS, f"{v}.txt")):
+        if not n or os.path.exists(os.path.join(answers, f"{v}.txt")):
             print(f"  {v}: {n} to label, {'skipped (answer exists)' if n else 'nothing to send'}", flush=True)
             continue
         body = {"contents": [{"parts": [{"text": prompt}]}],
@@ -219,29 +256,85 @@ def send(gold, lectures, tune, layer, label):
         cands = j.get("candidates", [])
         text = "".join(p.get("text", "") for c in cands for p in c.get("content", {}).get("parts", [])
                        if not p.get("thought"))
-        with open(os.path.join(ANSWERS, f"{v}.txt"), "w", encoding="utf-8") as f:
+        with open(os.path.join(answers, f"{v}.txt"), "w", encoding="utf-8") as f:
             f.write(text)
         u = j.get("usageMetadata", {})
         fin = [c.get("finishReason") for c in cands]
         json.dump(dict(model=MODEL, model_version=j.get("modelVersion"), thinking_level=THINKING,
                        max_output_tokens=MAX_OUT, finish_reason=fin, usage=u, passages_to_label=n,
-                       seconds=round(time.time() - t0, 1)), open(os.path.join(ANSWERS, f"{v}_usage.json"), "w"), indent=1)
+                       seconds=round(time.time() - t0, 1)), open(os.path.join(answers, f"{v}_usage.json"), "w"), indent=1)
         print(f"  {v:16} {n:>3} to label  {j.get('modelVersion')} {','.join(map(str, fin))}  in "
               f"{u.get('promptTokenCount', 0)} out {u.get('candidatesTokenCount', 0)} (thinking "
               f"{u.get('thoughtsTokenCount', 0)})  ${cost(MODEL, u):.3f}", flush=True)
-    total = sum(cost(MODEL, json.load(open(os.path.join(ANSWERS, f)))["usage"])
-                for f in os.listdir(ANSWERS) if f.endswith("_usage.json"))
-    print(f"  leftover answers in {ANSWERS}: ${total:.3f}")
+    total = sum(cost(MODEL, json.load(open(os.path.join(answers, f)))["usage"])
+                for f in os.listdir(answers) if f.endswith("_usage.json"))
+    print(f"  answers in {answers}: ${total:.3f}")
+
+
+def answers_of(folder, vs, lectures, targets):
+    """{unit: refs} for the target passages of lectures vs; missing = NONE"""
+    out, missing = {}, 0
+    for v in vs:
+        ts = [u for u in lectures[v] if u in targets]
+        path = os.path.join(folder, f"{v}.txt")
+        if not ts:
+            continue
+        p, _ = parse(path, ids_of(v)) if os.path.exists(path) else ({}, None)
+        for u in ts:
+            missing += u not in p
+            out[u] = p.get(u, [])
+    return out, missing
+
+
+def score2(gold, lectures, tune, layer, label, gem):
+    """round 2: per-lecture strict F1 of Gemini alone, the simulated cascade, the v1/v2/v2rep real
+    cascades, and the English window control"""
+    left = {u for u in layer if layer[u] == LAYERS[2]}
+    cols = [("Gemini alone", gem), ("simulated", {u: label[u] if u not in left else gem[u] for u in layer})]
+    notes = []
+    for name, run_ in (("v1 real", "v1"), ("v2 real", "v2"), ("v2 repeat", "v2rep")):
+        langs = RUNS[run_][4]
+        vs = [v for L in langs for v in tune[L]]
+        real, miss = answers_of(RUNS[run_][1], vs, lectures, left)
+        cols.append((name, {u: label[u] if u not in left else real[u] for v in vs for u in lectures[v]}))
+        notes.append(f"{name}: {miss} leftover passages missing = NONE")
+    vs = tune["en"]
+    ctl, miss = answers_of(RUNS["control"][1], vs, lectures, {u for v in vs for u in lectures[v]})
+    cols.append(("EN control", ctl))
+    notes.append(f"EN control: {miss} passages missing = NONE")
+    lines = ["Cascade round 2, TUNING lectures only: strict F1 per lecture (pooled per language last); "
+             "layers as in 65dbb40; EN control = every English passage [LABEL], v2 prompt, no cheap layers",
+             "  " + "; ".join(notes), "", f"  {'lecture':16}" + "".join(f"{n:>14}" for n, _ in cols)]
+    for L in ("kn", "en"):
+        for v in tune[L] + ["POOLED " + L]:
+            vv = tune[L] if v.startswith("POOLED") else [v]
+            cells = []
+            for _, p in cols:
+                cells.append(f"{score(gold, p, lectures, vv)['F1']:>14.3f}" if all(u in p for w in vv for u in lectures[w])
+                             else f"{'-':>14}")
+            lines.append(f"  {v:16}" + "".join(cells))
+        lines.append("")
+    for L in ("kn", "en"):
+        us = [u for v in tune[L] for u in lectures[v] if u in left]
+        lines.append(f"  {L} leftover passages right ({len(us)}): " + ", ".join(
+            f"{n} {sum(set(p[u]) == set(gold[u]) for u in us)}" for n, p in cols if all(u in p for u in us)))
+    text = "\n".join(lines)
+    print(text)
+    with open(os.path.join(HERE, "results", "cascade_tuning_round2.txt"), "w", encoding="utf-8") as f:
+        f.write(text + "\n")
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("step", choices=["simulate", "send", "score"])
+    ap.add_argument("step", choices=["simulate", "send", "score", "score2"])
+    ap.add_argument("--run", choices=list(RUNS), default="v1")
     a = ap.parse_args()
     gold, lectures, tune, cue, gem, conf, anchor = load()
     layer, label, keep = cascade(gold, lectures, tune, cue, gem, conf, anchor)
     if a.step == "send":
-        return send(gold, lectures, tune, layer, label)
+        return send(gold, lectures, tune, layer, label, a.run)
+    if a.step == "score2":
+        return score2(gold, lectures, tune, layer, label, gem)
     lines = ["Cascade, TUNING lectures only (fix 1: no anchor layer in English; fix 2: keep a layer only if "
              "it is right on at least as many of its passages as Gemini)", "", "keep rule:"] + keep
     sim, _ = report(gold, lectures, tune, layer, label, gem, gem,
