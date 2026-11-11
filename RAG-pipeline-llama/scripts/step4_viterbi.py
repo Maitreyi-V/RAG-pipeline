@@ -555,6 +555,8 @@ def run(use_last=True, use_delta=False, alphas=("a05", "a0"), verbose=True,
     results, final = {}, {}
     for a in alphas:
         probs = lolo_probs(a)
+        if info is not None:
+            info[f"probs_{a}"] = probs           # LOLO (Pv, Poff) per tuning lecture, read-only
         pred, chosen, kappas = {}, [], {}
         for held in lang_of:
             train = [w for w in lang_of if w != held]
