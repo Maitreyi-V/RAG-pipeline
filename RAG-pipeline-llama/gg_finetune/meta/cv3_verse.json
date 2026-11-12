@@ -1,0 +1,28 @@
+{
+ "run": "cv3",
+ "task": "verse",
+ "model": "BAAI/bge-reranker-v2-m3",
+ "epochs": 2,
+ "lr": 2e-05,
+ "bs": 8,
+ "accum": 4,
+ "max_len": 384,
+ "seed": 42,
+ "examples_dir": "examples",
+ "out_root": "models",
+ "n_examples": 10190,
+ "n_pos": 609,
+ "loss": [
+  {
+   "epoch": 0,
+   "mean_loss": 0.14863309075926492
+  },
+  {
+   "epoch": 1,
+   "mean_loss": 0.08720109810112585
+  }
+ ],
+ "seconds": 1605.4,
+ "device": "cuda",
+ "torch": "2.11.0+cu130"
+}
