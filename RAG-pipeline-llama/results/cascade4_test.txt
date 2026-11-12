@@ -16,9 +16,9 @@ Four-layer override cascade on the 42 lectures, design frozen from tuning (eb5b0
     Sol alone   strict F1 0.792 [0.708,0.865]   passages right 524/676
     cascade      strict F1 0.781 [0.702,0.851]   passages right 518/676
     cascade - Sol: -0.011 [-0.026,+0.002]  W/T/L 3/0/4  sign p 1.000
-    reaching Sol: 326/676 (48%)
-      3 mini agrees w/ Cue   decided  350  right  300  (Sol alone right on these 306)
-      4 frontier             decided  326  right  218  (Sol alone right on these 218)
+    reaching Sol: 325/676 (48%)
+      3 mini agrees w/ Cue   decided  351  right  301  (Sol alone right on these 307)
+      4 frontier             decided  325  right  217  (Sol alone right on these 217)
     per lecture, alone / cascade: video_02 0.724/0.718, video_03 0.778/0.789, video_05 0.791/0.754, video_06 0.945/0.916, video_08 0.605/0.610, video_09 0.795/0.765, video_10 0.889/0.894
 
   E3 Kannada: 9 lectures, 132 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
@@ -33,12 +33,12 @@ Four-layer override cascade on the 42 lectures, design frozen from tuning (eb5b0
 
   E3 English: 3 lectures, 362 passages; layers 3 mini agrees w/ Cue > 4 frontier
     Sol alone   strict F1 0.910   passages right 301/362
-    cascade      strict F1 0.894   passages right 290/362
-    cascade - Sol: -0.016 [-0.020,-0.007]  W/T/L 0/0/3  sign p 0.250
-    reaching Sol: 306/362 (85%)
-      3 mini agrees w/ Cue   decided   56  right   35  (Sol alone right on these 46)
-      4 frontier             decided  306  right  255  (Sol alone right on these 255)
-    per lecture, alone / cascade: en_chinmaya_day03 0.912/0.904, en_chinmaya_day04 0.914/0.900, en_iskcon 0.908/0.889
+    cascade      strict F1 0.898   passages right 292/362
+    cascade - Sol: -0.012 [-0.014,-0.007]  W/T/L 0/0/3  sign p 0.250
+    reaching Sol: 309/362 (85%)
+      3 mini agrees w/ Cue   decided   53  right   35  (Sol alone right on these 44)
+      4 frontier             decided  309  right  257  (Sol alone right on these 257)
+    per lecture, alone / cascade: en_chinmaya_day03 0.912/0.904, en_chinmaya_day04 0.914/0.900, en_iskcon 0.908/0.895
 
 ===== layer 4 = Opus =====
 
@@ -56,10 +56,10 @@ Four-layer override cascade on the 42 lectures, design frozen from tuning (eb5b0
     Opus alone   strict F1 0.758 [0.684,0.831]   passages right 488/676
     cascade      strict F1 0.739 [0.698,0.784]   passages right 509/676
     cascade - Opus: -0.018 [-0.099,+0.058]  W/T/L 3/0/4  sign p 1.000
-    reaching Opus: 180/676 (27%)
+    reaching Opus: 179/676 (26%)
       2 Cue conf>=0.9        decided  314  right  248  (Opus alone right on these 228)
-      3 mini agrees w/ Cue   decided  182  right  147  (Opus alone right on these 146)
-      4 frontier             decided  180  right  114  (Opus alone right on these 114)
+      3 mini agrees w/ Cue   decided  183  right  148  (Opus alone right on these 147)
+      4 frontier             decided  179  right  113  (Opus alone right on these 113)
     per lecture, alone / cascade: video_02 0.672/0.683, video_03 0.765/0.809, video_05 0.761/0.754, video_06 0.907/0.828, video_08 0.609/0.745, video_09 0.716/0.704, video_10 0.872/0.660
 
   E3 Kannada: 9 lectures, 132 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
@@ -74,13 +74,13 @@ Four-layer override cascade on the 42 lectures, design frozen from tuning (eb5b0
 
   E3 English: 3 lectures, 362 passages; layers 2 Cue conf>=0.9 > 3 mini agrees w/ Cue > 4 frontier
     Opus alone   strict F1 0.831   passages right 242/362
-    cascade      strict F1 0.803   passages right 226/362
-    cascade - Opus: -0.028 [-0.075,-0.012]  W/T/L 0/0/3  sign p 0.250
-    reaching Opus: 296/362 (82%)
-      2 Cue conf>=0.9        decided   29  right    3  (Opus alone right on these 17)
-      3 mini agrees w/ Cue   decided   37  right   32  (Opus alone right on these 34)
-      4 frontier             decided  296  right  191  (Opus alone right on these 191)
-    per lecture, alone / cascade: en_chinmaya_day03 0.571/0.559, en_chinmaya_day04 0.885/0.810, en_iskcon 0.873/0.858
+    cascade      strict F1 0.806   passages right 228/362
+    cascade - Opus: -0.025 [-0.080,-0.008]  W/T/L 0/0/3  sign p 0.250
+    reaching Opus: 297/362 (82%)
+      2 Cue conf>=0.9        decided   29  right    5  (Opus alone right on these 17)
+      3 mini agrees w/ Cue   decided   36  right   32  (Opus alone right on these 34)
+      4 frontier             decided  297  right  191  (Opus alone right on these 191)
+    per lecture, alone / cascade: en_chinmaya_day03 0.571/0.559, en_chinmaya_day04 0.885/0.805, en_iskcon 0.873/0.865
 
 ===== layer 4 = Gemini =====
 
@@ -98,10 +98,10 @@ Four-layer override cascade on the 42 lectures, design frozen from tuning (eb5b0
     Gemini alone   strict F1 0.693 [0.652,0.743]   passages right 459/676
     cascade      strict F1 0.710 [0.653,0.756]   passages right 501/676
     cascade - Gemini: +0.017 [-0.072,+0.083]  W/T/L 4/0/3  sign p 1.000
-    reaching Gemini: 180/676 (27%)
+    reaching Gemini: 179/676 (26%)
       2 Cue conf>=0.9        decided  314  right  248  (Gemini alone right on these 209)
-      3 mini agrees w/ Cue   decided  182  right  147  (Gemini alone right on these 144)
-      4 frontier             decided  180  right  106  (Gemini alone right on these 106)
+      3 mini agrees w/ Cue   decided  183  right  148  (Gemini alone right on these 145)
+      4 frontier             decided  179  right  105  (Gemini alone right on these 105)
     per lecture, alone / cascade: video_02 0.681/0.735, video_03 0.681/0.768, video_05 0.692/0.777, video_06 0.610/0.575, video_08 0.633/0.760, video_09 0.725/0.656, video_10 0.817/0.633
 
   E3 Kannada: 9 lectures, 132 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
@@ -116,24 +116,24 @@ Four-layer override cascade on the 42 lectures, design frozen from tuning (eb5b0
 
   E3 English: 3 lectures, 362 passages; layers 2 Cue conf>=0.9 > 3 mini agrees w/ Cue > 4 frontier
     Gemini alone   strict F1 0.805   passages right 232/362
-    cascade      strict F1 0.771   passages right 213/362
-    cascade - Gemini: -0.034 [-0.078,+0.000]  W/T/L 0/1/2  sign p 0.500
-    reaching Gemini: 296/362 (82%)
-      2 Cue conf>=0.9        decided   29  right    3  (Gemini alone right on these 21)
-      3 mini agrees w/ Cue   decided   37  right   32  (Gemini alone right on these 33)
-      4 frontier             decided  296  right  178  (Gemini alone right on these 178)
-    per lecture, alone / cascade: en_chinmaya_day03 0.475/0.475, en_chinmaya_day04 0.895/0.817, en_iskcon 0.845/0.822
+    cascade      strict F1 0.775   passages right 215/362
+    cascade - Gemini: -0.030 [-0.084,+0.000]  W/T/L 0/1/2  sign p 0.500
+    reaching Gemini: 297/362 (82%)
+      2 Cue conf>=0.9        decided   29  right    5  (Gemini alone right on these 21)
+      3 mini agrees w/ Cue   decided   36  right   32  (Gemini alone right on these 33)
+      4 frontier             decided  297  right  178  (Gemini alone right on these 178)
+    per lecture, alone / cascade: en_chinmaya_day03 0.475/0.475, en_chinmaya_day04 0.895/0.811, en_iskcon 0.845/0.829
 
 SUMMARY
   Sol     E2 Kannada test  alone 0.934  cascade 0.877  diff -0.057 [-0.084,-0.032]  W/T/L 4/2/17
   Sol     E2 English test  alone 0.792  cascade 0.781  diff -0.011 [-0.026,+0.002]  W/T/L 3/0/4
   Sol     E3 Kannada       alone 0.929  cascade 0.866  diff -0.063 [-0.127,-0.037]  W/T/L 0/1/8
-  Sol     E3 English       alone 0.910  cascade 0.894  diff -0.016 [-0.020,-0.007]  W/T/L 0/0/3
+  Sol     E3 English       alone 0.910  cascade 0.898  diff -0.012 [-0.014,-0.007]  W/T/L 0/0/3
   Opus    E2 Kannada test  alone 0.911  cascade 0.873  diff -0.038 [-0.061,-0.017]  W/T/L 7/2/14
   Opus    E2 English test  alone 0.758  cascade 0.739  diff -0.018 [-0.099,+0.058]  W/T/L 3/0/4
   Opus    E3 Kannada       alone 0.901  cascade 0.849  diff -0.051 [-0.110,-0.026]  W/T/L 0/1/8
-  Opus    E3 English       alone 0.831  cascade 0.803  diff -0.028 [-0.075,-0.012]  W/T/L 0/0/3
+  Opus    E3 English       alone 0.831  cascade 0.806  diff -0.025 [-0.080,-0.008]  W/T/L 0/0/3
   Gemini  E2 Kannada test  alone 0.926  cascade 0.866  diff -0.060 [-0.084,-0.037]  W/T/L 2/3/18
   Gemini  E2 English test  alone 0.693  cascade 0.710  diff +0.017 [-0.072,+0.083]  W/T/L 4/0/3
   Gemini  E3 Kannada       alone 0.901  cascade 0.844  diff -0.056 [-0.116,-0.015]  W/T/L 0/4/5
-  Gemini  E3 English       alone 0.805  cascade 0.771  diff -0.034 [-0.078,+0.000]  W/T/L 0/1/2
+  Gemini  E3 English       alone 0.805  cascade 0.775  diff -0.030 [-0.084,+0.000]  W/T/L 0/1/2

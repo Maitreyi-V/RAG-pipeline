@@ -74,7 +74,7 @@ def main(which="test42"):
     cue, conf = {}, {}
     for v in vids:
         for u, (st, extra, p_state, _) in zip(lectures[v], dec[v]):
-            cue[u] = [] if st == OFF else [refs[st]] + [refs[j] for j in extra]
+            cue[u] = ([] if st == OFF else [refs[st]]) + [refs[j] for j in extra]   # as freeze_grounding
             conf[u] = p_state
     mini, mini_missing = {}, 0
     for v in vids:

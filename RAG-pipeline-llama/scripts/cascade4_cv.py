@@ -57,7 +57,7 @@ def main():
     dec = predict_locked({v: lectures[v] for v in others}, "a05", path=os.path.join(HERE, "results", "v2_teacher145.pkl"))
     for v in others:
         for u, (st, extra, p_state, _) in zip(lectures[v], dec[v]):
-            cue[u] = [] if st == OFF else [refs[st]] + [refs[j] for j in extra]
+            cue[u] = ([] if st == OFF else [refs[st]]) + [refs[j] for j in extra]   # as freeze_grounding
             conf[u] = p_state
             anchor[u] = [refs[j] for j in np.flatnonzero(z["anchor"][row[u]])]
     mini = {}                                                    # missing passage -> absent (abstains)
