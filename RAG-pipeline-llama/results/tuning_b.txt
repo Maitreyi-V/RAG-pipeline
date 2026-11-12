@@ -1,0 +1,3 @@
+tuning B, seed 20261112
+en	video_03,video_08
+kn	kannada_11,kannada_12,kannada_19
