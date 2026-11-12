@@ -1,0 +1,74 @@
+Four-layer override cascade on the 42 lectures, design frozen from tuning (eb5b08b); gpt-5-mini passages missing 0 (= NONE); strict F1 [95% lecture CI], paired lecture bootstrap 10000
+
+===== layer 4 = Sol =====
+
+  tuning B Kannada: 3 lectures, 50 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Sol alone   strict F1 0.937   passages right 44/50
+    cascade      strict F1 0.904   passages right 42/50
+    cascade - Sol: -0.033 [-0.090,+0.024]  W/T/L 1/0/2  sign p 1.000
+    reaching Sol: 13/50 (26%)
+      1 anchor               decided   37  right   31  (Sol alone right on these 33)
+      2 Cue conf>=0.9        decided    0  right    0  (Sol alone right on these 0)
+      4 frontier             decided   13  right   11  (Sol alone right on these 11)
+    per lecture, alone / cascade: kannada_11 0.919/0.829, kannada_12 0.971/0.944, kannada_19 0.923/0.947
+
+  tuning B English: 2 lectures, 183 passages; layers 3 mini agrees w/ Cue > 4 frontier
+    Sol alone   strict F1 0.687   passages right 119/183
+    cascade      strict F1 0.696   passages right 121/183
+    cascade - Sol: +0.009 [+0.005,+0.011]  W/T/L 2/0/0  sign p 0.500
+    reaching Sol: 110/183 (60%)
+      3 mini agrees w/ Cue   decided   73  right   61  (Sol alone right on these 59)
+      4 frontier             decided  110  right   60  (Sol alone right on these 60)
+    per lecture, alone / cascade: video_03 0.778/0.789, video_08 0.605/0.610
+
+===== layer 4 = Opus =====
+
+  tuning B Kannada: 3 lectures, 50 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Opus alone   strict F1 0.912   passages right 44/50
+    cascade      strict F1 0.897   passages right 43/50
+    cascade - Opus: -0.016 [-0.081,+0.027]  W/T/L 2/0/1  sign p 1.000
+    reaching Opus: 13/50 (26%)
+      1 anchor               decided   37  right   31  (Opus alone right on these 32)
+      2 Cue conf>=0.9        decided    0  right    0  (Opus alone right on these 0)
+      4 frontier             decided   13  right   12  (Opus alone right on these 12)
+    per lecture, alone / cascade: kannada_11 0.872/0.791, kannada_12 0.944/0.971, kannada_19 0.923/0.947
+
+  tuning B English: 2 lectures, 183 passages; layers 2 Cue conf>=0.9 > 3 mini agrees w/ Cue > 4 frontier
+    Opus alone   strict F1 0.678   passages right 115/183
+    cascade      strict F1 0.776   passages right 145/183
+    cascade - Opus: +0.097 [+0.044,+0.136]  W/T/L 2/0/0  sign p 0.500
+    reaching Opus: 56/183 (31%)
+      2 Cue conf>=0.9        decided   73  right   64  (Opus alone right on these 37)
+      3 mini agrees w/ Cue   decided   54  right   45  (Opus alone right on these 42)
+      4 frontier             decided   56  right   36  (Opus alone right on these 36)
+    per lecture, alone / cascade: video_03 0.765/0.809, video_08 0.609/0.745
+
+===== layer 4 = Gemini =====
+
+  tuning B Kannada: 3 lectures, 50 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Gemini alone   strict F1 0.962   passages right 47/50
+    cascade      strict F1 0.903   passages right 42/50
+    cascade - Gemini: -0.060 [-0.094,-0.027]  W/T/L 0/0/3  sign p 0.250
+    reaching Gemini: 13/50 (26%)
+      1 anchor               decided   37  right   31  (Gemini alone right on these 36)
+      2 Cue conf>=0.9        decided    0  right    0  (Gemini alone right on these 0)
+      4 frontier             decided   13  right   11  (Gemini alone right on these 11)
+    per lecture, alone / cascade: kannada_11 0.914/0.821, kannada_12 0.971/0.944, kannada_19 1.000/0.947
+
+  tuning B English: 2 lectures, 183 passages; layers 2 Cue conf>=0.9 > 3 mini agrees w/ Cue > 4 frontier
+    Gemini alone   strict F1 0.659   passages right 107/183
+    cascade      strict F1 0.764   passages right 143/183
+    cascade - Gemini: +0.105 [+0.086,+0.127]  W/T/L 2/0/0  sign p 0.500
+    reaching Gemini: 56/183 (31%)
+      2 Cue conf>=0.9        decided   73  right   64  (Gemini alone right on these 28)
+      3 mini agrees w/ Cue   decided   54  right   45  (Gemini alone right on these 45)
+      4 frontier             decided   56  right   34  (Gemini alone right on these 34)
+    per lecture, alone / cascade: video_03 0.681/0.768, video_08 0.633/0.760
+
+SUMMARY
+  Sol     tuning B Kannada alone 0.937  cascade 0.904  diff -0.033 [-0.090,+0.024]  W/T/L 1/0/2
+  Sol     tuning B English alone 0.687  cascade 0.696  diff +0.009 [+0.005,+0.011]  W/T/L 2/0/0
+  Opus    tuning B Kannada alone 0.912  cascade 0.897  diff -0.016 [-0.081,+0.027]  W/T/L 2/0/1
+  Opus    tuning B English alone 0.678  cascade 0.776  diff +0.097 [+0.044,+0.136]  W/T/L 2/0/0
+  Gemini  tuning B Kannada alone 0.962  cascade 0.903  diff -0.060 [-0.094,-0.027]  W/T/L 0/0/3
+  Gemini  tuning B English alone 0.659  cascade 0.764  diff +0.105 [+0.086,+0.127]  W/T/L 2/0/0

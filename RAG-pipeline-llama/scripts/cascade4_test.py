@@ -14,11 +14,15 @@ Four-layer override cascade on the 42 lectures, design frozen from the tuning le
            cascade - LLM alone (10,000 resamples), W/T/L, sign-test p; passages decided and right per
            layer; passages reaching the LLM; per-lecture F1
 
--> results/cascade4_test.txt
+  --split  test42 (default) | tuning_b (the 5 tuning-B lectures, pick_tuning_b.py) | rest37 (the
+           42 without tuning B)
+
+-> results/cascade4_test.txt | cascade4_tuning_b.txt | cascade4_rest37.txt
 
 Usage:
-    python scripts/cascade4_test.py
+    python scripts/cascade4_test.py [--split test42 | tuning_b | rest37]
 """
+import argparse
 import os
 import sys
 
@@ -32,6 +36,7 @@ from cascade_tuning import CONF  # noqa: E402
 from evalkit import load_csv, load_gold, read_split  # noqa: E402
 from freeze_grounding import f1_strict, paired, strict_counts, with_ci  # noqa: E402
 from llm_frontier import parse  # noqa: E402
+from pick_tuning_b import tuning_b  # noqa: E402
 from recall_by_type import read_llm  # noqa: E402
 from step4_viterbi import FEATS, OFF, predict_locked  # noqa: E402
 
@@ -43,10 +48,23 @@ FROZEN = {("Sol", "kn"): (L1, L2), ("Sol", "en"): (L3,),          # from results
           ("Gemini", "kn"): (L1, L2), ("Gemini", "en"): (L2, L3)}
 
 
-def main():
+OUTFILE = {"test42": "cascade4_test.txt", "tuning_b": "cascade4_tuning_b.txt", "rest37": "cascade4_rest37.txt"}
+
+
+def splits_for(which):
+    full = [("E2 Kannada test", "kn", read_split("kn", "test")), ("E2 English test", "en", read_split("en", "test")),
+            ("E3 Kannada", "kn", read_split("kn", "heldout")), ("E3 English", "en", read_split("en", "heldout"))]
+    if which == "test42":
+        return full
+    tb = tuning_b()
+    if which == "tuning_b":
+        return [("tuning B Kannada", "kn", tb["kn"]), ("tuning B English", "en", tb["en"])]
+    return [(n, L, [v for v in vs if v not in tb[L]]) for n, L, vs in full]
+
+
+def main(which="test42"):
     lectures, gold, lang = load_gold()
-    splits = [("E2 Kannada test", "kn", read_split("kn", "test")), ("E2 English test", "en", read_split("en", "test")),
-              ("E3 Kannada", "kn", read_split("kn", "heldout")), ("E3 English", "en", read_split("en", "heldout"))]
+    splits = splits_for(which)
     vids = [v for _, _, vs in splits for v in vs]
     z = np.load(FEATS)
     refs = list(z["refs"])
@@ -103,9 +121,11 @@ def main():
     lines += ["", "SUMMARY"] + summary
     text = "\n".join(lines)
     print(text)
-    with open(os.path.join(HERE, "results", "cascade4_test.txt"), "w", encoding="utf-8") as f:
+    with open(os.path.join(HERE, "results", OUTFILE[which]), "w", encoding="utf-8") as f:
         f.write(text + "\n")
 
 
 if __name__ == "__main__":
-    main()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--split", choices=list(OUTFILE), default="test42")
+    main(ap.parse_args().split)
