@@ -1,0 +1,133 @@
+Three-layer override cascade on the 42 lectures, design frozen from tuning (eb5b08b; layer 3 gpt-5-mini removed); gpt-5-mini passages missing 215 (= NONE); strict F1 [95% lecture CI], paired lecture bootstrap 10000
+
+===== layer 4 = Sol =====
+
+  E2 Kannada test: 23 lectures, 340 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Sol alone   strict F1 0.934 [0.916,0.952]   passages right 295/340
+    cascade      strict F1 0.877 [0.850,0.903]   passages right 264/340
+    cascade - Sol: -0.057 [-0.084,-0.032]  W/T/L 4/2/17  sign p 0.007
+    reaching Sol: 116/340 (34%)
+      1 anchor               decided  218  right  159  (Sol alone right on these 190)
+      2 Cue conf>=0.9        decided    6  right    6  (Sol alone right on these 6)
+      4 frontier             decided  116  right   99  (Sol alone right on these 99)
+    per lecture, alone / cascade: gita-2nd_video 1.000/1.000, gita-3rd_video 0.857/0.848, gita-5th_video 0.884/0.905, gita-6th_video 1.000/0.950, kannada_08 0.909/0.933, kannada_09 0.941/0.941, kannada_11 0.919/0.829, kannada_12 0.971/0.944, kannada_14 0.895/0.941, kannada_15 0.933/0.864, kannada_17 0.933/0.776, kannada_18 1.000/0.889, kannada_19 0.923/0.947, kannada_20 0.970/0.938, kannada_21 0.828/0.786, kannada_22 0.966/0.897, kannada_23 0.865/0.765, kannada_24 0.929/0.846, kannada_25 0.938/0.812, kannada_26 0.974/0.842, kannada_27 0.970/0.882, kannada_28 0.968/0.774, kannada_29 0.938/0.875
+
+  E2 English test: 7 lectures, 676 passages; layers  > 4 frontier
+    Sol alone   strict F1 0.792 [0.708,0.865]   passages right 524/676
+    cascade      strict F1 0.792 [0.708,0.865]   passages right 524/676
+    cascade - Sol: +0.000 [+0.000,+0.000]  W/T/L 0/7/0  sign p 1.000
+    reaching Sol: 676/676 (100%)
+      4 frontier             decided  676  right  524  (Sol alone right on these 524)
+    per lecture, alone / cascade: video_02 0.724/0.724, video_03 0.778/0.778, video_05 0.791/0.791, video_06 0.945/0.945, video_08 0.605/0.605, video_09 0.795/0.795, video_10 0.889/0.889
+
+  E3 Kannada: 9 lectures, 132 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Sol alone   strict F1 0.929 [0.910,0.963]   passages right 109/132
+    cascade      strict F1 0.866 [0.826,0.893]   passages right 94/132
+    cascade - Sol: -0.063 [-0.127,-0.037]  W/T/L 0/1/8  sign p 0.008
+    reaching Sol: 70/132 (53%)
+      1 anchor               decided   52  right   32  (Sol alone right on these 40)
+      2 Cue conf>=0.9        decided   10  right    3  (Sol alone right on these 10)
+      4 frontier             decided   70  right   59  (Sol alone right on these 59)
+    per lecture, alone / cascade: kn_brahmanyachar_day02b 0.905/0.864, kn_sumith_day01 0.875/0.875, kn_sumith_day02 0.917/0.857, kn_sumith_day03 1.000/0.625, kn_sumith_day04 0.903/0.897, kn_sumith_day05 0.941/0.898, kn_sumith_day06 1.000/0.900, kn_sumith_day07 1.000/0.917, kn_sumith_day08 0.917/0.857
+
+  E3 English: 3 lectures, 362 passages; layers  > 4 frontier
+    Sol alone   strict F1 0.910   passages right 301/362
+    cascade      strict F1 0.910   passages right 301/362
+    cascade - Sol: +0.000 [+0.000,+0.000]  W/T/L 0/3/0  sign p 1.000
+    reaching Sol: 362/362 (100%)
+      4 frontier             decided  362  right  301  (Sol alone right on these 301)
+    per lecture, alone / cascade: en_chinmaya_day03 0.912/0.912, en_chinmaya_day04 0.914/0.914, en_iskcon 0.908/0.908
+
+===== layer 4 = Opus =====
+
+  E2 Kannada test: 23 lectures, 340 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Opus alone   strict F1 0.911 [0.890,0.932]   passages right 278/340
+    cascade      strict F1 0.873 [0.845,0.901]   passages right 262/340
+    cascade - Opus: -0.038 [-0.061,-0.017]  W/T/L 7/2/14  sign p 0.189
+    reaching Opus: 116/340 (34%)
+      1 anchor               decided  218  right  159  (Opus alone right on these 175)
+      2 Cue conf>=0.9        decided    6  right    6  (Opus alone right on these 6)
+      4 frontier             decided  116  right   97  (Opus alone right on these 97)
+    per lecture, alone / cascade: gita-2nd_video 1.000/1.000, gita-3rd_video 0.833/0.848, gita-5th_video 0.905/0.905, gita-6th_video 0.976/0.950, kannada_08 0.909/0.933, kannada_09 0.971/0.941, kannada_11 0.872/0.791, kannada_12 0.944/0.971, kannada_14 0.919/0.941, kannada_15 0.875/0.826, kannada_17 0.889/0.776, kannada_18 0.960/0.846, kannada_19 0.923/0.947, kannada_20 0.914/0.938, kannada_21 0.839/0.800, kannada_22 0.966/0.897, kannada_23 0.842/0.800, kannada_24 0.929/0.846, kannada_25 0.800/0.812, kannada_26 0.923/0.842, kannada_27 1.000/0.882, kannada_28 0.938/0.774, kannada_29 0.875/0.848
+
+  E2 English test: 7 lectures, 676 passages; layers 2 Cue conf>=0.9 > 4 frontier
+    Opus alone   strict F1 0.758 [0.684,0.831]   passages right 488/676
+    cascade      strict F1 0.742 [0.695,0.790]   passages right 508/676
+    cascade - Opus: -0.016 [-0.099,+0.056]  W/T/L 4/0/3  sign p 1.000
+    reaching Opus: 362/676 (54%)
+      2 Cue conf>=0.9        decided  314  right  248  (Opus alone right on these 228)
+      4 frontier             decided  362  right  260  (Opus alone right on these 260)
+    per lecture, alone / cascade: video_02 0.672/0.667, video_03 0.765/0.787, video_05 0.761/0.787, video_06 0.907/0.840, video_08 0.609/0.731, video_09 0.716/0.747, video_10 0.872/0.654
+
+  E3 Kannada: 9 lectures, 132 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Opus alone   strict F1 0.901 [0.844,0.947]   passages right 102/132
+    cascade      strict F1 0.849 [0.777,0.891]   passages right 90/132
+    cascade - Opus: -0.051 [-0.110,-0.026]  W/T/L 0/1/8  sign p 0.008
+    reaching Opus: 70/132 (53%)
+      1 anchor               decided   52  right   32  (Opus alone right on these 38)
+      2 Cue conf>=0.9        decided   10  right    3  (Opus alone right on these 9)
+      4 frontier             decided   70  right   55  (Opus alone right on these 55)
+    per lecture, alone / cascade: kn_brahmanyachar_day02b 0.901/0.871, kn_sumith_day01 0.875/0.875, kn_sumith_day02 0.917/0.909, kn_sumith_day03 0.957/0.625, kn_sumith_day04 0.938/0.933, kn_sumith_day05 0.885/0.840, kn_sumith_day06 1.000/0.900, kn_sumith_day07 1.000/0.917, kn_sumith_day08 0.640/0.609
+
+  E3 English: 3 lectures, 362 passages; layers 2 Cue conf>=0.9 > 4 frontier
+    Opus alone   strict F1 0.831   passages right 242/362
+    cascade      strict F1 0.811   passages right 230/362
+    cascade - Opus: -0.020 [-0.066,+0.000]  W/T/L 0/1/2  sign p 0.500
+    reaching Opus: 333/362 (92%)
+      2 Cue conf>=0.9        decided   29  right    5  (Opus alone right on these 17)
+      4 frontier             decided  333  right  225  (Opus alone right on these 225)
+    per lecture, alone / cascade: en_chinmaya_day03 0.571/0.571, en_chinmaya_day04 0.885/0.819, en_iskcon 0.873/0.866
+
+===== layer 4 = Gemini =====
+
+  E2 Kannada test: 23 lectures, 340 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Gemini alone   strict F1 0.926 [0.907,0.946]   passages right 293/340
+    cascade      strict F1 0.866 [0.838,0.895]   passages right 261/340
+    cascade - Gemini: -0.060 [-0.084,-0.037]  W/T/L 2/3/18  sign p 0.000
+    reaching Gemini: 116/340 (34%)
+      1 anchor               decided  218  right  159  (Gemini alone right on these 191)
+      2 Cue conf>=0.9        decided    6  right    6  (Gemini alone right on these 6)
+      4 frontier             decided  116  right   96  (Gemini alone right on these 96)
+    per lecture, alone / cascade: gita-2nd_video 0.929/1.000, gita-3rd_video 0.933/0.848, gita-5th_video 0.878/0.878, gita-6th_video 1.000/0.950, kannada_08 0.828/0.815, kannada_09 0.941/0.941, kannada_11 0.914/0.821, kannada_12 0.971/0.944, kannada_14 0.941/0.941, kannada_15 0.864/0.791, kannada_17 0.933/0.776, kannada_18 0.960/0.846, kannada_19 1.000/0.947, kannada_20 0.970/0.938, kannada_21 0.857/0.786, kannada_22 0.929/0.897, kannada_23 0.848/0.750, kannada_24 0.923/0.846, kannada_25 0.968/0.812, kannada_26 0.914/0.842, kannada_27 0.970/0.882, kannada_28 0.929/0.774, kannada_29 0.897/0.903
+
+  E2 English test: 7 lectures, 676 passages; layers 2 Cue conf>=0.9 > 4 frontier
+    Gemini alone   strict F1 0.693 [0.652,0.743]   passages right 459/676
+    cascade      strict F1 0.706 [0.647,0.756]   passages right 498/676
+    cascade - Gemini: +0.012 [-0.079,+0.082]  W/T/L 3/1/3  sign p 1.000
+    reaching Gemini: 362/676 (54%)
+      2 Cue conf>=0.9        decided  314  right  248  (Gemini alone right on these 209)
+      4 frontier             decided  362  right  250  (Gemini alone right on these 250)
+    per lecture, alone / cascade: video_02 0.681/0.681, video_03 0.681/0.768, video_05 0.692/0.787, video_06 0.610/0.575, video_08 0.633/0.760, video_09 0.725/0.677, video_10 0.817/0.626
+
+  E3 Kannada: 9 lectures, 132 passages; layers 1 anchor > 2 Cue conf>=0.9 > 4 frontier
+    Gemini alone   strict F1 0.901 [0.837,0.933]   passages right 101/132
+    cascade      strict F1 0.844 [0.778,0.873]   passages right 90/132
+    cascade - Gemini: -0.056 [-0.116,-0.015]  W/T/L 0/4/5  sign p 0.062
+    reaching Gemini: 70/132 (53%)
+      1 anchor               decided   52  right   32  (Gemini alone right on these 38)
+      2 Cue conf>=0.9        decided   10  right    3  (Gemini alone right on these 8)
+      4 frontier             decided   70  right   55  (Gemini alone right on these 55)
+    per lecture, alone / cascade: kn_brahmanyachar_day02b 0.930/0.871, kn_sumith_day01 0.857/0.857, kn_sumith_day02 0.857/0.857, kn_sumith_day03 1.000/0.625, kn_sumith_day04 0.815/0.815, kn_sumith_day05 0.889/0.864, kn_sumith_day06 0.952/0.900, kn_sumith_day07 0.960/0.917, kn_sumith_day08 0.667/0.667
+
+  E3 English: 3 lectures, 362 passages; layers 2 Cue conf>=0.9 > 4 frontier
+    Gemini alone   strict F1 0.805   passages right 232/362
+    cascade      strict F1 0.778   passages right 216/362
+    cascade - Gemini: -0.027 [-0.075,+0.000]  W/T/L 0/1/2  sign p 0.500
+    reaching Gemini: 333/362 (92%)
+      2 Cue conf>=0.9        decided   29  right    5  (Gemini alone right on these 21)
+      4 frontier             decided  333  right  211  (Gemini alone right on these 211)
+    per lecture, alone / cascade: en_chinmaya_day03 0.475/0.475, en_chinmaya_day04 0.895/0.819, en_iskcon 0.845/0.830
+
+SUMMARY
+  Sol     E2 Kannada test  alone 0.934  cascade 0.877  diff -0.057 [-0.084,-0.032]  W/T/L 4/2/17
+  Sol     E2 English test  alone 0.792  cascade 0.792  diff +0.000 [+0.000,+0.000]  W/T/L 0/7/0
+  Sol     E3 Kannada       alone 0.929  cascade 0.866  diff -0.063 [-0.127,-0.037]  W/T/L 0/1/8
+  Sol     E3 English       alone 0.910  cascade 0.910  diff +0.000 [+0.000,+0.000]  W/T/L 0/3/0
+  Opus    E2 Kannada test  alone 0.911  cascade 0.873  diff -0.038 [-0.061,-0.017]  W/T/L 7/2/14
+  Opus    E2 English test  alone 0.758  cascade 0.742  diff -0.016 [-0.099,+0.056]  W/T/L 4/0/3
+  Opus    E3 Kannada       alone 0.901  cascade 0.849  diff -0.051 [-0.110,-0.026]  W/T/L 0/1/8
+  Opus    E3 English       alone 0.831  cascade 0.811  diff -0.020 [-0.066,+0.000]  W/T/L 0/1/2
+  Gemini  E2 Kannada test  alone 0.926  cascade 0.866  diff -0.060 [-0.084,-0.037]  W/T/L 2/3/18
+  Gemini  E2 English test  alone 0.693  cascade 0.706  diff +0.012 [-0.079,+0.082]  W/T/L 3/1/3
+  Gemini  E3 Kannada       alone 0.901  cascade 0.844  diff -0.056 [-0.116,-0.015]  W/T/L 0/4/5
+  Gemini  E3 English       alone 0.805  cascade 0.778  diff -0.027 [-0.075,+0.000]  W/T/L 0/1/2
