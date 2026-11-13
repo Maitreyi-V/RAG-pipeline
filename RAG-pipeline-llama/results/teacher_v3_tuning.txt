@@ -1,0 +1,36 @@
+Teacher v3 (verse shown, EXPLAINS / ILLUSTRATES / UNRELATED), TUNING lectures only; 374/374 passages answered
+
+1. TEACHER vs gold, English tuning (off-verse = positive)
+          AUC  accuracy  off recall  verse->off
+  v2    0.836     0.788       0.857    45/173
+  v3    0.770     0.760       0.580    20/173
+  v3 labels on English tuning (gold off / gold verse): EXPLAINS 36/149, ILLUSTRATES 14/4, UNRELATED 69/20
+  verse shown: last anchor 312, scorer top 3 62
+
+2. DECODER, leave-one-lecture-out on tuning (145-state resume, alpha 0.5)
+       KN strict EN strict  EN +-1 EN theme   settings chosen (gamma, beta_off, delta, tau)
+  v2       0.938     0.731   0.786    0.815   [(1, -3, 0, 0.9, 0), (2, -2, 0, 0.9, 0)]
+  v3       0.938     0.665   0.690    0.708   [(1, -2, 0, 0.9, 0), (1, 2, 0, 0.9, 0), (2, -2, 0, 0.9, 0)]
+
+3. CONFIDENT SET, English tuning (Cue conf >= 0.9): accepted / right by passage type
+  v2: 119 accepted, right 98; T1 1/0, T2 1/0, T4 16/2, T5 3/0, OFF 98/96
+  v3: 93 accepted, right 69; T2 1/0, T4 20/2, T5 1/0, OFF 71/67
+
+4. 3-LAYER CASCADE on tuning (anchor > Cue conf >= 0.9 > LLM; keep rule of 65dbb40, per language)
+  Gemini  kn Cue v2: alone 0.967  3-layer 0.967 (+0.000)   1 anchor 54: 51 vs 51 KEEP; 2 Cue conf 0: 0 vs 0 KEEP
+  Gemini  en Cue v2: alone 0.816  3-layer 0.816 (+0.000)   2 Cue conf 119: 98 vs 92 KEEP
+  Gemini  kn Cue v3: alone 0.967  3-layer 0.967 (+0.000)   1 anchor 54: 51 vs 51 KEEP; 2 Cue conf 0: 0 vs 0 KEEP
+  Gemini  en Cue v3: alone 0.816  3-layer 0.816 (+0.000)   2 Cue conf 93: 69 vs 72 drop
+  Sol     kn Cue v2: alone 0.921  3-layer 0.956 (+0.035)   1 anchor 54: 51 vs 45 KEEP; 2 Cue conf 0: 0 vs 0 KEEP
+  Sol     en Cue v2: alone 0.883  3-layer 0.883 (+0.000)   2 Cue conf 119: 98 vs 99 drop
+  Sol     kn Cue v3: alone 0.921  3-layer 0.956 (+0.035)   1 anchor 54: 51 vs 45 KEEP; 2 Cue conf 0: 0 vs 0 KEEP
+  Sol     en Cue v3: alone 0.883  3-layer 0.883 (+0.000)   2 Cue conf 93: 69 vs 76 drop
+  Opus    kn Cue v2: alone 0.937  3-layer 0.967 (+0.031)   1 anchor 54: 51 vs 45 KEEP; 2 Cue conf 0: 0 vs 0 KEEP
+  Opus    en Cue v2: alone 0.817  3-layer 0.825 (+0.008)   2 Cue conf 119: 98 vs 87 KEEP
+  Opus    kn Cue v3: alone 0.937  3-layer 0.967 (+0.031)   1 anchor 54: 51 vs 45 KEEP; 2 Cue conf 0: 0 vs 0 KEEP
+  Opus    en Cue v3: alone 0.817  3-layer 0.817 (+0.000)   2 Cue conf 93: 69 vs 79 drop
+
+TARGETS (English tuning, written before the run)
+  1 paraphrase wrong in confident set < 14:  v2 14 of 16, v3 18 of 20 -> NOT MET
+  2 digressions right >= 94 and share >= 0.95:  v2 96 of 98, v3 67 of 71 (0.94) -> NOT MET
+  3 decoder EN strict >= 0.731:  v2 0.731, v3 0.665 -> NOT MET
