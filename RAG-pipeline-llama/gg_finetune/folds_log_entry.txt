@@ -1,0 +1,16 @@
+=== EXPERIMENT LOG ENTRY (paste, then commit folds.json) ===
+date: 2026-11-11T11:09:51  seed: 42  folds: 5, lecture-level, stratified by language
+fold 0: 8 lectures (6 kn, 2 en), 265 passages: kannada_07, kannada_10, kannada_19, kannada_24, kannada_27, kannada_28, video_02, video_09
+fold 1: 8 lectures (6 kn, 2 en), 295 passages: gita-1st_video, gita-2nd_video, gita-5th_video, gita-6th_video, kannada_15, kannada_25, video_07, video_08
+fold 2: 8 lectures (6 kn, 2 en), 275 passages: gita-4th_video, kannada_11, kannada_13, kannada_14, kannada_20, kannada_26, video_01, video_06
+fold 3: 8 lectures (6 kn, 2 en), 275 passages: gita-3rd_video, kannada_08, kannada_12, kannada_21, kannada_23, kannada_29, video_03, video_05
+fold 4: 7 lectures (5 kn, 2 en), 280 passages: kannada_09, kannada_16, kannada_17, kannada_18, kannada_22, video_04, video_10
+run cv0: train 23 lect/830 pass | calib 8/295 | test 8/265
+run cv1: train 23 lect/820 pass | calib 8/275 | test 8/295
+run cv2: train 23 lect/840 pass | calib 8/275 | test 8/275
+run cv3: train 24 lect/835 pass | calib 7/280 | test 8/275
+run cv4: train 24 lect/845 pass | calib 8/265 | test 7/280
+run e3: train 31 lect/1125 pass | calib 8/265 | test 12/494
+silver lectures (train only, never calib/test): 0
+model: BAAI/bge-reranker-v2-m3; tasks: verse scorer + off-verse classifier; epochs 2, lr 2e-5, batch 8 x accum 4, max_len 384, seed 42
+comparison set for go/no-go: the 30 E2 test lectures (frozen baselines are in-sample on tuning lectures)

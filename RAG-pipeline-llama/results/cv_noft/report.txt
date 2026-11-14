@@ -1,0 +1,34 @@
+Secondary protocol: CV, 8 features (no FT), 5-fold lecture CV + e3 run. Strict F1 [95% lecture bootstrap CI]
+P_off chosen per run: cv0 cue, cv1 cue, cv2 cue, cv3 cue, cv4 cue, e3 cue
+
+E2 Kannada test (23 lectures, 340 passages)
+  CV, 8 features (no FT)   0.834 [0.775, 0.881]
+  Frozen GitaGround-Cue    0.820 [0.770, 0.866]
+  GPT-6.1 Sol              0.934 [0.916, 0.952]
+  Opus 5.5                 0.911 [0.890, 0.932]
+  paired CV - Frozen GitaGround-Cue  +0.014 [-0.005, +0.032]  P(<=0) 0.084  W/T/L 9/10/4
+  paired CV - GPT-6.1 Sol            -0.100 [-0.167, -0.048]  P(<=0) 1.000  W/T/L 3/3/17
+
+E2 English test (7 lectures, 676 passages)
+  CV, 8 features (no FT)   0.580 [0.449, 0.671]
+  Frozen GitaGround-Cue    0.631 [0.500, 0.731]
+  GPT-6.1 Sol              0.792 [0.708, 0.865]
+  Opus 5.5                 0.758 [0.684, 0.831]
+  paired CV - Frozen GitaGround-Cue  -0.052 [-0.114, -0.003]  P(<=0) 0.982  W/T/L 3/0/4
+  paired CV - GPT-6.1 Sol            -0.212 [-0.412, -0.049]  P(<=0) 0.997  W/T/L 1/0/6
+
+E3 new Kannada (9 lectures, 132 passages)
+  CV, 8 features (no FT)   0.610 [0.480, 0.730]
+  Frozen GitaGround-Cue    0.665 [0.558, 0.759]
+  GPT-6.1 Sol              0.929 [0.910, 0.963]
+  Opus 5.5                 0.901 [0.844, 0.947]
+  paired CV - Frozen GitaGround-Cue  -0.055 [-0.108, -0.005]  P(<=0) 0.983  W/T/L 1/3/5
+  paired CV - GPT-6.1 Sol            -0.319 [-0.457, -0.213]  P(<=0) 1.000  W/T/L 0/0/9
+
+E3 new English (3 lectures, 362 passages)
+  CV, 8 features (no FT)   0.828
+  Frozen GitaGround-Cue    0.814
+  GPT-6.1 Sol              0.910
+  Opus 5.5                 0.831
+  paired CV - Frozen GitaGround-Cue  +0.014 [-0.008, +0.022]  P(<=0) 0.036  W/T/L 2/0/1
+  paired CV - GPT-6.1 Sol            -0.082 [-0.102, -0.021]  P(<=0) 1.000  W/T/L 0/0/3
