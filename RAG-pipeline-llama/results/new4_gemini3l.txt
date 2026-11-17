@@ -1,0 +1,49 @@
+Gemini 3.1 Pro (API, low) alone vs GitaGround-Cue alone vs 3-layer cascade with Gemini (English: Cue conf >= 0.9 > Gemini), nothing re-tuned
+4 new English lectures (en_chinmaya_day06-09, same speaker as en_chinmaya_day03/04) + the 3 earlier E3 English lectures
+
+Gemini answer check (new 4): en_chinmaya_day06 missing 0 unparsed 0 outside Ch2 0; en_chinmaya_day07 missing 0 unparsed 0 outside Ch2 0; en_chinmaya_day08 missing 0 unparsed 0 outside Ch2 0; en_chinmaya_day09 missing 0 unparsed 0 outside Ch2 0
+
+1. LECTURE BY LECTURE  (strict F1, best marked *; dig = gold no-verse passages; FV = false verse on them; $ per lecture)
+
+  lecture              psg     Gemini        Cue  3L Gemini  dig     FV Gemini        FV Cue  FV 3L Gemini     $ Gemini        $ Cue  $ 3L Gemini
+  -- earlier E3 English --
+  en_chinmaya_day03     71     0.475      0.898*     0.475     1             0             1             0        0.072        0.058        0.129
+  en_chinmaya_day04     76     0.895*     0.816      0.819     0             0             0             0        0.078        0.062        0.140
+  en_iskcon            215     0.845*     0.790      0.830    15            14            11            11        0.128        0.174        0.303
+  -- NEW --
+  en_chinmaya_day06     67     0.756*     0.685      0.756*   18             9            12             9        0.080        0.055        0.135
+  en_chinmaya_day07     80     0.796*     0.694      0.773    19            15            17            15        0.075        0.066        0.141
+  en_chinmaya_day08     66     0.774*     0.531      0.774*   16            14            16            14        0.072        0.054        0.126
+  en_chinmaya_day09     86     0.793*     0.646      0.793*   21            19            19            19        0.089        0.071        0.159
+
+2. OVERVIEW
+
+  2a. strict F1, +-1 F1; paired vs Gemini alone: diff [95% CI] W/T/L (CI and claim only for 5+ lectures)
+
+  New 4             4 lect  strict Gemini 0.782  Cue 0.642  3L Gemini 0.775   +-1 Gemini 0.853  Cue 0.779  3L Gemini 0.846
+      Cue - Gemini -0.140  W/T/L 0/0/4  (no CI: <5 lectures)
+      3L Gemini - Gemini -0.006  W/T/L 0/3/1  (no CI: <5 lectures)
+  Earlier 3 E3 EN   3 lect  strict Gemini 0.805  Cue 0.814  3L Gemini 0.778   +-1 Gemini 0.887  Cue 0.903  3L Gemini 0.867
+      Cue - Gemini +0.009  W/T/L 1/0/2  (no CI: <5 lectures)
+      3L Gemini - Gemini -0.027  W/T/L 0/1/2  (no CI: <5 lectures)
+  All 7 E3 English  7 lect  strict Gemini 0.794  Cue 0.738  3L Gemini 0.777   +-1 Gemini 0.871  Cue 0.849  3L Gemini 0.857
+      Cue - Gemini -0.056 [-0.144,+0.066]  W/T/L 1/0/6  -> no significant difference; a loss up to 0.144 cannot be ruled out
+      3L Gemini - Gemini -0.018 [-0.037,-0.004]  W/T/L 0/4/3  -> worse
+
+  2b. digressions (gold: no verse) and verse passages left with no verse
+
+  New 4             digressions  74: false verse Gemini  57 (77%)  Cue  64 (86%)  3L Gemini  57 (77%)   | verse passages 225: missed Gemini   5  Cue   3  3L Gemini   8
+  Earlier 3 E3 EN   digressions  16: false verse Gemini  14 (88%)  Cue  12 (75%)  3L Gemini  11 (69%)   | verse passages 346: missed Gemini  53  Cue  23  3L Gemini  73
+  All 7 E3 English  digressions  90: false verse Gemini  71 (79%)  Cue  76 (84%)  3L Gemini  68 (76%)   | verse passages 571: missed Gemini  58  Cue  26  3L Gemini  81
+
+  2c. cost (USD)
+
+  New 4            Gemini $0.316  Cue $0.245  3L Gemini $0.562
+  Earlier 3 E3 EN  Gemini $0.278  Cue $0.294  3L Gemini $0.571
+  All 7 E3 English Gemini $0.594  Cue $0.539  3L Gemini $1.133
+
+  2d. 3-layer: who decided (passages; right = set equals gold; Gemini alone right on the same)
+
+  New 4            2 Cue conf>=0.9: 14 right 10 (Gemini 12)   4 frontier: 285 right 174 (Gemini 174)
+  Earlier 3 E3 EN  2 Cue conf>=0.9: 29 right 5 (Gemini 21)   4 frontier: 333 right 211 (Gemini 211)
+  All 7 E3 English 2 Cue conf>=0.9: 43 right 15 (Gemini 33)   4 frontier: 618 right 385 (Gemini 385)
