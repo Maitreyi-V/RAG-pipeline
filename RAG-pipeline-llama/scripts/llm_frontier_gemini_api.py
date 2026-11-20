@@ -49,10 +49,10 @@ def cost(model, u):
         (u.get("candidatesTokenCount", 0) + u.get("thoughtsTokenCount", 0)) / 1e6 * pout
 
 
-def send(model, thinking, which, workers=4):
+def send(model, thinking, which, workers=4, tag=""):
     import requests
     k = key()
-    out = os.path.join(DIR, f"answers_api_{model}_{thinking}") + {"probe": "/probe", "tuning": "/tuning"}.get(which, "")
+    out = os.path.join(DIR, f"answers_api_{model}_{thinking}" + (f"_{tag}" if tag else "")) + {"probe": "/probe", "tuning": "/tuning"}.get(which, "")
     os.makedirs(out, exist_ok=True)
     todo = ([PROBE] if which == "probe" else tuning_files() if which == "tuning"
             else paste_files(None if which == "all" else which))
@@ -113,8 +113,9 @@ def main():
     ap.add_argument("--model", required=True)
     ap.add_argument("--thinking", required=True, choices=["minimal", "low", "medium", "high"])
     ap.add_argument("--lectures", choices=["probe", "test", "heldout", "all", "tuning"], default="probe")
+    ap.add_argument("--tag", default="", help="suffix for a separate answer folder (a repeat run)")
     a = ap.parse_args()
-    send(a.model, a.thinking, a.lectures)
+    send(a.model, a.thinking, a.lectures, tag=a.tag)
 
 
 if __name__ == "__main__":

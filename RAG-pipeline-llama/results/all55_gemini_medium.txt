@@ -1,0 +1,154 @@
+Gemini 3.1 Pro medium alone vs GitaGround-Cue alone vs 3-layer cascade with Gemini medium (string anchor > Cue conf >= 0.9 > Gemini medium), 55 lectures
+tuning: Cue leave-one-lecture-out; 3-layer in sample (its layers were chosen on tuning)
+
+keep rule on the 9 tuning lectures (layers chosen for Gemini medium):
+  kn 1 anchor         accepts  54 tuning passages: right 51 vs Gemini medium 50 -> KEEP
+  kn 2 Cue conf>=0.9  accepts   0 tuning passages: right 0 vs Gemini medium 0 -> KEEP
+  en 2 Cue conf>=0.9  accepts 119 tuning passages: right 98 vs Gemini medium 84 -> KEEP
+  -> Kannada: 1 anchor > 2 Cue conf>=0.9 > Gemini;  English: 2 Cue conf>=0.9 > Gemini
+
+1. LECTURE BY LECTURE  (strict F1, best marked *; dig = gold no-verse passages; FV = false verse on them)
+
+  lecture                  psg  Gemini med         Cue      3L med  dig  FV Gemini med         FV Cue      FV 3L med
+  -- Tuning Kannada --
+  gita-1st_video            15      0.970       0.875       1.000*    1              0              1              0
+  gita-4th_video            15      0.909       0.938*      0.882     0              0              0              0
+  kannada_07                15      0.968       0.933       1.000*    0              0              0              0
+  kannada_10                11      0.889       0.963*      0.923     0              0              0              0
+  kannada_13                11      0.960       1.000*      1.000*    0              0              0              0
+  kannada_16                15      0.968*      0.938       0.909     0              0              0              0
+  -- Tuning English --
+  video_01                  88      0.854*      0.826       0.844    46              7              5              4
+  video_04                 107      0.814       0.677       0.826*   37             30              9              9
+  video_07                  97      0.737       0.718       0.754*   36              8              8              0
+  -- E2 Kannada test --
+  gita-2nd_video            13      0.929       0.966       1.000*    1              0              0              0
+  gita-3rd_video            14      0.875*      0.839       0.848     1              0              0              0
+  gita-5th_video            19      0.878       0.900*      0.878     1              0              1              0
+  gita-6th_video            21      1.000*      0.488       0.950     1              0              1              0
+  kannada_08                12      0.828*      0.714       0.815     0              0              0              0
+  kannada_09                15      0.941*      0.914       0.941*    1              0              1              0
+  kannada_11                16      0.914*      0.791       0.821     1              0              1              0
+  kannada_12                16      0.971*      0.914       0.944     1              0              1              0
+  kannada_14                14      0.941*      0.909       0.941*    0              0              0              0
+  kannada_15                20      0.864*      0.739       0.791     3              2              3              2
+  kannada_17                14      0.933*      0.800       0.776     1              0              1              0
+  kannada_18                13      0.923       1.000*      0.815     0              0              0              0
+  kannada_19                18      0.973       1.000*      0.947     0              0              0              0
+  kannada_20                15      0.938*      0.857       0.938*    1              0              1              0
+  kannada_21                13      0.828*      0.828*      0.759     1              1              1              1
+  kannada_22                14      0.929*      0.828       0.897     2              1              2              1
+  kannada_23                17      0.824*      0.811       0.800     1              1              1              1
+  kannada_24                12      0.923*      0.880       0.846     2              1              1              1
+  kannada_25                14      0.968*      0.706       0.812     1              0              1              0
+  kannada_26                12      0.895*      0.810       0.842     0              0              0              0
+  kannada_27                14      0.970*      0.889       0.882     1              0              0              0
+  kannada_28                11      0.929*      0.667       0.774     1              0              1              0
+  kannada_29                13      0.857*      0.750       0.828     2              0              2              0
+  -- E2 English test --
+  video_02                  82      0.681*      0.644       0.681*   35              7             25              7
+  video_03                  87      0.681       0.792*      0.768    40             29              9             10
+  video_05                 103      0.688       0.776       0.803*   48             47             13             15
+  video_06                 104      0.602*      0.286       0.568    56              0              5              0
+  video_08                  96      0.600       0.692       0.747*   51             38             17              9
+  video_09                 102      0.556*      0.508       0.556*   69              0              2              0
+  video_10                 102      0.817*      0.639       0.626    37              5              1              2
+  -- E3 Kannada --
+  kn_brahmanyachar_day02b   44      0.758       0.686       0.786*    0              0              0              0
+  kn_sumith_day01            9      0.857*      0.824       0.857*    1              0              1              0
+  kn_sumith_day02           10      0.857*      0.833       0.857*    0              0              0              0
+  kn_sumith_day03           12      0.842*      0.429       0.533     3              0              0              0
+  kn_sumith_day04           12      0.769*      0.562       0.769*    0              0              0              0
+  kn_sumith_day05           15      0.875*      0.489       0.826     0              0              0              0
+  kn_sumith_day06            8      0.952*      0.818       0.900     0              0              0              0
+  kn_sumith_day07           11      0.960*      0.923       0.917     0              0              0              0
+  kn_sumith_day08           11      0.667*      0.400       0.667*    0              0              0              0
+  -- E3 English, earlier 3 --
+  en_chinmaya_day03         71      0.475       0.898*      0.475     1              0              1              0
+  en_chinmaya_day04         76      0.733       0.816*      0.708     0              0              0              0
+  en_iskcon                215      0.837*      0.790       0.821    15             14             11             11
+  -- E3 English, new 4 --
+  en_chinmaya_day06         67      0.740       0.685       0.771*   18             17             12             11
+  en_chinmaya_day07         80      0.794*      0.694       0.780    19             19             17             17
+  en_chinmaya_day08         66      0.774*      0.531       0.774*   16             14             16             14
+  en_chinmaya_day09         86      0.789*      0.646       0.789*   21             19             19             19
+
+2. OVERVIEW
+
+  2a. strict F1; paired vs Gemini medium alone: diff [95% CI] W/T/L -> claim (5+ lectures)
+
+  Tuning Kannada          6 lect  Gemini med 0.944  Cue 0.938  3L med 0.950
+      Cue        - Gemini med -0.007 [-0.053,+0.038]  W/T/L 3/0/3  -> no significant difference; a loss up to 0.053 cannot be ruled out
+      3L med     - Gemini med +0.005 [-0.026,+0.035]  W/T/L 4/0/2  -> no significant difference; a loss up to 0.026 cannot be ruled out
+  Tuning English          3 lect  Gemini med 0.798  Cue 0.731  3L med 0.806
+  E2 Kannada test        23 lect  Gemini med 0.915  Cue 0.820  3L med 0.863
+      Cue        - Gemini med -0.095 [-0.153,-0.048]  W/T/L 4/1/18  -> worse
+      3L med     - Gemini med -0.053 [-0.077,-0.030]  W/T/L 1/4/18  -> worse
+  E2 English test         7 lect  Gemini med 0.673  Cue 0.631  3L med 0.696
+      Cue        - Gemini med -0.041 [-0.164,+0.062]  W/T/L 3/0/4  -> no significant difference; a loss up to 0.164 cannot be ruled out
+      3L med     - Gemini med +0.023 [-0.075,+0.099]  W/T/L 3/2/2  -> no significant difference; a loss up to 0.075 cannot be ruled out
+  E3 Kannada              9 lect  Gemini med 0.816  Cue 0.665  3L med 0.797
+      Cue        - Gemini med -0.152 [-0.281,-0.082]  W/T/L 0/0/9  -> worse
+      3L med     - Gemini med -0.019 [-0.090,+0.014]  W/T/L 1/4/4  -> no significant difference; a loss up to 0.090 cannot be ruled out
+  E3 English, earlier 3   3 lect  Gemini med 0.768  Cue 0.814  3L med 0.752
+  E3 English, new 4       4 lect  Gemini med 0.776  Cue 0.642  3L med 0.780
+  E3 English, all 7       7 lect  Gemini med 0.772  Cue 0.738  3L med 0.765
+      Cue        - Gemini med -0.034 [-0.123,+0.096]  W/T/L 2/0/5  -> no significant difference; a loss up to 0.123 cannot be ruled out
+      3L med     - Gemini med -0.007 [-0.015,+0.007]  W/T/L 1/3/3  -> matches (within 0.02)
+  All 9 tuning            9 lect  Gemini med 0.843  Cue 0.799  3L med 0.854
+      Cue        - Gemini med -0.045 [-0.086,+0.001]  W/T/L 3/0/6  -> no significant difference; a loss up to 0.086 cannot be ruled out
+      3L med     - Gemini med +0.011 [-0.006,+0.023]  W/T/L 6/0/3  -> matches (within 0.02)
+  All 42 test            42 lect  Gemini med 0.789  Cue 0.749  3L med 0.778
+      Cue        - Gemini med -0.040 [-0.103,+0.022]  W/T/L 9/1/32  -> no significant difference; a loss up to 0.103 cannot be ruled out
+      3L med     - Gemini med -0.011 [-0.043,+0.020]  W/T/L 5/11/26  -> no significant difference; a loss up to 0.043 cannot be ruled out
+  All 46 test (+new 4)   46 lect  Gemini med 0.787  Cue 0.728  3L med 0.778
+      Cue        - Gemini med -0.059 [-0.113,-0.003]  W/T/L 9/1/36  -> worse
+      3L med     - Gemini med -0.008 [-0.034,+0.016]  W/T/L 6/13/27  -> no significant difference; a loss up to 0.034 cannot be ruled out
+  All 55                 55 lect  Gemini med 0.795  Cue 0.738  3L med 0.789
+      Cue        - Gemini med -0.057 [-0.104,-0.009]  W/T/L 12/1/42  -> worse
+      3L med     - Gemini med -0.006 [-0.027,+0.015]  W/T/L 12/13/30  -> no significant difference; a loss up to 0.027 cannot be ruled out
+
+  2b. digressions (gold: no verse) and verse passages left with no verse
+
+  Tuning Kannada         digressions    1: false verse Gemini med   0 (0%)  Cue   1 (100%)  3L med   0 (0%)   | verse passages   81: missed Gemini med   1  Cue   0  3L med   1
+  Tuning English         digressions  119: false verse Gemini med  45 (38%)  Cue  22 (18%)  3L med  13 (11%)   | verse passages  173: missed Gemini med  17  Cue  27  3L med  36
+  E2 Kannada test        digressions   23: false verse Gemini med   6 (26%)  Cue  19 (83%)  3L med   6 (26%)   | verse passages  317: missed Gemini med   9  Cue   0  3L med   6
+  E2 English test        digressions  336: false verse Gemini med 126 (38%)  Cue  72 (21%)  3L med  43 (13%)   | verse passages  340: missed Gemini med  76  Cue  88  3L med 108
+  E3 Kannada             digressions    4: false verse Gemini med   0 (0%)  Cue   1 (25%)  3L med   0 (0%)   | verse passages  128: missed Gemini med  27  Cue  10  3L med  29
+  E3 English, earlier 3  digressions   16: false verse Gemini med  14 (88%)  Cue  12 (75%)  3L med  11 (69%)   | verse passages  346: missed Gemini med  75  Cue  23  3L med  88
+  E3 English, new 4      digressions   74: false verse Gemini med  69 (93%)  Cue  64 (86%)  3L med  61 (82%)   | verse passages  225: missed Gemini med   3  Cue   3  3L med   6
+  E3 English, all 7      digressions   90: false verse Gemini med  83 (92%)  Cue  76 (84%)  3L med  72 (80%)   | verse passages  571: missed Gemini med  78  Cue  26  3L med  94
+  All 9 tuning           digressions  120: false verse Gemini med  45 (38%)  Cue  23 (19%)  3L med  13 (11%)   | verse passages  254: missed Gemini med  18  Cue  27  3L med  37
+  All 42 test            digressions  379: false verse Gemini med 146 (39%)  Cue 104 (27%)  3L med  60 (16%)   | verse passages 1131: missed Gemini med 187  Cue 121  3L med 231
+  All 46 test (+new 4)   digressions  453: false verse Gemini med 215 (47%)  Cue 168 (37%)  3L med 121 (27%)   | verse passages 1356: missed Gemini med 190  Cue 124  3L med 237
+  All 55                 digressions  573: false verse Gemini med 260 (45%)  Cue 191 (33%)  3L med 134 (23%)   | verse passages 1610: missed Gemini med 208  Cue 151  3L med 274
+
+  2c. cost (USD; Gemini medium: no usage files, not known)
+
+  Tuning Kannada         Cue $0.067   3L med = Gemini medium + Cue
+  Tuning English         Cue $0.237   3L med = Gemini medium + Cue
+  E2 Kannada test        Cue $0.276   3L med = Gemini medium + Cue
+  E2 English test        Cue $0.549   3L med = Gemini medium + Cue
+  E3 Kannada             Cue $0.107   3L med = Gemini medium + Cue
+  E3 English, earlier 3  Cue $0.294   3L med = Gemini medium + Cue
+  E3 English, new 4      Cue $0.245   3L med = Gemini medium + Cue
+  E3 English, all 7      Cue $0.539   3L med = Gemini medium + Cue
+  All 9 tuning           Cue $0.304   3L med = Gemini medium + Cue
+  All 42 test            Cue $1.225   3L med = Gemini medium + Cue
+  All 46 test (+new 4)   Cue $1.471   3L med = Gemini medium + Cue
+  All 55                 Cue $1.774   3L med = Gemini medium + Cue
+
+  2d. 3-layer: who decided (passages; right = set equals gold; Gemini medium alone right on the same)
+
+  Tuning Kannada        1 anchor: 54 right 51 (Gemini med 50)   4 frontier: 28 right 24 (Gemini med 24)
+  Tuning English        2 Cue conf>=0.9: 119 right 98 (Gemini med 84)   4 frontier: 173 right 135 (Gemini med 135)
+  E2 Kannada test       1 anchor: 218 right 159 (Gemini med 189)   2 Cue conf>=0.9: 6 right 6 (Gemini med 6)   4 frontier: 116 right 95 (Gemini med 95)
+  E2 English test       2 Cue conf>=0.9: 314 right 248 (Gemini med 196)   4 frontier: 362 right 250 (Gemini med 250)
+  E3 Kannada            1 anchor: 52 right 32 (Gemini med 31)   2 Cue conf>=0.9: 10 right 3 (Gemini med 6)   4 frontier: 70 right 44 (Gemini med 44)
+  E3 English, earlier 3 2 Cue conf>=0.9: 29 right 5 (Gemini med 14)   4 frontier: 333 right 196 (Gemini med 196)
+  E3 English, new 4     2 Cue conf>=0.9: 14 right 10 (Gemini med 4)   4 frontier: 285 right 170 (Gemini med 170)
+  E3 English, all 7     2 Cue conf>=0.9: 43 right 15 (Gemini med 18)   4 frontier: 618 right 366 (Gemini med 366)
+  All 9 tuning          1 anchor: 54 right 51 (Gemini med 50)   2 Cue conf>=0.9: 119 right 98 (Gemini med 84)   4 frontier: 201 right 159 (Gemini med 159)
+  All 42 test           1 anchor: 270 right 191 (Gemini med 220)   2 Cue conf>=0.9: 359 right 262 (Gemini med 222)   4 frontier: 881 right 585 (Gemini med 585)
+  All 46 test (+new 4)  1 anchor: 270 right 191 (Gemini med 220)   2 Cue conf>=0.9: 373 right 272 (Gemini med 226)   4 frontier: 1166 right 755 (Gemini med 755)
+  All 55                1 anchor: 324 right 242 (Gemini med 270)   2 Cue conf>=0.9: 492 right 370 (Gemini med 310)   4 frontier: 1367 right 914 (Gemini med 914)

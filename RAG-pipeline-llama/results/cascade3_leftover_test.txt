@@ -1,0 +1,83 @@
+3-layer cascade with Gemini, REAL leftover-only Gemini calls, 42 test lectures (POST-HOC, not pre-registered; design = cascade4_test.THREE, chosen on tuning)
+leftover answers: 6 target passages missing (= NONE), 9 unparsed lines
+
+1. LECTURE BY LECTURE  (strict F1; to Gemini = passages labelled by Gemini / all)
+
+  lecture                  psg  to Gemini      Gemini alone      3L simulated  3L REAL leftover   $ alone  $ 3L real
+  -- E2 Kannada test --
+  gita-2nd_video            13          4             0.929             1.000             1.000     0.036      0.045
+  gita-3rd_video            14          2             0.933             0.848             0.824     0.046      0.053
+  gita-5th_video            19         12             0.878             0.878             0.905     0.063      0.069
+  gita-6th_video            21         17             1.000             0.950             0.950     0.046      0.070
+  kannada_08                12          3             0.828             0.815             0.875     0.048      0.056
+  kannada_09                15          5             0.941             0.941             0.941     0.052      0.045
+  kannada_11                16          4             0.914             0.821             0.769     0.051      0.049
+  kannada_12                16          3             0.971             0.944             0.971     0.048      0.044
+  kannada_14                14          1             0.941             0.941             0.882     0.053      0.044
+  kannada_15                20         13             0.864             0.791             0.791     0.055      0.057
+  kannada_17                14          1             0.933             0.776             0.776     0.051      0.040
+  kannada_18                13          4             0.960             0.846             0.846     0.047      0.046
+  kannada_19                18          6             1.000             0.947             0.919     0.048      0.053
+  kannada_20                15          5             0.970             0.938             0.903     0.053      0.047
+  kannada_21                13          5             0.857             0.786             0.786     0.048      0.056
+  kannada_22                14          6             0.929             0.897             0.897     0.037      0.061
+  kannada_23                17          6             0.848             0.750             0.667     0.051      0.049
+  kannada_24                12          3             0.923             0.846             0.846     0.049      0.055
+  kannada_25                14          6             0.968             0.812             0.593     0.046      0.046
+  kannada_26                12          1             0.914             0.842             0.842     0.049      0.045
+  kannada_27                14          3             0.970             0.882             0.882     0.037      0.052
+  kannada_28                11          2             0.929             0.774             0.774     0.049      0.043
+  kannada_29                13          4             0.897             0.903             0.903     0.048      0.050
+  -- E2 English test --
+  video_02                  82         67             0.681             0.681             0.585     0.058      0.123
+  video_03                  87         52             0.681             0.768             0.819     0.083      0.150
+  video_05                 103         65             0.692             0.787             0.774     0.091      0.162
+  video_06                 104         45             0.610             0.575             0.642     0.094      0.171
+  video_08                  96         58             0.633             0.760             0.757     0.102      0.154
+  video_09                 102         34             0.725             0.677             0.657     0.076      0.134
+  video_10                 102         41             0.817             0.626             0.673     0.077      0.173
+  -- E3 Kannada --
+  kn_brahmanyachar_day02b   44         14             0.930             0.871             0.833     0.090      0.115
+  kn_sumith_day01            9          7             0.857             0.857             0.933     0.048      0.050
+  kn_sumith_day02           10          5             0.857             0.857             0.909     0.047      0.055
+  kn_sumith_day03           12          3             1.000             0.625             0.500     0.051      0.058
+  kn_sumith_day04           12          9             0.815             0.815             0.800     0.060      0.045
+  kn_sumith_day05           15         13             0.889             0.864             0.936     0.049      0.078
+  kn_sumith_day06            8          4             0.952             0.900             0.900     0.045      0.048
+  kn_sumith_day07           11          7             0.960             0.917             0.917     0.044      0.049
+  kn_sumith_day08           11          8             0.667             0.667             0.526     0.043      0.043
+  -- E3 English --
+  en_chinmaya_day03         71         71             0.475             0.475             0.944     0.072      0.135
+  en_chinmaya_day04         76         67             0.895             0.819             0.879     0.078      0.118
+  en_iskcon                215        195             0.845             0.830             0.829     0.128      0.346
+
+2. OVERVIEW (paired vs Gemini alone: diff [95% CI] W/T/L, 5+ lectures)
+
+  E2 Kannada test  23 lect  to Gemini 116/340 (34%)  Gemini alone 0.926  3L simulated 0.866  3L REAL leftover 0.851
+      3L simulated - Gemini alone -0.060 [-0.084,-0.037]  W/T/L 2/3/18
+      3L REAL leftover - Gemini alone -0.076 [-0.112,-0.043]  W/T/L 4/2/17
+      digressions 23: false verse Gemini alone 5  3L simulated 5  3L REAL leftover 6   | verse passages 317: missed Gemini alone 10  3L simulated 8  3L REAL leftover 16
+      leftover passages 116: right with leftover call 85, with whole-lecture call 96
+      cost $: Gemini alone 1.108  leftover call only 0.902  3L REAL leftover 1.178
+  E2 English test   7 lect  to Gemini 362/676 (54%)  Gemini alone 0.693  3L simulated 0.706  3L REAL leftover 0.712
+      3L simulated - Gemini alone +0.012 [-0.079,+0.082]  W/T/L 3/1/3
+      3L REAL leftover - Gemini alone +0.018 [-0.068,+0.090]  W/T/L 4/0/3
+      digressions 336: false verse Gemini alone 119  3L simulated 48  3L REAL leftover 43   | verse passages 340: missed Gemini alone 69  3L simulated 102  3L REAL leftover 104
+      leftover passages 362: right with leftover call 253, with whole-lecture call 250
+      cost $: Gemini alone 0.581  leftover call only 0.518  3L REAL leftover 1.067
+  E3 Kannada        9 lect  to Gemini 70/132 (53%)  Gemini alone 0.901  3L simulated 0.844  3L REAL leftover 0.831
+      3L simulated - Gemini alone -0.056 [-0.116,-0.015]  W/T/L 0/4/5
+      3L REAL leftover - Gemini alone -0.070 [-0.150,+0.009]  W/T/L 3/0/6
+      digressions 4: false verse Gemini alone 0  3L simulated 0  3L REAL leftover 0   | verse passages 128: missed Gemini alone 14  3L simulated 19  3L REAL leftover 20
+      leftover passages 70: right with leftover call 50, with whole-lecture call 55
+      cost $: Gemini alone 0.475  leftover call only 0.434  3L REAL leftover 0.542
+  E3 English        3 lect  to Gemini 333/362 (92%)  Gemini alone 0.805  3L simulated 0.778  3L REAL leftover 0.860
+      digressions 16: false verse Gemini alone 14  3L simulated 11  3L REAL leftover 11   | verse passages 346: missed Gemini alone 53  3L simulated 73  3L REAL leftover 25
+      leftover passages 333: right with leftover call 260, with whole-lecture call 211
+      cost $: Gemini alone 0.278  leftover call only 0.306  3L REAL leftover 0.599
+  All 42 test      42 lect  to Gemini 881/1510 (58%)  Gemini alone 0.819  3L simulated 0.794  3L REAL leftover 0.815
+      3L simulated - Gemini alone -0.025 [-0.057,+0.004]  W/T/L 5/9/28
+      3L REAL leftover - Gemini alone -0.005 [-0.054,+0.054]  W/T/L 12/2/28
+      digressions 379: false verse Gemini alone 138  3L simulated 64  3L REAL leftover 60   | verse passages 1131: missed Gemini alone 146  3L simulated 202  3L REAL leftover 165
+      leftover passages 881: right with leftover call 648, with whole-lecture call 612
+      cost $: Gemini alone 2.442  leftover call only 2.160  3L REAL leftover 3.385
