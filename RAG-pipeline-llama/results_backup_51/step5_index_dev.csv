@@ -1,0 +1,375 @@
+unit_id,video_file,language,speaker,tradition,unit_index,primary_verse,p_primary,p_off,theme_id,theme_name,secondary_verses,segment_id,word_start,word_end,lecture_words,pos_start,pos_end
+kn_gita-1st_video_0000,gita-1st_video,kn,original Kannada speaker,Dvaita,0,BG 2.1,0.0054,0.4114,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s000,0,103,1525,0.0,0.0675
+kn_gita-1st_video_0001,gita-1st_video,kn,original Kannada speaker,Dvaita,1,BG 2.1,0.8781,0.0169,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s000,103,205,1525,0.0675,0.1344
+kn_gita-1st_video_0002,gita-1st_video,kn,original Kannada speaker,Dvaita,2,BG 2.1,0.9366,0.0041,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s000,205,310,1525,0.1344,0.2033
+kn_gita-1st_video_0003,gita-1st_video,kn,original Kannada speaker,Dvaita,3,BG 2.1,0.915,0.0041,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s000,310,414,1525,0.2033,0.2715
+kn_gita-1st_video_0004,gita-1st_video,kn,original Kannada speaker,Dvaita,4,BG 2.1,0.4913,0.0011,T01,Arjuna's Despondency and Surrender,BG 2.2,gita-1st_video_s000,414,536,1525,0.2715,0.3515
+kn_gita-1st_video_0005,gita-1st_video,kn,original Kannada speaker,Dvaita,5,BG 2.2,0.8352,0.0025,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s001,536,644,1525,0.3515,0.4223
+kn_gita-1st_video_0006,gita-1st_video,kn,original Kannada speaker,Dvaita,6,BG 2.2,0.8703,0.0378,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s001,644,759,1525,0.4223,0.4977
+kn_gita-1st_video_0007,gita-1st_video,kn,original Kannada speaker,Dvaita,7,BG 2.2,0.8188,0.0012,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s001,759,862,1525,0.4977,0.5652
+kn_gita-1st_video_0008,gita-1st_video,kn,original Kannada speaker,Dvaita,8,BG 2.2,0.4656,0.0003,T01,Arjuna's Despondency and Surrender,BG 2.3,gita-1st_video_s001,862,968,1525,0.5652,0.6348
+kn_gita-1st_video_0009,gita-1st_video,kn,original Kannada speaker,Dvaita,9,BG 2.3,0.648,0.0028,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s002,968,1071,1525,0.6348,0.7023
+kn_gita-1st_video_0010,gita-1st_video,kn,original Kannada speaker,Dvaita,10,BG 2.3,0.9306,0.0006,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s002,1071,1171,1525,0.7023,0.7679
+kn_gita-1st_video_0011,gita-1st_video,kn,original Kannada speaker,Dvaita,11,BG 2.3,0.8953,0.0006,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s002,1171,1277,1525,0.7679,0.8374
+kn_gita-1st_video_0012,gita-1st_video,kn,original Kannada speaker,Dvaita,12,BG 2.3,0.8827,0.0184,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s002,1277,1385,1525,0.8374,0.9082
+kn_gita-1st_video_0013,gita-1st_video,kn,original Kannada speaker,Dvaita,13,BG 2.3,0.4002,0.0016,T01,Arjuna's Despondency and Surrender,BG 2.7,gita-1st_video_s002,1385,1485,1525,0.9082,0.9738
+kn_gita-1st_video_0014,gita-1st_video,kn,original Kannada speaker,Dvaita,14,BG 2.3,0.5132,0.0009,T01,Arjuna's Despondency and Surrender,,gita-1st_video_s002,1485,1525,1525,0.9738,1.0
+kn_gita-4th_video_0000,gita-4th_video,kn,original Kannada speaker,Dvaita,0,BG 2.10,0.5461,0.0028,T01,Arjuna's Despondency and Surrender,BG 2.9,gita-4th_video_s003,0,110,1519,0.0,0.0724
+kn_gita-4th_video_0001,gita-4th_video,kn,original Kannada speaker,Dvaita,1,BG 2.10,0.6025,0.0472,T01,Arjuna's Despondency and Surrender,,gita-4th_video_s003,110,212,1519,0.0724,0.1396
+kn_gita-4th_video_0002,gita-4th_video,kn,original Kannada speaker,Dvaita,2,BG 2.10,0.4642,0.0304,T01,Arjuna's Despondency and Surrender,,gita-4th_video_s003,212,314,1519,0.1396,0.2067
+kn_gita-4th_video_0003,gita-4th_video,kn,original Kannada speaker,Dvaita,3,BG 2.10,0.4845,0.0048,T01,Arjuna's Despondency and Surrender,BG 2.7,gita-4th_video_s003,314,416,1519,0.2067,0.2739
+kn_gita-4th_video_0004,gita-4th_video,kn,original Kannada speaker,Dvaita,4,BG 2.10,0.532,0.0006,T01,Arjuna's Despondency and Surrender,,gita-4th_video_s003,416,517,1519,0.2739,0.3404
+kn_gita-4th_video_0005,gita-4th_video,kn,original Kannada speaker,Dvaita,5,BG 2.11,0.876,0.0003,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,517,622,1519,0.3404,0.4095
+kn_gita-4th_video_0006,gita-4th_video,kn,original Kannada speaker,Dvaita,6,BG 2.11,0.8955,0.0021,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,622,723,1519,0.4095,0.476
+kn_gita-4th_video_0007,gita-4th_video,kn,original Kannada speaker,Dvaita,7,BG 2.11,0.8578,0.03,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,723,834,1519,0.476,0.549
+kn_gita-4th_video_0008,gita-4th_video,kn,original Kannada speaker,Dvaita,8,BG 2.11,0.8997,0.003,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,834,934,1519,0.549,0.6149
+kn_gita-4th_video_0009,gita-4th_video,kn,original Kannada speaker,Dvaita,9,BG 2.11,0.7229,0.0121,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,934,1046,1519,0.6149,0.6886
+kn_gita-4th_video_0010,gita-4th_video,kn,original Kannada speaker,Dvaita,10,BG 2.11,0.8899,0.0027,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,1046,1150,1519,0.6886,0.7571
+kn_gita-4th_video_0011,gita-4th_video,kn,original Kannada speaker,Dvaita,11,BG 2.11,0.8659,0.0003,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,1150,1250,1519,0.7571,0.8229
+kn_gita-4th_video_0012,gita-4th_video,kn,original Kannada speaker,Dvaita,12,BG 2.11,0.9056,0.0093,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,1250,1350,1519,0.8229,0.8887
+kn_gita-4th_video_0013,gita-4th_video,kn,original Kannada speaker,Dvaita,13,BG 2.11,0.8449,0.0006,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,1350,1451,1519,0.8887,0.9552
+kn_gita-4th_video_0014,gita-4th_video,kn,original Kannada speaker,Dvaita,14,BG 2.11,0.9244,0.0046,T02,Immortality and Eternal Nature of the Self,,gita-4th_video_s004,1451,1519,1519,0.9552,1.0
+kn_kannada_07_0000,kannada_07,kn,original Kannada speaker,Dvaita,0,BG 2.14,0.0327,0.4684,T02,Immortality and Eternal Nature of the Self,,kannada_07_s005,0,101,1674,0.0,0.0603
+kn_kannada_07_0001,kannada_07,kn,original Kannada speaker,Dvaita,1,BG 2.14,0.018,0.172,T02,Immortality and Eternal Nature of the Self,,kannada_07_s005,101,210,1674,0.0603,0.1254
+kn_kannada_07_0002,kannada_07,kn,original Kannada speaker,Dvaita,2,BG 2.15,0.884,0.005,T02,Immortality and Eternal Nature of the Self,,kannada_07_s006,210,318,1674,0.1254,0.19
+kn_kannada_07_0003,kannada_07,kn,original Kannada speaker,Dvaita,3,BG 2.15,0.8299,0.01,T02,Immortality and Eternal Nature of the Self,,kannada_07_s006,318,434,1674,0.19,0.2593
+kn_kannada_07_0004,kannada_07,kn,original Kannada speaker,Dvaita,4,BG 2.15,0.809,0.0012,T02,Immortality and Eternal Nature of the Self,,kannada_07_s006,434,566,1674,0.2593,0.3381
+kn_kannada_07_0005,kannada_07,kn,original Kannada speaker,Dvaita,5,BG 2.15,0.6009,0.0354,T02,Immortality and Eternal Nature of the Self,,kannada_07_s006,566,668,1674,0.3381,0.399
+kn_kannada_07_0006,kannada_07,kn,original Kannada speaker,Dvaita,6,BG 2.15,0.8817,0.0065,T02,Immortality and Eternal Nature of the Self,,kannada_07_s006,668,780,1674,0.399,0.4659
+kn_kannada_07_0007,kannada_07,kn,original Kannada speaker,Dvaita,7,BG 2.15,0.8604,0.0265,T02,Immortality and Eternal Nature of the Self,,kannada_07_s006,780,884,1674,0.4659,0.5281
+kn_kannada_07_0008,kannada_07,kn,original Kannada speaker,Dvaita,8,BG 2.15,0.8329,0.0005,T02,Immortality and Eternal Nature of the Self,,kannada_07_s006,884,984,1674,0.5281,0.5878
+kn_kannada_07_0009,kannada_07,kn,original Kannada speaker,Dvaita,9,BG 2.16,0.827,0.0003,T02,Immortality and Eternal Nature of the Self,,kannada_07_s007,984,1092,1674,0.5878,0.6523
+kn_kannada_07_0010,kannada_07,kn,original Kannada speaker,Dvaita,10,BG 2.16,0.8608,0.0012,T02,Immortality and Eternal Nature of the Self,,kannada_07_s007,1092,1233,1674,0.6523,0.7366
+kn_kannada_07_0011,kannada_07,kn,original Kannada speaker,Dvaita,11,BG 2.16,0.7835,0.0181,T02,Immortality and Eternal Nature of the Self,,kannada_07_s007,1233,1340,1674,0.7366,0.8005
+kn_kannada_07_0012,kannada_07,kn,original Kannada speaker,Dvaita,12,BG 2.16,0.4888,0.0531,T02,Immortality and Eternal Nature of the Self,,kannada_07_s007,1340,1442,1674,0.8005,0.8614
+kn_kannada_07_0013,kannada_07,kn,original Kannada speaker,Dvaita,13,BG 2.16,0.3586,0.0491,T02,Immortality and Eternal Nature of the Self,,kannada_07_s007,1442,1556,1674,0.8614,0.9295
+kn_kannada_07_0014,kannada_07,kn,original Kannada speaker,Dvaita,14,BG 2.16,0.8659,0.0038,T02,Immortality and Eternal Nature of the Self,,kannada_07_s007,1556,1674,1674,0.9295,1.0
+kn_kannada_10_0000,kannada_10,kn,original Kannada speaker,Dvaita,0,BG 2.23,0.8287,0.0025,T02,Immortality and Eternal Nature of the Self,,kannada_10_s008,0,108,1168,0.0,0.0925
+kn_kannada_10_0001,kannada_10,kn,original Kannada speaker,Dvaita,1,BG 2.23,0.8807,0.0021,T02,Immortality and Eternal Nature of the Self,,kannada_10_s008,108,210,1168,0.0925,0.1798
+kn_kannada_10_0002,kannada_10,kn,original Kannada speaker,Dvaita,2,BG 2.23,0.461,0.0002,T02,Immortality and Eternal Nature of the Self,BG 2.24,kannada_10_s008,210,329,1168,0.1798,0.2817
+kn_kannada_10_0003,kannada_10,kn,original Kannada speaker,Dvaita,3,BG 2.24,0.49,0.0017,T02,Immortality and Eternal Nature of the Self,BG 2.23,kannada_10_s009,329,432,1168,0.2817,0.3699
+kn_kannada_10_0004,kannada_10,kn,original Kannada speaker,Dvaita,4,BG 2.24,0.8522,0.0268,T02,Immortality and Eternal Nature of the Self,,kannada_10_s009,432,535,1168,0.3699,0.458
+kn_kannada_10_0005,kannada_10,kn,original Kannada speaker,Dvaita,5,BG 2.24,0.8643,0.0024,T02,Immortality and Eternal Nature of the Self,,kannada_10_s009,535,637,1168,0.458,0.5454
+kn_kannada_10_0006,kannada_10,kn,original Kannada speaker,Dvaita,6,BG 2.24,0.7558,0.0319,T02,Immortality and Eternal Nature of the Self,,kannada_10_s009,637,737,1168,0.5454,0.631
+kn_kannada_10_0007,kannada_10,kn,original Kannada speaker,Dvaita,7,BG 2.24,0.4502,0.0011,T02,Immortality and Eternal Nature of the Self,BG 2.25,kannada_10_s009,737,844,1168,0.631,0.7226
+kn_kannada_10_0008,kannada_10,kn,original Kannada speaker,Dvaita,8,BG 2.25,0.5368,0.0007,T02,Immortality and Eternal Nature of the Self,,kannada_10_s010,844,950,1168,0.7226,0.8134
+kn_kannada_10_0009,kannada_10,kn,original Kannada speaker,Dvaita,9,BG 2.25,0.6928,0.0001,T02,Immortality and Eternal Nature of the Self,,kannada_10_s010,950,1073,1168,0.8134,0.9187
+kn_kannada_10_0010,kannada_10,kn,original Kannada speaker,Dvaita,10,BG 2.25,0.8662,0.0203,T02,Immortality and Eternal Nature of the Self,,kannada_10_s010,1073,1168,1168,0.9187,1.0
+kn_kannada_13_0000,kannada_13,kn,original Kannada speaker,Dvaita,0,BG 2.32,0.7391,0.0052,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s011,0,100,1204,0.0,0.0831
+kn_kannada_13_0001,kannada_13,kn,original Kannada speaker,Dvaita,1,BG 2.32,0.8514,0.0028,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s011,100,201,1204,0.0831,0.1669
+kn_kannada_13_0002,kannada_13,kn,original Kannada speaker,Dvaita,2,BG 2.32,0.8712,0.001,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s011,201,308,1204,0.1669,0.2558
+kn_kannada_13_0003,kannada_13,kn,original Kannada speaker,Dvaita,3,BG 2.32,0.7806,0.012,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s011,308,413,1204,0.2558,0.343
+kn_kannada_13_0004,kannada_13,kn,original Kannada speaker,Dvaita,4,BG 2.32,0.8383,0.0007,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s011,413,527,1204,0.343,0.4377
+kn_kannada_13_0005,kannada_13,kn,original Kannada speaker,Dvaita,5,BG 2.33,0.6821,0.0001,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s012,527,662,1204,0.4377,0.5498
+kn_kannada_13_0006,kannada_13,kn,original Kannada speaker,Dvaita,6,BG 2.33,0.8165,0.0018,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s012,662,817,1204,0.5498,0.6786
+kn_kannada_13_0007,kannada_13,kn,original Kannada speaker,Dvaita,7,BG 2.33,0.4516,0.0001,T04,Svadharma and the Ethics of Righteous Duty,BG 2.34,kannada_13_s012,817,917,1204,0.6786,0.7616
+kn_kannada_13_0008,kannada_13,kn,original Kannada speaker,Dvaita,8,BG 2.34,0.7591,0.0003,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s013,917,1021,1204,0.7616,0.848
+kn_kannada_13_0009,kannada_13,kn,original Kannada speaker,Dvaita,9,BG 2.34,0.8999,0.0102,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s013,1021,1131,1204,0.848,0.9394
+kn_kannada_13_0010,kannada_13,kn,original Kannada speaker,Dvaita,10,BG 2.34,0.8843,0.0004,T04,Svadharma and the Ethics of Righteous Duty,,kannada_13_s013,1131,1204,1204,0.9394,1.0
+kn_kannada_16_0000,kannada_16,kn,original Kannada speaker,Dvaita,0,BG 2.39,0.1683,0.3496,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s014,0,103,1525,0.0,0.0675
+kn_kannada_16_0001,kannada_16,kn,original Kannada speaker,Dvaita,1,BG 2.40,0.782,0.0016,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s015,103,221,1525,0.0675,0.1449
+kn_kannada_16_0002,kannada_16,kn,original Kannada speaker,Dvaita,2,BG 2.40,0.722,0.0118,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s015,221,325,1525,0.1449,0.2131
+kn_kannada_16_0003,kannada_16,kn,original Kannada speaker,Dvaita,3,BG 2.40,0.6927,0.0861,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s015,325,427,1525,0.2131,0.28
+kn_kannada_16_0004,kannada_16,kn,original Kannada speaker,Dvaita,4,BG 2.40,0.8744,0.0022,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s015,427,536,1525,0.28,0.3515
+kn_kannada_16_0005,kannada_16,kn,original Kannada speaker,Dvaita,5,BG 2.40,0.4937,0.0105,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s015,536,641,1525,0.3515,0.4203
+kn_kannada_16_0006,kannada_16,kn,original Kannada speaker,Dvaita,6,BG 2.40,0.7951,0.001,T05,Transition to Buddhi-Yoga and Critique of Ritualism,BG 2.43,kannada_16_s015,641,753,1525,0.4203,0.4938
+kn_kannada_16_0007,kannada_16,kn,original Kannada speaker,Dvaita,7,BG 2.40,0.3387,0.0092,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s015,753,858,1525,0.4938,0.5626
+kn_kannada_16_0008,kannada_16,kn,original Kannada speaker,Dvaita,8,BG 2.40,0.6386,0.0004,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s015,858,958,1525,0.5626,0.6282
+kn_kannada_16_0009,kannada_16,kn,original Kannada speaker,Dvaita,9,BG 2.41,0.6979,0.0002,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s016,958,1064,1525,0.6282,0.6977
+kn_kannada_16_0010,kannada_16,kn,original Kannada speaker,Dvaita,10,BG 2.41,0.8008,0.0004,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s016,1064,1170,1525,0.6977,0.7672
+kn_kannada_16_0011,kannada_16,kn,original Kannada speaker,Dvaita,11,BG 2.41,0.8605,0.0008,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s016,1170,1282,1525,0.7672,0.8407
+kn_kannada_16_0012,kannada_16,kn,original Kannada speaker,Dvaita,12,BG 2.41,0.606,0.0011,T05,Transition to Buddhi-Yoga and Critique of Ritualism,BG 2.44,kannada_16_s016,1282,1383,1525,0.8407,0.9069
+kn_kannada_16_0013,kannada_16,kn,original Kannada speaker,Dvaita,13,BG 2.41,0.4371,0.0167,T05,Transition to Buddhi-Yoga and Critique of Ritualism,BG 2.44,kannada_16_s016,1383,1494,1525,0.9069,0.9797
+kn_kannada_16_0014,kannada_16,kn,original Kannada speaker,Dvaita,14,BG 2.41,0.5235,0.0012,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,kannada_16_s016,1494,1525,1525,0.9797,1.0
+en_video_01_0000,video_01,en,original English speaker,Advaita,0,OFF,0.9281,0.9281,,,,video_01_s017,0,109,9431,0.0,0.0116
+en_video_01_0001,video_01,en,original English speaker,Advaita,1,OFF,0.64,0.64,,,,video_01_s017,109,214,9431,0.0116,0.0227
+en_video_01_0002,video_01,en,original English speaker,Advaita,2,OFF,0.4862,0.4862,,,,video_01_s017,214,335,9431,0.0227,0.0355
+en_video_01_0003,video_01,en,original English speaker,Advaita,3,OFF,0.5327,0.5327,,,,video_01_s017,335,439,9431,0.0355,0.0465
+en_video_01_0004,video_01,en,original English speaker,Advaita,4,OFF,0.9269,0.9269,,,,video_01_s017,439,553,9431,0.0465,0.0586
+en_video_01_0005,video_01,en,original English speaker,Advaita,5,OFF,0.8603,0.8603,,,,video_01_s017,553,653,9431,0.0586,0.0692
+en_video_01_0006,video_01,en,original English speaker,Advaita,6,OFF,0.7475,0.7475,,,,video_01_s017,653,757,9431,0.0692,0.0803
+en_video_01_0007,video_01,en,original English speaker,Advaita,7,OFF,0.8382,0.8382,,,,video_01_s017,757,865,9431,0.0803,0.0917
+en_video_01_0008,video_01,en,original English speaker,Advaita,8,OFF,0.7149,0.7149,,,,video_01_s017,865,966,9431,0.0917,0.1024
+en_video_01_0009,video_01,en,original English speaker,Advaita,9,OFF,0.9625,0.9625,,,,video_01_s017,966,1075,9431,0.1024,0.114
+en_video_01_0010,video_01,en,original English speaker,Advaita,10,OFF,0.9837,0.9837,,,,video_01_s017,1075,1190,9431,0.114,0.1262
+en_video_01_0011,video_01,en,original English speaker,Advaita,11,OFF,0.9678,0.9678,,,,video_01_s017,1190,1292,9431,0.1262,0.137
+en_video_01_0012,video_01,en,original English speaker,Advaita,12,OFF,0.9121,0.9121,,,,video_01_s017,1292,1398,9431,0.137,0.1482
+en_video_01_0013,video_01,en,original English speaker,Advaita,13,OFF,0.7651,0.7651,,,,video_01_s017,1398,1500,9431,0.1482,0.159
+en_video_01_0014,video_01,en,original English speaker,Advaita,14,OFF,0.8618,0.8618,,,,video_01_s017,1500,1603,9431,0.159,0.17
+en_video_01_0015,video_01,en,original English speaker,Advaita,15,OFF,0.96,0.96,,,,video_01_s017,1603,1705,9431,0.17,0.1808
+en_video_01_0016,video_01,en,original English speaker,Advaita,16,OFF,0.9707,0.9707,,,,video_01_s017,1705,1828,9431,0.1808,0.1938
+en_video_01_0017,video_01,en,original English speaker,Advaita,17,OFF,0.6639,0.6639,,,,video_01_s017,1828,1930,9431,0.1938,0.2046
+en_video_01_0018,video_01,en,original English speaker,Advaita,18,OFF,0.9154,0.9154,,,,video_01_s017,1930,2037,9431,0.2046,0.216
+en_video_01_0019,video_01,en,original English speaker,Advaita,19,OFF,0.7996,0.7996,,,,video_01_s017,2037,2144,9431,0.216,0.2273
+en_video_01_0020,video_01,en,original English speaker,Advaita,20,OFF,0.6097,0.6097,,,,video_01_s017,2144,2253,9431,0.2273,0.2389
+en_video_01_0021,video_01,en,original English speaker,Advaita,21,OFF,0.5611,0.5611,,,,video_01_s017,2253,2359,9431,0.2389,0.2501
+en_video_01_0022,video_01,en,original English speaker,Advaita,22,OFF,0.7893,0.7893,,,,video_01_s017,2359,2460,9431,0.2501,0.2608
+en_video_01_0023,video_01,en,original English speaker,Advaita,23,OFF,0.7516,0.7516,,,,video_01_s017,2460,2566,9431,0.2608,0.2721
+en_video_01_0024,video_01,en,original English speaker,Advaita,24,OFF,0.6522,0.6522,,,,video_01_s017,2566,2674,9431,0.2721,0.2835
+en_video_01_0025,video_01,en,original English speaker,Advaita,25,OFF,0.4328,0.4328,,,,video_01_s017,2674,2785,9431,0.2835,0.2953
+en_video_01_0026,video_01,en,original English speaker,Advaita,26,OFF,0.4433,0.4433,,,,video_01_s017,2785,2907,9431,0.2953,0.3082
+en_video_01_0027,video_01,en,original English speaker,Advaita,27,OFF,0.3623,0.3623,,,,video_01_s017,2907,3013,9431,0.3082,0.3195
+en_video_01_0028,video_01,en,original English speaker,Advaita,28,OFF,0.6577,0.6577,,,,video_01_s017,3013,3121,9431,0.3195,0.3309
+en_video_01_0029,video_01,en,original English speaker,Advaita,29,OFF,0.7102,0.7102,,,,video_01_s017,3121,3225,9431,0.3309,0.342
+en_video_01_0030,video_01,en,original English speaker,Advaita,30,OFF,0.5782,0.5782,,,,video_01_s017,3225,3330,9431,0.342,0.3531
+en_video_01_0031,video_01,en,original English speaker,Advaita,31,OFF,0.6399,0.6399,,,,video_01_s017,3330,3439,9431,0.3531,0.3646
+en_video_01_0032,video_01,en,original English speaker,Advaita,32,OFF,0.7171,0.7171,,,,video_01_s017,3439,3541,9431,0.3646,0.3755
+en_video_01_0033,video_01,en,original English speaker,Advaita,33,OFF,0.7903,0.7903,,,,video_01_s017,3541,3658,9431,0.3755,0.3879
+en_video_01_0034,video_01,en,original English speaker,Advaita,34,BG 2.1,0.7813,0.0378,T01,Arjuna's Despondency and Surrender,,video_01_s018,3658,3776,9431,0.3879,0.4004
+en_video_01_0035,video_01,en,original English speaker,Advaita,35,BG 2.1,0.7246,0.1981,T01,Arjuna's Despondency and Surrender,,video_01_s018,3776,3893,9431,0.4004,0.4128
+en_video_01_0036,video_01,en,original English speaker,Advaita,36,BG 2.1,0.7732,0.0699,T01,Arjuna's Despondency and Surrender,,video_01_s018,3893,3996,9431,0.4128,0.4237
+en_video_01_0037,video_01,en,original English speaker,Advaita,37,BG 2.1,0.7912,0.1061,T01,Arjuna's Despondency and Surrender,,video_01_s018,3996,4096,9431,0.4237,0.4343
+en_video_01_0038,video_01,en,original English speaker,Advaita,38,BG 2.1,0.7756,0.0734,T01,Arjuna's Despondency and Surrender,,video_01_s018,4096,4196,9431,0.4343,0.4449
+en_video_01_0039,video_01,en,original English speaker,Advaita,39,BG 2.1,0.6812,0.1101,T01,Arjuna's Despondency and Surrender,,video_01_s018,4196,4309,9431,0.4449,0.4569
+en_video_01_0040,video_01,en,original English speaker,Advaita,40,BG 2.1,0.4833,0.2234,T01,Arjuna's Despondency and Surrender,,video_01_s018,4309,4411,9431,0.4569,0.4677
+en_video_01_0041,video_01,en,original English speaker,Advaita,41,BG 2.1,0.5807,0.1622,T01,Arjuna's Despondency and Surrender,,video_01_s018,4411,4512,9431,0.4677,0.4784
+en_video_01_0042,video_01,en,original English speaker,Advaita,42,BG 2.1,0.1336,0.7812,T01,Arjuna's Despondency and Surrender,,video_01_s018,4512,4618,9431,0.4784,0.4897
+en_video_01_0043,video_01,en,original English speaker,Advaita,43,BG 2.1,0.1987,0.5663,T01,Arjuna's Despondency and Surrender,,video_01_s018,4618,4730,9431,0.4897,0.5015
+en_video_01_0044,video_01,en,original English speaker,Advaita,44,BG 2.2,0.4632,0.0063,T01,Arjuna's Despondency and Surrender,,video_01_s019,4730,4851,9431,0.5015,0.5144
+en_video_01_0045,video_01,en,original English speaker,Advaita,45,BG 2.2,0.8602,0.0645,T01,Arjuna's Despondency and Surrender,,video_01_s019,4851,4962,9431,0.5144,0.5261
+en_video_01_0046,video_01,en,original English speaker,Advaita,46,BG 2.2,0.5144,0.3956,T01,Arjuna's Despondency and Surrender,,video_01_s019,4962,5071,9431,0.5261,0.5377
+en_video_01_0047,video_01,en,original English speaker,Advaita,47,BG 2.2,0.5012,0.4295,T01,Arjuna's Despondency and Surrender,,video_01_s019,5071,5186,9431,0.5377,0.5499
+en_video_01_0048,video_01,en,original English speaker,Advaita,48,BG 2.2,0.82,0.0495,T01,Arjuna's Despondency and Surrender,,video_01_s019,5186,5306,9431,0.5499,0.5626
+en_video_01_0049,video_01,en,original English speaker,Advaita,49,BG 2.2,0.359,0.3562,T01,Arjuna's Despondency and Surrender,,video_01_s019,5306,5430,9431,0.5626,0.5758
+en_video_01_0050,video_01,en,original English speaker,Advaita,50,BG 2.2,0.3805,0.398,T01,Arjuna's Despondency and Surrender,,video_01_s019,5430,5532,9431,0.5758,0.5866
+en_video_01_0051,video_01,en,original English speaker,Advaita,51,BG 2.2,0.5261,0.1707,T01,Arjuna's Despondency and Surrender,,video_01_s019,5532,5650,9431,0.5866,0.5991
+en_video_01_0052,video_01,en,original English speaker,Advaita,52,BG 2.2,0.5627,0.3128,T01,Arjuna's Despondency and Surrender,,video_01_s019,5650,5753,9431,0.5991,0.61
+en_video_01_0053,video_01,en,original English speaker,Advaita,53,BG 2.2,0.6545,0.2085,T01,Arjuna's Despondency and Surrender,,video_01_s019,5753,5856,9431,0.61,0.6209
+en_video_01_0054,video_01,en,original English speaker,Advaita,54,BG 2.2,0.5701,0.1445,T01,Arjuna's Despondency and Surrender,,video_01_s019,5856,5972,9431,0.6209,0.6332
+en_video_01_0055,video_01,en,original English speaker,Advaita,55,BG 2.3,0.5244,0.0126,T01,Arjuna's Despondency and Surrender,,video_01_s020,5972,6076,9431,0.6332,0.6443
+en_video_01_0056,video_01,en,original English speaker,Advaita,56,BG 2.3,0.654,0.248,T01,Arjuna's Despondency and Surrender,,video_01_s020,6076,6188,9431,0.6443,0.6561
+en_video_01_0057,video_01,en,original English speaker,Advaita,57,BG 2.3,0.7388,0.1414,T01,Arjuna's Despondency and Surrender,,video_01_s020,6188,6290,9431,0.6561,0.6669
+en_video_01_0058,video_01,en,original English speaker,Advaita,58,BG 2.3,0.6867,0.1322,T01,Arjuna's Despondency and Surrender,,video_01_s020,6290,6409,9431,0.6669,0.6796
+en_video_01_0059,video_01,en,original English speaker,Advaita,59,BG 2.3,0.8035,0.0903,T01,Arjuna's Despondency and Surrender,,video_01_s020,6409,6509,9431,0.6796,0.6902
+en_video_01_0060,video_01,en,original English speaker,Advaita,60,BG 2.3,0.7267,0.1184,T01,Arjuna's Despondency and Surrender,,video_01_s020,6509,6611,9431,0.6902,0.701
+en_video_01_0061,video_01,en,original English speaker,Advaita,61,BG 2.3,0.236,0.1741,T01,Arjuna's Despondency and Surrender,,video_01_s020,6611,6717,9431,0.701,0.7122
+en_video_01_0062,video_01,en,original English speaker,Advaita,62,BG 2.3,0.1969,0.489,T01,Arjuna's Despondency and Surrender,,video_01_s020,6717,6829,9431,0.7122,0.7241
+en_video_01_0063,video_01,en,original English speaker,Advaita,63,BG 2.3,0.3104,0.2543,T01,Arjuna's Despondency and Surrender,,video_01_s020,6829,6940,9431,0.7241,0.7359
+en_video_01_0064,video_01,en,original English speaker,Advaita,64,BG 2.3,0.1403,0.2362,T01,Arjuna's Despondency and Surrender,,video_01_s020,6940,7049,9431,0.7359,0.7474
+en_video_01_0065,video_01,en,original English speaker,Advaita,65,BG 2.3,0.2421,0.1878,T01,Arjuna's Despondency and Surrender,,video_01_s020,7049,7162,9431,0.7474,0.7594
+en_video_01_0066,video_01,en,original English speaker,Advaita,66,BG 2.3,0.1068,0.4843,T01,Arjuna's Despondency and Surrender,,video_01_s020,7162,7285,9431,0.7594,0.7725
+en_video_01_0067,video_01,en,original English speaker,Advaita,67,BG 2.3,0.2043,0.6948,T01,Arjuna's Despondency and Surrender,,video_01_s020,7285,7390,9431,0.7725,0.7836
+en_video_01_0068,video_01,en,original English speaker,Advaita,68,BG 2.3,0.5163,0.1762,T01,Arjuna's Despondency and Surrender,,video_01_s020,7390,7490,9431,0.7836,0.7942
+en_video_01_0069,video_01,en,original English speaker,Advaita,69,BG 2.3,0.0742,0.0043,T01,Arjuna's Despondency and Surrender,BG 2.1;BG 2.4,video_01_s020,7490,7592,9431,0.7942,0.805
+en_video_01_0070,video_01,en,original English speaker,Advaita,70,BG 2.5,0.2209,0.0002,T01,Arjuna's Despondency and Surrender,BG 2.4,video_01_s021,7592,7707,9431,0.805,0.8172
+en_video_01_0071,video_01,en,original English speaker,Advaita,71,BG 2.5,0.7987,0.0012,T01,Arjuna's Despondency and Surrender,,video_01_s021,7707,7812,9431,0.8172,0.8283
+en_video_01_0072,video_01,en,original English speaker,Advaita,72,BG 2.5,0.8165,0.0297,T01,Arjuna's Despondency and Surrender,,video_01_s021,7812,7913,9431,0.8283,0.839
+en_video_01_0073,video_01,en,original English speaker,Advaita,73,BG 2.6,0.5524,0.0042,T01,Arjuna's Despondency and Surrender,,video_01_s022,7913,8015,9431,0.839,0.8499
+en_video_01_0074,video_01,en,original English speaker,Advaita,74,BG 2.6,0.8713,0.0101,T01,Arjuna's Despondency and Surrender,,video_01_s022,8015,8119,9431,0.8499,0.8609
+en_video_01_0075,video_01,en,original English speaker,Advaita,75,BG 2.6,0.6726,0.2611,T01,Arjuna's Despondency and Surrender,,video_01_s022,8119,8224,9431,0.8609,0.872
+en_video_01_0076,video_01,en,original English speaker,Advaita,76,BG 2.7,0.8026,0.0039,T01,Arjuna's Despondency and Surrender,,video_01_s023,8224,8327,9431,0.872,0.8829
+en_video_01_0077,video_01,en,original English speaker,Advaita,77,BG 2.7,0.8289,0.0266,T01,Arjuna's Despondency and Surrender,,video_01_s023,8327,8438,9431,0.8829,0.8947
+en_video_01_0078,video_01,en,original English speaker,Advaita,78,BG 2.7,0.679,0.2665,T01,Arjuna's Despondency and Surrender,,video_01_s023,8438,8546,9431,0.8947,0.9062
+en_video_01_0079,video_01,en,original English speaker,Advaita,79,BG 2.7,0.4511,0.0101,T01,Arjuna's Despondency and Surrender,BG 2.8,video_01_s023,8546,8647,9431,0.9062,0.9169
+en_video_01_0080,video_01,en,original English speaker,Advaita,80,BG 2.8,0.7138,0.0002,T01,Arjuna's Despondency and Surrender,,video_01_s024,8647,8752,9431,0.9169,0.928
+en_video_01_0081,video_01,en,original English speaker,Advaita,81,BG 2.8,0.4091,0.0002,T01,Arjuna's Despondency and Surrender,BG 2.9,video_01_s024,8752,8852,9431,0.928,0.9386
+en_video_01_0082,video_01,en,original English speaker,Advaita,82,BG 2.10,0.4594,0.0001,T01,Arjuna's Despondency and Surrender,BG 2.9,video_01_s025,8852,8960,9431,0.9386,0.9501
+en_video_01_0083,video_01,en,original English speaker,Advaita,83,BG 2.10,0.859,0.0314,T01,Arjuna's Despondency and Surrender,,video_01_s025,8960,9075,9431,0.9501,0.9623
+en_video_01_0084,video_01,en,original English speaker,Advaita,84,BG 2.10,0.4446,0.2741,T01,Arjuna's Despondency and Surrender,,video_01_s025,9075,9178,9431,0.9623,0.9732
+en_video_01_0085,video_01,en,original English speaker,Advaita,85,BG 2.10,0.4846,0.3433,T01,Arjuna's Despondency and Surrender,,video_01_s025,9178,9278,9431,0.9732,0.9838
+en_video_01_0086,video_01,en,original English speaker,Advaita,86,BG 2.10,0.1844,0.6975,T01,Arjuna's Despondency and Surrender,,video_01_s025,9278,9405,9431,0.9838,0.9972
+en_video_01_0087,video_01,en,original English speaker,Advaita,87,BG 2.10,0.2629,0.6648,T01,Arjuna's Despondency and Surrender,,video_01_s025,9405,9431,9431,0.9972,1.0
+en_video_04_0000,video_04,en,original English speaker,Advaita,0,OFF,0.7998,0.7998,,,,video_04_s026,0,115,11333,0.0,0.0101
+en_video_04_0001,video_04,en,original English speaker,Advaita,1,OFF,0.9466,0.9466,,,,video_04_s026,115,229,11333,0.0101,0.0202
+en_video_04_0002,video_04,en,original English speaker,Advaita,2,OFF,0.872,0.872,,,,video_04_s026,229,342,11333,0.0202,0.0302
+en_video_04_0003,video_04,en,original English speaker,Advaita,3,OFF,0.9617,0.9617,,,,video_04_s026,342,448,11333,0.0302,0.0395
+en_video_04_0004,video_04,en,original English speaker,Advaita,4,OFF,0.8719,0.8719,,,,video_04_s026,448,561,11333,0.0395,0.0495
+en_video_04_0005,video_04,en,original English speaker,Advaita,5,OFF,0.5817,0.5817,,,,video_04_s026,561,661,11333,0.0495,0.0583
+en_video_04_0006,video_04,en,original English speaker,Advaita,6,OFF,0.7331,0.7331,,,,video_04_s026,661,790,11333,0.0583,0.0697
+en_video_04_0007,video_04,en,original English speaker,Advaita,7,OFF,0.7967,0.7967,,,,video_04_s026,790,897,11333,0.0697,0.0791
+en_video_04_0008,video_04,en,original English speaker,Advaita,8,OFF,0.6595,0.6595,,,,video_04_s026,897,999,11333,0.0791,0.0881
+en_video_04_0009,video_04,en,original English speaker,Advaita,9,OFF,0.7334,0.7334,,,,video_04_s026,999,1101,11333,0.0881,0.0971
+en_video_04_0010,video_04,en,original English speaker,Advaita,10,OFF,0.8888,0.8888,,,,video_04_s026,1101,1206,11333,0.0971,0.1064
+en_video_04_0011,video_04,en,original English speaker,Advaita,11,OFF,0.9242,0.9242,,,,video_04_s026,1206,1312,11333,0.1064,0.1158
+en_video_04_0012,video_04,en,original English speaker,Advaita,12,OFF,0.8289,0.8289,,,,video_04_s026,1312,1421,11333,0.1158,0.1254
+en_video_04_0013,video_04,en,original English speaker,Advaita,13,OFF,0.687,0.687,,,,video_04_s026,1421,1523,11333,0.1254,0.1344
+en_video_04_0014,video_04,en,original English speaker,Advaita,14,BG 2.16,0.7721,0.0028,T02,Immortality and Eternal Nature of the Self,,video_04_s027,1523,1630,11333,0.1344,0.1438
+en_video_04_0015,video_04,en,original English speaker,Advaita,15,BG 2.16,0.8638,0.0265,T02,Immortality and Eternal Nature of the Self,,video_04_s027,1630,1735,11333,0.1438,0.1531
+en_video_04_0016,video_04,en,original English speaker,Advaita,16,BG 2.16,0.4104,0.5637,T02,Immortality and Eternal Nature of the Self,,video_04_s027,1735,1837,11333,0.1531,0.1621
+en_video_04_0017,video_04,en,original English speaker,Advaita,17,BG 2.16,0.3648,0.6078,T02,Immortality and Eternal Nature of the Self,,video_04_s027,1837,1939,11333,0.1621,0.1711
+en_video_04_0018,video_04,en,original English speaker,Advaita,18,BG 2.16,0.4388,0.5367,T02,Immortality and Eternal Nature of the Self,,video_04_s027,1939,2039,11333,0.1711,0.1799
+en_video_04_0019,video_04,en,original English speaker,Advaita,19,BG 2.16,0.3213,0.6605,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2039,2145,11333,0.1799,0.1893
+en_video_04_0020,video_04,en,original English speaker,Advaita,20,BG 2.16,0.7952,0.1165,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2145,2245,11333,0.1893,0.1981
+en_video_04_0021,video_04,en,original English speaker,Advaita,21,BG 2.16,0.2869,0.6968,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2245,2358,11333,0.1981,0.2081
+en_video_04_0022,video_04,en,original English speaker,Advaita,22,BG 2.16,0.7386,0.1153,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2358,2464,11333,0.2081,0.2174
+en_video_04_0023,video_04,en,original English speaker,Advaita,23,BG 2.16,0.5921,0.3295,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2464,2581,11333,0.2174,0.2277
+en_video_04_0024,video_04,en,original English speaker,Advaita,24,BG 2.16,0.6754,0.1475,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2581,2693,11333,0.2277,0.2376
+en_video_04_0025,video_04,en,original English speaker,Advaita,25,BG 2.16,0.7263,0.1295,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2693,2803,11333,0.2376,0.2473
+en_video_04_0026,video_04,en,original English speaker,Advaita,26,BG 2.16,0.6398,0.1902,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2803,2907,11333,0.2473,0.2565
+en_video_04_0027,video_04,en,original English speaker,Advaita,27,BG 2.16,0.5399,0.4221,T02,Immortality and Eternal Nature of the Self,,video_04_s027,2907,3021,11333,0.2565,0.2666
+en_video_04_0028,video_04,en,original English speaker,Advaita,28,BG 2.16,0.5617,0.3789,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3021,3126,11333,0.2666,0.2758
+en_video_04_0029,video_04,en,original English speaker,Advaita,29,BG 2.16,0.6219,0.2779,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3126,3243,11333,0.2758,0.2862
+en_video_04_0030,video_04,en,original English speaker,Advaita,30,BG 2.16,0.5932,0.313,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3243,3343,11333,0.2862,0.295
+en_video_04_0031,video_04,en,original English speaker,Advaita,31,BG 2.16,0.294,0.625,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3343,3443,11333,0.295,0.3038
+en_video_04_0032,video_04,en,original English speaker,Advaita,32,BG 2.16,0.1802,0.7499,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3443,3543,11333,0.3038,0.3126
+en_video_04_0033,video_04,en,original English speaker,Advaita,33,BG 2.16,0.4848,0.4509,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3543,3643,11333,0.3126,0.3215
+en_video_04_0034,video_04,en,original English speaker,Advaita,34,BG 2.16,0.3802,0.5461,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3643,3746,11333,0.3215,0.3305
+en_video_04_0035,video_04,en,original English speaker,Advaita,35,BG 2.16,0.2018,0.5865,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3746,3850,11333,0.3305,0.3397
+en_video_04_0036,video_04,en,original English speaker,Advaita,36,BG 2.16,0.4487,0.4519,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3850,3968,11333,0.3397,0.3501
+en_video_04_0037,video_04,en,original English speaker,Advaita,37,BG 2.16,0.4013,0.5138,T02,Immortality and Eternal Nature of the Self,,video_04_s027,3968,4101,11333,0.3501,0.3619
+en_video_04_0038,video_04,en,original English speaker,Advaita,38,BG 2.16,0.432,0.4723,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4101,4221,11333,0.3619,0.3725
+en_video_04_0039,video_04,en,original English speaker,Advaita,39,BG 2.16,0.5631,0.2959,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4221,4329,11333,0.3725,0.382
+en_video_04_0040,video_04,en,original English speaker,Advaita,40,BG 2.16,0.4511,0.4612,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4329,4431,11333,0.382,0.391
+en_video_04_0041,video_04,en,original English speaker,Advaita,41,BG 2.16,0.588,0.2673,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4431,4549,11333,0.391,0.4014
+en_video_04_0042,video_04,en,original English speaker,Advaita,42,BG 2.16,0.6151,0.2243,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4549,4651,11333,0.4014,0.4104
+en_video_04_0043,video_04,en,original English speaker,Advaita,43,BG 2.16,0.5858,0.3207,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4651,4755,11333,0.4104,0.4196
+en_video_04_0044,video_04,en,original English speaker,Advaita,44,BG 2.16,0.6672,0.22,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4755,4855,11333,0.4196,0.4284
+en_video_04_0045,video_04,en,original English speaker,Advaita,45,BG 2.16,0.4046,0.5582,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4855,4957,11333,0.4284,0.4374
+en_video_04_0046,video_04,en,original English speaker,Advaita,46,BG 2.16,0.5194,0.4229,T02,Immortality and Eternal Nature of the Self,,video_04_s027,4957,5073,11333,0.4374,0.4476
+en_video_04_0047,video_04,en,original English speaker,Advaita,47,BG 2.16,0.3105,0.6464,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5073,5182,11333,0.4476,0.4572
+en_video_04_0048,video_04,en,original English speaker,Advaita,48,BG 2.16,0.6186,0.2942,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5182,5285,11333,0.4572,0.4663
+en_video_04_0049,video_04,en,original English speaker,Advaita,49,BG 2.16,0.7064,0.0941,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5285,5388,11333,0.4663,0.4754
+en_video_04_0050,video_04,en,original English speaker,Advaita,50,BG 2.16,0.683,0.176,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5388,5492,11333,0.4754,0.4846
+en_video_04_0051,video_04,en,original English speaker,Advaita,51,BG 2.16,0.5782,0.226,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5492,5597,11333,0.4846,0.4939
+en_video_04_0052,video_04,en,original English speaker,Advaita,52,BG 2.16,0.6366,0.1923,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5597,5699,11333,0.4939,0.5029
+en_video_04_0053,video_04,en,original English speaker,Advaita,53,BG 2.16,0.5955,0.2162,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5699,5800,11333,0.5029,0.5118
+en_video_04_0054,video_04,en,original English speaker,Advaita,54,BG 2.16,0.6652,0.1962,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5800,5906,11333,0.5118,0.5211
+en_video_04_0055,video_04,en,original English speaker,Advaita,55,BG 2.16,0.553,0.3265,T02,Immortality and Eternal Nature of the Self,,video_04_s027,5906,6031,11333,0.5211,0.5322
+en_video_04_0056,video_04,en,original English speaker,Advaita,56,BG 2.16,0.6568,0.2227,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6031,6134,11333,0.5322,0.5413
+en_video_04_0057,video_04,en,original English speaker,Advaita,57,BG 2.16,0.6322,0.229,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6134,6249,11333,0.5413,0.5514
+en_video_04_0058,video_04,en,original English speaker,Advaita,58,BG 2.16,0.5552,0.221,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6249,6349,11333,0.5514,0.5602
+en_video_04_0059,video_04,en,original English speaker,Advaita,59,BG 2.16,0.6182,0.2804,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6349,6449,11333,0.5602,0.569
+en_video_04_0060,video_04,en,original English speaker,Advaita,60,BG 2.16,0.7,0.1644,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6449,6552,11333,0.569,0.5781
+en_video_04_0061,video_04,en,original English speaker,Advaita,61,BG 2.16,0.0417,0.9507,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6552,6671,11333,0.5781,0.5886
+en_video_04_0062,video_04,en,original English speaker,Advaita,62,BG 2.16,0.3443,0.6182,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6671,6777,11333,0.5886,0.598
+en_video_04_0063,video_04,en,original English speaker,Advaita,63,BG 2.16,0.4181,0.5138,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6777,6881,11333,0.598,0.6072
+en_video_04_0064,video_04,en,original English speaker,Advaita,64,BG 2.16,0.5865,0.2875,T02,Immortality and Eternal Nature of the Self,,video_04_s027,6881,6990,11333,0.6072,0.6168
+en_video_04_0065,video_04,en,original English speaker,Advaita,65,BG 2.16,0.6601,0.1573,T02,Immortality and Eternal Nature of the Self,BG 2.40,video_04_s027,6990,7094,11333,0.6168,0.626
+en_video_04_0066,video_04,en,original English speaker,Advaita,66,BG 2.40,0.7222,0.0944,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7094,7204,11333,0.626,0.6357
+en_video_04_0067,video_04,en,original English speaker,Advaita,67,BG 2.40,0.1216,0.8047,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7204,7314,11333,0.6357,0.6454
+en_video_04_0068,video_04,en,original English speaker,Advaita,68,BG 2.40,0.1523,0.7087,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7314,7418,11333,0.6454,0.6545
+en_video_04_0069,video_04,en,original English speaker,Advaita,69,BG 2.40,0.3592,0.2909,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7418,7519,11333,0.6545,0.6635
+en_video_04_0070,video_04,en,original English speaker,Advaita,70,BG 2.40,0.5451,0.0548,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7519,7622,11333,0.6635,0.6725
+en_video_04_0071,video_04,en,original English speaker,Advaita,71,BG 2.40,0.3208,0.4572,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7622,7732,11333,0.6725,0.6823
+en_video_04_0072,video_04,en,original English speaker,Advaita,72,BG 2.40,0.0705,0.5953,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7732,7835,11333,0.6823,0.6913
+en_video_04_0073,video_04,en,original English speaker,Advaita,73,BG 2.40,0.5648,0.2658,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7835,7942,11333,0.6913,0.7008
+en_video_04_0074,video_04,en,original English speaker,Advaita,74,BG 2.40,0.3362,0.5708,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,7942,8045,11333,0.7008,0.7099
+en_video_04_0075,video_04,en,original English speaker,Advaita,75,BG 2.40,0.4015,0.1624,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8045,8150,11333,0.7099,0.7191
+en_video_04_0076,video_04,en,original English speaker,Advaita,76,BG 2.40,0.5157,0.3318,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8150,8261,11333,0.7191,0.7289
+en_video_04_0077,video_04,en,original English speaker,Advaita,77,BG 2.40,0.3949,0.2799,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8261,8367,11333,0.7289,0.7383
+en_video_04_0078,video_04,en,original English speaker,Advaita,78,BG 2.40,0.3655,0.347,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8367,8474,11333,0.7383,0.7477
+en_video_04_0079,video_04,en,original English speaker,Advaita,79,BG 2.40,0.2906,0.3299,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8474,8593,11333,0.7477,0.7582
+en_video_04_0080,video_04,en,original English speaker,Advaita,80,BG 2.40,0.0945,0.7666,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8593,8695,11333,0.7582,0.7672
+en_video_04_0081,video_04,en,original English speaker,Advaita,81,BG 2.40,0.5623,0.3005,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8695,8795,11333,0.7672,0.7761
+en_video_04_0082,video_04,en,original English speaker,Advaita,82,BG 2.40,0.5718,0.2098,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8795,8917,11333,0.7761,0.7868
+en_video_04_0083,video_04,en,original English speaker,Advaita,83,BG 2.40,0.2837,0.5476,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,8917,9027,11333,0.7868,0.7965
+en_video_04_0084,video_04,en,original English speaker,Advaita,84,BG 2.40,0.3558,0.5057,T05,Transition to Buddhi-Yoga and Critique of Ritualism,,video_04_s028,9027,9127,11333,0.7965,0.8053
+en_video_04_0085,video_04,en,original English speaker,Advaita,85,OFF,0.795,0.795,,,,video_04_s029,9127,9228,11333,0.8053,0.8143
+en_video_04_0086,video_04,en,original English speaker,Advaita,86,OFF,0.4112,0.4112,,,,video_04_s029,9228,9332,11333,0.8143,0.8234
+en_video_04_0087,video_04,en,original English speaker,Advaita,87,OFF,0.6531,0.6531,,,,video_04_s029,9332,9435,11333,0.8234,0.8325
+en_video_04_0088,video_04,en,original English speaker,Advaita,88,OFF,0.4287,0.4287,,,,video_04_s029,9435,9543,11333,0.8325,0.8421
+en_video_04_0089,video_04,en,original English speaker,Advaita,89,OFF,0.8348,0.8348,,,,video_04_s029,9543,9643,11333,0.8421,0.8509
+en_video_04_0090,video_04,en,original English speaker,Advaita,90,OFF,0.3849,0.3849,,,,video_04_s029,9643,9746,11333,0.8509,0.86
+en_video_04_0091,video_04,en,original English speaker,Advaita,91,OFF,0.4299,0.4299,,,,video_04_s029,9746,9848,11333,0.86,0.869
+en_video_04_0092,video_04,en,original English speaker,Advaita,92,OFF,0.7621,0.7621,,,,video_04_s029,9848,9949,11333,0.869,0.8779
+en_video_04_0093,video_04,en,original English speaker,Advaita,93,OFF,0.6865,0.6865,,,,video_04_s029,9949,10049,11333,0.8779,0.8867
+en_video_04_0094,video_04,en,original English speaker,Advaita,94,OFF,0.5305,0.5305,,,,video_04_s029,10049,10153,11333,0.8867,0.8959
+en_video_04_0095,video_04,en,original English speaker,Advaita,95,OFF,0.8399,0.8399,,,,video_04_s029,10153,10254,11333,0.8959,0.9048
+en_video_04_0096,video_04,en,original English speaker,Advaita,96,OFF,0.8883,0.8883,,,,video_04_s029,10254,10357,11333,0.9048,0.9139
+en_video_04_0097,video_04,en,original English speaker,Advaita,97,OFF,0.6027,0.6027,,,,video_04_s029,10357,10482,11333,0.9139,0.9249
+en_video_04_0098,video_04,en,original English speaker,Advaita,98,OFF,0.3313,0.3313,,,,video_04_s029,10482,10584,11333,0.9249,0.9339
+en_video_04_0099,video_04,en,original English speaker,Advaita,99,OFF,0.5237,0.5237,,,,video_04_s029,10584,10684,11333,0.9339,0.9427
+en_video_04_0100,video_04,en,original English speaker,Advaita,100,OFF,0.6801,0.6801,,,,video_04_s029,10684,10786,11333,0.9427,0.9517
+en_video_04_0101,video_04,en,original English speaker,Advaita,101,OFF,0.6349,0.6349,,,,video_04_s029,10786,10890,11333,0.9517,0.9609
+en_video_04_0102,video_04,en,original English speaker,Advaita,102,OFF,0.7354,0.7354,,,,video_04_s029,10890,10991,11333,0.9609,0.9698
+en_video_04_0103,video_04,en,original English speaker,Advaita,103,OFF,0.497,0.497,,,,video_04_s029,10991,11109,11333,0.9698,0.9802
+en_video_04_0104,video_04,en,original English speaker,Advaita,104,OFF,0.5628,0.5628,,,,video_04_s029,11109,11216,11333,0.9802,0.9897
+en_video_04_0105,video_04,en,original English speaker,Advaita,105,OFF,0.708,0.708,,,,video_04_s029,11216,11316,11333,0.9897,0.9985
+en_video_04_0106,video_04,en,original English speaker,Advaita,106,OFF,0.5248,0.5248,,,,video_04_s029,11316,11333,11333,0.9985,1.0
+en_video_07_0000,video_07,en,original English speaker,Advaita,0,OFF,0.7798,0.7798,,,,video_07_s030,0,106,10342,0.0,0.0102
+en_video_07_0001,video_07,en,original English speaker,Advaita,1,OFF,0.3244,0.3244,,,,video_07_s030,106,209,10342,0.0102,0.0202
+en_video_07_0002,video_07,en,original English speaker,Advaita,2,OFF,0.5465,0.5465,,,,video_07_s030,209,318,10342,0.0202,0.0307
+en_video_07_0003,video_07,en,original English speaker,Advaita,3,OFF,0.5285,0.5285,,,,video_07_s030,318,418,10342,0.0307,0.0404
+en_video_07_0004,video_07,en,original English speaker,Advaita,4,OFF,0.4777,0.4777,,,,video_07_s030,418,519,10342,0.0404,0.0502
+en_video_07_0005,video_07,en,original English speaker,Advaita,5,OFF,0.7144,0.7144,,,,video_07_s030,519,625,10342,0.0502,0.0604
+en_video_07_0006,video_07,en,original English speaker,Advaita,6,OFF,0.5003,0.5003,,,,video_07_s030,625,747,10342,0.0604,0.0722
+en_video_07_0007,video_07,en,original English speaker,Advaita,7,OFF,0.6844,0.6844,,,,video_07_s030,747,861,10342,0.0722,0.0833
+en_video_07_0008,video_07,en,original English speaker,Advaita,8,OFF,0.5523,0.5523,,,,video_07_s030,861,970,10342,0.0833,0.0938
+en_video_07_0009,video_07,en,original English speaker,Advaita,9,OFF,0.693,0.693,,,,video_07_s030,970,1071,10342,0.0938,0.1036
+en_video_07_0010,video_07,en,original English speaker,Advaita,10,BG 2.20,0.5273,0.0073,T02,Immortality and Eternal Nature of the Self,BG 2.19,video_07_s031,1071,1171,10342,0.1036,0.1132
+en_video_07_0011,video_07,en,original English speaker,Advaita,11,BG 2.20,0.4989,0.005,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1171,1282,10342,0.1132,0.124
+en_video_07_0012,video_07,en,original English speaker,Advaita,12,BG 2.20,0.5513,0.0203,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1282,1391,10342,0.124,0.1345
+en_video_07_0013,video_07,en,original English speaker,Advaita,13,BG 2.20,0.425,0.183,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1391,1493,10342,0.1345,0.1444
+en_video_07_0014,video_07,en,original English speaker,Advaita,14,BG 2.20,0.3767,0.1932,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1493,1600,10342,0.1444,0.1547
+en_video_07_0015,video_07,en,original English speaker,Advaita,15,BG 2.20,0.3307,0.3364,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1600,1712,10342,0.1547,0.1655
+en_video_07_0016,video_07,en,original English speaker,Advaita,16,BG 2.20,0.079,0.5748,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1712,1815,10342,0.1655,0.1755
+en_video_07_0017,video_07,en,original English speaker,Advaita,17,BG 2.20,0.1145,0.6331,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1815,1917,10342,0.1755,0.1854
+en_video_07_0018,video_07,en,original English speaker,Advaita,18,BG 2.20,0.3184,0.3397,T02,Immortality and Eternal Nature of the Self,,video_07_s031,1917,2031,10342,0.1854,0.1964
+en_video_07_0019,video_07,en,original English speaker,Advaita,19,BG 2.20,0.1056,0.5534,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2031,2131,10342,0.1964,0.2061
+en_video_07_0020,video_07,en,original English speaker,Advaita,20,BG 2.20,0.0716,0.8421,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2131,2235,10342,0.2061,0.2161
+en_video_07_0021,video_07,en,original English speaker,Advaita,21,BG 2.20,0.3812,0.4689,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2235,2349,10342,0.2161,0.2271
+en_video_07_0022,video_07,en,original English speaker,Advaita,22,BG 2.20,0.4604,0.2227,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2349,2452,10342,0.2271,0.2371
+en_video_07_0023,video_07,en,original English speaker,Advaita,23,BG 2.20,0.5605,0.1321,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2452,2555,10342,0.2371,0.2471
+en_video_07_0024,video_07,en,original English speaker,Advaita,24,BG 2.20,0.6062,0.1322,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2555,2658,10342,0.2471,0.257
+en_video_07_0025,video_07,en,original English speaker,Advaita,25,BG 2.20,0.7229,0.0166,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2658,2766,10342,0.257,0.2675
+en_video_07_0026,video_07,en,original English speaker,Advaita,26,BG 2.20,0.829,0.0404,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2766,2870,10342,0.2675,0.2775
+en_video_07_0027,video_07,en,original English speaker,Advaita,27,BG 2.20,0.7618,0.107,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2870,2978,10342,0.2775,0.288
+en_video_07_0028,video_07,en,original English speaker,Advaita,28,BG 2.20,0.769,0.0588,T02,Immortality and Eternal Nature of the Self,,video_07_s031,2978,3082,10342,0.288,0.298
+en_video_07_0029,video_07,en,original English speaker,Advaita,29,BG 2.20,0.6598,0.2226,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3082,3184,10342,0.298,0.3079
+en_video_07_0030,video_07,en,original English speaker,Advaita,30,BG 2.20,0.4098,0.4463,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3184,3300,10342,0.3079,0.3191
+en_video_07_0031,video_07,en,original English speaker,Advaita,31,BG 2.20,0.2657,0.1972,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3300,3413,10342,0.3191,0.33
+en_video_07_0032,video_07,en,original English speaker,Advaita,32,BG 2.20,0.4301,0.2611,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3413,3519,10342,0.33,0.3403
+en_video_07_0033,video_07,en,original English speaker,Advaita,33,BG 2.20,0.3089,0.2177,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3519,3643,10342,0.3403,0.3523
+en_video_07_0034,video_07,en,original English speaker,Advaita,34,BG 2.20,0.2335,0.4483,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3643,3743,10342,0.3523,0.3619
+en_video_07_0035,video_07,en,original English speaker,Advaita,35,BG 2.20,0.3073,0.1901,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3743,3844,10342,0.3619,0.3717
+en_video_07_0036,video_07,en,original English speaker,Advaita,36,BG 2.20,0.5668,0.123,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3844,3949,10342,0.3717,0.3818
+en_video_07_0037,video_07,en,original English speaker,Advaita,37,BG 2.20,0.3941,0.1271,T02,Immortality and Eternal Nature of the Self,,video_07_s031,3949,4058,10342,0.3818,0.3924
+en_video_07_0038,video_07,en,original English speaker,Advaita,38,BG 2.20,0.2554,0.5564,T02,Immortality and Eternal Nature of the Self,,video_07_s031,4058,4162,10342,0.3924,0.4024
+en_video_07_0039,video_07,en,original English speaker,Advaita,39,BG 2.21,0.414,0.002,T02,Immortality and Eternal Nature of the Self,BG 2.17,video_07_s032,4162,4264,10342,0.4024,0.4123
+en_video_07_0040,video_07,en,original English speaker,Advaita,40,BG 2.21,0.4224,0.0385,T02,Immortality and Eternal Nature of the Self,,video_07_s032,4264,4370,10342,0.4123,0.4225
+en_video_07_0041,video_07,en,original English speaker,Advaita,41,BG 2.21,0.3023,0.1286,T02,Immortality and Eternal Nature of the Self,,video_07_s032,4370,4475,10342,0.4225,0.4327
+en_video_07_0042,video_07,en,original English speaker,Advaita,42,BG 2.21,0.2222,0.2772,T02,Immortality and Eternal Nature of the Self,,video_07_s032,4475,4578,10342,0.4327,0.4427
+en_video_07_0043,video_07,en,original English speaker,Advaita,43,BG 2.21,0.3048,0.0689,T02,Immortality and Eternal Nature of the Self,,video_07_s032,4578,4682,10342,0.4427,0.4527
+en_video_07_0044,video_07,en,original English speaker,Advaita,44,BG 2.21,0.2582,0.1043,T02,Immortality and Eternal Nature of the Self,,video_07_s032,4682,4791,10342,0.4527,0.4633
+en_video_07_0045,video_07,en,original English speaker,Advaita,45,BG 2.21,0.1894,0.2914,T02,Immortality and Eternal Nature of the Self,,video_07_s032,4791,4902,10342,0.4633,0.474
+en_video_07_0046,video_07,en,original English speaker,Advaita,46,BG 2.21,0.2961,0.1733,T02,Immortality and Eternal Nature of the Self,,video_07_s032,4902,5010,10342,0.474,0.4844
+en_video_07_0047,video_07,en,original English speaker,Advaita,47,BG 2.21,0.3852,0.0813,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5010,5116,10342,0.4844,0.4947
+en_video_07_0048,video_07,en,original English speaker,Advaita,48,BG 2.21,0.2402,0.2964,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5116,5228,10342,0.4947,0.5055
+en_video_07_0049,video_07,en,original English speaker,Advaita,49,BG 2.21,0.2118,0.3179,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5228,5338,10342,0.5055,0.5161
+en_video_07_0050,video_07,en,original English speaker,Advaita,50,BG 2.21,0.2109,0.3247,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5338,5439,10342,0.5161,0.5259
+en_video_07_0051,video_07,en,original English speaker,Advaita,51,BG 2.21,0.0408,0.7269,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5439,5546,10342,0.5259,0.5363
+en_video_07_0052,video_07,en,original English speaker,Advaita,52,BG 2.21,0.2283,0.1578,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5546,5656,10342,0.5363,0.5469
+en_video_07_0053,video_07,en,original English speaker,Advaita,53,BG 2.21,0.2442,0.4632,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5656,5768,10342,0.5469,0.5577
+en_video_07_0054,video_07,en,original English speaker,Advaita,54,BG 2.21,0.149,0.6034,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5768,5871,10342,0.5577,0.5677
+en_video_07_0055,video_07,en,original English speaker,Advaita,55,BG 2.21,0.213,0.3856,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5871,5989,10342,0.5677,0.5791
+en_video_07_0056,video_07,en,original English speaker,Advaita,56,BG 2.21,0.2866,0.1317,T02,Immortality and Eternal Nature of the Self,,video_07_s032,5989,6092,10342,0.5791,0.5891
+en_video_07_0057,video_07,en,original English speaker,Advaita,57,BG 2.21,0.2411,0.3983,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6092,6192,10342,0.5891,0.5987
+en_video_07_0058,video_07,en,original English speaker,Advaita,58,BG 2.21,0.1195,0.6719,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6192,6312,10342,0.5987,0.6103
+en_video_07_0059,video_07,en,original English speaker,Advaita,59,BG 2.21,0.1513,0.3667,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6312,6422,10342,0.6103,0.621
+en_video_07_0060,video_07,en,original English speaker,Advaita,60,BG 2.21,0.261,0.2327,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6422,6525,10342,0.621,0.6309
+en_video_07_0061,video_07,en,original English speaker,Advaita,61,BG 2.21,0.26,0.2661,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6525,6626,10342,0.6309,0.6407
+en_video_07_0062,video_07,en,original English speaker,Advaita,62,BG 2.21,0.2743,0.1584,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6626,6730,10342,0.6407,0.6507
+en_video_07_0063,video_07,en,original English speaker,Advaita,63,BG 2.21,0.2159,0.433,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6730,6831,10342,0.6507,0.6605
+en_video_07_0064,video_07,en,original English speaker,Advaita,64,BG 2.21,0.0857,0.245,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6831,6934,10342,0.6605,0.6705
+en_video_07_0065,video_07,en,original English speaker,Advaita,65,BG 2.21,0.1301,0.3513,T02,Immortality and Eternal Nature of the Self,,video_07_s032,6934,7035,10342,0.6705,0.6802
+en_video_07_0066,video_07,en,original English speaker,Advaita,66,BG 2.22,0.3211,0.0562,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7035,7155,10342,0.6802,0.6918
+en_video_07_0067,video_07,en,original English speaker,Advaita,67,BG 2.22,0.4354,0.0016,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7155,7261,10342,0.6918,0.7021
+en_video_07_0068,video_07,en,original English speaker,Advaita,68,BG 2.22,0.8655,0.031,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7261,7370,10342,0.7021,0.7126
+en_video_07_0069,video_07,en,original English speaker,Advaita,69,BG 2.22,0.8109,0.0606,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7370,7490,10342,0.7126,0.7242
+en_video_07_0070,video_07,en,original English speaker,Advaita,70,BG 2.22,0.6485,0.2643,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7490,7594,10342,0.7242,0.7343
+en_video_07_0071,video_07,en,original English speaker,Advaita,71,BG 2.22,0.5745,0.2308,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7594,7696,10342,0.7343,0.7442
+en_video_07_0072,video_07,en,original English speaker,Advaita,72,BG 2.22,0.595,0.2714,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7696,7796,10342,0.7442,0.7538
+en_video_07_0073,video_07,en,original English speaker,Advaita,73,BG 2.22,0.5223,0.379,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7796,7905,10342,0.7538,0.7644
+en_video_07_0074,video_07,en,original English speaker,Advaita,74,BG 2.22,0.4244,0.4654,T02,Immortality and Eternal Nature of the Self,,video_07_s033,7905,8011,10342,0.7644,0.7746
+en_video_07_0075,video_07,en,original English speaker,Advaita,75,BG 2.22,0.4656,0.3477,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8011,8111,10342,0.7746,0.7843
+en_video_07_0076,video_07,en,original English speaker,Advaita,76,BG 2.22,0.688,0.0572,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8111,8226,10342,0.7843,0.7954
+en_video_07_0077,video_07,en,original English speaker,Advaita,77,BG 2.22,0.3567,0.3175,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8226,8334,10342,0.7954,0.8058
+en_video_07_0078,video_07,en,original English speaker,Advaita,78,BG 2.22,0.6788,0.1084,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8334,8441,10342,0.8058,0.8162
+en_video_07_0079,video_07,en,original English speaker,Advaita,79,BG 2.22,0.5206,0.1613,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8441,8548,10342,0.8162,0.8265
+en_video_07_0080,video_07,en,original English speaker,Advaita,80,BG 2.22,0.4328,0.4362,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8548,8648,10342,0.8265,0.8362
+en_video_07_0081,video_07,en,original English speaker,Advaita,81,BG 2.22,0.4946,0.3822,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8648,8750,10342,0.8362,0.8461
+en_video_07_0082,video_07,en,original English speaker,Advaita,82,BG 2.22,0.4838,0.2154,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8750,8856,10342,0.8461,0.8563
+en_video_07_0083,video_07,en,original English speaker,Advaita,83,BG 2.22,0.4871,0.133,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8856,8965,10342,0.8563,0.8669
+en_video_07_0084,video_07,en,original English speaker,Advaita,84,BG 2.22,0.5057,0.31,T02,Immortality and Eternal Nature of the Self,,video_07_s033,8965,9070,10342,0.8669,0.877
+en_video_07_0085,video_07,en,original English speaker,Advaita,85,BG 2.22,0.4512,0.3244,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9070,9171,10342,0.877,0.8868
+en_video_07_0086,video_07,en,original English speaker,Advaita,86,BG 2.22,0.5371,0.2744,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9171,9279,10342,0.8868,0.8972
+en_video_07_0087,video_07,en,original English speaker,Advaita,87,BG 2.22,0.419,0.4604,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9279,9398,10342,0.8972,0.9087
+en_video_07_0088,video_07,en,original English speaker,Advaita,88,BG 2.22,0.5192,0.2354,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9398,9499,10342,0.9087,0.9185
+en_video_07_0089,video_07,en,original English speaker,Advaita,89,BG 2.22,0.2015,0.5641,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9499,9605,10342,0.9185,0.9287
+en_video_07_0090,video_07,en,original English speaker,Advaita,90,BG 2.22,0.2743,0.669,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9605,9715,10342,0.9287,0.9394
+en_video_07_0091,video_07,en,original English speaker,Advaita,91,BG 2.22,0.2261,0.3902,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9715,9837,10342,0.9394,0.9512
+en_video_07_0092,video_07,en,original English speaker,Advaita,92,BG 2.22,0.3044,0.5896,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9837,9943,10342,0.9512,0.9614
+en_video_07_0093,video_07,en,original English speaker,Advaita,93,BG 2.22,0.1423,0.7591,T02,Immortality and Eternal Nature of the Self,,video_07_s033,9943,10044,10342,0.9614,0.9712
+en_video_07_0094,video_07,en,original English speaker,Advaita,94,BG 2.22,0.2377,0.6696,T02,Immortality and Eternal Nature of the Self,,video_07_s033,10044,10149,10342,0.9712,0.9813
+en_video_07_0095,video_07,en,original English speaker,Advaita,95,BG 2.22,0.3727,0.1648,T02,Immortality and Eternal Nature of the Self,,video_07_s033,10149,10268,10342,0.9813,0.9928
+en_video_07_0096,video_07,en,original English speaker,Advaita,96,BG 2.22,0.32,0.2858,T02,Immortality and Eternal Nature of the Self,,video_07_s033,10268,10342,10342,0.9928,1.0

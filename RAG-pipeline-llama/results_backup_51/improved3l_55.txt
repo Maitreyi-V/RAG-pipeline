@@ -1,0 +1,135 @@
+Improved 3-layer system vs old 3L vs Gemini vs Cue, 55 lectures. Gemini labels: results/gemini_runs/gita_data.csv
+improved 3L: 1 Cue veto (English, Cue off-verse with P_off >= 0.95) > 2 Gemini > 3 Cue fill (Gemini NONE, Cue conf >= 0.5); thresholds chosen post-hoc on the 42 test lectures with Gemini
+old 3L: Kannada anchor > Cue conf >= 0.9 > Gemini; English Cue conf >= 0.9 > Gemini. Cue on tuning = leave-one-lecture-out
+
+keep rule on the 9 tuning lectures (layers kept for the improved 3L):
+  kn 1 Cue veto   English only (not used in Kannada)
+  kn 3 Cue fill   decides   1 tuning passages: right 1 vs Gemini 0 -> KEEP
+  en 1 Cue veto   decides  99 tuning passages: right 86 vs Gemini 73 -> KEEP
+  en 3 Cue fill   decides   8 tuning passages: right 3 vs Gemini 3 -> KEEP
+  -> Kannada: 3 Cue fill > 2 Gemini; English: 1 Cue veto > 2 Gemini > 3 Cue fill
+
+1. STRICT / +-1 / THEME F1
+
+  group                    lect                Gemini                   Cue                old 3L           improved 3L
+  Tuning Kannada              6     0.944 0.978 0.981     0.938 0.966 0.994     0.950 0.972 0.981     0.950 0.983 0.988
+  Tuning English              3     0.798 0.822 0.832     0.731 0.786 0.815     0.806 0.832 0.846     0.814 0.846 0.858
+  E2 Kannada test            23     0.915 0.953 0.957     0.820 0.899 0.904     0.863 0.909 0.916     0.917 0.956 0.959
+  E2 English test             7     0.673 0.710 0.716     0.631 0.729 0.750     0.696 0.737 0.746     0.710 0.758 0.767
+  E3 new Kannada              9     0.816 0.882 0.863     0.665 0.855 0.906     0.797 0.870 0.852     0.850 0.913 0.914
+  E3 new English              3     0.768 0.851 0.841     0.814 0.903 0.929     0.752 0.840 0.824     0.788 0.871 0.865
+  New 4 Chinmaya English      4     0.776 0.840 0.837     0.642 0.779 0.800     0.780 0.844 0.843     0.780 0.844 0.844
+  All 9 tuning                9     0.843 0.871 0.877     0.799 0.845 0.873     0.854 0.879 0.891     0.859 0.891 0.899
+  All 42 test                42     0.789 0.842 0.836     0.749 0.850 0.867     0.778 0.838 0.833     0.814 0.871 0.869
+  All Kannada (38)           38     0.895 0.938 0.940     0.796 0.896 0.918     0.859 0.908 0.912     0.905 0.948 0.953
+  All English (17)           17     0.746 0.801 0.798     0.707 0.807 0.828     0.752 0.812 0.809     0.768 0.829 0.829
+  All 55                     55     0.795 0.846 0.843     0.738 0.837 0.857     0.789 0.845 0.844     0.815 0.870 0.870
+
+2. PAIRED, STRICT F1 (diff [95% CI], W/T/L; 10,000 lecture resamples; groups of 5+ lectures)
+
+  group                                   improved 3L - Gemini                improved 3L - old 3L                        Cue - Gemini
+  Tuning Kannada                  +0.006 [+0.000,+0.017] 1/5/0        +0.001 [-0.035,+0.032] 2/0/4        -0.007 [-0.053,+0.038] 3/0/3
+  E2 Kannada test                +0.002 [-0.002,+0.006] 2/20/1       +0.054 [+0.032,+0.078] 18/4/1       -0.095 [-0.153,-0.048] 4/1/18
+  E2 English test                 +0.037 [-0.034,+0.096] 5/0/2        +0.014 [-0.008,+0.041] 4/1/2        -0.041 [-0.164,+0.062] 3/0/4
+  E3 new Kannada                  +0.034 [+0.001,+0.059] 3/6/0        +0.053 [+0.028,+0.098] 6/3/0        -0.152 [-0.281,-0.082] 0/0/9
+  All 9 tuning                    +0.015 [-0.003,+0.032] 3/5/1        +0.004 [-0.016,+0.023] 4/0/5        -0.045 [-0.086,+0.001] 3/0/6
+  All 42 test                   +0.025 [-0.003,+0.058] 12/26/4       +0.036 [+0.017,+0.065] 30/8/4       -0.040 [-0.103,+0.022] 9/1/32
+  All Kannada (38)               +0.010 [+0.000,+0.023] 6/31/1       +0.045 [+0.029,+0.063] 26/7/5       -0.099 [-0.143,-0.060] 7/1/30
+  All English (17)               +0.022 [-0.005,+0.057] 10/2/5        +0.016 [-0.000,+0.043] 9/3/5       -0.039 [-0.104,+0.034] 5/0/12
+  All 55                        +0.019 [+0.000,+0.042] 16/33/6     +0.025 [+0.012,+0.044] 35/10/10      -0.057 [-0.104,-0.009] 12/1/42
+
+3. DIGRESSIONS (gold no verse): false verse; VERSE PASSAGES: missed (no verse given)
+
+  Tuning Kannada           digressions    1: Gemini   0  Cue   1  old 3L   0  improved 3L   0   | verse psg   81: missed Gemini   1  Cue   0  old 3L   1  improved 3L   0
+  Tuning English           digressions  119: Gemini  45  Cue  22  old 3L  13  improved 3L  23   | verse psg  173: missed Gemini  17  Cue  27  old 3L  36  improved 3L  25
+  E2 Kannada test          digressions   23: Gemini   6  Cue  19  old 3L   6  improved 3L   7   | verse psg  317: missed Gemini   9  Cue   0  old 3L   6  improved 3L   7
+  E2 English test          digressions  336: Gemini 126  Cue  72  old 3L  43  improved 3L  58   | verse psg  340: missed Gemini  76  Cue  88  old 3L 108  improved 3L  88
+  E3 new Kannada           digressions    4: Gemini   0  Cue   1  old 3L   0  improved 3L   0   | verse psg  128: missed Gemini  27  Cue  10  old 3L  29  improved 3L  16
+  E3 new English           digressions   16: Gemini  14  Cue  12  old 3L  11  improved 3L  12   | verse psg  346: missed Gemini  75  Cue  23  old 3L  88  improved 3L  63
+  New 4 Chinmaya English   digressions   74: Gemini  69  Cue  64  old 3L  61  improved 3L  62   | verse psg  225: missed Gemini   3  Cue   3  old 3L   6  improved 3L   5
+  All 9 tuning             digressions  120: Gemini  45  Cue  23  old 3L  13  improved 3L  23   | verse psg  254: missed Gemini  18  Cue  27  old 3L  37  improved 3L  25
+  All 42 test              digressions  379: Gemini 146  Cue 104  old 3L  60  improved 3L  77   | verse psg 1131: missed Gemini 187  Cue 121  old 3L 231  improved 3L 174
+  All Kannada (38)         digressions   28: Gemini   6  Cue  21  old 3L   6  improved 3L   7   | verse psg  526: missed Gemini  37  Cue  10  old 3L  36  improved 3L  23
+  All English (17)         digressions  545: Gemini 254  Cue 170  old 3L 128  improved 3L 155   | verse psg 1084: missed Gemini 171  Cue 141  old 3L 238  improved 3L 181
+  All 55                   digressions  573: Gemini 260  Cue 191  old 3L 134  improved 3L 162   | verse psg 1610: missed Gemini 208  Cue 151  old 3L 274  improved 3L 204
+
+4. IMPROVED 3L: WHICH LAYER DECIDED (passages; right = set equals gold; Gemini alone right on the same)
+
+  Tuning Kannada          1 Cue veto: 0 right 0 (Gemini 0)   2 Gemini: 81 right 74 (Gemini 74)   3 Cue fill: 1 right 1 (Gemini 0)
+  Tuning English          1 Cue veto: 99 right 86 (Gemini 73)   2 Gemini: 185 right 143 (Gemini 143)   3 Cue fill: 8 right 3 (Gemini 3)
+  E2 Kannada test         1 Cue veto: 0 right 0 (Gemini 0)   2 Gemini: 337 right 289 (Gemini 289)   3 Cue fill: 3 right 1 (Gemini 1)
+  E2 English test         1 Cue veto: 266 right 220 (Gemini 168)   2 Gemini: 391 right 271 (Gemini 271)   3 Cue fill: 19 right 9 (Gemini 7)
+  E3 new Kannada          1 Cue veto: 0 right 0 (Gemini 0)   2 Gemini: 121 right 81 (Gemini 81)   3 Cue fill: 11 right 10 (Gemini 0)
+  E3 new English          1 Cue veto: 20 right 2 (Gemini 11)   2 Gemini: 319 right 199 (Gemini 199)   3 Cue fill: 23 right 21 (Gemini 0)
+  New 4 Chinmaya English  1 Cue veto: 11 right 9 (Gemini 3)   2 Gemini: 288 right 171 (Gemini 171)   3 Cue fill: 0 right 0 (Gemini 0)
+  All 9 tuning            1 Cue veto: 99 right 86 (Gemini 73)   2 Gemini: 266 right 217 (Gemini 217)   3 Cue fill: 9 right 4 (Gemini 3)
+  All 42 test             1 Cue veto: 286 right 222 (Gemini 179)   2 Gemini: 1168 right 840 (Gemini 840)   3 Cue fill: 56 right 41 (Gemini 8)
+  All Kannada (38)        1 Cue veto: 0 right 0 (Gemini 0)   2 Gemini: 539 right 444 (Gemini 444)   3 Cue fill: 15 right 12 (Gemini 1)
+  All English (17)        1 Cue veto: 396 right 317 (Gemini 255)   2 Gemini: 1183 right 784 (Gemini 784)   3 Cue fill: 50 right 33 (Gemini 10)
+  All 55                  1 Cue veto: 396 right 317 (Gemini 255)   2 Gemini: 1722 right 1228 (Gemini 1228)   3 Cue fill: 65 right 45 (Gemini 11)
+
+5. LECTURE BY LECTURE (strict F1, best marked *)
+
+  lecture                     psg       Gemini          Cue       old 3L  improved 3L
+  -- Tuning Kannada --
+  gita-1st_video               15       0.970        0.875        1.000*       0.970 
+  gita-4th_video               15       0.909        0.938        0.882        0.941*
+  kannada_07                   15       0.968        0.933        1.000*       0.968 
+  kannada_10                   11       0.889        0.963*       0.923        0.889 
+  kannada_13                   11       0.960        1.000*       1.000*       0.960 
+  kannada_16                   15       0.968*       0.938        0.909        0.968*
+  -- Tuning English --
+  video_01                     88       0.854*       0.826        0.844        0.845 
+  video_04                    107       0.814        0.677        0.826        0.855*
+  video_07                     97       0.737        0.718        0.754*       0.744 
+  -- E2 Kannada test --
+  gita-2nd_video               13       0.929        0.966        1.000*       0.929 
+  gita-3rd_video               14       0.875*       0.839        0.848        0.875*
+  gita-5th_video               19       0.878        0.900        0.878        0.905*
+  gita-6th_video               21       1.000*       0.488        0.950        1.000*
+  kannada_08                   12       0.828        0.714        0.815        0.867*
+  kannada_09                   15       0.941*       0.914        0.941*       0.941*
+  kannada_11                   16       0.914*       0.791        0.821        0.914*
+  kannada_12                   16       0.971*       0.914        0.944        0.971*
+  kannada_14                   14       0.941*       0.909        0.941*       0.941*
+  kannada_15                   20       0.864*       0.739        0.791        0.864*
+  kannada_17                   14       0.933*       0.800        0.776        0.933*
+  kannada_18                   13       0.923        1.000*       0.815        0.923 
+  kannada_19                   18       0.973        1.000*       0.947        0.973 
+  kannada_20                   15       0.938*       0.857        0.938*       0.938*
+  kannada_21                   13       0.828*       0.828*       0.759        0.828*
+  kannada_22                   14       0.929*       0.828        0.897        0.929*
+  kannada_23                   17       0.824*       0.811        0.800        0.824*
+  kannada_24                   12       0.923*       0.880        0.846        0.923*
+  kannada_25                   14       0.968*       0.706        0.812        0.968*
+  kannada_26                   12       0.895*       0.810        0.842        0.895*
+  kannada_27                   14       0.970*       0.889        0.882        0.970*
+  kannada_28                   11       0.929*       0.667        0.774        0.929*
+  kannada_29                   13       0.857*       0.750        0.828        0.828 
+  -- E2 English test --
+  video_02                     82       0.681        0.644        0.681        0.706*
+  video_03                     87       0.681        0.792*       0.768        0.765 
+  video_05                    103       0.688        0.776        0.803*       0.775 
+  video_06                    104       0.602*       0.286        0.568        0.578 
+  video_08                     96       0.600        0.692        0.747*       0.747*
+  video_09                    102       0.556        0.508        0.556        0.623*
+  video_10                    102       0.817*       0.639        0.626        0.692 
+  -- E3 new Kannada --
+  kn_brahmanyachar_day02b      44       0.758        0.686        0.786        0.833*
+  kn_sumith_day01               9       0.857        0.824        0.857        0.933*
+  kn_sumith_day02              10       0.857*       0.833        0.857*       0.857*
+  kn_sumith_day03              12       0.842*       0.429        0.533        0.842*
+  kn_sumith_day04              12       0.769*       0.562        0.769*       0.769*
+  kn_sumith_day05              15       0.875        0.489        0.826        0.880*
+  kn_sumith_day06               8       0.952*       0.818        0.900        0.952*
+  kn_sumith_day07              11       0.960*       0.923        0.917        0.960*
+  kn_sumith_day08              11       0.667*       0.400        0.667*       0.667*
+  -- E3 new English --
+  en_chinmaya_day03            71       0.475        0.898*       0.475        0.695 
+  en_chinmaya_day04            76       0.733        0.816*       0.708        0.765 
+  en_iskcon                   215       0.837*       0.790        0.821        0.816 
+  -- New 4 Chinmaya English --
+  en_chinmaya_day06            67       0.740        0.685        0.771*       0.766 
+  en_chinmaya_day07            80       0.794*       0.694        0.780        0.787 
+  en_chinmaya_day08            66       0.774*       0.531        0.774*       0.774*
+  en_chinmaya_day09            86       0.789*       0.646        0.789*       0.789*

@@ -1,0 +1,114 @@
+Phase 3 — Gemini 3.1 Pro (API, low) end-to-end, 42 of 42 lectures answered
+parsing: 0 passage(s) missing (scored as NONE), 0 unparsed line(s), 0 verse(s) outside 2.1-2.72
+
+E2 Kannada test   lectures 23   passages 340   no-verse 23
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.926 [0.909,0.945]    0.957 [0.941,0.973]    0.962 [0.944,0.979]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.911 [0.891,0.932]    0.964 [0.947,0.980]    0.963 [0.946,0.979]   
+  GPT-6.1 Sol (API, high) end-to-end         0.934 [0.917,0.953]    0.969 [0.959,0.980]    0.970 [0.956,0.984]   
+  GitaGround-Cue                             0.820 [0.767,0.867]    0.899 [0.840,0.945]    0.904 [0.837,0.951]   
+  GitaGround-Local                           0.817 [0.763,0.863]    0.894 [0.835,0.941]    0.899 [0.833,0.944]   
+  Plain Carry                                0.789 [0.738,0.832]    0.851 [0.795,0.896]    0.857 [0.793,0.909]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           +0.015 [-0.005,+0.038]       12/1/10
+    Gemini 3.1 Pro - GPT-6.1 Sol               -0.008 [-0.025,+0.010]        5/6/12
+    Gemini 3.1 Pro - GitaGround-Cue            +0.106 [+0.061,+0.163]        19/1/3
+    Gemini 3.1 Pro - Plain Carry               +0.137 [+0.096,+0.192]        22/0/1
+
+E2 English test   lectures 7   passages 676   no-verse 336
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.693 [0.652,0.744]    0.734 [0.696,0.776]    0.734 [0.693,0.775]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.758 [0.686,0.833]    0.805 [0.743,0.866]    0.807 [0.743,0.879]   
+  GPT-6.1 Sol (API, high) end-to-end         0.792 [0.715,0.865]    0.823 [0.754,0.880]    0.824 [0.760,0.880]   
+  GitaGround-Cue                             0.631 [0.501,0.731]    0.729 [0.665,0.785]    0.750 [0.695,0.797]   
+  GitaGround-Local                           0.600 [0.482,0.692]    0.680 [0.615,0.728]    0.684 [0.626,0.728]   
+  Plain Carry                                0.395 [0.264,0.577]    0.477 [0.375,0.621]    0.575 [0.479,0.659]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           -0.064 [-0.140,-0.008]         3/0/4
+    Gemini 3.1 Pro - GPT-6.1 Sol               -0.099 [-0.179,-0.034]         1/0/6
+    Gemini 3.1 Pro - GitaGround-Cue            +0.062 [-0.046,+0.189]         4/0/3
+    Gemini 3.1 Pro - Plain Carry               +0.299 [+0.118,+0.413]         7/0/0
+
+E3 Kannada: Sumith   lectures 8   passages 88   no-verse 4
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.881 [0.818,0.936]    0.925 [0.862,0.974]    0.923 [0.857,0.974]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.900 [0.824,0.962]    0.968 [0.916,1.000]    0.959 [0.898,1.000]   
+  GPT-6.1 Sol (API, high) end-to-end         0.944 [0.916,0.975]    0.963 [0.932,0.986]    0.970 [0.955,0.986]   
+  GitaGround-Cue                             0.650 [0.528,0.791]    0.861 [0.767,0.958]    0.918 [0.820,0.981]   
+  GitaGround-Local                           0.703 [0.590,0.843]    0.882 [0.789,0.982]    0.938 [0.837,1.000]   
+  Plain Carry                                0.710 [0.581,0.880]    0.870 [0.763,0.984]    0.943 [0.841,0.994]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           -0.019 [-0.064,+0.017]         3/0/5
+    Gemini 3.1 Pro - GPT-6.1 Sol               -0.064 [-0.112,-0.031]         0/1/7
+    Gemini 3.1 Pro - GitaGround-Cue            +0.231 [+0.100,+0.350]         8/0/0
+    Gemini 3.1 Pro - Plain Carry               +0.171 [+0.019,+0.297]         5/1/2
+
+E3 Kannada: Vidwan Brahmanyacharya   lectures 1   passages 44   no-verse 0
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.930                  0.962                  0.966                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.901                  0.971                  0.956                 
+  GPT-6.1 Sol (API, high) end-to-end         0.905                  0.966                  0.936                 
+  GitaGround-Cue                             0.686                  0.847                  0.887                 
+  GitaGround-Local                           0.686                  0.847                  0.887                 
+  Plain Carry                                0.889                  0.962                  0.978                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           +0.029 [+0.029,+0.029]         1/0/0
+    Gemini 3.1 Pro - GPT-6.1 Sol               +0.025 [+0.025,+0.025]         1/0/0
+    Gemini 3.1 Pro - GitaGround-Cue            +0.244 [+0.244,+0.244]         1/0/0
+    Gemini 3.1 Pro - Plain Carry               +0.041 [+0.041,+0.041]         1/0/0
+
+E3 new Kannada (pooled)   lectures 9   passages 132   no-verse 4
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.901 [0.842,0.933]    0.940 [0.888,0.968]    0.939 [0.882,0.971]   
+  Claude Opus 5.5 (chat, high) end-to-end    0.901 [0.850,0.949]    0.970 [0.933,0.996]    0.958 [0.917,0.994]   
+  GPT-6.1 Sol (API, high) end-to-end         0.929 [0.911,0.964]    0.964 [0.942,0.981]    0.958 [0.943,0.981]   
+  GitaGround-Cue                             0.665 [0.563,0.764]    0.855 [0.787,0.934]    0.906 [0.848,0.967]   
+  GitaGround-Local                           0.696 [0.611,0.813]    0.868 [0.804,0.969]    0.919 [0.858,0.989]   
+  Plain Carry                                0.776 [0.620,0.889]    0.904 [0.793,0.977]    0.956 [0.877,0.994]   
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           +0.000 [-0.050,+0.025]         4/0/5
+    Gemini 3.1 Pro - GPT-6.1 Sol               -0.028 [-0.095,+0.006]         1/1/7
+    Gemini 3.1 Pro - GitaGround-Cue            +0.236 [+0.137,+0.322]         9/0/0
+    Gemini 3.1 Pro - Plain Carry               +0.125 [+0.031,+0.267]         6/1/2
+
+E3 English: HG Gaurmandal Das   lectures 1   passages 215   no-verse 15
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.845                  0.943                  0.938                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.873                  0.920                  0.922                 
+  GPT-6.1 Sol (API, high) end-to-end         0.908                  0.946                  0.943                 
+  GitaGround-Cue                             0.790                  0.895                  0.908                 
+  GitaGround-Local                           0.806                  0.912                  0.933                 
+  Plain Carry                                0.775                  0.873                  0.902                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           -0.027 [-0.027,-0.027]         0/0/1
+    Gemini 3.1 Pro - GPT-6.1 Sol               -0.063 [-0.063,-0.063]         0/0/1
+    Gemini 3.1 Pro - GitaGround-Cue            +0.055 [+0.055,+0.055]         1/0/0
+    Gemini 3.1 Pro - Plain Carry               +0.070 [+0.070,+0.070]         1/0/0
+
+E3 English: Swami Aparajitananda   lectures 2   passages 147   no-verse 1
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.727                  0.768                  0.774                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.758                  0.810                  0.806                 
+  GPT-6.1 Sol (API, high) end-to-end         0.913                  0.938                  0.954                 
+  GitaGround-Cue                             0.857                  0.919                  0.958                 
+  GitaGround-Local                           0.783                  0.896                  0.935                 
+  Plain Carry                                0.833                  0.909                  0.920                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           -0.030 [-0.096,+0.010]         1/0/1
+    Gemini 3.1 Pro - GPT-6.1 Sol               -0.185 [-0.436,-0.019]         0/0/2
+    Gemini 3.1 Pro - GitaGround-Cue            -0.130 [-0.423,+0.078]         1/0/1
+    Gemini 3.1 Pro - Plain Carry               -0.106 [-0.440,+0.135]         1/0/1
+
+E3 new English (pooled)   lectures 3   passages 362   no-verse 16
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.1 Pro (API, low) end-to-end       0.805                  0.887                  0.878                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.831                  0.882                  0.877                 
+  GPT-6.1 Sol (API, high) end-to-end         0.910                  0.944                  0.948                 
+  GitaGround-Cue                             0.814                  0.903                  0.929                 
+  GitaGround-Local                           0.798                  0.906                  0.934                 
+  Plain Carry                                0.796                  0.890                  0.909                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.1 Pro - Claude Opus 5.5           -0.026 [-0.096,+0.010]         1/0/2
+    Gemini 3.1 Pro - GPT-6.1 Sol               -0.105 [-0.436,-0.019]         0/0/3
+    Gemini 3.1 Pro - GitaGround-Cue            -0.009 [-0.423,+0.078]         2/0/1
+    Gemini 3.1 Pro - Plain Carry               +0.009 [-0.440,+0.135]         2/0/1

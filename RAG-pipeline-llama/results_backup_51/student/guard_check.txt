@@ -1,0 +1,4 @@
+Guard check — v2 (teacher P_off, 145-state), TUNING LOLO; 124 DIGRESSION answers with confidence < 5 set to P_off 0.5
+  P_off          KN strict EN strict  EN +-1 EN theme EN verse->OFF EN off->OFF  teacher flags on EN verse (P>0.5)
+  teacher            0.938     0.731   0.786    0.815     27/173       97/119                            45/173
+  teacher+guard      0.938     0.723   0.757    0.813     20/173       86/119                            32/173

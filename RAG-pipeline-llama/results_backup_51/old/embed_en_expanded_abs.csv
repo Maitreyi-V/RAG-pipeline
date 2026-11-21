@@ -1,0 +1,963 @@
+unit_id,video_file,detected_verses
+en_video_01_0000,video_01,
+en_video_01_0001,video_01,BG 2.10
+en_video_01_0002,video_01,BG 2.10
+en_video_01_0003,video_01,BG 2.38
+en_video_01_0004,video_01,
+en_video_01_0005,video_01,
+en_video_01_0006,video_01,BG 2.7
+en_video_01_0007,video_01,
+en_video_01_0008,video_01,BG 2.54
+en_video_01_0009,video_01,
+en_video_01_0010,video_01,
+en_video_01_0011,video_01,
+en_video_01_0012,video_01,
+en_video_01_0013,video_01,BG 2.53
+en_video_01_0014,video_01,
+en_video_01_0015,video_01,
+en_video_01_0016,video_01,
+en_video_01_0017,video_01,BG 2.9
+en_video_01_0018,video_01,
+en_video_01_0019,video_01,BG 2.48
+en_video_01_0020,video_01,BG 2.2
+en_video_01_0021,video_01,BG 2.48
+en_video_01_0022,video_01,BG 2.1
+en_video_01_0023,video_01,BG 2.10
+en_video_01_0024,video_01,BG 2.10
+en_video_01_0025,video_01,BG 2.1
+en_video_01_0026,video_01,BG 2.10
+en_video_01_0027,video_01,BG 2.10
+en_video_01_0028,video_01,BG 2.60
+en_video_01_0029,video_01,BG 2.39
+en_video_01_0030,video_01,BG 2.39
+en_video_01_0031,video_01,BG 2.39
+en_video_01_0032,video_01,BG 2.2
+en_video_01_0033,video_01,BG 2.1
+en_video_01_0034,video_01,BG 2.1
+en_video_01_0035,video_01,
+en_video_01_0036,video_01,BG 2.1
+en_video_01_0037,video_01,BG 2.1
+en_video_01_0038,video_01,BG 2.10
+en_video_01_0039,video_01,BG 2.10
+en_video_01_0040,video_01,BG 2.60
+en_video_01_0041,video_01,BG 2.10
+en_video_01_0042,video_01,
+en_video_01_0043,video_01,
+en_video_01_0044,video_01,BG 2.2
+en_video_01_0045,video_01,BG 2.2
+en_video_01_0046,video_01,
+en_video_01_0047,video_01,
+en_video_01_0048,video_01,BG 2.2
+en_video_01_0049,video_01,BG 2.60
+en_video_01_0050,video_01,BG 2.40
+en_video_01_0051,video_01,BG 2.43
+en_video_01_0052,video_01,BG 2.33
+en_video_01_0053,video_01,BG 2.34
+en_video_01_0054,video_01,BG 2.9
+en_video_01_0055,video_01,BG 2.3
+en_video_01_0056,video_01,
+en_video_01_0057,video_01,BG 2.10
+en_video_01_0058,video_01,BG 2.37
+en_video_01_0059,video_01,BG 2.3
+en_video_01_0060,video_01,BG 2.3
+en_video_01_0061,video_01,BG 2.64
+en_video_01_0062,video_01,BG 2.2
+en_video_01_0063,video_01,BG 2.7
+en_video_01_0064,video_01,BG 2.66
+en_video_01_0065,video_01,BG 2.40
+en_video_01_0066,video_01,
+en_video_01_0067,video_01,BG 2.48
+en_video_01_0068,video_01,BG 2.10
+en_video_01_0069,video_01,BG 2.4
+en_video_01_0070,video_01,BG 2.4
+en_video_01_0071,video_01,BG 2.9
+en_video_01_0072,video_01,BG 2.37
+en_video_01_0073,video_01,BG 2.1
+en_video_01_0074,video_01,BG 2.6
+en_video_01_0075,video_01,BG 2.38
+en_video_01_0076,video_01,BG 2.7
+en_video_01_0077,video_01,BG 2.7
+en_video_01_0078,video_01,
+en_video_01_0079,video_01,BG 2.7
+en_video_01_0080,video_01,BG 2.8
+en_video_01_0081,video_01,BG 2.9
+en_video_01_0082,video_01,BG 2.9
+en_video_01_0083,video_01,BG 2.10
+en_video_01_0084,video_01,BG 2.65
+en_video_01_0085,video_01,
+en_video_01_0086,video_01,
+en_video_01_0087,video_01,
+en_video_04_0000,video_04,
+en_video_04_0001,video_04,
+en_video_04_0002,video_04,
+en_video_04_0003,video_04,
+en_video_04_0004,video_04,
+en_video_04_0005,video_04,BG 2.49
+en_video_04_0006,video_04,BG 2.2
+en_video_04_0007,video_04,BG 2.1
+en_video_04_0008,video_04,BG 2.30
+en_video_04_0009,video_04,
+en_video_04_0010,video_04,
+en_video_04_0011,video_04,
+en_video_04_0012,video_04,BG 2.53
+en_video_04_0013,video_04,BG 2.60
+en_video_04_0014,video_04,BG 2.16
+en_video_04_0015,video_04,BG 2.16
+en_video_04_0016,video_04,
+en_video_04_0017,video_04,
+en_video_04_0018,video_04,
+en_video_04_0019,video_04,
+en_video_04_0020,video_04,BG 2.16
+en_video_04_0021,video_04,
+en_video_04_0022,video_04,BG 2.27
+en_video_04_0023,video_04,BG 2.20
+en_video_04_0024,video_04,BG 2.18
+en_video_04_0025,video_04,BG 2.16
+en_video_04_0026,video_04,BG 2.20
+en_video_04_0027,video_04,BG 2.16
+en_video_04_0028,video_04,BG 2.16
+en_video_04_0029,video_04,BG 2.14
+en_video_04_0030,video_04,BG 2.16
+en_video_04_0031,video_04,
+en_video_04_0032,video_04,
+en_video_04_0033,video_04,
+en_video_04_0034,video_04,
+en_video_04_0035,video_04,BG 2.42
+en_video_04_0036,video_04,
+en_video_04_0037,video_04,BG 2.25
+en_video_04_0038,video_04,
+en_video_04_0039,video_04,BG 2.24
+en_video_04_0040,video_04,BG 2.24
+en_video_04_0041,video_04,BG 2.24
+en_video_04_0042,video_04,BG 2.24
+en_video_04_0043,video_04,BG 2.16
+en_video_04_0044,video_04,BG 2.14
+en_video_04_0045,video_04,BG 2.14
+en_video_04_0046,video_04,
+en_video_04_0047,video_04,BG 2.69
+en_video_04_0048,video_04,BG 2.69
+en_video_04_0049,video_04,BG 2.16
+en_video_04_0050,video_04,BG 2.16
+en_video_04_0051,video_04,BG 2.14
+en_video_04_0052,video_04,BG 2.14
+en_video_04_0053,video_04,BG 2.14
+en_video_04_0054,video_04,BG 2.16
+en_video_04_0055,video_04,BG 2.16
+en_video_04_0056,video_04,BG 2.16
+en_video_04_0057,video_04,BG 2.17
+en_video_04_0058,video_04,BG 2.55
+en_video_04_0059,video_04,BG 2.16
+en_video_04_0060,video_04,BG 2.16
+en_video_04_0061,video_04,
+en_video_04_0062,video_04,
+en_video_04_0063,video_04,
+en_video_04_0064,video_04,BG 2.16
+en_video_04_0065,video_04,
+en_video_04_0066,video_04,BG 2.16
+en_video_04_0067,video_04,
+en_video_04_0068,video_04,
+en_video_04_0069,video_04,
+en_video_04_0070,video_04,BG 2.16
+en_video_04_0071,video_04,
+en_video_04_0072,video_04,
+en_video_04_0073,video_04,BG 2.70
+en_video_04_0074,video_04,BG 2.70
+en_video_04_0075,video_04,BG 2.70
+en_video_04_0076,video_04,BG 2.70
+en_video_04_0077,video_04,BG 2.45
+en_video_04_0078,video_04,BG 2.2
+en_video_04_0079,video_04,BG 2.55
+en_video_04_0080,video_04,
+en_video_04_0081,video_04,BG 2.25
+en_video_04_0082,video_04,BG 2.17
+en_video_04_0083,video_04,
+en_video_04_0084,video_04,BG 2.42
+en_video_04_0085,video_04,
+en_video_04_0086,video_04,BG 2.28
+en_video_04_0087,video_04,
+en_video_04_0088,video_04,BG 2.60
+en_video_04_0089,video_04,
+en_video_04_0090,video_04,BG 2.28
+en_video_04_0091,video_04,BG 2.28
+en_video_04_0092,video_04,
+en_video_04_0093,video_04,
+en_video_04_0094,video_04,BG 2.28
+en_video_04_0095,video_04,
+en_video_04_0096,video_04,
+en_video_04_0097,video_04,
+en_video_04_0098,video_04,BG 2.69
+en_video_04_0099,video_04,
+en_video_04_0100,video_04,
+en_video_04_0101,video_04,
+en_video_04_0102,video_04,
+en_video_04_0103,video_04,BG 2.54
+en_video_04_0104,video_04,
+en_video_04_0105,video_04,
+en_video_04_0106,video_04,BG 2.60
+en_video_07_0000,video_07,
+en_video_07_0001,video_07,BG 2.20
+en_video_07_0002,video_07,BG 2.25
+en_video_07_0003,video_07,BG 2.25
+en_video_07_0004,video_07,BG 2.25
+en_video_07_0005,video_07,
+en_video_07_0006,video_07,BG 2.20
+en_video_07_0007,video_07,BG 2.25
+en_video_07_0008,video_07,BG 2.25
+en_video_07_0009,video_07,BG 2.49
+en_video_07_0010,video_07,BG 2.26
+en_video_07_0011,video_07,BG 2.20
+en_video_07_0012,video_07,BG 2.20
+en_video_07_0013,video_07,BG 2.27
+en_video_07_0014,video_07,BG 2.27
+en_video_07_0015,video_07,BG 2.39
+en_video_07_0016,video_07,
+en_video_07_0017,video_07,
+en_video_07_0018,video_07,BG 2.17
+en_video_07_0019,video_07,
+en_video_07_0020,video_07,
+en_video_07_0021,video_07,
+en_video_07_0022,video_07,BG 2.27
+en_video_07_0023,video_07,BG 2.20
+en_video_07_0024,video_07,BG 2.20
+en_video_07_0025,video_07,BG 2.20
+en_video_07_0026,video_07,BG 2.20
+en_video_07_0027,video_07,BG 2.20
+en_video_07_0028,video_07,BG 2.20
+en_video_07_0029,video_07,BG 2.20
+en_video_07_0030,video_07,
+en_video_07_0031,video_07,BG 2.53
+en_video_07_0032,video_07,BG 2.45
+en_video_07_0033,video_07,BG 2.40
+en_video_07_0034,video_07,
+en_video_07_0035,video_07,BG 2.64
+en_video_07_0036,video_07,BG 2.2
+en_video_07_0037,video_07,BG 2.25
+en_video_07_0038,video_07,
+en_video_07_0039,video_07,BG 2.21
+en_video_07_0040,video_07,BG 2.53
+en_video_07_0041,video_07,BG 2.64
+en_video_07_0042,video_07,
+en_video_07_0043,video_07,BG 2.18
+en_video_07_0044,video_07,BG 2.53
+en_video_07_0045,video_07,BG 2.51
+en_video_07_0046,video_07,BG 2.53
+en_video_07_0047,video_07,BG 2.72
+en_video_07_0048,video_07,BG 2.20
+en_video_07_0049,video_07,BG 2.49
+en_video_07_0050,video_07,BG 2.40
+en_video_07_0051,video_07,
+en_video_07_0052,video_07,BG 2.16
+en_video_07_0053,video_07,BG 2.7
+en_video_07_0054,video_07,BG 2.40
+en_video_07_0055,video_07,BG 2.49
+en_video_07_0056,video_07,BG 2.38
+en_video_07_0057,video_07,BG 2.50
+en_video_07_0058,video_07,
+en_video_07_0059,video_07,BG 2.13
+en_video_07_0060,video_07,BG 2.53
+en_video_07_0061,video_07,BG 2.53
+en_video_07_0062,video_07,BG 2.16
+en_video_07_0063,video_07,
+en_video_07_0064,video_07,BG 2.25
+en_video_07_0065,video_07,BG 2.45
+en_video_07_0066,video_07,BG 2.22
+en_video_07_0067,video_07,BG 2.22
+en_video_07_0068,video_07,BG 2.22
+en_video_07_0069,video_07,BG 2.22
+en_video_07_0070,video_07,BG 2.25
+en_video_07_0071,video_07,BG 2.13
+en_video_07_0072,video_07,BG 2.25
+en_video_07_0073,video_07,BG 2.25
+en_video_07_0074,video_07,BG 2.25
+en_video_07_0075,video_07,BG 2.18
+en_video_07_0076,video_07,BG 2.13
+en_video_07_0077,video_07,BG 2.39
+en_video_07_0078,video_07,BG 2.13
+en_video_07_0079,video_07,BG 2.20
+en_video_07_0080,video_07,BG 2.53
+en_video_07_0081,video_07,BG 2.53
+en_video_07_0082,video_07,BG 2.72
+en_video_07_0083,video_07,BG 2.13
+en_video_07_0084,video_07,BG 2.13
+en_video_07_0085,video_07,BG 2.13
+en_video_07_0086,video_07,BG 2.45
+en_video_07_0087,video_07,
+en_video_07_0088,video_07,BG 2.45
+en_video_07_0089,video_07,
+en_video_07_0090,video_07,
+en_video_07_0091,video_07,BG 2.67
+en_video_07_0092,video_07,
+en_video_07_0093,video_07,
+en_video_07_0094,video_07,
+en_video_07_0095,video_07,BG 2.16
+en_video_07_0096,video_07,BG 2.64
+en_video_02_0000,video_02,BG 2.1
+en_video_02_0001,video_02,BG 2.10
+en_video_02_0002,video_02,BG 2.10
+en_video_02_0003,video_02,BG 2.1
+en_video_02_0004,video_02,BG 2.11
+en_video_02_0005,video_02,
+en_video_02_0006,video_02,
+en_video_02_0007,video_02,BG 2.61
+en_video_02_0008,video_02,BG 2.65
+en_video_02_0009,video_02,BG 2.25
+en_video_02_0010,video_02,
+en_video_02_0011,video_02,BG 2.64
+en_video_02_0012,video_02,BG 2.65
+en_video_02_0013,video_02,
+en_video_02_0014,video_02,BG 2.25
+en_video_02_0015,video_02,
+en_video_02_0016,video_02,BG 2.65
+en_video_02_0017,video_02,BG 2.14
+en_video_02_0018,video_02,BG 2.66
+en_video_02_0019,video_02,BG 2.16
+en_video_02_0020,video_02,BG 2.49
+en_video_02_0021,video_02,BG 2.53
+en_video_02_0022,video_02,BG 2.10
+en_video_02_0023,video_02,BG 2.11
+en_video_02_0024,video_02,BG 2.11
+en_video_02_0025,video_02,BG 2.2
+en_video_02_0026,video_02,BG 2.65
+en_video_02_0027,video_02,BG 2.66
+en_video_02_0028,video_02,
+en_video_02_0029,video_02,BG 2.65
+en_video_02_0030,video_02,
+en_video_02_0031,video_02,BG 2.2
+en_video_02_0032,video_02,BG 2.2
+en_video_02_0033,video_02,BG 2.2
+en_video_02_0034,video_02,
+en_video_02_0035,video_02,BG 2.71
+en_video_02_0036,video_02,BG 2.56
+en_video_02_0037,video_02,BG 2.11
+en_video_02_0038,video_02,BG 2.12
+en_video_02_0039,video_02,BG 2.20
+en_video_02_0040,video_02,BG 2.65
+en_video_02_0041,video_02,BG 2.20
+en_video_02_0042,video_02,BG 2.30
+en_video_02_0043,video_02,BG 2.12
+en_video_02_0044,video_02,BG 2.13
+en_video_02_0045,video_02,BG 2.65
+en_video_02_0046,video_02,BG 2.27
+en_video_02_0047,video_02,
+en_video_02_0048,video_02,BG 2.20
+en_video_02_0049,video_02,BG 2.25
+en_video_02_0050,video_02,BG 2.30
+en_video_02_0051,video_02,BG 2.2
+en_video_02_0052,video_02,BG 2.13
+en_video_02_0053,video_02,BG 2.13
+en_video_02_0054,video_02,BG 2.65
+en_video_02_0055,video_02,
+en_video_02_0056,video_02,
+en_video_02_0057,video_02,BG 2.16
+en_video_02_0058,video_02,
+en_video_02_0059,video_02,
+en_video_02_0060,video_02,BG 2.20
+en_video_02_0061,video_02,BG 2.16
+en_video_02_0062,video_02,BG 2.12
+en_video_02_0063,video_02,BG 2.45
+en_video_02_0064,video_02,
+en_video_02_0065,video_02,
+en_video_02_0066,video_02,BG 2.17
+en_video_02_0067,video_02,BG 2.16
+en_video_02_0068,video_02,BG 2.16
+en_video_02_0069,video_02,BG 2.17
+en_video_02_0070,video_02,
+en_video_02_0071,video_02,BG 2.65
+en_video_02_0072,video_02,BG 2.12
+en_video_02_0073,video_02,BG 2.16
+en_video_02_0074,video_02,BG 2.65
+en_video_02_0075,video_02,BG 2.65
+en_video_02_0076,video_02,BG 2.25
+en_video_02_0077,video_02,BG 2.25
+en_video_02_0078,video_02,BG 2.18
+en_video_02_0079,video_02,
+en_video_03_0000,video_03,BG 2.30
+en_video_03_0001,video_03,BG 2.20
+en_video_03_0002,video_03,BG 2.67
+en_video_03_0003,video_03,
+en_video_03_0004,video_03,BG 2.27
+en_video_03_0005,video_03,BG 2.70
+en_video_03_0006,video_03,BG 2.70
+en_video_03_0007,video_03,BG 2.70
+en_video_03_0008,video_03,BG 2.25
+en_video_03_0009,video_03,BG 2.10
+en_video_03_0010,video_03,BG 2.18
+en_video_03_0011,video_03,BG 2.25
+en_video_03_0012,video_03,BG 2.13
+en_video_03_0013,video_03,BG 2.13
+en_video_03_0014,video_03,
+en_video_03_0015,video_03,
+en_video_03_0016,video_03,BG 2.13
+en_video_03_0017,video_03,BG 2.13
+en_video_03_0018,video_03,BG 2.13
+en_video_03_0019,video_03,BG 2.13
+en_video_03_0020,video_03,BG 2.25
+en_video_03_0021,video_03,BG 2.13
+en_video_03_0022,video_03,BG 2.22
+en_video_03_0023,video_03,BG 2.22
+en_video_03_0024,video_03,BG 2.13
+en_video_03_0025,video_03,BG 2.13
+en_video_03_0026,video_03,BG 2.13
+en_video_03_0027,video_03,
+en_video_03_0028,video_03,BG 2.57
+en_video_03_0029,video_03,BG 2.13
+en_video_03_0030,video_03,BG 2.13
+en_video_03_0031,video_03,
+en_video_03_0032,video_03,BG 2.25
+en_video_03_0033,video_03,BG 2.30
+en_video_03_0034,video_03,BG 2.61
+en_video_03_0035,video_03,BG 2.13
+en_video_03_0036,video_03,BG 2.13
+en_video_03_0037,video_03,BG 2.14
+en_video_03_0038,video_03,BG 2.14
+en_video_03_0039,video_03,
+en_video_03_0040,video_03,BG 2.14
+en_video_03_0041,video_03,BG 2.69
+en_video_03_0042,video_03,BG 2.14
+en_video_03_0043,video_03,BG 2.72
+en_video_03_0044,video_03,BG 2.49
+en_video_03_0045,video_03,BG 2.65
+en_video_03_0046,video_03,BG 2.56
+en_video_03_0047,video_03,BG 2.27
+en_video_03_0048,video_03,
+en_video_03_0049,video_03,
+en_video_03_0050,video_03,
+en_video_03_0051,video_03,
+en_video_03_0052,video_03,
+en_video_03_0053,video_03,
+en_video_03_0054,video_03,
+en_video_03_0055,video_03,BG 2.56
+en_video_03_0056,video_03,BG 2.56
+en_video_03_0057,video_03,BG 2.57
+en_video_03_0058,video_03,BG 2.56
+en_video_03_0059,video_03,BG 2.56
+en_video_03_0060,video_03,BG 2.61
+en_video_03_0061,video_03,
+en_video_03_0062,video_03,BG 2.38
+en_video_03_0063,video_03,BG 2.14
+en_video_03_0064,video_03,BG 2.18
+en_video_03_0065,video_03,BG 2.2
+en_video_03_0066,video_03,BG 2.64
+en_video_03_0067,video_03,BG 2.49
+en_video_03_0068,video_03,BG 2.66
+en_video_03_0069,video_03,BG 2.49
+en_video_03_0070,video_03,
+en_video_03_0071,video_03,
+en_video_03_0072,video_03,
+en_video_03_0073,video_03,BG 2.27
+en_video_03_0074,video_03,BG 2.71
+en_video_03_0075,video_03,BG 2.66
+en_video_03_0076,video_03,BG 2.40
+en_video_03_0077,video_03,BG 2.40
+en_video_03_0078,video_03,BG 2.38
+en_video_03_0079,video_03,BG 2.38
+en_video_03_0080,video_03,BG 2.65
+en_video_03_0081,video_03,BG 2.40
+en_video_03_0082,video_03,BG 2.56
+en_video_03_0083,video_03,BG 2.15
+en_video_03_0084,video_03,BG 2.15
+en_video_03_0085,video_03,BG 2.65
+en_video_03_0086,video_03,
+en_video_05_0000,video_05,
+en_video_05_0001,video_05,BG 2.16
+en_video_05_0002,video_05,BG 2.14
+en_video_05_0003,video_05,
+en_video_05_0004,video_05,BG 2.16
+en_video_05_0005,video_05,BG 2.18
+en_video_05_0006,video_05,
+en_video_05_0007,video_05,BG 2.16
+en_video_05_0008,video_05,BG 2.24
+en_video_05_0009,video_05,BG 2.24
+en_video_05_0010,video_05,BG 2.14
+en_video_05_0011,video_05,BG 2.54
+en_video_05_0012,video_05,BG 2.16
+en_video_05_0013,video_05,BG 2.20
+en_video_05_0014,video_05,BG 2.16
+en_video_05_0015,video_05,BG 2.16
+en_video_05_0016,video_05,BG 2.16
+en_video_05_0017,video_05,BG 2.17
+en_video_05_0018,video_05,BG 2.20
+en_video_05_0019,video_05,
+en_video_05_0020,video_05,
+en_video_05_0021,video_05,BG 2.70
+en_video_05_0022,video_05,BG 2.17
+en_video_05_0023,video_05,BG 2.14
+en_video_05_0024,video_05,BG 2.14
+en_video_05_0025,video_05,BG 2.25
+en_video_05_0026,video_05,BG 2.51
+en_video_05_0027,video_05,BG 2.17
+en_video_05_0028,video_05,BG 2.65
+en_video_05_0029,video_05,BG 2.16
+en_video_05_0030,video_05,
+en_video_05_0031,video_05,BG 2.70
+en_video_05_0032,video_05,BG 2.46
+en_video_05_0033,video_05,BG 2.17
+en_video_05_0034,video_05,BG 2.55
+en_video_05_0035,video_05,BG 2.7
+en_video_05_0036,video_05,BG 2.55
+en_video_05_0037,video_05,BG 2.55
+en_video_05_0038,video_05,BG 2.1
+en_video_05_0039,video_05,BG 2.17
+en_video_05_0040,video_05,BG 2.2
+en_video_05_0041,video_05,BG 2.70
+en_video_05_0042,video_05,BG 2.46
+en_video_05_0043,video_05,BG 2.48
+en_video_05_0044,video_05,BG 2.48
+en_video_05_0045,video_05,BG 2.48
+en_video_05_0046,video_05,BG 2.21
+en_video_05_0047,video_05,BG 2.20
+en_video_05_0048,video_05,BG 2.30
+en_video_05_0049,video_05,
+en_video_05_0050,video_05,BG 2.40
+en_video_05_0051,video_05,BG 2.2
+en_video_05_0052,video_05,
+en_video_05_0053,video_05,
+en_video_05_0054,video_05,BG 2.18
+en_video_05_0055,video_05,BG 2.17
+en_video_05_0056,video_05,BG 2.25
+en_video_05_0057,video_05,BG 2.16
+en_video_05_0058,video_05,BG 2.16
+en_video_05_0059,video_05,BG 2.25
+en_video_05_0060,video_05,
+en_video_05_0061,video_05,BG 2.14
+en_video_05_0062,video_05,BG 2.29
+en_video_05_0063,video_05,
+en_video_05_0064,video_05,
+en_video_05_0065,video_05,BG 2.13
+en_video_05_0066,video_05,BG 2.69
+en_video_05_0067,video_05,BG 2.69
+en_video_05_0068,video_05,BG 2.69
+en_video_05_0069,video_05,BG 2.69
+en_video_05_0070,video_05,BG 2.69
+en_video_05_0071,video_05,BG 2.18
+en_video_05_0072,video_05,BG 2.50
+en_video_05_0073,video_05,BG 2.18
+en_video_05_0074,video_05,BG 2.30
+en_video_05_0075,video_05,
+en_video_05_0076,video_05,
+en_video_05_0077,video_05,
+en_video_05_0078,video_05,
+en_video_05_0079,video_05,BG 2.2
+en_video_05_0080,video_05,BG 2.39
+en_video_05_0081,video_05,BG 2.72
+en_video_05_0082,video_05,BG 2.39
+en_video_05_0083,video_05,
+en_video_05_0084,video_05,BG 2.61
+en_video_05_0085,video_05,BG 2.58
+en_video_05_0086,video_05,BG 2.69
+en_video_05_0087,video_05,BG 2.65
+en_video_05_0088,video_05,BG 2.14
+en_video_05_0089,video_05,BG 2.65
+en_video_05_0090,video_05,BG 2.69
+en_video_05_0091,video_05,BG 2.19
+en_video_05_0092,video_05,BG 2.22
+en_video_05_0093,video_05,BG 2.25
+en_video_05_0094,video_05,BG 2.25
+en_video_05_0095,video_05,
+en_video_05_0096,video_05,BG 2.53
+en_video_05_0097,video_05,BG 2.69
+en_video_05_0098,video_05,
+en_video_05_0099,video_05,
+en_video_05_0100,video_05,BG 2.69
+en_video_05_0101,video_05,
+en_video_05_0102,video_05,BG 2.65
+en_video_06_0000,video_06,BG 2.3
+en_video_06_0001,video_06,BG 2.2
+en_video_06_0002,video_06,BG 2.25
+en_video_06_0003,video_06,BG 2.25
+en_video_06_0004,video_06,BG 2.20
+en_video_06_0005,video_06,BG 2.20
+en_video_06_0006,video_06,BG 2.13
+en_video_06_0007,video_06,BG 2.25
+en_video_06_0008,video_06,BG 2.24
+en_video_06_0009,video_06,BG 2.25
+en_video_06_0010,video_06,BG 2.25
+en_video_06_0011,video_06,BG 2.17
+en_video_06_0012,video_06,BG 2.52
+en_video_06_0013,video_06,BG 2.57
+en_video_06_0014,video_06,
+en_video_06_0015,video_06,
+en_video_06_0016,video_06,BG 2.61
+en_video_06_0017,video_06,BG 2.61
+en_video_06_0018,video_06,BG 2.69
+en_video_06_0019,video_06,BG 2.72
+en_video_06_0020,video_06,BG 2.25
+en_video_06_0021,video_06,
+en_video_06_0022,video_06,
+en_video_06_0023,video_06,
+en_video_06_0024,video_06,BG 2.19
+en_video_06_0025,video_06,
+en_video_06_0026,video_06,BG 2.49
+en_video_06_0027,video_06,BG 2.27
+en_video_06_0028,video_06,BG 2.25
+en_video_06_0029,video_06,BG 2.60
+en_video_06_0030,video_06,BG 2.51
+en_video_06_0031,video_06,
+en_video_06_0032,video_06,
+en_video_06_0033,video_06,
+en_video_06_0034,video_06,BG 2.39
+en_video_06_0035,video_06,BG 2.47
+en_video_06_0036,video_06,
+en_video_06_0037,video_06,BG 2.60
+en_video_06_0038,video_06,BG 2.25
+en_video_06_0039,video_06,BG 2.13
+en_video_06_0040,video_06,BG 2.27
+en_video_06_0041,video_06,BG 2.16
+en_video_06_0042,video_06,BG 2.65
+en_video_06_0043,video_06,
+en_video_06_0044,video_06,BG 2.67
+en_video_06_0045,video_06,
+en_video_06_0046,video_06,
+en_video_06_0047,video_06,BG 2.57
+en_video_06_0048,video_06,BG 2.47
+en_video_06_0049,video_06,BG 2.47
+en_video_06_0050,video_06,
+en_video_06_0051,video_06,BG 2.64
+en_video_06_0052,video_06,BG 2.20
+en_video_06_0053,video_06,
+en_video_06_0054,video_06,BG 2.13
+en_video_06_0055,video_06,BG 2.19
+en_video_06_0056,video_06,
+en_video_06_0057,video_06,
+en_video_06_0058,video_06,
+en_video_06_0059,video_06,BG 2.47
+en_video_06_0060,video_06,BG 2.27
+en_video_06_0061,video_06,
+en_video_06_0062,video_06,BG 2.43
+en_video_06_0063,video_06,
+en_video_06_0064,video_06,
+en_video_06_0065,video_06,
+en_video_06_0066,video_06,
+en_video_06_0067,video_06,BG 2.38
+en_video_06_0068,video_06,
+en_video_06_0069,video_06,
+en_video_06_0070,video_06,BG 2.47
+en_video_06_0071,video_06,BG 2.47
+en_video_06_0072,video_06,
+en_video_06_0073,video_06,
+en_video_06_0074,video_06,
+en_video_06_0075,video_06,
+en_video_06_0076,video_06,BG 2.69
+en_video_06_0077,video_06,BG 2.69
+en_video_06_0078,video_06,BG 2.69
+en_video_06_0079,video_06,BG 2.40
+en_video_06_0080,video_06,BG 2.52
+en_video_06_0081,video_06,BG 2.63
+en_video_06_0082,video_06,
+en_video_06_0083,video_06,
+en_video_06_0084,video_06,BG 2.5
+en_video_06_0085,video_06,
+en_video_06_0086,video_06,
+en_video_06_0087,video_06,
+en_video_06_0088,video_06,BG 2.64
+en_video_06_0089,video_06,
+en_video_06_0090,video_06,
+en_video_06_0091,video_06,
+en_video_06_0092,video_06,
+en_video_06_0093,video_06,
+en_video_06_0094,video_06,
+en_video_06_0095,video_06,
+en_video_06_0096,video_06,BG 2.19
+en_video_06_0097,video_06,BG 2.52
+en_video_06_0098,video_06,BG 2.25
+en_video_06_0099,video_06,BG 2.16
+en_video_06_0100,video_06,BG 2.16
+en_video_06_0101,video_06,BG 2.16
+en_video_06_0102,video_06,
+en_video_06_0103,video_06,BG 2.27
+en_video_08_0000,video_08,BG 2.39
+en_video_08_0001,video_08,BG 2.60
+en_video_08_0002,video_08,BG 2.22
+en_video_08_0003,video_08,BG 2.25
+en_video_08_0004,video_08,BG 2.25
+en_video_08_0005,video_08,BG 2.13
+en_video_08_0006,video_08,BG 2.13
+en_video_08_0007,video_08,BG 2.13
+en_video_08_0008,video_08,BG 2.18
+en_video_08_0009,video_08,BG 2.23
+en_video_08_0010,video_08,BG 2.23
+en_video_08_0011,video_08,BG 2.23
+en_video_08_0012,video_08,
+en_video_08_0013,video_08,
+en_video_08_0014,video_08,BG 2.70
+en_video_08_0015,video_08,
+en_video_08_0016,video_08,BG 2.18
+en_video_08_0017,video_08,BG 2.24
+en_video_08_0018,video_08,BG 2.23
+en_video_08_0019,video_08,BG 2.23
+en_video_08_0020,video_08,BG 2.2
+en_video_08_0021,video_08,
+en_video_08_0022,video_08,BG 2.11
+en_video_08_0023,video_08,BG 2.17
+en_video_08_0024,video_08,BG 2.20
+en_video_08_0025,video_08,BG 2.55
+en_video_08_0026,video_08,BG 2.25
+en_video_08_0027,video_08,BG 2.24
+en_video_08_0028,video_08,BG 2.24
+en_video_08_0029,video_08,BG 2.40
+en_video_08_0030,video_08,BG 2.65
+en_video_08_0031,video_08,BG 2.43
+en_video_08_0032,video_08,BG 2.40
+en_video_08_0033,video_08,BG 2.46
+en_video_08_0034,video_08,
+en_video_08_0035,video_08,
+en_video_08_0036,video_08,BG 2.38
+en_video_08_0037,video_08,
+en_video_08_0038,video_08,
+en_video_08_0039,video_08,BG 2.40
+en_video_08_0040,video_08,
+en_video_08_0041,video_08,BG 2.40
+en_video_08_0042,video_08,BG 2.65
+en_video_08_0043,video_08,
+en_video_08_0044,video_08,BG 2.24
+en_video_08_0045,video_08,BG 2.24
+en_video_08_0046,video_08,BG 2.18
+en_video_08_0047,video_08,
+en_video_08_0048,video_08,
+en_video_08_0049,video_08,BG 2.13
+en_video_08_0050,video_08,BG 2.18
+en_video_08_0051,video_08,
+en_video_08_0052,video_08,BG 2.69
+en_video_08_0053,video_08,BG 2.25
+en_video_08_0054,video_08,BG 2.25
+en_video_08_0055,video_08,BG 2.25
+en_video_08_0056,video_08,BG 2.25
+en_video_08_0057,video_08,BG 2.25
+en_video_08_0058,video_08,BG 2.25
+en_video_08_0059,video_08,BG 2.25
+en_video_08_0060,video_08,BG 2.22
+en_video_08_0061,video_08,BG 2.61
+en_video_08_0062,video_08,
+en_video_08_0063,video_08,
+en_video_08_0064,video_08,
+en_video_08_0065,video_08,BG 2.16
+en_video_08_0066,video_08,
+en_video_08_0067,video_08,
+en_video_08_0068,video_08,BG 2.62
+en_video_08_0069,video_08,
+en_video_08_0070,video_08,BG 2.59
+en_video_08_0071,video_08,BG 2.67
+en_video_08_0072,video_08,BG 2.69
+en_video_08_0073,video_08,BG 2.53
+en_video_08_0074,video_08,BG 2.53
+en_video_08_0075,video_08,BG 2.53
+en_video_08_0076,video_08,
+en_video_08_0077,video_08,
+en_video_08_0078,video_08,
+en_video_08_0079,video_08,BG 2.54
+en_video_08_0080,video_08,
+en_video_08_0081,video_08,BG 2.65
+en_video_08_0082,video_08,BG 2.25
+en_video_08_0083,video_08,BG 2.19
+en_video_08_0084,video_08,BG 2.47
+en_video_08_0085,video_08,
+en_video_08_0086,video_08,BG 2.65
+en_video_08_0087,video_08,BG 2.39
+en_video_08_0088,video_08,
+en_video_08_0089,video_08,BG 2.60
+en_video_08_0090,video_08,BG 2.64
+en_video_08_0091,video_08,BG 2.64
+en_video_08_0092,video_08,BG 2.49
+en_video_09_0000,video_09,
+en_video_09_0001,video_09,
+en_video_09_0002,video_09,
+en_video_09_0003,video_09,BG 2.20
+en_video_09_0004,video_09,BG 2.25
+en_video_09_0005,video_09,BG 2.55
+en_video_09_0006,video_09,BG 2.49
+en_video_09_0007,video_09,BG 2.25
+en_video_09_0008,video_09,
+en_video_09_0009,video_09,BG 2.60
+en_video_09_0010,video_09,
+en_video_09_0011,video_09,
+en_video_09_0012,video_09,BG 2.7
+en_video_09_0013,video_09,
+en_video_09_0014,video_09,
+en_video_09_0015,video_09,BG 2.26
+en_video_09_0016,video_09,BG 2.13
+en_video_09_0017,video_09,BG 2.18
+en_video_09_0018,video_09,BG 2.18
+en_video_09_0019,video_09,BG 2.5
+en_video_09_0020,video_09,BG 2.20
+en_video_09_0021,video_09,
+en_video_09_0022,video_09,BG 2.14
+en_video_09_0023,video_09,
+en_video_09_0024,video_09,
+en_video_09_0025,video_09,
+en_video_09_0026,video_09,
+en_video_09_0027,video_09,
+en_video_09_0028,video_09,
+en_video_09_0029,video_09,
+en_video_09_0030,video_09,
+en_video_09_0031,video_09,
+en_video_09_0032,video_09,
+en_video_09_0033,video_09,BG 2.4
+en_video_09_0034,video_09,
+en_video_09_0035,video_09,
+en_video_09_0036,video_09,
+en_video_09_0037,video_09,BG 2.7
+en_video_09_0038,video_09,BG 2.64
+en_video_09_0039,video_09,BG 2.53
+en_video_09_0040,video_09,BG 2.53
+en_video_09_0041,video_09,BG 2.7
+en_video_09_0042,video_09,
+en_video_09_0043,video_09,BG 2.72
+en_video_09_0044,video_09,BG 2.25
+en_video_09_0045,video_09,
+en_video_09_0046,video_09,
+en_video_09_0047,video_09,BG 2.1
+en_video_09_0048,video_09,
+en_video_09_0049,video_09,BG 2.64
+en_video_09_0050,video_09,BG 2.64
+en_video_09_0051,video_09,BG 2.64
+en_video_09_0052,video_09,BG 2.49
+en_video_09_0053,video_09,BG 2.65
+en_video_09_0054,video_09,BG 2.65
+en_video_09_0055,video_09,
+en_video_09_0056,video_09,BG 2.8
+en_video_09_0057,video_09,BG 2.8
+en_video_09_0058,video_09,BG 2.24
+en_video_09_0059,video_09,BG 2.18
+en_video_09_0060,video_09,BG 2.26
+en_video_09_0061,video_09,BG 2.27
+en_video_09_0062,video_09,BG 2.20
+en_video_09_0063,video_09,BG 2.27
+en_video_09_0064,video_09,BG 2.27
+en_video_09_0065,video_09,BG 2.27
+en_video_09_0066,video_09,BG 2.16
+en_video_09_0067,video_09,BG 2.20
+en_video_09_0068,video_09,BG 2.20
+en_video_09_0069,video_09,BG 2.20
+en_video_09_0070,video_09,
+en_video_09_0071,video_09,
+en_video_09_0072,video_09,BG 2.26
+en_video_09_0073,video_09,
+en_video_09_0074,video_09,
+en_video_09_0075,video_09,BG 2.40
+en_video_09_0076,video_09,
+en_video_09_0077,video_09,
+en_video_09_0078,video_09,
+en_video_09_0079,video_09,
+en_video_09_0080,video_09,BG 2.13
+en_video_09_0081,video_09,BG 2.22
+en_video_09_0082,video_09,BG 2.13
+en_video_09_0083,video_09,BG 2.22
+en_video_09_0084,video_09,BG 2.27
+en_video_09_0085,video_09,BG 2.28
+en_video_09_0086,video_09,BG 2.30
+en_video_09_0087,video_09,BG 2.51
+en_video_09_0088,video_09,BG 2.20
+en_video_09_0089,video_09,BG 2.13
+en_video_09_0090,video_09,BG 2.13
+en_video_09_0091,video_09,BG 2.18
+en_video_09_0092,video_09,BG 2.14
+en_video_09_0093,video_09,
+en_video_09_0094,video_09,BG 2.13
+en_video_09_0095,video_09,BG 2.13
+en_video_09_0096,video_09,
+en_video_09_0097,video_09,BG 2.13
+en_video_09_0098,video_09,BG 2.46
+en_video_09_0099,video_09,BG 2.51
+en_video_09_0100,video_09,BG 2.45
+en_video_10_0000,video_10,
+en_video_10_0001,video_10,BG 2.27
+en_video_10_0002,video_10,BG 2.27
+en_video_10_0003,video_10,
+en_video_10_0004,video_10,BG 2.13
+en_video_10_0005,video_10,
+en_video_10_0006,video_10,BG 2.18
+en_video_10_0007,video_10,BG 2.20
+en_video_10_0008,video_10,BG 2.20
+en_video_10_0009,video_10,
+en_video_10_0010,video_10,BG 2.27
+en_video_10_0011,video_10,BG 2.27
+en_video_10_0012,video_10,BG 2.27
+en_video_10_0013,video_10,BG 2.65
+en_video_10_0014,video_10,BG 2.28
+en_video_10_0015,video_10,BG 2.25
+en_video_10_0016,video_10,BG 2.20
+en_video_10_0017,video_10,
+en_video_10_0018,video_10,
+en_video_10_0019,video_10,
+en_video_10_0020,video_10,
+en_video_10_0021,video_10,
+en_video_10_0022,video_10,BG 2.17
+en_video_10_0023,video_10,BG 2.69
+en_video_10_0024,video_10,BG 2.28
+en_video_10_0025,video_10,
+en_video_10_0026,video_10,
+en_video_10_0027,video_10,
+en_video_10_0028,video_10,
+en_video_10_0029,video_10,BG 2.28
+en_video_10_0030,video_10,
+en_video_10_0031,video_10,BG 2.27
+en_video_10_0032,video_10,
+en_video_10_0033,video_10,BG 2.21
+en_video_10_0034,video_10,
+en_video_10_0035,video_10,
+en_video_10_0036,video_10,
+en_video_10_0037,video_10,
+en_video_10_0038,video_10,BG 2.29
+en_video_10_0039,video_10,
+en_video_10_0040,video_10,BG 2.71
+en_video_10_0041,video_10,BG 2.21
+en_video_10_0042,video_10,BG 2.69
+en_video_10_0043,video_10,BG 2.50
+en_video_10_0044,video_10,BG 2.69
+en_video_10_0045,video_10,BG 2.29
+en_video_10_0046,video_10,BG 2.29
+en_video_10_0047,video_10,BG 2.25
+en_video_10_0048,video_10,BG 2.59
+en_video_10_0049,video_10,BG 2.61
+en_video_10_0050,video_10,
+en_video_10_0051,video_10,BG 2.19
+en_video_10_0052,video_10,BG 2.69
+en_video_10_0053,video_10,BG 2.58
+en_video_10_0054,video_10,
+en_video_10_0055,video_10,
+en_video_10_0056,video_10,
+en_video_10_0057,video_10,BG 2.14
+en_video_10_0058,video_10,BG 2.25
+en_video_10_0059,video_10,BG 2.67
+en_video_10_0060,video_10,BG 2.67
+en_video_10_0061,video_10,
+en_video_10_0062,video_10,
+en_video_10_0063,video_10,BG 2.7
+en_video_10_0064,video_10,BG 2.50
+en_video_10_0065,video_10,BG 2.46
+en_video_10_0066,video_10,
+en_video_10_0067,video_10,BG 2.25
+en_video_10_0068,video_10,
+en_video_10_0069,video_10,
+en_video_10_0070,video_10,BG 2.25
+en_video_10_0071,video_10,BG 2.60
+en_video_10_0072,video_10,BG 2.18
+en_video_10_0073,video_10,BG 2.25
+en_video_10_0074,video_10,BG 2.25
+en_video_10_0075,video_10,BG 2.29
+en_video_10_0076,video_10,BG 2.45
+en_video_10_0077,video_10,BG 2.7
+en_video_10_0078,video_10,BG 2.7
+en_video_10_0079,video_10,BG 2.29
+en_video_10_0080,video_10,BG 2.54
+en_video_10_0081,video_10,BG 2.7
+en_video_10_0082,video_10,BG 2.7
+en_video_10_0083,video_10,BG 2.29
+en_video_10_0084,video_10,BG 2.69
+en_video_10_0085,video_10,BG 2.19
+en_video_10_0086,video_10,
+en_video_10_0087,video_10,BG 2.69
+en_video_10_0088,video_10,BG 2.60
+en_video_10_0089,video_10,BG 2.60
+en_video_10_0090,video_10,BG 2.65
+en_video_10_0091,video_10,
+en_video_10_0092,video_10,
+en_video_10_0093,video_10,BG 2.54
+en_video_10_0094,video_10,BG 2.7
+en_video_10_0095,video_10,
+en_video_10_0096,video_10,
+en_video_10_0097,video_10,BG 2.7
+en_video_10_0098,video_10,BG 2.54
+en_video_10_0099,video_10,
+en_video_10_0100,video_10,BG 2.5
+en_video_10_0101,video_10,BG 2.7

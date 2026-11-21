@@ -1,0 +1,7 @@
+Student learning curve: English tuning AUC vs number of silver training passages
+(v1, C=0.001; training lectures drawn at random, never the scored lecture; 3 draws)
+  target size           actual sizes  AUC mean        AUC range
+          375        375-537             0.726   0.663-0.789   
+          750        752-927             0.778   0.773-0.782   
+         1100       1100-1200            0.741   0.701-0.765   
+         1500       1500-1584            0.740   0.709-0.763   

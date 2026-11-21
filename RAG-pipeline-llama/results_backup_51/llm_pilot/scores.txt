@@ -1,0 +1,28 @@
+LLM pilot (19 Oct 2026): frontier LLM via claude.ai chat (Pro plan), whole lecture + verse catalogue per new chat;
+prompt = scripts/llm_pilot.py INSTRUCTIONS. Model name / extended thinking: TO BE RECORDED.
+Answers: results/llm_pilot/<lecture>.txt (first complete answer, not regenerated).
+
+
+  kannada_10   11 passages  (prompt check, tuning lecture)
+    parsing: 0 passage(s) missing, 0 unparsed line(s), 0 verse(s) outside 2.1-2.72
+    frontier LLM (chat)  strict 0.857   +-1 1.000   theme 0.870
+    ours (locked)        strict 0.963   +-1 1.000   theme 1.000
+    plain carry          strict 1.000   +-1 1.000   theme 1.000
+
+  video_09   102 passages
+    parsing: 0 passage(s) missing, 0 unparsed line(s), 0 verse(s) outside 2.1-2.72
+    frontier LLM (chat)  strict 0.763   +-1 0.789   theme 0.800
+    ours (locked)        strict 0.389   +-1 0.530   theme 0.529
+    plain carry          strict 0.198   +-1 0.272   theme 0.345
+
+  video_02   82 passages
+    parsing: 0 passage(s) missing, 0 unparsed line(s), 0 verse(s) outside 2.1-2.72
+    frontier LLM (chat)  strict 0.729   +-1 0.802   theme 0.787
+    ours (locked)        strict 0.627   +-1 0.701   theme 0.677
+    plain carry          strict 0.647   +-1 0.715   theme 0.698
+
+  kannada_17   14 passages
+    parsing: 0 passage(s) missing, 0 unparsed line(s), 0 verse(s) outside 2.1-2.72
+    frontier LLM (chat)  strict 0.933   +-1 0.957   theme 1.000
+    ours (locked)        strict 0.800   +-1 0.912   theme 0.963
+    plain carry          strict 0.745   +-1 0.829   theme 0.867

@@ -1,0 +1,240 @@
+{
+  "per_video": [
+    {
+      "video": "data/transcripts/gita-1st video.txt",
+      "expected": [
+        "BG 2.1",
+        "BG 2.2",
+        "BG 2.3"
+      ],
+      "detected": [
+        "BG 2.1",
+        "BG 2.2",
+        "BG 2.3"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": [
+        "BG 2.1",
+        "BG 2.2",
+        "BG 2.3"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "num_detected": 3,
+      "num_expected": 3,
+      "detections": [
+        {
+          "ref": "BG 2.1",
+          "confidence": 0.812,
+          "score": 76.66666666666666
+        },
+        {
+          "ref": "BG 2.2",
+          "confidence": 0.77,
+          "score": 70.58823529411764
+        },
+        {
+          "ref": "BG 2.3",
+          "confidence": 0.857,
+          "score": 83.11688311688312
+        }
+      ]
+    },
+    {
+      "video": "data/transcripts/gita-2nd video.txt",
+      "expected": [
+        "BG 2.4",
+        "BG 2.5",
+        "BG 2.6"
+      ],
+      "detected": [
+        "BG 2.3",
+        "BG 2.4",
+        "BG 2.5",
+        "BG 2.6"
+      ],
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "true_positives": [
+        "BG 2.4",
+        "BG 2.5",
+        "BG 2.6"
+      ],
+      "false_positives": [
+        "BG 2.3"
+      ],
+      "false_negatives": [],
+      "num_detected": 4,
+      "num_expected": 3,
+      "detections": [
+        {
+          "ref": "BG 2.3",
+          "confidence": 0.666,
+          "score": 63.1578947368421
+        },
+        {
+          "ref": "BG 2.4",
+          "confidence": 0.831,
+          "score": 86.82170542635659
+        },
+        {
+          "ref": "BG 2.5",
+          "confidence": 0.66,
+          "score": 62.365591397849464
+        },
+        {
+          "ref": "BG 2.6",
+          "confidence": 0.758,
+          "score": 76.30057803468209
+        }
+      ]
+    },
+    {
+      "video": "data/transcripts/gita-3rd video.txt",
+      "expected": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.9"
+      ],
+      "detected": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.9"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": [
+        "BG 2.7",
+        "BG 2.8",
+        "BG 2.9"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "num_detected": 3,
+      "num_expected": 3,
+      "detections": [
+        {
+          "ref": "BG 2.7",
+          "confidence": 0.675,
+          "score": 63.436123348017624
+        },
+        {
+          "ref": "BG 2.8",
+          "confidence": 0.755,
+          "score": 74.85380116959064
+        },
+        {
+          "ref": "BG 2.9",
+          "confidence": 0.784,
+          "score": 79.06976744186046
+        }
+      ]
+    },
+    {
+      "video": "data/transcripts/gita-4th video.txt",
+      "expected": [
+        "BG 2.10",
+        "BG 2.11"
+      ],
+      "detected": [
+        "BG 2.10",
+        "BG 2.11"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": [
+        "BG 2.10",
+        "BG 2.11"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "num_detected": 2,
+      "num_expected": 2,
+      "detections": [
+        {
+          "ref": "BG 2.10",
+          "confidence": 0.749,
+          "score": 76.19047619047619
+        },
+        {
+          "ref": "BG 2.11",
+          "confidence": 0.778,
+          "score": 80.3030303030303
+        }
+      ]
+    },
+    {
+      "video": "data/transcripts/gita-5th video.txt",
+      "expected": [
+        "BG 2.12",
+        "BG 2.13"
+      ],
+      "detected": [
+        "BG 2.12",
+        "BG 2.13"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": [
+        "BG 2.12",
+        "BG 2.13"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "num_detected": 2,
+      "num_expected": 2,
+      "detections": [
+        {
+          "ref": "BG 2.12",
+          "confidence": 0.626,
+          "score": 59.4059405940594
+        },
+        {
+          "ref": "BG 2.13",
+          "confidence": 0.839,
+          "score": 89.79591836734694
+        }
+      ]
+    },
+    {
+      "video": "data/transcripts/gita-6th video.txt",
+      "expected": [
+        "BG 2.14"
+      ],
+      "detected": [
+        "BG 2.14"
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "true_positives": [
+        "BG 2.14"
+      ],
+      "false_positives": [],
+      "false_negatives": [],
+      "num_detected": 1,
+      "num_expected": 1,
+      "detections": [
+        {
+          "ref": "BG 2.14",
+          "confidence": 0.81,
+          "score": 86.89655172413792
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "precision": 0.9333,
+    "recall": 1.0,
+    "f1": 0.9655,
+    "true_positives": 14,
+    "false_positives": 1,
+    "false_negatives": 0
+  }
+}

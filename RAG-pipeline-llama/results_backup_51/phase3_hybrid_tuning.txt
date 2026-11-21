@@ -1,0 +1,7 @@
+Phase 3 v3 hybrid — TUNING lectures, leave-one-lecture-out, alpha 0.5 (no test gold)
+verse vote: gpt-5-mini end-to-end labels on 1884 passages; P_off = teacher; 145-state resume
+  system                       KN strict  KN +-1 EN strict  EN +-1 EN theme   EN strict per lecture
+  v2 teacher 145 (lambda 0)        0.938   0.966     0.731   0.786    0.815   video_01 0.826, video_04 0.677, video_07 0.718
+  v3 hybrid (lambda chosen)        0.910   0.966     0.742   0.792    0.806   video_01 0.832, video_04 0.711, video_07 0.710
+  lambda chosen per held-out lecture: gita-1st_video 4, gita-4th_video 4, kannada_07 4, kannada_10 8, kannada_13 4, kannada_16 4, video_01 4, video_04 2, video_07 4
+  KN strict per lecture: gita-1st_video 0.875, gita-4th_video 0.938, kannada_07 1.000, kannada_10 0.714, kannada_13 1.000, kannada_16 0.938

@@ -1,0 +1,4 @@
+Teacher (gpt-5-mini, config B) vs gold off-verse — split = dev   (DRY RUN on tuning lectures; the teacher prompt was chosen here)
+  group                                    lect   pass gold off  flagged    acc  recall false flags   rate  kappa    AUC
+  Kannada tuning                              6     82    0.012    0.012  0.976   0.000     1/81     0.012 -0.012  0.951
+  English tuning                              3    292    0.408    0.503  0.788   0.857    45/173    0.260  0.576  0.836

@@ -1,0 +1,31 @@
+{
+ "system": "v2_local73",
+ "role": "zero-API variant",
+ "decoder": "73-state",
+ "p_off": "old off-verse scorer + logit of results/student/student_poff.csv p_final (v1, 5-fold cross-fitted on silver), clipped to [0.02, 0.98]",
+ "verse_scorer": "locked Step 3 verse scorer (alpha 0.5, last)",
+ "gamma": 2,
+ "beta_off": -1,
+ "delta": 0,
+ "tau": 0.9,
+ "counts": {
+  "stay": 188,
+  "next": 26,
+  "jump": 15,
+  "to_off": 23,
+  "stay_off": 95,
+  "from_off": 24
+ },
+ "trained_on": [
+  "gita-1st_video",
+  "gita-4th_video",
+  "kannada_07",
+  "kannada_10",
+  "kannada_13",
+  "kannada_16",
+  "video_01",
+  "video_04",
+  "video_07"
+ ],
+ "tuning_lolo_en_strict": 0.707
+}

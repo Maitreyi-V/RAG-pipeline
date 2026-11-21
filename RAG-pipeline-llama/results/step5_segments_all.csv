@@ -1,195 +1,686 @@
 segment_id,video_file,primary_verse,theme_id,first_unit,last_unit,dwell,effective_dwell,pos_start,pos_end
-gita-1st_video_s000,gita-1st_video,BG 2.1,T01,kn_gita-1st_video_0000,kn_gita-1st_video_0004,5,3.226,0.0,0.3515
-gita-1st_video_s001,gita-1st_video,BG 2.2,T01,kn_gita-1st_video_0005,kn_gita-1st_video_0008,4,2.99,0.3515,0.6348
-gita-1st_video_s002,gita-1st_video,BG 2.3,T01,kn_gita-1st_video_0009,kn_gita-1st_video_0014,6,4.27,0.6348,1.0
-gita-4th_video_s003,gita-4th_video,BG 2.10,T01,kn_gita-4th_video_0000,kn_gita-4th_video_0004,5,2.63,0.0,0.3404
-gita-4th_video_s004,gita-4th_video,BG 2.11,T02,kn_gita-4th_video_0005,kn_gita-4th_video_0014,10,8.683,0.3404,1.0
-kannada_07_s005,kannada_07,BG 2.14,T02,kn_kannada_07_0000,kn_kannada_07_0001,2,0.051,0.0,0.1254
-kannada_07_s006,kannada_07,BG 2.15,T02,kn_kannada_07_0002,kn_kannada_07_0008,7,5.699,0.1254,0.5878
-kannada_07_s007,kannada_07,BG 2.16,T02,kn_kannada_07_0009,kn_kannada_07_0014,6,4.186,0.5878,1.0
-kannada_10_s008,kannada_10,BG 2.23,T02,kn_kannada_10_0000,kn_kannada_10_0002,3,2.171,0.0,0.2817
-kannada_10_s009,kannada_10,BG 2.24,T02,kn_kannada_10_0003,kn_kannada_10_0007,5,3.412,0.2817,0.7226
-kannada_10_s010,kannada_10,BG 2.25,T02,kn_kannada_10_0008,kn_kannada_10_0010,3,2.096,0.7226,1.0
-kannada_13_s011,kannada_13,BG 2.32,T04,kn_kannada_13_0000,kn_kannada_13_0004,5,4.08,0.0,0.4377
-kannada_13_s012,kannada_13,BG 2.33,T04,kn_kannada_13_0005,kn_kannada_13_0007,3,1.951,0.4377,0.7616
-kannada_13_s013,kannada_13,BG 2.34,T04,kn_kannada_13_0008,kn_kannada_13_0010,3,2.543,0.7616,1.0
-kannada_16_s014,kannada_16,BG 2.39,T05,kn_kannada_16_0000,kn_kannada_16_0000,1,0.168,0.0,0.0675
-kannada_16_s015,kannada_16,BG 2.40,T05,kn_kannada_16_0001,kn_kannada_16_0008,8,5.338,0.0675,0.6282
-kannada_16_s016,kannada_16,BG 2.41,T05,kn_kannada_16_0009,kn_kannada_16_0014,6,3.926,0.6282,1.0
-video_01_s017,video_01,OFF,,en_video_01_0000,en_video_01_0033,34,25.134,0.0,0.3879
-video_01_s018,video_01,BG 2.1,T01,en_video_01_0034,en_video_01_0043,10,5.924,0.3879,0.5015
-video_01_s019,video_01,BG 2.2,T01,en_video_01_0044,en_video_01_0054,11,6.211,0.5015,0.6332
-video_01_s020,video_01,BG 2.3,T01,en_video_01_0055,en_video_01_0069,15,6.161,0.6332,0.805
-video_01_s021,video_01,BG 2.5,T01,en_video_01_0070,en_video_01_0072,3,1.836,0.805,0.839
-video_01_s022,video_01,BG 2.6,T01,en_video_01_0073,en_video_01_0075,3,2.096,0.839,0.872
-video_01_s023,video_01,BG 2.7,T01,en_video_01_0076,en_video_01_0079,4,2.762,0.872,0.9169
-video_01_s024,video_01,BG 2.8,T01,en_video_01_0080,en_video_01_0081,2,1.123,0.9169,0.9386
-video_01_s025,video_01,BG 2.10,T01,en_video_01_0082,en_video_01_0087,6,2.695,0.9386,1.0
-video_04_s026,video_04,OFF,,en_video_04_0000,en_video_04_0013,14,11.286,0.0,0.1344
-video_04_s027,video_04,BG 2.16,T02,en_video_04_0014,en_video_04_0065,52,27.719,0.1344,0.626
-video_04_s028,video_04,BG 2.40,T05,en_video_04_0066,en_video_04_0084,19,7.029,0.626,0.8053
-video_04_s029,video_04,OFF,,en_video_04_0085,en_video_04_0106,22,13.446,0.8053,1.0
-video_07_s030,video_07,OFF,,en_video_07_0000,en_video_07_0009,10,5.801,0.0,0.1036
-video_07_s031,video_07,BG 2.20,T02,en_video_07_0010,en_video_07_0038,29,12.323,0.1036,0.4024
-video_07_s032,video_07,BG 2.21,T02,en_video_07_0039,en_video_07_0065,27,6.357,0.4024,0.6802
-video_07_s033,video_07,BG 2.22,T02,en_video_07_0066,en_video_07_0096,31,14.316,0.6802,1.0
-gita-2nd_video_s034,gita-2nd_video,BG 2.4,T01,kn_gita-2nd_video_0000,kn_gita-2nd_video_0003,4,2.426,0.0,0.348
-gita-2nd_video_s035,gita-2nd_video,BG 2.5,T01,kn_gita-2nd_video_0004,kn_gita-2nd_video_0008,5,3.651,0.348,0.7368
-gita-2nd_video_s036,gita-2nd_video,BG 2.6,T01,kn_gita-2nd_video_0009,kn_gita-2nd_video_0012,4,2.252,0.7368,1.0
-gita-3rd_video_s037,gita-3rd_video,BG 2.7,T01,kn_gita-3rd_video_0000,kn_gita-3rd_video_0005,6,5.156,0.0,0.4658
-gita-3rd_video_s038,gita-3rd_video,BG 2.8,T01,kn_gita-3rd_video_0006,kn_gita-3rd_video_0010,5,2.446,0.4658,0.8355
-gita-3rd_video_s039,gita-3rd_video,BG 2.9,T01,kn_gita-3rd_video_0011,kn_gita-3rd_video_0013,3,1.703,0.8355,1.0
-gita-5th_video_s040,gita-5th_video,BG 2.11,T02,kn_gita-5th_video_0000,kn_gita-5th_video_0000,1,0.091,0.0,0.0526
-gita-5th_video_s041,gita-5th_video,BG 2.12,T02,kn_gita-5th_video_0001,kn_gita-5th_video_0006,6,4.386,0.0526,0.3853
-gita-5th_video_s042,gita-5th_video,BG 2.13,T02,kn_gita-5th_video_0007,kn_gita-5th_video_0018,12,7.012,0.3853,1.0
-gita-6th_video_s043,gita-6th_video,BG 2.14,T02,kn_gita-6th_video_0000,kn_gita-6th_video_0005,6,4.401,0.0,0.2954
-gita-6th_video_s044,gita-6th_video,BG 2.67,T08,kn_gita-6th_video_0006,kn_gita-6th_video_0015,10,6.46,0.2954,0.791
-gita-6th_video_s045,gita-6th_video,BG 2.14,T02,kn_gita-6th_video_0016,kn_gita-6th_video_0020,5,2.623,0.791,1.0
-kannada_08_s046,kannada_08,BG 2.17,T02,kn_kannada_08_0000,kn_kannada_08_0006,7,3.898,0.0,0.5955
-kannada_08_s047,kannada_08,BG 2.18,T02,kn_kannada_08_0007,kn_kannada_08_0011,5,3.789,0.5955,1.0
-kannada_09_s048,kannada_09,BG 2.19,T02,kn_kannada_09_0000,kn_kannada_09_0003,4,3.085,0.0,0.2909
-kannada_09_s049,kannada_09,BG 2.20,T02,kn_kannada_09_0004,kn_kannada_09_0008,5,3.459,0.2909,0.6266
-kannada_09_s050,kannada_09,BG 2.21,T02,kn_kannada_09_0009,kn_kannada_09_0010,2,1.412,0.6266,0.7752
-kannada_09_s051,kannada_09,BG 2.22,T02,kn_kannada_09_0011,kn_kannada_09_0014,4,2.714,0.7752,1.0
-kannada_11_s052,kannada_11,BG 2.26,T03,kn_kannada_11_0000,kn_kannada_11_0007,8,3.637,0.0,0.5192
-kannada_11_s053,kannada_11,BG 2.28,T03,kn_kannada_11_0008,kn_kannada_11_0015,8,5.698,0.5192,1.0
-kannada_12_s054,kannada_12,BG 2.29,T03,kn_kannada_12_0000,kn_kannada_12_0007,8,6.466,0.0,0.5125
-kannada_12_s055,kannada_12,BG 2.30,T03,kn_kannada_12_0008,kn_kannada_12_0010,3,1.731,0.5125,0.7227
-kannada_12_s056,kannada_12,BG 2.31,T04,kn_kannada_12_0011,kn_kannada_12_0015,5,3.417,0.7227,1.0
-kannada_14_s057,kannada_14,BG 2.34,T04,kn_kannada_14_0000,kn_kannada_14_0000,1,0.729,0.0,0.0749
-kannada_14_s058,kannada_14,BG 2.35,T04,kn_kannada_14_0001,kn_kannada_14_0004,4,2.73,0.0749,0.3482
-kannada_14_s059,kannada_14,BG 2.36,T04,kn_kannada_14_0005,kn_kannada_14_0008,4,2.28,0.3482,0.6751
-kannada_14_s060,kannada_14,BG 2.37,T04,kn_kannada_14_0009,kn_kannada_14_0013,5,3.672,0.6751,1.0
-kannada_15_s061,kannada_15,BG 2.38,T04,kn_kannada_15_0000,kn_kannada_15_0008,9,3.967,0.0,0.4592
-kannada_15_s062,kannada_15,BG 2.39,T05,kn_kannada_15_0009,kn_kannada_15_0019,11,6.418,0.4592,1.0
-kannada_17_s063,kannada_17,BG 2.43,T05,kn_kannada_17_0000,kn_kannada_17_0008,9,3.968,0.0,0.6488
-kannada_17_s064,kannada_17,BG 2.44,T05,kn_kannada_17_0009,kn_kannada_17_0013,5,2.296,0.6488,1.0
-kannada_18_s065,kannada_18,BG 2.45,T05,kn_kannada_18_0000,kn_kannada_18_0012,13,9.425,0.0,1.0
-kannada_19_s066,kannada_19,BG 2.46,T05,kn_kannada_19_0000,kn_kannada_19_0008,9,4.925,0.0,0.5039
-kannada_19_s067,kannada_19,BG 2.47,T06,kn_kannada_19_0009,kn_kannada_19_0017,9,7.833,0.5039,1.0
-kannada_20_s068,kannada_20,BG 2.47,T06,kn_kannada_20_0000,kn_kannada_20_0001,2,1.296,0.0,0.1539
-kannada_20_s069,kannada_20,BG 2.48,T06,kn_kannada_20_0002,kn_kannada_20_0010,9,4.911,0.1539,0.7814
-kannada_20_s070,kannada_20,BG 2.49,T06,kn_kannada_20_0011,kn_kannada_20_0014,4,2.252,0.7814,1.0
-kannada_21_s071,kannada_21,BG 2.50,T06,kn_kannada_21_0000,kn_kannada_21_0008,9,3.049,0.0,0.6996
-kannada_21_s072,kannada_21,BG 2.51,T06,kn_kannada_21_0009,kn_kannada_21_0012,4,2.36,0.6996,1.0
-kannada_22_s073,kannada_22,BG 2.52,T06,kn_kannada_22_0000,kn_kannada_22_0008,9,5.059,0.0,0.6486
-kannada_22_s074,kannada_22,BG 2.53,T06,kn_kannada_22_0009,kn_kannada_22_0013,5,2.551,0.6486,1.0
-kannada_23_s075,kannada_23,BG 2.54,T07,kn_kannada_23_0000,kn_kannada_23_0014,15,8.496,0.0,0.8802
-kannada_23_s076,kannada_23,BG 2.55,T07,kn_kannada_23_0015,kn_kannada_23_0016,2,1.309,0.8802,1.0
-kannada_24_s077,kannada_24,BG 2.56,T07,kn_kannada_24_0000,kn_kannada_24_0007,8,4.677,0.0,0.6592
-kannada_24_s078,kannada_24,BG 2.57,T07,kn_kannada_24_0008,kn_kannada_24_0011,4,1.601,0.6592,1.0
-kannada_25_s079,kannada_25,BG 2.58,T07,kn_kannada_25_0000,kn_kannada_25_0004,5,1.483,0.0,0.3872
-kannada_25_s080,kannada_25,BG 2.59,T08,kn_kannada_25_0005,kn_kannada_25_0013,9,5.738,0.3872,1.0
-kannada_26_s081,kannada_26,BG 2.60,T08,kn_kannada_26_0000,kn_kannada_26_0005,6,2.273,0.0,0.5127
-kannada_26_s082,kannada_26,BG 2.62,T08,kn_kannada_26_0006,kn_kannada_26_0011,6,2.307,0.5127,1.0
-kannada_27_s083,kannada_27,BG 2.64,T08,kn_kannada_27_0000,kn_kannada_27_0007,8,4.05,0.0,0.6163
-kannada_27_s084,kannada_27,BG 2.66,T08,kn_kannada_27_0008,kn_kannada_27_0011,4,2.006,0.6163,0.9138
-kannada_27_s085,kannada_27,BG 2.67,T08,kn_kannada_27_0012,kn_kannada_27_0013,2,0.99,0.9138,1.0
-kannada_28_s086,kannada_28,BG 2.65,T08,kn_kannada_28_0000,kn_kannada_28_0001,2,1.51,0.0,0.1914
-kannada_28_s087,kannada_28,BG 2.67,T08,kn_kannada_28_0002,kn_kannada_28_0004,3,0.645,0.1914,0.4859
-kannada_28_s088,kannada_28,BG 2.69,T09,kn_kannada_28_0005,kn_kannada_28_0010,6,3.484,0.4859,1.0
-kannada_29_s089,kannada_29,BG 2.70,T09,kn_kannada_29_0000,kn_kannada_29_0004,5,3.209,0.0,0.425
-kannada_29_s090,kannada_29,BG 2.72,T09,kn_kannada_29_0005,kn_kannada_29_0012,8,4.06,0.425,1.0
-video_02_s091,video_02,BG 2.10,T01,en_video_02_0000,en_video_02_0003,4,1.94,0.0,0.0475
-video_02_s092,video_02,BG 2.11,T02,en_video_02_0004,en_video_02_0036,33,14.985,0.0475,0.4514
-video_02_s093,video_02,BG 2.12,T02,en_video_02_0037,en_video_02_0081,45,20.588,0.4514,1.0
-video_03_s094,video_03,BG 2.12,T02,en_video_03_0000,en_video_03_0012,13,6.391,0.0,0.1497
-video_03_s095,video_03,BG 2.13,T02,en_video_03_0013,en_video_03_0036,24,13.736,0.1497,0.428
-video_03_s096,video_03,BG 2.14,T02,en_video_03_0037,en_video_03_0082,46,15.972,0.428,0.9567
-video_03_s097,video_03,BG 2.15,T02,en_video_03_0083,en_video_03_0086,4,1.76,0.9567,1.0
-video_05_s098,video_05,BG 2.16,T02,en_video_05_0000,en_video_05_0016,17,11.005,0.0,0.1687
-video_05_s099,video_05,BG 2.17,T02,en_video_05_0017,en_video_05_0038,22,11.699,0.1687,0.3853
-video_05_s100,video_05,BG 2.69,T09,en_video_05_0039,en_video_05_0045,7,3.807,0.3853,0.452
-video_05_s101,video_05,BG 2.17,T02,en_video_05_0046,en_video_05_0070,25,11.983,0.452,0.6949
-video_05_s102,video_05,BG 2.18,T02,en_video_05_0071,en_video_05_0102,32,9.899,0.6949,1.0
-video_06_s103,video_06,BG 2.17,T02,en_video_06_0000,en_video_06_0023,24,5.918,0.0,0.2348
-video_06_s104,video_06,BG 2.19,T02,en_video_06_0024,en_video_06_0029,6,1.957,0.2348,0.2916
-video_06_s105,video_06,OFF,,en_video_06_0030,en_video_06_0103,74,41.762,0.2916,1.0
-video_08_s106,video_08,BG 2.22,T02,en_video_08_0000,en_video_08_0008,9,5.458,0.0,0.0935
-video_08_s107,video_08,BG 2.23,T02,en_video_08_0009,en_video_08_0018,10,3.92,0.0935,0.1983
-video_08_s108,video_08,BG 2.24,T02,en_video_08_0019,en_video_08_0053,35,14.414,0.1983,0.5662
-video_08_s109,video_08,BG 2.25,T02,en_video_08_0054,en_video_08_0061,8,2.556,0.5662,0.6522
-video_08_s110,video_08,OFF,,en_video_08_0062,en_video_08_0095,34,16.523,0.6522,1.0
-video_09_s111,video_09,OFF,,en_video_09_0000,en_video_09_0036,37,22.898,0.0,0.3681
-video_09_s112,video_09,BG 2.27,T03,en_video_09_0037,en_video_09_0101,65,24.343,0.3681,1.0
-video_10_s113,video_10,OFF,,en_video_10_0000,en_video_10_0013,14,9.02,0.0,0.1408
-video_10_s114,video_10,BG 2.28,T03,en_video_10_0014,en_video_10_0044,31,8.824,0.1408,0.4424
-video_10_s115,video_10,BG 2.29,T03,en_video_10_0045,en_video_10_0086,42,13.964,0.4424,0.8534
-video_10_s116,video_10,OFF,,en_video_10_0087,en_video_10_0101,15,8.542,0.8534,1.0
-kn_brahmanyachar_day02b_s117,kn_brahmanyachar_day02b,BG 2.2,T01,kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b_0002,3,1.781,0.0,0.0665
-kn_brahmanyachar_day02b_s118,kn_brahmanyachar_day02b,BG 2.4,T01,kn_brahmanyachar_day02b_0003,kn_brahmanyachar_day02b_0003,1,0.568,0.0665,0.0929
-kn_brahmanyachar_day02b_s119,kn_brahmanyachar_day02b,BG 2.5,T01,kn_brahmanyachar_day02b_0004,kn_brahmanyachar_day02b_0004,1,0.475,0.0929,0.1149
-kn_brahmanyachar_day02b_s120,kn_brahmanyachar_day02b,BG 2.7,T01,kn_brahmanyachar_day02b_0005,kn_brahmanyachar_day02b_0005,1,0.505,0.1149,0.1366
-kn_brahmanyachar_day02b_s121,kn_brahmanyachar_day02b,BG 2.9,T01,kn_brahmanyachar_day02b_0006,kn_brahmanyachar_day02b_0008,3,1.941,0.1366,0.2057
-kn_brahmanyachar_day02b_s122,kn_brahmanyachar_day02b,BG 2.11,T02,kn_brahmanyachar_day02b_0009,kn_brahmanyachar_day02b_0018,10,5.611,0.2057,0.4239
-kn_brahmanyachar_day02b_s123,kn_brahmanyachar_day02b,BG 2.13,T02,kn_brahmanyachar_day02b_0019,kn_brahmanyachar_day02b_0024,6,4.125,0.4239,0.5556
-kn_brahmanyachar_day02b_s124,kn_brahmanyachar_day02b,BG 2.14,T02,kn_brahmanyachar_day02b_0025,kn_brahmanyachar_day02b_0026,2,1.41,0.5556,0.6006
-kn_brahmanyachar_day02b_s125,kn_brahmanyachar_day02b,BG 2.16,T02,kn_brahmanyachar_day02b_0027,kn_brahmanyachar_day02b_0029,3,1.35,0.6006,0.6694
-kn_brahmanyachar_day02b_s126,kn_brahmanyachar_day02b,BG 2.37,T04,kn_brahmanyachar_day02b_0030,kn_brahmanyachar_day02b_0036,7,1.771,0.6694,0.8404
-kn_brahmanyachar_day02b_s127,kn_brahmanyachar_day02b,BG 2.39,T05,kn_brahmanyachar_day02b_0037,kn_brahmanyachar_day02b_0043,7,0.228,0.8404,1.0
-kn_sumith_day01_s128,kn_sumith_day01,BG 2.2,T01,kn_sumith_day01_0000,kn_sumith_day01_0004,5,2.545,0.0,0.577
-kn_sumith_day01_s129,kn_sumith_day01,BG 2.3,T01,kn_sumith_day01_0005,kn_sumith_day01_0008,4,2.407,0.577,1.0
-kn_sumith_day02_s130,kn_sumith_day02,BG 2.4,T01,kn_sumith_day02_0000,kn_sumith_day02_0000,1,0.911,0.0,0.1095
-kn_sumith_day02_s131,kn_sumith_day02,BG 2.5,T01,kn_sumith_day02_0001,kn_sumith_day02_0006,6,3.189,0.1095,0.6973
-kn_sumith_day02_s132,kn_sumith_day02,BG 2.7,T01,kn_sumith_day02_0007,kn_sumith_day02_0009,3,2.59,0.6973,1.0
-kn_sumith_day03_s133,kn_sumith_day03,OFF,,kn_sumith_day03_0000,kn_sumith_day03_0002,3,2.483,0.0,0.2317
-kn_sumith_day03_s134,kn_sumith_day03,BG 2.8,T01,kn_sumith_day03_0003,kn_sumith_day03_0006,4,3.024,0.2317,0.5432
-kn_sumith_day03_s135,kn_sumith_day03,BG 2.10,T01,kn_sumith_day03_0007,kn_sumith_day03_0011,5,3.347,0.5432,1.0
-kn_sumith_day04_s136,kn_sumith_day04,BG 2.13,T02,kn_sumith_day04_0000,kn_sumith_day04_0011,12,4.701,0.0,1.0
-kn_sumith_day05_s137,kn_sumith_day05,BG 2.17,T02,kn_sumith_day05_0000,kn_sumith_day05_0014,15,6.611,0.0,1.0
-kn_sumith_day06_s138,kn_sumith_day06,BG 2.20,T02,kn_sumith_day06_0000,kn_sumith_day06_0005,6,3.843,0.0,0.8091
-kn_sumith_day06_s139,kn_sumith_day06,BG 2.21,T02,kn_sumith_day06_0006,kn_sumith_day06_0007,2,1.341,0.8091,1.0
-kn_sumith_day07_s140,kn_sumith_day07,BG 2.22,T02,kn_sumith_day07_0000,kn_sumith_day07_0003,4,2.57,0.0,0.3866
-kn_sumith_day07_s141,kn_sumith_day07,BG 2.24,T02,kn_sumith_day07_0004,kn_sumith_day07_0005,2,1.242,0.3866,0.567
-kn_sumith_day07_s142,kn_sumith_day07,BG 2.25,T02,kn_sumith_day07_0006,kn_sumith_day07_0010,5,3.735,0.567,1.0
-kn_sumith_day08_s143,kn_sumith_day08,OFF,,kn_sumith_day08_0000,kn_sumith_day08_0006,7,4.422,0.0,0.659
-kn_sumith_day08_s144,kn_sumith_day08,BG 2.27,T03,kn_sumith_day08_0007,kn_sumith_day08_0010,4,2.977,0.659,1.0
-en_chinmaya_day03_s145,en_chinmaya_day03,BG 2.10,T01,en_chinmaya_day03_0000,en_chinmaya_day03_0011,12,5.874,0.0,0.1745
-en_chinmaya_day03_s146,en_chinmaya_day03,BG 2.11,T02,en_chinmaya_day03_0012,en_chinmaya_day03_0055,44,15.204,0.1745,0.7998
-en_chinmaya_day03_s147,en_chinmaya_day03,BG 2.12,T02,en_chinmaya_day03_0056,en_chinmaya_day03_0057,2,1.595,0.7998,0.8282
-en_chinmaya_day03_s148,en_chinmaya_day03,BG 2.13,T02,en_chinmaya_day03_0058,en_chinmaya_day03_0070,13,7.534,0.8282,1.0
-en_chinmaya_day04_s149,en_chinmaya_day04,OFF,,en_chinmaya_day04_0000,en_chinmaya_day04_0015,16,8.385,0.0,0.2091
-en_chinmaya_day04_s150,en_chinmaya_day04,BG 2.14,T02,en_chinmaya_day04_0016,en_chinmaya_day04_0021,6,3.555,0.2091,0.288
-en_chinmaya_day04_s151,en_chinmaya_day04,BG 2.15,T02,en_chinmaya_day04_0022,en_chinmaya_day04_0048,27,9.137,0.288,0.6478
-en_chinmaya_day04_s152,en_chinmaya_day04,BG 2.16,T02,en_chinmaya_day04_0049,en_chinmaya_day04_0056,8,5.39,0.6478,0.7541
-en_chinmaya_day04_s153,en_chinmaya_day04,BG 2.17,T02,en_chinmaya_day04_0057,en_chinmaya_day04_0067,11,6.141,0.7541,0.8971
-en_chinmaya_day04_s154,en_chinmaya_day04,BG 2.18,T02,en_chinmaya_day04_0068,en_chinmaya_day04_0075,8,3.118,0.8971,1.0
-en_iskcon_s155,en_iskcon,BG 2.1,T01,en_iskcon_0000,en_iskcon_0004,5,2.497,0.0,0.0222
-en_iskcon_s156,en_iskcon,BG 2.2,T01,en_iskcon_0005,en_iskcon_0017,13,5.218,0.0222,0.0814
-en_iskcon_s157,en_iskcon,BG 2.4,T01,en_iskcon_0018,en_iskcon_0019,2,1.107,0.0814,0.0905
-en_iskcon_s158,en_iskcon,BG 2.6,T01,en_iskcon_0020,en_iskcon_0021,2,1.143,0.0905,0.0992
-en_iskcon_s159,en_iskcon,BG 2.7,T01,en_iskcon_0022,en_iskcon_0028,7,3.898,0.0992,0.1306
-en_iskcon_s160,en_iskcon,BG 2.9,T01,en_iskcon_0029,en_iskcon_0029,1,0.291,0.1306,0.1357
-en_iskcon_s161,en_iskcon,BG 2.11,T02,en_iskcon_0030,en_iskcon_0031,2,1.071,0.1357,0.1443
-en_iskcon_s162,en_iskcon,BG 2.12,T02,en_iskcon_0032,en_iskcon_0036,5,2.319,0.1443,0.1684
-en_iskcon_s163,en_iskcon,BG 2.14,T02,en_iskcon_0037,en_iskcon_0042,6,3.058,0.1684,0.1961
-en_iskcon_s164,en_iskcon,BG 2.16,T02,en_iskcon_0043,en_iskcon_0050,8,5.343,0.1961,0.2322
-en_iskcon_s165,en_iskcon,BG 2.17,T02,en_iskcon_0051,en_iskcon_0055,5,0.581,0.2322,0.2554
-en_iskcon_s166,en_iskcon,BG 2.30,T03,en_iskcon_0056,en_iskcon_0070,15,2.424,0.2554,0.3254
-en_iskcon_s167,en_iskcon,BG 2.31,T04,en_iskcon_0071,en_iskcon_0073,3,1.792,0.3254,0.3399
-en_iskcon_s168,en_iskcon,BG 2.33,T04,en_iskcon_0074,en_iskcon_0075,2,0.353,0.3399,0.3487
-en_iskcon_s169,en_iskcon,BG 2.38,T04,en_iskcon_0076,en_iskcon_0077,2,1.171,0.3487,0.3594
-en_iskcon_s170,en_iskcon,BG 2.39,T05,en_iskcon_0078,en_iskcon_0083,6,4.06,0.3594,0.3888
-en_iskcon_s171,en_iskcon,BG 2.40,T05,en_iskcon_0084,en_iskcon_0088,5,2.812,0.3888,0.4131
-en_iskcon_s172,en_iskcon,BG 2.42,T05,en_iskcon_0089,en_iskcon_0094,6,1.646,0.4131,0.4421
-en_iskcon_s173,en_iskcon,BG 2.46,T05,en_iskcon_0095,en_iskcon_0099,5,2.882,0.4421,0.4641
-en_iskcon_s174,en_iskcon,BG 2.47,T06,en_iskcon_0100,en_iskcon_0111,12,8.118,0.4641,0.5209
-en_iskcon_s175,en_iskcon,BG 2.49,T06,en_iskcon_0112,en_iskcon_0119,8,3.83,0.5209,0.5578
-en_iskcon_s176,en_iskcon,BG 2.50,T06,en_iskcon_0120,en_iskcon_0128,9,3.827,0.5578,0.5991
-en_iskcon_s177,en_iskcon,BG 2.51,T06,en_iskcon_0129,en_iskcon_0133,5,2.22,0.5991,0.6234
-en_iskcon_s178,en_iskcon,BG 2.53,T06,en_iskcon_0134,en_iskcon_0134,1,0.493,0.6234,0.6281
-en_iskcon_s179,en_iskcon,BG 2.54,T07,en_iskcon_0135,en_iskcon_0143,9,3.281,0.6281,0.6714
-en_iskcon_s180,en_iskcon,BG 2.55,T07,en_iskcon_0144,en_iskcon_0152,9,5.82,0.6714,0.7134
-en_iskcon_s181,en_iskcon,BG 2.56,T07,en_iskcon_0153,en_iskcon_0160,8,4.346,0.7134,0.7498
-en_iskcon_s182,en_iskcon,BG 2.58,T07,en_iskcon_0161,en_iskcon_0166,6,2.234,0.7498,0.7773
-en_iskcon_s183,en_iskcon,BG 2.59,T08,en_iskcon_0167,en_iskcon_0171,5,2.865,0.7773,0.7997
-en_iskcon_s184,en_iskcon,BG 2.60,T08,en_iskcon_0172,en_iskcon_0175,4,1.525,0.7997,0.8189
-en_iskcon_s185,en_iskcon,BG 2.62,T08,en_iskcon_0176,en_iskcon_0177,2,1.299,0.8189,0.8281
-en_iskcon_s186,en_iskcon,BG 2.63,T08,en_iskcon_0178,en_iskcon_0180,3,1.414,0.8281,0.8417
-en_iskcon_s187,en_iskcon,BG 2.64,T08,en_iskcon_0181,en_iskcon_0188,8,5.747,0.8417,0.8794
-en_iskcon_s188,en_iskcon,BG 2.66,T08,en_iskcon_0189,en_iskcon_0195,7,4.538,0.8794,0.9119
-en_iskcon_s189,en_iskcon,BG 2.67,T08,en_iskcon_0196,en_iskcon_0197,2,0.668,0.9119,0.921
-en_iskcon_s190,en_iskcon,BG 2.69,T09,en_iskcon_0198,en_iskcon_0199,2,1.014,0.921,0.9302
-en_iskcon_s191,en_iskcon,BG 2.70,T09,en_iskcon_0200,en_iskcon_0205,6,3.943,0.9302,0.9596
-en_iskcon_s192,en_iskcon,BG 2.71,T09,en_iskcon_0206,en_iskcon_0207,2,1.287,0.9596,0.9691
-en_iskcon_s193,en_iskcon,BG 2.72,T09,en_iskcon_0208,en_iskcon_0214,7,4.326,0.9691,1.0
+en_chinmaya_day03_s000,en_chinmaya_day03,BG 2.4,T01,en_chinmaya_day03_0000,en_chinmaya_day03_0000,1,0.8,0.0,0.0144
+en_chinmaya_day03_s001,en_chinmaya_day03,BG 2.7,T01,en_chinmaya_day03_0001,en_chinmaya_day03_0003,3,2.86,0.0144,0.0574
+en_chinmaya_day03_s002,en_chinmaya_day03,BG 2.9,T01,en_chinmaya_day03_0004,en_chinmaya_day03_0004,1,0.98,0.0574,0.0711
+en_chinmaya_day03_s003,en_chinmaya_day03,BG 2.10,T01,en_chinmaya_day03_0005,en_chinmaya_day03_0007,3,2.506,0.0711,0.116
+en_chinmaya_day03_s004,en_chinmaya_day03,OFF,,en_chinmaya_day03_0008,en_chinmaya_day03_0008,1,0.9,0.116,0.1299
+en_chinmaya_day03_s005,en_chinmaya_day03,BG 2.10,T01,en_chinmaya_day03_0009,en_chinmaya_day03_0011,3,1.444,0.1299,0.1745
+en_chinmaya_day03_s006,en_chinmaya_day03,BG 2.11,T02,en_chinmaya_day03_0012,en_chinmaya_day03_0036,25,11.84,0.1745,0.5256
+en_chinmaya_day03_s007,en_chinmaya_day03,OFF,,en_chinmaya_day03_0037,en_chinmaya_day03_0038,2,1.8,0.5256,0.5561
+en_chinmaya_day03_s008,en_chinmaya_day03,BG 2.11,T02,en_chinmaya_day03_0039,en_chinmaya_day03_0039,1,0.573,0.5561,0.5697
+en_chinmaya_day03_s009,en_chinmaya_day03,OFF,,en_chinmaya_day03_0040,en_chinmaya_day03_0040,1,0.9,0.5697,0.5853
+en_chinmaya_day03_s010,en_chinmaya_day03,BG 2.11,T02,en_chinmaya_day03_0041,en_chinmaya_day03_0047,7,1.832,0.5853,0.6848
+en_chinmaya_day03_s011,en_chinmaya_day03,OFF,,en_chinmaya_day03_0048,en_chinmaya_day03_0049,2,0.2,0.6848,0.7125
+en_chinmaya_day03_s012,en_chinmaya_day03,BG 2.11,T02,en_chinmaya_day03_0050,en_chinmaya_day03_0051,2,1.422,0.7125,0.7398
+en_chinmaya_day03_s013,en_chinmaya_day03,OFF,,en_chinmaya_day03_0052,en_chinmaya_day03_0052,1,0.02,0.7398,0.7561
+en_chinmaya_day03_s014,en_chinmaya_day03,BG 2.11,T02,en_chinmaya_day03_0053,en_chinmaya_day03_0055,3,1.243,0.7561,0.7998
+en_chinmaya_day03_s015,en_chinmaya_day03,BG 2.12,T02,en_chinmaya_day03_0056,en_chinmaya_day03_0058,3,2.532,0.7998,0.8424
+en_chinmaya_day03_s016,en_chinmaya_day03,BG 2.13,T02,en_chinmaya_day03_0059,en_chinmaya_day03_0069,11,7.308,0.8424,0.9976
+en_chinmaya_day03_s017,en_chinmaya_day03,OFF,,en_chinmaya_day03_0070,en_chinmaya_day03_0070,1,0.98,0.9976,1.0
+en_chinmaya_day04_s018,en_chinmaya_day04,BG 2.7,T01,en_chinmaya_day04_0000,en_chinmaya_day04_0000,1,0.02,0.0,0.0135
+en_chinmaya_day04_s019,en_chinmaya_day04,BG 2.11,T02,en_chinmaya_day04_0001,en_chinmaya_day04_0008,8,0.986,0.0135,0.117
+en_chinmaya_day04_s020,en_chinmaya_day04,BG 2.12,T02,en_chinmaya_day04_0009,en_chinmaya_day04_0009,1,0.98,0.117,0.1297
+en_chinmaya_day04_s021,en_chinmaya_day04,BG 2.13,T02,en_chinmaya_day04_0010,en_chinmaya_day04_0015,6,2.344,0.1297,0.2091
+en_chinmaya_day04_s022,en_chinmaya_day04,BG 2.14,T02,en_chinmaya_day04_0016,en_chinmaya_day04_0027,12,4.975,0.2091,0.3686
+en_chinmaya_day04_s023,en_chinmaya_day04,OFF,,en_chinmaya_day04_0028,en_chinmaya_day04_0033,6,5.88,0.3686,0.4508
+en_chinmaya_day04_s024,en_chinmaya_day04,BG 2.14,T02,en_chinmaya_day04_0034,en_chinmaya_day04_0034,1,0.9,0.4508,0.4641
+en_chinmaya_day04_s025,en_chinmaya_day04,BG 2.15,T02,en_chinmaya_day04_0035,en_chinmaya_day04_0048,14,5.669,0.4641,0.6478
+en_chinmaya_day04_s026,en_chinmaya_day04,BG 2.14,T02,en_chinmaya_day04_0049,en_chinmaya_day04_0049,1,0.9,0.6478,0.6627
+en_chinmaya_day04_s027,en_chinmaya_day04,BG 2.16,T02,en_chinmaya_day04_0050,en_chinmaya_day04_0056,7,5.737,0.6627,0.7541
+en_chinmaya_day04_s028,en_chinmaya_day04,BG 2.17,T02,en_chinmaya_day04_0057,en_chinmaya_day04_0067,11,6.551,0.7541,0.8971
+en_chinmaya_day04_s029,en_chinmaya_day04,BG 2.18,T02,en_chinmaya_day04_0068,en_chinmaya_day04_0074,7,2.646,0.8971,0.9885
+en_chinmaya_day04_s030,en_chinmaya_day04,OFF,,en_chinmaya_day04_0075,en_chinmaya_day04_0075,1,0.98,0.9885,1.0
+en_chinmaya_day06_s031,en_chinmaya_day06,BG 2.11,T02,en_chinmaya_day06_0000,en_chinmaya_day06_0000,1,0.9,0.0,0.0153
+en_chinmaya_day06_s032,en_chinmaya_day06,BG 2.16,T02,en_chinmaya_day06_0001,en_chinmaya_day06_0001,1,0.9,0.0153,0.0315
+en_chinmaya_day06_s033,en_chinmaya_day06,BG 2.22,T02,en_chinmaya_day06_0002,en_chinmaya_day06_0002,1,0.98,0.0315,0.0459
+en_chinmaya_day06_s034,en_chinmaya_day06,BG 2.26,T03,en_chinmaya_day06_0003,en_chinmaya_day06_0003,1,0.98,0.0459,0.062
+en_chinmaya_day06_s035,en_chinmaya_day06,BG 2.31,T04,en_chinmaya_day06_0004,en_chinmaya_day06_0006,3,2.94,0.062,0.1112
+en_chinmaya_day06_s036,en_chinmaya_day06,BG 2.32,T04,en_chinmaya_day06_0007,en_chinmaya_day06_0009,3,1.973,0.1112,0.1562
+en_chinmaya_day06_s037,en_chinmaya_day06,BG 2.33,T04,en_chinmaya_day06_0010,en_chinmaya_day06_0011,2,1.658,0.1562,0.1851
+en_chinmaya_day06_s038,en_chinmaya_day06,BG 2.34,T04,en_chinmaya_day06_0012,en_chinmaya_day06_0016,5,2.611,0.1851,0.2602
+en_chinmaya_day06_s039,en_chinmaya_day06,BG 2.35,T04,en_chinmaya_day06_0017,en_chinmaya_day06_0018,2,1.96,0.2602,0.2889
+en_chinmaya_day06_s040,en_chinmaya_day06,BG 2.36,T04,en_chinmaya_day06_0019,en_chinmaya_day06_0019,1,0.719,0.2889,0.3042
+en_chinmaya_day06_s041,en_chinmaya_day06,BG 2.34,T04,en_chinmaya_day06_0020,en_chinmaya_day06_0020,1,0.9,0.3042,0.3186
+en_chinmaya_day06_s042,en_chinmaya_day06,BG 2.37,T04,en_chinmaya_day06_0021,en_chinmaya_day06_0025,5,3.533,0.3186,0.3928
+en_chinmaya_day06_s043,en_chinmaya_day06,BG 2.38,T04,en_chinmaya_day06_0026,en_chinmaya_day06_0032,7,4.43,0.3928,0.5003
+en_chinmaya_day06_s044,en_chinmaya_day06,OFF,,en_chinmaya_day06_0033,en_chinmaya_day06_0037,5,4.9,0.5003,0.5738
+en_chinmaya_day06_s045,en_chinmaya_day06,BG 2.38,T04,en_chinmaya_day06_0038,en_chinmaya_day06_0042,5,3.444,0.5738,0.6476
+en_chinmaya_day06_s046,en_chinmaya_day06,BG 2.39,T05,en_chinmaya_day06_0043,en_chinmaya_day06_0047,5,4.012,0.6476,0.7226
+en_chinmaya_day06_s047,en_chinmaya_day06,BG 2.40,T05,en_chinmaya_day06_0048,en_chinmaya_day06_0057,10,6.962,0.7226,0.8707
+en_chinmaya_day06_s048,en_chinmaya_day06,BG 2.41,T05,en_chinmaya_day06_0058,en_chinmaya_day06_0065,8,4.876,0.8707,0.9945
+en_chinmaya_day06_s049,en_chinmaya_day06,OFF,,en_chinmaya_day06_0066,en_chinmaya_day06_0066,1,0.98,0.9945,1.0
+en_chinmaya_day07_s050,en_chinmaya_day07,BG 2.31,T04,en_chinmaya_day07_0000,en_chinmaya_day07_0001,2,1.0,0.0,0.0264
+en_chinmaya_day07_s051,en_chinmaya_day07,BG 2.33,T04,en_chinmaya_day07_0002,en_chinmaya_day07_0002,1,0.98,0.0264,0.0385
+en_chinmaya_day07_s052,en_chinmaya_day07,BG 2.35,T04,en_chinmaya_day07_0003,en_chinmaya_day07_0003,1,0.98,0.0385,0.0521
+en_chinmaya_day07_s053,en_chinmaya_day07,BG 2.37,T04,en_chinmaya_day07_0004,en_chinmaya_day07_0004,1,0.435,0.0521,0.0658
+en_chinmaya_day07_s054,en_chinmaya_day07,BG 2.38,T04,en_chinmaya_day07_0005,en_chinmaya_day07_0005,1,0.9,0.0658,0.0784
+en_chinmaya_day07_s055,en_chinmaya_day07,BG 2.39,T05,en_chinmaya_day07_0006,en_chinmaya_day07_0006,1,0.037,0.0784,0.0919
+en_chinmaya_day07_s056,en_chinmaya_day07,BG 2.40,T05,en_chinmaya_day07_0007,en_chinmaya_day07_0007,1,0.98,0.0919,0.1037
+en_chinmaya_day07_s057,en_chinmaya_day07,BG 2.41,T05,en_chinmaya_day07_0008,en_chinmaya_day07_0018,11,1.502,0.1037,0.2454
+en_chinmaya_day07_s058,en_chinmaya_day07,BG 2.42,T05,en_chinmaya_day07_0019,en_chinmaya_day07_0021,3,2.577,0.2454,0.2826
+en_chinmaya_day07_s059,en_chinmaya_day07,BG 2.43,T05,en_chinmaya_day07_0022,en_chinmaya_day07_0022,1,0.98,0.2826,0.2959
+en_chinmaya_day07_s060,en_chinmaya_day07,OFF,,en_chinmaya_day07_0023,en_chinmaya_day07_0024,2,1.96,0.2959,0.3204
+en_chinmaya_day07_s061,en_chinmaya_day07,BG 2.42,T05,en_chinmaya_day07_0025,en_chinmaya_day07_0025,1,0.1,0.3204,0.3325
+en_chinmaya_day07_s062,en_chinmaya_day07,OFF,,en_chinmaya_day07_0026,en_chinmaya_day07_0027,2,1.96,0.3325,0.3576
+en_chinmaya_day07_s063,en_chinmaya_day07,BG 2.43,T05,en_chinmaya_day07_0028,en_chinmaya_day07_0028,1,0.8,0.3576,0.3697
+en_chinmaya_day07_s064,en_chinmaya_day07,BG 2.42,T05,en_chinmaya_day07_0029,en_chinmaya_day07_0030,2,1.88,0.3697,0.3954
+en_chinmaya_day07_s065,en_chinmaya_day07,BG 2.44,T05,en_chinmaya_day07_0031,en_chinmaya_day07_0033,3,2.395,0.3954,0.4322
+en_chinmaya_day07_s066,en_chinmaya_day07,BG 2.45,T05,en_chinmaya_day07_0034,en_chinmaya_day07_0049,16,9.713,0.4322,0.6312
+en_chinmaya_day07_s067,en_chinmaya_day07,BG 2.46,T05,en_chinmaya_day07_0050,en_chinmaya_day07_0057,8,5.645,0.6312,0.7284
+en_chinmaya_day07_s068,en_chinmaya_day07,BG 2.47,T06,en_chinmaya_day07_0058,en_chinmaya_day07_0061,4,3.165,0.7284,0.7783
+en_chinmaya_day07_s069,en_chinmaya_day07,BG 2.48,T06,en_chinmaya_day07_0062,en_chinmaya_day07_0068,7,4.252,0.7783,0.8645
+en_chinmaya_day07_s070,en_chinmaya_day07,BG 2.49,T06,en_chinmaya_day07_0069,en_chinmaya_day07_0075,7,3.094,0.8645,0.9519
+en_chinmaya_day07_s071,en_chinmaya_day07,BG 2.50,T06,en_chinmaya_day07_0076,en_chinmaya_day07_0079,4,2.563,0.9519,1.0
+en_chinmaya_day08_s072,en_chinmaya_day08,BG 2.39,T05,en_chinmaya_day08_0000,en_chinmaya_day08_0000,1,0.8,0.0,0.015
+en_chinmaya_day08_s073,en_chinmaya_day08,BG 2.47,T06,en_chinmaya_day08_0001,en_chinmaya_day08_0001,1,0.98,0.015,0.0297
+en_chinmaya_day08_s074,en_chinmaya_day08,BG 2.41,T05,en_chinmaya_day08_0002,en_chinmaya_day08_0002,1,0.8,0.0297,0.0451
+en_chinmaya_day08_s075,en_chinmaya_day08,BG 2.43,T05,en_chinmaya_day08_0003,en_chinmaya_day08_0003,1,0.98,0.0451,0.0602
+en_chinmaya_day08_s076,en_chinmaya_day08,BG 2.47,T06,en_chinmaya_day08_0004,en_chinmaya_day08_0004,1,0.98,0.0602,0.0762
+en_chinmaya_day08_s077,en_chinmaya_day08,BG 2.48,T06,en_chinmaya_day08_0005,en_chinmaya_day08_0005,1,0.98,0.0762,0.0907
+en_chinmaya_day08_s078,en_chinmaya_day08,BG 2.50,T06,en_chinmaya_day08_0006,en_chinmaya_day08_0012,7,4.445,0.0907,0.1974
+en_chinmaya_day08_s079,en_chinmaya_day08,BG 2.51,T06,en_chinmaya_day08_0013,en_chinmaya_day08_0019,7,3.917,0.1974,0.3034
+en_chinmaya_day08_s080,en_chinmaya_day08,BG 2.52,T06,en_chinmaya_day08_0020,en_chinmaya_day08_0025,6,2.962,0.3034,0.3954
+en_chinmaya_day08_s081,en_chinmaya_day08,BG 2.53,T06,en_chinmaya_day08_0026,en_chinmaya_day08_0033,8,7.0,0.3954,0.5181
+en_chinmaya_day08_s082,en_chinmaya_day08,BG 2.54,T07,en_chinmaya_day08_0034,en_chinmaya_day08_0039,6,4.618,0.5181,0.6094
+en_chinmaya_day08_s083,en_chinmaya_day08,BG 2.55,T07,en_chinmaya_day08_0040,en_chinmaya_day08_0043,4,1.482,0.6094,0.6718
+en_chinmaya_day08_s084,en_chinmaya_day08,BG 2.56,T07,en_chinmaya_day08_0044,en_chinmaya_day08_0052,9,8.4,0.6718,0.8065
+en_chinmaya_day08_s085,en_chinmaya_day08,BG 2.57,T07,en_chinmaya_day08_0053,en_chinmaya_day08_0061,9,7.943,0.8065,0.9427
+en_chinmaya_day08_s086,en_chinmaya_day08,BG 2.58,T07,en_chinmaya_day08_0062,en_chinmaya_day08_0065,4,1.551,0.9427,1.0
+en_chinmaya_day09_s087,en_chinmaya_day09,BG 2.52,T06,en_chinmaya_day09_0000,en_chinmaya_day09_0001,2,1.0,0.0,0.0229
+en_chinmaya_day09_s088,en_chinmaya_day09,BG 2.55,T07,en_chinmaya_day09_0002,en_chinmaya_day09_0002,1,0.9,0.0229,0.0346
+en_chinmaya_day09_s089,en_chinmaya_day09,BG 2.56,T07,en_chinmaya_day09_0003,en_chinmaya_day09_0003,1,0.98,0.0346,0.0464
+en_chinmaya_day09_s090,en_chinmaya_day09,BG 2.59,T08,en_chinmaya_day09_0004,en_chinmaya_day09_0004,1,0.98,0.0464,0.0584
+en_chinmaya_day09_s091,en_chinmaya_day09,BG 2.60,T08,en_chinmaya_day09_0005,en_chinmaya_day09_0010,6,3.764,0.0584,0.1284
+en_chinmaya_day09_s092,en_chinmaya_day09,BG 2.59,T08,en_chinmaya_day09_0011,en_chinmaya_day09_0016,6,4.426,0.1284,0.1993
+en_chinmaya_day09_s093,en_chinmaya_day09,BG 2.61,T08,en_chinmaya_day09_0017,en_chinmaya_day09_0018,2,0.737,0.1993,0.2244
+en_chinmaya_day09_s094,en_chinmaya_day09,BG 2.62,T08,en_chinmaya_day09_0019,en_chinmaya_day09_0025,7,6.86,0.2244,0.3047
+en_chinmaya_day09_s095,en_chinmaya_day09,BG 2.63,T08,en_chinmaya_day09_0026,en_chinmaya_day09_0027,2,1.193,0.3047,0.3274
+en_chinmaya_day09_s096,en_chinmaya_day09,BG 2.62,T08,en_chinmaya_day09_0028,en_chinmaya_day09_0029,2,1.96,0.3274,0.3509
+en_chinmaya_day09_s097,en_chinmaya_day09,BG 2.63,T08,en_chinmaya_day09_0030,en_chinmaya_day09_0033,4,2.888,0.3509,0.3984
+en_chinmaya_day09_s098,en_chinmaya_day09,BG 2.64,T08,en_chinmaya_day09_0034,en_chinmaya_day09_0041,8,5.92,0.3984,0.4946
+en_chinmaya_day09_s099,en_chinmaya_day09,BG 2.65,T08,en_chinmaya_day09_0042,en_chinmaya_day09_0044,3,2.054,0.4946,0.5331
+en_chinmaya_day09_s100,en_chinmaya_day09,BG 2.66,T08,en_chinmaya_day09_0045,en_chinmaya_day09_0053,9,6.724,0.5331,0.6369
+en_chinmaya_day09_s101,en_chinmaya_day09,BG 2.67,T08,en_chinmaya_day09_0054,en_chinmaya_day09_0063,10,9.8,0.6369,0.7534
+en_chinmaya_day09_s102,en_chinmaya_day09,BG 2.68,T08,en_chinmaya_day09_0064,en_chinmaya_day09_0064,1,0.256,0.7534,0.7653
+en_chinmaya_day09_s103,en_chinmaya_day09,BG 2.69,T09,en_chinmaya_day09_0065,en_chinmaya_day09_0072,8,4.1,0.7653,0.8588
+en_chinmaya_day09_s104,en_chinmaya_day09,BG 2.70,T09,en_chinmaya_day09_0073,en_chinmaya_day09_0076,4,3.046,0.8588,0.9048
+en_chinmaya_day09_s105,en_chinmaya_day09,BG 2.71,T09,en_chinmaya_day09_0077,en_chinmaya_day09_0080,4,2.813,0.9048,0.9505
+en_chinmaya_day09_s106,en_chinmaya_day09,BG 2.72,T09,en_chinmaya_day09_0081,en_chinmaya_day09_0083,3,1.925,0.9505,0.9855
+en_chinmaya_day09_s107,en_chinmaya_day09,OFF,,en_chinmaya_day09_0084,en_chinmaya_day09_0085,2,1.96,0.9855,1.0
+en_iskcon_s108,en_iskcon,BG 2.1,T01,en_iskcon_0000,en_iskcon_0002,3,2.055,0.0,0.0134
+en_iskcon_s109,en_iskcon,OFF,,en_iskcon_0003,en_iskcon_0004,2,1.96,0.0134,0.0222
+en_iskcon_s110,en_iskcon,BG 2.1,T01,en_iskcon_0005,en_iskcon_0005,1,0.98,0.0222,0.0267
+en_iskcon_s111,en_iskcon,BG 2.2,T01,en_iskcon_0006,en_iskcon_0012,7,1.834,0.0267,0.0587
+en_iskcon_s112,en_iskcon,OFF,,en_iskcon_0013,en_iskcon_0016,4,3.92,0.0587,0.0771
+en_iskcon_s113,en_iskcon,BG 2.3,T01,en_iskcon_0017,en_iskcon_0017,1,0.1,0.0771,0.0814
+en_iskcon_s114,en_iskcon,BG 2.4,T01,en_iskcon_0018,en_iskcon_0019,2,1.42,0.0814,0.0905
+en_iskcon_s115,en_iskcon,BG 2.6,T01,en_iskcon_0020,en_iskcon_0022,3,2.082,0.0905,0.1035
+en_iskcon_s116,en_iskcon,BG 2.7,T01,en_iskcon_0023,en_iskcon_0028,6,3.805,0.1035,0.1306
+en_iskcon_s117,en_iskcon,BG 2.8,T01,en_iskcon_0029,en_iskcon_0029,1,0.98,0.1306,0.1357
+en_iskcon_s118,en_iskcon,BG 2.11,T02,en_iskcon_0030,en_iskcon_0032,3,2.03,0.1357,0.1489
+en_iskcon_s119,en_iskcon,BG 2.12,T02,en_iskcon_0033,en_iskcon_0035,3,1.866,0.1489,0.1641
+en_iskcon_s120,en_iskcon,BG 2.13,T02,en_iskcon_0036,en_iskcon_0037,2,1.96,0.1641,0.1735
+en_iskcon_s121,en_iskcon,BG 2.14,T02,en_iskcon_0038,en_iskcon_0041,4,2.653,0.1735,0.1915
+en_iskcon_s122,en_iskcon,BG 2.15,T02,en_iskcon_0042,en_iskcon_0043,2,1.96,0.1915,0.2005
+en_iskcon_s123,en_iskcon,BG 2.16,T02,en_iskcon_0044,en_iskcon_0051,8,5.732,0.2005,0.2364
+en_iskcon_s124,en_iskcon,BG 2.18,T02,en_iskcon_0052,en_iskcon_0052,1,0.98,0.2364,0.2407
+en_iskcon_s125,en_iskcon,BG 2.20,T02,en_iskcon_0053,en_iskcon_0053,1,0.98,0.2407,0.246
+en_iskcon_s126,en_iskcon,BG 2.24,T02,en_iskcon_0054,en_iskcon_0056,3,2.86,0.246,0.2597
+en_iskcon_s127,en_iskcon,BG 2.25,T02,en_iskcon_0057,en_iskcon_0057,1,0.98,0.2597,0.2646
+en_iskcon_s128,en_iskcon,BG 2.26,T03,en_iskcon_0058,en_iskcon_0059,2,1.96,0.2646,0.2752
+en_iskcon_s129,en_iskcon,BG 2.28,T03,en_iskcon_0060,en_iskcon_0061,2,1.88,0.2752,0.2839
+en_iskcon_s130,en_iskcon,BG 2.29,T03,en_iskcon_0062,en_iskcon_0066,5,3.86,0.2839,0.307
+en_iskcon_s131,en_iskcon,BG 2.30,T03,en_iskcon_0067,en_iskcon_0069,3,0.6,0.307,0.3209
+en_iskcon_s132,en_iskcon,BG 2.31,T04,en_iskcon_0070,en_iskcon_0073,4,2.081,0.3209,0.3399
+en_iskcon_s133,en_iskcon,BG 2.33,T04,en_iskcon_0074,en_iskcon_0074,1,0.98,0.3399,0.3444
+en_iskcon_s134,en_iskcon,BG 2.36,T04,en_iskcon_0075,en_iskcon_0075,1,0.98,0.3444,0.3487
+en_iskcon_s135,en_iskcon,BG 2.37,T04,en_iskcon_0076,en_iskcon_0076,1,0.98,0.3487,0.3537
+en_iskcon_s136,en_iskcon,BG 2.38,T04,en_iskcon_0077,en_iskcon_0077,1,0.814,0.3537,0.3594
+en_iskcon_s137,en_iskcon,BG 2.39,T05,en_iskcon_0078,en_iskcon_0083,6,4.101,0.3594,0.3888
+en_iskcon_s138,en_iskcon,BG 2.40,T05,en_iskcon_0084,en_iskcon_0088,5,3.299,0.3888,0.4131
+en_iskcon_s139,en_iskcon,BG 2.42,T05,en_iskcon_0089,en_iskcon_0089,1,0.233,0.4131,0.419
+en_iskcon_s140,en_iskcon,BG 2.45,T05,en_iskcon_0090,en_iskcon_0090,1,0.98,0.419,0.4235
+en_iskcon_s141,en_iskcon,BG 2.42,T05,en_iskcon_0091,en_iskcon_0092,2,0.953,0.4235,0.4333
+en_iskcon_s142,en_iskcon,BG 2.45,T05,en_iskcon_0093,en_iskcon_0094,2,1.78,0.4333,0.4421
+en_iskcon_s143,en_iskcon,BG 2.46,T05,en_iskcon_0095,en_iskcon_0099,5,2.955,0.4421,0.4641
+en_iskcon_s144,en_iskcon,BG 2.47,T06,en_iskcon_0100,en_iskcon_0110,11,8.732,0.4641,0.5155
+en_iskcon_s145,en_iskcon,BG 2.48,T06,en_iskcon_0111,en_iskcon_0112,2,1.88,0.5155,0.5251
+en_iskcon_s146,en_iskcon,BG 2.49,T06,en_iskcon_0113,en_iskcon_0114,2,0.094,0.5251,0.5341
+en_iskcon_s147,en_iskcon,OFF,,en_iskcon_0115,en_iskcon_0116,2,1.0,0.5341,0.5444
+en_iskcon_s148,en_iskcon,BG 2.49,T06,en_iskcon_0117,en_iskcon_0119,3,0.3,0.5444,0.5578
+en_iskcon_s149,en_iskcon,OFF,,en_iskcon_0120,en_iskcon_0121,2,1.96,0.5578,0.5684
+en_iskcon_s150,en_iskcon,BG 2.49,T06,en_iskcon_0122,en_iskcon_0122,1,0.9,0.5684,0.5729
+en_iskcon_s151,en_iskcon,BG 2.50,T06,en_iskcon_0123,en_iskcon_0129,7,4.141,0.5729,0.6043
+en_iskcon_s152,en_iskcon,BG 2.51,T06,en_iskcon_0130,en_iskcon_0133,4,1.696,0.6043,0.6234
+en_iskcon_s153,en_iskcon,BG 2.53,T06,en_iskcon_0134,en_iskcon_0134,1,0.471,0.6234,0.6281
+en_iskcon_s154,en_iskcon,BG 2.54,T07,en_iskcon_0135,en_iskcon_0137,3,1.058,0.6281,0.6423
+en_iskcon_s155,en_iskcon,OFF,,en_iskcon_0138,en_iskcon_0138,1,0.98,0.6423,0.6468
+en_iskcon_s156,en_iskcon,BG 2.54,T07,en_iskcon_0139,en_iskcon_0139,1,0.2,0.6468,0.652
+en_iskcon_s157,en_iskcon,OFF,,en_iskcon_0140,en_iskcon_0143,4,2.0,0.652,0.6714
+en_iskcon_s158,en_iskcon,BG 2.55,T07,en_iskcon_0144,en_iskcon_0152,9,5.037,0.6714,0.7134
+en_iskcon_s159,en_iskcon,BG 2.56,T07,en_iskcon_0153,en_iskcon_0160,8,4.638,0.7134,0.7498
+en_iskcon_s160,en_iskcon,BG 2.57,T07,en_iskcon_0161,en_iskcon_0162,2,1.96,0.7498,0.7593
+en_iskcon_s161,en_iskcon,BG 2.58,T07,en_iskcon_0163,en_iskcon_0167,5,2.699,0.7593,0.7818
+en_iskcon_s162,en_iskcon,BG 2.59,T08,en_iskcon_0168,en_iskcon_0169,2,1.51,0.7818,0.7908
+en_iskcon_s163,en_iskcon,OFF,,en_iskcon_0170,en_iskcon_0171,2,1.96,0.7908,0.7997
+en_iskcon_s164,en_iskcon,BG 2.59,T08,en_iskcon_0172,en_iskcon_0172,1,0.98,0.7997,0.804
+en_iskcon_s165,en_iskcon,BG 2.60,T08,en_iskcon_0173,en_iskcon_0173,1,0.753,0.804,0.8084
+en_iskcon_s166,en_iskcon,BG 2.61,T08,en_iskcon_0174,en_iskcon_0176,3,2.94,0.8084,0.8233
+en_iskcon_s167,en_iskcon,BG 2.62,T08,en_iskcon_0177,en_iskcon_0178,2,1.811,0.8233,0.8325
+en_iskcon_s168,en_iskcon,BG 2.63,T08,en_iskcon_0179,en_iskcon_0180,2,1.012,0.8325,0.8417
+en_iskcon_s169,en_iskcon,BG 2.64,T08,en_iskcon_0181,en_iskcon_0187,7,4.007,0.8417,0.8741
+en_iskcon_s170,en_iskcon,BG 2.65,T08,en_iskcon_0188,en_iskcon_0189,2,1.88,0.8741,0.884
+en_iskcon_s171,en_iskcon,BG 2.66,T08,en_iskcon_0190,en_iskcon_0196,7,4.447,0.884,0.9167
+en_iskcon_s172,en_iskcon,BG 2.67,T08,en_iskcon_0197,en_iskcon_0197,1,0.216,0.9167,0.921
+en_iskcon_s173,en_iskcon,BG 2.68,T08,en_iskcon_0198,en_iskcon_0198,1,0.98,0.921,0.9253
+en_iskcon_s174,en_iskcon,BG 2.69,T09,en_iskcon_0199,en_iskcon_0200,2,1.773,0.9253,0.936
+en_iskcon_s175,en_iskcon,BG 2.70,T09,en_iskcon_0201,en_iskcon_0206,6,4.563,0.936,0.9644
+en_iskcon_s176,en_iskcon,BG 2.71,T09,en_iskcon_0207,en_iskcon_0208,2,1.739,0.9644,0.9741
+en_iskcon_s177,en_iskcon,BG 2.72,T09,en_iskcon_0209,en_iskcon_0212,4,1.872,0.9741,0.9924
+en_iskcon_s178,en_iskcon,OFF,,en_iskcon_0213,en_iskcon_0214,2,1.96,0.9924,1.0
+gita-1st_video_s179,gita-1st_video,OFF,,kn_gita-1st_video_0000,kn_gita-1st_video_0000,1,0.1,0.0,0.0675
+gita-1st_video_s180,gita-1st_video,BG 2.1,T01,kn_gita-1st_video_0001,kn_gita-1st_video_0004,4,3.16,0.0675,0.3515
+gita-1st_video_s181,gita-1st_video,BG 2.2,T01,kn_gita-1st_video_0005,kn_gita-1st_video_0008,4,2.946,0.3515,0.6348
+gita-1st_video_s182,gita-1st_video,BG 2.3,T01,kn_gita-1st_video_0009,kn_gita-1st_video_0012,4,3.286,0.6348,0.9082
+gita-1st_video_s183,gita-1st_video,BG 2.7,T01,kn_gita-1st_video_0013,kn_gita-1st_video_0013,1,0.9,0.9082,0.9738
+gita-1st_video_s184,gita-1st_video,BG 2.3,T01,kn_gita-1st_video_0014,kn_gita-1st_video_0014,1,0.495,0.9738,1.0
+gita-2nd_video_s185,gita-2nd_video,BG 2.4,T01,kn_gita-2nd_video_0000,kn_gita-2nd_video_0003,4,2.357,0.0,0.348
+gita-2nd_video_s186,gita-2nd_video,BG 2.5,T01,kn_gita-2nd_video_0004,kn_gita-2nd_video_0007,4,3.079,0.348,0.6596
+gita-2nd_video_s187,gita-2nd_video,BG 2.6,T01,kn_gita-2nd_video_0008,kn_gita-2nd_video_0011,4,3.139,0.6596,0.9781
+gita-2nd_video_s188,gita-2nd_video,OFF,,kn_gita-2nd_video_0012,kn_gita-2nd_video_0012,1,0.98,0.9781,1.0
+gita-3rd_video_s189,gita-3rd_video,BG 2.7,T01,kn_gita-3rd_video_0000,kn_gita-3rd_video_0005,6,5.003,0.0,0.4658
+gita-3rd_video_s190,gita-3rd_video,BG 2.8,T01,kn_gita-3rd_video_0006,kn_gita-3rd_video_0009,4,2.029,0.4658,0.755
+gita-3rd_video_s191,gita-3rd_video,BG 2.9,T01,kn_gita-3rd_video_0010,kn_gita-3rd_video_0012,3,2.78,0.755,0.9836
+gita-3rd_video_s192,gita-3rd_video,OFF,,kn_gita-3rd_video_0013,kn_gita-3rd_video_0013,1,0.98,0.9836,1.0
+gita-4th_video_s193,gita-4th_video,BG 2.10,T01,kn_gita-4th_video_0000,kn_gita-4th_video_0004,5,2.618,0.0,0.3404
+gita-4th_video_s194,gita-4th_video,BG 2.11,T02,kn_gita-4th_video_0005,kn_gita-4th_video_0014,10,8.521,0.3404,1.0
+gita-5th_video_s195,gita-5th_video,BG 2.11,T02,kn_gita-5th_video_0000,kn_gita-5th_video_0000,1,0.129,0.0,0.0526
+gita-5th_video_s196,gita-5th_video,BG 2.12,T02,kn_gita-5th_video_0001,kn_gita-5th_video_0005,5,3.942,0.0526,0.3279
+gita-5th_video_s197,gita-5th_video,BG 2.13,T02,kn_gita-5th_video_0006,kn_gita-5th_video_0015,10,6.523,0.3279,0.8858
+gita-5th_video_s198,gita-5th_video,BG 2.14,T02,kn_gita-5th_video_0016,kn_gita-5th_video_0017,2,1.88,0.8858,0.9958
+gita-5th_video_s199,gita-5th_video,OFF,,kn_gita-5th_video_0018,kn_gita-5th_video_0018,1,0.98,0.9958,1.0
+gita-6th_video_s200,gita-6th_video,BG 2.14,T02,kn_gita-6th_video_0000,kn_gita-6th_video_0019,20,15.83,0.0,0.9868
+gita-6th_video_s201,gita-6th_video,OFF,,kn_gita-6th_video_0020,kn_gita-6th_video_0020,1,0.98,0.9868,1.0
+kannada_07_s202,kannada_07,BG 2.14,T02,kn_kannada_07_0000,kn_kannada_07_0000,1,0.069,0.0,0.0603
+kannada_07_s203,kannada_07,BG 2.15,T02,kn_kannada_07_0001,kn_kannada_07_0008,8,6.479,0.0603,0.5878
+kannada_07_s204,kannada_07,BG 2.16,T02,kn_kannada_07_0009,kn_kannada_07_0014,6,4.013,0.5878,1.0
+kannada_08_s205,kannada_08,BG 2.14,T02,kn_kannada_08_0000,kn_kannada_08_0000,1,0.98,0.0,0.0826
+kannada_08_s206,kannada_08,BG 2.15,T02,kn_kannada_08_0001,kn_kannada_08_0001,1,0.98,0.0826,0.1606
+kannada_08_s207,kannada_08,BG 2.16,T02,kn_kannada_08_0002,kn_kannada_08_0002,1,0.9,0.1606,0.2385
+kannada_08_s208,kannada_08,BG 2.17,T02,kn_kannada_08_0003,kn_kannada_08_0006,4,3.337,0.2385,0.5955
+kannada_08_s209,kannada_08,BG 2.18,T02,kn_kannada_08_0007,kn_kannada_08_0011,5,3.727,0.5955,1.0
+kannada_09_s210,kannada_09,BG 2.19,T02,kn_kannada_09_0000,kn_kannada_09_0003,4,3.045,0.0,0.2909
+kannada_09_s211,kannada_09,BG 2.20,T02,kn_kannada_09_0004,kn_kannada_09_0008,5,3.444,0.2909,0.6266
+kannada_09_s212,kannada_09,BG 2.21,T02,kn_kannada_09_0009,kn_kannada_09_0010,2,1.384,0.6266,0.7752
+kannada_09_s213,kannada_09,BG 2.22,T02,kn_kannada_09_0011,kn_kannada_09_0013,3,2.249,0.7752,0.9843
+kannada_09_s214,kannada_09,OFF,,kn_kannada_09_0014,kn_kannada_09_0014,1,0.98,0.9843,1.0
+kannada_10_s215,kannada_10,BG 2.23,T02,kn_kannada_10_0000,kn_kannada_10_0002,3,2.098,0.0,0.2817
+kannada_10_s216,kannada_10,BG 2.24,T02,kn_kannada_10_0003,kn_kannada_10_0006,4,2.79,0.2817,0.631
+kannada_10_s217,kannada_10,BG 2.25,T02,kn_kannada_10_0007,kn_kannada_10_0009,3,2.161,0.631,0.9187
+kannada_10_s218,kannada_10,BG 2.26,T03,kn_kannada_10_0010,kn_kannada_10_0010,1,0.98,0.9187,1.0
+kannada_11_s219,kannada_11,BG 2.18,T02,kn_kannada_11_0000,kn_kannada_11_0000,1,0.8,0.0,0.065
+kannada_11_s220,kannada_11,BG 2.26,T03,kn_kannada_11_0001,kn_kannada_11_0004,4,2.623,0.065,0.3249
+kannada_11_s221,kannada_11,BG 2.27,T03,kn_kannada_11_0005,kn_kannada_11_0008,4,3.92,0.3249,0.5885
+kannada_11_s222,kannada_11,BG 2.28,T03,kn_kannada_11_0009,kn_kannada_11_0014,6,4.654,0.5885,0.9808
+kannada_11_s223,kannada_11,OFF,,kn_kannada_11_0015,kn_kannada_11_0015,1,0.98,0.9808,1.0
+kannada_12_s224,kannada_12,BG 2.29,T03,kn_kannada_12_0000,kn_kannada_12_0007,8,6.208,0.0,0.5125
+kannada_12_s225,kannada_12,BG 2.30,T03,kn_kannada_12_0008,kn_kannada_12_0010,3,1.677,0.5125,0.7227
+kannada_12_s226,kannada_12,BG 2.31,T04,kn_kannada_12_0011,kn_kannada_12_0014,4,2.943,0.7227,0.9994
+kannada_12_s227,kannada_12,OFF,,kn_kannada_12_0015,kn_kannada_12_0015,1,0.98,0.9994,1.0
+kannada_13_s228,kannada_13,BG 2.32,T04,kn_kannada_13_0000,kn_kannada_13_0004,5,4.219,0.0,0.4377
+kannada_13_s229,kannada_13,BG 2.33,T04,kn_kannada_13_0005,kn_kannada_13_0006,2,1.443,0.4377,0.6786
+kannada_13_s230,kannada_13,BG 2.34,T04,kn_kannada_13_0007,kn_kannada_13_0010,4,3.404,0.6786,1.0
+kannada_14_s231,kannada_14,BG 2.31,T04,kn_kannada_14_0000,kn_kannada_14_0000,1,0.98,0.0,0.0749
+kannada_14_s232,kannada_14,BG 2.35,T04,kn_kannada_14_0001,kn_kannada_14_0004,4,2.712,0.0749,0.3482
+kannada_14_s233,kannada_14,BG 2.36,T04,kn_kannada_14_0005,kn_kannada_14_0007,3,1.982,0.3482,0.6058
+kannada_14_s234,kannada_14,BG 2.37,T04,kn_kannada_14_0008,kn_kannada_14_0013,6,4.09,0.6058,1.0
+kannada_15_s235,kannada_15,BG 2.38,T04,kn_kannada_15_0000,kn_kannada_15_0002,3,2.152,0.0,0.1474
+kannada_15_s236,kannada_15,OFF,,kn_kannada_15_0003,kn_kannada_15_0003,1,0.1,0.1474,0.1953
+kannada_15_s237,kannada_15,BG 2.38,T04,kn_kannada_15_0004,kn_kannada_15_0008,5,2.703,0.1953,0.4592
+kannada_15_s238,kannada_15,BG 2.39,T05,kn_kannada_15_0009,kn_kannada_15_0015,7,4.797,0.4592,0.8197
+kannada_15_s239,kannada_15,BG 2.50,T06,kn_kannada_15_0016,kn_kannada_15_0016,1,0.98,0.8197,0.8723
+kannada_15_s240,kannada_15,BG 2.39,T05,kn_kannada_15_0017,kn_kannada_15_0019,3,1.733,0.8723,1.0
+kannada_16_s241,kannada_16,BG 2.39,T05,kn_kannada_16_0000,kn_kannada_16_0000,1,0.242,0.0,0.0675
+kannada_16_s242,kannada_16,BG 2.40,T05,kn_kannada_16_0001,kn_kannada_16_0008,8,5.173,0.0675,0.6282
+kannada_16_s243,kannada_16,BG 2.41,T05,kn_kannada_16_0009,kn_kannada_16_0014,6,3.827,0.6282,1.0
+kannada_17_s244,kannada_17,BG 2.39,T05,kn_kannada_17_0000,kn_kannada_17_0000,1,0.98,0.0,0.0885
+kannada_17_s245,kannada_17,BG 2.42,T05,kn_kannada_17_0001,kn_kannada_17_0005,5,2.284,0.0885,0.441
+kannada_17_s246,kannada_17,BG 2.43,T05,kn_kannada_17_0006,kn_kannada_17_0006,1,0.98,0.441,0.5072
+kannada_17_s247,kannada_17,BG 2.42,T05,kn_kannada_17_0007,kn_kannada_17_0007,1,0.355,0.5072,0.5786
+kannada_17_s248,kannada_17,BG 2.41,T05,kn_kannada_17_0008,kn_kannada_17_0008,1,0.98,0.5786,0.6488
+kannada_17_s249,kannada_17,BG 2.44,T05,kn_kannada_17_0009,kn_kannada_17_0012,4,1.766,0.6488,0.9875
+kannada_17_s250,kannada_17,OFF,,kn_kannada_17_0013,kn_kannada_17_0013,1,0.98,0.9875,1.0
+kannada_18_s251,kannada_18,BG 2.45,T05,kn_kannada_18_0000,kn_kannada_18_0012,13,7.508,0.0,1.0
+kannada_19_s252,kannada_19,BG 2.46,T05,kn_kannada_19_0000,kn_kannada_19_0008,9,4.208,0.0,0.5039
+kannada_19_s253,kannada_19,BG 2.47,T06,kn_kannada_19_0009,kn_kannada_19_0017,9,7.743,0.5039,1.0
+kannada_20_s254,kannada_20,BG 2.47,T06,kn_kannada_20_0000,kn_kannada_20_0001,2,1.3,0.0,0.1539
+kannada_20_s255,kannada_20,BG 2.48,T06,kn_kannada_20_0002,kn_kannada_20_0008,7,4.178,0.1539,0.648
+kannada_20_s256,kannada_20,BG 2.49,T06,kn_kannada_20_0009,kn_kannada_20_0013,5,3.719,0.648,0.9848
+kannada_20_s257,kannada_20,OFF,,kn_kannada_20_0014,kn_kannada_20_0014,1,0.98,0.9848,1.0
+kannada_21_s258,kannada_21,BG 2.50,T06,kn_kannada_21_0000,kn_kannada_21_0009,10,3.913,0.0,0.778
+kannada_21_s259,kannada_21,BG 2.51,T06,kn_kannada_21_0010,kn_kannada_21_0011,2,1.507,0.778,0.9387
+kannada_21_s260,kannada_21,OFF,,kn_kannada_21_0012,kn_kannada_21_0012,1,0.98,0.9387,1.0
+kannada_22_s261,kannada_22,BG 2.52,T06,kn_kannada_22_0000,kn_kannada_22_0010,11,7.831,0.0,0.809
+kannada_22_s262,kannada_22,BG 2.53,T06,kn_kannada_22_0011,kn_kannada_22_0012,2,1.049,0.809,0.9586
+kannada_22_s263,kannada_22,OFF,,kn_kannada_22_0013,kn_kannada_22_0013,1,0.98,0.9586,1.0
+kannada_23_s264,kannada_23,BG 2.54,T07,kn_kannada_23_0000,kn_kannada_23_0006,7,3.027,0.0,0.4068
+kannada_23_s265,kannada_23,OFF,,kn_kannada_23_0007,kn_kannada_23_0007,1,0.98,0.4068,0.4638
+kannada_23_s266,kannada_23,BG 2.54,T07,kn_kannada_23_0008,kn_kannada_23_0010,3,2.542,0.4638,0.6429
+kannada_23_s267,kannada_23,BG 2.55,T07,kn_kannada_23_0011,kn_kannada_23_0016,6,5.125,0.6429,1.0
+kannada_24_s268,kannada_24,BG 2.56,T07,kn_kannada_24_0000,kn_kannada_24_0007,8,4.605,0.0,0.6592
+kannada_24_s269,kannada_24,BG 2.57,T07,kn_kannada_24_0008,kn_kannada_24_0010,3,1.545,0.6592,0.925
+kannada_24_s270,kannada_24,OFF,,kn_kannada_24_0011,kn_kannada_24_0011,1,0.98,0.925,1.0
+kannada_25_s271,kannada_25,BG 2.54,T07,kn_kannada_25_0000,kn_kannada_25_0000,1,0.98,0.0,0.074
+kannada_25_s272,kannada_25,BG 2.58,T07,kn_kannada_25_0001,kn_kannada_25_0004,4,1.457,0.074,0.3872
+kannada_25_s273,kannada_25,BG 2.59,T08,kn_kannada_25_0005,kn_kannada_25_0012,8,5.318,0.3872,0.9935
+kannada_25_s274,kannada_25,OFF,,kn_kannada_25_0013,kn_kannada_25_0013,1,0.98,0.9935,1.0
+kannada_26_s275,kannada_26,BG 2.59,T08,kn_kannada_26_0000,kn_kannada_26_0000,1,0.8,0.0,0.0823
+kannada_26_s276,kannada_26,BG 2.60,T08,kn_kannada_26_0001,kn_kannada_26_0003,3,1.685,0.0823,0.3451
+kannada_26_s277,kannada_26,BG 2.61,T08,kn_kannada_26_0004,kn_kannada_26_0006,3,2.86,0.3451,0.5951
+kannada_26_s278,kannada_26,BG 2.62,T08,kn_kannada_26_0007,kn_kannada_26_0008,2,0.943,0.5951,0.7657
+kannada_26_s279,kannada_26,BG 2.63,T08,kn_kannada_26_0009,kn_kannada_26_0010,2,1.96,0.7657,0.9244
+kannada_26_s280,kannada_26,BG 2.62,T08,kn_kannada_26_0011,kn_kannada_26_0011,1,0.449,0.9244,1.0
+kannada_27_s281,kannada_27,BG 2.64,T08,kn_kannada_27_0000,kn_kannada_27_0005,6,3.129,0.0,0.4523
+kannada_27_s282,kannada_27,BG 2.65,T08,kn_kannada_27_0006,kn_kannada_27_0008,3,2.94,0.4523,0.6898
+kannada_27_s283,kannada_27,BG 2.66,T08,kn_kannada_27_0009,kn_kannada_27_0011,3,1.54,0.6898,0.9138
+kannada_27_s284,kannada_27,BG 2.67,T08,kn_kannada_27_0012,kn_kannada_27_0012,1,0.98,0.9138,0.9887
+kannada_27_s285,kannada_27,OFF,,kn_kannada_27_0013,kn_kannada_27_0013,1,0.98,0.9887,1.0
+kannada_28_s286,kannada_28,BG 2.65,T08,kn_kannada_28_0000,kn_kannada_28_0001,2,1.435,0.0,0.1914
+kannada_28_s287,kannada_28,BG 2.67,T08,kn_kannada_28_0002,kn_kannada_28_0002,1,0.407,0.1914,0.288
+kannada_28_s288,kannada_28,BG 2.68,T08,kn_kannada_28_0003,kn_kannada_28_0004,2,1.96,0.288,0.4859
+kannada_28_s289,kannada_28,BG 2.69,T09,kn_kannada_28_0005,kn_kannada_28_0009,5,3.078,0.4859,0.9897
+kannada_28_s290,kannada_28,OFF,,kn_kannada_28_0010,kn_kannada_28_0010,1,0.98,0.9897,1.0
+kannada_29_s291,kannada_29,BG 2.72,T09,kn_kannada_29_0000,kn_kannada_29_0000,1,0.98,0.0,0.0864
+kannada_29_s292,kannada_29,BG 2.70,T09,kn_kannada_29_0001,kn_kannada_29_0003,3,2.111,0.0864,0.3354
+kannada_29_s293,kannada_29,BG 2.71,T09,kn_kannada_29_0004,kn_kannada_29_0005,2,1.96,0.3354,0.5035
+kannada_29_s294,kannada_29,BG 2.72,T09,kn_kannada_29_0006,kn_kannada_29_0007,2,1.184,0.5035,0.6669
+kannada_29_s295,kannada_29,OFF,,kn_kannada_29_0008,kn_kannada_29_0008,1,0.02,0.6669,0.7478
+kannada_29_s296,kannada_29,BG 2.39,T05,kn_kannada_29_0009,kn_kannada_29_0009,1,0.98,0.7478,0.8311
+kannada_29_s297,kannada_29,BG 2.47,T06,kn_kannada_29_0010,kn_kannada_29_0010,1,0.9,0.8311,0.9097
+kannada_29_s298,kannada_29,BG 2.72,T09,kn_kannada_29_0011,kn_kannada_29_0011,1,0.582,0.9097,0.9914
+kannada_29_s299,kannada_29,OFF,,kn_kannada_29_0012,kn_kannada_29_0012,1,0.98,0.9914,1.0
+kn_brahmanyachar_day02b_s300,kn_brahmanyachar_day02b,BG 2.2,T01,kn_brahmanyachar_day02b_0000,kn_brahmanyachar_day02b_0001,2,1.247,0.0,0.0431
+kn_brahmanyachar_day02b_s301,kn_brahmanyachar_day02b,BG 2.3,T01,kn_brahmanyachar_day02b_0002,kn_brahmanyachar_day02b_0002,1,0.98,0.0431,0.0665
+kn_brahmanyachar_day02b_s302,kn_brahmanyachar_day02b,BG 2.4,T01,kn_brahmanyachar_day02b_0003,kn_brahmanyachar_day02b_0003,1,0.98,0.0665,0.0929
+kn_brahmanyachar_day02b_s303,kn_brahmanyachar_day02b,BG 2.5,T01,kn_brahmanyachar_day02b_0004,kn_brahmanyachar_day02b_0004,1,0.02,0.0929,0.1149
+kn_brahmanyachar_day02b_s304,kn_brahmanyachar_day02b,BG 2.7,T01,kn_brahmanyachar_day02b_0005,kn_brahmanyachar_day02b_0005,1,0.02,0.1149,0.1366
+kn_brahmanyachar_day02b_s305,kn_brahmanyachar_day02b,BG 2.9,T01,kn_brahmanyachar_day02b_0006,kn_brahmanyachar_day02b_0007,2,1.385,0.1366,0.1818
+kn_brahmanyachar_day02b_s306,kn_brahmanyachar_day02b,BG 2.10,T01,kn_brahmanyachar_day02b_0008,kn_brahmanyachar_day02b_0009,2,1.8,0.1818,0.2272
+kn_brahmanyachar_day02b_s307,kn_brahmanyachar_day02b,BG 2.11,T02,kn_brahmanyachar_day02b_0010,kn_brahmanyachar_day02b_0017,8,4.987,0.2272,0.402
+kn_brahmanyachar_day02b_s308,kn_brahmanyachar_day02b,BG 2.12,T02,kn_brahmanyachar_day02b_0018,kn_brahmanyachar_day02b_0018,1,0.9,0.402,0.4239
+kn_brahmanyachar_day02b_s309,kn_brahmanyachar_day02b,BG 2.13,T02,kn_brahmanyachar_day02b_0019,kn_brahmanyachar_day02b_0024,6,4.048,0.4239,0.5556
+kn_brahmanyachar_day02b_s310,kn_brahmanyachar_day02b,BG 2.14,T02,kn_brahmanyachar_day02b_0025,kn_brahmanyachar_day02b_0026,2,1.391,0.5556,0.6006
+kn_brahmanyachar_day02b_s311,kn_brahmanyachar_day02b,BG 2.16,T02,kn_brahmanyachar_day02b_0027,kn_brahmanyachar_day02b_0028,2,1.326,0.6006,0.6477
+kn_brahmanyachar_day02b_s312,kn_brahmanyachar_day02b,BG 2.22,T02,kn_brahmanyachar_day02b_0029,kn_brahmanyachar_day02b_0029,1,0.98,0.6477,0.6694
+kn_brahmanyachar_day02b_s313,kn_brahmanyachar_day02b,BG 2.31,T04,kn_brahmanyachar_day02b_0030,kn_brahmanyachar_day02b_0030,1,0.98,0.6694,0.691
+kn_brahmanyachar_day02b_s314,kn_brahmanyachar_day02b,BG 2.32,T04,kn_brahmanyachar_day02b_0031,kn_brahmanyachar_day02b_0031,1,0.98,0.691,0.7191
+kn_brahmanyachar_day02b_s315,kn_brahmanyachar_day02b,BG 2.34,T04,kn_brahmanyachar_day02b_0032,kn_brahmanyachar_day02b_0032,1,0.98,0.7191,0.7404
+kn_brahmanyachar_day02b_s316,kn_brahmanyachar_day02b,BG 2.37,T04,kn_brahmanyachar_day02b_0033,kn_brahmanyachar_day02b_0034,2,1.071,0.7404,0.7901
+kn_brahmanyachar_day02b_s317,kn_brahmanyachar_day02b,BG 2.38,T04,kn_brahmanyachar_day02b_0035,kn_brahmanyachar_day02b_0035,1,0.98,0.7901,0.8137
+kn_brahmanyachar_day02b_s318,kn_brahmanyachar_day02b,BG 2.39,T05,kn_brahmanyachar_day02b_0036,kn_brahmanyachar_day02b_0036,1,0.176,0.8137,0.8404
+kn_brahmanyachar_day02b_s319,kn_brahmanyachar_day02b,BG 2.40,T05,kn_brahmanyachar_day02b_0037,kn_brahmanyachar_day02b_0037,1,0.98,0.8404,0.8685
+kn_brahmanyachar_day02b_s320,kn_brahmanyachar_day02b,BG 2.47,T06,kn_brahmanyachar_day02b_0038,kn_brahmanyachar_day02b_0038,1,0.98,0.8685,0.8909
+kn_brahmanyachar_day02b_s321,kn_brahmanyachar_day02b,BG 2.48,T06,kn_brahmanyachar_day02b_0039,kn_brahmanyachar_day02b_0039,1,0.98,0.8909,0.9124
+kn_brahmanyachar_day02b_s322,kn_brahmanyachar_day02b,BG 2.53,T06,kn_brahmanyachar_day02b_0040,kn_brahmanyachar_day02b_0040,1,0.98,0.9124,0.9344
+kn_brahmanyachar_day02b_s323,kn_brahmanyachar_day02b,BG 2.54,T07,kn_brahmanyachar_day02b_0041,kn_brahmanyachar_day02b_0041,1,0.98,0.9344,0.9623
+kn_brahmanyachar_day02b_s324,kn_brahmanyachar_day02b,BG 2.58,T07,kn_brahmanyachar_day02b_0042,kn_brahmanyachar_day02b_0042,1,0.98,0.9623,0.9851
+kn_brahmanyachar_day02b_s325,kn_brahmanyachar_day02b,BG 2.63,T08,kn_brahmanyachar_day02b_0043,kn_brahmanyachar_day02b_0043,1,0.98,0.9851,1.0
+kn_sumith_day01_s326,kn_sumith_day01,OFF,,kn_sumith_day01_0000,kn_sumith_day01_0000,1,0.98,0.0,0.1148
+kn_sumith_day01_s327,kn_sumith_day01,BG 2.1,T01,kn_sumith_day01_0001,kn_sumith_day01_0001,1,0.02,0.1148,0.2242
+kn_sumith_day01_s328,kn_sumith_day01,BG 2.2,T01,kn_sumith_day01_0002,kn_sumith_day01_0004,3,1.763,0.2242,0.577
+kn_sumith_day01_s329,kn_sumith_day01,BG 2.3,T01,kn_sumith_day01_0005,kn_sumith_day01_0007,3,1.921,0.577,0.9129
+kn_sumith_day01_s330,kn_sumith_day01,OFF,,kn_sumith_day01_0008,kn_sumith_day01_0008,1,0.98,0.9129,1.0
+kn_sumith_day02_s331,kn_sumith_day02,BG 2.4,T01,kn_sumith_day02_0000,kn_sumith_day02_0000,1,0.895,0.0,0.1095
+kn_sumith_day02_s332,kn_sumith_day02,BG 2.5,T01,kn_sumith_day02_0001,kn_sumith_day02_0003,3,2.204,0.1095,0.3947
+kn_sumith_day02_s333,kn_sumith_day02,OFF,,kn_sumith_day02_0004,kn_sumith_day02_0004,1,0.98,0.3947,0.506
+kn_sumith_day02_s334,kn_sumith_day02,BG 2.6,T01,kn_sumith_day02_0005,kn_sumith_day02_0006,2,1.8,0.506,0.6973
+kn_sumith_day02_s335,kn_sumith_day02,BG 2.7,T01,kn_sumith_day02_0007,kn_sumith_day02_0009,3,2.541,0.6973,1.0
+kn_sumith_day03_s336,kn_sumith_day03,OFF,,kn_sumith_day03_0000,kn_sumith_day03_0002,3,2.94,0.0,0.2317
+kn_sumith_day03_s337,kn_sumith_day03,BG 2.8,T01,kn_sumith_day03_0003,kn_sumith_day03_0006,4,1.04,0.2317,0.5432
+kn_sumith_day03_s338,kn_sumith_day03,BG 2.9,T01,kn_sumith_day03_0007,kn_sumith_day03_0007,1,0.9,0.5432,0.6195
+kn_sumith_day03_s339,kn_sumith_day03,BG 2.10,T01,kn_sumith_day03_0008,kn_sumith_day03_0008,1,0.1,0.6195,0.6943
+kn_sumith_day03_s340,kn_sumith_day03,BG 2.9,T01,kn_sumith_day03_0009,kn_sumith_day03_0009,1,0.02,0.6943,0.7669
+kn_sumith_day03_s341,kn_sumith_day03,BG 2.10,T01,kn_sumith_day03_0010,kn_sumith_day03_0011,2,1.0,0.7669,1.0
+kn_sumith_day04_s342,kn_sumith_day04,BG 2.7,T01,kn_sumith_day04_0000,kn_sumith_day04_0000,1,0.9,0.0,0.0979
+kn_sumith_day04_s343,kn_sumith_day04,BG 2.11,T02,kn_sumith_day04_0001,kn_sumith_day04_0002,2,1.96,0.0979,0.2612
+kn_sumith_day04_s344,kn_sumith_day04,BG 2.12,T02,kn_sumith_day04_0003,kn_sumith_day04_0008,6,5.88,0.2612,0.7466
+kn_sumith_day04_s345,kn_sumith_day04,BG 2.13,T02,kn_sumith_day04_0009,kn_sumith_day04_0010,2,1.343,0.7466,0.9313
+kn_sumith_day04_s346,kn_sumith_day04,OFF,,kn_sumith_day04_0011,kn_sumith_day04_0011,1,0.9,0.9313,1.0
+kn_sumith_day05_s347,kn_sumith_day05,BG 2.13,T02,kn_sumith_day05_0000,kn_sumith_day05_0000,1,0.02,0.0,0.0656
+kn_sumith_day05_s348,kn_sumith_day05,BG 2.14,T02,kn_sumith_day05_0001,kn_sumith_day05_0002,2,1.96,0.0656,0.1925
+kn_sumith_day05_s349,kn_sumith_day05,BG 2.18,T02,kn_sumith_day05_0003,kn_sumith_day05_0003,1,0.98,0.1925,0.2611
+kn_sumith_day05_s350,kn_sumith_day05,BG 2.14,T02,kn_sumith_day05_0004,kn_sumith_day05_0007,4,3.92,0.2611,0.5458
+kn_sumith_day05_s351,kn_sumith_day05,BG 2.15,T02,kn_sumith_day05_0008,kn_sumith_day05_0008,1,0.98,0.5458,0.6244
+kn_sumith_day05_s352,kn_sumith_day05,BG 2.16,T02,kn_sumith_day05_0009,kn_sumith_day05_0010,2,1.96,0.6244,0.7568
+kn_sumith_day05_s353,kn_sumith_day05,BG 2.17,T02,kn_sumith_day05_0011,kn_sumith_day05_0013,3,1.693,0.7568,0.9468
+kn_sumith_day05_s354,kn_sumith_day05,BG 2.18,T02,kn_sumith_day05_0014,kn_sumith_day05_0014,1,0.98,0.9468,1.0
+kn_sumith_day06_s355,kn_sumith_day06,BG 2.19,T02,kn_sumith_day06_0000,kn_sumith_day06_0001,2,1.96,0.0,0.2344
+kn_sumith_day06_s356,kn_sumith_day06,BG 2.20,T02,kn_sumith_day06_0002,kn_sumith_day06_0005,4,3.153,0.2344,0.8091
+kn_sumith_day06_s357,kn_sumith_day06,BG 2.21,T02,kn_sumith_day06_0006,kn_sumith_day06_0007,2,1.0,0.8091,1.0
+kn_sumith_day07_s358,kn_sumith_day07,BG 2.22,T02,kn_sumith_day07_0000,kn_sumith_day07_0002,3,2.431,0.0,0.2844
+kn_sumith_day07_s359,kn_sumith_day07,BG 2.23,T02,kn_sumith_day07_0003,kn_sumith_day07_0004,2,1.96,0.2844,0.4751
+kn_sumith_day07_s360,kn_sumith_day07,BG 2.24,T02,kn_sumith_day07_0005,kn_sumith_day07_0006,2,1.752,0.4751,0.6564
+kn_sumith_day07_s361,kn_sumith_day07,BG 2.25,T02,kn_sumith_day07_0007,kn_sumith_day07_0010,4,2.446,0.6564,1.0
+kn_sumith_day08_s362,kn_sumith_day08,BG 2.26,T03,kn_sumith_day08_0000,kn_sumith_day08_0006,7,4.94,0.0,0.659
+kn_sumith_day08_s363,kn_sumith_day08,BG 2.27,T03,kn_sumith_day08_0007,kn_sumith_day08_0010,4,2.89,0.659,1.0
+video_01_s364,video_01,OFF,,en_video_01_0000,en_video_01_0033,34,33.24,0.0,0.3879
+video_01_s365,video_01,BG 2.1,T01,en_video_01_0034,en_video_01_0034,1,0.726,0.3879,0.4004
+video_01_s366,video_01,OFF,,en_video_01_0035,en_video_01_0035,1,0.98,0.4004,0.4128
+video_01_s367,video_01,BG 2.1,T01,en_video_01_0036,en_video_01_0041,6,2.665,0.4128,0.4784
+video_01_s368,video_01,OFF,,en_video_01_0042,en_video_01_0043,2,1.96,0.4784,0.5015
+video_01_s369,video_01,BG 2.2,T01,en_video_01_0044,en_video_01_0048,5,3.556,0.5015,0.5626
+video_01_s370,video_01,OFF,,en_video_01_0049,en_video_01_0049,1,0.1,0.5626,0.5758
+video_01_s371,video_01,BG 2.2,T01,en_video_01_0050,en_video_01_0054,5,2.849,0.5758,0.6332
+video_01_s372,video_01,BG 2.3,T01,en_video_01_0055,en_video_01_0057,3,2.076,0.6332,0.6669
+video_01_s373,video_01,OFF,,en_video_01_0058,en_video_01_0058,1,0.98,0.6669,0.6796
+video_01_s374,video_01,BG 2.3,T01,en_video_01_0059,en_video_01_0061,3,1.73,0.6796,0.7122
+video_01_s375,video_01,OFF,,en_video_01_0062,en_video_01_0064,3,2.78,0.7122,0.7474
+video_01_s376,video_01,BG 2.3,T01,en_video_01_0065,en_video_01_0067,3,1.7,0.7474,0.7836
+video_01_s377,video_01,OFF,,en_video_01_0068,en_video_01_0068,1,0.98,0.7836,0.7942
+video_01_s378,video_01,BG 2.4,T01,en_video_01_0069,en_video_01_0069,1,0.98,0.7942,0.805
+video_01_s379,video_01,OFF,,en_video_01_0070,en_video_01_0070,1,0.98,0.805,0.8172
+video_01_s380,video_01,BG 2.5,T01,en_video_01_0071,en_video_01_0073,3,2.489,0.8172,0.8499
+video_01_s381,video_01,BG 2.6,T01,en_video_01_0074,en_video_01_0075,2,1.644,0.8499,0.872
+video_01_s382,video_01,BG 2.7,T01,en_video_01_0076,en_video_01_0079,4,2.758,0.872,0.9169
+video_01_s383,video_01,BG 2.8,T01,en_video_01_0080,en_video_01_0081,2,0.981,0.9169,0.9386
+video_01_s384,video_01,BG 2.9,T01,en_video_01_0082,en_video_01_0082,1,0.98,0.9386,0.9501
+video_01_s385,video_01,BG 2.10,T01,en_video_01_0083,en_video_01_0085,3,1.864,0.9501,0.9838
+video_01_s386,video_01,OFF,,en_video_01_0086,en_video_01_0087,2,1.96,0.9838,1.0
+video_02_s387,video_02,BG 2.9,T01,en_video_02_0000,en_video_02_0001,2,1.88,0.0,0.0244
+video_02_s388,video_02,BG 2.10,T01,en_video_02_0002,en_video_02_0003,2,1.139,0.0244,0.0475
+video_02_s389,video_02,BG 2.11,T02,en_video_02_0004,en_video_02_0008,5,2.988,0.0475,0.1098
+video_02_s390,video_02,OFF,,en_video_02_0009,en_video_02_0010,2,1.96,0.1098,0.1362
+video_02_s391,video_02,BG 2.11,T02,en_video_02_0011,en_video_02_0011,1,0.1,0.1362,0.1478
+video_02_s392,video_02,OFF,,en_video_02_0012,en_video_02_0020,9,7.0,0.1478,0.2553
+video_02_s393,video_02,BG 2.11,T02,en_video_02_0021,en_video_02_0027,7,4.655,0.2553,0.342
+video_02_s394,video_02,OFF,,en_video_02_0028,en_video_02_0028,1,0.98,0.342,0.3535
+video_02_s395,video_02,BG 2.11,T02,en_video_02_0029,en_video_02_0036,8,2.617,0.3535,0.4514
+video_02_s396,video_02,BG 2.12,T02,en_video_02_0037,en_video_02_0053,17,11.504,0.4514,0.6621
+video_02_s397,video_02,OFF,,en_video_02_0054,en_video_02_0060,7,5.02,0.6621,0.7492
+video_02_s398,video_02,BG 2.12,T02,en_video_02_0061,en_video_02_0062,2,1.556,0.7492,0.7726
+video_02_s399,video_02,OFF,,en_video_02_0063,en_video_02_0068,6,3.18,0.7726,0.8468
+video_02_s400,video_02,BG 2.12,T02,en_video_02_0069,en_video_02_0069,1,0.015,0.8468,0.8581
+video_02_s401,video_02,OFF,,en_video_02_0070,en_video_02_0071,2,1.08,0.8581,0.8815
+video_02_s402,video_02,BG 2.12,T02,en_video_02_0072,en_video_02_0073,2,1.575,0.8815,0.9063
+video_02_s403,video_02,OFF,,en_video_02_0074,en_video_02_0074,1,0.1,0.9063,0.9182
+video_02_s404,video_02,BG 2.12,T02,en_video_02_0075,en_video_02_0075,1,0.553,0.9182,0.9298
+video_02_s405,video_02,BG 2.18,T02,en_video_02_0076,en_video_02_0077,2,1.8,0.9298,0.9534
+video_02_s406,video_02,OFF,,en_video_02_0078,en_video_02_0080,3,2.94,0.9534,0.9883
+video_02_s407,video_02,BG 2.27,T03,en_video_02_0081,en_video_02_0081,1,0.9,0.9883,1.0
+video_03_s408,video_03,BG 2.11,T02,en_video_03_0000,en_video_03_0000,1,0.98,0.0,0.0123
+video_03_s409,video_03,BG 2.12,T02,en_video_03_0001,en_video_03_0001,1,0.474,0.0123,0.0236
+video_03_s410,video_03,OFF,,en_video_03_0002,en_video_03_0007,6,2.28,0.0236,0.0917
+video_03_s411,video_03,BG 2.12,T02,en_video_03_0008,en_video_03_0010,3,1.928,0.0917,0.1259
+video_03_s412,video_03,OFF,,en_video_03_0011,en_video_03_0012,2,0.2,0.1259,0.1497
+video_03_s413,video_03,BG 2.13,T02,en_video_03_0013,en_video_03_0013,1,0.98,0.1497,0.1611
+video_03_s414,video_03,OFF,,en_video_03_0014,en_video_03_0015,2,1.96,0.1611,0.1837
+video_03_s415,video_03,BG 2.13,T02,en_video_03_0016,en_video_03_0030,15,9.098,0.1837,0.3589
+video_03_s416,video_03,OFF,,en_video_03_0031,en_video_03_0032,2,0.2,0.3589,0.3833
+video_03_s417,video_03,BG 2.13,T02,en_video_03_0033,en_video_03_0036,4,2.704,0.3833,0.428
+video_03_s418,video_03,BG 2.14,T02,en_video_03_0037,en_video_03_0048,12,8.736,0.428,0.5644
+video_03_s419,video_03,OFF,,en_video_03_0049,en_video_03_0054,6,5.88,0.5644,0.64
+video_03_s420,video_03,BG 2.14,T02,en_video_03_0055,en_video_03_0055,1,0.1,0.64,0.6516
+video_03_s421,video_03,OFF,,en_video_03_0056,en_video_03_0058,3,2.94,0.6516,0.6845
+video_03_s422,video_03,BG 2.14,T02,en_video_03_0059,en_video_03_0060,2,0.9,0.6845,0.7066
+video_03_s423,video_03,OFF,,en_video_03_0061,en_video_03_0062,2,1.96,0.7066,0.7289
+video_03_s424,video_03,BG 2.14,T02,en_video_03_0063,en_video_03_0063,1,0.98,0.7289,0.7397
+video_03_s425,video_03,OFF,,en_video_03_0064,en_video_03_0079,16,15.52,0.7397,0.9221
+video_03_s426,video_03,BG 2.14,T02,en_video_03_0080,en_video_03_0081,2,1.0,0.9221,0.9448
+video_03_s427,video_03,OFF,,en_video_03_0082,en_video_03_0082,1,0.98,0.9448,0.9567
+video_03_s428,video_03,BG 2.15,T02,en_video_03_0083,en_video_03_0085,3,1.699,0.9567,0.9903
+video_03_s429,video_03,OFF,,en_video_03_0086,en_video_03_0086,1,0.98,0.9903,1.0
+video_04_s430,video_04,OFF,,en_video_04_0000,en_video_04_0004,5,4.82,0.0,0.0495
+video_04_s431,video_04,BG 2.47,T06,en_video_04_0005,en_video_04_0005,1,0.9,0.0495,0.0583
+video_04_s432,video_04,BG 2.16,T02,en_video_04_0006,en_video_04_0009,4,2.88,0.0583,0.0971
+video_04_s433,video_04,OFF,,en_video_04_0010,en_video_04_0013,4,3.92,0.0971,0.1344
+video_04_s434,video_04,BG 2.16,T02,en_video_04_0014,en_video_04_0065,52,32.625,0.1344,0.626
+video_04_s435,video_04,OFF,,en_video_04_0066,en_video_04_0068,3,2.94,0.626,0.6545
+video_04_s436,video_04,BG 2.16,T02,en_video_04_0069,en_video_04_0070,2,1.0,0.6545,0.6725
+video_04_s437,video_04,OFF,,en_video_04_0071,en_video_04_0073,3,2.94,0.6725,0.7008
+video_04_s438,video_04,BG 2.16,T02,en_video_04_0074,en_video_04_0079,6,4.68,0.7008,0.7582
+video_04_s439,video_04,OFF,,en_video_04_0080,en_video_04_0080,1,0.98,0.7582,0.7672
+video_04_s440,video_04,BG 2.16,T02,en_video_04_0081,en_video_04_0082,2,1.0,0.7672,0.7868
+video_04_s441,video_04,OFF,,en_video_04_0083,en_video_04_0084,2,1.96,0.7868,0.8053
+video_04_s442,video_04,BG 2.16,T02,en_video_04_0085,en_video_04_0085,1,0.1,0.8053,0.8143
+video_04_s443,video_04,OFF,,en_video_04_0086,en_video_04_0086,1,0.98,0.8143,0.8234
+video_04_s444,video_04,BG 2.16,T02,en_video_04_0087,en_video_04_0088,2,1.0,0.8234,0.8421
+video_04_s445,video_04,OFF,,en_video_04_0089,en_video_04_0106,18,17.56,0.8421,1.0
+video_05_s446,video_05,OFF,,en_video_05_0000,en_video_05_0000,1,0.98,0.0,0.0099
+video_05_s447,video_05,BG 2.16,T02,en_video_05_0001,en_video_05_0016,16,10.737,0.0099,0.1687
+video_05_s448,video_05,BG 2.17,T02,en_video_05_0017,en_video_05_0035,19,12.462,0.1687,0.3553
+video_05_s449,video_05,OFF,,en_video_05_0036,en_video_05_0041,6,1.08,0.3553,0.4138
+video_05_s450,video_05,BG 2.17,T02,en_video_05_0042,en_video_05_0042,1,0.98,0.4138,0.4235
+video_05_s451,video_05,OFF,,en_video_05_0043,en_video_05_0044,2,1.96,0.4235,0.4419
+video_05_s452,video_05,BG 2.17,T02,en_video_05_0045,en_video_05_0051,7,3.436,0.4419,0.5105
+video_05_s453,video_05,OFF,,en_video_05_0052,en_video_05_0053,2,1.96,0.5105,0.5293
+video_05_s454,video_05,BG 2.17,T02,en_video_05_0054,en_video_05_0057,4,3.118,0.5293,0.5675
+video_05_s455,video_05,OFF,,en_video_05_0058,en_video_05_0058,1,0.98,0.5675,0.577
+video_05_s456,video_05,BG 2.17,T02,en_video_05_0059,en_video_05_0059,1,0.1,0.577,0.5872
+video_05_s457,video_05,OFF,,en_video_05_0060,en_video_05_0060,1,0.98,0.5872,0.5967
+video_05_s458,video_05,BG 2.17,T02,en_video_05_0061,en_video_05_0061,1,0.8,0.5967,0.6063
+video_05_s459,video_05,OFF,,en_video_05_0062,en_video_05_0062,1,0.98,0.6063,0.6162
+video_05_s460,video_05,BG 2.17,T02,en_video_05_0063,en_video_05_0067,5,1.3,0.6162,0.6643
+video_05_s461,video_05,OFF,,en_video_05_0068,en_video_05_0068,1,0.98,0.6643,0.6742
+video_05_s462,video_05,BG 2.17,T02,en_video_05_0069,en_video_05_0070,2,1.0,0.6742,0.6949
+video_05_s463,video_05,BG 2.18,T02,en_video_05_0071,en_video_05_0074,4,2.663,0.6949,0.7346
+video_05_s464,video_05,OFF,,en_video_05_0075,en_video_05_0078,4,3.92,0.7346,0.7741
+video_05_s465,video_05,BG 2.18,T02,en_video_05_0079,en_video_05_0081,3,1.432,0.7741,0.8028
+video_05_s466,video_05,OFF,,en_video_05_0082,en_video_05_0102,21,20.5,0.8028,1.0
+video_06_s467,video_06,BG 2.16,T02,en_video_06_0000,en_video_06_0000,1,0.98,0.0,0.0089
+video_06_s468,video_06,BG 2.7,T01,en_video_06_0001,en_video_06_0001,1,0.1,0.0089,0.0185
+video_06_s469,video_06,BG 2.18,T02,en_video_06_0002,en_video_06_0003,2,1.88,0.0185,0.0392
+video_06_s470,video_06,BG 2.12,T02,en_video_06_0004,en_video_06_0005,2,1.96,0.0392,0.0586
+video_06_s471,video_06,BG 2.13,T02,en_video_06_0006,en_video_06_0006,1,0.98,0.0586,0.0687
+video_06_s472,video_06,BG 2.16,T02,en_video_06_0007,en_video_06_0009,3,2.94,0.0687,0.0967
+video_06_s473,video_06,BG 2.17,T02,en_video_06_0010,en_video_06_0011,2,0.724,0.0967,0.1161
+video_06_s474,video_06,BG 2.18,T02,en_video_06_0012,en_video_06_0019,8,4.7,0.1161,0.193
+video_06_s475,video_06,BG 2.17,T02,en_video_06_0020,en_video_06_0020,1,0.3,0.193,0.2039
+video_06_s476,video_06,OFF,,en_video_06_0021,en_video_06_0023,3,2.94,0.2039,0.2348
+video_06_s477,video_06,BG 2.19,T02,en_video_06_0024,en_video_06_0025,2,0.786,0.2348,0.2532
+video_06_s478,video_06,OFF,,en_video_06_0026,en_video_06_0026,1,0.02,0.2532,0.2627
+video_06_s479,video_06,BG 2.19,T02,en_video_06_0027,en_video_06_0028,2,0.697,0.2627,0.2819
+video_06_s480,video_06,OFF,,en_video_06_0029,en_video_06_0033,5,3.16,0.2819,0.3289
+video_06_s481,video_06,BG 2.19,T02,en_video_06_0034,en_video_06_0038,5,2.9,0.3289,0.3751
+video_06_s482,video_06,OFF,,en_video_06_0039,en_video_06_0050,12,11.76,0.3751,0.4953
+video_06_s483,video_06,BG 2.19,T02,en_video_06_0051,en_video_06_0056,6,4.92,0.4953,0.5515
+video_06_s484,video_06,OFF,,en_video_06_0057,en_video_06_0076,20,18.74,0.5515,0.7474
+video_06_s485,video_06,BG 2.18,T02,en_video_06_0077,en_video_06_0080,4,3.4,0.7474,0.785
+video_06_s486,video_06,BG 2.20,T02,en_video_06_0081,en_video_06_0081,1,0.29,0.785,0.7939
+video_06_s487,video_06,OFF,,en_video_06_0082,en_video_06_0094,13,12.74,0.7939,0.9161
+video_06_s488,video_06,BG 2.18,T02,en_video_06_0095,en_video_06_0097,3,1.1,0.9161,0.9453
+video_06_s489,video_06,OFF,,en_video_06_0098,en_video_06_0100,3,2.94,0.9453,0.9729
+video_06_s490,video_06,BG 2.18,T02,en_video_06_0101,en_video_06_0102,2,1.7,0.9729,0.9921
+video_06_s491,video_06,OFF,,en_video_06_0103,en_video_06_0103,1,0.98,0.9921,1.0
+video_07_s492,video_07,OFF,,en_video_07_0000,en_video_07_0000,1,0.98,0.0,0.0102
+video_07_s493,video_07,BG 2.11,T02,en_video_07_0001,en_video_07_0001,1,0.98,0.0102,0.0202
+video_07_s494,video_07,BG 2.16,T02,en_video_07_0002,en_video_07_0002,1,0.237,0.0202,0.0307
+video_07_s495,video_07,BG 2.17,T02,en_video_07_0003,en_video_07_0004,2,1.96,0.0307,0.0502
+video_07_s496,video_07,BG 2.18,T02,en_video_07_0005,en_video_07_0005,1,0.98,0.0502,0.0604
+video_07_s497,video_07,BG 2.19,T02,en_video_07_0006,en_video_07_0006,1,0.98,0.0604,0.0722
+video_07_s498,video_07,BG 2.16,T02,en_video_07_0007,en_video_07_0007,1,0.205,0.0722,0.0833
+video_07_s499,video_07,BG 2.18,T02,en_video_07_0008,en_video_07_0009,2,0.804,0.0833,0.1036
+video_07_s500,video_07,BG 2.20,T02,en_video_07_0010,en_video_07_0013,4,2.174,0.1036,0.1444
+video_07_s501,video_07,OFF,,en_video_07_0014,en_video_07_0020,7,6.86,0.1444,0.2161
+video_07_s502,video_07,BG 2.20,T02,en_video_07_0021,en_video_07_0029,9,6.872,0.2161,0.3079
+video_07_s503,video_07,OFF,,en_video_07_0030,en_video_07_0035,6,4.04,0.3079,0.3717
+video_07_s504,video_07,BG 2.12,T02,en_video_07_0036,en_video_07_0036,1,0.98,0.3717,0.3818
+video_07_s505,video_07,BG 2.16,T02,en_video_07_0037,en_video_07_0037,1,0.9,0.3818,0.3924
+video_07_s506,video_07,BG 2.20,T02,en_video_07_0038,en_video_07_0038,1,0.609,0.3924,0.4024
+video_07_s507,video_07,BG 2.21,T02,en_video_07_0039,en_video_07_0054,16,4.246,0.4024,0.5677
+video_07_s508,video_07,OFF,,en_video_07_0055,en_video_07_0055,1,0.1,0.5677,0.5791
+video_07_s509,video_07,BG 2.21,T02,en_video_07_0056,en_video_07_0057,2,0.848,0.5791,0.5987
+video_07_s510,video_07,OFF,,en_video_07_0058,en_video_07_0063,6,4.84,0.5987,0.6605
+video_07_s511,video_07,BG 2.16,T02,en_video_07_0064,en_video_07_0064,1,0.98,0.6605,0.6705
+video_07_s512,video_07,OFF,,en_video_07_0065,en_video_07_0065,1,0.1,0.6705,0.6802
+video_07_s513,video_07,BG 2.22,T02,en_video_07_0066,en_video_07_0068,3,1.639,0.6802,0.7126
+video_07_s514,video_07,OFF,,en_video_07_0069,en_video_07_0075,7,5.82,0.7126,0.7843
+video_07_s515,video_07,BG 2.22,T02,en_video_07_0076,en_video_07_0078,3,1.97,0.7843,0.8162
+video_07_s516,video_07,OFF,,en_video_07_0079,en_video_07_0094,16,14.56,0.8162,0.9813
+video_07_s517,video_07,BG 2.16,T02,en_video_07_0095,en_video_07_0095,1,0.9,0.9813,0.9928
+video_07_s518,video_07,OFF,,en_video_07_0096,en_video_07_0096,1,0.98,0.9928,1.0
+video_08_s519,video_08,OFF,,en_video_08_0000,en_video_08_0000,1,0.98,0.0,0.0104
+video_08_s520,video_08,BG 2.22,T02,en_video_08_0001,en_video_08_0009,9,6.512,0.0104,0.1044
+video_08_s521,video_08,BG 2.23,T02,en_video_08_0010,en_video_08_0017,8,3.469,0.1044,0.1878
+video_08_s522,video_08,BG 2.24,T02,en_video_08_0018,en_video_08_0019,2,1.673,0.1878,0.2082
+video_08_s523,video_08,OFF,,en_video_08_0020,en_video_08_0020,1,0.98,0.2082,0.2182
+video_08_s524,video_08,BG 2.24,T02,en_video_08_0021,en_video_08_0021,1,0.543,0.2182,0.2286
+video_08_s525,video_08,OFF,,en_video_08_0022,en_video_08_0022,1,0.98,0.2286,0.2397
+video_08_s526,video_08,BG 2.24,T02,en_video_08_0023,en_video_08_0028,6,4.467,0.2397,0.3034
+video_08_s527,video_08,OFF,,en_video_08_0029,en_video_08_0043,15,14.7,0.3034,0.4623
+video_08_s528,video_08,BG 2.24,T02,en_video_08_0044,en_video_08_0054,11,5.293,0.4623,0.5795
+video_08_s529,video_08,BG 2.25,T02,en_video_08_0055,en_video_08_0061,7,2.42,0.5795,0.6522
+video_08_s530,video_08,OFF,,en_video_08_0062,en_video_08_0070,9,8.82,0.6522,0.748
+video_08_s531,video_08,BG 2.25,T02,en_video_08_0071,en_video_08_0071,1,0.9,0.748,0.758
+video_08_s532,video_08,OFF,,en_video_08_0072,en_video_08_0081,10,8.84,0.758,0.8626
+video_08_s533,video_08,BG 2.20,T02,en_video_08_0082,en_video_08_0082,1,0.98,0.8626,0.8726
+video_08_s534,video_08,BG 2.19,T02,en_video_08_0083,en_video_08_0083,1,0.1,0.8726,0.8825
+video_08_s535,video_08,OFF,,en_video_08_0084,en_video_08_0092,9,5.16,0.8825,0.9793
+video_08_s536,video_08,BG 2.22,T02,en_video_08_0093,en_video_08_0093,1,0.9,0.9793,0.9892
+video_08_s537,video_08,OFF,,en_video_08_0094,en_video_08_0095,2,1.96,0.9892,1.0
+video_09_s538,video_09,OFF,,en_video_09_0000,en_video_09_0002,3,1.9,0.0,0.0296
+video_09_s539,video_09,BG 2.20,T02,en_video_09_0003,en_video_09_0003,1,0.98,0.0296,0.0404
+video_09_s540,video_09,BG 2.16,T02,en_video_09_0004,en_video_09_0004,1,0.98,0.0404,0.0502
+video_09_s541,video_09,BG 2.24,T02,en_video_09_0005,en_video_09_0005,1,0.1,0.0502,0.0599
+video_09_s542,video_09,BG 2.18,T02,en_video_09_0006,en_video_09_0006,1,0.98,0.0599,0.0696
+video_09_s543,video_09,OFF,,en_video_09_0007,en_video_09_0008,2,1.0,0.0696,0.0887
+video_09_s544,video_09,BG 2.26,T03,en_video_09_0009,en_video_09_0009,1,0.1,0.0887,0.098
+video_09_s545,video_09,OFF,,en_video_09_0010,en_video_09_0014,5,4.9,0.098,0.1465
+video_09_s546,video_09,BG 2.26,T03,en_video_09_0015,en_video_09_0017,3,1.9,0.1465,0.1763
+video_09_s547,video_09,OFF,,en_video_09_0018,en_video_09_0048,31,28.54,0.1763,0.4833
+video_09_s548,video_09,BG 2.59,T08,en_video_09_0049,en_video_09_0049,1,0.9,0.4833,0.4927
+video_09_s549,video_09,BG 2.61,T08,en_video_09_0050,en_video_09_0051,2,0.2,0.4927,0.5124
+video_09_s550,video_09,OFF,,en_video_09_0052,en_video_09_0057,6,4.92,0.5124,0.5686
+video_09_s551,video_09,BG 2.26,T03,en_video_09_0058,en_video_09_0060,3,1.98,0.5686,0.5957
+video_09_s552,video_09,BG 2.27,T03,en_video_09_0061,en_video_09_0065,5,3.331,0.5957,0.643
+video_09_s553,video_09,OFF,,en_video_09_0066,en_video_09_0078,13,11.7,0.643,0.7688
+video_09_s554,video_09,BG 2.27,T03,en_video_09_0079,en_video_09_0084,6,4.442,0.7688,0.826
+video_09_s555,video_09,OFF,,en_video_09_0085,en_video_09_0085,1,0.1,0.826,0.839
+video_09_s556,video_09,BG 2.26,T03,en_video_09_0086,en_video_09_0087,2,1.88,0.839,0.8608
+video_09_s557,video_09,BG 2.27,T03,en_video_09_0088,en_video_09_0088,1,0.734,0.8608,0.8708
+video_09_s558,video_09,OFF,,en_video_09_0089,en_video_09_0089,1,0.9,0.8708,0.88
+video_09_s559,video_09,BG 2.27,T03,en_video_09_0090,en_video_09_0090,1,0.624,0.88,0.8896
+video_09_s560,video_09,OFF,,en_video_09_0091,en_video_09_0094,4,3.14,0.8896,0.9283
+video_09_s561,video_09,BG 2.27,T03,en_video_09_0095,en_video_09_0095,1,0.8,0.9283,0.938
+video_09_s562,video_09,OFF,,en_video_09_0096,en_video_09_0101,6,5.88,0.938,1.0
+video_10_s563,video_10,OFF,,en_video_10_0000,en_video_10_0000,1,0.98,0.0,0.0095
+video_10_s564,video_10,BG 2.27,T03,en_video_10_0001,en_video_10_0004,4,0.671,0.0095,0.0511
+video_10_s565,video_10,OFF,,en_video_10_0005,en_video_10_0010,6,5.88,0.0511,0.1126
+video_10_s566,video_10,BG 2.27,T03,en_video_10_0011,en_video_10_0013,3,0.33,0.1126,0.1408
+video_10_s567,video_10,BG 2.28,T03,en_video_10_0014,en_video_10_0020,7,2.571,0.1408,0.2101
+video_10_s568,video_10,OFF,,en_video_10_0021,en_video_10_0032,12,10.8,0.2101,0.327
+video_10_s569,video_10,BG 2.28,T03,en_video_10_0033,en_video_10_0033,1,0.8,0.327,0.3362
+video_10_s570,video_10,OFF,,en_video_10_0034,en_video_10_0037,4,3.92,0.3362,0.3747
+video_10_s571,video_10,BG 2.28,T03,en_video_10_0038,en_video_10_0038,1,0.98,0.3747,0.3844
+video_10_s572,video_10,OFF,,en_video_10_0039,en_video_10_0043,5,3.96,0.3844,0.4324
+video_10_s573,video_10,BG 2.29,T03,en_video_10_0044,en_video_10_0059,16,4.875,0.4324,0.5904
+video_10_s574,video_10,OFF,,en_video_10_0060,en_video_10_0065,6,5.88,0.5904,0.6479
+video_10_s575,video_10,BG 2.29,T03,en_video_10_0066,en_video_10_0069,4,1.531,0.6479,0.6886
+video_10_s576,video_10,OFF,,en_video_10_0070,en_video_10_0070,1,0.98,0.6886,0.6988
+video_10_s577,video_10,BG 2.29,T03,en_video_10_0071,en_video_10_0080,10,2.58,0.6988,0.7951
+video_10_s578,video_10,OFF,,en_video_10_0081,en_video_10_0084,4,3.92,0.7951,0.8328
+video_10_s579,video_10,BG 2.29,T03,en_video_10_0085,en_video_10_0086,2,0.9,0.8328,0.8534
+video_10_s580,video_10,OFF,,en_video_10_0087,en_video_10_0097,11,10.78,0.8534,0.9636
+video_10_s581,video_10,BG 2.29,T03,en_video_10_0098,en_video_10_0099,2,1.8,0.9636,0.9826
+video_10_s582,video_10,OFF,,en_video_10_0100,en_video_10_0101,2,1.96,0.9826,1.0
+video_11_s583,video_11,BG 2.29,T03,en_video_11_0000,en_video_11_0002,3,3.0,0.0,0.0309
+video_11_s584,video_11,OFF,,en_video_11_0003,en_video_11_0004,2,2.0,0.0309,0.0513
+video_11_s585,video_11,BG 2.29,T03,en_video_11_0005,en_video_11_0008,4,4.0,0.0513,0.0938
+video_11_s586,video_11,OFF,,en_video_11_0009,en_video_11_0010,2,2.0,0.0938,0.1146
+video_11_s587,video_11,BG 2.29,T03,en_video_11_0011,en_video_11_0011,1,1.0,0.1146,0.1247
+video_11_s588,video_11,OFF,,en_video_11_0012,en_video_11_0012,1,1.0,0.1247,0.1345
+video_11_s589,video_11,BG 2.29,T03,en_video_11_0013,en_video_11_0029,17,17.0,0.1345,0.3105
+video_11_s590,video_11,OFF,,en_video_11_0030,en_video_11_0030,1,1.0,0.3105,0.3205
+video_11_s591,video_11,BG 2.29,T03,en_video_11_0031,en_video_11_0035,5,5.0,0.3205,0.3737
+video_11_s592,video_11,OFF,,en_video_11_0036,en_video_11_0036,1,1.0,0.3737,0.3849
+video_11_s593,video_11,BG 2.29,T03,en_video_11_0037,en_video_11_0040,4,4.0,0.3849,0.4257
+video_11_s594,video_11,OFF,,en_video_11_0041,en_video_11_0043,3,3.0,0.4257,0.4567
+video_11_s595,video_11,BG 2.29,T03,en_video_11_0044,en_video_11_0046,3,3.0,0.4567,0.4872
+video_11_s596,video_11,OFF,,en_video_11_0047,en_video_11_0048,2,2.0,0.4872,0.507
+video_11_s597,video_11,BG 2.29,T03,en_video_11_0049,en_video_11_0051,3,3.0,0.507,0.5379
+video_11_s598,video_11,OFF,,en_video_11_0052,en_video_11_0052,1,1.0,0.5379,0.5478
+video_11_s599,video_11,BG 2.29,T03,en_video_11_0053,en_video_11_0055,3,3.0,0.5478,0.5781
+video_11_s600,video_11,OFF,,en_video_11_0056,en_video_11_0056,1,1.0,0.5781,0.5886
+video_11_s601,video_11,BG 2.29,T03,en_video_11_0057,en_video_11_0061,5,5.0,0.5886,0.641
+video_11_s602,video_11,OFF,,en_video_11_0062,en_video_11_0063,2,2.0,0.641,0.6624
+video_11_s603,video_11,BG 2.29,T03,en_video_11_0064,en_video_11_0068,5,5.0,0.6624,0.7139
+video_11_s604,video_11,OFF,,en_video_11_0069,en_video_11_0069,1,1.0,0.7139,0.7236
+video_11_s605,video_11,BG 2.30,T03,en_video_11_0070,en_video_11_0071,2,2.0,0.7236,0.7433
+video_11_s606,video_11,BG 2.31,T04,en_video_11_0072,en_video_11_0091,20,20.0,0.7433,0.949
+video_11_s607,video_11,OFF,,en_video_11_0092,en_video_11_0092,1,1.0,0.949,0.9589
+video_11_s608,video_11,BG 2.31,T04,en_video_11_0093,en_video_11_0096,4,4.0,0.9589,1.0
+video_12_s609,video_12,OFF,,en_video_12_0000,en_video_12_0000,1,1.0,0.0,0.0096
+video_12_s610,video_12,BG 2.31,T04,en_video_12_0001,en_video_12_0001,1,1.0,0.0096,0.018
+video_12_s611,video_12,BG 2.32,T04,en_video_12_0002,en_video_12_0010,9,9.0,0.018,0.0994
+video_12_s612,video_12,OFF,,en_video_12_0011,en_video_12_0014,4,4.0,0.0994,0.1352
+video_12_s613,video_12,BG 2.32,T04,en_video_12_0015,en_video_12_0017,3,3.0,0.1352,0.1625
+video_12_s614,video_12,BG 2.33,T04,en_video_12_0018,en_video_12_0022,5,5.0,0.1625,0.2072
+video_12_s615,video_12,OFF,,en_video_12_0023,en_video_12_0050,28,28.0,0.2072,0.4578
+video_12_s616,video_12,BG 2.33,T04,en_video_12_0051,en_video_12_0052,2,2.0,0.4578,0.4747
+video_12_s617,video_12,OFF,,en_video_12_0053,en_video_12_0065,13,13.0,0.4747,0.5883
+video_12_s618,video_12,BG 2.34,T04,en_video_12_0066,en_video_12_0066,1,1.0,0.5883,0.5978
+video_12_s619,video_12,BG 2.35,T04,en_video_12_0067,en_video_12_0067,1,1.0,0.5978,0.6062
+video_12_s620,video_12,BG 2.36,T04,en_video_12_0068,en_video_12_0069,2,2.0,0.6062,0.6248
+video_12_s621,video_12,OFF,,en_video_12_0070,en_video_12_0074,5,5.0,0.6248,0.6674
+video_12_s622,video_12,BG 2.37,T04,en_video_12_0075,en_video_12_0078,4,4.0,0.6674,0.7059
+video_12_s623,video_12,OFF,,en_video_12_0079,en_video_12_0088,10,10.0,0.7059,0.7947
+video_12_s624,video_12,BG 2.38,T04,en_video_12_0089,en_video_12_0093,5,5.0,0.7947,0.839
+video_12_s625,video_12,OFF,,en_video_12_0094,en_video_12_0112,19,19.0,0.839,1.0
+video_13_s626,video_13,BG 2.39,T05,en_video_13_0000,en_video_13_0000,1,1.0,0.0,0.011
+video_13_s627,video_13,BG 2.38,T04,en_video_13_0001,en_video_13_0007,7,7.0,0.011,0.0887
+video_13_s628,video_13,BG 2.39,T05,en_video_13_0008,en_video_13_0012,5,5.0,0.0887,0.1432
+video_13_s629,video_13,OFF,,en_video_13_0013,en_video_13_0015,3,3.0,0.1432,0.1756
+video_13_s630,video_13,BG 2.39,T05,en_video_13_0016,en_video_13_0019,4,4.0,0.1756,0.2183
+video_13_s631,video_13,OFF,,en_video_13_0020,en_video_13_0020,1,1.0,0.2183,0.2292
+video_13_s632,video_13,BG 2.39,T05,en_video_13_0021,en_video_13_0023,3,3.0,0.2292,0.2614
+video_13_s633,video_13,OFF,,en_video_13_0024,en_video_13_0028,5,5.0,0.2614,0.3167
+video_13_s634,video_13,BG 2.39,T05,en_video_13_0029,en_video_13_0031,3,3.0,0.3167,0.3492
+video_13_s635,video_13,OFF,,en_video_13_0032,en_video_13_0061,30,30.0,0.3492,0.6809
+video_13_s636,video_13,BG 2.39,T05,en_video_13_0062,en_video_13_0062,1,1.0,0.6809,0.6922
+video_13_s637,video_13,BG 2.40,T05,en_video_13_0063,en_video_13_0065,3,3.0,0.6922,0.7293
+video_13_s638,video_13,OFF,,en_video_13_0066,en_video_13_0070,5,5.0,0.7293,0.7853
+video_13_s639,video_13,BG 2.40,T05,en_video_13_0071,en_video_13_0075,5,5.0,0.7853,0.8398
+video_13_s640,video_13,OFF,,en_video_13_0076,en_video_13_0076,1,1.0,0.8398,0.8507
+video_13_s641,video_13,BG 2.40,T05,en_video_13_0077,en_video_13_0080,4,4.0,0.8507,0.8971
+video_13_s642,video_13,OFF,,en_video_13_0081,en_video_13_0085,5,5.0,0.8971,0.9533
+video_13_s643,video_13,BG 2.40,T05,en_video_13_0086,en_video_13_0087,2,2.0,0.9533,0.9754
+video_13_s644,video_13,OFF,,en_video_13_0088,en_video_13_0088,1,1.0,0.9754,0.9862
+video_13_s645,video_13,BG 2.40,T05,en_video_13_0089,en_video_13_0089,1,1.0,0.9862,0.9987
+video_13_s646,video_13,BG 2.54,T07,en_video_13_0090,en_video_13_0090,1,1.0,0.9987,1.0
+video_14_s647,video_14,BG 2.39,T05,en_video_14_0000,en_video_14_0000,1,1.0,0.0,0.0096
+video_14_s648,video_14,OFF,,en_video_14_0001,en_video_14_0001,1,1.0,0.0096,0.0207
+video_14_s649,video_14,BG 2.47,T06,en_video_14_0002,en_video_14_0003,2,2.0,0.0207,0.0438
+video_14_s650,video_14,OFF,,en_video_14_0004,en_video_14_0004,1,1.0,0.0438,0.0534
+video_14_s651,video_14,BG 2.39,T05,en_video_14_0005,en_video_14_0009,5,5.0,0.0534,0.104
+video_14_s652,video_14,BG 2.41,T05,en_video_14_0010,en_video_14_0013,4,4.0,0.104,0.1431
+video_14_s653,video_14,OFF,,en_video_14_0014,en_video_14_0014,1,1.0,0.1431,0.1526
+video_14_s654,video_14,BG 2.41,T05,en_video_14_0015,en_video_14_0025,11,11.0,0.1526,0.2673
+video_14_s655,video_14,OFF,,en_video_14_0026,en_video_14_0026,1,1.0,0.2673,0.2782
+video_14_s656,video_14,BG 2.41,T05,en_video_14_0027,en_video_14_0027,1,1.0,0.2782,0.2881
+video_14_s657,video_14,OFF,,en_video_14_0028,en_video_14_0028,1,1.0,0.2881,0.2979
+video_14_s658,video_14,BG 2.41,T05,en_video_14_0029,en_video_14_0035,7,7.0,0.2979,0.369
+video_14_s659,video_14,OFF,,en_video_14_0036,en_video_14_0036,1,1.0,0.369,0.3784
+video_14_s660,video_14,BG 2.41,T05,en_video_14_0037,en_video_14_0041,5,5.0,0.3784,0.4289
+video_14_s661,video_14,OFF,,en_video_14_0042,en_video_14_0045,4,4.0,0.4289,0.4703
+video_14_s662,video_14,BG 2.39,T05,en_video_14_0046,en_video_14_0046,1,1.0,0.4703,0.4803
+video_14_s663,video_14,OFF,,en_video_14_0047,en_video_14_0054,8,8.0,0.4803,0.5628
+video_14_s664,video_14,BG 2.43,T05,en_video_14_0055,en_video_14_0055,1,1.0,0.5628,0.5733
+video_14_s665,video_14,BG 2.42,T05,en_video_14_0056,en_video_14_0058,3,3.0,0.5733,0.6022
+video_14_s666,video_14,OFF,,en_video_14_0059,en_video_14_0060,2,2.0,0.6022,0.622
+video_14_s667,video_14,BG 2.42,T05,en_video_14_0061,en_video_14_0062,2,2.0,0.622,0.6424
+video_14_s668,video_14,BG 2.43,T05,en_video_14_0063,en_video_14_0063,1,1.0,0.6424,0.6526
+video_14_s669,video_14,OFF,,en_video_14_0064,en_video_14_0066,3,3.0,0.6526,0.6824
+video_14_s670,video_14,BG 2.42,T05,en_video_14_0067,en_video_14_0067,1,1.0,0.6824,0.6925
+video_14_s671,video_14,BG 2.43,T05,en_video_14_0068,en_video_14_0068,1,1.0,0.6925,0.7023
+video_14_s672,video_14,BG 2.42,T05,en_video_14_0069,en_video_14_0071,3,3.0,0.7023,0.7322
+video_14_s673,video_14,BG 2.43,T05,en_video_14_0072,en_video_14_0073,2,2.0,0.7322,0.7521
+video_14_s674,video_14,BG 2.44,T05,en_video_14_0074,en_video_14_0075,2,2.0,0.7521,0.7717
+video_14_s675,video_14,OFF,,en_video_14_0076,en_video_14_0081,6,6.0,0.7717,0.8303
+video_14_s676,video_14,BG 2.43,T05,en_video_14_0082,en_video_14_0082,1,1.0,0.8303,0.8433
+video_14_s677,video_14,OFF,,en_video_14_0083,en_video_14_0085,3,3.0,0.8433,0.873
+video_14_s678,video_14,BG 2.44,T05,en_video_14_0086,en_video_14_0087,2,2.0,0.873,0.8925
+video_14_s679,video_14,OFF,,en_video_14_0088,en_video_14_0091,4,4.0,0.8925,0.9321
+video_14_s680,video_14,BG 2.44,T05,en_video_14_0092,en_video_14_0092,1,1.0,0.9321,0.9415
+video_14_s681,video_14,BG 2.41,T05,en_video_14_0093,en_video_14_0094,2,2.0,0.9415,0.9614
+video_14_s682,video_14,OFF,,en_video_14_0095,en_video_14_0095,1,1.0,0.9614,0.9712
+video_14_s683,video_14,BG 2.41,T05,en_video_14_0096,en_video_14_0097,2,2.0,0.9712,0.9904
+video_14_s684,video_14,OFF,,en_video_14_0098,en_video_14_0098,1,1.0,0.9904,1.0

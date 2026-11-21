@@ -1,0 +1,77 @@
+Recall by mention type, strict (gold pair hit), 42 lectures; 95% CI resampling lectures (10000 resamples, seed 0), none under 5 lectures. Descriptive only.
+
+MAIN: recitation (T1+T2) vs non-recitation (T3+T4+T5)
+
+E2 Kannada test: 23 lectures; mentions: recitation 298, non-recitation 89 (23% non-recitation)
+  system                                      recitation T1+T2       non-recitation T3+T4+T5
+  Gemini 3.1 Pro (API, low)                0.960 [0.937,0.981]           0.742 [0.606,0.842]
+  GPT-6.1 Sol (API, high)                  0.990 [0.974,1.000]           0.899 [0.824,0.959]
+  Claude Opus 5.5 (chat, high)             0.973 [0.955,0.989]           0.933 [0.892,0.970]
+  GitaGround-Cue                           0.903 [0.862,0.940]           0.663 [0.514,0.780]
+  GitaGround-Local                         0.903 [0.862,0.940]           0.663 [0.514,0.780]
+  Plain Carry                              0.903 [0.864,0.936]           0.663 [0.517,0.766]
+
+E2 English test: 7 lectures; mentions: recitation 79, non-recitation 282 (78% non-recitation)
+  system                                      recitation T1+T2       non-recitation T3+T4+T5
+  Gemini 3.1 Pro (API, low)                0.886 [0.736,0.975]           0.702 [0.572,0.837]
+  GPT-6.1 Sol (API, high)                  0.861 [0.760,0.952]           0.879 [0.792,0.955]
+  Claude Opus 5.5 (chat, high)             0.886 [0.786,0.977]           0.901 [0.834,0.954]
+  GitaGround-Cue                           0.759 [0.600,0.854]           0.571 [0.405,0.735]
+  GitaGround-Local                         0.810 [0.630,0.909]           0.709 [0.498,0.874]
+  Plain Carry                              0.861 [0.729,0.939]           0.823 [0.728,0.904]
+
+E3 Kannada: 9 lectures; mentions: recitation 79, non-recitation 97 (55% non-recitation)
+  system                                      recitation T1+T2       non-recitation T3+T4+T5
+  Gemini 3.1 Pro (API, low)                0.949 [0.917,1.000]           0.722 [0.622,0.810]
+  GPT-6.1 Sol (API, high)                  1.000 [1.000,1.000]           0.928 [0.896,0.958]
+  Claude Opus 5.5 (chat, high)             1.000 [1.000,1.000]           0.866 [0.781,0.952]
+  GitaGround-Cue                           0.772 [0.714,0.917]           0.526 [0.375,0.684]
+  GitaGround-Local                         0.772 [0.714,0.917]           0.588 [0.462,0.740]
+  Plain Carry                              0.949 [0.879,1.000]           0.598 [0.469,0.770]
+
+E3 English: 3 lectures; mentions: recitation 153, non-recitation 261 (63% non-recitation)
+  system                                      recitation T1+T2       non-recitation T3+T4+T5
+  Gemini 3.1 Pro (API, low)                              0.902                         0.609
+  GPT-6.1 Sol (API, high)                                0.987                         0.874
+  Claude Opus 5.5 (chat, high)                           0.967                         0.713
+  GitaGround-Cue                                         0.895                         0.751
+  GitaGround-Local                                       0.895                         0.747
+  Plain Carry                                            0.902                         0.755
+
+APPENDIX: each type, strict recall (n per cell; * = n < 20, not interpreted)
+
+E2 Kannada test: T1 n=124, T2 n=174, T3 n=21, T4 n=65, T5 n=3*
+  system                              T1      T2      T3      T4      T5
+  Gemini 3.1 Pro (API, low)         0.96    0.96    1.00    0.69   0.00*
+  GPT-6.1 Sol (API, high)           0.98    1.00    0.95    0.91   0.33*
+  Claude Opus 5.5 (chat, high)      0.98    0.97    0.95    0.94   0.67*
+  GitaGround-Cue                    0.97    0.86    0.81    0.62   0.67*
+  GitaGround-Local                  0.97    0.86    0.81    0.62   0.67*
+  Plain Carry                       0.98    0.85    0.81    0.62   0.67*
+
+E2 English test: T1 n=18*, T2 n=61, T3 n=24, T4 n=234, T5 n=24
+  system                              T1      T2      T3      T4      T5
+  Gemini 3.1 Pro (API, low)        0.83*    0.90    0.83    0.74    0.25
+  GPT-6.1 Sol (API, high)          0.83*    0.87    0.88    0.89    0.75
+  Claude Opus 5.5 (chat, high)     0.89*    0.89    0.92    0.90    0.88
+  GitaGround-Cue                   0.61*    0.80    0.88    0.58    0.21
+  GitaGround-Local                 0.61*    0.87    0.92    0.74    0.21
+  Plain Carry                      0.83*    0.87    0.88    0.86    0.42
+
+E3 Kannada: T1 n=47, T2 n=32, T3 n=13*, T4 n=82, T5 n=2*
+  system                              T1      T2      T3      T4      T5
+  Gemini 3.1 Pro (API, low)         0.98    0.91   0.92*    0.70   0.50*
+  GPT-6.1 Sol (API, high)           1.00    1.00   1.00*    0.93   0.50*
+  Claude Opus 5.5 (chat, high)      1.00    1.00   1.00*    0.85   0.50*
+  GitaGround-Cue                    0.89    0.59   0.54*    0.52   0.50*
+  GitaGround-Local                  0.89    0.59   0.62*    0.57   1.00*
+  Plain Carry                       0.98    0.91   0.54*    0.60   1.00*
+
+E3 English: T1 n=87, T2 n=66, T3 n=9*, T4 n=230, T5 n=22
+  system                              T1      T2      T3      T4      T5
+  Gemini 3.1 Pro (API, low)         0.99    0.79   0.78*    0.57    0.95
+  GPT-6.1 Sol (API, high)           0.98    1.00   1.00*    0.86    0.95
+  Claude Opus 5.5 (chat, high)      0.99    0.94   1.00*    0.68    0.95
+  GitaGround-Cue                    0.95    0.82   1.00*    0.73    0.82
+  GitaGround-Local                  0.98    0.79   1.00*    0.73    0.82
+  Plain Carry                       1.00    0.77   0.78*    0.73    0.95

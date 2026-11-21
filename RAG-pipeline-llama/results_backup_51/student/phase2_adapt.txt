@@ -1,0 +1,10 @@
+Phase 2 adaptation — TUNING lectures, leave-one-lecture-out, alpha 0.5 (no test gold)
+  P_off    decoder    adapt  KN strict EN strict  EN +-1 EN theme   EN off->OFF   EN strict per lecture | kappa per held-out lecture
+  old      73-state   no         0.938     0.680   0.699    0.722    59/119       video_01 0.830, video_04 0.638, video_07 0.616
+  old      73-state   yes        0.938     0.580   0.604    0.624    67/119       video_01 0.830, video_04 0.193, video_07 0.616 | gita-1st_video:inf, gita-4th_video:inf, kannada_07:inf, kannada_10:inf, kannada_13:inf, kannada_16:inf, video_01:inf, video_04:30, video_07:inf
+  old      145-state  no         0.937     0.554   0.578    0.597    71/119       video_01 0.822, video_04 0.000, video_07 0.616
+  old      145-state  yes        0.938     0.554   0.578    0.597    71/119       video_01 0.822, video_04 0.000, video_07 0.616 | gita-1st_video:inf, gita-4th_video:inf, kannada_07:100, kannada_10:100, kannada_13:100, kannada_16:100, video_01:30, video_04:1000, video_07:inf
+  teacher  73-state   no         0.938     0.728   0.783    0.807    86/119       video_01 0.846, video_04 0.677, video_07 0.689
+  teacher  73-state   yes        0.938     0.728   0.783    0.807    86/119       video_01 0.846, video_04 0.677, video_07 0.689 | gita-1st_video:inf, gita-4th_video:inf, kannada_07:inf, kannada_10:inf, kannada_13:inf, kannada_16:inf, video_01:inf, video_04:300, video_07:inf
+  teacher  145-state  no         0.938     0.731   0.786    0.815    97/119       video_01 0.826, video_04 0.677, video_07 0.718
+  teacher  145-state  yes        0.938     0.691   0.746    0.787    94/119       video_01 0.826, video_04 0.677, video_07 0.614 | gita-1st_video:inf, gita-4th_video:inf, kannada_07:30, kannada_10:inf, kannada_13:inf, kannada_16:30, video_01:inf, video_04:inf, video_07:30

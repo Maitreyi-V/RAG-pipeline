@@ -1,0 +1,58 @@
+Phase 3 — Gemini 3.8 Flash (AI Studio) end-to-end, 3 of 42 lectures answered
+parsing: 0 passage(s) missing (scored as NONE), 0 unparsed line(s), 0 verse(s) outside 2.1-2.72
+
+E2 Kannada test   lectures 1   passages 14   no-verse 1
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.8 Flash (AI Studio) end-to-end    0.857                  0.963                  1.000                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.889                  0.933                  1.000                 
+  Gemini 3.1 Pro (AI Studio) end-to-end      0.894                  0.980                  1.000                 
+  GitaGround-Cue                             0.800                  0.912                  0.963                 
+  GitaGround-Local                           0.800                  0.912                  0.963                 
+  Plain Carry                                0.745                  0.829                  0.867                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.8 Flash - Claude Opus 5.5         -0.032 [-0.032,-0.032]         0/0/1
+    Gemini 3.8 Flash - Gemini 3.1 Pro          -0.036 [-0.036,-0.036]         0/0/1
+    Gemini 3.8 Flash - GitaGround-Cue          +0.057 [+0.057,+0.057]         1/0/0
+    Gemini 3.8 Flash - Plain Carry             +0.112 [+0.112,+0.112]         1/0/0
+
+E2 English test   lectures 1   passages 102   no-verse 69
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.8 Flash (AI Studio) end-to-end    0.569                  0.636                  0.653                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.716                  0.773                  0.776                 
+  Gemini 3.1 Pro (AI Studio) end-to-end      0.458                  0.519                  0.512                 
+  GitaGround-Cue                             0.508                  0.679                  0.702                 
+  GitaGround-Local                           0.389                  0.530                  0.529                 
+  Plain Carry                                0.198                  0.272                  0.345                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.8 Flash - Claude Opus 5.5         -0.147 [-0.147,-0.147]         0/0/1
+    Gemini 3.8 Flash - Gemini 3.1 Pro          +0.111 [+0.111,+0.111]         1/0/0
+    Gemini 3.8 Flash - GitaGround-Cue          +0.061 [+0.061,+0.061]         1/0/0
+    Gemini 3.8 Flash - Plain Carry             +0.371 [+0.371,+0.371]         1/0/0
+
+E3 English: Swami Aparajitananda   lectures 1   passages 71   no-verse 1
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.8 Flash (AI Studio) end-to-end    0.925                  0.932                  0.946                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.571                  0.578                  0.550                 
+  Gemini 3.1 Pro (AI Studio) end-to-end      0.948                  0.981                  0.972                 
+  GitaGround-Cue                             0.898                  0.912                  0.986                 
+  GitaGround-Local                           0.898                  0.912                  0.986                 
+  Plain Carry                                0.915                  0.937                  0.957                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.8 Flash - Claude Opus 5.5         +0.354 [+0.354,+0.354]         1/0/0
+    Gemini 3.8 Flash - Gemini 3.1 Pro          -0.023 [-0.023,-0.023]         0/0/1
+    Gemini 3.8 Flash - GitaGround-Cue          +0.027 [+0.027,+0.027]         1/0/0
+    Gemini 3.8 Flash - Plain Carry             +0.010 [+0.010,+0.010]         1/0/0
+
+E3 new English (pooled)   lectures 1   passages 71   no-verse 1
+  system                                     strict F1 [CI]         +-1 F1 [CI]            theme F1 [CI]         
+  Gemini 3.8 Flash (AI Studio) end-to-end    0.925                  0.932                  0.946                 
+  Claude Opus 5.5 (chat, high) end-to-end    0.571                  0.578                  0.550                 
+  Gemini 3.1 Pro (AI Studio) end-to-end      0.948                  0.981                  0.972                 
+  GitaGround-Cue                             0.898                  0.912                  0.986                 
+  GitaGround-Local                           0.898                  0.912                  0.986                 
+  Plain Carry                                0.915                  0.937                  0.957                 
+  paired, strict F1 (A - B), 10000 resamples:     diff            95% CI  win/tie/loss
+    Gemini 3.8 Flash - Claude Opus 5.5         +0.354 [+0.354,+0.354]         1/0/0
+    Gemini 3.8 Flash - Gemini 3.1 Pro          -0.023 [-0.023,-0.023]         0/0/1
+    Gemini 3.8 Flash - GitaGround-Cue          +0.027 [+0.027,+0.027]         1/0/0
+    Gemini 3.8 Flash - Plain Carry             +0.010 [+0.010,+0.010]         1/0/0

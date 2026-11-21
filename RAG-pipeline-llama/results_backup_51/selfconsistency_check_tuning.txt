@@ -1,0 +1,13 @@
+Self-consistency check, English tuning (292 passages, 3 lectures); run B missing 0
+
+  runs agree      236 (81%)   run A right 201
+  runs disagree    56 (19%)   run A right 31, run B right 17, Cue right 33
+  disagree, Cue confident: 33   Cue right 26, run A right 24
+
+  share right: agree 85%, disagree 55% (run A)
+
+  strict F1 per lecture         run A   run B    rule
+    video_01                    0.854   0.848   0.842
+    video_04                    0.851   0.795   0.861
+    video_07                    0.750   0.783   0.750
+    POOLED                      0.816   0.804   0.816

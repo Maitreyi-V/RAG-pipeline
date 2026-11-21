@@ -1,0 +1,29 @@
+Headroom check, TUNING lectures only: answers_api_gemini-3.1-pro-preview_low vs GitaGround-Cue (v2, LOLO); Gemini passages missing: 0
+
+Kannada tuning: 6 lectures (gita-1st_video, gita-4th_video, kannada_07, kannada_10, kannada_13, kannada_16), 82 passages, 1 gold off-verse
+  gold  Cue   Gemini   passages
+  off   on    NONE            1
+  on    on    correct        80
+  on    on    wrong           1
+  Gemini alone    strict F1 0.967   tp 87 fp 4 fn 2
+  Cue (LOLO)      strict F1 0.938   tp 83 fp 5 fn 6
+  oracle Gemini/Cue strict F1 0.989   tp 88 fp 1 fn 1
+  oracle gain over Gemini alone: +0.022
+  per lecture, strict F1 Gemini / Cue / oracle: gita-1st_video 0.970 / 0.875 / 0.970, gita-4th_video 1.000 / 0.938 / 1.000, kannada_07 0.968 / 0.933 / 1.000, kannada_10 0.889 / 0.963 / 1.000, kannada_13 1.000 / 1.000 / 1.000, kannada_16 0.968 / 0.938 / 0.968
+
+English tuning: 3 lectures (video_01, video_04, video_07), 292 passages, 119 gold off-verse
+  gold  Cue   Gemini   passages
+  off   off   NONE           80
+  off   off   wrong          17
+  off   on    NONE           12
+  off   on    wrong          10
+  on    off   NONE            9
+  on    off   correct        18
+  on    on    NONE           11
+  on    on    correct       132
+  on    on    wrong           3
+  Gemini alone    strict F1 0.816   tp 155 fp 35 fn 35
+  Cue (LOLO)      strict F1 0.731   tp 133 fp 41 fn 57
+  oracle Gemini/Cue strict F1 0.890   tp 166 fp 17 fn 24
+  oracle gain over Gemini alone: +0.074
+  per lecture, strict F1 Gemini / Cue / oracle: video_01 0.854 / 0.826 / 0.938, video_04 0.851 / 0.677 / 0.887, video_07 0.750 / 0.718 / 0.859

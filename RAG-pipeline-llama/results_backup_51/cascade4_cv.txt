@@ -1,0 +1,63 @@
+Four-layer cascade, keep rule by leave-one-lecture-out CV over the same-speaker lectures (9 tuning + 30 E2); gpt-5-mini missing passages abstain at layer 3
+strict F1 [95% lecture CI], paired lecture bootstrap 10000
+
+===== layer 4 = Gemini =====
+
+  Kannada: layers kept per fold: 2 Cue conf>=0.9 (29/29); on the whole pool (used for E3): 2 Cue conf>=0.9
+    CV, all 29 same-speaker    Gemini 0.934 [0.917,0.951]  cascade 0.934 [0.917,0.951]  diff +0.000 [+0.000,+0.000]  W/T/L 0/29/0  right 370->370/422  to Gemini 98%
+    CV, E2 part (23)           Gemini 0.926 [0.907,0.946]  cascade 0.926 [0.907,0.946]  diff +0.000 [+0.000,+0.000]  W/T/L 0/23/0  right 293->293/340  to Gemini 98%
+    CV, tuning part (6)        Gemini 0.967 [0.935,0.989]  cascade 0.967 [0.935,0.989]  diff +0.000 [+0.000,+0.000]  W/T/L 0/6/0  right 77->77/82  to Gemini 96%
+    E3 (9, secondary)          Gemini 0.901 [0.837,0.933]  cascade 0.877 [0.800,0.911]  diff -0.024 [-0.085,+0.000]  W/T/L 0/6/3  right 101->95/132  to Gemini 90%
+      CV pool, 2 Cue conf>=0.9        decided   10  right   10  (Gemini alone 10)
+
+  English: layers kept per fold: 2 Cue conf>=0.9 > 3 mini agrees w/ Cue (10/10); on the whole pool (used for E3): 2 Cue conf>=0.9 > 3 mini agrees w/ Cue
+    CV, all 10 same-speaker    Gemini 0.734 [0.684,0.786]  cascade 0.747 [0.696,0.788]  diff +0.013 [-0.046,+0.061]  W/T/L 5/0/5  right 691->739/968  to Gemini 24%
+    CV, E2 part (7)            Gemini 0.693 [0.652,0.743]  cascade 0.710 [0.653,0.756]  diff +0.017 [-0.072,+0.083]  W/T/L 4/0/3  right 459->501/676  to Gemini 26%
+    CV, tuning part (3)        Gemini 0.816  cascade 0.816  diff +0.000 [-0.030,+0.041]  W/T/L 1/0/2  right 232->238/292  to Gemini 20%
+    E3 (3, secondary)          Gemini 0.805  cascade 0.776  diff -0.029 [-0.084,+0.000]  W/T/L 0/1/2  right 232->215/362  to Gemini 83%
+      CV pool, 2 Cue conf>=0.9        decided  433  right  346  (Gemini alone 301)
+      CV pool, 3 mini agrees w/ Cue   decided  299  right  254  (Gemini alone 251)
+
+===== layer 4 = Sol =====
+
+  Kannada: layers kept per fold: 2 Cue conf>=0.9 > 3 mini agrees w/ Cue (29/29); on the whole pool (used for E3): 2 Cue conf>=0.9 > 3 mini agrees w/ Cue
+    CV, all 29 same-speaker    Sol 0.931 [0.914,0.949]  cascade 0.938 [0.922,0.954]  diff +0.007 [-0.005,+0.019]  W/T/L 9/16/4  right 365->372/422  to Sol 46%
+    CV, E2 part (23)           Sol 0.934 [0.916,0.952]  cascade 0.936 [0.917,0.954]  diff +0.002 [-0.009,+0.012]  W/T/L 5/15/3  right 295->297/340  to Sol 52%
+    CV, tuning part (6)        Sol 0.921 [0.874,0.967]  cascade 0.950 [0.928,0.974]  diff +0.029 [-0.016,+0.068]  W/T/L 4/1/1  right 70->75/82  to Sol 24%
+    E3 (9, secondary)          Sol 0.929 [0.910,0.963]  cascade 0.897 [0.861,0.932]  diff -0.031 [-0.089,-0.005]  W/T/L 1/3/5  right 109->100/132  to Sol 70%
+      CV pool, 2 Cue conf>=0.9        decided   10  right   10  (Sol alone 10)
+      CV pool, 3 mini agrees w/ Cue   decided  216  right  200  (Sol alone 193)
+
+  English: layers kept per fold: 2 Cue conf>=0.9 > 3 mini agrees w/ Cue (6/10), 3 mini agrees w/ Cue (3/10), 2 Cue conf>=0.9 (1/10); on the whole pool (used for E3): 2 Cue conf>=0.9 > 3 mini agrees w/ Cue
+    CV, all 10 same-speaker    Sol 0.822 [0.757,0.875]  cascade 0.779 [0.720,0.833]  diff -0.043 [-0.088,-0.009]  W/T/L 3/0/7  right 772->741/968  to Sol 37%
+    CV, E2 part (7)            Sol 0.792 [0.708,0.865]  cascade 0.734 [0.678,0.789]  diff -0.058 [-0.118,-0.008]  W/T/L 2/0/5  right 524->494/676  to Sol 39%
+    CV, tuning part (3)        Sol 0.883  cascade 0.870  diff -0.014 [-0.039,+0.007]  W/T/L 1/0/2  right 248->247/292  to Sol 32%
+    E3 (3, secondary)          Sol 0.910  cascade 0.889  diff -0.021 [-0.062,-0.007]  W/T/L 0/0/3  right 301->286/362  to Sol 83%
+      CV pool, 2 Cue conf>=0.9        decided  322  right  250  (Sol alone 277)
+      CV pool, 3 mini agrees w/ Cue   decided  287  right  240  (Sol alone 244)
+
+===== layer 4 = Opus =====
+
+  Kannada: layers kept per fold: 2 Cue conf>=0.9 > 3 mini agrees w/ Cue (29/29); on the whole pool (used for E3): 2 Cue conf>=0.9 > 3 mini agrees w/ Cue
+    CV, all 29 same-speaker    Opus 0.916 [0.898,0.934]  cascade 0.926 [0.908,0.944]  diff +0.010 [-0.001,+0.020]  W/T/L 14/10/5  right 348->360/422  to Opus 46%
+    CV, E2 part (23)           Opus 0.911 [0.890,0.932]  cascade 0.920 [0.899,0.941]  diff +0.009 [-0.001,+0.020]  W/T/L 10/9/4  right 278->287/340  to Opus 52%
+    CV, tuning part (6)        Opus 0.937 [0.910,0.962]  cascade 0.951 [0.930,0.973]  diff +0.014 [-0.021,+0.042]  W/T/L 4/1/1  right 70->73/82  to Opus 24%
+    E3 (9, secondary)          Opus 0.901 [0.844,0.947]  cascade 0.869 [0.792,0.914]  diff -0.032 [-0.086,-0.009]  W/T/L 0/4/5  right 102->93/132  to Opus 70%
+      CV pool, 2 Cue conf>=0.9        decided   10  right   10  (Opus alone 10)
+      CV pool, 3 mini agrees w/ Cue   decided  216  right  200  (Opus alone 188)
+
+  English: layers kept per fold: 2 Cue conf>=0.9 > 3 mini agrees w/ Cue (8/10), 2 Cue conf>=0.9 (2/10); on the whole pool (used for E3): 2 Cue conf>=0.9 > 3 mini agrees w/ Cue
+    CV, all 10 same-speaker    Opus 0.777 [0.720,0.832]  cascade 0.766 [0.723,0.807]  diff -0.011 [-0.071,+0.042]  W/T/L 4/0/6  right 718->746/968  to Opus 30%
+    CV, E2 part (7)            Opus 0.758 [0.684,0.831]  cascade 0.734 [0.691,0.778]  diff -0.024 [-0.104,+0.052]  W/T/L 2/0/5  right 488->505/676  to Opus 35%
+    CV, tuning part (3)        Opus 0.817  cascade 0.828  diff +0.011 [-0.050,+0.060]  W/T/L 2/0/1  right 230->241/292  to Opus 20%
+    E3 (3, secondary)          Opus 0.831  cascade 0.807  diff -0.024 [-0.080,-0.007]  W/T/L 0/0/3  right 242->228/362  to Opus 83%
+      CV pool, 2 Cue conf>=0.9        decided  433  right  346  (Opus alone 315)
+      CV pool, 3 mini agrees w/ Cue   decided  241  right  207  (Opus alone 210)
+
+SUMMARY (CV over the same-speaker pool)
+  Gemini  Kannada  CV 29 lectures: alone 0.934  cascade 0.934  diff +0.000 [+0.000,+0.000]  W/T/L 0/29/0
+  Gemini  English  CV 10 lectures: alone 0.734  cascade 0.747  diff +0.013 [-0.046,+0.061]  W/T/L 5/0/5
+  Sol     Kannada  CV 29 lectures: alone 0.931  cascade 0.938  diff +0.007 [-0.005,+0.019]  W/T/L 9/16/4
+  Sol     English  CV 10 lectures: alone 0.822  cascade 0.779  diff -0.043 [-0.088,-0.009]  W/T/L 3/0/7
+  Opus    Kannada  CV 29 lectures: alone 0.916  cascade 0.926  diff +0.010 [-0.001,+0.020]  W/T/L 14/10/5
+  Opus    English  CV 10 lectures: alone 0.777  cascade 0.766  diff -0.011 [-0.071,+0.042]  W/T/L 4/0/6

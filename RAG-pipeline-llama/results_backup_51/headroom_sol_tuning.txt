@@ -1,0 +1,29 @@
+Headroom check, TUNING lectures only: answers_gpt-6.1-sol vs GitaGround-Cue (v2, LOLO); Sol passages missing: 0
+
+Kannada tuning: 6 lectures (gita-1st_video, gita-4th_video, kannada_07, kannada_10, kannada_13, kannada_16), 82 passages, 1 gold off-verse
+  gold  Cue   Sol      passages
+  off   on    NONE            1
+  on    on    correct        80
+  on    on    wrong           1
+  Sol alone       strict F1 0.921   tp 87 fp 13 fn 2
+  Cue (LOLO)      strict F1 0.938   tp 83 fp 5 fn 6
+  oracle Sol/Cue  strict F1 0.994   tp 88 fp 0 fn 1
+  oracle gain over Sol alone: +0.074
+  per lecture, strict F1 Sol / Cue / oracle: gita-1st_video 1.000 / 0.875 / 1.000, gita-4th_video 0.872 / 0.938 / 1.000, kannada_07 0.938 / 0.933 / 1.000, kannada_10 0.828 / 0.963 / 1.000, kannada_13 0.923 / 1.000 / 1.000, kannada_16 0.968 / 0.938 / 0.968
+
+English tuning: 3 lectures (video_01, video_04, video_07), 292 passages, 119 gold off-verse
+  gold  Cue   Sol      passages
+  off   off   NONE           83
+  off   off   wrong          14
+  off   on    NONE           10
+  off   on    wrong          12
+  on    off   NONE            5
+  on    off   correct        22
+  on    on    NONE           10
+  on    on    correct       135
+  on    on    wrong           1
+  Sol alone       strict F1 0.883   tp 174 fp 30 fn 16
+  Cue (LOLO)      strict F1 0.731   tp 133 fp 41 fn 57
+  oracle Sol/Cue  strict F1 0.944   tp 184 fp 16 fn 6
+  oracle gain over Sol alone: +0.060
+  per lecture, strict F1 Sol / Cue / oracle: video_01 0.882 / 0.826 / 0.949, video_04 0.877 / 0.677 / 0.925, video_07 0.891 / 0.718 / 0.958

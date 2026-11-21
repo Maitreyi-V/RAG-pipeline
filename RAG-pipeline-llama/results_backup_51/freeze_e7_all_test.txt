@@ -1,0 +1,38 @@
+E7 — index all (1884 passages), questions test
+abstention rule: {'signal': 'profile', 'threshold': 0.536748, 'index': 'dev', 'dev_balanced_accuracy': 0.913, 'calibrated_on': '69 answerable dev questions, 12 dev unanswerable'}
+
+  VERSES AND ABSTENTION (ours)
+  mode               n  Hit@1  Hit@3  abstained  wrongly abst.
+  question          50  0.760  0.920          -          0.060
+  shloka            40  1.000  1.000          -          0.000
+  explanation       35  0.914  0.971          -          0.000
+  unanswerable      25      -      -      0.840              -
+  ALL answerable   125  0.880  0.960          -          0.024
+
+  PASSAGES (inputs with a relevant passage in the index; R@5 = share of ALL relevant passages found, so it is small for much-discussed verses)
+  mode            scored   system    Hit@5    P@5    R@5
+  question            50   ours      0.880  0.616  0.170
+                           vector    0.800  0.332  0.090
+                           LLM       0.840  0.432  0.120
+  shloka              40   ours      1.000  0.815  0.201
+                           vector    0.775  0.405  0.088
+                           LLM       1.000  0.710  0.165
+  explanation         35   ours      0.943  0.777  0.165
+                           vector    0.914  0.457  0.089
+                           LLM       0.857  0.509  0.103
+  ALL answerable     125   ours      0.936  0.725  0.179
+                           vector    0.824  0.390  0.089
+                           LLM       0.896  0.542  0.130
+
+  LLM-EXTRACTED TOPICS baseline (GPT-4o-mini routing)
+  mode               n  Hit@1  abstained  wrongly abst.  verses routed  outside Ch.2  not in index
+  question          50  0.540          -          0.060            218             0             4
+  shloka            40  0.875          -          0.000             46             0             1
+  explanation       35  0.571          -          0.171             60             0             1
+  unanswerable      25      -      0.800              -             85             0             2
+  ALL answerable   125  0.656          -          0.072            324             0             6
+
+  primary claims among retrieved passages: 451/464 correct (0.972)
+  passing claims among retrieved passages: 25/30 correct (0.833)
+  unsupported / hallucinated topics: 0 by construction (catalogue verses and indexed passages only; LLM summary text not evaluated)
+  plain vector search never abstains (abstention on unanswerable = 0).

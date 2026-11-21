@@ -1,0 +1,23 @@
+E7 — index dev (374 passages), questions dev   (DRY RUN: abstention threshold set on these questions)
+abstention rule: {'signal': 'profile', 'threshold': 0.536748, 'index': 'dev', 'dev_balanced_accuracy': 0.913, 'calibrated_on': '69 answerable dev questions, 12 dev unanswerable'}
+
+  VERSES AND ABSTENTION (ours)
+  mode               n  Hit@1  Hit@3  abstained  wrongly abst.
+  question          74  0.473  0.662          -          0.081
+  unanswerable      12      -      -      1.000              -
+
+  PASSAGES (inputs with a relevant passage in the index; R@5 = share of ALL relevant passages found, so it is small for much-discussed verses)
+  mode            scored   system    Hit@5    P@5    R@5
+  question            69   ours      0.667  0.319  0.334
+                           vector    0.696  0.241  0.223
+                           LLM       0.696  0.287  0.222
+
+  LLM-EXTRACTED TOPICS baseline (GPT-4o-mini routing)
+  mode               n  Hit@1  abstained  wrongly abst.  verses routed  outside Ch.2  not in index
+  question          74  0.405          -          0.243            433             0           146
+  unanswerable      12      -      1.000              -              0             0             0
+
+  primary claims among retrieved passages: 214/223 correct (0.960)
+  passing claims among retrieved passages: 2/2 correct (1.000)
+  unsupported / hallucinated topics: 0 by construction (catalogue verses and indexed passages only; LLM summary text not evaluated)
+  plain vector search never abstains (abstention on unanswerable = 0).

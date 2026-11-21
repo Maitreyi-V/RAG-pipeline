@@ -76,10 +76,12 @@ def catalogue():
     from verse_translations import VERSE_TRANSLATIONS
     lines = ["VERSE CATALOGUE (Bhagavad Gita Chapter 2)"]
     for v in VERSES_BG_CH2:
-        lines.append(f"\n{v['ref'].replace('BG ', '')}\n"
+        roman = re.sub(r'\s+', ' ', romanize(v['devanagari'])).strip()
+        ref_short = v['ref'].replace('BG ', '')
+        lines.append(f"\n{ref_short}\n"
                      f"  Devanagari: {v['devanagari']}\n"
                      f"  Kannada script: {v['kannada']}\n"
-                     f"  Roman: {re.sub(r'\s+', ' ', romanize(v['devanagari'])).strip()}\n"
+                     f"  Roman: {roman}\n"
                      f"  Translation: {VERSE_TRANSLATIONS[v['ref']][0]}")
     return "\n".join(lines)
 

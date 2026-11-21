@@ -1,0 +1,118 @@
+Gemini 3.1 Pro alone vs GitaGround-Local alone vs 3-layer cascade with Gemini (anchor > Local conf >= 0.9 > Gemini), 9 tuning + 42 test lectures
+tuning: Local leave-one-lecture-out; 3-layer in sample (its layers were chosen on tuning). Local uses no API (cost 0); no gpt-5-mini teacher anywhere
+
+keep rule on the 9 tuning lectures (layers chosen for Local):
+  kn 1 anchor         accepts  54 tuning passages: right 51 vs Gemini 51 -> KEEP
+  kn 2 Local conf>=0.9  accepts   1 tuning passages: right 1 vs Gemini 1 -> KEEP
+  en 2 Local conf>=0.9  accepts  11 tuning passages: right 9 vs Gemini 8 -> KEEP
+
+1. LECTURE BY LECTURE  (strict F1, best marked *; dig = gold digression passages; false verse on digressions; $ per lecture)
+
+  lecture                  psg     Gemini      Local  3L Gemini   dig     FV Gemini      FV Local  FV 3L Gemini     $ Gemini      $ Local  $ 3L Gemini
+  -- Tuning Kannada --
+  gita-1st_video            15     0.970      0.875      1.000*     1             0             1             0        0.037        0.000        0.037
+  gita-4th_video            15     1.000*     0.938      0.971      0             0             0             0        0.053        0.000        0.053
+  kannada_07                15     0.968      0.933      1.000*     0             0             0             0        0.057        0.000        0.057
+  kannada_10                11     0.889      0.963*     0.923      0             0             0             0        0.051        0.000        0.051
+  kannada_13                11     1.000*     1.000*     1.000*     0             0             0             0        0.049        0.000        0.049
+  kannada_16                15     0.968*     0.938      0.909      0             0             0             0        0.037        0.000        0.037
+  -- Tuning English --
+  video_01                  88     0.854*     0.830      0.854*    46             7            12             7        0.079        0.000        0.079
+  video_04                 107     0.851      0.638      0.855*    37            13            13            11        0.078        0.000        0.078
+  video_07                  97     0.750*     0.616      0.750*    36             7            35             7        0.097        0.000        0.097
+  -- E2 Kannada test --
+  gita-2nd_video            13     0.929      0.933      1.000*     1             0             1             0        0.036        0.000        0.036
+  gita-3rd_video            14     0.933*     0.812      0.848      1             0             1             0        0.046        0.000        0.046
+  gita-5th_video            19     0.878      0.900*     0.878      1             0             1             0        0.063        0.000        0.063
+  gita-6th_video            21     1.000*     0.488      0.950      1             0             1             0        0.046        0.000        0.046
+  kannada_08                12     0.828*     0.714      0.815      0             0             0             0        0.048        0.000        0.048
+  kannada_09                15     0.941*     0.914      0.941*     1             0             1             0        0.052        0.000        0.052
+  kannada_11                16     0.914*     0.791      0.821      1             0             1             0        0.051        0.000        0.051
+  kannada_12                16     0.971*     0.914      0.944      1             0             1             0        0.048        0.000        0.048
+  kannada_14                14     0.941*     0.909      0.941*     0             0             0             0        0.053        0.000        0.053
+  kannada_15                20     0.864*     0.739      0.791      3             2             3             2        0.055        0.000        0.055
+  kannada_17                14     0.933*     0.800      0.776      1             0             1             0        0.051        0.000        0.051
+  kannada_18                13     0.960      1.000*     0.846      0             0             0             0        0.047        0.000        0.047
+  kannada_19                18     1.000*     1.000*     0.947      0             0             0             0        0.048        0.000        0.048
+  kannada_20                15     0.970*     0.857      0.938      1             0             1             0        0.053        0.000        0.053
+  kannada_21                13     0.857*     0.828      0.786      1             1             1             1        0.048        0.000        0.048
+  kannada_22                14     0.929*     0.828      0.897      2             1             2             1        0.037        0.000        0.037
+  kannada_23                17     0.848*     0.811      0.750      1             0             1             0        0.051        0.000        0.051
+  kannada_24                12     0.923*     0.846      0.846      2             1             2             1        0.049        0.000        0.049
+  kannada_25                14     0.968*     0.706      0.812      1             0             1             0        0.046        0.000        0.046
+  kannada_26                12     0.914*     0.810      0.842      0             0             0             0        0.049        0.000        0.049
+  kannada_27                14     0.970*     0.889      0.882      1             0             1             0        0.037        0.000        0.037
+  kannada_28                11     0.929*     0.667      0.774      1             0             1             0        0.049        0.000        0.049
+  kannada_29                13     0.897      0.750      0.903*     2             0             2             0        0.048        0.000        0.048
+  -- E2 English test --
+  video_02                  82     0.681*     0.627      0.681*    35             7            35             7        0.058        0.000        0.058
+  video_03                  87     0.681*     0.652      0.681*    40            29            40            29        0.083        0.000        0.083
+  video_05                 103     0.692*     0.654      0.692*    48            43            48            43        0.091        0.000        0.091
+  video_06                 104     0.610*     0.289      0.610*    56             2             5             2        0.094        0.000        0.094
+  video_08                  96     0.633      0.690*     0.633     51            30            22            30        0.102        0.000        0.102
+  video_09                 102     0.725*     0.389      0.725*    69             3            40             3        0.076        0.000        0.076
+  video_10                 102     0.817*     0.754      0.817*    37             5            20             5        0.077        0.000        0.077
+  -- E3 Kannada --
+  kn_brahmanyachar_day02b   44     0.930*     0.686      0.871      0             0             0             0        0.090        0.000        0.090
+  kn_sumith_day01            9     0.857*     0.824      0.857*     1             0             1             0        0.048        0.000        0.048
+  kn_sumith_day02           10     0.857*     0.833      0.857*     0             0             0             0        0.047        0.000        0.047
+  kn_sumith_day03           12     1.000*     0.800      0.952      3             0             0             0        0.051        0.000        0.051
+  kn_sumith_day04           12     0.815*     0.562      0.815*     0             0             0             0        0.060        0.000        0.060
+  kn_sumith_day05           15     0.889*     0.489      0.864      0             0             0             0        0.049        0.000        0.049
+  kn_sumith_day06            8     0.952*     0.909      0.952*     0             0             0             0        0.045        0.000        0.045
+  kn_sumith_day07           11     0.960*     0.923      0.917      0             0             0             0        0.044        0.000        0.044
+  kn_sumith_day08           11     0.667*     0.500      0.667*     0             0             0             0        0.043        0.000        0.043
+  -- E3 English --
+  en_chinmaya_day03         71     0.475      0.898*     0.475      1             0             1             0        0.072        0.000        0.072
+  en_chinmaya_day04         76     0.895*     0.662      0.895*     0             0             0             0        0.078        0.000        0.078
+  en_iskcon                215     0.845*     0.806      0.845*    15            14            15            14        0.128        0.000        0.128
+
+2. OVERVIEW
+
+  2a. strict F1 (paired vs Gemini alone: diff [95% CI], W/T/L; 5+ lectures)
+
+  Tuning Kannada      6 lect Gemini 0.967  Local 0.938  3L Gemini 0.967   | Local - Gemini -0.029 [-0.066,+0.017] 1/1/4   | 3L Gemini - Gemini +0.000 [-0.031,+0.028] 3/1/2
+  Tuning English      3 lect Gemini 0.816  Local 0.680  3L Gemini 0.817
+  E2 Kannada test    23 lect Gemini 0.926  Local 0.817  3L Gemini 0.866   | Local - Gemini -0.109 [-0.165,-0.064] 3/1/19   | 3L Gemini - Gemini -0.060 [-0.084,-0.037] 2/3/18
+  E2 English test     7 lect Gemini 0.693  Local 0.600  3L Gemini 0.693   | Local - Gemini -0.093 [-0.197,-0.016] 1/0/6   | 3L Gemini - Gemini +0.000 [+0.000,+0.000] 0/7/0
+  E3 Kannada          9 lect Gemini 0.901  Local 0.696  3L Gemini 0.866   | Local - Gemini -0.204 [-0.271,-0.087] 0/0/9   | 3L Gemini - Gemini -0.034 [-0.050,-0.006] 0/5/4
+  E3 English          3 lect Gemini 0.805  Local 0.798  3L Gemini 0.805
+  All 9 tuning        9 lect Gemini 0.864  Local 0.758  3L Gemini 0.865   | Local - Gemini -0.106 [-0.159,-0.021] 1/1/7   | 3L Gemini - Gemini +0.001 [-0.011,+0.012] 4/3/2
+  All 42 test        42 lect Gemini 0.819  Local 0.730  3L Gemini 0.798   | Local - Gemini -0.089 [-0.157,-0.025] 5/1/36   | 3L Gemini - Gemini -0.022 [-0.038,-0.011] 2/18/22
+  All 51             51 lect Gemini 0.827  Local 0.735  3L Gemini 0.809   | Local - Gemini -0.092 [-0.148,-0.039] 6/2/43   | 3L Gemini - Gemini -0.018 [-0.031,-0.009] 6/21/24
+
+  2b. digressions (gold: no verse) and verse passages left with no verse
+
+  Tuning Kannada    digressions    1: false verse Gemini   0 (0%)  Local   1 (100%)  3L Gemini   0 (0%)   | verse passages   81: missed Gemini   0  Local   0  3L Gemini   0
+  Tuning English    digressions  119: false verse Gemini  27 (23%)  Local  60 (50%)  3L Gemini  25 (21%)   | verse passages  173: missed Gemini  20  Local  21  3L Gemini  21
+  E2 Kannada test   digressions   23: false verse Gemini   5 (22%)  Local  23 (100%)  3L Gemini   5 (22%)   | verse passages  317: missed Gemini  10  Local   0  3L Gemini   8
+  E2 English test   digressions  336: false verse Gemini 119 (35%)  Local 210 (62%)  3L Gemini 119 (35%)   | verse passages  340: missed Gemini  69  Local  45  3L Gemini  69
+  E3 Kannada        digressions    4: false verse Gemini   0 (0%)  Local   1 (25%)  3L Gemini   0 (0%)   | verse passages  128: missed Gemini  14  Local   7  3L Gemini  14
+  E3 English        digressions   16: false verse Gemini  14 (88%)  Local  16 (100%)  3L Gemini  14 (88%)   | verse passages  346: missed Gemini  53  Local  16  3L Gemini  53
+  All 9 tuning      digressions  120: false verse Gemini  27 (22%)  Local  61 (51%)  3L Gemini  25 (21%)   | verse passages  254: missed Gemini  20  Local  21  3L Gemini  21
+  All 42 test       digressions  379: false verse Gemini 138 (36%)  Local 250 (66%)  3L Gemini 138 (36%)   | verse passages 1131: missed Gemini 146  Local  68  3L Gemini 144
+  All 51            digressions  499: false verse Gemini 165 (33%)  Local 311 (62%)  3L Gemini 163 (33%)   | verse passages 1385: missed Gemini 166  Local  89  3L Gemini 165
+
+  2c. cost (USD)
+
+  Tuning Kannada   Gemini $0.284  Local $0.000  3L Gemini $0.284
+  Tuning English   Gemini $0.254  Local $0.000  3L Gemini $0.254
+  E2 Kannada test  Gemini $1.108  Local $0.000  3L Gemini $1.108
+  E2 English test  Gemini $0.581  Local $0.000  3L Gemini $0.581
+  E3 Kannada       Gemini $0.475  Local $0.000  3L Gemini $0.475
+  E3 English       Gemini $0.278  Local $0.000  3L Gemini $0.278
+  All 9 tuning     Gemini $0.538  Local $0.000  3L Gemini $0.538
+  All 42 test      Gemini $2.442  Local $0.000  3L Gemini $2.442
+  All 51           Gemini $2.980  Local $0.000  3L Gemini $2.980
+
+  2d. 3-layer: who decided (passages; right = set equals gold; Gemini alone right on the same)
+
+  Tuning Kannada   1 anchor: 54 right 51 (Gemini 51)   2 Local conf>=0.9: 1 right 1 (Gemini 1)   4 frontier: 27 right 25 (Gemini 25)
+  Tuning English   2 Local conf>=0.9: 11 right 9 (Gemini 8)   4 frontier: 281 right 224 (Gemini 224)
+  E2 Kannada test  1 anchor: 218 right 159 (Gemini 191)   2 Local conf>=0.9: 1 right 1 (Gemini 1)   4 frontier: 121 right 101 (Gemini 101)
+  E2 English test  2 Local conf>=0.9: 10 right 9 (Gemini 9)   4 frontier: 666 right 450 (Gemini 450)
+  E3 Kannada       1 anchor: 52 right 32 (Gemini 38)   2 Local conf>=0.9: 2 right 2 (Gemini 2)   4 frontier: 78 right 61 (Gemini 61)
+  E3 English       4 frontier: 362 right 232 (Gemini 232)
+  All 9 tuning     1 anchor: 54 right 51 (Gemini 51)   2 Local conf>=0.9: 12 right 10 (Gemini 9)   4 frontier: 308 right 249 (Gemini 249)
+  All 42 test      1 anchor: 270 right 191 (Gemini 229)   2 Local conf>=0.9: 13 right 12 (Gemini 12)   4 frontier: 1227 right 844 (Gemini 844)
+  All 51           1 anchor: 324 right 242 (Gemini 280)   2 Local conf>=0.9: 25 right 22 (Gemini 21)   4 frontier: 1535 right 1093 (Gemini 1093)

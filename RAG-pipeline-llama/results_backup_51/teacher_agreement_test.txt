@@ -1,0 +1,4 @@
+Teacher (gpt-5-mini, config B) vs gold off-verse — split = test
+  group                                    lect   pass gold off  flagged    acc  recall false flags   rate  kappa    AUC
+  Kannada test                               23    340    0.068    0.068  0.953   0.652     8/317    0.025  0.627  0.897
+  English test                                7    676    0.497    0.538  0.766   0.807    93/340    0.274  0.533  0.816
