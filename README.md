@@ -7,7 +7,11 @@ number. GitaGround returns the Chapter 2 verse it is about, the verse's theme, w
 traditions explain it and over how many passages, and the lecture passages themselves with approximate
 positions in the lecture.
 
-The corpus is 51 lectures from 6 speakers across three traditions: Dvaita, Advaita and Gaudiya Vaishnava.
+The corpus is 59 lectures (38 Kannada, 21 English) across three traditions: Dvaita, Advaita and Gaudiya Vaishnava.
+
+**DOI:** [10.5281/zenodo.24037830](https://doi.org/10.5281/zenodo.24037830)
+**Dataset and labels:** https://github.com/prerana2005/gitaground-release (lecture URLs for all 59 videos are in
+[`reconstruct/sources.csv`](https://github.com/prerana2005/gitaground-release/blob/main/reconstruct/sources.csv))
 
 ## How it works
 
@@ -81,6 +85,19 @@ share of the lecture (for example `~59%-100% of the lecture (approximate)`) and 
 | `docs/` | annotation guideline |
 | `annotate_app.py` | blind annotation tool |
 | `shloka_detector.py`, `roman_detector.py`, `layer3_semantic.py`, `layer4_llm_detector.py`, `embeddings.py`, `verse_database.py`, `verse_translations.py`, `config.py` | detector and data modules used by the engine and scripts |
+
+## Data and citation
+
+The release repository holds the lecture URLs, passage grid, gold and LLM labels, embeddings and frozen
+system files. It contains no audio and no transcript text; see its `reconstruct/` folder to rebuild them
+from the source URLs. If you use GitaGround, cite the DOI above.
+
+## Index
+
+`results/step5_index_all.csv` is built from the improved 3-layer cascade (Sol labels, Cue veto, Cue fill)
+for all 59 lectures:
+
+    python scripts/step5_index_cascade.py
 
 ## Licence
 
